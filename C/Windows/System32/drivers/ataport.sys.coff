@@ -1,0 +1,275 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\ataport.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    WMILIB.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0022030 Import Address Table
+             1C0022598 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         566 KeWaitForSingleObject
+                         6AB ObfDereferenceObject
+                         33D IoFreeIrp
+                         53A KeSetEvent
+                          B8 ExAllocatePoolWithTag
+                          E5 ExFreePoolWithTag
+                         3B9 IoReleaseCancelSpinLock
+                         44E KeAcquireInStackQueuedSpinLock
+                         512 KeReleaseInStackQueuedSpinLock
+                         568 KfRaiseIrql
+                         4D5 KeLowerIrql
+                         4B7 KeInitializeSpinLock
+                         179 ExpInterlockedPopEntrySList
+                         17A ExpInterlockedPushEntrySList
+                         10F ExQueryDepthSList
+                         340 IoFreeMdl
+                         2E2 IoAllocateMdl
+                         59D MmBuildMdlForNonPagedPool
+                         2D3 InitializeSListHead
+                         4FF KeQueryUnbiasedInterruptTime
+                         8D1 RtlInitUnicodeString
+                         BF8 _vsnwprintf
+                         C56 wcsstr
+                         436 IofCompleteRequest
+                         50C KeRegisterBugCheckReasonCallback
+                         47E KeDeregisterBugCheckReasonCallback
+                         569 KiBugCheckData
+                         5CB MmLockPagableDataSection
+                         5FC MmUnlockPagableImageSection
+                          8F EtwWrite
+                         2DF IoAllocateErrorLogEntry
+                         42F IoWriteErrorLogEntry
+                         816 RtlCompareUnicodeString
+                         308 IoConnectInterruptEx
+                         32E IoDisconnectInterruptEx
+                         592 MmAllocateMappingAddress
+                         2E5 IoAllocateWorkItem
+                         5AE MmFreeMappingAddress
+                         343 IoFreeWorkItem
+                         34D IoGetConfigurationInformation
+                         319 IoCreateSymbolicLink
+                         328 IoDeleteSymbolicLink
+                          7C EmClientQueryRuleState
+                         46A KeCancelTimer
+                         526 KeRemoveQueueDpc
+                         47B KeDelayExecutionThread
+                         5FF MmUnmapIoSpace
+                         4B9 KeInitializeTimer
+                         4AB KeInitializeDpc
+                         538 KeSetCoalescableTimer
+                         494 KeFlushQueuedDpcs
+                         30D IoCreateDevice
+                         2EA IoAttachDeviceToDeviceStack
+                         326 IoDeleteDevice
+                         329 IoDetachDevice
+                         69E ObReferenceObjectByPointer
+                         37F IoInvalidateDeviceRelations
+                         37C IoInitializeRemoveLockEx
+                         380 IoInvalidateDeviceState
+                         457 KeAcquireSpinLockRaiseToDpc
+                         51A KeReleaseSpinLock
+                         2D8 IoAcquireRemoveLockEx
+                         3BB IoReleaseRemoveLockEx
+                         3BA IoReleaseRemoveLockAndWaitEx
+                         435 IofCallDriver
+                         708 PoStartNextPowerIrp
+                         6FF PoSetPowerState
+                         6BA PoCallDriver
+                         6F8 PoRequestPowerIrp
+                         391 IoOpenDeviceRegistryKey
+                         AF0 ZwClose
+                         5D0 MmMapIoSpaceEx
+                         5B7 MmGetPhysicalAddress
+                         8D4 RtlInitializeBitMap
+                         97F RtlSetAllBits
+                         80C RtlClearBits
+                         872 RtlFindClearBitsAndSet
+                         80A RtlClearBit
+                         C38 strstr
+                         BF0 _strupr
+                         BF6 _vsnprintf
+                         8C8 RtlInitAnsiString
+                         7EF RtlAnsiStringToUnicodeString
+                         9DF RtlxAnsiStringToUnicodeSize
+                         2DE IoAllocateDriverObjectExtension
+                         35D IoGetDriverObjectExtension
+                         82C RtlCopyUnicodeString
+                         371 IoGetSfioStreamIdentifier
+                         3A1 IoQueueWorkItem
+                         5D2 MmMapLockedPagesSpecifyCache
+                         BCF __C_specific_handler
+                         B42 ZwOpenKey
+                         95F RtlQueryRegistryValuesEx
+                         5E6 MmProbeAndLockPages
+                         493 KeFlushIoBuffers
+                         5FD MmUnlockPages
+                         49B KeGetCurrentIrql
+                         6FA PoSetDeviceBusyEx
+                         44F KeAcquireInStackQueuedSpinLockAtDpcLevel
+                         558 KeSynchronizeExecution
+                         514 KeReleaseInStackQueuedSpinLockFromDpcLevel
+                         54A KeSetTimer
+                         452 KeAcquireInterruptSpinLock
+                         515 KeReleaseInterruptSpinLock
+                         342 IoFreeSfioStreamIdentifier
+                         2F0 IoBuildSynchronousFsdRequest
+                         3D5 IoSetActivityIdIrp
+                         5D3 MmMapLockedPagesWithReservedMapping
+                         601 MmUnmapReservedMapping
+                         46F KeClearEvent
+                         382 IoIs32bitProcess
+                         6F4 PoRegisterDeviceForIdleDetection
+                         6F6 PoRegisterPowerSettingCallback
+                         70A PoUnregisterPowerSettingCallback
+                          F4 ExInitializeNPagedLookasideList
+                          CC ExDeleteNPagedLookasideList
+                         4C2 KeInsertQueueDpc
+                         3AF IoRegisterDeviceInterface
+                         893 RtlFreeUnicodeString
+                         3DB IoSetDeviceInterfaceState
+                         7F3 RtlAppendUnicodeToString
+                         7F2 RtlAppendUnicodeStringToString
+                         9B4 RtlUnicodeStringToAnsiString
+                         5BC MmGetSystemRoutineAddress
+                         428 IoWMIRegistrationControl
+                          89 EtwRegister
+                          8E EtwUnregister
+                         2D2 InitSafeBootMode
+                         2D5 IoAcquireCancelSpinLock
+                          94 EtwWriteTransfer
+                         344 IoGetActivityIdIrp
+                         2E0 IoAllocateIrp
+                         349 IoGetAttachedDeviceReference
+                         C42 vDbgPrintExWithPrefix
+                         4AF KeInitializeEvent
+                         B12 ZwDeleteKey
+                          B4 ExAllocatePool2
+                         AFF ZwCreateKey
+                         95E RtlQueryRegistryValues
+                         9DC RtlWriteRegistryValue
+                         AF9 ZwCreateDirectoryObject
+                         69B ObReferenceObjectByHandle
+                         ACA WmiTraceMessageVa
+                         AC8 WmiQueryTraceInformation
+                         365 IoGetIoPriorityHint
+                         2E4 IoAllocateSfioStreamIdentifier
+                         36E IoGetRequestorProcess
+                         34F IoGetCurrentProcess
+                         551 KeStackAttachProcess
+                         561 KeUnstackDetachProcess
+                         2F3 IoCancelIrp
+
+    HAL.dll
+             1C0022000 Import Address Table
+             1C0022568 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          55 KeStallExecutionProcessor
+                          54 KeQueryPerformanceCounter
+
+    WMILIB.SYS
+             1C0022018 Import Address Table
+             1C0022580 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 WmiSystemControl
+                           2 WmiCompleteRequest
+
+  Section contains the following exports for ataport.SYS
+
+    00000000 characteristics
+    3ED96F3C time date stamp
+        0.00 version
+           1 ordinal base
+          58 number of functions
+          58 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000DF40 AtaPortAllocateQueueTag
+          2    1 00005750 AtaPortBuildRequestSenseIrb
+          3    2 0000DFA0 AtaPortCompleteAllActiveRequests
+          4    3 00005430 AtaPortCompleteRequest
+          5    4 00005520 AtaPortConvertPhysicalAddressToUlong
+          6    5 0000E000 AtaPortConvertUlongToPhysicalAddress
+          7    6 0000E010 AtaPortCopyMemory
+          8    7 0000E030 AtaPortDebugBreak
+          9    8 0000E040 AtaPortDebugPrint
+         10    9 0000E0B0 AtaPortDeviceStateChange
+         11    A 0000E110 AtaPortEtwTraceLog
+         12    B 0000E220 AtaPortGetDeviceBase
+         13    C 00015530 AtaPortGetParentBusType
+         14    D 00005480 AtaPortGetPhysicalAddress
+         15    E 00005540 AtaPortGetScatterGatherList
+         16    F 0000E230 AtaPortGetUnCachedExtension
+         17   10 00010170 AtaPortInitialize
+         18   11 0000E290 AtaPortInitializeQueueTag
+         19   12 0000E2F0 AtaPortLogError
+         20   13 0000E010 AtaPortMoveMemory
+         21   14 0000E340 AtaPortNotification
+         22   15 0000E3E0 AtaPortQuerySystemTime
+         23   16 0000E400 AtaPortReadPortBufferUchar
+         24   17 0000E420 AtaPortReadPortBufferUlong
+         25   18 00005570 AtaPortReadPortBufferUshort
+         26   19 00005510 AtaPortReadPortUchar
+         27   1A 0000E440 AtaPortReadPortUlong
+         28   1B 0000E450 AtaPortReadPortUshort
+         29   1C 0000E460 AtaPortReadRegisterBufferUchar
+         30   1D 0000E490 AtaPortReadRegisterBufferUlong
+         31   1E 0000E4C0 AtaPortReadRegisterBufferUshort
+         32   1F 0000E4F0 AtaPortReadRegisterUchar
+         33   20 0000E500 AtaPortReadRegisterUlong
+         34   21 0000E510 AtaPortReadRegisterUshort
+         35   22 0000E520 AtaPortRegistryAllocateBuffer
+         36   23 0000E580 AtaPortRegistryFreeBuffer
+         37   24 0000E5E0 AtaPortRegistryRead
+         38   25 0000E650 AtaPortRegistryWrite
+         39   26 0000E6C0 AtaPortRegistryWriteDeferred
+         40   27 0000E730 AtaPortReleaseQueueTag
+         41   28 000057B0 AtaPortReleaseRequestSenseIrb
+         42   29 0000E790 AtaPortRequestCallback
+         43   2A 00005590 AtaPortStallExecution
+         44   2B 0000E7E0 AtaPortTraceNotification
+         45   2C 0000E9A0 AtaPortWritePortBufferUchar
+         46   2D 0000E9C0 AtaPortWritePortBufferUlong
+         47   2E 00005550 AtaPortWritePortBufferUshort
+         48   2F 000052B0 AtaPortWritePortUchar
+         49   30 00005530 AtaPortWritePortUlong
+         50   31 0000E9E0 AtaPortWritePortUshort
+         51   32 0000E9F0 AtaPortWriteRegisterBufferUchar
+         52   33 0000EA20 AtaPortWriteRegisterBufferUlong
+         53   34 0000EA50 AtaPortWriteRegisterBufferUshort
+         54   35 0000EA80 AtaPortWriteRegisterUchar
+         55   36 0000EA90 AtaPortWriteRegisterUlong
+         56   37 0000EAA0 AtaPortWriteRegisterUshort
+         57   38 00028680 DllInitialize
+         58   39 000286E0 DllUnload
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        2000 .idata
+        3000 .pdata
+        4000 .rdata
+        2000 .reloc
+        7000 .rsrc
+       19000 .text
+        1000 GFIDS
+        1000 INIT
+        C000 PAGE

@@ -1,0 +1,100 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_dual_storufs.inf_31bf3856ad364e35_10.0.22000.1042_none_6fde5078772541f0\storufs.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    storport.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000F000 Import Address Table
+             1C000F1D8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         96D RtlRegisterFeatureConfigurationChangeNotification
+                         953 RtlQueryFeatureConfiguration
+                         954 RtlQueryFeatureConfigurationChangeStamp
+                         9C1 RtlUnregisterFeatureConfigurationChangeNotification
+                         4E2 KeQueryActiveProcessorCountEx
+                         813 RtlCompareMemory
+                         512 KeReleaseInStackQueuedSpinLock
+                         49B KeGetCurrentIrql
+                         4B7 KeInitializeSpinLock
+                         44F KeAcquireInStackQueuedSpinLockAtDpcLevel
+                         44E KeAcquireInStackQueuedSpinLock
+                         514 KeReleaseInStackQueuedSpinLockFromDpcLevel
+                         469 KeBugCheckEx
+                         33D IoFreeIrp
+                         8D1 RtlInitUnicodeString
+                         356 IoGetDeviceObjectPointer
+                         53A KeSetEvent
+                         2E0 IoAllocateIrp
+                         435 IofCallDriver
+                         4AF KeInitializeEvent
+                         566 KeWaitForSingleObject
+                         354 IoGetDeviceInterfaces
+                         13D ExReleaseSpinLockExclusive
+                         15F ExTryConvertSharedSpinLockExclusive
+                         981 RtlSetBit
+                         13F ExReleaseSpinLockShared
+                          AD ExAcquireSpinLockShared
+                          AB ExAcquireSpinLockExclusive
+                         80A RtlClearBit
+                         8D4 RtlInitializeBitMap
+                         808 RtlClearAllBits
+
+    storport.sys
+             1C000F100 Import Address Table
+             1C000F2D8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          10 StorPortGetPhysicalAddress
+                          2F StorPortStallExecution
+                          1B StorPortQuerySystemTime
+                          13 StorPortGetUncachedExtension
+                          18 StorPortNotification
+                          15 StorPortInitialize
+                           D StorPortGetBusData
+                           A StorPortExtendedFunction
+                          11 StorPortGetScatterGatherList
+                          2B StorPortResume
+                          19 StorPortPause
+                           E StorPortGetDeviceBase
+                           7 StorPortDebugPrint
+
+  Section contains the following exports for storufs.sys
+
+    00000000 characteristics
+    78EE9A4A time date stamp
+        0.00 version
+           1 ordinal base
+           2 number of functions
+           2 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001150 DumpPreInitialize
+          2    1 00001170 DumpUninitialize
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        A000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE

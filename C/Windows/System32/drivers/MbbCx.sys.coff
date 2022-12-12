@@ -1,0 +1,174 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\MbbCx.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    WDFLDR.SYS
+    NDIS.SYS
+    NETIO.SYS
+    WppRecorder.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0056178 Import Address Table
+             1C00565A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         915 RtlLengthRequiredSid
+                         7D7 RtlAddAccessAllowedAce
+                          85 EtwActivityIdControl
+                         7CA PsThreadType
+                         9AE RtlUnicodeStringToAnsiString
+                         69B ObReferenceObjectByHandle
+                          F4 ExInitializeNPagedLookasideList
+                          8F EtwWrite
+                         8CE RtlInitializeBitMap
+                         829 RtlCreateAcl
+                         97D RtlSetBits
+                         830 RtlCreateSecurityDescriptor
+                         AE9 ZwClose
+                         7C9 PsTerminateSystemThread
+                         A0F SeExports
+                         BF1 _vsnwprintf
+                         52B KeResetEvent
+                          8C EtwSetInformation
+                          8E EtwUnregister
+                         5BC MmGetSystemRoutineAddress
+                          89 EtwRegister
+                         428 IoWMIRegistrationControl
+                         917 RtlLengthSid
+                         494 KeFlushQueuedDpcs
+                         564 KeWaitForMultipleObjects
+                          CC ExDeleteNPagedLookasideList
+                         4AF KeInitializeEvent
+                         80D RtlCompareMemory
+                         53A KeSetEvent
+                         9AB RtlUTF8ToUnicodeN
+                         B4E ZwPowerInformation
+                          F8 ExInitializeRundownProtection
+                         8CB RtlInitUnicodeString
+                         981 RtlSetDaclSecurityDescriptor
+                         10F ExQueryDepthSList
+                         71B PsCreateSystemThread
+                         17A ExpInterlockedPushEntrySList
+                         49B KeGetCurrentIrql
+                         6AB ObfDereferenceObject
+                         826 RtlCopyUnicodeString
+                         9D6 RtlWriteRegistryValue
+                         8FC RtlIpv6StringToAddressW
+                         88D RtlFreeUnicodeString
+                         8F0 RtlIpv4AddressToStringW
+                         90F RtlIsStateSeparationEnabled
+                         958 RtlQueryRegistryValues
+                         8F4 RtlIpv4StringToAddressW
+                         993 RtlStringFromGUID
+                         8F8 RtlIpv6AddressToStringW
+                         179 ExpInterlockedPopEntrySList
+                         996 RtlSubAuthoritySid
+                         8D5 RtlInitializeSid
+                         7E9 RtlAnsiStringToUnicodeString
+                         8C2 RtlInitAnsiString
+                         16C ExWaitForRundownProtectionRelease
+                         141 ExRundownCompleted
+                         139 ExReleaseRundownProtection
+                         566 KeWaitForSingleObject
+                          A5 ExAcquireRundownProtection
+                          B4 ExAllocatePool2
+                          E5 ExFreePoolWithTag
+                         51A KeReleaseSpinLock
+                          94 EtwWriteTransfer
+                         4B7 KeInitializeSpinLock
+                          6F DbgPrintEx
+                         457 KeAcquireSpinLockRaiseToDpc
+
+    WDFLDR.SYS
+             1C0056120 Import Address Table
+             1C0056550 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           6 WdfVersionBind
+                           8 WdfVersionUnbind
+                           9 WdfVersionUnbindClass
+                           4 WdfRegisterClassLibrary
+                           7 WdfVersionBindClass
+
+    NDIS.SYS
+             1C0056000 Import Address Table
+             1C0056430 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         159 NdisMIndicateStatusEx
+                          B7 NdisFreeTimerObject
+                         1E3 NdisSetCoalescableTimerObject
+                          D6 NdisGetSystemUpTimeEx
+                          29 NdisAllocateTimerObject
+                          33 NdisCancelTimerObject
+                          D9 NdisGetVersion
+                         166 NdisMQueryAdapterInstanceName
+                          A7 NdisFreeMemory
+                         162 NdisMOidRequestComplete
+                         1C4 NdisReadConfiguration
+                          43 NdisCloseConfiguration
+                         221 NdisWriteConfiguration
+                         1AC NdisOpenConfigurationEx
+
+    NETIO.SYS
+             1C0056078 Import Address Table
+             1C00564A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          4A GetInterfaceDnsSettings
+                          17 CreateIpForwardEntry2
+                         187 NotifyRouteChange2
+                           3 CancelMibChangeNotify2
+                         185 NotifyIpInterfaceChange
+                           C ConvertInterfaceLuidToIndex
+                           B ConvertInterfaceLuidToGuid
+                          31 FreeMibTable
+                          5B GetUnicastIpAddressTable
+                          30 FreeInterfaceDnsSettings
+                          6C InitializeUnicastIpAddressEntry
+                          1F DeleteUnicastIpAddressEntry
+                          1D DeleteIpForwardEntry2
+                          6A InitializeIpForwardEntry
+                          1A CreateUnicastIpAddressEntry
+                         1D4 SetInterfaceDnsSettings
+                         18A NotifyUnicastIpAddressChange
+                          6B InitializeIpInterfaceEntry
+                         1D6 SetIpInterfaceEntry
+                          4D GetIpForwardTable2
+
+    WppRecorder.sys
+             1C0056150 Import Address Table
+             1C0056580 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          10 imp_WppRecorderReplay
+                           2 WppAutoLogStart
+                           4 WppAutoLogTrace
+                           3 WppAutoLogStop
+
+  Summary
+
+        4000 .data
+        2000 .idata
+        2000 .pdata
+       11000 .rdata
+        2000 .reloc
+        C000 .rsrc
+       3E000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE

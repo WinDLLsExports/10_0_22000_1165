@@ -1,0 +1,117 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-win32kns_31bf3856ad364e35_10.0.22000.653_none_4d5c5ea6b0747fb8\win32kns.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NETIO.SYS
+    WppRecorder.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0008068 Import Address Table
+             1C0008248 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         6AD ObfReferenceObject
+                         2E0 IoAllocateIrp
+                          E5 ExFreePoolWithTag
+                         5FD MmUnlockPages
+                         457 KeAcquireSpinLockRaiseToDpc
+                         51A KeReleaseSpinLock
+                         4C1 KeInsertQueueApc
+                         468 KeBugCheck
+                         340 IoFreeMdl
+                         46F KeClearEvent
+                         3D4 IoReuseIrp
+                         4AF KeInitializeEvent
+                         566 KeWaitForSingleObject
+                         8CC RtlInitUnicodeString
+                         310 IoCreateDriver
+                         5BC MmGetSystemRoutineAddress
+                         428 IoWMIRegistrationControl
+                         80E RtlCompareMemory
+                          B4 ExAllocatePool2
+                         2E2 IoAllocateMdl
+                         6AB ObfDereferenceObject
+                         59D MmBuildMdlForNonPagedPool
+                         33D IoFreeIrp
+                         4A8 KeInitializeApc
+                         4D1 KeLeaveCriticalRegion
+                          A2 ExAcquirePushLockSharedEx
+                         134 ExReleasePushLockSharedEx
+                         133 ExReleasePushLockExclusiveEx
+                          A1 ExAcquirePushLockExclusiveEx
+                         53A KeSetEvent
+                         484 KeEnterCriticalRegion
+
+    NETIO.SYS
+             1C0008000 Import Address Table
+             1C00081E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         226 WskCaptureProviderNPI
+                         22A WskReleaseProviderNPI
+                         227 WskDeregister
+                         229 WskRegister
+
+    WppRecorder.sys
+             1C0008028 Import Address Table
+             1C0008208 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           5 imp_WppRecorderConfigure
+                          10 imp_WppRecorderReplay
+                           C imp_WppRecorderLogDelete
+                           B imp_WppRecorderLogCreate
+                           4 WppAutoLogTrace
+                           2 WppAutoLogStart
+                           3 WppAutoLogStop
+
+  Section contains the following exports for WIN32KNS.SYS
+
+    00000000 characteristics
+    C810F38B time date stamp
+        0.00 version
+           1 ordinal base
+          13 number of functions
+          13 number of names
+
+    ordinal hint RVA      name
+
+          2    0 0000B080 DllInitialize
+          3    1 00009010 DllUnload
+          4    2 000028E0 IVBroadcast
+          5    3 000037D0 IVChildReInitialize
+          6    4 00003820 IVCloseChildChannel
+          7    5 000011D0 IVFreeIVSRContext
+          8    6 000011F0 IVInitialize
+          1    7 00002FB0 IVRecv
+          9    8 00001470 IVRegisterChildLifetimeNotifications
+         10    9 00001540 IVResolveContainerId
+         11    A 00002AD0 IVSend
+         12    B 00001600 IVUninitialize
+         13    C 000016A0 IVUnregisterChildLifetimeNotifications
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE

@@ -1,0 +1,667 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\tapi32.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    msvcrt.dll
+    GDI32.dll
+    USER32.dll
+    KERNEL32.dll
+
+  Image has the following delay load dependencies:
+
+    api-ms-win-service-management-l1-1-0.dll
+    api-ms-win-service-winsvc-l1-1-0.dll
+    ADVAPI32.dll
+    ole32.dll
+    RPCRT4.dll
+    SHLWAPI.dll
+    rtutils.dll
+    WINMM.dll
+    CRYPTSP.dll
+
+  Section contains the following exports for TAPI32.dll
+
+    00000000 characteristics
+    3D27B8D0 time date stamp
+        0.00 version
+           1 ordinal base
+         278 number of functions
+         278 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004C00 GetTapi16CallbackMsg
+          2    1 00005080 LAddrParamsInited
+          3    2 00005180 LOpenDialAsst
+          4    3 00022250 LocWizardDlgProc
+          5    4 00012810 MMCAddProvider
+          6    5 000128C0 MMCConfigProvider
+          7    6 00012980 MMCGetAvailableProviders
+          8    7 00012A80 MMCGetDeviceFlags
+          9    8 00012BA0 MMCGetLineInfo
+         10    9 00012CA0 MMCGetLineStatus
+         11    A 00012DA0 MMCGetPhoneInfo
+         12    B 00012EA0 MMCGetPhoneStatus
+         13    C 00012FA0 MMCGetProviderList
+         14    D 00013040 MMCGetServerConfig
+         15    E 00013160 MMCInitialize
+         16    F 000136C0 MMCRemoveProvider
+         17   10 00013780 MMCSetLineInfo
+         18   11 00013880 MMCSetPhoneInfo
+         19   12 00013980 MMCSetServerConfig
+         20   13 00013AB0 MMCShutdown
+         21   14 000055D0 NonAsyncEventThread
+         22   15 00005730 TAPIWndProc
+         23   16 000059C0 TUISPIDLLCallback
+         24   17 0001F900 internalConfig
+         25   18 00024550 internalCreateDefLocation
+         26   19 000245B0 internalNewLocationW
+         27   1A 000060E0 internalPerformance
+         28   1B 00024880 internalRemoveLocation
+         29   1C 00024AA0 internalRenameLocationW
+         30   1D 00006170 lineAccept
+         31   1E 00006220 lineAddProvider
+         32   1F 00006230 lineAddProviderA
+         33   20 00006320 lineAddProviderW
+         34   21 00006480 lineAddToConference
+         35   22 00006520 lineAgentSpecific
+         36   23 00006620 lineAnswer
+         37   24 000066D0 lineBlindTransfer
+         38   25 000066E0 lineBlindTransferA
+         39   26 00006790 lineBlindTransferW
+         40   27 00006860 lineClose
+         41   28 00006910 lineCompleteCall
+         42   29 00006AC0 lineCompleteTransfer
+         43   2A 00006BD0 lineConfigDialog
+         44   2B 00006BE0 lineConfigDialogA
+         45   2C 00006C70 lineConfigDialogEdit
+         46   2D 00006C80 lineConfigDialogEditA
+         47   2E 00006D30 lineConfigDialogEditW
+         48   2F 00006E90 lineConfigDialogW
+         49   30 00006F70 lineConfigProvider
+         50   31 00006FA0 lineCreateAgentA
+         51   32 00007080 lineCreateAgentSessionA
+         52   33 00007130 lineCreateAgentSessionW
+         53   34 00007280 lineCreateAgentW
+         54   35 000073D0 lineDeallocateCall
+         55   36 000074A0 lineDevSpecific
+         56   37 000075B0 lineDevSpecificFeature
+         57   38 00007770 lineDial
+         58   39 00007780 lineDialA
+         59   3A 00007830 lineDialW
+         60   3B 00007900 lineDrop
+         61   3C 000079B0 lineForward
+         62   3D 000079C0 lineForwardA
+         63   3E 00007B10 lineForwardW
+         64   3F 00007C50 lineGatherDigits
+         65   40 00007C60 lineGatherDigitsA
+         66   41 00007EF0 lineGatherDigitsW
+         67   42 00008100 lineGenerateDigits
+         68   43 00008110 lineGenerateDigitsA
+         69   44 00008210 lineGenerateDigitsW
+         70   45 000082B0 lineGenerateTone
+         71   46 00008370 lineGetAddressCaps
+         72   47 00008380 lineGetAddressCapsA
+         73   48 00008500 lineGetAddressCapsW
+         74   49 000085B0 lineGetAddressID
+         75   4A 000085C0 lineGetAddressIDA
+         76   4B 000086F0 lineGetAddressIDW
+         77   4C 00008780 lineGetAddressStatus
+         78   4D 00008790 lineGetAddressStatusA
+         79   4E 00008840 lineGetAddressStatusW
+         80   4F 000088C0 lineGetAgentActivityListA
+         81   50 00008A90 lineGetAgentActivityListW
+         82   51 00008B90 lineGetAgentCapsA
+         83   52 00008D50 lineGetAgentCapsW
+         84   53 00008E60 lineGetAgentGroupListA
+         85   54 00009030 lineGetAgentGroupListW
+         86   55 00009130 lineGetAgentInfo
+         87   56 00009230 lineGetAgentSessionInfo
+         88   57 00009330 lineGetAgentSessionList
+         89   58 00009430 lineGetAgentStatusA
+         90   59 00009600 lineGetAgentStatusW
+         91   5A 00009700 lineGetAppPriority
+         92   5B 00009710 lineGetAppPriorityA
+         93   5C 00009850 lineGetAppPriorityW
+         94   5D 00009960 lineGetCallInfo
+         95   5E 00009970 lineGetCallInfoA
+         96   5F 00009A70 lineGetCallInfoW
+         97   60 00009B00 lineGetCallStatus
+         98   61 00009B90 lineGetConfRelatedCalls
+         99   62 00009C20 lineGetCountry
+        100   63 00009EE0 lineGetCountryA
+        101   64 00009F70 lineGetCountryW
+        102   65 0000A030 lineGetDevCaps
+        103   66 0000A040 lineGetDevCapsA
+        104   67 0000A0F0 lineGetDevCapsW
+        105   68 0000A1B0 lineGetDevConfig
+        106   69 0000A1C0 lineGetDevConfigA
+        107   6A 0000A2A0 lineGetDevConfigW
+        108   6B 0000A360 lineGetGroupListA
+        109   6C 0000A430 lineGetGroupListW
+        110   6D 0000A530 lineGetID
+        111   6E 0000A540 lineGetIDA
+        112   6F 0000A630 lineGetIDW
+        113   70 0000A9B0 lineGetIcon
+        114   71 0000A9C0 lineGetIconA
+        115   72 0000AA50 lineGetIconW
+        116   73 0000AB10 lineGetLineDevStatus
+        117   74 0000AB20 lineGetLineDevStatusA
+        118   75 0000AC20 lineGetLineDevStatusW
+        119   76 0000ACB0 lineGetMessage
+        120   77 0000ACD0 lineGetNewCalls
+        121   78 0000AD50 lineGetNumRings
+        122   79 0000ADD0 lineGetProviderList
+        123   7A 0000ADE0 lineGetProviderListA
+        124   7B 0000AE50 lineGetProviderListW
+        125   7C 0000AF60 lineGetProxyStatus
+        126   7D 0000B000 lineGetQueueInfo
+        127   7E 0000B100 lineGetQueueListA
+        128   7F 0000B2E0 lineGetQueueListW
+        129   80 0000B3F0 lineGetRequest
+        130   81 0000B400 lineGetRequestA
+        131   82 0000B650 lineGetRequestW
+        132   83 0000B700 lineGetStatusMessages
+        133   84 00024C80 lineGetTranslateCaps
+        134   85 00024D00 lineGetTranslateCapsA
+        135   86 00024DB0 lineGetTranslateCapsW
+        136   87 0000B7A0 lineHandoff
+        137   88 0000B7B0 lineHandoffA
+        138   89 0000B840 lineHandoffW
+        139   8A 0000B8E0 lineHold
+        140   8B 0000B970 lineInitialize
+        141   8C 0000BA30 lineInitializeExA
+        142   8D 0000BB00 lineInitializeExW
+        143   8E 0000BBB0 lineMakeCall
+        144   8F 0000BBC0 lineMakeCallA
+        145   90 0000BE30 lineMakeCallW
+        146   91 0000BF60 lineMonitorDigits
+        147   92 0000C000 lineMonitorMedia
+        148   93 0000C0A0 lineMonitorTones
+        149   94 0000C160 lineNegotiateAPIVersion
+        150   95 0000C220 lineNegotiateExtVersion
+        151   96 0000C2D0 lineOpen
+        152   97 0000C2E0 lineOpenA
+        153   98 0000C4B0 lineOpenW
+        154   99 0000C670 linePark
+        155   9A 0000C680 lineParkA
+        156   9B 0000C940 lineParkW
+        157   9C 0000CA70 linePickup
+        158   9D 0000CA80 linePickupA
+        159   9E 0000CB70 linePickupW
+        160   9F 0000CCA0 linePrepareAddToConference
+        161   A0 0000CCB0 linePrepareAddToConferenceA
+        162   A1 0000CDD0 linePrepareAddToConferenceW
+        163   A2 0000CEE0 lineProxyMessage
+        164   A3 0000CF80 lineProxyResponse
+        165   A4 0000D0D0 lineRedirect
+        166   A5 0000D0E0 lineRedirectA
+        167   A6 0000D170 lineRedirectW
+        168   A7 0000D210 lineRegisterRequestRecipient
+        169   A8 0000D2A0 lineReleaseUserUserInfo
+        170   A9 0000D330 lineRemoveFromConference
+        171   AA 0000D3C0 lineRemoveProvider
+        172   AB 0000D3F0 lineSecureCall
+        173   AC 0000D480 lineSendUserUserInfo
+        174   AD 0000D530 lineSetAgentActivity
+        175   AE 0000D5B0 lineSetAgentGroup
+        176   AF 0000D650 lineSetAgentMeasurementPeriod
+        177   B0 0000D6D0 lineSetAgentSessionState
+        178   B1 0000D760 lineSetAgentState
+        179   B2 0000D7F0 lineSetAgentStateEx
+        180   B3 0000D880 lineSetAppPriority
+        181   B4 0000D890 lineSetAppPriorityA
+        182   B5 0000D910 lineSetAppPriorityW
+        183   B6 0000D9B0 lineSetAppSpecific
+        184   B7 0000DA50 lineSetCallData
+        185   B8 0000DAF0 lineSetCallParams
+        186   B9 0000DBA0 lineSetCallPrivilege
+        187   BA 0000DC40 lineSetCallQualityOfService
+        188   BB 0000DCD0 lineSetCallTreatment
+        189   BC 00024E60 lineSetCurrentLocation
+        190   BD 0000DD70 lineSetDevConfig
+        191   BE 0000DD80 lineSetDevConfigA
+        192   BF 0000DE20 lineSetDevConfigW
+        193   C0 0000DEA0 lineSetLineDevStatus
+        194   C1 0000DF20 lineSetMediaControl
+        195   C2 0000E060 lineSetMediaMode
+        196   C3 0000E100 lineSetNumRings
+        197   C4 0000E180 lineSetQueueMeasurementPeriod
+        198   C5 0000E200 lineSetStatusMessages
+        199   C6 0000E280 lineSetTerminal
+        200   C7 00024FC0 lineSetTollList
+        201   C8 00024FD0 lineSetTollListA
+        202   C9 000250B0 lineSetTollListW
+        203   CA 0000E320 lineSetupConference
+        204   CB 0000E330 lineSetupConferenceA
+        205   CC 0000E590 lineSetupConferenceW
+        206   CD 0000E700 lineSetupTransfer
+        207   CE 0000E710 lineSetupTransferA
+        208   CF 0000E830 lineSetupTransferW
+        209   D0 0000E940 lineShutdown
+        210   D1 0000E960 lineSwapHold
+        211   D2 00025510 lineTranslateAddress
+        212   D3 000255D0 lineTranslateAddressA
+        213   D4 00025700 lineTranslateAddressW
+        214   D5 00025A50 lineTranslateDialog
+        215   D6 00025A60 lineTranslateDialogA
+        216   D7 00025B70 lineTranslateDialogW
+        217   D8 0000EA00 lineUncompleteCall
+        218   D9 0000EAA0 lineUnhold
+        219   DA 0000EB30 lineUnpark
+        220   DB 0000EB40 lineUnparkA
+        221   DC 0000EBE0 lineUnparkW
+        222   DD 0000F0C0 phoneClose
+        223   DE 0000F170 phoneConfigDialog
+        224   DF 0000F180 phoneConfigDialogA
+        225   E0 0000F210 phoneConfigDialogW
+        226   E1 0000F300 phoneDevSpecific
+        227   E2 0000F4D0 phoneGetButtonInfo
+        228   E3 0000F4E0 phoneGetButtonInfoA
+        229   E4 0000F520 phoneGetButtonInfoW
+        230   E5 0000F5A0 phoneGetData
+        231   E6 0000F620 phoneGetDevCaps
+        232   E7 0000F630 phoneGetDevCapsA
+        233   E8 0000F6C0 phoneGetDevCapsW
+        234   E9 0000F770 phoneGetDisplay
+        235   EA 0000F800 phoneGetGain
+        236   EB 0000F880 phoneGetHookSwitch
+        237   EC 0000F910 phoneGetID
+        238   ED 0000F920 phoneGetIDA
+        239   EE 0000F9C0 phoneGetIDW
+        240   EF 0000FD30 phoneGetIcon
+        241   F0 0000FD40 phoneGetIconA
+        242   F1 0000FDD0 phoneGetIconW
+        243   F2 0000FE90 phoneGetLamp
+        244   F3 0000FF10 phoneGetMessage
+        245   F4 0000FF30 phoneGetRing
+        246   F5 0000FFD0 phoneGetStatus
+        247   F6 0000FFE0 phoneGetStatusA
+        248   F7 00010020 phoneGetStatusMessages
+        249   F8 000100C0 phoneGetStatusW
+        250   F9 00010150 phoneGetVolume
+        251   FA 000101D0 phoneInitialize
+        252   FB 00010290 phoneInitializeExA
+        253   FC 00010350 phoneInitializeExW
+        254   FD 00010400 phoneNegotiateAPIVersion
+        255   FE 000104C0 phoneNegotiateExtVersion
+        256   FF 00010570 phoneOpen
+        257  100 00010660 phoneSetButtonInfo
+        258  101 00010670 phoneSetButtonInfoA
+        259  102 00010800 phoneSetButtonInfoW
+        260  103 00010880 phoneSetData
+        261  104 00010900 phoneSetDisplay
+        262  105 00010990 phoneSetGain
+        263  106 00010A10 phoneSetHookSwitch
+        264  107 00010AD0 phoneSetLamp
+        265  108 00010B50 phoneSetRing
+        266  109 00010BD0 phoneSetStatusMessages
+        267  10A 00010C60 phoneSetVolume
+        268  10B 00010CE0 phoneShutdown
+        269  10C 00025D00 tapiGetLocationInfo
+        270  10D 00025D10 tapiGetLocationInfoA
+        271  10E 00025E70 tapiGetLocationInfoW
+        272  10F 00010CF0 tapiRequestDrop
+        273  110 00010D80 tapiRequestMakeCall
+        274  111 00010D90 tapiRequestMakeCallA
+        275  112 00010F20 tapiRequestMakeCallW
+        276  113 00011290 tapiRequestMediaCall
+        277  114 000112F0 tapiRequestMediaCallA
+        278  115 00011590 tapiRequestMediaCallW
+
+  Section contains the following imports:
+
+    msvcrt.dll
+             18002E9B8 Import Address Table
+             1800393F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          12 ??1type_info@@UEAA@XZ
+                          34 ?terminate@@YAXXZ
+                         189 _initterm
+                          B7 _amsg_exit
+                          5A _XcptFilter
+                         459 free
+                          C8 _callnewh
+                         513 wcscspn
+                         416 _wtol
+                         480 iswdigit
+                         493 malloc
+                         50E wcschr
+                         370 _vsnprintf
+                         412 _wtoi
+                         376 _vsnwprintf
+                          63 __CxxFrameHandler4
+                         49F memcpy
+                         47F iswctype
+                         51D wcsrchr
+                         397 _wcsicmp
+                          5E __C_specific_handler
+                         4A3 memset
+
+    GDI32.dll
+             18002E578 Import Address Table
+             180038FB0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          43 CreateFontIndirectW
+                         277 GetCurrentObject
+                         368 SelectObject
+                         188 DeleteObject
+                         2B1 GetObjectW
+
+    USER32.dll
+             18002E840 Import Address Table
+             180039278 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         11A GetActiveWindow
+                         14E GetDlgItemInt
+                         332 SetDlgItemInt
+                         169 GetKeyState
+                          21 CallWindowProcW
+                         1F1 GetWindowRect
+                         37E SetWindowPos
+                          F7 EnumChildWindows
+                          76 CreateWindowExW
+                         29B OpenClipboard
+                         36E SetTimer
+                          4F CloseClipboard
+                         136 GetClipboardData
+                         324 SetClipboardData
+                         250 KillTimer
+                         28A MessageBoxW
+                         392 ShowWindow
+                         249 IsWindowEnabled
+                         10A EnumWindows
+                         37C SetWindowLongW
+                         339 SetForegroundWindow
+                         282 MessageBeep
+                         191 GetParent
+                         158 GetFocus
+                          47 CheckRadioButton
+                         37B SetWindowLongPtrW
+                         383 SetWindowTextW
+                         1E9 GetWindowLongPtrW
+                         337 SetFocus
+                         133 GetClientRect
+                          BA DialogBoxParamW
+                         1F8 GetWindowTextW
+                         318 SendMessageW
+                          F2 EndDialog
+                         30F SendDlgItemMessageW
+                         14D GetDlgItem
+                          EF EnableWindow
+                          A7 DefWindowProcW
+                         2AD PostMessageW
+                          B5 DestroyWindow
+                         1C8 GetSystemMetrics
+                         1CD GetThreadDesktop
+                         267 LoadStringW
+                         247 IsWindow
+                         2DF RegisterClassW
+                         1D9 GetUserObjectInformationW
+
+    KERNEL32.dll
+             18002E5A8 Import Address Table
+             180038FE0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         49C RegEnumValueW
+                         2F9 GetSystemInfo
+                         361 HeapAlloc
+                         37B InitializeCriticalSectionAndSpinCount
+                         365 HeapFree
+                         3DA LoadLibraryExW
+                         4C3 ReleaseActCtx
+                          B8 CreateActCtxW
+                         497 RegDeleteValueW
+                         10A DeactivateActCtx
+                           2 ActivateActCtx
+                         2FF GetSystemTimeAsFileTime
+                         460 QueryPerformanceCounter
+                         5B1 TerminateProcess
+                         592 SetUnhandledExceptionFilter
+                         5D3 UnhandledExceptionFilter
+                         4F4 RtlVirtualUnwind
+                         4ED RtlLookupFunctionEntry
+                         11E DeleteFileW
+                         342 GetWindowsDirectoryW
+                         4DF ResolveDelayLoadedAPI
+                         116 DelayLoadFailureHook
+                         666 lstrlenW
+                         4E5 RtlCaptureContext
+                         65A lstrcmpW
+                         358 GlobalSize
+                         2DB GetProfileIntW
+                         405 MulDiv
+                         1B7 FormatMessageW
+                         357 GlobalReAlloc
+                         35B GlobalUnlock
+                         354 GlobalLock
+                         350 GlobalFree
+                         349 GlobalAlloc
+                         22C GetCurrentThread
+                         2F6 GetSystemDirectoryW
+                         185 FindClose
+                         19C FindNextFileW
+                         553 SetLastError
+                         190 FindFirstFileW
+                         353 GlobalHandle
+                         273 GetLocalTime
+                         42B OutputDebugStringA
+                         321 GetTickCount
+                         65D lstrcmpiW
+                         5C4 TlsFree
+                         5C5 TlsGetValue
+                         624 WideCharToMultiByte
+                         1BB FreeLibrary
+                         28A GetModuleHandleW
+                         2C9 GetProcessHeap
+                         229 GetCurrentProcessId
+                         1EF GetComputerNameW
+                         119 DeleteCriticalSection
+                         3E6 LocalFree
+                         2C2 GetProcAddress
+                         4DC ResetEvent
+                          F9 CreateThread
+                         3DB LoadLibraryW
+                          8E CloseHandle
+                         5C3 TlsAlloc
+                         538 SetEvent
+                         272 GetLastError
+                         5A2 Sleep
+                         406 MultiByteToWideChar
+                          C7 CreateEventW
+                         1C2 GetACP
+                         137 DuplicateHandle
+                         4C5 ReleaseMutex
+                         337 GetVersionExW
+                         22D GetCurrentThreadId
+                         1BC FreeLibraryAndExitThread
+                         3E1 LocalAlloc
+                         5FD WaitForSingleObject
+                         665 lstrlenA
+                          E2 CreateMutexW
+                         5C6 TlsSetValue
+                         13F EnterCriticalSection
+                         228 GetCurrentProcess
+                         37A InitializeCriticalSection
+                         286 GetModuleFileNameW
+                         3D4 LeaveCriticalSection
+
+  Section contains the following delay load imports:
+
+    api-ms-win-service-management-l1-1-0.dll
+              00000001 Characteristics
+      000000018003A860 Address of HMODULE
+      000000018003E1C8 Import Address Table
+      00000001800369C0 Import Name Table
+      0000000180036EA8 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180001BF5     0 CloseServiceHandle
+                                    0000000180001B46     5 OpenServiceW
+                                    0000000180001BD1     6 StartServiceW
+                                    0000000180001BE3     4 OpenSCManagerW
+
+    api-ms-win-service-winsvc-l1-1-0.dll
+              00000001 Characteristics
+      000000018003A868 Address of HMODULE
+      000000018003E1F0 Import Address Table
+      00000001800369E8 Import Name Table
+      0000000180036ED0 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180001C07     A QueryServiceStatus
+
+    ADVAPI32.dll
+              00000001 Characteristics
+      000000018003A870 Address of HMODULE
+      000000018003E000 Import Address Table
+      00000001800367F8 Import Name Table
+      0000000180036EE0 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180002377   16A GetSidIdentifierAuthority
+                                    00000001800023E3   1AF LookupPrivilegeValueW
+                                    00000001800023D1    1F AdjustTokenPrivileges
+                                    00000001800023BF   2B0 RegSaveKeyW
+                                    00000001800023AD   16D GetSidSubAuthorityCount
+                                    000000018000239B   16C GetSidSubAuthority
+                                    0000000180002389   19E IsValidSid
+                                    0000000180001C92   2A6 RegQueryValueExW
+                                    0000000180001E19   298 RegOpenKeyExA
+                                    0000000180001D1D   17B GetUserNameW
+                                    0000000180001D2F   299 RegOpenKeyExW
+                                    0000000180001D41   2A0 RegQueryInfoKeyW
+                                    0000000180001D53   268 RegCloseKey
+                                    0000000180001D65   2B6 RegSetValueExW
+                                    0000000180001D77   287 RegEnumKeyExW
+                                    0000000180001D89   271 RegCreateKeyExW
+                                    0000000180001D9B   277 RegDeleteKeyExW
+                                    0000000180001DAD   170 GetTokenInformation
+                                    0000000180001DBF   227 OpenThreadToken
+                                    0000000180001DD1   134 FreeSid
+                                    0000000180001DE3   222 OpenProcessToken
+                                    0000000180001DF5    20 AllocateAndInitializeSid
+                                    0000000180001E07   11A EqualSid
+                                    0000000180001E2B   2A5 RegQueryValueExA
+
+    ole32.dll
+              00000001 Characteristics
+      000000018003A878 Address of HMODULE
+      000000018003E200 Import Address Table
+      00000001800369F8 Import Name Table
+      0000000180036F70 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180001E3D    60 CoInitialize
+                                    0000000180001EEC    54 CoGetObject
+                                    0000000180001EC8   20D StringFromGUID2
+                                    0000000180001EDA    91 CoUninitialize
+
+    RPCRT4.dll
+              00000001 Characteristics
+      000000018003A880 Address of HMODULE
+      000000018003E118 Import Address Table
+      0000000180036910 Import Name Table
+      0000000180036F98 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180001FBF   174 RpcBindingFree
+                                    0000000180001FAD   215 RpcStringFreeW
+                                    0000000180001FE3    A4 NdrClientCall3
+                                    0000000180001EFE   176 RpcBindingFromStringBindingW
+                                    0000000180001F9B    2E I_RpcExceptionFilter
+                                    0000000180001F89   211 RpcStringBindingComposeW
+                                    0000000180001FD1   187 RpcBindingSetAuthInfoW
+
+    SHLWAPI.dll
+              00000001 Characteristics
+      000000018003A888 Address of HMODULE
+      000000018003E158 Import Address Table
+      0000000180036950 Import Name Table
+      0000000180036FD8 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    00000001800020C8   12D StrCmpW
+                                    00000001800020DA   12C StrCmpNW
+                                    0000000180002080   158 StrToIntW
+                                    00000001800020B6   123 StrCmpIW
+                                    0000000180002092   11E StrChrW
+                                    0000000180001FF5       Ordinal   346
+                                    00000001800023F5       Ordinal   217
+                                    00000001800020A4       Ordinal   191
+
+    rtutils.dll
+              00000001 Characteristics
+      000000018003A890 Address of HMODULE
+      000000018003E228 Import Address Table
+      0000000180036A20 Import Name Table
+      0000000180037018 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180002189    1A TraceDeregisterW
+                                    00000001800020EC    27 TraceVprintfExA
+                                    0000000180002177    26 TraceRegisterExW
+
+    WINMM.dll
+              00000001 Characteristics
+      000000018003A898 Address of HMODULE
+      000000018003E1A0 Import Address Table
+      0000000180036998 Import Name Table
+      0000000180037038 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180002238    4B midiOutMessage
+                                    000000018000224A    A9 waveOutMessage
+                                    000000018000219B    39 midiInMessage
+                                    0000000180002226    96 waveInMessage
+
+    CRYPTSP.dll
+              00000001 Characteristics
+      000000018003A8A0 Address of HMODULE
+      000000018003E0C8 Import Address Table
+      00000001800368C0 Import Name Table
+      0000000180037060 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000225C    1C CryptReleaseContext
+                                    0000000180002365     8 CryptDestroyKey
+                                    0000000180002353     2 CryptAcquireContextW
+                                    0000000180002341     B CryptEncrypt
+                                    000000018000232F     5 CryptDecrypt
+                                    00000001800022E7     7 CryptDestroyHash
+                                    00000001800022F9    19 CryptHashData
+                                    000000018000230B     6 CryptDeriveKey
+                                    000000018000231D     4 CryptCreateHash
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+        C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       2D000 .text

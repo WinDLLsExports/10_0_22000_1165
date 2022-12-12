@@ -1,0 +1,1347 @@
+            <xs:element name="DisplayInformation" type="dcmPS:DisplayInformation" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="ExtensionPoint" type="dcmPS:ExtensionPoint" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="ID" type="dcmPS:ID" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="RequiresConsent" type="xs:boolean" minOccurs="1" maxOccurs="1"/>            
+            <xs:element name="Script" type="dcmPS:Script" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence>
+          <xs:field xpath="ID"/>
+          <xs:field xpath="Name"/>
+          <xs:selector xpath="Parameter"/>
+          <xs:selector xpath="Resolver"/>
+          <xs:selector xpath="Rootcause"/>
+          <xs:sequence>
+        </xs:complexType>
+        </xs:unique>
+        <xs:attribute name="clientSupported" type="xs:boolean" use="required"/>
+        <xs:attribute name="serverSupported" type="xs:boolean" use="required"/>
+        <xs:complexType>
+        <xs:unique name="No_cmdline_parameters_may_have_the_same_name">
+        <xs:unique name="No_display_parameters_may_have_the_same_name">
+        <xs:unique name="No_global_resolver_may_have_the_same_ID">
+        <xs:unique name="No_global_rootcause_may_have_the_same_ID">
+        <xs:unique name="No_local_resolver_may_have_the_same_ID">
+        <xs:unique name="No_local_rootcause_may_have_the_same_ID">
+        <xs:unique name="No_script_parameters_may_have_the_same_name">
+      </xs:element>
+      </xs:element>    
+      </xs:extension>
+      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##any" processContents="lax"/>
+      <xs:element name="AllowDynamicResponses" type="xs:boolean" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Choice" type="dcmPS:Choice" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Choices" type="dcmPS:Choices" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="CommandLine" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ContextParameters" type="dcmPS:Parameters" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ContextParameters" type="dcmPS:Parameters" minOccurs="1" maxOccurs="1"/>      
+      <xs:element name="DefaultValue" type="xs:string" minOccurs="1" maxOccurs="1"/>      
+      <xs:element name="Description" type="dcmRS:OptionalResource" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="DiagnosticIdentification" type="dcmPS:DiagnosticIdentification" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="DisplayInformation" type="dcmPS:DisplayInformation" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ExtensionPoint" type="dcmPS:ExtensionPoint" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ExtensionPoint" type="dcmPS:ExtensionPoint" minOccurs="1" maxOccurs="1"/>      
+      <xs:element name="FileName" type="dcmPS:Name" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ID" type="dcmPS:ID" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Interactions" type="dcmPS:Interactions" minOccurs="1" maxOccurs="1"/> 
+      <xs:element name="LaunchUIInteraction" type="dcmPS:LaunchUIInteraction" minOccurs="0" maxOccurs="unbounded"/>  
+      <xs:element name="LaunchUIInteractions" type="dcmPS:LaunchUIInteractions" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="MultipleResponseInteraction" type="dcmPS:MultipleResponseInteraction" minOccurs="0" maxOccurs="unbounded"/>  
+      <xs:element name="MultipleResponseInteractions" type="dcmPS:MultipleResponseInteractions" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Name" type="dcmPS:Name" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Name" type="dcmRS:MandatoryResource" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Parameter" type="dcmPS:Parameter" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Parameters" type="dcmPS:Parameters" minOccurs="1" maxOccurs="1">
+      <xs:element name="PauseInteraction" type="dcmPS:PauseInteraction" minOccurs="0" maxOccurs="unbounded"/>  
+      <xs:element name="PauseInteractions" type="dcmPS:PauseInteractions" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="PowerShellVersion" type="dcmPS:Version" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="PowerShellVersion" type="dcmPS:Version" minOccurs="1" maxOccurs="1"/>      
+      <xs:element name="PrivacyLink" type="dcmPS:Link" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="PrivacyLink" type="dcmPS:Link" minOccurs="1" maxOccurs="1"/>      
+      <xs:element name="ProcessArchitecture" type="dcmPS:ProcessArchitecture" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="RegularExpression" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="RequiresElevation" type="xs:boolean" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="RequiresInteractivity" type="xs:boolean" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Resolver" minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Resolvers" type="dcmPS:Resolvers" minOccurs="1" maxOccurs="1">
+      <xs:element name="Rootcause" type="dcmPS:GlobalRootcause" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element name="Rootcause" type="dcmPS:LocalRootcause" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element name="Rootcauses" type="dcmPS:GlobalRootcauses" minOccurs="1" maxOccurs="1">
+      <xs:element name="Rootcauses" type="dcmPS:LocalRootcauses" minOccurs="1" maxOccurs="1">
+      <xs:element name="Script" type="dcmPS:Script" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="SingleResponseInteraction" type="dcmPS:SingleResponseInteraction" minOccurs="0" maxOccurs="unbounded"/>  
+      <xs:element name="SingleResponseInteractions" type="dcmPS:SingleResponseInteractions" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="SupportedOSVersion" type="dcmPS:SupportedOSVersion" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="TextInteraction" type="dcmPS:TextInteraction" minOccurs="0" maxOccurs="unbounded"/>  
+      <xs:element name="TextInteractions" type="dcmPS:TextInteractions" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Troubleshooter" type="dcmPS:Troubleshooter" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Value" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Verifier" type="dcmPS:Verifier" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Verifier" type="dcmPS:Verifier" minOccurs="1" maxOccurs="1"/>        
+      <xs:element name="Version" type="dcmPS:Version" minOccurs="1" maxOccurs="1"/>
+      <xs:enumeration value="amd64"/>
+      <xs:enumeration value="Any"/>
+      <xs:enumeration value="arm"/>
+      <xs:enumeration value="ia64"/>
+      <xs:enumeration value="x86"/>
+      <xs:extension base="dcmPS:Version">
+      <xs:maxLength value="1024"/>
+      <xs:maxLength value="256"/>
+      <xs:minLength value="0"/>
+      <xs:minLength value="1"/>
+      <xs:pattern value="(http[s]?:\/\/.+)?"/>
+      <xs:pattern value="[^ :/\r\n\t\\]+"/>
+      <xs:pattern value="[^\']+"/>
+      <xs:pattern value="[0-9]+([.][0-9]+)+"/>
+    </xs:restriction>
+    </xs:sequence>
+    </xs:simpleContent>
+    <xs:attribute name="Localized" type="xs:boolean" use="required"/>
+    <xs:attribute name="SchemaVersion" type="dcmPS:Version" use="required"/>
+    <xs:restriction base="dcmPS:Name">
+    <xs:restriction base="xs:string">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+    <xs:sequence>
+    <xs:simpleContent>
+  </xs:complexType>
+  </xs:complexType>  
+  </xs:simpleType>
+  <xs:complexType name="Choice">
+  <xs:complexType name="Choices">
+  <xs:complexType name="DiagnosticIdentification">
+  <xs:complexType name="DisplayInformation">
+  <xs:complexType name="ExtensionPoint">
+  <xs:complexType name="GlobalDiagnosticPackage">
+  <xs:complexType name="GlobalRootcause">
+  <xs:complexType name="GlobalRootcauses">
+  <xs:complexType name="Interactions">
+  <xs:complexType name="LaunchUIInteraction">
+  <xs:complexType name="LaunchUIInteractions">
+  <xs:complexType name="LocalDiagnosticPackage">
+  <xs:complexType name="LocalRootcause">
+  <xs:complexType name="LocalRootcauses">
+  <xs:complexType name="MultipleResponseInteraction">
+  <xs:complexType name="MultipleResponseInteractions">
+  <xs:complexType name="Parameter">
+  <xs:complexType name="Parameters">
+  <xs:complexType name="PauseInteraction">
+  <xs:complexType name="PauseInteractions">
+  <xs:complexType name="Resolvers">
+  <xs:complexType name="Script">
+  <xs:complexType name="SingleResponseInteraction">
+  <xs:complexType name="SingleResponseInteractions">
+  <xs:complexType name="SupportedOSVersion">
+  <xs:complexType name="TextInteraction">
+  <xs:complexType name="TextInteractions">
+  <xs:complexType name="Troubleshooter">
+  <xs:complexType name="Verifier">
+  <xs:element name="AdvDiagnosticPackage" type="dcmPS:LocalDiagnosticPackage"/>
+  <xs:element name="DiagnosticPackage" type="dcmPS:GlobalDiagnosticPackage"/>
+  <xs:import namespace="http://www.microsoft.com/schemas/dcm/resource/2007" schemaLocation="resource_schema.xsd"/>
+  <xs:simpleType name="ID">
+  <xs:simpleType name="Link">
+  <xs:simpleType name="MandatoryResource">
+  <xs:simpleType name="Name">
+  <xs:simpleType name="OptionalResource">
+  <xs:simpleType name="ProcessArchitecture">
+  <xs:simpleType name="Version">
+ Microsoft Corporation. All rights reserved.
+ Operating System
+ Windows
+!0I0U0
+!This program cannot be run in DOS mode.
+"000I0Y0
+$SVW3
+$SVWj
+$u0f9B
+%hs!%p: 
+%hs(%d) tid(%x) %08X %ws
+%hs(%u)\%hs!%p: 
+%I64u
+%s%c%s
+%s\%s
+%SystemRoot%\Diagnostics
+%TEMP%
+%TMP%
+%u.%u
+&050=0J0
+&PWSV
+(caller: %p) 
+*.diagpkg
+*0e0z0
+,0004080<0@0D0H0L0P0T0X0`0h0
+.?AVCAtlException@ATL@@
+.?AVexception@@
+.?AVResultException@wil@@
+.00cfg
+.9q(u
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.data
+.data$brc
+.data$r$brc
+.edata
+.gfids
+.giats
+.idata
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.rdata
+.rdata$brc
+.rdata$sxdata
+.rdata$voltmd
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+.text
+.text$di
+.text$mn
+.text$x
+.text$yd
+.xdata$x
+: :(:8:\:l:
+:!:>:Z:
+:";z;
+:#:+:3:?:H:M:S:]:g:w:
+:$:*:7:B:[:f:
+:$:7:J:]:v:Y;
+:*:G:
+:*;<;S;v;
+:*;P;v;
+:,:t:
+:@;m;
+:[:u:
+:>;d;
+:0;I;
+:4:>:N:U:n:
+:7:^:
+:B:W:c:n:
+:T:]:
+:X:i:
+; ;(;,;4;8;@;D;L;P;l;p;
+;"<y<
+;#;o;
+;#<A<Z<
+;&;-;7;
+;(<-<?<]<q<w<<=Z=i=r={=
+;.;y;
+;/<[<~<
+;@;I;
+;+;4;x;
+;+;V;
+;+<q<g=
+;<;W;^;
+;'<b<
+;><g<
+;2;7;q;
+;2<=<
+;4;Q;m;
+;6;P;
+;8;E;W;`;l;t;
+;b<m<
+;O;|;
+;S<a<}<
+?!?J?S?_?l?|?
+?"?;?U?y?
+?$?5?<?F?k?r?
+?&?.?;?A?H?i?
+??0exception@@QAE@ABV0@@Z
+??0exception@@QAE@XZ
+??1exception@@UAE@XZ
+??1type_info@@UAE@XZ
+?+?B?R?
+?A?y?
+?J?X?w?
+?T?a?h?s?z?
+?terminate@@YAXXZ
+@.reloc
+@.rsrc
+[%hs(%hs)]
+[%hs]
+__CxxFrameHandler3
+__dllonexit
+_amsg_exit
+_callnewh
+_CxxThrowException
+_except_handler4_common
+_initterm
+_lock
+_onexit
+_purecall
+_unlock
+_vsnprintf
+_vsnprintf_s
+_vsnwprintf
+_wcsicmp
+_wcslwr_s
+_wcsnicmp
+_wtoi
+_XcptFilter
+`.data
+{9{$t
+|$8;x
+|$89x
+|ResultPathWW,
++D$ j
++StatusWW
+<!=R=w=
+<$<]<w<
+<$=T=]=
+<&<@<V<u<}<
+<&<B<U<}<
+<(<0<8<@<\<l<t<x<
+<,<@<V<
+</ExtensionPoint>
+</xs:schema>
+<?=g=
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><Choice/>
+<?xml version="1.0" encoding="utf-8"?><Choices/>
+<?xml version="1.0" encoding="utf-8"?><ComputerInformation/>
+<?xml version="1.0" encoding="utf-8"?><Data/>
+<?xml version="1.0" encoding="utf-8"?><DebugReport/>
+<?xml version="1.0" encoding="utf-8"?><Detail/>
+<?xml version="1.0" encoding="utf-8"?><DetailedInformation/>
+<?xml version="1.0" encoding="utf-8"?><DisplayInformation><Name></Name><Description></Description></DisplayInformation>
+<?xml version="1.0" encoding="utf-8"?><ExtensionPoint>
+<?xml version="1.0" encoding="utf-8"?><Function/>
+<?xml version="1.0" encoding="utf-8"?><Interactions/>
+<?xml version="1.0" encoding="utf-8"?><LaunchUIInteraction/>
+<?xml version="1.0" encoding="utf-8"?><MultipleResponseInteraction/>
+<?xml version="1.0" encoding="utf-8"?><PackageInformation/>
+<?xml version="1.0" encoding="utf-8"?><Parameters/>
+<?xml version="1.0" encoding="utf-8"?><PauseInteraction/>
+<?xml version="1.0" encoding="utf-8"?><Problem/>
+<?xml version="1.0" encoding="utf-8"?><Resolution/>
+<?xml version="1.0" encoding="utf-8"?><Resolutions/>
+<?xml version="1.0" encoding="utf-8"?><ResultReport/>
+<?xml version="1.0" encoding="utf-8"?><Rootcause/>
+<?xml version="1.0" encoding="utf-8"?><RootCause/>
+<?xml version="1.0" encoding="utf-8"?><Rootcauses Version="1.0"/>
+<?xml version="1.0" encoding="utf-8"?><RootCauses/>
+<?xml version="1.0" encoding="utf-8"?><Script/>
+<?xml version="1.0" encoding="utf-8"?><SingleResponseInteraction/>
+<?xml version="1.0" encoding="utf-8"?><TextInteraction/>
+<'<?<_<n<
+<-<M<l<z<
+<-=}=
+<>=Y=m=
+<1<A<W<e<
+<2=H={=
+<4=O=c=
+<6<@<d<n<
+<C=j=
+<G/t(
+<J=e=v=
+<T=z=
+<X<.=C=[=
+<xs:schema xmlns:dcmPS="http://www.microsoft.com/schemas/dcm/package/2007" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dcmRS="http://www.microsoft.com/schemas/dcm/resource/2007" targetNamespace="http://www.microsoft.com/schemas/dcm/package/2007" elementFormDefault="unqualified">
+<xs:schema xmlns:dcmRS="http://www.microsoft.com/schemas/dcm/resource/2007" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.microsoft.com/schemas/dcm/resource/2007" elementFormDefault="unqualified">
+=!=}=
+=!=+=:=T=
+=!=A=b=f=l=p=v=z=
+=&=m=
+=(>S>h>q>
+=@>Z>r>
+=\=t=
+=+>>>S>
+=-=O=d=
+=0=B=T=f=
+=A=q=
+=D>j>
+=L>U>[>
+=R>W>m>y>
+> ?q?
+> >2>e>}>
+>#>:>
+>(>;>[>v>
+>(><>
+>)?=?U?n?
+>)>A>
+>*?]?
+>*?x?
+>,?B?
+>,?W?^?v?
+>,>P>
+>/>]>x>
+>??p?
+>+>;>A>[>a>
+>2>J>T>u>~>
+>5>I>`>w>
+>G>e>{>
+>K?R?\?
+>M?m?
+>N>o>y>
+>X?z?
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+0!090
+0#0*0=0M0W0}0
+0$1O1g1
+0.0D0c0k0~0
+0\0w0
+0+0D0
+000R0`0n0
+011\1v1
+0123456789ABCDEF
+020U0x0
+040904B0
+040B0S0c0|0
+041]1t1
+080C0[0d0~0
+0A0|0
+0D0T0{0
+0E0V0k0x0
+0F0N0}0
+0K1q1
+0P1n1
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+1!2P3
+1#2o2
+1(2?2L2l2x2
+1)1A1
+1)1L1o1
+1.1:1
+1.2X2
+1.3.6.1.4.1.311.10.3.6
+10.0.22000.856
+10.0.22000.856 (WinBuild.160101.0800)
+101]1c1l1x1
+102P2Z2
+111c1
+112C2Y2
+121O1
+132`2
+132V2j2{2
+142W2
+181k1
+182O2c2
+192T2^3
+1J2v2
+1S1|1
+1S1e1
+2#373N3b3p3
+2$3N3
+2/2U2
+2;2v2
+2?2J2o2z2 3
+2=2R2[2o2
+2>2N2S2~2
+20C0u0
+2-3P3
+272s2
+282W2
+282X2\2`2d2h2t2
+2A2d2
+2FColorWWW
+2I2t2
+2N2e2v2
+2P2r2
+2U2q2
+3 4J4
+3!4r4
+3"3P3g3
+3#3c3
+3#4F4}4
+3#4m4
+3%3>3
+3&3[3u3
+3,343T3k3
+3:4H4`4k4
+3?3z3
+3=4t4
+313s3
+324l4
+343;3S3{3
+343L3d3
+374n4
+374w4
+383b3
+393Q3
+394h4
+3E3L3]3x3
+3G3j3
+3G3y3
+3R3e3
+3T4l4
+4%5.5>5G5W5`5y5
+4(494V4q4z4
+4(4q4
+4*546A6N6Z6
+4/4Y4h4}4
+4+5S5j5q5{5
+4=5j5t5
+4=5S5
+40]0o0
+414I4~4
+414q4
+434b4
+4'4[4
+4'404
+444M4W4w4
+4-5X5a6
+474S4b4
+4B4L4[4
+4E4W4
+4H4w4
+4K4T4Z4
+4M5t5
+5 5=5O5^5e5s5
+5 636
+5#5h5
+5(6=6o6|6
+5)6A6~6
+5+5o5
+5+5S5s5|5
+545@5l5
+545<5D5L5X5|5
+5B6u6
+5D5f5~5
+5d5k5
+5D5K5\5g5o5
+5G5l5
+5J5|5
+5Y6t6
+6 636P6U6o6
+6!6/6g6
+6!777a7
+6#7@7m7
+6#7G7
+6$6,646<6D6L6T6\6d6l6t6
+6)626=6T6^6
+6*6Q6j6
+6<6d6
+616I6]6
+636L6
+6-797b7p7
+6-7W7
+6a6x6
+6E7w7
+6I6p6
+6O6~6
+6Y7g7
+7 797R7r7
+7"7^7
+7$8E8v8
+7(8/8T8Z8d8
+7*7N7a7
+7.7R7h7
+7.7U7
+7.7v7
+7/7F7P7e7
+7+7N7l7
+7<7L7X7`7
+7=7C7U7g7
+717M7g7
+749@9l:%<6<o<
+768R8\8|8
+7-7D7X7o7
+7Diagnose
+7H7U7
+7N7q7
+7V8|8
+8#8H8
+8#9e9l9p:
+8$8,848<8D8P8t8|8
+8%8~8
+8(8U8
+8*8H8e8
+8,9I9
+8.8G8f8
+8:8L8c8
+8<8R8p8
+8=8U8h8
+8>8M8#9G9
+829>9Z9z9
+83!IScriptedDiagnosticExecution
+888v8
+8'8w8
+898L8|8
+8D8"9b9t9
+8G9_9y9~9
+8I8`8r8
+8L9x9
+8SVW3
+8xInteractions
+9!939[9m9v9
+9"969.:
+9$9,949<9D9P9p9x9
+9&969g9
+9(:D:
+9*9O9d9
+9,9N9p9
+9.9N9
+9':>:\:x:
+9-:V:o:
+9^9e9v9
+9_ v8
+9_(s-j
+9_0uo
+9+9?9]9h9{9
+909I9g9
+929Z9t9
+97w0B
+9C9}9
+9D$<u
+9d9x9
+9H:O:d:
+9M9c9
+9N9O:
+9R:c:l:
+9S8v1
+9w<v4
+a([a-zA-Z0-9])
+Activity
+admin
+ADVAPI32.dll
+AllocateAndInitializeSid
+AllowDynamicResponses
+amd64
+analytic
+Answer
+AnswerWWd
+ApplicabilityWWW
+Architecture
+b([ \t])
+base\diagnosis\pdi\scripteddiag\engine\common\sdiaglib.cpp
+c([a-zA-Z])
+C;_<r
+CallContext:[%hs] 
+calloc
+CancelWW
+CertCloseStore
+CertCompareCertificate
+CertDuplicateCertificateContext
+CertFindCertificateInStore
+CertFreeCertificateContext
+CertGetCertificateContextProperty
+CertGetEnhancedKeyUsage
+CertGetNameStringW
+CertOpenSystemStoreW
+CertVerifyCertificateChainPolicy
+CheckTokenMembership
+Choice
+Choices
+ChoicesW
+Client
+clientSupported
+ClientWW
+CloseHandle
+CoAllowSetForegroundWindow
+CoCreateInstance
+CommandLine
+CompanyName
+Contents
+ContextParameters
+ConvertSidToStringSidW
+ConvertStringSecurityDescriptorToSecurityDescriptorW
+CopyFileW
+CoSetProxyBlanket
+CreateDirectoryW
+CreateFileW
+CreateMutexExW
+CreateSemaphoreExW
+CreateStreamOnHGlobal
+CRIMT
+CRYPT32.dll
+CryptCATAdminAcquireContext
+CryptCATAdminCalcHashFromFileHandle
+CryptCATAdminEnumCatalogFromHash
+CryptCATAdminReleaseCatalogContext
+CryptCATAdminReleaseContext
+CryptCATCatalogInfoFromContext
+CryptCATClose
+CryptCATEnumerateMember
+CryptCATGetAttrInfo
+CryptCATGetCatAttrInfo
+CryptCATOpen
+CScriptedDiag::AddFileToReport
+CScriptedDiag::AddXmlToReport
+CScriptedDiag::Cancel
+CScriptedDiag::CheckAndSetState
+CScriptedDiag::CheckGroupPolicy
+CScriptedDiag::CheckState
+CScriptedDiag::CheckStateInitialized
+CScriptedDiag::CopyPackage
+CScriptedDiag::Diagnose
+CScriptedDiag::ExitUpdateState
+CScriptedDiag::get_Applicability
+CScriptedDiag::get_DiagnosticIdentification
+CScriptedDiag::get_DisplayInformation
+CScriptedDiag::get_ElevationContext
+CScriptedDiag::get_ExtensionPoint
+CScriptedDiag::get_Interactions
+CScriptedDiag::get_Interactivity
+CScriptedDiag::get_PrivacyLink
+CScriptedDiag::get_Publisher
+CScriptedDiag::get_Rootcauses
+CScriptedDiag::GetActivationContext
+CScriptedDiag::GetIDsOfNames
+CScriptedDiag::GetPackageXml
+CScriptedDiag::GetSystemTempDirPath
+CScriptedDiag::GetTempDirPath
+CScriptedDiag::GetTempPackagePath
+CScriptedDiag::GetTypeInfo
+CScriptedDiag::GetTypeInfoCount
+CScriptedDiag::GetUniqueName
+CScriptedDiag::ImpersonateActiveUser
+CScriptedDiag::Initialize
+CScriptedDiag::InitializeHost
+CScriptedDiag::InitializePackage
+CScriptedDiag::Interact
+CScriptedDiag::Invoke
+CScriptedDiag::IsInboxPackage
+CScriptedDiag::ParseResolutionId
+CScriptedDiag::QueryInterface
+CScriptedDiag::RecordProgress
+CScriptedDiag::RecordRootcause
+CScriptedDiag::RecordTelemetry
+CScriptedDiag::Resolve
+CScriptedDiag::Rollback
+CScriptedDiag::SaveResults
+CScriptedDiag::SecurePackage
+CScriptedDiag::SetState
+CScriptedDiag::ValidatePackagePath
+CScriptedDiag::Verify
+CScriptedDiag::VerifyInboxPackageTrust
+CScriptedDiag::VerifyPackageTrust
+CScriptedDiagFactory::CreateInstance
+CScriptedDiagFactory::QueryInterface
+CScriptedDiagInteraction::AddFileToReport
+CScriptedDiagInteraction::AddXmlToReport
+CScriptedDiagInteraction::Interact
+CScriptedDiagInteraction::QueryInterface
+CScriptedDiagInteraction::RecordProgress
+CScriptedDiagInteraction::RecordRootcause
+CScriptedDiagInteraction::RecordTelemetry
+CScriptedDiagWWW%
+D$$Ph
+D$(PjvZ
+D$<PSh
+d([0-9])
+D:P(A;OICI;GA;;;SY)(A;OICI;GA;;;BA)
+D:P(A;OICI;GA;;;SY)(A;OICI;GA;;;BA)(A;OICI;GA;;;%s)
+DbgPrintEx
+DCM: Verify trust falied on: %ws, %ws.
+Debug
+debug
+DebugBreak
+DebugReport.xml
+DefaultValue
+DeleteCriticalSection
+DeleteFileW
+Description
+Detected
+DetectionInformation
+Diagnose
+DiagnosticIdentification
+DiagnosticIdentificationd
+DiagPackage.cat
+DiagPackage::AddXmlToDebugReport
+DiagPackage::AddXmlToReport
+DiagPackage::BuildReportComputerXml
+DiagPackage::BuildReportPackageXml
+DiagPackage::BuildReportPXml
+DiagPackage::CheckApplicability
+DiagPackage::CheckForceUserModeExtension
+DiagPackage::CheckPowerShellVersion
+DiagPackage::Diagnose
+DiagPackage::get_Applicability
+DiagPackage::get_DiagnosticIdentification
+DiagPackage::get_DisplayInformation
+DiagPackage::get_ExtensionPoint
+DiagPackage::get_Interactions
+DiagPackage::get_Rootcauses
+DiagPackage::Initialize
+DiagPackage::InitializeRootcause
+DiagPackage::InitializeRootcauses
+DiagPackage::InitializeTroubleshooter
+DiagPackage::Interact
+DiagPackage::ParsePackageXml
+DiagPackage::ParsePrivacyLink
+DiagPackage::RecordRootcause
+DiagPackage::Resolve
+DiagPackage::SaveResults
+DiagPackage::TraceResult
+DiagPackage::UpdateApplicability
+DiagPackage::ValidatePackageXml
+DiagPackage::Verify
+DisplayInformation
+DisplayInformationWWd
+DllCanUnloadNow
+DllGetClassObject
+DllMain
+Document error: %ws in %ws on %d:%d
+DuplicateTokenEx
+Dynamic
+EnableDiagnostics
+EnterCriticalSection
+en-US
+Error
+ErrorCode
+EventData
+EventRegister
+EventUnregister
+EventWriteTransfer
+EVNT$
+Exception
+ExpandEnvironmentStringsForUserW
+ExpandEnvironmentStringsW
+ExtensionPoint
+ExtensionPointWWd
+f*ElevationRequirementd
+Failed
+FailFast
+false
+FileDescription
+Filename
+FileName
+FileVersion
+FindClose
+FindFirstFileW
+FindNextFileW
+FindResourceExW
+fIScriptedDiagnosticClientWWW
+Fixed
+ForceUsermode
+FormatMessageW
+FreeLibrary
+FreeSid
+FunctionName
+Functions
+GetComputerNameExW
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThread
+GetCurrentThreadId
+GetDateFormatEx
+GetDriveTypeW
+GetFullPathNameW
+GetLastError
+GetLocalTime
+GetLongPathNameW
+GetModuleFileNameA
+GetModuleFileNameW
+GetModuleHandleExW
+GetModuleHandleW
+GetNativeSystemInfo
+GetProcAddress
+GetProcessHeap
+GetSystemTimeAsFileTime
+GetTempPath2W
+GetThreadPreferredUILanguages
+GetTickCount
+GetTickCount64
+GetTimeFormatEx
+GetTokenInformation
+GetVersionExW
+GetWindowsDirectoryW
+GlobalAlloc
+GlobalFree
+GlobalLock
+GlobalUnlock
+h([0-9a-fA-F])
+Header
+HeapAlloc
+HeapFree
+hPackagePathW
+http://www.microsoft.com/schemas/dcm/package/2007
+http://www.microsoft.com/schemas/dcm/resource/2007
+ImpersonateLoggedOnUser
+Informational
+Initialize
+InitializeCriticalSection
+InputArguments
+Interact
+Interaction
+Interaction::BuildDynamicString
+Interaction::BuildExtensionNode
+Interaction::BuildInteractionArray
+Interaction::BuildInteractionDocument
+Interaction::CreateInteractionsFromXml
+Interaction::get_Dynamic
+Interaction::get_InteractionDocument
+Interaction::Initialize
+Interaction::InitializeDynamicState
+Interaction::Interact
+Interaction::ParseAnswerXml
+Interaction::ParseInteractionXml
+Interaction::SaveAnswers
+Interactions
+InteractivityTypeWWWd
+InternalName
+IScriptedDiagnosticInformationWWd
+IsDebuggerPresent
+IsValidLocaleName
+iswdigit
+j?[f;
+j\Yf9LC
+j\Zf9TA
+jFYPQ3
+jvInteractionXmlWW
+KERNEL32.dll
+kernelbase.dll
+KValueWWWd
+L9q0t
+LaunchUIInteraction
+LaunchUIInteraction::CreateSpecificDocument
+LaunchUIInteraction::InitializeDynamicState
+LaunchUIInteraction::ParseSpecificChildren
+LaunchUIInteractions
+LeaveCriticalSection
+LegalCopyright
+lifecycle
+LineNumber
+LoadLibraryExW
+LoadResource
+LoadStringW
+Local\SM0:%lu:%lu:%hs
+LocalFree
+Localized
+LockResource
+LogHr
+LogNt
+malloc
+memcpy
+memcpy_s
+memmove_s
+memset
+Microsoft
+Microsoft Corporation
+Microsoft-Windows-Diagnosis-Scripted
+Microsoft-Windows-Diagnosis-Scripted/Admin
+Microsoft-Windows-Diagnosis-Scripted/Analytic
+Microsoft-Windows-Diagnosis-Scripted/Debug
+Microsoft-Windows-Diagnosis-Scripted/Operational
+MinimumVersionWW
+Msg:[%ws] 
+msvcrt.dll
+MultipleResponseInteraction
+MultipleResponseInteraction::AddResponseFieldsToDocument
+MultipleResponseInteraction::BuildChoiceDocument
+MultipleResponseInteraction::BuildChoicesDocument
+MultipleResponseInteraction::CreateSpecificDocument
+MultipleResponseInteraction::FindChoiceInArray
+MultipleResponseInteraction::FreeChoices
+MultipleResponseInteraction::get_Dynamic
+MultipleResponseInteraction::InitializeChoice
+MultipleResponseInteraction::InitializeChoices
+MultipleResponseInteraction::InitializeDynamicState
+MultipleResponseInteraction::ParseSpecificChildren
+MultipleResponseInteraction::Reset
+MultipleResponseInteraction::ValidateClientChoices
+MultipleResponseInteraction::ValidateResponseChoices
+MultipleResponseInteractions
+NInitializeWW
+Node Parsing mismatch: was %ws, expected %ws
+Not Checked
+Not Detected
+Not Fixed
+Not Run
+ntdll.dll
+O`ProgressValueWWW
+oFlagsWWWd
+ole32.dll
+OLEAUT32.dll
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+OPCOT
+OpenProcessToken
+OpenSemaphoreW
+OpenThreadToken
+OriginalFilename
+OutputArguments
+OutputDebugStringW
+Package
+PACKAGE_SCHEMA.XSD
+package_schema.xsd
+PackageId
+PackagePath
+Parameter
+Parameters
+PauseInteraction
+PauseInteraction::CreateSpecificDocument
+PauseInteraction::ValidateClientChoices
+PauseInteractions
+pElevationContext
+PowerShellVersion
+PQQSVW
+PQSVW
+PrivacyLink
+PrivacyLinkWd
+ProcessArchitecture
+ProductName
+ProductVersion
+Property
+PRVA`
+PSSSSSSh 
+PSSSSSSSj
+ptRich
+Publisher
+PublisherWWWd
+PVVh 0
+q("[^"]*")|('[^']*')
+QQh|r
+QQhxr
+QQSV3
+QQSVW3
+QSVW3
+QSVWhl
+QueryPerformanceCounter
+RaiseFailFastException
+RegCloseKey
+RegOpenKeyExW
+RegQueryValueExW
+RegularExpression
+ReleaseMutex
+ReleaseSemaphore
+RemoveDirectoryW
+Reporter::AddIsAdminToReport
+Reporter::AddTimeToReport
+Reporter::AddXmlToReport
+Reporter::AddXslInstruction
+Reporter::AddXslToResults
+Reporter::FreeReport
+Reporter::Initialize
+Reporter::Serialize
+Reporter::SetupDebugReport
+Reporter::SetupResultReport
+RequiresConsent
+RequiresElevation
+RequiresInteractivity
+ResolutionId
+ResolutionInformation
+Resolve
+Resolver
+Resolver::AddXmlToDebugReport
+Resolver::BuildResultXml
+Resolver::Describe
+Resolver::get_ReportXml
+Resolver::Initialize
+Resolver::InitializeScript
+Resolver::ParseResolverXml
+Resolver::RecordParameters
+Resolver::Run
+Resolver::SetConsent
+Resolver::SetId
+Resolvers
+RESOURCE_SCHEMA.XSD
+resource_schema.xsd
+Result
+result
+ResultReport.xml
+results.xsl
+ReturnHr
+ReturnNt
+RevertToSelf
+Rootcause
+Rootcause::AddXmlToDebugReport
+Rootcause::AddXmlToReport
+Rootcause::BuildReportXml
+Rootcause::BuildResultResolutionsXml
+Rootcause::BuildResultXml
+Rootcause::BuildVerificationResultXml
+Rootcause::CreateInstance
+Rootcause::Describe
+Rootcause::Diagnose
+Rootcause::FreeInstance
+Rootcause::get_DiagnosisResult
+Rootcause::get_RcReportXml
+Rootcause::get_VerificationResult
+Rootcause::GetFirstInstance
+Rootcause::GetInstance
+Rootcause::GetNextInstance
+Rootcause::Initialize
+Rootcause::InitializeResolvers
+Rootcause::InitializeTroubleshooter
+Rootcause::InitializeVerifier
+Rootcause::ParseRootcauseXml
+Rootcause::PopulateInstance
+Rootcause::RecordRootcause
+Rootcause::Reset
+Rootcause::Resolve
+Rootcause::TraceResult
+Rootcause::Verify
+Rootcause::VerifyInstance
+RootCauseId
+RootCauseInformation
+Rootcauses
+RootcausesWWd
+RPCRT4.dll
+RpcStringFreeW
+RResolveW
+RtlCreateEnvironment
+RtlDestroyEnvironment
+RtlDisownModuleHeapAllocation
+RtlDllShutdownInProgress
+RtlExpandEnvironmentStrings
+RtlInitUnicodeStringEx
+RtlNtStatusToDosError
+RtlSetEnvironmentVariable
+RunningAsAdmin
+RunningTime
+SaveResultsW
+Schema error: %ws
+SchemaVersion
+Script
+Script::AddXmlToDebugReport
+Script::BuildReportScriptXml
+Script::BuildResultXml
+Script::Describe
+Script::Initialize
+Script::ParseScriptXml
+Script::PrepareParameters
+Script::RecordParameters
+Script::Run
+Script::UpdateReport
+Scripted Diagnostics Execution Engine
+Scripted Diagnostics Execution EngineW
+SCRIPTED_DIAGNOSTICS_TASK_HOST
+SCRIPTED_DIAGNOSTICS_TASK_INITIALIZE
+SCRIPTED_DIAGNOSTICS_TASK_SCRIPT
+SCRIPTED_DIAGNOSTICS_TASK_SERIALIZE
+SCRIPTED_DIAGNOSTICS_TASK_TRUST
+SCRIPTED_DIAGNOSTICS_TASK_VALIDATE
+ScriptedDiagLibraryW
+Scripts
+SDIAG
+SDIAG: %ws:%d - hr = 0x%08X
+sdiageng
+sdiageng.dll
+sdiageng.pdb
+SdpAddFileToList
+SdpBuildDisplayInformationXml
+SdpBuildParameterXml
+SdpBuildPath
+SdpCatId
+SdpCheckBooleanAttribute
+SdpCheckDocumentVersion
+SdpCompareCertificate
+SdpCopyDirectory
+SdpCreateSddl
+SdpCreateSecurityDescriptor
+SdpDeleteDirectory
+SdpFreeDispInfo
+SdpFreeParamSet
+SdpGetCatalogAttribute
+SdpGetCatalogFromFile
+SdpGetCatalogFromHash
+SdpGetCertificate
+SdpGetFileHash
+SdpGetFullPath
+SdpGetLocale
+SdpGetLongPath
+SdpGetSubjectName
+SdpGetUserSid
+SdpHandleReportFile
+SdpHashToString
+SdpIsAdmin
+SdpIsSubDirectory
+SdpIsSystem
+SdpIsTrusted
+SdpIsWindows
+SdpLoadString
+SdpLocalizeDisplayInformation
+SdpMoveDispInfo
+SdpMoveParamSet
+SdpParamSetToSafeArrays
+SdpParseBooleanNode
+SdpParseDiagnosticIdentification
+SdpParseDisplayInformation
+SdpParseExtensionPoint
+SdpParseParameter
+SdpParseParameters
+SdpParseProfileNode
+SdpParseResourceDescriptor
+SdpParseVariableArgs
+SdpPathExists
+SdpRecordMethodCall
+SdpRemoveFileFromList
+SdpShouldValidateTrust
+SdpSqmSetDWORD
+SdpStrCat
+SdpStrCpy
+SdpStrExpand
+SdpStrLastTok
+SdpStrTok
+SdpSubstituteParamSet
+SdpUpdateParamSet
+SdpUpdateReportData
+SdpVariantToString
+SdpVerifyDirectoryIntegrity
+SdpVerifyDirectoryTrust
+SdpVerifyTrust
+SdpXmlAppend
+SdpXmlCheckNode
+SdpXmlCreate
+SdpXmlCreateNode
+SdpXmlDeleteNode
+SdpXmlGetAttribute
+SdpXmlGetChildNodes
+SdpXmlGetNumChildNodes
+SdpXmlGetRootNode
+SdpXmlLoad
+SdpXmlLoadResource
+SdpXmlMerge
+SdpXmlNextNode
+SdpXmlSetAttribute
+SdpXmlValidate
+Server
+serverSupported
+SetLastError
+Settings::get_Cancelled
+Settings::get_ClientCallback
+Settings::get_ElevationContext
+Settings::get_Host
+Settings::get_Interactivity
+Settings::get_Locale
+Settings::get_PackageId
+Settings::get_PackagePath
+Settings::get_PackagePrivacyLink
+Settings::get_PackagePublisher
+Settings::get_Reporter
+Settings::get_RequiredArchitecture
+Settings::get_ResultPath
+Settings::set_ElevationContext
+Settings::set_Host
+Settings::set_Locale
+Settings::set_PackageId
+Settings::set_PackagePath
+Settings::set_PackagePrivacyLink
+Settings::set_PackagePublisher
+Settings::set_RequiredArchitecture
+Settings::set_ResultPath
+SetUnhandledExceptionFilter
+SingleResponseInteraction
+SingleResponseInteraction::CreateSpecificDocument
+SingleResponseInteraction::ValidateClientChoices
+SingleResponseInteractions
+SizeofResource
+Sleep
+Software\Policies\Microsoft\Windows\ScriptedDiagnostics
+Status
+StatusCode
+stdole2.tlbWWW
+StringFileInfo
+Succeeded
+SupportedOSVersion
+T$<9E
+t$L+D$Xj
+t{hT*
+TASKl
+TelemetryWWW
+TEMP<
+TEMP8
+TerminateProcess
+TextInteraction
+TextInteraction::CreateSpecificDocument
+TextInteraction::ParseSpecificChildren
+TextInteraction::ValidateClientChoices
+TextInteractions
+Translation
+Troubleshooter
+Troubleshooter::AddXmlToDebugReport
+Troubleshooter::Initialize
+Troubleshooter::InitializeScript
+Troubleshooter::ParseTroubleshooterXml
+Troubleshooter::Run
+TrustedPublisher
+TurnOffCheck
+type="text/xsl" href="results.xsl"
+TYPELIB
+u&f9]
+u)9F0t$
+u59F0t0
+ucWh]
+UnhandledExceptionFilter
+uNPPV
+uProgress
+urResultWW
+USER32.dll
+USERENV.dll
+UuidCreate
+UuidToStringW
+v h(r
+v$h<q
+ValidateTrust
+Value
+VarFileInfo
+verbosity
+Verifiable
+Verifier
+Verifier::AddXmlToDebugReport
+Verifier::Initialize
+Verifier::InitializeScript
+Verifier::ParseVerifierXml
+Verifier::RecordParameters
+Verifier::Run
+Verify
+VerifyWW
+Version
+Vj'^h
+VS_VERSION_INFO
+vThtq
+VVVVj
+w([a-zA-Z]+)
+WaitForSingleObject
+WaitForSingleObjectEx
+Warning
+wcschr
+wcsncmp
+wcstol
+WEVT_TEMPLATE
+WEVT0
+WilError_03
+win:Error
+win:Informational
+win:Start
+win:Stop
+win:Warning
+WinSqmEndSession
+WinSqmSetDWORD
+WinSqmStartSession
+WINTRUST.dll
+WinVerifyTrust
+WRPh\
+WRPht
+WTHelperGetProvCertFromChain
+WTHelperGetProvSignerFromChain
+WTHelperProvDataFromStateData
+WTSAPI32.dll
+WTSGetActiveConsoleSessionId
+WTSQueryUserToken
+xc;H s^
+xhh,@
+xml-stylesheet
+y Vh'
+y!Vh$
+y"Vjj
+y"Wh0
+y"Whq
+y"WhR
+y"WhV
+y%joYPQ3
+y%Whb
+y%WhE
+y.WhW
+y@Vh<
+Y__^[
+y}Wh&
+y0Vh(
+y2Wh-
+y2Wh1
+y3WhK
+y7Wha
+y9Vh?
+yeVh3
+yHWh,
+yLVh|
+yMVh6
+yNWh!
+ynWh^
+yQSVW
+yVWhL
+z([0-9]+)
+zInteractivityWWW

@@ -1,0 +1,195 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windowsco..etwork-flowsteering_31bf3856ad364e35_10.0.22000.653_none_c1c0473c1e3ed4de\fse.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    fwpkclnt.sys
+    NDIS.SYS
+    NETIO.SYS
+    msrpc.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0024140 Import Address Table
+             1C0024610 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         153 ExSystemTimeToLocalTime
+                          E5 ExFreePoolWithTag
+                          B8 ExAllocatePoolWithTag
+                         3A1 IoQueueWorkItem
+                         51A KeReleaseSpinLock
+                         457 KeAcquireSpinLockRaiseToDpc
+                         49B KeGetCurrentIrql
+                         2E5 IoAllocateWorkItem
+                         343 IoFreeWorkItem
+                         5D2 MmMapLockedPagesSpecifyCache
+                         4CC KeIsExecutingDpc
+                         14A ExSetTimer
+                         13D ExReleaseSpinLockExclusive
+                          CF ExDeleteTimer
+                         469 KeBugCheckEx
+                          8C EtwSetInformation
+                          BA ExAllocateTimer
+                         15A ExTryAcquirePushLockExclusiveEx
+                         140 ExReleaseSpinLockSharedFromDpcLevel
+                         115 ExQueueWorkItem
+                          A1 ExAcquirePushLockExclusiveEx
+                         133 ExReleasePushLockExclusiveEx
+                         13F ExReleaseSpinLockShared
+                          AD ExAcquireSpinLockShared
+                         53A KeSetEvent
+                         4B7 KeInitializeSpinLock
+                          AB ExAcquireSpinLockExclusive
+                          8E EtwUnregister
+                         134 ExReleasePushLockSharedEx
+                          A2 ExAcquirePushLockSharedEx
+                          89 EtwRegister
+                         4AF KeInitializeEvent
+                         566 KeWaitForSingleObject
+                         888 RtlFreeAnsiString
+                         95A RtlQueryRegistryValuesEx
+                          77 DbgkWerCaptureLiveKernelDump
+                         9AF RtlUnicodeStringToAnsiString
+                          B4 ExAllocatePool2
+                         8C3 RtlInitAnsiString
+                         4FC KeQueryTimeIncrement
+                         179 ExpInterlockedPopEntrySList
+                          CC ExDeleteNPagedLookasideList
+                         17A ExpInterlockedPushEntrySList
+                         10F ExQueryDepthSList
+                          E3 ExFreePool
+                          F4 ExInitializeNPagedLookasideList
+                         855 RtlEnumerateEntryHashTable
+                         852 RtlEndEnumerationHashTable
+                         82D RtlCreateHashTable
+                         969 RtlRemoveEntryHashTable
+                         8C6 RtlInitEnumerationHashTable
+                         8DD RtlInsertEntryHashTable
+                         8A8 RtlGetNextEntryHashTable
+                         922 RtlLookupEntryHashTable
+                         844 RtlDeleteHashTable
+                         4EE KeQueryInterruptTimePrecise
+                         455 KeAcquireSpinLockAtDpcLevel
+                         51C KeReleaseSpinLockFromDpcLevel
+                         C1B qsort
+                         AEB ZwClose
+                         B7B ZwQueryValueKey
+                         B3D ZwOpenKey
+                          F8 ExInitializeRundownProtection
+                         16C ExWaitForRundownProtectionRelease
+                         11C ExReInitializeRundownProtection
+                         428 IoWMIRegistrationControl
+                         5BC MmGetSystemRoutineAddress
+                         326 IoDeleteDevice
+                         BCA __C_specific_handler
+                         178 ExpInterlockedFlushSList
+                         6AB ObfDereferenceObject
+                         71C PsCreateSystemThread
+                         69B ObReferenceObjectByHandle
+                         2D3 InitializeSListHead
+                         33D IoFreeIrp
+                         59D MmBuildMdlForNonPagedPool
+                         2E2 IoAllocateMdl
+                         340 IoFreeMdl
+                         2E0 IoAllocateIrp
+                         3D4 IoReuseIrp
+                          AC ExAcquireSpinLockExclusiveAtDpcLevel
+                         13E ExReleaseSpinLockExclusiveFromDpcLevel
+                         564 KeWaitForMultipleObjects
+                         328 IoDeleteSymbolicLink
+                         319 IoCreateSymbolicLink
+                         30D IoCreateDevice
+                         8CC RtlInitUnicodeString
+                         6A7 ObSetSecurityObjectByPointer
+                         139 ExReleaseRundownProtection
+                          A5 ExAcquireRundownProtection
+                         436 IofCompleteRequest
+                          AE ExAcquireSpinLockSharedAtDpcLevel
+                          94 EtwWriteTransfer
+
+    fwpkclnt.sys
+             1C00240F8 Import Address Table
+             1C00245C8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          CE FwpsNetBufferListRetrieveContext0
+
+    NDIS.SYS
+             1C0024000 Import Address Table
+             1C00244D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          14 NdisAllocateGenericObject
+                           D NdisAdvanceNetBufferDataStart
+                          24 NdisAllocateRWLock
+                          B1 NdisFreeRWLock
+                         1DA NdisRetreatNetBufferDataStart
+                           7 NdisAcquireRWLockWrite
+                           6 NdisAcquireRWLockRead
+                          A4 NdisFreeGenericObject
+                         1D2 NdisReleaseRWLock
+
+    NETIO.SYS
+             1C0024050 Import Address Table
+             1C0024520 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         226 WskCaptureProviderNPI
+                         229 WskRegister
+                         227 WskDeregister
+                          ED NetioAllocateMdl
+                         17D NmrDeregisterClient
+                         182 NmrWaitForClientDeregisterComplete
+                         180 NmrRegisterClient
+                          44 GetIfEntry2
+                         22A WskReleaseProviderNPI
+                           9 ConvertInterfaceIndexToLuid
+                         183 NmrWaitForProviderDeregisterComplete
+                         17B NmrClientAttachProvider
+                         181 NmrRegisterProvider
+                         150 NetioPhCreateFullNaPacket
+                         145 NetioParseIpv6NdFields
+                         14F NetioPhCreateArpPacket
+                         143 NetioParseAllFieldsFromNetBuffer
+                         144 NetioParseIpFieldsFromNetBuffer
+                         17C NmrClientDetachProviderComplete
+                         17E NmrDeregisterProvider
+
+    msrpc.sys
+             1C0024108 Import Address Table
+             1C00245D8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          2D NdrMesTypeDecode3
+                           4 I_RpcExceptionFilter
+                           B MesDecodeBufferHandleCreate
+                          10 MesHandleFree
+                          30 NdrMesTypeEncode3
+                           D MesEncodeDynBufferHandleCreate
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        1000 .pdata
+        8000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       19000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 NONPAGE
+        2000 PAGE

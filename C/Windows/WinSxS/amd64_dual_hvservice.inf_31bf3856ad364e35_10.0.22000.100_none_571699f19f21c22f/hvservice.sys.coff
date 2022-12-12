@@ -1,0 +1,167 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_dual_hvservice.inf_31bf3856ad364e35_10.0.22000.100_none_571699f19f21c22f\hvservice.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    winhvr.sys
+    ext-ms-win-ntos-ksr-l1-1-2.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0007010 Import Address Table
+             1C0007448 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         4BB KeInitializeTimerEx
+                         BF0 _vsnprintf
+                         8CC RtlInitUnicodeString
+                         326 IoDeleteDevice
+                         37C IoInitializeRemoveLockEx
+                         6FD PoSetPowerState
+                         328 IoDeleteSymbolicLink
+                         2EA IoAttachDeviceToDeviceStack
+                          94 EtwWriteTransfer
+                         30D IoCreateDevice
+                         319 IoCreateSymbolicLink
+                         2D8 IoAcquireRemoveLockEx
+                         2E5 IoAllocateWorkItem
+                         3BB IoReleaseRemoveLockEx
+                         B77 ZwQuerySystemInformation
+                         43C KdDeregisterPowerHandler
+                         C2C strncmp
+                         3A2 IoQueueWorkItemEx
+                         343 IoFreeWorkItem
+                         B3A ZwOpenFile
+                         448 KdRegisterPowerHandler
+                         AEA ZwClose
+                         BC9 __C_specific_handler
+                         2B3 HvlQueryActiveHypervisorProcessorCount
+                         5D2 MmMapLockedPagesSpecifyCache
+                         436 IofCompleteRequest
+                         3AF IoRegisterDeviceInterface
+                         3BA IoReleaseRemoveLockAndWaitEx
+                         3DB IoSetDeviceInterfaceState
+                          8C EtwSetInformation
+                         4B3 KeInitializeMutex
+                         88E RtlFreeUnicodeString
+                         339 IoForwardIrpSynchronously
+                         517 KeReleaseMutex
+                          8E EtwUnregister
+                         46A KeCancelTimer
+                          89 EtwRegister
+                         435 IofCallDriver
+                         4AF KeInitializeEvent
+                         566 KeWaitForSingleObject
+                         6BA PoCallDriver
+                         6F6 PoRequestPowerIrp
+                         706 PoStartNextPowerIrp
+                         329 IoDetachDevice
+                         59D MmBuildMdlForNonPagedPool
+                         6AB ObfDereferenceObject
+                         2E2 IoAllocateMdl
+                          A1 ExAcquirePushLockExclusiveEx
+                         551 KeStackAttachProcess
+                          B4 ExAllocatePool2
+                         340 IoFreeMdl
+                         6AD ObfReferenceObject
+                         729 PsGetCurrentProcess
+                          E5 ExFreePoolWithTag
+                         600 MmUnmapLockedPages
+                         561 KeUnstackDetachProcess
+                         4D1 KeLeaveCriticalRegion
+                         132 ExReleasePushLockEx
+                         4C2 KeInsertQueueDpc
+                         47B KeDelayExecutionThread
+                         4AB KeInitializeDpc
+                         AC2 WmiQueryTraceInformation
+                         12C ExReleaseFastMutex
+                         54C KeSetTimerEx
+                         604 MmUnmapViewInSystemSpace
+                         B00 ZwCreateSection
+                         5DB MmMapViewInSystemSpace
+                         AF9 ZwCreateKey
+                         16C ExWaitForRundownProtectionRelease
+                         11C ExReInitializeRundownProtection
+                          F8 ExInitializeRundownProtection
+                         161 ExTryToAcquireFastMutex
+                          8A EtwRegisterClassicProvider
+                         53A KeSetEvent
+                         4D5 KeLowerIrql
+                         2B6 HvlQueryHypervisorProcessorNodeNumber
+                         69B ObReferenceObjectByHandle
+                          A5 ExAcquireRundownProtection
+                         46F KeClearEvent
+                          9C ExAcquireFastMutex
+                          8F EtwWrite
+                         B7A ZwQueryValueKey
+                          8B EtwSendTraceBuffer
+                          88 EtwProviderEnabled
+                         568 KfRaiseIrql
+                         BB3 ZwSetValueKey
+                         139 ExReleaseRundownProtection
+                         B3C ZwOpenKey
+                         484 KeEnterCriticalRegion
+                         3C9 IoReportRootDevice
+
+    winhvr.sys
+             1C00072E8 Import Address Table
+             1C0007720 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          AE WinHvWithdrawMemory
+                          89 WinHvSetEventLogCompletedNotificationRoutine
+                          7F WinHvReportPresentHypervisor
+                          4D WinHvGetSystemInformation
+                          58 WinHvLogHypervisorSystemConfig
+                          49 WinHvGetPartitionProperty
+                          AB WinHvUpdateSecFw
+                          16 WinHvConfigureProfiler
+                          AA WinHvUpdateHvProcessorFeatures
+                          8D WinHvSetHwWatchdogConfig
+                          9A WinHvSetSystemInformation
+                          8C WinHvSetHvDebugProperty
+                          67 WinHvMapStatsPage
+                          36 WinHvFlushEventLogBuffer
+                          34 WinHvFinalizeEventLogBufferGroup
+                          29 WinHvDepositMemory
+                          5E WinHvMapEventLogBuffer
+                          7C WinHvReleaseEventLogBuffer
+                          1B WinHvCreateEventLogBuffer
+                          8B WinHvSetEventLogGroupSources
+                          A5 WinHvUnmapEventLogBuffer
+                          52 WinHvInitializeEventLogBufferGroup
+                          23 WinHvDeleteEventLogBuffer
+                          8A WinHvSetEventLogGranularSources
+                          A7 WinHvUnmapStatsPage
+                          48 WinHvGetPartitionId
+
+    ext-ms-win-ntos-ksr-l1-1-2.dll
+             1C0007000 Import Address Table
+             1C0007438 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 KsrFreePersistedMemory
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        C000 .rsrc
+        2000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 INITCONS
+        5000 PAGE

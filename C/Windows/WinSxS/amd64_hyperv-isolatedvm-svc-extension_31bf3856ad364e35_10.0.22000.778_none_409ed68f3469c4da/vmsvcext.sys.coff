@@ -1,0 +1,113 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_hyperv-isolatedvm-svc-extension_31bf3856ad364e35_10.0.22000.778_none_409ed68f3469c4da\vmsvcext.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Section contains the following exports for vmsvcext.sys
+
+    00000000 characteristics
+    5B8697AA time date stamp
+        0.00 version
+           1 ordinal base
+           1 number of functions
+           1 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0002E07C SvcSkInitSystem
+
+  Image has the following dependencies:
+
+    securekernel.exe
+    cng.sys
+
+  Section contains the following imports:
+
+    securekernel.exe
+             1C0020FB0 Import Address Table
+             1C002E278 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          98 ShvlCompleteIsolatedImport
+                          AE SkReleasePushLockShared
+                          A2 SkAcquirePushLockExclusive
+                          60 RtlClearAllBits
+                          A7 SkFreePool
+                          A8 SkGetIdkSignatureForData
+                          38 KeGetCurrentIrql
+                          B4 SkeCacheInvalidatePage
+                          A0 ShvlSetVpRegisters
+                          9D ShvlLockSparseGpaPageMapping
+                          6A RtlFindClearBitsAndSet
+                          99 ShvlEnableVpVtlForPartition
+                          A1 ShvlUnlockSparseGpaPageMapping
+                          BB SkmmMapMdlWithReservedMapping
+                          64 RtlCompareMemory
+                          9E ShvlModifySparseSpaPageHostAccess
+                          BE SkmmRestrictPage
+                          BC SkmmReleasePageRestriction
+                          9A ShvlGetInterceptData
+                          97 ShvlCompleteIntercept
+                          9C ShvlGetVpRegisters
+                          E5 memcpy
+                          BF SkmmUnmapMdl
+                          76 RtlInitializeBitMap
+                          80 RtlRbRemoveNode
+                          61 RtlClearBit
+                          B8 SkmmFreeReservedMapping
+                          A3 SkAcquirePushLockShared
+                          AD SkReleasePushLockExclusive
+                          BD SkmmReserveMappingAddress
+                          9F ShvlSetPartitionProperty
+                          A9 SkInitializePushLock
+                          7F RtlRbInsertNodeEx
+                          9B ShvlGetPartitionProperty
+                          A5 SkAllocatePool
+                          B7 SkeZeroPages
+                          BA SkmmMapMdl
+                          34 KeBugCheckEx
+                          D5 __C_specific_handler
+                          86 RtlTimeFieldsToTime
+                          AC SkQuerySystemTime
+                          D9 _invalid_parameter
+                          D6 __GSHandlerCheck
+                          D8 __chkstk
+                          E4 memcmp
+                          E7 memset
+
+    cng.sys
+             1C0020F48 Import Address Table
+             1C002E210 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 BCryptCreateHash
+                          1A BCryptHashData
+                           8 BCryptDestroyHash
+                          12 BCryptFinishHash
+                          18 BCryptGetProperty
+                          19 BCryptHash
+                          16 BCryptGenerateSymmetricKey
+                          24 BCryptSetProperty
+                           1 BCryptCloseAlgorithmProvider
+                          14 BCryptGenRandom
+                          1E BCryptOpenAlgorithmProvider
+                           9 BCryptDestroyKey
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       1F000 .text
+        1000 INIT
+        2000 PAGE
+        4000 PAGECONS
+        1000 PAGEDATA

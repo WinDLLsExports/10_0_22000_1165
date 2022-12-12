@@ -1,0 +1,123 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-errorreportingkernel_31bf3856ad364e35_10.0.22000.1_none_a52ef7997a3857bf\werkernel.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    ksecdd.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0008010 Import Address Table
+             1C0008270 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         BC2 ZwUnmapViewOfSection
+                          6F DbgPrintEx
+                         AE0 ZwAlpcSendWaitReceivePort
+                         B11 ZwDuplicateObject
+                         564 KeWaitForMultipleObjects
+                         6AB ObfDereferenceObject
+                         AFF ZwCreateSection
+                         792 PsProcessType
+                         681 ObCloseHandle
+                         B67 ZwQueryInformationThread
+                          B4 ExAllocatePool2
+                         B2F ZwMapViewOfSection
+                         69B ObReferenceObjectByHandle
+                         AD0 ZwAlpcConnectPort
+                         AF4 ZwCreateEvent
+                          E5 ExFreePoolWithTag
+                          DC ExEventObjectType
+                         AE9 ZwClose
+                         B38 ZwOpenEvent
+                         984 RtlSetOwnerSecurityDescriptor
+                         BF1 _vsnwprintf
+                         BC5 ZwWaitForSingleObject
+                         B6D ZwQueryKey
+                         8D5 RtlInitializeSid
+                         BC3 ZwUpdateWnfStateData
+                          8C EtwSetInformation
+                         85D RtlEqualUnicodeString
+                         996 RtlSubAuthoritySid
+                         B76 ZwQuerySystemInformation
+                          87 EtwEventEnabled
+                         981 RtlSetDaclSecurityDescriptor
+                         BF4 _wcsicmp
+                         B7D ZwQueryWnfStateNameInformation
+                         9A1 RtlTimeToTimeFields
+                         8CB RtlInitUnicodeString
+                         AF8 ZwCreateKey
+                         7D8 RtlAddAccessAllowedAceEx
+                         826 RtlCopyUnicodeString
+                          94 EtwWriteTransfer
+                         917 RtlLengthSid
+                         915 RtlLengthRequiredSid
+                         B5B ZwQueryDirectoryFile
+                         B1B ZwFlushKey
+                          8E EtwUnregister
+                         B0B ZwDeleteKey
+                         B15 ZwEnumerateKey
+                         5C9 MmIsVerifierEnabled
+                         311 IoCreateFile
+                          8F EtwWrite
+                          89 EtwRegister
+                         B79 ZwQueryValueKey
+                         829 RtlCreateAcl
+                         B39 ZwOpenFile
+                         830 RtlCreateSecurityDescriptor
+                         5B8 MmGetPhysicalMemoryRanges
+                         BB2 ZwSetValueKey
+                         B3B ZwOpenKey
+                         153 ExSystemTimeToLocalTime
+                         B7B ZwQueryVolumeInformationFile
+                         BC8 __C_specific_handler
+
+    ksecdd.sys
+             1C0008000 Import Address Table
+             1C0008260 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          42 SecLookupWellKnownSid
+
+  Section contains the following exports for WerLiveKernelApi.dll
+
+    00000000 characteristics
+    DEE2E3AB time date stamp
+        0.00 version
+           1 ordinal base
+           8 number of functions
+           8 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000D610 DllUnload
+          2    1 000095C0 WerLiveKernelCancelReport
+          3    2 00009680 WerLiveKernelCloseHandle
+          4    3 00009740 WerLiveKernelCreateReport
+          5    4 0000F010 WerLiveKernelInitSystem
+          6    5 00009C40 WerLiveKernelOpenDumpFile
+          7    6 00009D30 WerLiveKernelSubmitReport
+          8    7 00009010 WerSubmitUserCrashReport
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        2000 .rsrc
+        1000 .text
+        1000 GFIDS
+        1000 INIT
+        5000 PAGE

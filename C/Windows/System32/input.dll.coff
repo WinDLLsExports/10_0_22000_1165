@@ -1,0 +1,386 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\input.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    msvcrt.dll
+    ntdll.dll
+    KERNEL32.dll
+    USER32.dll
+    GDI32.dll
+    ADVAPI32.dll
+    IMM32.dll
+    ole32.dll
+    RPCRT4.dll
+    USERENV.dll
+    SHELL32.dll
+    KERNELBASE.dll
+
+  Image has the following delay load dependencies:
+
+    api-ms-win-core-winrt-string-l1-1-0.dll
+    ext-ms-win-devmgmt-policy-l1-1-1.dll
+
+  Section contains the following exports for Input.dll
+
+    00000000 characteristics
+    6277D9FE time date stamp
+        0.00 version
+         100 ordinal base
+         104 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+        119    0 0001CE20 ActivateInputProfile
+        100    1 000249A0 CPlApplet
+        110    2 0001F780 EnumEnabledLayoutOrTip
+        118    3 0001FCE0 EnumEnabledLayoutOrTipPrivate
+        108    4 0001F6A0 EnumLayoutOrTipForSetup
+        113    5 0001FCF0 GetDefaultLayout
+        114    6 00020140 GetLayoutDescription
+        203    7 00026D20 InputDll_DownlevelEnumLayoutOrTipForSetup
+        200    8 00026BF0 InputDll_DownlevelInitialize
+        201    9 00026C00 InputDll_DownlevelSetUILanguage
+        202    A 00026CE0 InputDll_DownlevelUninitialize
+        104    B 0001C9B0 InstallLayoutOrTip
+        120    C 0001CC80 InstallLayoutOrTipOffline
+        117    D 0001CCF0 InstallLayoutOrTipPrivate
+        109    E 0001CB00 InstallLayoutOrTipUserReg
+        111    F 0001DA40 QueryLayoutOrTipString
+        112   10 0001DA70 QueryLayoutOrTipStringUserReg
+        105   11 0001EC20 SaveDefaultUserInputSettings
+        106   12 0001EDA0 SaveSystemAcctInputSettings
+        107   13 0001CE30 SetDefaultLayoutOrTip
+        102      0001B2E0 [NONAME]
+        103      0001BC60 [NONAME]
+        115      00020150 [NONAME]
+        116      000204B0 [NONAME]
+
+  Section contains the following imports:
+
+    msvcrt.dll
+             180034050 Import Address Table
+             1800411F8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         49E memcmp
+                         397 _wcsicmp
+                         3A1 _wcsnicmp
+                         4EA swscanf
+                         49F memcpy
+                         4A1 memmove
+                         523 wcstok
+                         29C _onexit
+                         376 _vsnwprintf
+                         34E _unlock
+                         1F2 _lock
+                          5E __C_specific_handler
+                         189 _initterm
+                         493 malloc
+                         459 free
+                          B7 _amsg_exit
+                          5A _XcptFilter
+                         518 wcsncmp
+                         512 wcscpy_s
+                         528 wcstoul
+                         4A2 memmove_s
+                         4A0 memcpy_s
+                          84 __dllonexit
+                         4A3 memset
+
+    ntdll.dll
+             180034118 Import Address Table
+             1800412C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         1E4 NtQueryInformationProcess
+                         6E6 VerSetConditionMask
+                         2FE RtlCaptureContext
+                         4FE RtlLookupFunctionEntry
+                         642 RtlVirtualUnwind
+
+    KERNEL32.dll
+             180033C38 Import Address Table
+             180040DE0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          E1 CreateMutexExW
+                           1 AcquireSRWLockShared
+                         11B DeleteCriticalSection
+                         22B GetCurrentProcessId
+                         2CB GetProcessHeap
+                         28C GetModuleHandleW
+                         111 DebugBreak
+                         397 IsDebuggerPresent
+                         278 GetLocaleInfoW
+                         66B lstrlenW
+                         37D InitializeCriticalSectionAndSpinCount
+                         1BD FreeLibrary
+                         307 GetSystemWow64DirectoryW
+                         2F8 GetSystemDirectoryW
+                          D3 CreateFileW
+                         428 OpenSemaphoreW
+                         3E3 LocalAlloc
+                         3E8 LocalFree
+                         3A6 IsValidLocale
+                         2F3 GetSystemDefaultLCID
+                         339 GetVersionExW
+                          A2 CompareStringOrdinal
+                         22A GetCurrentProcess
+                         375 InitOnceBeginInitialize
+                         363 HeapAlloc
+                         407 MulDiv
+                         3DD LoadLibraryW
+                         662 lstrcmpiW
+                         3F0 LocaleNameToLCID
+                         288 GetModuleFileNameW
+                         277 GetLocaleInfoEx
+                         5A7 Sleep
+                         5D8 UnhandledExceptionFilter
+                         597 SetUnhandledExceptionFilter
+                         5B6 TerminateProcess
+                         464 QueryPerformanceCounter
+                         301 GetSystemTimeAsFileTime
+                         323 GetTickCount
+                         603 WaitForSingleObjectEx
+                           0 AcquireSRWLockExclusive
+                          98 CloseThreadpoolTimer
+                          FF CreateThreadpoolTimer
+                         430 OutputDebugStringW
+                         4CC ReleaseSRWLockExclusive
+                         274 GetLastError
+                         1B9 FormatMessageW
+                         4C9 ReleaseMutex
+                         22F GetCurrentThreadId
+                         602 WaitForSingleObject
+                         2C4 GetProcAddress
+                         4CD ReleaseSRWLockShared
+                         590 SetThreadpoolTimer
+                         376 InitOnceComplete
+                          8E CloseHandle
+                         605 WaitForThreadpoolTimerCallbacks
+                         37E InitializeCriticalSectionEx
+                         3D6 LeaveCriticalSection
+                         28B GetModuleHandleExW
+                         4CE ReleaseSemaphore
+                         141 EnterCriticalSection
+                         557 SetLastError
+                         367 HeapFree
+                          F4 CreateSemaphoreExW
+                         287 GetModuleFileNameA
+                         3EB LocalReAlloc
+                         5F0 VerifyVersionInfoW
+                         37C InitializeCriticalSection
+                         5F7 VirtualProtect
+                         3DB LoadLibraryExA
+                         47B RaiseException
+                         2FB GetSystemInfo
+                         5F9 VirtualQuery
+                         60A WakeAllConditionVariable
+                         5A9 SleepConditionVariableSRW
+                          A3 CompareStringW
+
+    USER32.dll
+             180033F28 Import Address Table
+             1800410D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          BA DialogBoxParamW
+                         37B SetWindowLongPtrW
+                         25A LoadIconW
+                         2FC ReleaseDC
+                         1C8 GetSystemMetrics
+                         142 GetDC
+                          D2 DrawFocusRect
+                         1C4 GetSysColor
+                         3CC UpdateWindow
+                         223 InvalidateRect
+                         16A GetKeyboardLayout
+                         334 SetDlgItemTextW
+                         233 IsDlgButtonChecked
+                         14D GetDlgItem
+                          EF EnableWindow
+                          42 CheckDlgButton
+                         191 GetParent
+                         318 SendMessageW
+                         247 IsWindow
+                           0 ActivateKeyboardLayout
+                          18 BroadcastSystemMessageW
+                         30F SendDlgItemMessageW
+                         392 ShowWindow
+                          3E CharUpperBuffW
+                         133 GetClientRect
+                         1F1 GetWindowRect
+                         309 ScreenToClient
+                          F2 EndDialog
+                         3A2 SystemParametersInfoW
+                         25F LoadKeyboardLayoutW
+                         267 LoadStringW
+                         290 MoveWindow
+                         3B9 UnloadKeyboardLayout
+                         1E9 GetWindowLongPtrW
+
+    GDI32.dll
+             180033BC0 Import Address Table
+             180040D68 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         2C9 GetTextAlign
+                         395 SetTextAlign
+                         1DB ExtTextOutW
+                         2DB GetTextMetricsW
+                         36F SetBkColor
+                         397 SetTextColor
+                         368 SelectObject
+                         2D0 GetTextExtentExPointW
+                         27F GetDeviceCaps
+
+    ADVAPI32.dll
+             180033AC8 Import Address Table
+             180040C70 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         296 RegOpenKeyExW
+                         27D RegDeleteValueW
+                         279 RegDeleteKeyW
+                         2A3 RegQueryValueExW
+                         2B3 RegSetValueExW
+                         284 RegEnumKeyExW
+                         287 RegEnumValueW
+                         29D RegQueryInfoKeyW
+                         129 EventWriteTransfer
+                         123 EventUnregister
+                         121 EventRegister
+                          93 CreateWellKnownSid
+                         271 RegCreateKeyW
+                         299 RegOpenKeyW
+                         26E RegCreateKeyExW
+                         170 GetTokenInformation
+                         293 RegOpenCurrentUser
+                          85 CopySid
+                         14B GetLengthSid
+                         288 RegFlushKey
+                         19F IsWellKnownSid
+                         28F RegLoadKeyW
+                         2B6 RegUnLoadKeyW
+                         21F OpenProcessToken
+                         1AF LookupPrivilegeValueW
+                          1F AdjustTokenPrivileges
+                          5F CheckTokenMembership
+                         11E EventActivityIdControl
+                         28B RegGetValueW
+                         265 RegCloseKey
+
+    IMM32.dll
+             180033C10 Import Address Table
+             180040DB8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          2D ImmEscapeW
+                          5B ImmIsIME
+                          44 ImmGetHotKey
+                          79 ImmSetHotKey
+
+    ole32.dll
+             180034148 Import Address Table
+             1800412F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          10 CLSIDFromString
+                          2B CoCreateInstance
+                         20D StringFromGUID2
+                          8C CoTaskMemFree
+                         20C StringFromCLSID
+
+    RPCRT4.dll
+             180033EF8 Import Address Table
+             1800410A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         220 UuidCreateSequential
+
+    USERENV.dll
+             180034040 Import Address Table
+             1800411E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1D GetDefaultUserProfileDirectoryW
+
+    SHELL32.dll
+             180033F08 Import Address Table
+             1800410B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         1B0 ShellExecuteW
+                          35 ExtractIconExW
+                             Ordinal    62
+
+    KERNELBASE.dll
+             180033E98 Import Address Table
+             180041040 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         245 LoadLibraryExW
+                          5A CreateFileMappingW
+                         247 LoadResource
+                          DB FindResourceExW
+                         23D LCIDToLocaleName
+                         24A LoadStringByReference
+                         2FC SearchPathW
+                         1A1 GetSystemDefaultUILanguage
+                         25D MapViewOfFile
+                         1D9 GetUserDefaultUILanguage
+                         38A UnmapViewOfFile
+
+  Section contains the following delay load imports:
+
+    api-ms-win-core-winrt-string-l1-1-0.dll
+              00000001 Characteristics
+      00000001800444A0 Address of HMODULE
+      0000000180047000 Import Address Table
+      0000000180040670 Import Name Table
+      00000001800406F0 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180030DC6    10 WindowsGetStringRawBuffer
+
+    ext-ms-win-devmgmt-policy-l1-1-1.dll
+              00000001 Characteristics
+      00000001800444C0 Address of HMODULE
+      0000000180047010 Import Address Table
+      0000000180040680 Import Name Table
+      0000000180040700 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180030FCD     1 PolicyManager_FreeGetPolicyData
+                                    0000000180030F42    1A PolicyManager_GetPolicy
+
+  Summary
+
+        2000 .data
+        1000 .didat
+        2000 .pdata
+       11000 .rdata
+        1000 .reloc
+       17000 .rsrc
+       31000 .text

@@ -1,0 +1,98 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-wwansvc_31bf3856ad364e35_10.0.22000.1_none_f7b2349223df957d\KNetPwrDepBroker.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0008000 Import Address Table
+             1C0008198 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          F7 ExInitializeResourceLite
+                          A3 ExAcquireResourceExclusiveLite
+                          CE ExDeleteResourceLite
+                         4FC KeQueryTimeIncrement
+                          CF ExDeleteTimer
+                         53A KeSetEvent
+                             Ordinal     4
+                         14A ExSetTimer
+                         138 ExReleaseResourceLite
+                          94 EtwWriteTransfer
+                          B4 ExAllocatePool2
+                          E5 ExFreePoolWithTag
+                          89 EtwRegister
+                          8C EtwSetInformation
+                          8E EtwUnregister
+                         4BB KeInitializeTimerEx
+                         4AB KeInitializeDpc
+                         4AF KeInitializeEvent
+                         115 ExQueueWorkItem
+                         54C KeSetTimerEx
+                         46A KeCancelTimer
+                         566 KeWaitForSingleObject
+                         4B7 KeInitializeSpinLock
+                         141 ExRundownCompleted
+                         16C ExWaitForRundownProtectionRelease
+                          F8 ExInitializeRundownProtection
+                         B4E ZwPowerInformation
+                          A5 ExAcquireRundownProtection
+                         139 ExReleaseRundownProtection
+                         4B3 KeInitializeMutex
+                         517 KeReleaseMutex
+                         887 RtlFreeAnsiString
+                         959 RtlQueryRegistryValuesEx
+                         49B KeGetCurrentIrql
+                          77 DbgkWerCaptureLiveKernelDump
+                         8CB RtlInitUnicodeString
+                         9AE RtlUnicodeStringToAnsiString
+                         8C2 RtlInitAnsiString
+                         457 KeAcquireSpinLockRaiseToDpc
+                         51A KeReleaseSpinLock
+
+  Section contains the following exports for KNetPwrDepBroker.SYS
+
+    00000000 characteristics
+    6AD4F78F time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000019C0 DllInitialize
+          2    1 00001BD0 DllUnload
+          3    2 0000A010 ImsBrokerKeepAliveCompleted
+          4    3 0000A250 ImsBrokerNetworkActivityCompleted
+          5    4 0000A4D0 ImsBrokerRecoveryCompleted
+          6    5 0000A710 ImsBrokerRequestKeepAlive
+          7    6 0000AA40 ImsBrokerRequestNetworkActivation
+          8    7 0000AC00 ImsBrokerRequestRecovery
+          9    8 0000AF30 NpdBrokerAcquireWithTimeout
+         10    9 0000AFE0 NpdBrokerInitialize
+         11    A 0000B040 NpdBrokerUninitialize
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 NONPAGE
+        2000 PAGE

@@ -1,0 +1,139 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\AzureAttest.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ucrtbase_enclave.dll
+    bcrypt.dll
+    vertdll.dll
+
+  Section contains the following exports for AzureAttest.dll
+
+    00000000 characteristics
+    62508678 time date stamp
+        0.00 version
+           1 ordinal base
+          11 number of functions
+          11 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00009660 EnclaveAttestationAttest
+          2    1 0000B810 EnclaveAttestationAttestInternal
+          3    2 00009860 EnclaveAttestationCloseSession
+          4    3 0000BCC0 EnclaveAttestationCloseSessionInternal
+          5    4 000091E0 EnclaveAttestationConfigure
+          6    5 0000B040 EnclaveAttestationConfigureInternal
+          7    6 00009430 EnclaveAttestationCreateSession
+          8    7 0000B2C0 EnclaveAttestationCreateSessionInternal
+          9    8 00009880 EnclaveAttestationGetKey
+         10    9 000097D0 EnclaveAttestationGetReport
+         11    A 0000BAB0 EnclaveAttestationGetReportInternal
+
+  Section contains the following imports:
+
+    ucrtbase_enclave.dll
+             18002FE80 Import Address Table
+             180039E18 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          90 _initialize_onexit_table
+                          E0 _register_onexit_function
+                          67 _execute_onexit_table
+                          56 _crt_atexit
+                          4B _cexit
+                         298 terminate
+                         1F2 free
+                          3B memcpy
+                          13 __CxxFrameHandler4
+                          27 __std_exception_destroy
+                          26 __std_exception_copy
+                          28 __std_terminate
+                           C __C_specific_handler
+                          2A __std_type_info_destroy_list
+                          20 __current_exception
+                          21 __current_exception_context
+                           1 _CxxThrowException
+                         237 malloc
+                          49 _callnewh
+                          92 _initterm_e
+                          91 _initterm
+                         2B1 wcsncpy_s
+                         284 strncpy_s
+                          94 _invalid_parameter_noinfo_noreturn
+                          65 _errno
+                          21 __stdio_common_vswprintf
+                          1B __stdio_common_vsnprintf_s
+                          93 _invalid_parameter_noinfo
+                         2B2 wcsnlen
+                          E8 _seh_filter_dll
+                          3A memcmp
+                          1D __RTDynamicCast
+                         244 memset
+                         19B ceilf
+                          29 __std_type_info_compare
+                         2B7 wcstod
+                          3C memmove
+
+    bcrypt.dll
+             18002FE10 Import Address Table
+             180039DA8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          12 BCryptEncrypt
+                          26 BCryptKeyDerivation
+                           8 BCryptDecrypt
+                          22 BCryptHash
+                          25 BCryptImportKeyPair
+                          1F BCryptGenerateSymmetricKey
+                          21 BCryptGetProperty
+                          1A BCryptFinalizeKeyPair
+                          1E BCryptGenerateKeyPair
+                          19 BCryptExportKey
+                          39 BCryptVerifySignature
+                          36 BCryptSignHash
+                           E BCryptDestroyKey
+
+    vertdll.dll
+             18002FFB0 Import Address Table
+             180039F48 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           B EnclaveGetAttestationReport
+                           2 CallEnclave
+                          29 GetLastError
+                          8A SetLastError
+                          40 InitializeSListHead
+                           0 AcquireSRWLockExclusive
+                          2B GetModuleHandleExW
+                          2C GetProcAddress
+                           C EnclaveGetEnclaveInformation
+                          4F MultiByteToWideChar
+                          A2 WideCharToMultiByte
+                          2D GetProcessHeap
+                           1 AcquireSRWLockShared
+                          33 HeapAlloc
+                          9E WakeAllConditionVariable
+                          8E SleepConditionVariableSRW
+                          67 ReleaseSRWLockShared
+                          58 OutputDebugStringW
+                          26 GetCurrentThreadId
+                          37 HeapFree
+                          66 ReleaseSRWLockExclusive
+
+  Summary
+
+        6000 .data
+        5000 .pdata
+        C000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       2E000 .text

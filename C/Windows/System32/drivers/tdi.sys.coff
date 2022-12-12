@@ -1,0 +1,156 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\tdi.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NDIS.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0009020 Import Address Table
+             1C0009200 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         42F IoWriteErrorLogEntry
+                         9D9 RtlxAnsiStringToUnicodeSize
+                         115 ExQueueWorkItem
+                         4B7 KeInitializeSpinLock
+                         4B9 KeInitializeTimer
+                         51A KeReleaseSpinLock
+                         53A KeSetEvent
+                          B4 ExAllocatePool2
+                         8C6 RtlInitString
+                         4FC KeQueryTimeIncrement
+                         566 KeWaitForSingleObject
+                         2DF IoAllocateErrorLogEntry
+                         BC8 __C_specific_handler
+                         2EF IoBuildPartialMdl
+                         5D3 MmMapLockedPagesWithReservedMapping
+                         592 MmAllocateMappingAddress
+                         455 KeAcquireSpinLockAtDpcLevel
+                         601 MmUnmapReservedMapping
+                         4AB KeInitializeDpc
+                         5AE MmFreeMappingAddress
+                         600 MmUnmapLockedPages
+                         382 IoIs32bitProcess
+                         5D2 MmMapLockedPagesSpecifyCache
+                         61F NtCreateFile
+                         810 RtlCompareUnicodeString
+                         7EC RtlAppendUnicodeStringToString
+                         7ED RtlAppendUnicodeToString
+                         BF4 _wcsicmp
+                         7FD RtlCheckRegistryKey
+                         8CB RtlInitUnicodeString
+                         826 RtlCopyUnicodeString
+                         B79 ZwQueryValueKey
+                          E5 ExFreePoolWithTag
+                         4AF KeInitializeEvent
+                         BF7 _wcsnicmp
+                          6E DbgPrint
+                         AE9 ZwClose
+                         B3B ZwOpenKey
+                         457 KeAcquireSpinLockRaiseToDpc
+                         7E9 RtlAnsiStringToUnicodeString
+                         51C KeReleaseSpinLockFromDpcLevel
+                         54A KeSetTimer
+
+    NDIS.SYS
+             1C0009000 Import Address Table
+             1C00091E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         1DD NdisReturnPackets
+                          7B NdisDeregisterTdiCallBack
+                         1D0 NdisRegisterTdiCallBack
+
+  Section contains the following exports for TDI.SYS
+
+    00000000 characteristics
+     C29C965 time date stamp
+        0.00 version
+           1 ordinal base
+          57 number of functions
+          57 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001C40 CTEAllocateString
+          2    1 00001CA0 CTEBlock
+          3    2 00001CF0 CTEBlockWithTracker
+          4    3 00001D40 CTEInitEvent
+          5    4 00001D90 CTEInitString
+          6    5 00001E30 CTEInitTimer
+          7    6 00001E80 CTEInitialize
+          8    7 00001E90 CTEInsertBlockTracker
+          9    8 0000A010 CTELogEvent
+         10    9 00001F10 CTERemoveBlockTracker
+         11    A 00001F70 CTEScheduleCriticalEvent
+         12    B 00002000 CTEScheduleDelayedEvent
+         13    C 00002000 CTEScheduleEvent
+         14    D 00002090 CTESignal
+         15    E 000020C0 CTEStartTimer
+         16    F 00002100 CTESystemUpTime
+         17   10 00002200 DllInitialize
+         18   11 00002320 DllUnload
+         19   12 00002380 TdiBuildNetbiosAddress
+         20   13 000023B0 TdiBuildNetbiosAddressEa
+         21   14 00001010 TdiCopyBufferToMdl
+         22   15 00002420 TdiCopyBufferToMdlWithReservedMappingAtDpcLevel
+         23   16 000025A0 TdiCopyMdlChainToMdlChain
+         24   17 00002860 TdiCopyMdlToBuffer
+         25   18 00002A90 TdiDefaultChainedRcvDatagramHandler
+         26   19 00002A90 TdiDefaultChainedRcvExpeditedHandler
+         27   1A 00002A90 TdiDefaultChainedReceiveHandler
+         28   1B 00002AA0 TdiDefaultConnectHandler
+         29   1C 00002370 TdiDefaultDisconnectHandler
+         30   1D 00002370 TdiDefaultErrorHandler
+         31   1E 00002A90 TdiDefaultRcvDatagramHandler
+         32   1F 00002A90 TdiDefaultRcvExpeditedHandler
+         33   20 00002A90 TdiDefaultReceiveHandler
+         34   21 00002370 TdiDefaultSendPossibleHandler
+         35   22 00002D80 TdiDeregisterAddressChangeHandler
+         36   23 00002DA0 TdiDeregisterDeviceObject
+         37   24 00002DC0 TdiDeregisterNetAddress
+         38   25 00002D80 TdiDeregisterNotificationHandler
+         39   26 00002D80 TdiDeregisterPnPHandlers
+         40   27 00002DE0 TdiDeregisterProvider
+         41   28 00002E00 TdiEnumerateAddresses
+         42   29 00003380 TdiGet9FTriageBlock
+         43   2A 000011A0 TdiInitialize
+         44   2B 00003A90 TdiIsIPTransportSupported
+         45   2C 000010E0 TdiMapUserRequest
+         46   2D          TdiMatchPdoWithChainedReceiveContext (forwarded to NDIS.NdisMatchPdoWithPacket)
+         47   2E 00002AB0 TdiOpenNetbiosAddress
+         48   2F 00003FC0 TdiPnPPowerComplete
+         49   30 000040E0 TdiPnPPowerRequest
+         50   31 000043A0 TdiProviderReady
+         51   32 000043C0 TdiRegisterAddressChangeHandler
+         52   33 00004410 TdiRegisterDeviceObject
+         53   34 00004520 TdiRegisterNetAddress
+         54   35 00004700 TdiRegisterNotificationHandler
+         55   36 00004750 TdiRegisterPnPHandlers
+         56   37 00004940 TdiRegisterProvider
+         57   38 00002C30 TdiReturnChainedReceives
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE

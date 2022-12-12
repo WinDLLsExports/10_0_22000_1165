@@ -1,0 +1,163 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\rspndr.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    NDIS.SYS
+    NETIO.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0013130 Import Address Table
+             1C0013530 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         503 KeReadStateEvent
+                         46F KeClearEvent
+                         4D5 KeLowerIrql
+                         71B PsCreateSystemThread
+                         542 KeSetPriorityThread
+                         564 KeWaitForMultipleObjects
+                         7C9 PsTerminateSystemThread
+                         4B9 KeInitializeTimer
+                         4AB KeInitializeDpc
+                         54A KeSetTimer
+                         46A KeCancelTimer
+                         568 KfRaiseIrql
+                         52B KeResetEvent
+                         5BC MmGetSystemRoutineAddress
+                         566 KeWaitForSingleObject
+                         435 IofCallDriver
+                         2EE IoBuildDeviceIoControlRequest
+                         356 IoGetDeviceObjectPointer
+                         4AF KeInitializeEvent
+                         B7E ZwReadFile
+                         2E5 IoAllocateWorkItem
+                         10F ExQueryDepthSList
+                         17A ExpInterlockedPushEntrySList
+                         179 ExpInterlockedPopEntrySList
+                          CC ExDeleteNPagedLookasideList
+                          F4 ExInitializeNPagedLookasideList
+                         494 KeFlushQueuedDpcs
+                         4B7 KeInitializeSpinLock
+                         10E ExNotifyCallback
+                         51C KeReleaseSpinLockFromDpcLevel
+                         455 KeAcquireSpinLockAtDpcLevel
+                         51A KeReleaseSpinLock
+                         457 KeAcquireSpinLockRaiseToDpc
+                         5D2 MmMapLockedPagesSpecifyCache
+                         49B KeGetCurrentIrql
+                         53A KeSetEvent
+                         2D2 InitSafeBootMode
+                          E5 ExFreePoolWithTag
+                         326 IoDeleteDevice
+                          B8 ExAllocatePoolWithTag
+                         B63 ZwQueryInformationFile
+                         AF5 ZwCreateFile
+                         B79 ZwQueryValueKey
+                         343 IoFreeWorkItem
+                         AE9 ZwClose
+                         B3B ZwOpenKey
+                         3A2 IoQueueWorkItemEx
+                         6AB ObfDereferenceObject
+                         2EF IoBuildPartialMdl
+                         5D3 MmMapLockedPagesWithReservedMapping
+                         592 MmAllocateMappingAddress
+                         601 MmUnmapReservedMapping
+                         5AE MmFreeMappingAddress
+                         600 MmUnmapLockedPages
+                         47B KeDelayExecutionThread
+                         BC5 ZwWaitForSingleObject
+                          9D ExAcquireFastMutexUnsafe
+                         484 KeEnterCriticalRegion
+                         B34 ZwNotifyChangeKey
+                         69B ObReferenceObjectByHandle
+                         AF4 ZwCreateEvent
+                          DC ExEventObjectType
+                         12D ExReleaseFastMutexUnsafe
+                         4D1 KeLeaveCriticalRegion
+                         B8A ZwResetEvent
+                         120 ExRegisterCallback
+                          C6 ExCreateCallback
+                         166 ExUnregisterCallback
+                         30D IoCreateDevice
+                         428 IoWMIRegistrationControl
+                         8CB RtlInitUnicodeString
+
+    HAL.dll
+             1C0013000 Import Address Table
+             1C0013400 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+
+    NDIS.SYS
+             1C0013010 Import Address Table
+             1C0013410 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          14 NdisAllocateGenericObject
+                          1E NdisAllocateNetBufferListPool
+                         1DA NdisRetreatNetBufferDataStart
+                          1B NdisAllocateNetBufferAndNetBufferList
+                          30 NdisCancelSendNetBufferLists
+                          B8 NdisGeneratePartialCancelId
+                          D6 NdisGetSystemUpTimeEx
+                          18 NdisAllocateMemoryWithTag
+                         1E0 NdisSendNetBufferLists
+                          AB NdisFreeNetBufferList
+                         1DC NdisReturnNetBufferLists
+                         18D NdisMSleep
+                          A4 NdisFreeGenericObject
+                          A7 NdisFreeMemory
+                         1B8 NdisQueryAdapterInstanceName
+                         1AA NdisOpenAdapterEx
+                          7A NdisDeregisterProtocolDriver
+                           C NdisAdjustNetBufferCurrentMdl
+                          BE NdisGetDataBuffer
+                           D NdisAdvanceNetBufferDataStart
+                         1A8 NdisOidRequest
+                         107 NdisInitializeEvent
+                         1CF NdisRegisterProtocolDriver
+                         207 NdisWaitEvent
+                          AD NdisFreeNetBufferListPool
+                         1D9 NdisResetEvent
+                         1E4 NdisSetEvent
+                          42 NdisCloseAdapterEx
+
+    NETIO.SYS
+             1C00130F8 Import Address Table
+             1C00134F8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         18B NsiAllocateAndGetTable
+                         199 NsiGetParameter
+                         18D NsiDeregisterChangeNotification
+                         19C NsiRegisterChangeNotification
+                         193 NsiFreeTable
+                         194 NsiGetAllParameters
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        E000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE

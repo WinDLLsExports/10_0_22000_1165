@@ -1,0 +1,119 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\msgpiowin32.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    WppRecorder.sys
+    CEA.sys
+    WDFLDR.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000A088 Import Address Table
+             1C000A328 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         436 IofCompleteRequest
+                          B4 ExAllocatePool2
+                         4AF KeInitializeEvent
+                         308 IoConnectInterruptEx
+                         32E IoDisconnectInterruptEx
+                         3C6 IoReportInterruptInactive
+                         3C5 IoReportInterruptActive
+                         484 KeEnterCriticalRegion
+                          9D ExAcquireFastMutexUnsafe
+                         12D ExReleaseFastMutexUnsafe
+                         4D1 KeLeaveCriticalRegion
+                          CF ExDeleteTimer
+                          E5 ExFreePoolWithTag
+                         4B7 KeInitializeSpinLock
+                         4AB KeInitializeDpc
+                             Ordinal     4
+                         B1D ZwFlushKey
+                         6F4 PoRegisterPowerSettingCallback
+                         708 PoUnregisterPowerSettingCallback
+                         8CC RtlInitUnicodeString
+                          BE ExCancelTimer
+                         6FB PoSetPowerButtonHoldState
+                          94 EtwWriteTransfer
+                         14A ExSetTimer
+                         515 KeReleaseInterruptSpinLock
+                         452 KeAcquireInterruptSpinLock
+                         51A KeReleaseSpinLock
+                         457 KeAcquireSpinLockRaiseToDpc
+                         4C2 KeInsertQueueDpc
+                         C51 wcsstr
+                         BF6 _wcsicmp
+                          8E EtwUnregister
+                          6F DbgPrintEx
+                         827 RtlCopyUnicodeString
+                         13D ExReleaseSpinLockExclusive
+                          BA ExAllocateTimer
+                         15A ExTryAcquirePushLockExclusiveEx
+                         115 ExQueueWorkItem
+                          A1 ExAcquirePushLockExclusiveEx
+                         133 ExReleasePushLockExclusiveEx
+                         53A KeSetEvent
+                          AB ExAcquireSpinLockExclusive
+                          B8 ExAllocatePoolWithTag
+                         566 KeWaitForSingleObject
+                          89 EtwRegister
+                         428 IoWMIRegistrationControl
+                         5BC MmGetSystemRoutineAddress
+                          8C EtwSetInformation
+
+    WppRecorder.sys
+             1C000A040 Import Address Table
+             1C000A2E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           F imp_WppRecorderLogSetIdentifier
+                           B imp_WppRecorderLogCreate
+                           C imp_WppRecorderLogDelete
+                           5 imp_WppRecorderConfigure
+                           3 WppAutoLogStop
+                           2 WppAutoLogStart
+                          10 imp_WppRecorderReplay
+                           4 WppAutoLogTrace
+
+    CEA.sys
+             1C000A000 Import Address Table
+             1C000A2A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           B EADeleteAggregateEvent
+                           A EACreateAggregateEvent
+
+    WDFLDR.SYS
+             1C000A018 Import Address Table
+             1C000A2B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           8 WdfVersionUnbind
+                           6 WdfVersionBind
+                           9 WdfVersionUnbindClass
+                           7 WdfVersionBindClass
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text
+        1000 GFIDS
+        1000 INIT
+        5000 PAGE

@@ -1,0 +1,2196 @@
+                level="asInvoker"
+                uiAccess="false"
+             "%s Flag"
+             "%s"
+             "0x%.8X"
+             "0x00000001"
+            "0x1",
+            "0x2",
+            "0x3",
+            "0x4",
+            "0x5" },
+            "Abnormal exit or termination",
+            "Detailed traces from intermediate steps" } : amended,
+            "Error",
+            "Fatal",
+            "Includes non-error cases",
+            "Information",
+            "Severe errors that need logging",
+            "TRACE_LEVEL_ERROR",
+            "TRACE_LEVEL_FATAL",
+            "TRACE_LEVEL_INFORMATION",
+            "TRACE_LEVEL_VERBOSE" },
+            "TRACE_LEVEL_WARNING"
+            "Verbose" },
+            "Warning",
+            "Warnings such as allocation failure",
+            ,                     , 
+            />
+            <requestedExecutionLevel
+         DefineValues{
+        </requestedPrivileges>
+        <requestedPrivileges>
+        DefineValues{
+        ValueDescriptions{
+        ValueMap{
+        Values{
+        ValueType("index")
+      <Data name='count' class='number'/>
+      <Data name='cpu' summary='total' class='number' format='#,##0.0'/>
+      <Data name='kernel' class='number' format='#,##0'/>
+      <Data name='processCpu' class='number' format='#,##0.0'/>
+      <Data name='rate' class='number' format='#,##0'/>
+      <Data name='transaction name' class='string'/>
+      <Data name='transName' class='string'/>
+      <Data name='user' class='number' format='#,##0'/>
+     %1!s!
+    [Description ("Enable Flags") : amended
+    [Description ("Levels") : amended,
+    ]
+    </events>
+    </Header>
+    </security>
+    <Data name="image" class="string"/>
+    <Data name="pid" class="string"/>
+    <Data name="readRate" class="number" format='#,##0.0'/>
+    <Data name="readSize" class="number"/>
+    <Data name="writeRate" class="number" format='#,##0.0'/>
+    <Data name="writeSize" class="number"/>
+    <events>
+    <Header>
+    <security>
+    <Sort field='ioRate' type='number' order='descending'/>
+    <Threshold type='top' field='count' value='10'/>
+    >
+    name="Microsoft.Windows.Diagnosis.TraceRpt"
+    processorArchitecture="amd64"
+    type="win32"
+    uint32 Flags;
+    uint32 Level;
+    version="5.1.0.0"
+    xmlns:trace="http://schemas.microsoft.com/win/2004/08/events/trace"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd"
+   %s
+  %1!s!
+  </Header>
+  </instrumentation>
+  <Data label='iisCachedStaticRequests' name='requestRate' format='#,##0'/>
+  <Data label='iisNonCachedStaticRequests' name='requestRate' format='#,##0'/>
+  <Data label='iisRespTime' name='responseTime' format='#,##0'/>
+  <Data name="disk" class="string"/>
+  <Data name="file" class="string"/>
+  <Data name="readRate" class="number" format='#,##0.0'/>
+  <Data name="readSize" class="number"/>
+  <Data name="writeRate" class="number" format='#,##0.0'/>
+  <Data name="writeSize" class="number"/>
+  <Data name='%wZ'
+  <Data name='count' visible='false'>%d</Data>
+  <Data name='count'>%d</Data>
+  <Data name='cpu'  summary='total' class='number' format='#,##0.0'/>
+  <Data name='cpu' format='#,##0'/>
+  <Data name='cpu'>%1.2f</Data>
+  <Data name='diskNumber' label='topDiskIO'/>
+  <Data name='file' label='topFileIO'/>
+  <Data name='groupCpu' format='#,##0'/>
+  <Data name='image' label='topProcessGroup'/>
+  <Data name='ioRate' format='#,##0'/>
+  <Data name='ip' label='topClientRequest'/>
+  <Data name='kernel'>%0.3f</Data>
+  <Data name='kernelCpuPer' class='number' format='#,##0.0'/>
+  <Data name='kernelCpuPer'>%.4f</Data>
+  <Data name='pid' class='number'/>
+  <Data name='pid' class='string'/>
+  <Data name='pid'>%d</Data>
+  <Data name='process' label='topProcessGroup'/>
+  <Data name='process name' class='string'/>
+  <Data name='processName'>%s</Data>
+  <Data name='requestRate' class='number' format='#,##0.0'/>
+  <Data name='requestRate' format='#,##0'/>
+  <Data name='requestRate'>%1.2f</Data>
+  <Data name='responseTime' class='number' format='#,##0'/>
+  <Data name='responseTime' format='#,##0'/>
+  <Data name='responseTime'>%1.0f</Data>
+  <Data name='task' class='number'/>
+  <Data name='task'>%d</Data>
+  <Data name='totalCpu' format='#,##0'/>
+  <Data name='transaction' class='string'/>
+  <Data name='transaction name'>%s</Data>
+  <Data name='transaction' translate='value'>%s</Data>
+  <Data name='url' class='string'/>  <Data name='siteId' class='number'/>  <Data name='requestRate' class='number' format='%s'/>  <Data name='cached' class='number' format='%s'/>  <Data name='responseTime' class='number' format='#,##0'/>  <Data name='cpu' class='number' format='%s'/>  <Data name='bytesSentRate' class='number'/></Header>
+  <Data name='url' label='slowestUrl'/>
+  <Data name='url' label='topUrlCpu'/>
+  <Data name='user'>%0.3f</Data>
+  <Data name='userCpuPer' class='number' format='#,##0.0'/>
+  <Data name='userCpuPer'>%.4f</Data>
+  <Header>
+  <instrumentation>
+  <Sort field='%wZ' type='%ws' order='%ws'/>
+  <Sort field='cpu' type='number' order='descending'/>
+  <Sort field='ioRate' type='number' order='descending'/>
+  <Threshold type='octave' field='cpu' />
+  <Threshold type='octave' field='ioRate'/>
+  <Threshold type='octave' field='requestRate'/>
+  <Threshold type='top' field='count' value='%d'/>
+  <Threshold type='top' field='count' value='3' />
+  <Threshold type='top' value='%d' />
+  Value
+  visible='false'
+ (%s)
+ (Init called in Function %s)
+ 0x%ws
+ A^_]
+ A^_^
+ A__^
+ A_A^_
+ A_A^A\
+ A_A^A\_^
+ A_A^A]
+ A_A^A]_^
+ A_A^A]A\_
+ A_A^A]A\_^]
+ ActivityID="%ws"
+ class='%ws'
+ count="%d"
+ count="%ws"
+ Culture="%ws"
+ Description("%s_%s"),
+ format='%wZ'
+ guid("{%s}"),
+ Guid="%ws"
+ H3E H3E
+ inType="%ws"
+ key='%d'
+ length="%d"
+ length="%ws"
+ level='%d'
+ locale("MS\\0x409")]
+ map="%ws"
+ message="$(string.string%d)"
+ Microsoft Corporation. All rights reserved.
+ Name="
+ note='%wZ'
+ note='%wZ'>
+ Operating System
+ outType="%ws"
+ RelatedActivityID="%ws"
+ summary='%ws'
+ topic='%wZ'
+ visible='%ws'
+ w\E3
+ Windows
+!`<Fy
+!t$ 3
+!This program cannot be run in DOS mode.
+" Type="
+" Value="
+"%d" />
+"%ws"
+"%ws" />
+"></Data>
+"0x%x" />
+"D8W-
+#,##0.000
+#enumv %s
+#pragma autorecover
+#pragma classflags("forceupdate")
+#pragma namespace("\\\\.\\root\\WMI")
+#typev %s%d
+$$D9w(
+$,<,tkH
+$0< u?
+%1!02d!:%2!02d!:%3!02d!
+%1!-16s! %2!-6s! = 
+%1!-20s!
+%1!26s!%2!-20s!
+%1!c!
+%1!d!
+%1!s!
+%1!s! %2!s! (%3!s!)
+%1!s! [%1!s! [...]]
+%1!s!%2!s!%3!s!%4!s!%5!s!
+%1.2f%%
+%10d, 
+%10lu, 
+%10ws, 
+%12d, %10d, %10d, %10d, %10d, %10d, 0x%016X, 
+%12d, %20d, 
+%12hs, %10hs, %12hs, %10hs, %10hs, %10hs, %10hs, %10hs, %18hs, %10hs, %10hs, %20hs, %12hs, %20hs, %40hs, %40hs, %20hs, %10hs, %10hs, User Data
+%12hs, %10hs,%11hs,%21hs,%11hs,%11hs, User Data
+%12ws, 
+%-15d 
+%-15d %38s|
+%-15s 
+%16ws
+%20I64u, 
+%-32s
+%40ws, 
+%40ws,                                         , 
+%8x`%08x
+%c %c
+%d.%d.%d.%d
+%hd, 
+%I64d
+%I64u
+%I64u, 
+%I64X
+%ls : error : WPPFMT Failed to make path %s
+%ls : error : WPPFMT File + Path too long %s
+%ls : error : WPPFMT GUID buffer too small 
+%ls : error : WPPFMT Insufficient Buffer
+%ls : error : WPPFMT Invalid TMC annotation
+%ls : info : WPPFMT generating %s for %s
+%ls : info : WPPFMT No Trace entries found in %s
+%ls : warning : WPPFMT Event too complex. This event's decoding information will be omitted from the TMF file: %.80hs %.80hs
+%ls : warning : WPPFMT Failed Create %s (0x%0X)
+%ls : warning : WPPFMT Failed to open %s (0x%0X)
+%s %s
+%s %s[%s|%s]
+%s FUNC=%s
+%S,0x%I64X
+%s\%s
+%s\%s%s
+%s\%s.mof
+%s\%s.mui
+%s\%s.tmf
+%s\%s\%s.mui
+%u:%u
+%u:%u:%u:%u:%u:%u:%u:%u
+&#%hu;
+&amp;
+&apos;
+&quot;
+(A^_^[
+(A_A^A]A\_^][
+(D$0L
+(D$Pf
+(L$@H
+(none)
+(t$@H
+(t$`H
+(t$`L
+(t$0H
+(Type:%d Level:%d Version:%d)
+)D$ A
+)t$`H
+.%03uZ
+.%09u
+.%09u%lc%02u:%02u
+.%09uZ
+..%ws
+.\%s.mui
+.\%s\%s.mui
+.00cfg
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIY
+.CRT$XIZ
+.data
+.data$brc
+.gehcont
+.gfids
+.giats
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.pdata
+.rdata
+.rdata$brc
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+.text
+.text$di
+.text$mn
+.text$mn$00
+.text$x
+.text$yd
+.xdata
+// PDB:  %s
+// PDB:  Last Updated :%04d-%02d-%02d:%02d:%02d:%02d:%03d (UTC) [%ls]
+// WPP Generated File
+//ModuleName = %s%s
+//Section[@name]
+//Section[@name="%s"]
+/D9nh}
+;L$`v
+;s`uC
+;T$`v
+;T$`wfL
+?A9^xtRH
+?A9^xtVH
+?D9v(
+?D9zlu9
+?H9|$@
+?H9YXu
+?terminate@@YAXXZ
+@,tDH
+@.data
+@.reloc
+@.rsrc
+@8:|EI
+@8=LY
+@A^_]
+@A^_^
+@A^_^[]
+@A_A^]
+@A_A^_
+@A_A^_^]
+@A_A^A\
+@A_A^A\_^
+@A_A^A]A\_^]
+@hA;@ds
+@LE9hh}
+@SUVWATAUAVAWH
+@SUVWATAVAW
+@SUVWATAVAWH
+@SUWH
+@SVWH
+@USVWATAUAVAWH
+@USVWAUAVAWH
+@USVWAVAWH
+@USVWAVH
+@USVWH
+[Dynamic,
+\$ E3
+\$ UH
+\$ UVWATAUAVAW
+\$ UVWATAUAVAWH
+\$ UVWAVAWH
+\$ UVWH
+\$(E3
+\$@A9_h
+\$@E3
+\$<A9~
+\$0E3
+\$0fD
+\$PE3
+\$XH+\$PH
+\\%s\%s
+\\*\*(*)\*
+\\*\*\*
+\Device\
+\StringFileInfo\%04x%04x\%s
+\VarFileInfo\Translation
+__C_specific_handler
+__CxxFrameHandler3
+__dllonexit
+__iob_func
+__set_app_type
+__setusermatherr
+__wgetmainargs
+_amsg_exit
+_atoi64
+_callnewh
+_cexit
+_commode
+_errno
+_exit
+_fmode
+_getmbcp
+_initterm
+_lock
+_NT_SYMBOL_PATH
+_onexit
+_purecall
+_splitpath_s
+_stricmp
+_strnicmp
+_unlock
+_vscprintf
+_vsnprintf
+_vsnwprintf
+_wcsicmp
+_wcslwr
+_wcsnicmp
+_wfopen
+_wmakepath_s
+_wsplitpath_s
+_XcptFilter
+` UAVAWH
+`.rdata
+`A^_^[]
+`A_A^_^]
+`A_A^A]A\_^]
+{ UATAUAVAWH
+{%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x}
+{8H9?txH
+{hH9?tyH
+{PH9?tyH
+{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}
+| %10d   %-20s %-15d 
+| %10d   %-20s %-15d %-15d %38s|
+|$ ATAVAWH
+|$ AVH
+|$ E3
+|$ UATAUAVAWH
+|$ UAVAWH
+|$ UH
+|$(A^
+|$(E3
+|$@fI
+|$@H+
+|$0A_A^
+|$0E3
+|$PD9nxu
+|$pD9y
+|$XI;
+|%10s   %-20s %-15s %-15s %-15s %-38s|
+|%10s   %-20s %-15s %-15s %-38s|
+}: amended
+}gH9}
++---------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+<!-- Copyright (c) Microsoft Corporation -->
+<$uBA
+<%ws name="%ws">
+</%ws>
+</Address>
+</assembly>
+</BinaryEventData>
+</Channel>
+</channels>
+</ComplexData>
+</Component>
+</Computer>
+</Data>
+</DebugData>
+</Event>
+</EventData>
+</EventGuid>
+</EventName>
+</EventPayload>
+</events>
+</Events>
+</ExtendedTracingInfo>
+</FileLine>
+</FlagsName>
+</Function>
+</Header>
+</instrumentationManifest>
+</Item>
+</Keyword>
+</keywords>
+</Keywords>
+</Level>
+</LevelName>
+</levels>
+</localization>
+</Map>
+</maps>
+</Message>
+</namedQueries>
+</Opcode>
+</opcodes>
+</patternMap>
+</patternMaps>
+</PmcCounter>
+</PmcCounters>
+</ProcessingErrorData>
+</provider>
+</Provider>
+</PsmKey>
+</RenderingInfo>
+</Report>
+</resources>
+</Section>
+</SequenceNumber>
+</Stack>
+</String>
+</StringTable>
+</stringTable>
+</struct>
+</SubComponent>
+</Summary>
+</System>
+</Table>
+</Task>
+</tasks>
+</template>
+</templates>
+</trustInfo>
+</UserData>
+<?xml version="1.0" encoding="UTF-16"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="%s"?>
+<Address>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+<BinaryEventData>
+<Channel />
+<channel value="%d" chid="channel%d" 
+<Channel>
+<channels>
+<ComplexData Name="
+<Component>
+<Computer />
+<Computer>
+<Correlation
+<Data label='iisRequests' name='requestRate' format='#,##0'/>
+<Data label='iisRespTime' name='responseTime' format='#,##0'/>
+<Data Name="
+<data name="%ws"
+<Data name='%s' %s year='%d' month='%d' day='%d' weekday='%d' hour='%d' minute='%d' second='%d'>%s %s</Data>
+<Data name='%s' year='%d' month='%d' day='%d' weekday='%d' hour='%d' minute='%d' second='%d'>%s %s</Data>
+<Data name='address' class='number'/>
+<Data name='address'>%I64X</Data>
+<Data name='architecture' units='bit' visible='false'>%d</Data>
+<Data name='architecture' units='bit'>%d</Data>
+<Data name='aspPercent' class='number' format='%s'/>
+<Data name='authority' class='string'/>
+<Data name='authority'>%s</Data>
+<Data name='buffers'>%d</Data>
+<Data name='build' visible='false'>%d</Data>
+<Data name='build'>%d</Data>
+<Data name='cgiPercent' class='number' format='%s'/>
+<Data name='clock' units='MHz' visible='false'>%d</Data>
+<Data name='clock' units='MHz'>%d</Data>
+<Data name='computer' header='computer' translate='value'>Client</Data>
+<Data name='computer' header='computer'>%s</Data>
+<Data name='count' class='number' summary='total'/>
+<Data name='count' summary='total' class='number'/>
+<Data name='count'>%d</Data>
+<Data name='count'>%u</Data>
+<Data name='counter' class='string' />
+<Data name='counter' visible='false'>
+<Data name='cpu' class='number' format='#,##0.0'/>
+<Data name='cpu' class='number' format='%s'/>
+<Data name='cpu' class='number' summary='total'/>
+<Data name='cpu' summary='total' class='number' format='#,##0.0'/>
+<Data name='cpu'>%.4f</Data>
+<Data name='cpu'>%1.2f</Data>
+<Data name='dequeue' class='number'/>
+<Data name='description' class='string'/>
+<Data name='description'>
+<Data name='disk'>%d</Data>
+<Data name='diskNumber' class='string'/>
+<Data name='diskNumber'>%d</Data>
+<Data name='displayName' class='string' />
+<Data name='displayName'>
+<Data name='dpc' summary='total' class='number'/>
+<Data name='dpc'>%u</Data>
+<Data name='dpcAddress' class='number'/>
+<Data name='dpcAddress'>%I64X</Data>
+<Data name='dpcModule' class='string'/>
+<Data name='dpcModule'>%ws</Data>
+<Data name='duration' header='duration' units='sec'>%I64u</Data>
+<Data name='end' class='number'/>
+<Data name='errorCode'>0x%x</Data>
+<Data name='errorMessage' translate='value'>unknownError</Data>
+<Data name='errorMessage'>
+<Data name='event' class='string'/>
+<Data name='event'>%s</Data>
+<Data name='event'>Unknown</Data>
+<Data name='events'>%d</Data>
+<Data name='file'>
+<Data name='fileDuration' units='sec'>%I64u</Data>
+<Data name='group' class='string'/>
+<Data name='group'>%s</Data>
+<Data name='groupCpu' class='number' format='#,##0.0' visible='false'/>
+<Data name='groupCpu' visible='false'>%.4f</Data>
+<Data name='image' class='string'/>
+<Data name='image'>%s
+<Data name='image'>%s</Data>
+<Data name='instance' class='string' />
+<Data name='instance'>
+<Data name='ioRate' visible='false'>%1.3f</Data>
+<Data name='ip' class='string'/><Data name='requestRate' class='number' format='%s'/><Data name='cached' class='number' format='%s'/><Data name='responseTime' class='number' format='#,##0'/></Header>
+<Data name='isapiPercent' class='number' format='%s'/>
+<Data name='isr' summary='total' class='number'/>
+<Data name='isr'>%u</Data>
+<Data name='isrAddress' class='number'/>
+<Data name='isrAddress'>%I64X</Data>
+<Data name='isrModule' class='string'/>
+<Data name='isrModule'>%ws</Data>
+<Data name='jobId' class='string'/>
+<Data name='jobId' label='slowestJob'/>
+<Data name='jobSize' label='aveJobSize' format='#,##0'/>
+<Data name='kernel'>%1.0f</Data>
+<Data name='kernelCpuPer' class='number' format='#,##0.0' visible='false'/>
+<Data name='kernelCpuPer' class='number' format='#,##0.0'/>
+<Data name='kernelCpuPer'>%.4f</Data>
+<Data name='launchedThreads' class='number'/>
+<Data name='launchedThreads' summary='total' class='number'/>
+<Data name='launchedThreads'>%d</Data>
+<Data name='logger'>
+<Data name='lostEvents'>%d</Data>
+<Data name='lowerBound' class='number'/>
+<Data name='lowerBound'>%.0f</Data>
+<Data name='lowerBound'>%I64u</Data>
+<Data name='machine' class='string' />
+<Data name='machine'>
+<Data name='max' >%1.*f</Data>
+<Data name='max' class='number'  format='#,##0.###' />
+<Data name='max'>%x</Data>
+<Data name='mean' class='number' format='#,##0.###' />
+<Data name='mean' class='number' format='#,##0.###'/>
+<Data name='mean'>%1.*f</Data>
+<Data name='mean'>%x</Data>
+<Data name='memory' units='MB' visible='false'>%d</Data>
+<Data name='memory' units='MB'>%d</Data>
+<Data name='min' >%1.*f</Data>
+<Data name='min' class='number'  format='#,##0.###' />
+<Data name='min'>%x</Data>
+<Data name='module' class='string'/>
+<Data name='module'>%ws</Data>
+<Data name='opcode' class='string'/>
+<Data name='opcode'>%d</Data>
+<Data name='opcode'>%s</Data>
+<Data name='payloadGuid' class='code'/>
+<Data name='payloadGuid'>%s</Data>
+<Data name='payloadId' class='string'/>
+<Data name='payloadId'>%d</Data>
+<Data name='percent' summary='total' class='number' format='#,##0.0'/>
+<Data name='percent' summary='total' class='number' format='#.##'/>
+<Data name='percent'>%.2f</Data>
+<Data name='pfRate' class='number' format='#,##0.0' visible='false'/>
+<Data name='pfRate'>%1.3f</Data>
+<Data name='pid' class='string'/>
+<Data name='pid'>%d</Data>
+<Data name='pid'>-</Data>
+<Data name='processCpu'>%1.2f</Data>
+<Data name='processor' class='number'/>
+<Data name='processor'>%u</Data>
+<Data name='processors' visible='false'>%d</Data>
+<Data name='processors'>%d</Data>
+<Data name='rate'>%1.2f</Data>
+<Data name='readRate' class='number' format='#,##0.0' visible='false'/>
+<Data name='readRate' class='number' format='#,##0.0'/>
+<Data name='readRate'>%1.3f</Data>
+<Data name='readSize' class='number'/>
+<Data name='readSize'>%d</Data>
+<Data name='regRate' class='number' format='#,##0.0' visible='false'/>
+<Data name='regRate'>%1.3f</Data>
+<Data name='requestRate' class='number' format='%s'/>
+<Data name='requestType' class='string'/>
+<Data name='responseTime' class='number' format='#,##0'/>
+<Data name='responseTime' class='number' format='0' summary='average'/>
+<Data name='responseTime' label='responseTime' format='#,##0'/>
+<Data name='serviceName' class='string'/>
+<Data name='serviceName'>%s</Data>
+<Data name='siteId' class='string'/><Data name='requestRate' class='number' format='%s'/><Data name='bytesSentRate' class='number'/><Data name='cached' class='number' format='%s'/><Data name='staticPercent' class='number' format='%s'/><Data name='cgiPercent' class='number' format='%s'/><Data name='aspPercent' class='number' format='%s'/></Header>
+<Data name='siteId' class='string'/><Data name='requestRate' class='number' format='%s'/><Data name='cached' class='number' format='%s'/><Data name='responseTime' class='number' format='#,##0'/><Data name='cpuTime' class='number' format='#,##0'/><Data name='cpu' class='number' format='%s'/></Header>
+<Data name='siteId' class='string'/><Data name='requestRate' class='number' format='%s'/><Data name='responseTime' class='number' format='#,##0'/><Data name='cached' class='number' format='%s'/><Data name='staticPercent' class='number' format='%s'/><Data name='cgiPercent' class='number' format='%s'/><Data name='aspPercent' class='number' format='%s'/></Header>
+<Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='cached'>%1.3f</Data><Data name='bytesSentRate'>%d</Data></Item>
+<Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='cached'>%1.3f</Data><Data name='responseTime'>%1.0f</Data><Data name='bytesSentRate'>%d</Data></Item>
+<Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='cached'>%1.3f</Data><Data name='responseTime'>%1.3f</Data><Data name='cpu'>%1.3f</Data><Data name='bytesSentRate'>%d</Data></Item>
+<Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='cpu'>%1.3f</Data></Item>
+<Data name='skippedEvents' visible='false'>%d</Data>
+<Data name='skippedEvents'>%d</Data>
+<Data name='start' class='number'/>
+<Data name='status' class='string'/>
+<Data name='status'>%s</Data>
+<Data name='sum' summary='total' class='number'/>
+<Data name='sum'>%u</Data>
+<Data name='task' class='string'/>
+<Data name='task'>%d</Data>
+<Data name='threads' class='number' visible='false'/>
+<Data name='threads' span='2' class='span'/>
+<Data name='threads'>%d</Data>
+<Data name='transaction'>%s</Data>
+<Data name='ulPercent' class='number' format='%s'/>
+<Data name='upperBound' class='number'/>
+<Data name='upperBound'>%.0f</Data>
+<Data name='upperBound'>%I64u</Data>
+<Data name='url' class='string'/><Data name='siteId' class='number'/><Data name='requestRate' class='number' format='%s'/><Data name='cached' class='number' format='%s'/><Data name='bytesSentRate' class='number'/></Header>
+<Data name='url' class='string'/><Data name='siteId' class='number'/><Data name='requestRate' class='number' format='%s'/><Data name='cached' class='number' format='%s'/><Data name='responseTime' class='number' format='#,##0'/><Data name='bytesSentRate' class='number'/></Header>
+<Data name='url' class='string'/><Data name='siteId' class='number'/><Data name='requestRate' class='number' format='%s'/><Data name='cpu' class='number' format='%s'/></Header>
+<Data name='usedThreads' class='number'/>
+<Data name='usedThreads' summary='total' class='number'/>
+<Data name='usedThreads'>%d</Data>
+<Data name='user'>%1.0f</Data>
+<Data name='userCpuPer' class='number' format='#,##0.0' visible='false'/>
+<Data name='userCpuPer' class='number' format='#,##0.0'/>
+<Data name='userCpuPer'>%.4f</Data>
+<Data name='useTimingWindow' translate='value'>%ws</Data>
+<Data name='version' class='string'/>
+<Data name='version'>%d</Data>
+<Data name='w3FilterPercent' class='number' format='%s'/>
+<Data name='w3Percent' class='number' format='%s'/>
+<Data name='writeRate' class='number' format='#,##0.0' visible='false'/>
+<Data name='writeRate' class='number' format='#,##0.0'/>
+<Data name='writeRate'>%1.3f</Data>
+<Data name='writeSize' class='number'/>
+<Data name='writeSize'>%d</Data>
+<Data span='3' />
+<Data span='3'/>
+<Data>
+<DataItemName />
+<DebugData>
+<description>Event Trace Report Tool</description>
+<ErrorCode>%d</ErrorCode>
+<Event %ws>
+<event value="%d" 
+<EventData>
+<EventGuid>
+<EventID>%u</EventID>
+<EventName %ws>
+<EventPayload>
+<Events>
+<events>
+<Execution ProcessID="%u" ThreadID="%u" ProcessorID="%u" 
+<ExtendedTracingInfo %ws>
+<fD;_B
+<FileLine>
+<FlagsName>
+<Function>
+<Header>
+<Header>    <Data span='3' />    <Data name='CPU Distribution' span='7' class='span'/></Header><Header><Threshold type='top' field='count' value='3' />
+<Header>    <Data span='3' />    <Data name='cpuDist' span='7' class='span'/></Header>
+<Header>  <Data span='3' />  <Data name='responseTimeDist' span='7' class='span'/></Header>
+<Header>  <Threshold type='top' field='count' value='3'/>
+<Header><Data name='jobId' class='string'/><Data name='type' class='number'/><Data name='jobSize' class='number'/><Data name='pages' class='number'/><Data name='PPS' class='number'/><Data name='files' class='number'/><Data name='gdiSize' class='number'/><Data name='color' class='number'/><Data name='xRes' class='number'/><Data name='yRes' class='number'/><Data name='qlty' class='number'/><Data name='copies' class='number'/><Data name='ttopt' class='number'/><Data name='threads' class='number'/></Header>
+<Header><Threshold type='top' field='count' value='3' />
+<Header><Threshold type='top' field='count' value='3'/>
+<importChannel name="%ws" chid="channel%d" />
+<InstanceID>%lu</InstanceID>
+<instrumentationManifest    xmlns="http://schemas.microsoft.com/win/2004/08/events"
+<Item visible='false'><Data name='requestType' translate='value'>httpNonCached</Data><Data name='requestRate'>%1.3f</Data><Data name='responseTime'>%1.3f</Data><Data name='ulPercent'>%1.3f</Data><Data name='w3Percent'>%1.3f</Data><Data name='w3FilterPercent'>%1.3f</Data><Data name='isapiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data></Item>
+<Item>
+<Item><Data name='ip'>%S</Data><Data name='requestRate'>%1.3f</Data><Data name='cached'>%1.3f</Data><Data name='responseTime'>%I64u</Data></Item>
+<Item><Data name='jobId'>%d</Data><Data name='start'>%2d:%02d:%02d.%03d</Data><Data name='dequeue'>%2d:%02d:%02d.%03d</Data><Data name='end'>%2d:%02d:%02d.%03d</Data><Data name='responseTime'>%I64u</Data><Data name='cpu'>%d</Data></Item>
+<Item><Data name='jobId'>%d</Data><Data name='type'>%d</Data><Data name='jobSize'>%d</Data><Data name='pages'>%d</Data><Data name='PPS'>%d</Data><Data name='files'>%hd</Data><Data name='gdiSize'>%d</Data><Data name='color'>%hd</Data><Data name='xRes'>%hd</Data><Data name='yRes'>%hd</Data><Data name='qlty'>%hd</Data><Data name='copies'>%hd</Data><Data name='ttopt'>%hd</Data><Data name='threads'>%d</Data></Item>
+<Item><Data name='requestType' tab='1' translate='value'>asp</Data><Data name='requestRate'>%1.3f</Data><Data name='cpu'>%1.3f</Data><Data name='ulPercent'>%1.3f</Data><Data name='w3Percent'>%1.3f</Data><Data name='w3FilterPercent'>%1.3f</Data><Data name='isapiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data></Item>
+<Item><Data name='requestType' tab='1' translate='value'>asp</Data><Data name='requestRate'>%1.3f</Data><Data name='responseTime'>%1.3f</Data><Data name='ulPercent'>%1.3f</Data><Data name='w3Percent'>%1.3f</Data><Data name='w3FilterPercent'>%1.3f</Data><Data name='isapiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data></Item>
+<Item><Data name='requestType' tab='1' translate='value'>cgi</Data><Data name='requestRate'>%1.3f</Data><Data name='cpu'>%1.3f</Data><Data name='ulPercent'>%1.3f</Data><Data name='w3Percent'>%1.3f</Data><Data name='w3FilterPercent'>%1.3f</Data><Data name='isapiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data></Item>
+<Item><Data name='requestType' tab='1' translate='value'>cgi</Data><Data name='requestRate'>%1.3f</Data><Data name='responseTime'>%1.3f</Data><Data name='ulPercent'>%1.3f</Data><Data name='w3Percent'>%1.3f</Data><Data name='w3FilterPercent'>%1.3f</Data><Data name='isapiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data></Item>
+<Item><Data name='requestType' tab='1' translate='value'>errors</Data><Data name='requestRate'>%1.3f</Data><Data name='cpu'>%1.3f</Data><Data name='ulPercent'>%1.3f</Data><Data name='w3Percent'>%1.3f</Data><Data name='w3FilterPercent'>%1.3f</Data><Data name='isapiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data></Item>
+<Item><Data name='requestType' tab='1' translate='value'>errors</Data><Data name='requestRate'>%1.3f</Data><Data name='responseTime'>%1.3f</Data><Data name='ulPercent'>%1.3f</Data><Data name='w3Percent'>%1.3f</Data><Data name='w3FilterPercent'>%1.3f</Data><Data name='isapiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data></Item>
+<Item><Data name='requestType' tab='1' translate='value'>staticCachedHttp</Data><Data name='requestRate'>%1.3f</Data><Data name='cpu'>%1.3f</Data><Data name='ulPercent'>%3d.0</Data><Data name='w3Percent'>0.0</Data><Data name='w3FilterPercent'>0.0</Data><Data name='isapiPercent'>0.0</Data><Data name='aspPercent'>0.0</Data><Data name='cgiPercent'>0.0</Data></Item>
+<Item><Data name='requestType' tab='1' translate='value'>staticCachedHttp</Data><Data name='requestRate'>%1.3f</Data><Data name='responseTime'>%1.3f</Data><Data name='ulPercent'>%3d.0</Data><Data name='w3Percent'>0.0</Data><Data name='w3FilterPercent'>0.0</Data><Data name='isapiPercent'>0.0</Data><Data name='aspPercent'>0.0</Data><Data name='cgiPercent'>0.0</Data></Item>
+<Item><Data name='requestType' tab='1' translate='value'>staticHttp</Data><Data name='requestRate'>%1.3f</Data><Data name='cpu'>%1.3f</Data><Data name='ulPercent'>%1.3f</Data><Data name='w3Percent'>%1.3f</Data><Data name='w3FilterPercent'>%1.3f</Data><Data name='isapiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data></Item>
+<Item><Data name='requestType' tab='1' translate='value'>staticHttp</Data><Data name='requestRate'>%1.3f</Data><Data name='responseTime'>%1.3f</Data><Data name='ulPercent'>%1.3f</Data><Data name='w3Percent'>%1.3f</Data><Data name='w3FilterPercent'>%1.3f</Data><Data name='isapiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data></Item>
+<Item><Data name='requestType' translate='value'>httpCpuTimeTotal</Data><Data name='requestRate'>%1.3f</Data><Data name='cpu'>%1.3f</Data><Data name='ulPercent'>%1.3f</Data><Data name='w3Percent'>%1.3f</Data><Data name='w3FilterPercent'>%1.3f</Data><Data name='isapiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data></Item>
+<Item><Data name='requestType' translate='value'>httpRespTimeTotal</Data><Data name='requestRate'>%1.3f</Data><Data name='responseTime'>%1.3f</Data><Data name='ulPercent'>%1.3f</Data><Data name='w3Percent'>%1.3f</Data><Data name='w3FilterPercent'>%1.3f</Data><Data name='isapiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data></Item>
+<Item><Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='bytesSentRate'>%d</Data><Data name='cached'>%1.3f</Data><Data name='staticPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data></Item>
+<Item><Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='cached'>%1.3f</Data><Data name='responseTime'>%I64u</Data><Data name='cpuTime'>%d</Data><Data name='cpu'>%1.3f</Data></Item>
+<Item><Data name='siteId'>%d</Data><Data name='requestRate'>%1.3f</Data><Data name='responseTime'>%I64u</Data><Data name='cached'>%1.3f</Data><Data name='staticPercent'>%1.3f</Data><Data name='cgiPercent'>%1.3f</Data><Data name='aspPercent'>%1.3f</Data></Item>
+<Item><Data name='url'>
+<keyword name="keyword%d" mask="0x%I64x" message="$(string.string%d)" />
+<Keyword>
+<Keywords>
+<keywords>
+<Keywords>0x%I64X</Keywords>
+<level value="%d" name="level%d" message="$(string.string%d)" />
+<Level>
+<Level>%u</Level>
+<LevelName>
+<levels>
+<localization>
+<Map %ws>
+<map message="$(string.string%d)" value=
+<map name="%ws" value="%ws"></map>
+<maps>
+<MatchId>0x%016I64X</MatchId>
+<Message>
+<namedQueries>
+<opcode value="%d" name="opcode%d" message="$(string.string%d)"/>
+<opcode value="%d" name="opcode%d" mofValue="%d" message="$(string.string%d)"/>
+<Opcode>
+<Opcode>%u</Opcode>
+<opcodes>
+<ParentInstanceID>%lu</ParentInstanceID>
+<patternMap format="%ws" name="%ws">
+<patternMaps>
+<PebsIndex>0x%016I64X</PebsIndex>
+<PmcCounter>
+<PmcCounters>
+<ProcessingErrorData>
+<Provider
+<provider name="%ws" symbol="provider%d" guid="%ws" source="%ws" messageFileName="noMessageFile" resourceFileName="noResourceFile"
+<Provider>
+<PsmKey>
+<RenderingInfo
+<Report name='%wZ' level='%d' top='%d' version='%d'>
+<Report name='tracerpt' level='%d' top='25' version='%d.%d'>
+<resources culture="%ws">
+<Section key='-90000' name='tracerptHeader'>
+<Section name='%s' key='%d'%s
+<Section name='%wZ' key='%d'
+<Section>
+<Security UserID="
+<SequenceNumber>
+<Sort field='count' type='number' order='descending'/>
+<Sort field='counter' type='text' order='ascending'/>
+<Sort field='cpu' type='number' order='descending'/>
+<Sort field='displayName' type='text' order='ascending'/>
+<Sort field='image' type='text' order='ascending'/>
+<Sort field='instance' type='text' order='ascending'/>
+<Sort field='ioRate' type='number' order='descending'/>
+<Sort field='max' type='number' order='descending'/>
+<Sort field='mean' type='number' order='descending'/>
+<Sort field='min' type='number' order='descending'/>
+<Sort field='percent' type='number' order='descending'/>
+<Sort field='process' type='text' order='ascending'/>
+<Sort field='responseTime' type='number' order='descending'/>
+<Sort field='serviceName' type='text' order='ascending'/>
+<Stack>
+<string id="string%d" value="
+<String ID='%ws'>
+<String ID='%wZ'>
+<stringTable>
+<StringTable>
+<struct name="%ws"
+<SubComponent>
+<Summary key='1' find='top' field='groupCpu' exclude='pid' value='0' topic='process'>
+<Summary key='1' find='total' field='cpu' exclude='pid' value='0' topic='process'>
+<Summary key='2' find='average' field='jobSize' topic='jobs'>
+<Summary key='2' find='field' field='requestType' value='httpNonCached' topic='iis'>
+<Summary key='2' find='field' field='requestType' value='httpRespTimeTotal' topic='iis'>
+<Summary key='2' find='field' field='requestType' value='staticCachedHttp' topic='iis'>
+<Summary key='2' find='top' field='responseTime' topic='jobs'>
+<Summary key='3' find='top' field='responseTime' topic='iis'>
+<Summary key='4' find='top' field='ioRate' topic='diskInfo'>
+<System>
+<Table level='1' name='diskTotals' key='200' topic='diskBreakDown'>
+<Table level='1' name='dpcCPU' key='100' topic='dpcisrBreakDown'>
+<Table level='1' name='dpcExecutionTime' key='200' topic='dpcisrBreakDown'>
+<Table level='1' name='dpcIsrCPU' key='500' topic='dpcisrBreakDown'>
+<Table level='1' name='dpcIsrLatencies' key='600' topic='dpcisrBreakDown'>
+<Table level='1' name='isrCPU' key='300' topic='dpcisrBreakDown'>
+<Table level='1' name='isrExecutionTime' key='400' topic='dpcisrBreakDown'>
+<Table name='%ws'>
+<Table name='%wZ'
+<Table name='client' style='info'>
+<Table name='clientRequests' topic='clients' level='1' key='4100'>
+<Table name='clientResponses' topic='clients' level='1' key='4200'><Header><Threshold type='top' field='count' value='3'/>
+<Table name='collection' style='info'>
+<Table name='error' style='info'>
+<Table name='events'>
+<Table name='exclusiveTrans' level='%d' key='400' topic='process'>
+<Table name='files' style='info'>
+<Table name='hotFile' level='1' key='100' topic='hotFiles'>
+<Table name='httpCpuTime' topic='overview' level='1' key='1100'>
+<Table name='httpRespTime' topic='overview' level='1' key='1200'>
+<Table name='imageStats' level='1' key='100' topic='process'>
+<Table name='inclusiveTrans' level='%d' key='500' topic='process'>
+<Table name='serviceStats' level='1' key='100' topic='service'>
+<Table name='siteBytesSent' topic='sites' top='1' key='5300'>
+<Table name='siteCpuTime' topic='sites' level='1' key='5100'>
+<Table name='siteRequests' topic='sites' level='1' key='5200'>
+<Table name='siteResponseTime' topic='sites' level='1' key='5400'>
+<Table name='slowestUrls' topic='url' level='1' key='2600'>
+<Table name='spoolerJobs' level='1' topic='jobs'>
+<Table name='spoolerQueue' level='1' topic='jobs'>
+<Table name='topBytesSentUrls' topic='url' level='1' key='2500'>
+<Table name='topStaticUrls' topic='url' level='1' key='2400'>
+<Table name='topUrls' topic='url' level='1' key='2300'><Summary key='3' find='top' field='cpu' topic='process'>
+<Table name='transactionStats' key='200' topic='process'>
+<Table name='urlTimeDistByCpu' topic='url' level='1' key='2100'>
+<task value="%d" eventGUID="%ws" name="task%d" message="$(string.string%d)" />
+<task value="%d" name="task%d" message="$(string.string%d)" />
+<Task>
+<Task>%u</Task>
+<tasks>
+<template tid="tid_%d">
+<templates>
+<Threshold type='octave' field='bytesSentRate' />
+<Threshold type='octave' field='bytesSentRate'/>
+<Threshold type='octave' field='count'/>
+<Threshold type='octave' field='cpu' />
+<Threshold type='octave' field='cpu'/>
+<Threshold type='octave' field='requestRate'/>
+<Threshold type='octave' field='responseTime'/>
+<Threshold type='top' field='count' value='10'/>
+<Threshold type='top' field='count' value='3'/>
+<Threshold type='top' value='%d'/>
+<Threshold type='top' value='10'/>
+<Threshold type='top' value='all'/>
+<TimeCreated RawTime="%I64u" />
+<TimeCreated SystemTime="
+<trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+<UserData>
+<Version>%u</Version>
+= 0x%08X
+=@8yxu5I
+></data>
+040904B0
+0A^_]
+0A^_^
+0A^_^[]
+0A_A^]
+0A_A^_
+0A_A^A\
+0A_A^A\_]
+0A_A^A\_^
+0A_A^A]_^[]
+0A_A^A]A\]
+0A_A^A]A\_
+0A_A^A]A\_^]
+0thI+
+0x%016I64X
+0x%08X
+0x%08X, 0x%08X, %20u, 
+0x%I64X
+0x%ws
+10.0.22000.1
+10.0.22000.1 (WinBuild.160101.0800)
+1D86t4H
+1H9~ uc
+3L97t
+69_0s
+8A_A^A]A\_^[]
+8T$(t
+8y6H;
+9\$(u
+9]gt]H
+9]LsED
+9]ot~H9^
+9]wt3H9
+9_hv<H
+9{0uH9{Pu
+9{Dt2
+9Clu(L
+9Hdt@
+9n$v=L
+9qDt*
+9qhv:D
+9r0t{
+9sxt.H
+9T$|s
+9t$ht
+9V$v(L
+9w$E;
+A H;B u
+A,9C,vF
+A;@hv
+A;Hhv
+A;Hpv
+A^_^[]
+A_A^]
+A_A^_
+A_A^_^[]
+A_A^_^]
+A_A^A\
+A_A^A\_]
+A_A^A\_^
+A_A^A\_^][
+A_A^A]_^
+A_A^A]A\]
+A_A^A]A\^
+A_A^A]A\_
+A_A^A]A\_^[]
+A_A^A]A\_^]
+A_A^A]A\_^][
+A0+B0u0H
+A9]Du
+A9p(tPA
+Activity ID
+AddressType
+aggregate
+align
+ALL Modules
+AllowXsltScript
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-console-l1-1-0.dll
+api-ms-win-core-console-l2-1-0.dll
+api-ms-win-core-datetime-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-file-l1-2-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-heap-obsolete-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-libraryloader-l1-2-1.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-localization-l1-2-2.dll
+api-ms-win-core-localization-obsolete-l1-2-0.dll
+api-ms-win-core-memory-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-rtlsupport-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-timezone-l1-1-0.dll
+api-ms-win-core-util-l1-1-0.dll
+api-ms-win-core-version-l1-1-0.dll
+api-ms-win-eventing-consumer-l1-1-0.dll
+api-ms-win-eventing-tdh-l1-1-0.dll
+api-ms-win-security-lsalookup-l2-1-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+api-ms-win-shcore-stream-l1-1-0.dll
+Application
+ascending
+ATAVAWH
+AUAVAWH
+average
+AX;GXu
+B(f9A(u
+B-8A-t
+B8H;A
+BinaryPath
+bitMap
+BP;Apu
+BpA9@pv
+bs-BA-Cyrl
+bs-BA-Latn
+bs-Cyrl-BA
+bs-Latn-BA
+ByteCount
+ByteOffset
+BytesSent
+C(f;0u
+C(f9G.t
+C(fD9A
+C*fA;
+Channel
+channel="channel%d" 
+class %s%s : EventTrace
+Clock-Time
+CloseHandle
+CloseTrace
+CoCreateInstance
+CoInitializeEx
+Color
+Column
+column
+CommandLine
+CompanyName
+ComponentName
+ComputerName
+connID
+ConnID
+ContextId
+ConvertSidToStringSidW
+Copies
+CoSetProxyBlanket
+Could not get the current directory
+CoUninitialize
+counter
+CounterTable
+CPUSpeed
+CreateFileMappingW
+CreateFileW
+CreateStreamOnHGlobal
+CreateThread
+CreateXmlReader
+-CuNA
+D$ E3
+D$ fI
+D$ H;
+D$ I;
+D$( N
+D$(2V8f+
+D$(E3
+d$(E3
+D$(fI
+D$@E3
+d$@E3
+D$@E9a
+D$@fA
+D$@fI
+D$`E3
+D$`fD
+D$`H;
+D$`L;
+D$`L+
+d$0E3
+D$0E3
+D$0fE;
+D$0fI
+d$0fI
+D$0fI
+D$0H;
+D$0M;
+D$2E2
+D$6f+D$2f
+D$8!\$8E3
+d$8@8|$0tD
+D$8E3
+D$8I+
+D$DA;Gh
+D$HE3
+D$HfD
+D$HH;
+D$hH;
+D$HI;
+D$hL;
+D$PA9Gx
+D$PE3
+D$PH;
+D$pL;
+D$XD;
+D$xfD
+D$XH;
+D$XH9D$XA
+D;Bxt
+D;G t#H
+D;H t
+D;l$x
+D;xhs!f
+D;xhs%E
+D;xhs;fE;
+D8$:u
+D8$1u
+D8$8u
+D8I(tBE
+D8w-u
+D9%4w
+D9`hvED
+D9{0u
+D9{dtXD9{Xu
+D9{du
+D9{TtFH
+D9|$ht
+D9595
+D9a4t/
+D9aDt
+D9aPt
+D9b$t
+D9B0uxH
+D9c u
+D9c$v~D9g(ux
+D9fxt
+D9g(ux
+D9jhv_
+D9m,t
+D9ndv
+D9nlv
+D9nxt
+D9OxuCD9O|u=
+D9pdu]I
+D9s@u
+D9s<u
+D9s4tD
+D9s8tE
+D9s8u
+D9sDtL
+D9sDu
+D9sHtE
+D9sHu
+D9sLtC
+D9x$u
+D9X0trfE;
+D9y|u
+DataSize=%d
+DataType
+dbg: initializing...
+dbghelp.dll
+DecodePointer
+Default
+DeleteFileW
+descending
+Disk%d
+DiskNumber
+DisplayName
+DriveLetterString
+DriveType
+dumpfile.csv
+dumpfile.evtx
+dumpfile.xml
+E(f9G.
+EK E3
+EK(E3
+Elapsed Time            %I64d sec
+EncodePointer
+End Time                %ws
+EndTime
+en-US
+EP9ELuLH
+EqualJoin
+ERROR: WSAStartup failed with Status = %d
+Event Count
+Event ID
+Event Name
+Event Trace Report Tool
+EventField
+EventJoinField
+EventsLost
+EventTable
+EvtClose
+EvtIntCreateLocalLogfile
+EvtIntRenderResourceEventTemplate
+EvtIntWriteXmlEventToLocalLogfile
+Exclude
+eXfA;
+ExpandEnvironmentStringsW
+F u19{4t
+F(fD9@
+F(fD9B
+F,D9g
+f;D$ t
+f;D$ twf
+F@L9n uu
+f9,~u
+f9,Au
+f9,Qu
+f9/tlH
+f9<Au
+f93tGA
+f94Au
+f94Cu
+f94Gu
+f97t_H
+f9A@v
+f9C(t H
+f9C(t,H
+f9H\u
+f9q(t
+fA9<^u
+FALSE
+false
+fclose
+fD;<F
+fD;5L
+fD;5R{
+fD;8t=H
+fD;cTs1H
+fD;fTsYH
+fD;gBr
+fD;qV
+fD;TQ
+fD;w@
+fD9 t
+fD9$Au
+fD9$Cu
+fD9$su
+fD9$wu
+fD9(t
+fD9,Cu
+fD9,Gu
+fD9,Ou
+fD9[(t
+fD9[(tnL9C
+fD9}h
+fD9~Vv
+fD9<Au
+fD9<Bu
+fD9<Fu
+fD9<Ju
+fD9<Vu
+fD9<Xu
+fD94~u
+fD94Bu
+fD94Fu
+fD94hu
+fD94Ou
+fD94pu
+fD94ru
+fD94Wu
+fD94Yu
+fD94Zu
+fD96u
+fD98u
+fD9c:t=f
+fD9dB
+fD9K(t
+fD9K(t[L9C
+fD9S(t
+fD9S(tHH9K
+FDL9n ut
+fE9<Cu
+fE9<hu
+fE9<Iu
+fE9<Pu
+fE9<Ru
+fE94@u
+fE94hu
+fE9lv
+ferror
+fF9$@u
+fF9$xu
+fF9<Bu
+fF9<GH
+fG9,Gu
+fG9,wu
+fgets
+fgetws
+field
+FILE:
+FileDescription
+FileName
+FileObject
+Files Processed:
+FilesOpened
+FileTimeToSystemTime
+FileVersion
+FindClose
+FindFirstFileW
+FindNextFileW
+FindResourceExW
+FindResourceW
+FlagName
+FLAGS
+FlagsName
+fopen
+format
+FormatMessageW
+FormattedString
+fprintf
+fputs
+FreeLibrary
+FreeResource
+FRich
+FunctionName
+fwprintf
+G f9B u,
+G"8B"
+G"8B"u
+G$H;A$u
+G%8B%u
+G(9C(
+G-,C<
+G.f9A
+G-<4u
+G09C0
+GdiJobSize
+GEN_TMC
+GetConsoleMode
+GetConsoleOutputCP
+GetConsoleScreenBufferInfo
+GetCurrentDirectoryW
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThreadId
+GetDateFormatW
+GetEnvironmentVariableA
+GetEnvironmentVariableW
+GetFileAttributesW
+GetFileMUIPath
+GetFileSize
+GetFileTime
+GetFileType
+GetFileVersionInfoExW
+GetFileVersionInfoSizeExW
+GetLastError
+GetLocaleInfoEx
+GetLocaleInfoW
+GetModuleFileNameW
+GetModuleHandleW
+GetProcAddress
+GetProcessHeap
+GetStdHandle
+GetSystemDefaultUILanguage
+GetSystemTimeAsFileTime
+GetTempFileNameW
+GetTempPathW
+GetTickCount
+GetTimeFormatW
+GetTimeZoneInformation
+GetUserDefaultLocaleName
+GetUserDefaultUILanguage
+GetVersionExW
+G-H+KXf
+GhA9Ah
+GlobalAlloc
+GlobalFree
+GlobalLock
+GlobalUnlock
+groupby
+GuidName
+GuidTypeName
+H SUVWATAUAVAWH
+H SUVWATAVH
+H SVW
+h UAVAWH
+h VWATAVAWH
+H WATAUAVAWH
+H!\$0D
+H!\$0I
+H!t$(E3
+H!t$pL
+H;0t;H
+H;D$X
+H;D$xsRB
+H;G u
+h_^[]
+H9)ulH
+H9)uqH
+H9)uXH
+H9?tyH
+H91u=H
+H95IA
+H99ulH
+H9C u
+H9D$hu
+H9G uT
+H9i0t
+H9J t
+H9K8f
+H9S u
+H9w uF
+HA^A\_^][
+hA_A^A]A\_^[]
+HA_A^A]A\_^[]
+hA_A^A]A\_^[]
+HA_A^A]A\_^][
+hA_A^A]A\_^][
+HcA<H
+HcT$(H
+header='collected'
+HeapAlloc
+HeapFree
+HeapReAlloc
+HeapSetInformation
+HH':'mm':'ss
+HhA;Hds
+HHE9hp}
+HLE9hh}
+HpA;Hls
+HttpStatus
+HVfA;
+I9<$t+H
+I9A t
+I9B t"H
+I9M s
+ICMMethod
+ImageBase
+ImageFileName
+imagehlp.dll
+ImageSize
+Import
+Include
+instance
+Instance ID
+InternalName
+IrpFlags
+isprint
+IssuingThreadId
+iswspace
+ItemEnum
+ItemFlagsEnum
+iu-CA-Latn
+iu-Latn-CA
+J<t8I
+JD87tJH
+JobId
+JobSize
+K SWH
+K-D8H
+Kernel(ms)
+KernelTime="%I64u" />
+KernelTime="%lu" UserTime="%lu" />
+Keyword
+keyword%d 
+keywords="
+L!l$H
+L!l$PI
+l$ E3
+L$ E3
+l$ E3
+L$ E3
+l$ E3
+L$ E3
+l$ E3
+L$ H;L$(
+L$ SUVWH
+L$ SVWAVH
+L$ SVWH
+L$ USVWATAUAVAWH
+l$ VWATAVAWH
+l$ VWAVH
+l$$D8
+L$(fI
+l$(fI
+L$(fI
+L$(H;
+L$@E3
+l$@fE;
+L$@fI
+L$@H;
+L$@H3
+L$`A9Y
+L$`fD;{
+L$0E3
+l$0E3
+L$0fI
+l$0fI
+L$0H3
+L$8E3
+L$8fI
+l$8fI
+L$8fI
+l$8fI
+L$8H3
+L$HE3
+L$hfA;
+L$HH;
+L$HH3
+L$hI;
+L$HI;
+l$PD9h 
+L$pE3
+L$PH;
+L$pH;L$x
+L$PH;L$X
+L$PH3
+L$xE9l$
+L$XH;
+L$xH3
+L$XH3
+L$xH3
+L;L$HH
+L+CXH
+L9|$ 
+L9|$ t
+L9~@tEL
+L9~`tEL
+L9~8tEL
+L9~HtEL
+L9~htEL
+L9~ptEL
+L9~PtEL
+L9~Xt
+L9~XtEL
+L9~xtEL
+L9A t
+L9C8L
+L9f H
+L9g u
+L9h`u
+L9k L
+L9k(L
+L9n(L
+L9n`t
+L9nhL
+L9p(uWH
+L9q`u
+LcA<E3
+LCIDToLocaleName
+LegalCopyright
+level
+Level
+LEVEL
+level="%ws" 
+level="level%d" 
+LevelName
+LoadLibraryExW
+LoadLibraryW
+LoadResource
+LoadStringW
+Locale
+LocalFree
+LockResource
+LogFileMode
+LookupAccountSidW
+LT$HL
+m4H+O@H
+m4H+O`H
+machine
+MakeSureDirectoryPathExists
+Mal-formed pattern string: %s
+Mal-formed replacement string: %s
+malloc
+MapViewOfFile
+memcmp
+memcpy
+memmove
+memset
+MemSize
+message="$(string.string%d)" 
+Microsoft
+Microsoft 
+Microsoft Corporation
+ModuleName = %s
+mPD8i-
+msvcrt.dll
+MultiByteToWideChar
+MWfD;
+name="%ws" type="Debug"
+name="DummyChannel_%d" type="Debug"
+N-D8I
+ndD9np}
+NT Kernel Logger
+ntdll.dll
+number
+NumberOfProcessors
+O<@@8}
+o9p(tA;x(veD
+object
+OLEAUT32.dll
+Opcode
+opcode="%ws" 
+opcode="opcode%d" 
+OpenTraceW
+order
+OriginalFilename
+other
+outType
+p AWH
+p WATAUAVAWH
+p WAVAWH
+P/fD;
+P`fE;
+p0R^G'
+pA^_^[]
+pA^A]A\_^][
+PA_A^_^]
+PA_A^A\_^][
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+Pages
+PagesPerSide
+Parent Instance ID
+PartitionSize
+payloadGuid
+payloadId
+pdh.dll
+PdhAddCounterW
+PdhBindInputDataSourceW
+PdhCloseLog
+PdhCloseQuery
+PdhCollectQueryData
+PdhComputeCounterStatistics
+PdhExpandWildCardPathHW
+PdhGetDataSourceTimeRangeH
+PdhGetLogFileTypeW
+PdhGetRawCounterValue
+PdhOpenQueryH
+PdhParseCounterPathW
+PdhSetQueryTimeRange
+PdhTranslate009CounterW
+PerfFreq
+PointerSize
+pr]>H
+primary
+ProcessId
+ProcessName
+Processor Number
+ProcessTrace
+ProductName
+ProductVersion
+ProgramCounter
+ProviderGuid
+ProviderMetadata
+ProviderVersion
+pRSXe
+pRZ2A6
+PUBLIC_TMF:
+PXD9`Tu
+q[XX3.
+q0R^G'
+qRSXe
+qsort
+Quality
+QueryPerformanceCounter
+RawSystemTime
+RD87tRH
+ReadConsoleW
+ReadFile
+RegCloseKey
+RegOpenKeyExW
+RegQueryValueExW
+Related Activity ID
+RemoteAddr
+RemoteAddrLength
+Report
+report.xsl
+RequestId
+RequestObj
+ReservedFlags
+rewind
+right
+root\wmi
+rowcount
+RtlAnsiCharToUnicodeChar
+RtlCaptureContext
+RtlCompareMemory
+RtlCompareString
+RtlDeleteCriticalSection
+RtlEnterCriticalSection
+RtlEqualUnicodeString
+RtlInitializeCriticalSection
+RtlIpv4AddressToStringA
+RtlIpv4AddressToStringW
+RtlIpv6AddressToStringA
+RtlIpv6AddressToStringW
+RtlLeaveCriticalSection
+RtlLookupFunctionEntry
+RtlRaiseException
+RtlVirtualUnwind
+Running
+s WAVAWH
+S9q(t%
+schema.man
+SearchPathW
+secondary
+Section
+Sections
+Security
+SequenceNum
+ServiceName
+ServiceState
+SessionID="%lu" 
+SetConsoleMode
+SetEndOfFile
+SetEvent
+SetFilePointer
+SetLastError
+SetThreadPreferredUILanguages
+SetUnhandledExceptionFilter
+SHCreateStreamOnFileEx
+SiteId
+SizeofResource
+Sleep
+Software\Microsoft\Active Setup\Installed Components\{89820200-ECBD-11CF-8B85-00AA005B4383}
+sprintf_s
+sr-BA-Cyrl
+sr-BA-Latn
+sr-Cyrl-BA
+sr-Cyrl-CS
+sr-Latn-BA
+sr-Latn-CS
+sr-SP-Cyrl
+sr-SP-Latn
+srv*\\symbols\symbols
+start
+Start Time              %ws
+StartOffset
+StartTime
+Stopped
+strchr
+strcmp
+strcpy_s
+String
+string
+StringFileInfo
+StringTable
+strncmp
+strncpy_s
+strrchr
+strstr
+strtok_s
+SubComponentName
+SubProcessTag
+SubTable
+summary
+summary.txt
+SUVWATAUAVAWH
+SUVWATAUAVH
+Symbol Path = [%s]
+SymCleanup
+SymEnumTypesByName
+SymFromAddr
+SymGetLineFromAddr64
+SymGetOptions
+SymGetSymbolFileW
+SymGetTypeInfo
+SymInitialize
+SymInitializeW
+SymLoadModuleExW
+SymOpts = 0x%x
+SymRegisterCallback64
+SymSearch
+SymSetOptions
+SymUnloadModule64
+sys:ActivityId
+sys:AggregateCount
+sys:CPUPercent
+sys:KCPU
+sys:Opcode
+sys:PID
+sys:ProviderName
+sys:RequestRate
+sys:ResponseTime
+sys:Task
+sys:TID
+sys:Timestamp
+sys:UCPU
+system
+System
+SystemTime
+SystemTimeToFileTime
+SystemTimeToTzSpecificLocalTime
+t D9`Ht
+t!D95
+t"8_lt
+t$ E3
+T$ E3
+t$ fD;
+t$ UH
+t$ UWATAVAWH
+t$ UWAVH
+t$ WATAUAVAWH
+t$ WAVAWH
+t$ WH
+t$(fD
+T$(fI
+T$@fI
+T$0E3
+T$0fI
+t$8fI
+t$9phv
+t$D8Y
+T$DM9f
+t$H9K
+t$HA;l$
+t$HA9u
+t$HE;
+T$PE3
+t$PE3
+T$pH;
+t$x;V
+T$xA;
+t$XD9m,
+t$XH;
+t&9hdt
+t*H9s
+t.L9P
+t;f;.t
+t;fA;
+t@D8-u
+t@D9nxt:
+t^D95@5
+t`H9k u
+t{H9k u
+t+D9a\v%
+t<;s`u7
+t3D9x
+t4L9p
+t6H9K
+t7f9|$jw0E3
+t7f9|$Zw0E3
+tafD;8t[H
+task="task%d" 
+TaskId
+tBD9m,u<D
+tcfD;8t]H
+tcL9w u]
+tdf9|$Jw]L
+tdfD;=
+tdh.dll
+TdhEnumerateProviderFieldInformation
+TdhFormatProperty
+TdhGetAllEventsInformation
+TdhGetEventInformation
+TdhGetEventMapInformation
+TdhGetProperty
+TdhGetPropertyOffsetAndSize
+TdhGetPropertySize
+TdhLoadManifest
+TdhLoadManifestFromBinary
+TdhQueryProviderFieldInformation
+TdhUnloadManifest
+template="tid_%d" 
+TerminateProcess
+tHf;x
+threshold
+TimerResolution
+TITLES.XML
+tjD9hludD8hht
+tKD9sDtE
+tkfA;j
+tOE9l
+topic
+total
+Total Buffers Processed %d
+Total Events  Lost      %d
+Total Events  Processed %d
+tQf;7tLH;
+tr;7sfA
+trace:AnsiChar
+trace:CountedAnsiString
+trace:CountedString
+trace:HexDump
+trace:NonNullTerminatedAnsiString
+trace:NonNullTerminatedString
+trace:NoPrint
+trace:ReducedString
+trace:ReverseCountedAnsiString
+trace:ReverseCountedString
+trace:SizeT
+trace:UnicodeChar
+trace:WBEMSid
+TRACE_FORMAT_SEARCH_PATH
+TraceClassic
+TraceGuid
+TraceLogging
+TraceRpt.Exe
+tracerpt.pdb
+tracerptCpusection
+tracerptDisk
+tracerptDpcisr
+tracerptIis
+tracerptPrintSpooler
+Tracerpt-Simple
+tracerptUserPdh
+transaction
+TransferSize
+Translation
+trD9{Pug
+tRfE9~(u,A9n,u&I
+TThreadId
+TTOption
+TzSpecificLocalTimeToSystemTime
+u fD9c:tc
+u fE;
+u H9C u
+u HcA<H
+u%HcC
+u)D9g
+u)f9G@v#
+u*9Q<|%
+u*fD;
+u;H9_@
+u}D8-{
+u+9qPu
+u0D8_-u*H
+u0D95
+u2H9S u,
+u3D8w-u-H
+u3H9C u
+u49G$w+
+u4H9S u.
+u5D9o
+u6H9F
+u9H9N
+UATAUAVAWH
+UAVAWH
+ubH9G u\
+uDL9l$pu
+uFH!T$0H
+uFH9S u
+ujH9S u
+Undecodable IP Address
+UnhandledExceptionFilter
+UNICODE
+Unknown
+unknown
+Unknown
+Unknown IP Address Type
+Unknown(0x%08X)
+UnmapViewOfFile
+uOD8w-u
+uQD9%D
+uQD9s<tR
+uSD8w-u
+User(ms)
+UserSID
+USVWATAUAVAWH
+USVWAVAWH
+utfE;
+uTH9N
+UVWATAUAVAWH
+UVWAVAWH
+UWATAVAWH
+UWAVH
+uXH9S u
+uZD8w-u H
+valueMap
+VarFileInfo
+VATAUAVAWH
+VerQueryValueW
+Version
+version
+version="%d" 
+vfprintf
+VirtualAddress
+visible
+VS_VERSION_INFO
+vsprintf_s
+VWATAVAWH
+VWAUAVAWH
+VWAVH
+VWAWH
+w&L;@
+WaitForSingleObject
+WATAUAVAW
+WATAUAVAWH
+WAVAWH
+wcschr
+wcscmp
+wcsncmp
+wcsnlen
+wcsrchr
+wcsstr
+wcstok
+wcstok_s
+wcstombs_s
+wcstoul
+wevtapi.dll
+WideCharToMultiByte
+win:AnsiString
+win:AuditFailure
+win:AuditSuccess
+win:Binary
+win:Boolean
+win:CIMDateTime
+win:CodePointer
+win:CorrelationHint
+win:CountedAnsiString
+win:CountedBinary
+win:CountedUnicodeString
+win:Critical
+win:DateTimeCultureInsensitive
+win:DateTimeUtc
+win:DC_Start
+win:DC_Stop
+win:Double
+win:Error
+win:ErrorCode
+win:ErrorLessData
+win:ErrorMoreData
+win:ETWTIME
+win:EventlogClassic
+win:Extension
+win:ExtraPayload
+win:FILETIME
+win:Float
+win:GUID
+win:HexInt16
+win:HexInt32
+win:HexInt64
+win:HexInt8
+win:HResult
+win:Info
+win:Informational
+win:Int16
+win:Int32
+win:Int64
+win:Int8
+win:IPv4
+win:IPv6
+win:Json
+win:LogAlways
+win:NTSTATUS
+win:PID
+win:Pkcs7WithTypeInfo
+win:Pointer
+win:Port
+win:Receive
+win:Reply
+win:ReservedKeyword49
+win:ReservedKeyword56
+win:ReservedKeyword57
+win:ReservedKeyword58
+win:ReservedKeyword59
+win:ReservedKeyword60
+win:ReservedKeyword61
+win:ReservedKeyword62
+win:ReservedKeyword63
+win:ReservedLevel10
+win:ReservedLevel11
+win:ReservedLevel12
+win:ReservedLevel13
+win:ReservedLevel14
+win:ReservedLevel15
+win:ReservedLevel6
+win:ReservedLevel7
+win:ReservedLevel8
+win:ReservedLevel9
+win:ReservedOpcode241
+win:ReservedOpcode242
+win:ReservedOpcode243
+win:ReservedOpcode244
+win:ReservedOpcode245
+win:ReservedOpcode246
+win:ReservedOpcode247
+win:ReservedOpcode248
+win:ReservedOpcode249
+win:ReservedOpcode250
+win:ReservedOpcode251
+win:ReservedOpcode252
+win:ReservedOpcode253
+win:ReservedOpcode254
+win:ReservedOpcode255
+win:ResponseTime
+win:Resume
+win:Send
+win:SID
+win:SocketAddress
+win:SQM
+win:Start
+win:Stop
+win:Suspend
+win:SYSTEMTIME
+win:TID
+win:UInt16
+win:UInt32
+win:UInt64
+win:UInt8
+win:UnicodeString
+win:Utf8
+win:Verbose
+win:Warning
+win:WDIDiag
+win:Win32Error
+win:Xml
+wJtzf;
+workload.html
+workload.xml
+WPPFMT : error : 0x%X calling SymSearch(%s)
+WPPFMT : error : 0x%X calling SymSearch()
+WPPFMT : error : 0x%x from _wsplitpath_s()
+WPPFMT : error : 0x%x from GetModuleFileNameW()
+WPPFMT : error : 0x%x from SymInitialize()
+WPPFMT : error : 0x%x from SymRegisterCallback64()
+WPPFMT : error : 0x%x loading %ls.
+WPPFMT : error : Failed to add Enumeration entry : Memory allocation failed for Enumeration entries.
+WPPFMT : error : Failed to add Enumeration entry : Memory allocation failed for Enumeration name.
+WPPFMT : error : Failed to add Enumeration entry : Memory allocation failed for Guid Enumeration Link.
+WPPFMT : error : Failed to add EnumGuid entry : Memory allocation failed for Guid entries.
+WPPFMT : error : Failed to add EnumGuid entry : Memory allocation failed for Guid Enumeration Link.
+WPPFMT : error : failed unloading %ls at %s
+WPPFMT : error : File + Path too long %s
+WPPFMT : error : index %d already in use!
+WPPFMT : error : Insufficient Buffer
+WPPFMT : error : load <modname> - you must specify a module to load
+WPPFMT : error : out of memory calling WideToMbcs
+WPPFMT : error : out of memory from resize
+WPPFMT : error : out of memory loading %ls
+WPPFMT : warning : enums will not be proccessed (failed allocation of structures)
+wprintf
+WriteConsoleW
+WriteFile
+WS2_32.dll
+WSAAddressToStringW
+wufD8%
+wXD9y
+x ATAVAWH
+x AUAVAWH
+x AVAW
+x AVAWL
+x AVH
+x AVL
+x AWH
+x UATAUAVAWH
+x UAVAWH
+x;fD;e
+x?H9^
+xA_A^_^[]
+XA_A^A]A\_^][
+xku.L
+XmlLite.dll
+xmlns="http://schemas.microsoft.com/win/2004/08/events/event"
+xmlns="http://schemas.microsoft.com/win/2004/08/events/trace"
+xnd5Y
+XREPORT.XSL
+xs:boolean
+xs:byte
+xs:dateTime
+xs:double
+xs:float
+xs:GUID
+xs:hexBinary
+xs:int
+xs:long
+xs:short
+xs:string
+xs:unsignedByte
+xs:unsignedInt
+xs:unsignedLong
+xs:unsignedShort
+yyyy'-'MM'-'dd
+z9r(tL
+zh-CHS
+zh-CHT
+zh-Hans
+zh-Hant

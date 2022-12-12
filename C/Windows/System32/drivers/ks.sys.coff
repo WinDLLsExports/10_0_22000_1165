@@ -1,0 +1,550 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\ks.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    ksecdd.sys
+    WppRecorder.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C002B070 Import Address Table
+             1C002B888 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         7F2 RtlAppendUnicodeStringToString
+                         7F3 RtlAppendUnicodeToString
+                         B1E ZwEnumerateValueKey
+                         36D IoGetRelatedDeviceObject
+                         35E IoGetFileObjectGenericMapping
+                         6AB ObfDereferenceObject
+                         893 RtlFreeUnicodeString
+                         9EC SeAssignSecurity
+                         8D1 RtlInitUnicodeString
+                         AFF ZwCreateKey
+                         391 IoOpenDeviceRegistryKey
+                         82C RtlCopyUnicodeString
+                         350 IoGetDeviceAttachmentBaseRef
+                         2EE IoBuildDeviceIoControlRequest
+                         999 RtlStringFromGUID
+                         A39 SeReleaseSubjectContext
+                         6AD ObfReferenceObject
+                         435 IofCallDriver
+                         B80 ZwQueryValueKey
+                         8E7 RtlIntegerToUnicodeString
+                          EC ExGetPreviousMode
+                         2F0 IoBuildSynchronousFsdRequest
+                         AF0 ZwClose
+                         BB9 ZwSetValueKey
+                         70E ProbeForRead
+                         B42 ZwOpenKey
+                         813 RtlCompareMemory
+                         9FC SeCaptureSubjectContext
+                         54A KeSetTimer
+                         3AF IoRegisterDeviceInterface
+                         2E5 IoAllocateWorkItem
+                         BF8 _vsnwprintf
+                         B74 ZwQueryKey
+                         894 RtlGUIDFromString
+                         4AB KeInitializeDpc
+                         469 KeBugCheckEx
+                         3DB IoSetDeviceInterfaceState
+                         329 IoDetachDevice
+                          9D ExAcquireFastMutexUnsafe
+                         12C ExReleaseFastMutex
+                          CE ExDeleteResourceLite
+                         BFB _wcsicmp
+                         484 KeEnterCriticalRegion
+                          A3 ExAcquireResourceExclusiveLite
+                         115 ExQueueWorkItem
+                         390 IoOpenDeviceInterfaceRegistryKey
+                         16C ExWaitForRundownProtectionRelease
+                         73F PsGetHostSilo
+                         B3B ZwNotifyChangeKey
+                         326 IoDeleteDevice
+                          F8 ExInitializeRundownProtection
+                         716 PsAttachSiloToCurrentThread
+                         4B9 KeInitializeTimer
+                         70F ProbeForWrite
+                         2EA IoAttachDeviceToDeviceStack
+                          B4 ExAllocatePool2
+                          A5 ExAcquireRundownProtection
+                         138 ExReleaseResourceLite
+                         B12 ZwDeleteKey
+                         B1C ZwEnumerateKey
+                         46A KeCancelTimer
+                         357 IoGetDeviceProperty
+                          9C ExAcquireFastMutex
+                         343 IoFreeWorkItem
+                         30D IoCreateDevice
+                         724 PsDetachSiloFromCurrentThread
+                         BFE _wcsnicmp
+                         3A1 IoQueueWorkItem
+                         A45 SeSinglePrivilegeCheck
+                         494 KeFlushQueuedDpcs
+                         139 ExReleaseRundownProtection
+                          F7 ExInitializeResourceLite
+                         37F IoInvalidateDeviceRelations
+                         12D ExReleaseFastMutexUnsafe
+                         4D1 KeLeaveCriticalRegion
+                         457 KeAcquireSpinLockRaiseToDpc
+                         4BB KeInitializeTimerEx
+                         54C KeSetTimerEx
+                         51A KeReleaseSpinLock
+                         455 KeAcquireSpinLockAtDpcLevel
+                         51C KeReleaseSpinLockFromDpcLevel
+                         4FC KeQueryTimeIncrement
+                         53F KeSetImportanceDpc
+                         4C2 KeInsertQueueDpc
+                         145 ExSemaphoreObjectType
+                         558 KeSynchronizeExecution
+                         49B KeGetCurrentIrql
+                         526 KeRemoveQueueDpc
+                         517 KeReleaseMutex
+                         4D5 KeLowerIrql
+                         69B ObReferenceObjectByHandle
+                         519 KeReleaseSemaphore
+                         568 KfRaiseIrql
+                          DC ExEventObjectType
+                         816 RtlCompareUnicodeString
+                         5FD MmUnlockPages
+                         9DC RtlWriteRegistryValue
+                         9EB SeAppendPrivileges
+                         5E6 MmProbeAndLockPages
+                         A17 SeFreePrivileges
+                         92A RtlMapGenericMask
+                         9E3 SeAccessCheck
+                          CD ExDeletePagedLookasideList
+                         BCF __C_specific_handler
+                         2E2 IoAllocateMdl
+                          A4 ExAcquireResourceSharedLite
+                         A31 SeQuerySecurityDescriptorInfo
+                          94 EtwWriteTransfer
+                         46F KeClearEvent
+                         340 IoFreeMdl
+                         311 IoCreateFile
+                         A23 SeOpenObjectAuditAlarm
+                         2E0 IoAllocateIrp
+                         A51 SeUnlockSubjectContext
+                         2D5 IoAcquireCancelSpinLock
+                         A41 SeSetSecurityDescriptorInfo
+                         5D2 MmMapLockedPagesSpecifyCache
+                         A20 SeLockSubjectContext
+                         11A ExRaiseStatus
+                         3B9 IoReleaseCancelSpinLock
+                         708 PoStartNextPowerIrp
+                         5CB MmLockPagableDataSection
+                         58A MmAddVerifierThunks
+                         356 IoGetDeviceObjectPointer
+                         13F ExReleaseSpinLockShared
+                          AD ExAcquireSpinLockShared
+                         5C9 MmIsVerifierEnabled
+                         577 LdrFindResource_U
+                         573 LdrAccessResource
+                         96D RtlRegisterFeatureConfigurationChangeNotification
+                         35D IoGetDriverObjectExtension
+                         953 RtlQueryFeatureConfiguration
+                         4B3 KeInitializeMutex
+                         954 RtlQueryFeatureConfigurationChangeStamp
+                         336 IoFileObjectType
+                         2DE IoAllocateDriverObjectExtension
+                         9C1 RtlUnregisterFeatureConfigurationChangeNotification
+                         5BC MmGetSystemRoutineAddress
+                          89 EtwRegister
+                         428 IoWMIRegistrationControl
+                         354 IoGetDeviceInterfaces
+                         2D8 IoAcquireRemoveLockEx
+                         3BB IoReleaseRemoveLockEx
+                         5C2 MmIsDriverVerifying
+                         3BA IoReleaseRemoveLockAndWaitEx
+                         2F3 IoCancelIrp
+                         70B PoUnregisterSystemState
+                         38B IoIsWdmVersionAvailable
+                         6F8 PoRequestPowerIrp
+                         37C IoInitializeRemoveLockEx
+                         6F7 PoRegisterSystemState
+                         6FF PoSetPowerState
+                         95E RtlQueryRegistryValues
+                         587 Mm64BitPhysicalAddress
+                         358 IoGetDevicePropertyData
+                         B13 ZwDeleteValueKey
+                         3DA IoSetDeviceInterfacePropertyData
+                         A15 SeExports
+                         363 IoGetInitiatorProcess
+                         74F PsGetProcessId
+                         75B PsGetProcessSessionId
+                         505 KeReadStateMutex
+                         76D PsGetThreadProcess
+                         8DB RtlInitializeSid
+                         99C RtlSubAuthoritySid
+                         100 ExInterlockedInsertTailList
+                         806 RtlCheckTokenMembership
+                         91B RtlLengthRequiredSid
+                         352 IoGetDeviceInterfaceAlias
+                         52B KeResetEvent
+                          FF ExInterlockedInsertHeadList
+                         493 KeFlushIoBuffers
+                         103 ExInterlockedRemoveHeadList
+                         598 MmAllocatePagesForMdl
+                         5B1 MmFreePagesFromMdl
+                         600 MmUnmapLockedPages
+                         722 PsDereferencePrimaryToken
+                         958 RtlQueryPackageClaims
+                         B55 ZwPowerInformation
+                         79D PsReferencePrimaryToken
+                         BCA ZwUpdateWnfStateData
+                         6F6 PoRegisterPowerSettingCallback
+                         70A PoUnregisterPowerSettingCallback
+                         72C PsGetCurrentProcessId
+                         14F ExSubscribeWnfStateChange
+                         168 ExUnsubscribeWnfStateChange
+                         4FB KeQuerySystemTimePrecise
+                         B3F ZwOpenEvent
+                         503 KeReadStateEvent
+                         9D2 RtlValidSid
+                         81F RtlConvertSidToUnicodeString
+                         7DE RtlAddAccessAllowedAceEx
+                         A2C SeQueryInformationToken
+                         34F IoGetCurrentProcess
+                         696 ObOpenObjectByPointer
+                         91D RtlLengthSid
+                         790 PsLookupProcessByProcessId
+                         829 RtlCopySid
+                         B7A ZwQuerySecurityObject
+                         861 RtlEqualSid
+                         BB2 ZwSetSecurityObject
+                         97C RtlSelfRelativeToAbsoluteSD
+                         9B4 RtlUnicodeStringToAnsiString
+                         10F ExQueryDepthSList
+                         4B7 KeInitializeSpinLock
+                         566 KeWaitForSingleObject
+                         436 IofCompleteRequest
+                         4AF KeInitializeEvent
+                          E5 ExFreePoolWithTag
+                          B8 ExAllocatePoolWithTag
+                          F4 ExInitializeNPagedLookasideList
+                         33D IoFreeIrp
+                         53A KeSetEvent
+                          F5 ExInitializePagedLookasideList
+                         17A ExpInterlockedPushEntrySList
+                          CC ExDeleteNPagedLookasideList
+                         6BA PoCallDriver
+                         179 ExpInterlockedPopEntrySList
+                         353 IoGetDeviceInterfacePropertyData
+                          E3 ExFreePool
+                         56E KseQueryDeviceFlags
+                         88D RtlFreeAnsiString
+                         95F RtlQueryRegistryValuesEx
+                          8C EtwSetInformation
+                          77 DbgkWerCaptureLiveKernelDump
+                         8C8 RtlInitAnsiString
+
+    HAL.dll
+             1C002B000 Import Address Table
+             1C002B818 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+
+    ksecdd.sys
+             1C002B030 Import Address Table
+             1C002B848 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1B BCryptHashData
+                           A BCryptDestroyHash
+                           4 BCryptCloseAlgorithmProvider
+                          14 BCryptFinishHash
+                          1F BCryptOpenAlgorithmProvider
+                          1A BCryptGetProperty
+                           5 BCryptCreateHash
+
+    WppRecorder.sys
+             1C002B010 Import Address Table
+             1C002B828 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 WppAutoLogTrace
+                           2 WppAutoLogStart
+                          10 imp_WppRecorderReplay
+
+  Section contains the following exports for ks.sys
+
+    00000000 characteristics
+     F0A6A31 time date stamp
+        0.00 version
+           1 ordinal base
+         239 number of functions
+         239 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00052B80 ??0CBaseUnknown@@QEAA@AEBU_GUID@@PEAUIUnknown@@@Z
+          2    1 00042DA0 ??0CBaseUnknown@@QEAA@PEAUIUnknown@@@Z
+          3    2 000430C0 ??1CBaseUnknown@@UEAA@XZ
+          4    3 0000DAA0 ??_FCBaseUnknown@@QEAAXXZ
+          5    4 00052BC0 ?IndirectedAddRef@CBaseUnknown@@UEAAKXZ
+          6    5 00052BF0 ?IndirectedQueryInterface@CBaseUnknown@@UEAAJAEBU_GUID@@PEAPEAX@Z
+          7    6 00052C10 ?IndirectedRelease@CBaseUnknown@@UEAAKXZ
+          8    7 000430A0 ?NonDelegatedAddRef@CBaseUnknown@@UEAAKXZ
+          9    8 00052C40 ?NonDelegatedQueryInterface@CBaseUnknown@@UEAAJAEBU_GUID@@PEAPEAX@Z
+         10    9 00041CC0 ?NonDelegatedRelease@CBaseUnknown@@UEAAKXZ
+         11    A 000791C0 DllInitialize
+         12    B 00042890 KoCreateInstance
+         13    C 00053150 KoDeviceInitialize
+         14    D 00053350 KoDriverInitialize
+         15    E 00053420 KoRelease
+         16    F 0005E000 KsAcquireCachedMdl
+         17   10 00041BE0 KsAcquireControl
+         18   11 00045C10 KsAcquireDevice
+         19   12 00050450 KsAcquireDeviceSecurityLock
+         20   13 0004B6B0 KsAcquireResetValue
+         21   14 000557F0 KsAddDevice
+         22   15 00059A90 KsAddEvent
+         23   16 00006B50 KsAddIrpToCancelableQueue
+         24   17 000416E0 KsAddItemToObjectBag
+         25   18 000504B0 KsAddObjectCreateItemToDeviceHeader
+         26   19 000504D0 KsAddObjectCreateItemToObjectHeader
+         27   1A 0004FB50 KsAllocateDefaultClock
+         28   1B 0004FB80 KsAllocateDefaultClockEx
+         29   1C 00048580 KsAllocateDeviceHeader
+         30   1D 00050500 KsAllocateExtraData
+         31   1E 00055890 KsAllocateObjectBag
+         32   1F 00050630 KsAllocateObjectCreateItem
+         33   20 00039080 KsAllocateObjectHeader
+         34   21 0004B720 KsCacheMedium
+         35   22 0000CD80 KsCancelIo
+         36   23 0000CE40 KsCancelRoutine
+         37   24 0000ED00 KsCompletePendingRequest
+         38   25 00059B10 KsCopyObjectBagItems
+         39   26 0004B1C0 KsCreateAllocator
+         40   27 0004D0A0 KsCreateBusEnumObject
+         41   28 0004FD60 KsCreateClock
+         42   29 0004B200 KsCreateDefaultAllocator
+         43   2A 0004B230 KsCreateDefaultAllocatorEx
+         44   2B 0004FDA0 KsCreateDefaultClock
+         45   2C 0004BBE0 KsCreateDefaultSecurity
+         46   2D 0003DCB0 KsCreateDevice
+         47   2E 00055950 KsCreateFilterFactory
+         48   2F 00050080 KsCreatePin
+         49   30 000524E0 KsCreateTopologyNode
+         50   31 0000D4A0 KsDecrementCountedWorker
+         51   32 00059C90 KsDefaultAddEventHandler
+         52   33 00050780 KsDefaultDeviceIoCompletion
+         53   34 00032460 KsDefaultDispatchPnp
+         54   35 0000CEE0 KsDefaultDispatchPower
+         55   36 00030060 KsDefaultForwardIrp
+         56   37 00042D70 KsDereferenceBusObject
+         57   38 00042D70 KsDereferenceSoftwareBusObject
+         58   39 0000EE20 KsDeviceGetBusData
+         59   3A 00055A30 KsDeviceRegisterAdapterObject
+         60   3B 00055AE0 KsDeviceRegisterThermalDispatch
+         61   3C 0000EEF0 KsDeviceSetBusData
+         62   3D 000355D0 KsDisableEvent
+         63   3E 000095E0 KsDiscardEvent
+         64   3F 000507F0 KsDispatchFastIoDeviceControlFailure
+         65   40 000507F0 KsDispatchFastReadFailure
+         66   41 00048770 KsDispatchInvalidDeviceRequest
+         67   42 000308B0 KsDispatchIrp
+         68   43 00050800 KsDispatchQuerySecurity
+         69   44 00050900 KsDispatchSetSecurity
+         70   45 00050A20 KsDispatchSpecificMethod
+         71   46 00050AE0 KsDispatchSpecificProperty
+         72   47 00033240 KsEnableEvent
+         73   48 000500D0 KsEnableEventWithAllocator
+         74   49 00052030 KsFastMethodHandler
+         75   4A 00052280 KsFastPropertyHandler
+         76   4B 00058D20 KsFilterAcquireProcessingMutex
+         77   4C 00058DA0 KsFilterAddTopologyConnections
+         78   4D 00010B80 KsFilterAttemptProcessing
+         79   4E 00058DC0 KsFilterCreateNode
+         80   4F 00058DE0 KsFilterCreatePinFactory
+         81   50 00057120 KsFilterFactoryAddCreateItem
+         82   51 000571D0 KsFilterFactoryGetSymbolicLink
+         83   52 00057250 KsFilterFactorySetDeviceClassesState
+         84   53 000572D0 KsFilterFactoryUpdateCacheData
+         85   54 00010C30 KsFilterGetAndGate
+         86   55 00058E00 KsFilterGetChildPinCount
+         87   56 000408A0 KsFilterGetFirstChildPin
+         88   57 00058E80 KsFilterRegisterPowerCallbacks
+         89   58 00058F00 KsFilterReleaseProcessingMutex
+         90   59 0004BC70 KsForwardAndCatchIrp
+         91   5A 0004BDF0 KsForwardIrp
+         92   5B 0004FE80 KsFreeDefaultClock
+         93   5C 0004A010 KsFreeDeviceHeader
+         94   5D 00040A10 KsFreeEventList
+         95   5E 00055B10 KsFreeObjectBag
+         96   5F 00050B30 KsFreeObjectCreateItem
+         97   60 00050B70 KsFreeObjectCreateItemsByContext
+         98   61 00008710 KsFreeObjectHeader
+         99   62 000075A0 KsGenerateDataEvent
+        100   63 00007680 KsGenerateEvent
+        101   64 0000CBC0 KsGenerateEventList
+        102   65 00007420 KsGenerateEvents
+        103   66 00055B80 KsGenerateThermalEvent
+        104   67 0004D6E0 KsGetBusEnumIdentifier
+        105   68 0004D820 KsGetBusEnumParentFDOFromChildPDO
+        106   69 0004A480 KsGetBusEnumPnpDeviceObject
+        107   6A 0000C6B0 KsGetDefaultClockState
+        108   6B 0000C6C0 KsGetDefaultClockTime
+        109   6C 00041E40 KsGetDevice
+        110   6D 000058F0 KsGetDeviceForDeviceObject
+        111   6E 00007D00 KsGetFilterFromIrp
+        112   6F 000331D0 KsGetFirstChild
+        113   70 0000D7C0 KsGetImageNameAndResourceId
+        114   71 00032070 KsGetNextSibling
+        115   72 00010CA0 KsGetNodeIdFromIrp
+        116   73 0000AF50 KsGetObjectFromFileObject
+        117   74 000110C0 KsGetObjectTypeFromFileObject
+        118   75 00011130 KsGetObjectTypeFromIrp
+        119   76 00059D20 KsGetOuterUnknown
+        120   77 00041B70 KsGetParent
+        121   78 00005D80 KsGetPinFromIrp
+        122   79 0003C5B0 KsHandleSizedListQuery
+        123   7A 00005340 KsIncrementCountedWorker
+        124   7B 0003DE60 KsInitializeDevice
+        125   7C 000572F0 KsInitializeDeviceProfile
+        126   7D 00055BE0 KsInitializeDriver
+        127   7E 0004D850 KsInstallBusEnumInterface
+        128   7F 00047280 KsIsBusEnumChildDevice
+        129   80 00038440 KsIsCurrentProcessFrameServer
+        130   81 00052580 KsLoadResource
+        131   82 000526C0 KsMapModuleName
+        132   83 0003B690 KsMergeAutomationTables
+        133   84 00052210 KsMethodHandler
+        134   85 00052240 KsMethodHandlerWithAllocator
+        135   86 0000D040 KsMoveIrpsOnCancelableQueue
+        136   87 00050BA0 KsNullDriverUnload
+        137   88 00057320 KsPersistDeviceProfile
+        138   89 0003DC30 KsPinAcquireProcessingMutex
+        139   8A 0005E050 KsPinAttachAndGate
+        140   8B 0005E0D0 KsPinAttachOrGate
+        141   8C 00006740 KsPinAttemptProcessing
+        142   8D 0003C680 KsPinDataIntersection
+        143   8E 00007DA0 KsPinGetAndGate
+        144   8F 000070A0 KsPinGetAvailableByteCount
+        145   90 0005E150 KsPinGetConnectedFilterInterface
+        146   91 0005E260 KsPinGetConnectedPinDeviceObject
+        147   92 0005E2C0 KsPinGetConnectedPinFileObject
+        148   93 0005E320 KsPinGetConnectedPinInterface
+        149   94 00011BF0 KsPinGetCopyRelationships
+        150   95 00006C80 KsPinGetFirstCloneStreamPointer
+        151   96 00005ED0 KsPinGetLeadingEdgeStreamPointer
+        152   97 00059DC0 KsPinGetNextSiblingPin
+        153   98 00040B50 KsPinGetParentFilter
+        154   99 0005E410 KsPinGetReferenceClockInterface
+        155   9A 00013590 KsPinGetTrailingEdgeStreamPointer
+        156   9B 0003C6C0 KsPinPropertyHandler
+        157   9C 0005E540 KsPinRegisterFrameReturnCallback
+        158   9D 0005E5C0 KsPinRegisterHandshakeCallback
+        159   9E 0005E630 KsPinRegisterIrpCompletionCallback
+        160   9F 0005E6B0 KsPinRegisterPowerCallbacks
+        161   A0 00040930 KsPinReleaseProcessingMutex
+        162   A1 00011CA0 KsPinSetPinClockTime
+        163   A2 00011D20 KsPinSubmitFrame
+        164   A3 00011DC0 KsPinSubmitFrameMdl
+        165   A4 00050BB0 KsProbeStreamIrp
+        166   A5 00011EC0 KsProcessPinUpdate
+        167   A6 000337F0 KsPropertyHandler
+        168   A7 000524A0 KsPropertyHandlerWithAllocator
+        169   A8 00057340 KsPublishDeviceProfile
+        170   A9 00051300 KsQueryDevicePnpObject
+        171   AA 00051310 KsQueryInformationFile
+        172   AB 00051500 KsQueryObjectAccessMask
+        173   AC 00051510 KsQueryObjectCreateItem
+        174   AD 00007B60 KsQueueWorkItem
+        175   AE 00051520 KsReadFile
+        176   AF 0003BC30 KsRecalculateStackDepth
+        177   B0 00038E50 KsReferenceBusObject
+        178   B1 00038E50 KsReferenceSoftwareBusObject
+        179   B2 00059E20 KsRegisterAggregatedClientUnknown
+        180   B3 0003F7A0 KsRegisterCountedWorker
+        181   B4 00059EC0 KsRegisterFilterWithNoKSPins
+        182   B5 0003F6D0 KsRegisterWorker
+        183   B6 0005E730 KsReleaseCachedMdl
+        184   B7 00041D20 KsReleaseControl
+        185   B8 000456E0 KsReleaseDevice
+        186   B9 00051750 KsReleaseDeviceSecurityLock
+        187   BA 00007230 KsReleaseIrpOnCancelableQueue
+        188   BB 0004D930 KsRemoveBusEnumInterface
+        189   BC 00006480 KsRemoveIrpFromCancelableQueue
+        190   BD 0005A170 KsRemoveItemFromObjectBag
+        191   BE 00008500 KsRemoveSpecificIrpFromCancelableQueue
+        192   BF 00041EE0 KsServiceBusEnumCreateRequest
+        193   C0 00043EE0 KsServiceBusEnumPnpRequest
+        194   C1 0003A460 KsSetCameraAllowlistedProcess
+        195   C2 0000C760 KsSetDefaultClockState
+        196   C3 0000A070 KsSetDefaultClockTime
+        197   C4 000480B0 KsSetDevicePnpAndBaseObject
+        198   C5 00051780 KsSetInformationFile
+        199   C6 0004A4E0 KsSetMajorFunctionHandler
+        200   C7 0000D200 KsSetPowerDispatch
+        201   C8 0003BB50 KsSetTargetDeviceObject
+        202   C9 0004ACA0 KsSetTargetState
+        203   CA 00051960 KsStreamIo
+        204   CB 00008EE0 KsStreamPointerAdvance
+        205   CC 00004420 KsStreamPointerAdvanceOffsets
+        206   CD 00008D70 KsStreamPointerAdvanceOffsetsAndUnlock
+        207   CE 00013640 KsStreamPointerCancelTimeout
+        208   CF 00006820 KsStreamPointerClone
+        209   D0 000072F0 KsStreamPointerDelete
+        210   D1 00009120 KsStreamPointerGetIrp
+        211   D2 0000B070 KsStreamPointerGetMdl
+        212   D3 00006900 KsStreamPointerGetNextClone
+        213   D4 000136B0 KsStreamPointerLock
+        214   D5 00013750 KsStreamPointerScheduleTimeout
+        215   D6 000137E0 KsStreamPointerSetStatusCode
+        216   D7 00006E00 KsStreamPointerUnlock
+        217   D8 00040650 KsSynchronousIoControlDevice
+        218   D9 00055D00 KsTerminateDevice
+        219   DA 0003C140 KsTopologyPropertyHandler
+        220   DB 00008C60 KsUnregisterWorker
+        221   DC 0004BEA0 KsUnserializeObjectPropertiesFromRegistry
+        222   DD 00049F50 KsUpdateCameraStreamingConsent
+        223   DE 0004C0C0 KsUpdateUserLoginTrigger
+        224   DF 0004B570 KsValidateAllocatorCreateRequest
+        225   E0 0004B5C0 KsValidateAllocatorFramingEx
+        226   E1 0004FF00 KsValidateClockCreateRequest
+        227   E2 0003FC20 KsValidateConnectRequest
+        228   E3 00052510 KsValidateTopologyNodeCreateRequest
+        229   E4 00051BC0 KsWriteFile
+        230   E5 0000C8C0 KsiDefaultClockAddMarkEvent
+        231   E6 0004FF40 KsiPropertyDefaultClockGetCorrelatedPhysicalTime
+        232   E7 0004FF70 KsiPropertyDefaultClockGetCorrelatedTime
+        233   E8 0004FFA0 KsiPropertyDefaultClockGetFunctionTable
+        234   E9 0004FFF0 KsiPropertyDefaultClockGetPhysicalTime
+        235   EA 00050020 KsiPropertyDefaultClockGetResolution
+        236   EB 00050050 KsiPropertyDefaultClockGetState
+        237   EC 00046C00 KsiPropertyDefaultClockGetTime
+        238   ED 00052020 KsiQueryObjectCreateItemsPresent
+        239   EE 00041480 _KsEdit
+
+  Summary
+
+        1000 .data
+        3000 .edata
+        1000 .guids
+        3000 .idata
+        5000 .pdata
+        B000 .rdata
+        4000 .reloc
+        2000 .rsrc
+       19000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 NONPAGE
+       35000 PAGE
+        2000 PAGECONS
+        F000 PAGEKsVf

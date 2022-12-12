@@ -1,0 +1,118 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\NDKPerf.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    NETIO.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0009048 Import Address Table
+             1C0009308 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         59D MmBuildMdlForNonPagedPool
+                         566 KeWaitForSingleObject
+                          E5 ExFreePoolWithTag
+                         340 IoFreeMdl
+                         53A KeSetEvent
+                         13C ExReleaseRundownProtectionEx
+                         49B KeGetCurrentIrql
+                         568 KfRaiseIrql
+                         4D5 KeLowerIrql
+                         C1B qsort
+                         BC8 ZwWriteFile
+                         AEB ZwClose
+                         7EE RtlAppendUnicodeToString
+                         2E2 IoAllocateMdl
+                          A8 ExAcquireRundownProtectionEx
+                         46F KeClearEvent
+                         4B7 KeInitializeSpinLock
+                          6E DbgPrint
+                         457 KeAcquireSpinLockRaiseToDpc
+                         51A KeReleaseSpinLock
+                         2E5 IoAllocateWorkItem
+                         3A2 IoQueueWorkItemEx
+                         44E KeAcquireInStackQueuedSpinLock
+                         512 KeReleaseInStackQueuedSpinLock
+                         343 IoFreeWorkItem
+                          F8 ExInitializeRundownProtection
+                         16C ExWaitForRundownProtectionRelease
+                         B3D ZwOpenKey
+                          B5 ExAllocatePool3
+                         4AF KeInitializeEvent
+                         BF1 _vsnprintf
+                         436 IofCompleteRequest
+                         326 IoDeleteDevice
+                         328 IoDeleteSymbolicLink
+                         319 IoCreateSymbolicLink
+                         AF7 ZwCreateFile
+                         8CC RtlInitUnicodeString
+                         5BC MmGetSystemRoutineAddress
+                         696 ObOpenObjectByPointer
+                         30D IoCreateDevice
+                         32C IoDeviceObjectType
+                         BAD ZwSetSecurityObject
+                         982 RtlSetDaclSecurityDescriptor
+                         38B IoIsWdmVersionAvailable
+                         918 RtlLengthSid
+                         7D8 RtlAddAccessAllowedAce
+                         7D7 RtlAbsoluteToSelfRelativeSD
+                         C43 wcschr
+                          B8 ExAllocatePoolWithTag
+                         BF9 _wcsnicmp
+                         831 RtlCreateSecurityDescriptor
+                         A10 SeExports
+                         917 RtlLengthSecurityDescriptor
+                         BDE _snwprintf
+                         9F6 SeCaptureSecurityDescriptor
+                         8B1 RtlGetSaclSecurityDescriptor
+                         8AE RtlGetOwnerSecurityDescriptor
+                         8A4 RtlGetGroupSecurityDescriptor
+                         89C RtlGetDaclSecurityDescriptor
+                         88E RtlFreeUnicodeString
+                         AFA ZwCreateKey
+                         B7B ZwQueryValueKey
+                         BB4 ZwSetValueKey
+
+    HAL.dll
+             1C0009000 Import Address Table
+             1C00092C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+
+    NETIO.SYS
+             1C0009010 Import Address Table
+             1C00092D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         22A WskReleaseProviderNPI
+                         226 WskCaptureProviderNPI
+                         229 WskRegister
+                         227 WskDeregister
+                           9 ConvertInterfaceIndexToLuid
+                           A ConvertInterfaceLuidToAlias
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        5000 .text
+        1000 GFIDS
+        1000 INIT
+        4000 PAGE

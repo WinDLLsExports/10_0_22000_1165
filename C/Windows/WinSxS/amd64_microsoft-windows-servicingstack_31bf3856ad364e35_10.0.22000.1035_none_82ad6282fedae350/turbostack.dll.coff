@@ -1,0 +1,701 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.22000.1035_none_82ad6282fedae350\turbostack.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    api-ms-win-crt-runtime-l1-1-0.dll
+    api-ms-win-crt-private-l1-1-0.dll
+    api-ms-win-crt-string-l1-1-0.dll
+    bcrypt.dll
+    WIMGAPI.DLL
+    ntdll.dll
+    KERNEL32.dll
+    OLE32.dll
+    ADVAPI32.dll
+    SHLWAPI.dll
+    VERSION.dll
+    wcp.dll
+
+  Image has the following delay load dependencies:
+
+    BINDFLTAPI.dll
+    CabAPI.dll
+
+  Section contains the following exports for TurboStack.dll
+
+    00000000 characteristics
+    6ACD1466 time date stamp
+        0.00 version
+           1 ordinal base
+          16 number of functions
+          16 number of names
+
+    ordinal hint RVA      name
+
+          3    0 0003E350 AnalyzeContainerPackages
+          4    1 0003E820 ApplyContainerChanges
+          1    2 00041CB0 CreateGlobbedPackage
+          5    3 0003B4E0 CreateImageManifest
+          6    4 000404A0 DoesPackageContainAIs
+          7    5 0003C820 GenerateTransformerList
+          8    6 0006D700 GetIServicingAcrHelper
+          9    7 00038850 GetIServicingCommitter
+         10    8 0003A510 GetIServicingFileHashProvider
+         11    9 000756B0 GetIServicingFusionInstaller
+         12    A 00075790 GetIServicingFusionStore
+         13    B 00036570 GetIServicingQuerier
+         14    C 00037AA0 GetIServicingStager
+         15    D 0003A5F0 InstallPackagesToFolder
+          2    E 00066C10 SetTestMode
+         16    F 0003E680 UpdateContainerCim
+
+  Section contains the following imports:
+
+    api-ms-win-crt-runtime-l1-1-0.dll
+             1800EB8A8 Import Address Table
+             180125858 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          37 _initterm_e
+                          36 _initterm
+
+    api-ms-win-crt-private-l1-1-0.dll
+             1800EB760 Import Address Table
+             180125710 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         13C _o__initialize_narrow_environment
+                         13D _o__initialize_onexit_table
+                         13F _o__invalid_parameter_noinfo
+                         140 _o__invalid_parameter_noinfo_noreturn
+                         243 _o__purecall
+                         251 _o__register_onexit_function
+                         259 _o__seh_filter_dll
+                         287 _o__strnicmp
+                         2CD _o__wcsicmp
+                         2D7 _o__wcsnicmp
+                         326 _o__wsplitpath_s
+                         464 memmove
+                         38D _o_free
+                         3A3 _o_isdigit
+                         3D8 _o_malloc
+                         436 _o_terminate
+                         43C _o_tolower
+                         456 _o_wcstoul
+                           C __C_specific_handler
+                          20 __current_exception
+                          21 __current_exception_context
+                         46B wcschr
+                         46C wcsrchr
+                         46D wcsstr
+                          12 __CxxFrameHandler3
+                          C2 _o__execute_onexit_table
+                          C0 _o__errno
+                          A7 _o__crt_atexit
+                          A0 _o__configure_narrow_argv
+                          93 _o__cexit
+                          8F _o__beginthreadex
+                          70 _o___stdio_common_vswprintf
+                          6C _o___stdio_common_vsprintf
+                          6A _o___stdio_common_vsnprintf_s
+                          60 _o___std_type_info_destroy_list
+                          5F _o___std_exception_destroy
+                          5E _o___std_exception_copy
+                           1 _CxxThrowException
+                         462 memcmp
+                         463 memcpy
+
+    api-ms-win-crt-string-l1-1-0.dll
+             1800EB8C0 Import Address Table
+             180125870 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          83 memset
+                          8E strncmp
+                          A6 wcsncmp
+
+    bcrypt.dll
+             1800EB8E0 Import Address Table
+             180125890 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          21 BCryptGetProperty
+                          27 BCryptOpenAlgorithmProvider
+                          1B BCryptFinishHash
+                           2 BCryptCloseAlgorithmProvider
+                           D BCryptDestroyHash
+                          23 BCryptHashData
+                           6 BCryptCreateHash
+
+    WIMGAPI.DLL
+             1800EB708 Import Address Table
+             1801256B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          2E WIMRegisterMessageCallback
+                           A WIMCreateFile
+                          1B WIMGetMountedImageInfo
+                          25 WIMLoadImage
+                           5 WIMApplyImage
+                          3D WIMUnregisterMessageCallback
+                          36 WIMSetTemporaryPath
+                          12 WIMExtractImagePath
+                          3A WIMUnmountImage
+                           7 WIMCloseHandle
+
+    ntdll.dll
+             1800EB920 Import Address Table
+             1801258D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         2FF RtlCaptureContext
+                         500 RtlLookupFunctionEntry
+                         644 RtlVirtualUnwind
+                         37F RtlDeleteCriticalSection
+                         18C NtLoadKey2
+                         1AB NtOpenKeyEx
+                         1F6 NtQueryPerformanceCounter
+                         168 NtFlushKey
+                         28A NtUnloadKey2
+                         101 NtClose
+                         568 RtlRaiseStatus
+                         11A NtCreateFile
+                         2DF RtlAllocateHeap
+                         407 RtlFreeHeap
+                         5B5 RtlSetEnvironmentVariable
+                         34C RtlCreateEnvironment
+                         395 RtlDestroyEnvironment
+                          78 LdrGetDllHandle
+                         515 RtlNtStatusToDosError
+                          8A LdrLoadDll
+                         298 NtWaitForSingleObject
+                         57D RtlReleaseRelativeName
+                         246 NtSetEaFile
+                         1E1 NtQueryInformationFile
+                         1F5 NtQueryOpenSubKeysEx
+                         1E4 NtQueryInformationProcess
+                         362 RtlCreateUnicodeStringFromAsciiz
+                          22 DbgPrint
+                         53A RtlQueryEnvironmentVariable_U
+                          7B LdrGetDllHandleEx
+                         3A7 RtlDosPathNameToNtPathName_U
+                          AE LdrUnloadDll
+                         29D NtWriteFile
+                          80 LdrGetProcedureAddress
+                         4E6 RtlLeaveCriticalSection
+                         48C RtlInitializeCriticalSection
+                         3BD RtlEnterCriticalSection
+                         5FC RtlTimeToTimeFields
+                         206 NtQueryValueKey
+                         483 RtlInitUnicodeString
+                         1AA NtOpenKey
+                         40E RtlFreeUnicodeString
+                         1DB NtQueryEaFile
+                         5ED RtlSubAuthoritySid
+                         5EC RtlSubAuthorityCountSid
+                         434 RtlGetGroupSecurityDescriptor
+                         37B RtlDeleteAce
+                         6E8 VerSetConditionMask
+                         3AA RtlDosPathNameToRelativeNtPathName_U_WithStatus
+
+    KERNEL32.dll
+             1800EB338 Import Address Table
+             1801252E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         25A GetSystemTime
+                         326 LoadLibraryW
+                         2CC InitializeCriticalSection
+                         1C1 GetFileAttributesExW
+                         11B FindFirstFileW
+                          4A CompareFileTime
+                         1BB GetExitCodeProcess
+                         1A1 GetCurrentThread
+                         293 GetVolumeInformationByHandleW
+                         260 GetSystemWindowsDirectoryW
+                         4AE VerifyVersionInfoW
+                          8B CreateProcessW
+                         2AE GlobalMemoryStatusEx
+                         343 MoveFileExW
+                          B7 DeleteFileW
+                         35D OpenProcess
+                         427 SetFileInformationByHandle
+                         425 SetFileAttributesW
+                         112 FindClose
+                          7A CreateHardLinkW
+                         1B9 GetEnvironmentVariableW
+                         1F1 GetModuleFileNameW
+                         1CE GetFinalPathNameByHandleW
+                         3CC RemoveDirectoryW
+                          C3 DeviceIoControl
+                         102 ExpandEnvironmentStringsW
+                         3D5 ResetEvent
+                         126 FindNextFileW
+                         1D6 GetFullPathNameW
+                         118 FindFirstFileExW
+                         432 SetHandleInformation
+                         375 PrivCopyFileExW
+                         3AD ReadFile
+                          66 CreateDirectoryW
+                         1CA GetFileSizeEx
+                         1C6 GetFileInformationByHandleEx
+                         1C4 GetFileAttributesW
+                           1 AcquireSRWLockShared
+                          9B CreateThreadpoolTimer
+                         3C7 ReleaseSRWLockShared
+                         46A SetThreadpoolTimer
+                           0 AcquireSRWLockExclusive
+                          46 CloseThreadpoolTimer
+                         3C6 ReleaseSRWLockExclusive
+                         4C3 WaitForThreadpoolTimerCallbacks
+                         31F LeaveCriticalSection
+                          D2 EnterCriticalSection
+                         325 LoadLibraryExW
+                          AA DebugBreak
+                          5B CopyFileW
+                         145 FreeLibrary
+                         228 GetProcessHeap
+                          B3 DeleteCriticalSection
+                         32D LocalFree
+                          83 CreateMutexExW
+                         222 GetProcAddress
+                         2B6 HeapAlloc
+                          3D CloseHandle
+                         35F OpenSemaphoreW
+                         4C1 WaitForSingleObjectEx
+                         41F SetEvent
+                         365 OutputDebugStringW
+                         1DE GetLastError
+                         141 FormatMessageW
+                         47D Sleep
+                          6B CreateEventW
+                          CC DuplicateHandle
+                         3C4 ReleaseMutex
+                          77 CreateFileW
+                         329 LocalAlloc
+                         4C0 WaitForSingleObject
+                         298 GetVolumePathNameW
+                         2CE InitializeCriticalSectionEx
+                         1BC GetExitCodeThread
+                         364 OutputDebugStringA
+                         1F4 GetModuleHandleExW
+                         4F5 WriteFile
+                         3C8 ReleaseSemaphore
+                         246 GetStdHandle
+                         4B7 VirtualQuery
+                         40D SetConsoleTextAttribute
+                         435 SetLastError
+                         2BA HeapFree
+                          91 CreateSemaphoreExW
+                         189 GetConsoleScreenBufferInfo
+                         1F0 GetModuleFileNameA
+                         48A TerminateProcess
+                         19D GetCurrentProcess
+                         1F5 GetModuleHandleW
+                         2E8 IsProcessorFeaturePresent
+                         470 SetUnhandledExceptionFilter
+                         49C UnhandledExceptionFilter
+                         2E2 IsDebuggerPresent
+                         2D1 InitializeSListHead
+                         25C GetSystemTimeAsFileTime
+                         1A2 GetCurrentThreadId
+                         19E GetCurrentProcessId
+                         393 QueryPerformanceCounter
+                         510 lstrcmpW
+                         4E4 WideCharToMultiByte
+                         291 GetVersionExW
+                         29C GetWindowsDirectoryW
+                         2CD InitializeCriticalSectionAndSpinCount
+                          4D CompareStringOrdinal
+                         4B5 VirtualProtect
+                         324 LoadLibraryExA
+                         39F RaiseException
+                         256 GetSystemInfo
+
+    OLE32.dll
+             1800EB6A0 Import Address Table
+             180125650 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          26 CoCreateInstance
+                          7F CoTaskMemFree
+                          25 CoCreateGuid
+                         187 StringFromGUID2
+                          49 CoGetMalloc
+                          7E CoTaskMemAlloc
+
+    ADVAPI32.dll
+             1800EB2B8 Import Address Table
+             180125268 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          FF GetSecurityInfo
+                          FB GetSecurityDescriptorLength
+                          61 ConvertStringSecurityDescriptorToSecurityDescriptorW
+                         24B SetSecurityInfo
+                          FC GetSecurityDescriptorOwner
+                          F8 GetSecurityDescriptorControl
+                          70 CreateWellKnownSid
+                          5A ConvertSecurityDescriptorToStringSecurityDescriptorW
+                         214 RegSetValueExW
+                         204 RegQueryValueExW
+                          FA GetSecurityDescriptorGroup
+                          F9 GetSecurityDescriptorDacl
+                          FE GetSecurityDescriptorSacl
+                         1F8 RegOpenKeyExW
+                         1C9 RegCloseKey
+
+    SHLWAPI.dll
+             1800EB6D8 Import Address Table
+             180125688 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          67 PathMatchSpecW
+
+    VERSION.dll
+             1800EB6E8 Import Address Table
+             180125698 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           7 GetFileVersionInfoW
+                           6 GetFileVersionInfoSizeW
+                           B VerQueryValueW
+
+    wcp.dll
+             1800EBAB0 Import Address Table
+             180125A60 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         113 ?SilDoesFileExist@Rtl@Windows@@YAJPEAUIRtlSystemIsolationLayerPublic@12@PEAUIRtlDirectory@12@AEBU_LUNICODE_STRING@@PEA_N@Z
+                         21A SilDoesDirectoryExist
+                         1FA RtlReplaceSystemPathMappings
+                         111 ?SilCreateDirectories@Rtl@Windows@@YAJPEAUIRtlSystemIsolationLayerPublic@12@AEBU_LUNICODE_STRING@@@Z
+                         112 ?SilCreateKeys@Rtl@Windows@@YAJPEAUIRtlSystemIsolationLayerPublic@12@AEBU_LUNICODE_STRING@@@Z
+                          37 ?Close@?$Auto@U_SECURITY_DESCRIPTOR@@@Windows@@QEAAXXZ
+                          59 ?FileHashAlgorithmToDigest@Rtl@Cms@Windows@@YA?AW4_CMS_HASH_DIGESTMETHOD@23@K@Z
+                         1FB RtlReportErrorOrigination
+                         135 ConvertHResultToNtStatus
+                         1FC RtlReportErrorPropagation
+                         136 ConvertNtStatusToHResult
+                         19F RtlCreateDefaultXmlWriter
+                          82 ?GetWin32PathOfSiblingFile@COM@Windows@@YAJPEAXPEB_WPEAV?$Auto@U_LUNICODE_STRING@@@2@@Z
+                          6E ?GetCurrentDllWin32Path@COM@Windows@@YAJPEAXPEAV?$Auto@U_LUNICODE_STRING@@@2@@Z
+                          40 ?CoTaskMemFree@COM@Windows@@YAXPEBX@Z
+                         1F5 RtlReallocateLBlob
+                         196 RtlConvertWin32FilePathToNtFilePath
+                         18C RtlCombineNtPathSegments
+                         15E ORCreateHive
+                         1AA RtlDecodeUtf8
+                          57 ?DoesTargetHaveTestRootCert@@YAJPEAUIRtlSystemIsolationLayerPublic@Rtl@Windows@@PEA_N@Z
+                         1AF RtlDowncaseUCSCharacter
+                         1CA RtlGetEncodingSizeUtf16
+                         13B DelayExecution
+                          20 ?Acquire@PrivilegeAcquisition@RtlSystemUtil@@QEAAJAEBU?$Vector@$$CBJ@Windows@@@Z
+                          1F ??1PrivilegeAcquisition@RtlSystemUtil@@QEAA@XZ
+                         19A RtlCopyLUnicodeString
+                         1D1 RtlHashLUnicodeString
+                          6B ?GetComponentWinningVersion@CRawInstallMap@InstallMap@@QEAAJPEAUIRtlDefinitionIdentity@Rtl@Identity@Windows@@PEAT_FOUR_PART_VERSION@@PEA_N_N@Z
+                          C9 ?RemoveInstallMarkFromFamily@CRawInstallMap@InstallMap@@QEAAJPEAUMapForFamily@2@AEBT_FOUR_PART_VERSION@@@Z
+                          27 ?AddInstallMarkToFamily@CRawInstallMap@InstallMap@@QEAAJPEAUMapForFamily@2@AEBT_FOUR_PART_VERSION@@@Z
+                          B2 ?OpenFamilyMap@CRawInstallMap@InstallMap@@QEAAJ_NPEAUIRtlDefinitionIdentity@Rtl@Identity@Windows@@PEAUMapForFamily@2@PEA_N@Z
+                          92 ?Initialize@CRawInstallMap@InstallMap@@QEAAJ_NPEAUIRtlIdentityAuthority@Rtl@Identity@Windows@@PEAUIRtlKey@46@PEAUIRtlSystemIsolationLayer@46@@Z
+                          18 ??1CRawInstallMap@InstallMap@@QEAA@XZ
+                           9 ??0CRawInstallMap@InstallMap@@QEAA@XZ
+                         21F WriteWinnersFromChangelist
+                         134 ApplyTransactionPOQsToSil
+                         1F8 RtlReallocateUnicodeString
+                         1FF RtlSmartUcsEncoder_Utf16LE
+                          8E ?Initialize@CComponentAccessor@@QEAAJPEAUIRtlDefinitionIdentity@Rtl@Identity@Windows@@PEAUIRtlIdentityAuthority@345@@Z
+                         15C ORCloseHive
+                         1C6 RtlFreeLUtf8String
+                          99 ?IsAnyMidgroundOrAIPresent@WcpManifest@@QEBAJPEA_N@Z
+                          67 ?GetComDefinitionIdentity@WcpManifest@@UEBAJPEAV?$AutoComPtr@UIDefinitionIdentity@@@Windows@@@Z
+                          B4 ?ParseFromBlob@WcpManifest@@QEAAJAEBU_LBLOB@@PEAVStopWatch@Rtl@Windows@@@Z
+                         1BA RtlEncodeUtf16LE
+                         1A9 RtlDecodeUtf16LE
+                         1CD RtlGetIdentityAuthority
+                         1C7 RtlGetAppIdAuthority
+                          86 ?Hydrate@DeltaHydrator@@YAJPEAUIRtlFile@Rtl@Windows@@PEAUDeltaFile@1@100@Z
+                          87 ?HydrateNull@DeltaHydrator@@YAJPEAUIRtlFile@Rtl@Windows@@0@Z
+                         1C9 RtlGetDirectSystem
+                          96 ?InitializeDeltaCompressor@Rtl@Windows@@YAJPEAX@Z
+                          7B ?GetSignerPublicKeyToken@CCatalog@@QEAAJPEAUIRtlSystemIsolationLayer@Rtl@Windows@@PEAU_LBLOB@@@Z
+                          2D ?ApplySecurityToObjectWithDefaults@@YAJ_NPEAUIRtlSystemObject@Rtl@Windows@@PEBU_SECURITY_DESCRIPTOR@@@Z
+                          AB ?MakeMarkValueName@ComponentStore@@YAJ_WAEBU_GUID@@AEBU_LUNICODE_STRING@@PEAV?$Auto@U_LUNICODE_STRING@@@Windows@@@Z
+                          AC ?MakeMarkValueValue@ComponentStore@@YAJAEBU_LUNICODE_STRING@@0PEAV?$Auto@U_LBLOB@@@Windows@@@Z
+                          4B ?DecodeTlcInstallerFromMarkValueAndData@ComponentStore@@YAJAEBU_LUNICODE_STRING@@AEBU_LBLOB@@PEAUTlcInstaller@1@PEA_N@Z
+                         124 ?VerifyFileAgainstCatalog@Rtl@ComponentStore@Windows@@YAJAEBVCCatalog@@AEBU_LUNICODE_STRING@@PEBUIRtlDefinitionIdentity@1Identity@3@AEBU_LBLOB@@3PEAW4VerifyFileAgainstCatalogDisposition@123@@Z
+                         114 ?SilFindExistingPath@Rtl@Windows@@YAJPEAUIRtlSystemIsolationLayerPublic@12@AEBU_LUNICODE_STRING@@PEAU4@PEAV?$Auto@PEAUIRtlDirectory@Rtl@Windows@@@2@@Z
+                          3E ?CmsVerifyFileHashes@Rtl@ManifestParser@Windows@@YAJKAEBU?$Vector@$$CBUHashInfo@Rtl@ManifestParser@Windows@@@3@AEBU_LUNICODE_STRING@@PEAUIRtlFile@13@PEAUIRtlDefinitionIdentity@1Identity@3@PEAK@Z
+                          71 ?GetFileSystemDefaultSecurity@@YAJKPEAV?$Auto@U_SECURITY_DESCRIPTOR@@@Windows@@@Z
+                          70 ?GetFileHashes@WcpManifest@@SAJAEBUFile@WcpManifestParser@@PEAV?$CVector@UHashInfo@Rtl@ManifestParser@Windows@@VCCallDisposition@2BUCL@@@BUCL@@PEAPEAUHashInfo@Rtl@ManifestParser@Windows@@@Z
+                          B5 ?ParseFromBlob@WcpManifest@@QEAAJW4ParseDocumentFlags@XmlParserGenerator@@AEBU_LBLOB@@PEAVStopWatch@Rtl@Windows@@@Z
+                          69 ?GetComponentAbsolutePath@ComponentStore@@YAJKPEAUIRtlIdentityAuthority@Rtl@Identity@Windows@@PEAUIRtlDefinitionIdentity@345@PEAUIRtlSystemIsolationLayer@35@2AEBU_LUNICODE_STRING@@PEAV?$Auto@U_LUNICODE_STRING@@@5@@Z
+                          BC ?QueryConfigurationOption@CRawStoreLayout@ComponentStore@@QEBAJAEBU_GUID@@_NPEA_N@Z
+                          22 ?AcquireRequiredResources@CRawStoreLayout@ComponentStore@@QEAAJXZ
+                          97 ?InitializeStoreContext@CRawStoreLayout@ComponentStore@@QEAAJKPEAUIRtlIdentityAuthority@Rtl@Identity@Windows@@PEAUIRtlAppIdAuthority@4AppId@6@PEAUIRtlSystemIsolationLayer@46@2PEAUIRtlKey@46@3AEAVCRawInstallMap@InstallMap@@PEAUIRtlDirectory@46@5@Z
+                         14C GetPrimitiveInstallerSupport
+                          58 ?ExecutionQueueToXml@AiQueue@@YAJKAEBU?$Vector@VExecutionQueueEntry@AiQueue@@@Windows@@PEAUIRtlIdentityAuthority@Rtl@Identity@3@PEAUIRtlXmlWriter@5Microdom@3@@Z
+                          5C ?Finalize@ExecutionQueueDeriver@AiQueue@@QEAAJPEAV?$Auto@U?$Vector@VExecutionQueueEntry@AiQueue@@@Windows@@@Windows@@PEAK@Z
+                          26 ?AddInspect@ExecutionQueueDeriver@AiQueue@@QEAAJAEBVWcpManifest@@@Z
+                          85 ?HasImpactfulOperation@ExecutionQueueDeriver@AiQueue@@QEBA_NXZ
+                          24 ?AddChange@ExecutionQueueDeriver@AiQueue@@QEAAJPEBVWcpManifest@@0@Z
+                          56 ?DoesManifestContainAIs@ExecutionQueueDeriver@AiQueue@@QEAAJAEBVWcpManifest@@PEA_N@Z
+                         110 ?ShouldRunAIs@ExecutionQueueDeriver@AiQueue@@QEAAJPEAUIRtlDefinitionIdentity@Rtl@Identity@Windows@@PEA_N@Z
+                          94 ?Initialize@ExecutionQueueDeriver@AiQueue@@QEAAJKKK_KPEAUIRtlSystemIsolationLayer@Rtl@Windows@@1PEBV?$CVector@UTransformsChangeQueueEntry@AiQueue@@VCCallDisposition@Rtl@BUCL@@@BUCL@@@Z
+                          49 ?CreateAdvInstallerQueueFromXml@AiQueue@@YAJPEAUIRtlIdentityAuthority@Rtl@Identity@Windows@@PEAUIRtlMicrodom@3Microdom@5@PEAV?$Auto@U?$Vector@VExecutionQueueEntry@AiQueue@@@Windows@@@5@@Z
+                         154 IsSkuAssembly
+                          46 ?ConvertStringSecurityDescriptor@CSecurityDescriptorFactory@Rtl@Implementation@WCP@Windows@@QEBAJKAEBU_LUNICODE_STRING@@PEAV?$Auto@U_SECURITY_DESCRIPTOR@@@5@PEAK@Z
+                          CC ?ReplaceMacros@LocalTransformerServices@COM@WCP@Windows@@UEAAJKPEB_WPEAPEA_WK@Z
+                          78 ?GetParameter@LocalTransformerServices@COM@WCP@Windows@@UEAAJKPEB_WPEAPEA_WPEAK@Z
+                         11E ?TryGetRollbackStorageDirectory@LocalTransformerServices@COM@WCP@Windows@@UEAAJKPEAPEAUIRtlDirectory@Rtl@4@@Z
+                         11F ?TryGetRollbackStorageKey@LocalTransformerServices@COM@WCP@Windows@@UEAAJKPEAPEAUIRtlKey@Rtl@4@@Z
+                          7F ?GetUserProfile@LocalTransformerServices@COM@WCP@Windows@@UEAAJPEAPEAUIRtlUserProfile@Rtl@4@@Z
+                          79 ?GetRollbackSystem@LocalTransformerServices@COM@WCP@Windows@@UEAAJPEAPEAUIRtlSystemIsolationLayerPublic@Rtl@4@@Z
+                          7C ?GetSystem@LocalTransformerServices@COM@WCP@Windows@@UEAAJPEAPEAUIRtlSystemIsolationLayerPublic@Rtl@4@@Z
+                          72 ?GetIsolationAllocator@LocalTransformerServices@COM@WCP@Windows@@UEAAJPEAPEAUIMalloc@@@Z
+                          C7 ?Release@LocalTransformerServices@COM@WCP@Windows@@UEAAKXZ
+                          2A ?AddRef@LocalTransformerServices@COM@WCP@Windows@@UEAAKXZ
+                          BE ?QueryInterface@LocalTransformerServices@COM@WCP@Windows@@UEAAJAEBU_GUID@@PEAPEAX@Z
+                          A1 ?IsSafeMode@LocalInstallerServices@COM@WCP@Windows@@UEAAJPEA_N@Z
+                          A0 ?IsPhysicallyOffline@LocalInstallerServices@COM@WCP@Windows@@UEAA_NXZ
+                          BF ?QuerySingleResourceOwnershipConfiguration@LocalInstallerServices@COM@WCP@Windows@@UEAAJPEA_N@Z
+                          C0 ?QuerySmiHiveUpdatesConfiguration@LocalInstallerServices@COM@WCP@Windows@@UEAAJPEAK@Z
+                          A2 ?IsSkuAssembly@LocalInstallerServices@COM@WCP@Windows@@UEAA_NXZ
+                          A3 ?IsStateSeparated@LocalInstallerServices@COM@WCP@Windows@@UEAA_NXZ
+                          B8 ?PoqWasExecutedInline@LocalInstallerServices@COM@WCP@Windows@@UEAA_NXZ
+                          9F ?IsMobileStore@LocalInstallerServices@COM@WCP@Windows@@UEAA_NXZ
+                         12E ?get_UserProfile@LocalInstallerServices@COM@WCP@Windows@@UEAAJPEAPEAUIRtlUserProfile@Rtl@4@@Z
+                         1CF RtlGetSystem
+                         12A ?get_IsolationAllocator@LocalInstallerServices@COM@WCP@Windows@@UEAAJPEAPEAUIMalloc@@@Z
+                          28 ?AddInstallerFailureAnnotation@LocalInstallerServices@COM@WCP@Windows@@UEAAJKPEA_W@Z
+                          21 ?AcquireInstallerComponentPath@LocalInstallerServices@COM@WCP@Windows@@UEAAJKPEAUIDefinitionIdentity@@PEAPEA_WPEAK@Z
+                          A9 ?LogAiMessageA@LocalInstallerServices@COM@WCP@Windows@@UEAAXW4LogAiMessageFlags@ICSIMetadataInstallerServices@@W4LogLevel@6@PEAU_RTL_TRACING_FACILITY@Rtl@34@QEBD@Z
+                          A8 ?LogAiMessage@LocalInstallerServices@COM@WCP@Windows@@UEAAXW4LogAiMessageFlags@ICSIMetadataInstallerServices@@W4LogLevel@6@PEAU_RTL_TRACING_FACILITY@Rtl@34@QEB_W@Z
+                          C5 ?RedirectWowPath@LocalInstallerServices@COM@WCP@Windows@@UEAAJW4RedirectWowPathFlags@ICSIMetadataInstallerServices@@PEAUIDefinitionIdentity@@PEB_WPEAPEA_W@Z
+                         127 ?VirtualPathToPhysical@LocalInstallerServices@COM@WCP@Windows@@UEAAJKPEB_WPEAPEA_W@Z
+                         12D ?get_TargetProcessorArchitecture@LocalInstallerServices@COM@WCP@Windows@@UEAAJPEAK@Z
+                         12B ?get_RebootIndicator@LocalInstallerServices@COM@WCP@Windows@@UEAAJPEAW4RebootIndicators@@@Z
+                         12F ?put_RebootIndicator@LocalInstallerServices@COM@WCP@Windows@@UEAAJW4RebootIndicators@@@Z
+                         122 ?VerifyAdvancedInstaller@LocalInstallerServices@COM@WCP@Windows@@UEAAJPEB_W00PEAK@Z
+                          AE ?MarkServicingStackCorruptHelper@LocalInstallerServices@COM@WCP@Windows@@UEAAJXZ
+                          CB ?ReplaceMacros@LocalInstallerServices@COM@WCP@Windows@@UEAAJKPEB_WPEAPEA_WPEAUIDefinitionIdentity@@@Z
+                          C6 ?Release@LocalInstallerServices@COM@WCP@Windows@@UEAAKXZ
+                          29 ?AddRef@LocalInstallerServices@COM@WCP@Windows@@UEAAKXZ
+                          BD ?QueryInterface@LocalInstallerServices@COM@WCP@Windows@@UEAAJAEBU_GUID@@PEAPEAX@Z
+                         148 GetFriendlyInstallerName
+                         119 ?SilSetRegistryDWORD@Rtl@Windows@@YAJPEAUIRtlSystemIsolationLayerPublic@12@AEBU_LUNICODE_STRING@@1K@Z
+                          CF ?ResolvePendingPhases@COM@Windows@@YAJKPEAVCQueueExecutor@12@PEA_N@Z
+                           1 ??0AIAsimovProvider@COM@Windows@@QEAA@XZ
+                          44 ?ConvertIn@COM@Windows@@YAJPEAUIDefinitionIdentity@@PEAPEAUIRtlDefinitionIdentity@Rtl@Identity@2@@Z
+                          5F ?FinalizeValue@CComponentInformationTableTraits@COM@Windows@@SAXAEAV?$Auto@PEAVCComponentInformation@COM@Windows@@@3@@Z
+                          91 ?Initialize@CQueueExecutor@COM@Windows@@QEAAJKPEB_WPEAVIComponentStoreHelper@23@PEAUIRtlSystemIsolationLayer@Rtl@3@PEAVCTransactionContent@23@@Z
+                          17 ??1CQueueExecutor@COM@Windows@@QEAA@XZ
+                          12 ??1CComponentInformation@COM@Windows@@QEAA@XZ
+                         142 ExecuteMidgroundInstallers
+                          47 ?CopyOutPath@COM@Windows@@YAJPEBU_LUNICODE_STRING@@PEAPEA_W@Z
+                          1D ??1CShortcutInstaller@@QEAA@XZ
+                          14 ??1CGacPrimitiveInstaller@@QEAA@XZ
+                           6 ??0CGacPrimitiveInstaller@@QEAA@XZ
+                          1E ??1CSysprepInstaller@@QEAA@XZ
+                          15 ??1CMigInfoInstaller@@QEAA@XZ
+                           7 ??0CMigInfoInstaller@@QEAA@XZ
+                           5 ??0CFileInstaller@@QEAA@XZ
+                          1A ??1CRegistryInstaller@@QEAA@XZ
+                           B ??0CRegistryInstaller@@QEAA@XZ
+                         1D2 RtlHashLUtf8String
+                          16 ??1CPbrInstaller@@QEAA@XZ
+                          1C ??1CSettingsInstaller@@QEAA@XZ
+                          11 ??1CBackupFileCreator@PrimitiveInstaller@@QEAA@XZ
+                           2 ??0CBackupFileCreator@PrimitiveInstaller@@QEAA@XZ
+                           3 ??0CBaseInstaller@PrimitiveInstaller@@IEAA@XZ
+                          5D ?FinalizeChanges@CCoordinator@PrimitiveInstaller@@QEAAJXZ
+                          B9 ?ProcessChange@CCoordinator@PrimitiveInstaller@@QEAAJAEBUComponentChange@2@@Z
+                          8F ?Initialize@CCoordinator@PrimitiveInstaller@@QEAAJKKKPEAUIRtlPrimitiveInstallerSupport@Rtl@PrimitiveInstallers@Windows@@PEAUIRtlPrimitiveInstallerRepairCallback@456@PEAUIRtlSystemIsolationLayer@46@@Z
+                         1B2 RtlDuplicateLUnicodeString
+                          41 ?CompareIdentityAttributeValue@Rtl@Identity@Windows@@YAJPEBU_LUNICODE_STRING@@0PEAH@Z
+                          B7 ?ParseProcessorArchitecture@Rtl@Identity@Windows@@YAJAEBU_LUNICODE_STRING@@PEAVPSEUDO_ARCH@123@PEA_N@Z
+                          DE ?RtlTraceFormat_IRtlDefinitionAppId@Rtl@WCP@Windows@@YAXPEAUIRtlFormattedOutputStream@13@PEBX@Z
+                          4D ?DecompressManifest@Rtl@Implementation@WCP@Windows@@YAJKPEAV?$Auto@U_LBLOB@@@4@PEAK@Z
+                         10B ?RtlWcpParseManifestFromXml@Rtl@Implementation@WCP@Windows@@YAJKPEBU_LBLOB@@PEAUIParseErrorCallback@1Microdom@4@PEAUIRtlManifestParseErrorCallback@1ManifestParser@4@PEAV?$Auto@PEAVIRtlCdf@Rtl@Cdf@Windows@@@4@@Z
+                         116 ?SilGetRegistryDWORD@Rtl@Windows@@YAJKPEAUIRtlSystemIsolationLayerPublic@12@AEBU_LUNICODE_STRING@@1PEAK2@Z
+                         181 RtlAllocateLBlob
+                         1F2 RtlParseDottedVersion
+                         1D0 RtlHashLBlob
+                          CD ?ReplaceSystemPathStringWithDefaultMacro@Rtl@ComponentMacroReplacement@@YAJW4ReplaceSystemPathStringWithDefaultMacroFlags@12@AEBU_LUNICODE_STRING@@PEAV?$Auto@U_LUNICODE_STRING@@@Windows@@PEAW4ReplaceSystemPathStringWithDefaultMacroDisposition@12@@Z
+                         20F RtlXmlDestroyNextLogicalThing
+                         1AB RtlDestroyGrowingList
+                         1F0 RtlNsDestroy
+                          93 ?Initialize@CXmlCursor@@QEAAJPEAX_K@Z
+                           D ??0CXmlCursor@@QEAA@XZ
+                         1D3 RtlIndexIntoGrowingList
+                         118 ?SilGetRegistryString@Rtl@Windows@@YAJKPEAUIRtlSystemIsolationLayerPublic@12@AEBU_LUNICODE_STRING@@1PEAV?$Auto@U_LUNICODE_STRING@@@2@PEAK@Z
+                         219 SilCreateRerootedSil
+                          3F ?CoTaskMemAlloc@COM@Windows@@YAPEAX_K@Z
+                         195 RtlConvertNtRegistryPathToWin32RegistryPath
+                         143 ExpandAndNullTerminateEnvironmentVariableString
+                          D5 ?RtlRunPrimitiveOperationsInXmlAgainstExecutor@@YAJW4RtlRunPrimitivesFlags@@_KPEBU_LBLOB@@AEBU?$Vector@QEBU_UNICODE_STRING@@@Windows@@P6AJ01P6AXPEAXPEAT_PRIMITIVE_OPERATION_UNION_VALUES@@PEAU_PRIMITIVE_OPERATION@@PEAE@ZP6AX456@ZP6AJPEBU_UNICODE_STRING@@4@Z44PEBU_POQ_PROGRESS_INFORMATION@@PEAU_POQ_CHECKPOINT_INFORMATION@@PEAU_POQ_FAILURE_INFORMATION@@@Z4P6AJPEBU7@4@ZPEBU8@PEAU9@PEAU_POQ_FAILURE_INFORMATION@@PEAW4RtlRunPrimitivesDisposition@@@Z
+                          4A ?CreateSecurityDescriptorFromParts@Rtl@Implementation@WCP@Windows@@YAJKPEBU_SID@@0PEBU_ACL@@1PEAV?$Auto@U_SECURITY_DESCRIPTOR@@@4@@Z
+                         14E GetTemporaryPath
+                         1CB RtlGetEncodingSizeUtf8
+                         1BB RtlEncodeUtf8
+                         1F7 RtlReallocateLUtf8String
+                         1D5 RtlInitLUnicodeStringFromUnicodeString
+                          34 ?ChooseBitnessFromIdentityAndTarget@MacroReplacement@@YAJKPEAUIRtlDefinitionIdentity@Rtl@Identity@Windows@@PEAK@Z
+                         1A5 RtlCreateUtf8UCSStringBuilder
+                         115 ?SilGetRegistryDWORD@Rtl@Windows@@YAJKPEAUIRtlKey@12@AEBU_LUNICODE_STRING@@PEAK2@Z
+                         218 SilCreateBufferedSil
+                          7E ?GetUTF8FileWriterStream@Rtl@Windows@@YAJPEAUIRtlFile@12@PEAV?$Auto@PEAUIRtlWOFOUCSStream@Rtl@Windows@@@2@@Z
+                         117 ?SilGetRegistryString@Rtl@Windows@@YAJKPEAUIRtlKey@12@AEBU_LUNICODE_STRING@@PEAV?$Auto@U_LUNICODE_STRING@@@2@PEAK@Z
+                         157 MergeTwoChangeLists
+                         11B ?TraceChangeList@Rtl@ComponentStore@Windows@@YAXPEAUIRtlFormattedOutputStream@13@PEBX@Z
+                           0 ??$ReplaceVariablesInStringCallthrough@U_LUNICODE_STRING@@@Rtl@Implementation@WCP@Windows@@YAJPEAXPEBU_LBLOB@@PEAU_RTL_SMART_LBLOB_UCSCHAR_WRITING_CONTEXT@@@Z
+                          42 ?CompareSecurityDescriptorFromObjectAgainstManifest@Rtl@Implementation@WCP@Windows@@YAJKPEBU_SECURITY_DESCRIPTOR@@0PEA_N@Z
+                          B3 ?ParseBase16String@Rtl@Implementation@WCP@Windows@@YAJKPEBE0P6A?AU_RTL_UCSCHAR_DECODER_RETURN_VALUE@@00@ZPEAU_LBLOB@@PEA_N@Z
+                           C ??0CSecurityDescriptorFactory@Rtl@Implementation@WCP@Windows@@QEAA@XZ
+                          1B ??1CSecurityDescriptorFactory@Rtl@Implementation@WCP@Windows@@QEAA@XZ
+                          4C ?DecomposeSecurityDescriptor@Rtl@Implementation@WCP@Windows@@YAJPEBU_SECURITY_DESCRIPTOR@@PEAKPEAV?$Auto@U_SID@@@4@2PEAV?$Auto@U_ACL@@@4@3PEAG@Z
+                          62 ?FormatFourPartVersion@Rtl@Implementation@WCP@Windows@@YAJKAEBT_FOUR_PART_VERSION@@PEAE1P6A?AU_RTL_UCSCHAR_ENCODER_RETURN_VALUE@@K11@ZPEAPEAE@Z
+                          43 ?CompressManifest@Rtl@Implementation@WCP@Windows@@YAJK_NPEBU_LBLOB@@PEAUIRtlFile@14@@Z
+                          CE ?ReplaceVariablesInString@Rtl@Implementation@WCP@Windows@@YAJPEBU_LBLOB@@P6A?AU_RTL_UCSCHAR_DECODER_RETURN_VALUE@@PEBE1@ZPEAXP6AJ30PEAU_RTL_SMART_LBLOB_UCSCHAR_WRITING_CONTEXT@@@ZP6AJKPEAU_RTL_SMART_LBLOB_WRITING_CONTEXT@@@ZP6AJQEBK_K6@ZPEAU5@@Z
+                         10A ?RtlWcpCreateMicrodomFromXmlBlob@Rtl@Implementation@WCP@Windows@@YAJPEBU_LBLOB@@PEAUIParseErrorCallback@1Microdom@4@PEAV?$Auto@PEAUIRtlMicrodom@Rtl@Microdom@Windows@@@4@@Z
+                         152 IsCompactOSEnabled
+                          DD ?RtlTraceFormat_IRtlBaseIdentity@Rtl@WCP@Windows@@YAXPEAUIRtlFormattedOutputStream@13@PEBX@Z
+                          DA ?RtlTraceFormat@Rtl@WCP@Windows@@YAXPEAUIRtlFormattedOutputStream@13@PEBUIRtlSystemIsolationLayerWithPOQ@13@@Z
+                          38 ?Close@?$Auto@U_SID@@@Windows@@QEAAXXZ
+                         153 IsIdentityPnPDriver
+                          36 ?Close@?$Auto@U_ACL@@@Windows@@QEAAXXZ
+                         1CE RtlGetPendingXmlVersion
+                         204 RtlSplitNtPath
+                         194 RtlConvertNtFilePathToWin32FilePath
+                         1F6 RtlReallocateLUnicodeString
+                          3A ?Close@CApplicationAccessor@@QEAAXXZ
+                          8B ?Initialize@CApplicationAccessor@@QEAAJPEAUIRtlDefinitionAppId@Rtl@AppId@Windows@@PEAUIRtlAppIdAuthority@345@@Z
+                          66 ?GenerateCatalogThumbprint@@YAJPEBU_LBLOB@@PEAV?$Auto@U_LUNICODE_STRING@@@Windows@@@Z
+                         198 RtlConvertWin32RegistryPathToNtRegistryPathWithSid
+                         1FD RtlSmartMultiUcsEncoder_Utf16LE
+                          90 ?Initialize@CMultiThreadExecQ@MTEQ@@QEAAJ_N_K1@Z
+                          2C ?AllocGroup@CMultiThreadExecQ@MTEQ@@QEAAJPEAV?$AutoNewPtr@VCItemGroupContextBase@MTEQ@@@Windows@@PEAV?$AutoNewPtr@VCGroup@MTEQ@@@4@@Z
+                          C2 ?QueueItemForGroup@CMultiThreadExecQ@MTEQ@@QEAAJPEAVCGroup@2@PEAV?$AutoNewPtr@VCItemExecutorBase@MTEQ@@@Windows@@@Z
+                          5E ?FinalizeGroup@CMultiThreadExecQ@MTEQ@@QEAAJV?$AutoNewPtr@VCGroup@MTEQ@@@Windows@@@Z
+                          AF ?MaybeGetCompletedGroup@CMultiThreadExecQ@MTEQ@@QEAAJ_NPEAV?$AutoNewPtr@VCGroup@MTEQ@@@Windows@@PEAK@Z
+                          3C ?Close@CMultiThreadExecQ@MTEQ@@QEAAJXZ
+                          74 ?GetNextCompletedItemIfAvailable@CGroup@MTEQ@@QEAAJPEAV?$AutoNewPtr@VCItemExecutorBase@MTEQ@@@Windows@@@Z
+                          6D ?GetContext@CGroup@MTEQ@@QEAAXPEAV?$AutoNewPtr@VCItemGroupContextBase@MTEQ@@@Windows@@@Z
+                          D6 ?RtlRunPrimitiveOperationsInXmlAgainstSil@@YAJW4RtlRunPrimitivesFlags@@_KPEAUIRtlSystemIsolationLayer@Rtl@Windows@@PEBU_LBLOB@@AEBU?$Vector@QEBU_UNICODE_STRING@@@4@P6AJPEBU_UNICODE_STRING@@PEAX@ZPEBU_POQ_PROGRESS_INFORMATION@@PEAU_POQ_CHECKPOINT_INFORMATION@@PEAU_POQ_FAILURE_INFORMATION@@PEAW4RtlRunPrimitivesDisposition@@@Z
+                         202 RtlSplitLUnicodeString
+                         190 RtlCompareLUnicodeStrings
+                           A ??0CRawStoreLayout@ComponentStore@@QEAA@XZ
+                          19 ??1CRawStoreLayout@ComponentStore@@QEAA@XZ
+                          9C ?IsComponentFileStaged@CRawStoreLayout@ComponentStore@@SAJKAEBUComponentData@2@AEBU_LUNICODE_STRING@@PEA_N@Z
+                          98 ?InitializeTlcCanonicalData@CRawStoreLayout@ComponentStore@@QEAAJAEBVCApplicationAccessor@@PEAUTlcData@2@PEA_N@Z
+                          25 ?AddComponentImplication@CRawStoreLayout@ComponentStore@@QEAAJAEBUComponentData@2@PEAUTlcData@2@@Z
+                          C8 ?RemoveComponentImplication@CRawStoreLayout@ComponentStore@@QEAAJAEBUComponentData@2@PEAUTlcData@2@@Z
+                          2B ?AddTlcMark@CRawStoreLayout@ComponentStore@@QEAAJKAEBUTlcInstaller@2@PEAUTlcData@2@@Z
+                          CA ?RemoveTlcMark@CRawStoreLayout@ComponentStore@@QEAAJKAEBUTlcInstaller@2@PEAUTlcData@2@@Z
+                          23 ?AddCatalogMarkFromTlc@CRawStoreLayout@ComponentStore@@QEAAJAEBU_LUNICODE_STRING@@PEAUTlcData@2@@Z
+                          AD ?ManuallyMarkComponentStaged@CRawStoreLayout@ComponentStore@@QEAAJAEBVCComponentAccessor@@PEBU_LBLOB@@@Z
+                         10E ?SetComponentFlag@CRawStoreLayout@ComponentStore@@QEAAJ_NKAEBUComponentData@2@@Z
+                          BA ?QueryComponentFlag@CRawStoreLayout@ComponentStore@@SAJAEBUComponentData@2@PEA_NPEAK@Z
+                          9A ?IsComponentFileDeltaOrLZMSCompressed@CRawStoreLayout@ComponentStore@@QEAAJAEBUComponentData@2@AEBU_LUNICODE_STRING@@PEA_N@Z
+                          95 ?Initialize@VersionedIndexHelper@ComponentStore@@QEAAJPEAUIRtlKey@Rtl@Windows@@_NPEAVIStoreLayoutHelper@2@PEAUIRtlIdentityAuthority@4Identity@5@@Z
+                          B1 ?OpenComponentDerivedData@VersionedIndexHelper@ComponentStore@@QEAAJ_NPEBU_LUNICODE_STRING@@1PEAUComponentData@2@PEA_N@Z
+                          88 ?InitComponentData@VersionedIndexHelper@ComponentStore@@QEAAJ_NPEAUIRtlDefinitionIdentity@Rtl@Identity@Windows@@PEAUComponentData@2@PEA_N@Z
+                          C1 ?QueryUnchangedFileVersions@VersionedIndexHelper@ComponentStore@@QEAAJ_N0PEAUIRtlDefinitionIdentity@Rtl@Identity@Windows@@AEBU_LUNICODE_STRING@@AEBU_LBLOB@@PEAV?$CVector@T_FOUR_PART_VERSION@@VCCallDisposition@Rtl@BUCL@@@BUCL@@PEA_N@Z
+                          C4 ?ReadKeyValue@ComponentStore@@YAJPEAUIRtlKey@Rtl@Windows@@PEBU_LUNICODE_STRING@@PEAV?$Auto@U_LBLOB@@@4@PEAPEBU_KEY_VALUE_PARTIAL_INFORMATION@@PEA_N@Z
+                         199 RtlCopyLBlob
+                         206 RtlTranscodeLBlobs
+                         1D6 RtlInitUnicodeStringFromLUnicodeString
+                          3B ?Close@CCatalog@@QEAAJXZ
+                          48 ?Create@CCatalog@@QEAAJKKPEBU_LBLOB@@PEAK@Z
+                         125 ?VerifySigner@CCatalog@@QEAAJPEAUIRtlSystemIsolationLayer@Rtl@Windows@@@Z
+                         123 ?VerifyCertChainRoot@CCatalog@@QEAAJKPEAK@Z
+                          60 ?FindSubject@CCatalog@@QEBAJKPEBU_LBLOB@@PEA_NPEAJ@Z
+                         1A6 RtlDeallocateUnicodeString
+                         1C5 RtlFreeLUnicodeString
+                         1C4 RtlFreeLBlob
+                         1A8 RtlDecodeBase64LUtf8StringToLBlob
+                         1D4 RtlInitLUnicodeStringFromNullTerminatedString
+                         19C RtlCopyLUtf8StringToLUnicodeString
+                         212 RtlXmlExtentToUtf8String
+                         18B RtlCalculateUtf16StringLengthFromLUtf8String
+                          B0 ?Next@CXmlCursor@@QEAAJXZ
+                         1EF RtlMurmurHashLBlob
+                          64 ?FsnpDowncaseChar@@YAKK@Z
+                         158 ORAdvanceSubkeyEnumerator
+                         175 ORSaveHive
+                         173 ORQueryValueEnumerator
+                         16F ORQueryInfoKey
+                         17B ORStartSubkeyEnumerator
+                         15B ORCleanupValueEnumerator
+                         159 ORAdvanceValueEnumerator
+                         178 ORSetKeySecurity
+                         16E OROpenKey
+                         162 ORDeleteValue
+                         169 ORInitializeSubkeyEnumerator
+                         16A ORInitializeValueEnumerator
+                         15D ORCloseKey
+                         172 ORQuerySubkeyEnumerator
+                         16C OROpenHive
+                         167 ORGetValue
+                         160 ORCreateKey
+                         15A ORCleanupSubkeyEnumerator
+                         17C ORStartValueEnumerator
+                         166 ORGetKeySecurity
+                         179 ORSetValue
+                         161 ORDeleteKey
+                         21D WcpSetHelperCallback
+                          AA ?LookupStringReplacement@MacroReplacement@@YAJKKAEBU_LUNICODE_STRING@@PEAUIRtlSystemIsolationLayer@Rtl@Windows@@PEAXPEAUIRtlDefinitionIdentity@4Identity@5@PEAV?$Auto@U_LUNICODE_STRING@@@5@PEAK@Z
+                         12C ?get_System@LocalInstallerServices@COM@WCP@Windows@@UEAAJPEAPEAUIRtlSystemIsolationLayerPublic@Rtl@4@@Z
+
+  Section contains the following delay load imports:
+
+    BINDFLTAPI.dll
+              00000001 Characteristics
+      0000000180132F38 Address of HMODULE
+      000000018013D000 Import Address Table
+      0000000180124E88 Import Name Table
+      0000000180124EF8 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    00000001800DCCFC     2 BfGenerateBatchedConfig
+
+    CabAPI.dll
+              00000001 Characteristics
+      0000000180132F40 Address of HMODULE
+      000000018013D010 Import Address Table
+      0000000180124E98 Import Name Table
+      0000000180124F08 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    00000001800DD097     9 Cab_FreeBuffer
+                                    00000001800DD00C     6 Cab_ExtractOneToBuffer
+
+  Summary
+
+        9000 .data
+        1000 .didat
+        7000 .pdata
+       44000 .rdata
+        1000 .reloc
+        3000 .rsrc
+       E8000 .text

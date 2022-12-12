@@ -1,0 +1,95 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\usbd.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0007000 Import Address Table
+             1C0007140 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         8D1 RtlInitUnicodeString
+                         4B7 KeInitializeSpinLock
+                         391 IoOpenDeviceRegistryKey
+                          B4 ExAllocatePool2
+                         8BF RtlGetVersion
+                          E3 ExFreePool
+                         5BC MmGetSystemRoutineAddress
+                         B80 ZwQueryValueKey
+                         8D4 RtlInitializeBitMap
+                          E5 ExFreePoolWithTag
+                         428 IoWMIRegistrationControl
+                         4AF KeInitializeEvent
+                         983 RtlSetBits
+                         AF0 ZwClose
+                         457 KeAcquireSpinLockRaiseToDpc
+                         51A KeReleaseSpinLock
+                         53A KeSetEvent
+                         80C RtlClearBits
+                         872 RtlFindClearBitsAndSet
+                         566 KeWaitForSingleObject
+                         813 RtlCompareMemory
+                         2F3 IoCancelIrp
+                         33D IoFreeIrp
+                         2E0 IoAllocateIrp
+                         435 IofCallDriver
+                         436 IofCompleteRequest
+                         3B9 IoReleaseCancelSpinLock
+                         6AB ObfDereferenceObject
+                         369 IoGetLowerDeviceObject
+
+  Section contains the following exports for USBD.SYS
+
+    00000000 characteristics
+    C51F48B2 time date stamp
+        0.00 version
+           1 ordinal base
+          20 number of functions
+          20 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001010 DllInitialize
+          2    1 00001910 DllUnload
+          3    2 00002B50 USBD_AddDeviceToGlobalList
+          4    3 00001180 USBD_AllocateHubNumber
+          5    4 00001990 USBD_CalculateUsbBandwidth
+          6    5 00001A10 USBD_CreateConfigurationRequest
+          7    6 00001B90 USBD_CreateConfigurationRequestEx
+          8    7 00001EA0 USBD_GetInterfaceLength
+          9    8 00001EC0 USBD_GetPdoRegistryParameter
+         10    9 00001F50 USBD_GetRegistryKeyValue
+         11    A 00002050 USBD_GetUSBDIVersion
+         12    B 00002DE0 USBD_MarkDeviceAsDisconnected
+         13    C 00002230 USBD_ParseConfigurationDescriptor
+         14    D 00002270 USBD_ParseConfigurationDescriptorEx
+         15    E 00002470 USBD_ParseDescriptors
+         16    F 000025A0 USBD_QueryBusTime
+         17   10 000012A0 USBD_RegisterHcFilter
+         18   11 00002E50 USBD_ReleaseHubNumber
+         19   12 00002ED0 USBD_RemoveDeviceFromGlobalList
+         20   13 000025F0 USBD_ValidateConfigurationDescriptor
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE

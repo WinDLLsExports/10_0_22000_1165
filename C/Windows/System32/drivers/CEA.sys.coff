@@ -1,0 +1,141 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\CEA.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    msrpc.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000F038 Import Address Table
+             1C000F270 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         92F RtlNtStatusToDosError
+                         922 RtlLookupEntryHashTable
+                         844 RtlDeleteHashTable
+                         9CD RtlValidSid
+                         8CC RtlInitUnicodeString
+                         918 RtlLengthSid
+                         973 RtlRunOnceExecuteOnce
+                         8CD RtlInitUnicodeStringEx
+                         994 RtlStringFromGUID
+                         B17 ZwEnumerateKey
+                         815 RtlComputeCrc32
+                         B7B ZwQueryValueKey
+                         8A8 RtlGetNextEntryHashTable
+                         AEB ZwClose
+                         B3D ZwOpenKey
+                         80E RtlCompareMemory
+                         811 RtlCompareUnicodeString
+                         88F RtlGUIDFromString
+                         B19 ZwEnumerateValueKey
+                         88E RtlFreeUnicodeString
+                         AFA ZwCreateKey
+                         8DD RtlInsertEntryHashTable
+                         BB4 ZwSetValueKey
+                         54A KeSetTimer
+                         4AB KeInitializeDpc
+                          8C EtwSetInformation
+                         B7E ZwQueryWnfStateData
+                         115 ExQueueWorkItem
+                         4B9 KeInitializeTimer
+                          A1 ExAcquirePushLockExclusiveEx
+                         133 ExReleasePushLockExclusiveEx
+                         14F ExSubscribeWnfStateChange
+                          8E EtwUnregister
+                         134 ExReleasePushLockSharedEx
+                         168 ExUnsubscribeWnfStateChange
+                         46A KeCancelTimer
+                          B8 ExAllocatePoolWithTag
+                          A2 ExAcquirePushLockSharedEx
+                          89 EtwRegister
+                          E5 ExFreePoolWithTag
+                         113 ExQueryWnfStateData
+                         732 PsGetCurrentThreadId
+                         C4E wcsnlen
+                         8C6 RtlInitEnumerationHashTable
+                         969 RtlRemoveEntryHashTable
+                          94 EtwWriteTransfer
+                         82D RtlCreateHashTable
+                         852 RtlEndEnumerationHashTable
+                         B0D ZwDeleteKey
+                         855 RtlEnumerateEntryHashTable
+
+    msrpc.sys
+             1C000F000 Import Address Table
+             1C000F238 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3A RpcBindingFree
+                          37 RpcBindingBind
+                          48 UuidEqual
+                          39 RpcBindingCreateW
+                          45 UuidCreate
+                          1A NdrClientCall3
+
+  Section contains the following exports for CEA.sys
+
+    00000000 characteristics
+    5A932B7B time date stamp
+        0.00 version
+           1 ordinal base
+          31 number of functions
+          31 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00004EF0 BriAllocateRpcBuffer
+          2    1 00004F10 BriCleanup
+          3    2 00004F40 BriCreateBrokeredEvent
+          4    3 00004F90 BriCreateBrokeredEventEx
+          5    4 00005060 BriDeleteBrokeredEvent
+          6    5 000051D0 BriFreeRpcBuffer
+          7    6 000051F0 BriIsBrokerRegistered
+          8    7 000052C0 BriResolveBrokerIdByEventId
+          9    8 00013080 DllInitialize
+         10    9 00010320 DllUnload
+         11    A 00001250 EACreateAggregateEvent
+         12    B 00001680 EADeleteAggregateEvent
+         13    C 00001760 EAEnumerateAggregateEvents
+         14    D 00001950 EAQueryAggregateEventData
+         15    E 000046D0 EaCreateAggregatedEvent
+         16    F 00001BA0 EaCreateAggregation
+         17   10 00010010 EaDecodeBrokeredEvent
+         18   11 000047A0 EaDeleteAggregatedEvent
+         19   12 00006410 EaDeleteAggregatedEventParameters
+         20   13 00001E20 EaDeleteAggregation
+         21   14 00001ED0 EaDisableAggregatedEvent
+         22   15 00001FF0 EaEnableAggregatedEvent
+         23   16 000100D0 EaEncodeBrokeredEvent
+         24   17 00006630 EaFreeAggregatedEventParameters
+         25   18 00006170 EaFreeBuffer
+         26   19 00002110 EaGetAggregation
+         27   1A 00002130 EaQueryAggregateEventConditionState
+         28   1B 00002260 EaQueryAggregatedEvent
+         29   1C 00006700 EaQueryAggregatedEventParameters
+         30   1D 00002270 EaSignalAggregatedEvent
+         31   1E 00006A80 EaStoreAggregatedEventParameters
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        9000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE

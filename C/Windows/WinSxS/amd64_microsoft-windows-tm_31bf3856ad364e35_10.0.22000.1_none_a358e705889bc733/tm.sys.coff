@@ -1,0 +1,264 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-tm_31bf3856ad364e35_10.0.22000.1_none_a358e705889bc733\tm.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    CLFS.SYS
+    ntoskrnl.exe
+
+  Section contains the following imports:
+
+    CLFS.SYS
+             1C0009000 Import Address Table
+             1C00094A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 CLFS_LSN_INVALID
+                           1 CLFS_LSN_NULL
+                          3A ClfsReserveAndAppendLog
+                          18 ClfsGetLogFileInformation
+                          24 ClfsLsnInvalid
+                          22 ClfsLsnEqual
+                          23 ClfsLsnGreater
+                          25 ClfsLsnLess
+                          30 ClfsMgmtTailAdvanceFailure
+                          41 ClfsWriteRestartArea
+                           4 ClfsAdvanceLogBase
+                          34 ClfsReadLogRecord
+                          35 ClfsReadNextLogRecord
+                          40 ClfsTerminateReadLog
+                           9 ClfsCreateLogFile
+                           A ClfsCreateMarshallingArea
+                          37 ClfsReadRestartArea
+                           F ClfsDeleteMarshallingArea
+                           8 ClfsCloseLogFileObject
+                          28 ClfsMgmtDeregisterManagedClient
+                          2C ClfsMgmtRegisterManagedClient
+                          2A ClfsMgmtInstallPolicy
+                          2E ClfsMgmtSetLogFileSize
+                          3B ClfsReserveAndAppendLogAligned
+                          29 ClfsMgmtHandleLogFileFull
+                          1F ClfsLsnContainer
+                          31 ClfsPrivGetBaseLogFileFromFileObjectPointer
+
+    ntoskrnl.exe
+             1C00090E0 Import Address Table
+             1C0009580 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         BC8 __C_specific_handler
+                         484 KeEnterCriticalRegion
+                         566 KeWaitForSingleObject
+                          A3 ExAcquireResourceExclusiveLite
+                         517 KeReleaseMutex
+                          E5 ExFreePoolWithTag
+                         138 ExReleaseResourceLite
+                         4D1 KeLeaveCriticalRegion
+                         6AB ObfDereferenceObject
+                         115 ExQueueWorkItem
+                         6AD ObfReferenceObject
+                         53A KeSetEvent
+                          B8 ExAllocatePoolWithTag
+                         8CB RtlInitUnicodeString
+                         5BC MmGetSystemRoutineAddress
+                         428 IoWMIRegistrationControl
+                         B3B ZwOpenKey
+                         AE9 ZwClose
+                         B79 ZwQueryValueKey
+                          B7 ExAllocatePoolWithQuotaTag
+                         4B3 KeInitializeMutex
+                         4AF KeInitializeEvent
+                         4B9 KeInitializeTimer
+                         4AB KeInitializeDpc
+                         9CA RtlValidRelativeSecurityDescriptor
+                         916 RtlLengthSecurityDescriptor
+                         696 ObOpenObjectByPointer
+                         AFE ZwCreateResourceManager
+                         69B ObReferenceObjectByHandle
+                         AF3 ZwCreateEnlistment
+                         B9C ZwSetInformationEnlistment
+                         B04 ZwCreateTransaction
+                         826 RtlCopyUnicodeString
+                         7EC RtlAppendUnicodeStringToString
+                         88E RtlGUIDFromString
+                         54A KeSetTimer
+                          F5 ExInitializePagedLookasideList
+                         179 ExpInterlockedPopEntrySList
+                         68D ObGetObjectSecurity
+                         6A4 ObReleaseObjectSecurity
+                         17A ExpInterlockedPushEntrySList
+                         10F ExQueryDepthSList
+                         564 KeWaitForMultipleObjects
+                          9C ExAcquireFastMutex
+                         12C ExReleaseFastMutex
+                          A4 ExAcquireResourceSharedLite
+                         52B KeResetEvent
+                          89 EtwRegister
+                          8F EtwWrite
+                         80D RtlCompareMemory
+                         16A ExUuidCreate
+                          6F DbgPrintEx
+                         84F RtlDuplicateUnicodeString
+                         88D RtlFreeUnicodeString
+                         4C9 KeIsAttachedProcess
+                         46A KeCancelTimer
+                         526 KeRemoveQueueDpc
+                         4B4 KeInitializeQueue
+                         531 KeRundownQueue
+                         4C0 KeInsertQueue
+                         4A8 KeInitializeApc
+                         4C1 KeInsertQueueApc
+                         152 ExSystemExceptionFilter
+                         3E7 IoSetIoCompletion
+                         687 ObDereferenceObjectDeferDelete
+                         524 KeRemoveQueue
+                         728 PsGetCurrentProcess
+                         506 KeReadStateQueue
+                         305 IoCompletionObjectType
+                         4BF KeInsertHeadQueue
+                         683 ObCreateObjectType
+                         607 MmUserProbeAddress
+                         682 ObCreateObject
+                         68F ObInsertObject
+                         117 ExRaiseDatatypeMisalignment
+                         70D ProbeForWrite
+                          F7 ExInitializeResourceLite
+                          CE ExDeleteResourceLite
+                         A42 SeSystemDefaultSd
+                         349 IoGetAttachedDeviceReference
+                         2EE IoBuildDeviceIoControlRequest
+                         435 IofCallDriver
+                         A3F SeSinglePrivilegeCheck
+                         A0F SeExports
+                         777 PsIsComponentEnabled
+                         694 ObOpenObjectByName
+                         9F6 SeCaptureSubjectContext
+                         915 RtlLengthRequiredSid
+                         8D5 RtlInitializeSid
+                         996 RtlSubAuthoritySid
+                         829 RtlCreateAcl
+                         7D7 RtlAddAccessAllowedAce
+                         830 RtlCreateSecurityDescriptor
+                         981 RtlSetDaclSecurityDescriptor
+                         9E6 SeAssignSecurity
+                         A33 SeReleaseSubjectContext
+                         11A ExRaiseStatus
+                         9DD SeAccessCheck
+                         8D3 RtlInitializeGenericTableAvl
+                         8D9 RtlInsertElementGenericTableAvl
+                         901 RtlIsGenericTableEmptyAvl
+                         841 RtlDeleteElementGenericTableAvl
+                         91E RtlLookupElementGenericTableAvl
+                         856 RtlEnumerateGenericTableAvl
+                         857 RtlEnumerateGenericTableLikeADirectory
+                         BD2 _local_unwind
+
+  Section contains the following exports for ntostmhost.dll
+
+    00000000 characteristics
+    516AD112 time date stamp
+        0.00 version
+           1 ordinal base
+          77 number of functions
+          77 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000F8B0 DllUnload
+          2    1 00019000 NtCommitComplete
+          3    2 000190F0 NtCommitEnlistment
+          4    3 0001CC00 NtCommitTransaction
+          5    4 000191E0 NtCreateEnlistment
+          6    5 0000B6F0 NtCreateResourceManager
+          7    6 0001CCA0 NtCreateTransaction
+          8    7 0000B0B0 NtCreateTransactionManager
+          9    8 0001D190 NtEnumerateTransactionObject
+         10    9 0001D410 NtFreezeTransactions
+         11    A 0001A690 NtGetNotificationResourceManager
+         12    B 000193E0 NtOpenEnlistment
+         13    C 0001A830 NtOpenResourceManager
+         14    D 0001D510 NtOpenTransaction
+         15    E 0001E360 NtOpenTransactionManager
+         16    F 000196B0 NtPrePrepareComplete
+         17   10 000197A0 NtPrePrepareEnlistment
+         18   11 00019890 NtPrepareComplete
+         19   12 00019980 NtPrepareEnlistment
+         20   13 0001F120 NtPropagationComplete
+         21   14 0001F250 NtPropagationFailed
+         22   15 00019A70 NtQueryInformationEnlistment
+         23   16 0001AAD0 NtQueryInformationResourceManager
+         24   17 0001D800 NtQueryInformationTransaction
+         25   18 0001E720 NtQueryInformationTransactionManager
+         26   19 00019D50 NtReadOnlyEnlistment
+         27   1A 00019E30 NtRecoverEnlistment
+         28   1B 0000BF00 NtRecoverResourceManager
+         29   1C 0000BCE0 NtRecoverTransactionManager
+         30   1D 0001F320 NtRegisterProtocolAddressInformation
+         31   1E 0001ECE0 NtRenameTransactionManager
+         32   1F 00019EC0 NtRollbackComplete
+         33   20 00019FA0 NtRollbackEnlistment
+         34   21 0001DF20 NtRollbackTransaction
+         35   22 0001EF10 NtRollforwardTransactionManager
+         36   23 0001A090 NtSetInformationEnlistment
+         37   24 0001AD80 NtSetInformationResourceManager
+         38   25 0001DFC0 NtSetInformationTransaction
+         39   26 0001F020 NtSetInformationTransactionManager
+         40   27 0001A3A0 NtSinglePhaseReject
+         41   28 0001E2F0 NtThawTransactions
+         42   29 0001F700 TmCancelPropagationRequest
+         43   2A 00013AE0 TmCommitComplete
+         44   2B 00013B70 TmCommitEnlistment
+         45   2C 00015AC0 TmCommitTransaction
+         46   2D 0001A480 TmCreateEnlistment
+         47   2E 0000B010 TmCurrentTransaction
+         48   2F 00013DB0 TmDereferenceEnlistmentKey
+         49   30 0000BF80 TmEnableCallbacks
+         50   31 0001F720 TmEndPropagationRequest
+         51   32 00015DE0 TmFreezeTransactions
+         52   33 00016080 TmGetTransactionId
+         53   34 00023080 TmInitSystem
+         54   35 00010DA0 TmInitSystemPhase2
+         55   36 0000B380 TmInitializeTransactionManager
+         56   37 00016310 TmIsKTMCommitCoordinator
+         57   38 00016370 TmIsTransactionActive
+         58   39 00013E40 TmPrePrepareComplete
+         59   3A 00013EB0 TmPrePrepareEnlistment
+         60   3B 00013FD0 TmPrepareComplete
+         61   3C 00014040 TmPrepareEnlistment
+         62   3D 0001F7B0 TmPropagationComplete
+         63   3E 0001F810 TmPropagationFailed
+         64   3F 00014190 TmReadOnlyEnlistment
+         65   40 00014250 TmRecoverEnlistment
+         66   41 0000C310 TmRecoverResourceManager
+         67   42 0000BD90 TmRecoverTransactionManager
+         68   43 00014470 TmReferenceEnlistmentKey
+         69   44 0001B000 TmRenameTransactionManager
+         70   45 00014520 TmRequestOutcomeEnlistment
+         71   46 00014720 TmRollbackComplete
+         72   47 000147E0 TmRollbackEnlistment
+         73   48 000163A0 TmRollbackTransaction
+         74   49 000165A0 TmSetCurrentTransaction
+         75   4A 00001C60 TmShutdownSystem
+         76   4B 00014A30 TmSinglePhaseReject
+         77   4C 000165E0 TmThawTransactions
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        2000 .idata
+        2000 .pdata
+        3000 .rdata
+        2000 .reloc
+        1000 .rsrc
+        2000 .text
+        1000 GFIDS
+        1000 INIT
+       17000 PAGE

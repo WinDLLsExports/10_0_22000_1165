@@ -1,0 +1,181 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-diskdump_31bf3856ad364e35_10.0.22000.918_none_623648571c6448a4\Diskdump.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0009030 Import Address Table
+             1C0009148 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         954 RtlQueryFeatureConfigurationChangeStamp
+                         6FC PoSetHiberRange
+                         4A3 KeGetRecommendedSharedDataAlignment
+                         10F ExQueryDepthSList
+                         587 Mm64BitPhysicalAddress
+                         5D5 MmMapMemoryDumpMdl
+                          6E DbgPrint
+                         2D3 InitializeSListHead
+                         17A ExpInterlockedPushEntrySList
+                         179 ExpInterlockedPopEntrySList
+                         469 KeBugCheckEx
+                         953 RtlQueryFeatureConfiguration
+                         96D RtlRegisterFeatureConfigurationChangeNotification
+                         9C1 RtlUnregisterFeatureConfigurationChangeNotification
+                         178 ExpInterlockedFlushSList
+
+    HAL.dll
+             1C0009000 Import Address Table
+             1C0009118 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          48 HalTranslateBusAddress
+                          54 KeQueryPerformanceCounter
+                          10 HalDmaFreeCrashDumpRegistersEx
+                          19 HalGetBusDataByOffset
+                           F HalDmaAllocateCrashDumpRegistersEx
+
+  Section contains the following exports for SYS.exe
+
+    00000000 characteristics
+    442D85C4 time date stamp
+        0.00 version
+           1 ordinal base
+         107 number of functions
+         107 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001CF0 DumpPreInitialize
+          2    1 00001D10 DumpUninitialize
+          3    2 00002DA0 ScsiDebugPrint
+          4    3 00002DC0 ScsiPortCompleteRequest
+          5    4 00002E60 ScsiPortConvertPhysicalAddressToUlong
+          6    5 00002E70 ScsiPortConvertUlongToPhysicalAddress
+          7    6 00002E80 ScsiPortFlushDma
+          8    7 00002EC0 ScsiPortFreeDeviceBase
+          9    8 00002ED0 ScsiPortGetBusData
+         10    9 00002F20 ScsiPortGetDeviceBase
+         11    A 00002FE0 ScsiPortGetLogicalUnit
+         12    B 00003000 ScsiPortGetPhysicalAddress
+         13    C 00003190 ScsiPortGetSrb
+         14    D 000031B0 ScsiPortGetUncachedExtension
+         15    E 000031E0 ScsiPortGetVirtualAddress
+         16    F 00003240 ScsiPortInitialize
+         17   10 00003A70 ScsiPortIoMapTransfer
+         18   11 00002EC0 ScsiPortLogError
+         19   12 00003AC0 ScsiPortMoveMemory
+         20   13 00003AE0 ScsiPortNotification
+         21   14 00003C60 ScsiPortQuerySystemTime
+         22   15 00003C70 ScsiPortReadPortBufferUchar
+         23   16 00003C90 ScsiPortReadPortBufferUlong
+         24   17 00003CB0 ScsiPortReadPortBufferUshort
+         25   18 00003CD0 ScsiPortReadPortUchar
+         26   19 00003CE0 ScsiPortReadPortUlong
+         27   1A 00003CF0 ScsiPortReadPortUshort
+         28   1B 00003D00 ScsiPortReadRegisterBufferUchar
+         29   1C 00003D30 ScsiPortReadRegisterBufferUlong
+         30   1D 00003D60 ScsiPortReadRegisterBufferUshort
+         31   1E 00003D90 ScsiPortReadRegisterUchar
+         32   1F 00003DA0 ScsiPortReadRegisterUlong
+         33   20 00003DB0 ScsiPortReadRegisterUshort
+         34   21 00003DC0 ScsiPortSetBusDataByOffset
+         35   22 00003DD0 ScsiPortStallExecution
+         36   23 00003E00 ScsiPortValidateRange
+         37   24 00003E10 ScsiPortWritePortBufferUchar
+         38   25 00003E30 ScsiPortWritePortBufferUlong
+         39   26 00003E50 ScsiPortWritePortBufferUshort
+         40   27 00003E70 ScsiPortWritePortUchar
+         41   28 00003E80 ScsiPortWritePortUlong
+         42   29 00003E90 ScsiPortWritePortUshort
+         43   2A 00003EA0 ScsiPortWriteRegisterBufferUchar
+         44   2B 00003ED0 ScsiPortWriteRegisterBufferUlong
+         45   2C 00003F00 ScsiPortWriteRegisterBufferUshort
+         46   2D 00003F30 ScsiPortWriteRegisterUchar
+         47   2E 00003F40 ScsiPortWriteRegisterUlong
+         48   2F 00003F50 ScsiPortWriteRegisterUshort
+         49   30 00003DC0 StorPortAllocateRegistryBuffer
+         50   31 00003E00 StorPortBusy
+         51   32 00002DC0 StorPortCompleteRequest
+         52   33 00002E70 StorPortConvertUlongToPhysicalAddress
+         53   34 00002DA0 StorPortDebugPrint
+         54   35 00003E00 StorPortDeviceBusy
+         55   36 00003E00 StorPortDeviceReady
+         56   37 00004240 StorPortExtendedFunction
+         57   38 00002EC0 StorPortFreeDeviceBase
+         58   39 00002EC0 StorPortFreeRegistryBuffer
+         59   3A 00002ED0 StorPortGetBusData
+         60   3B 00002F20 StorPortGetDeviceBase
+         61   3C 00002FE0 StorPortGetLogicalUnit
+         62   3D 00004370 StorPortGetPhysicalAddress
+         63   3E 000043D0 StorPortGetScatterGatherList
+         64   3F 00003190 StorPortGetSrb
+         65   40 000031B0 StorPortGetUncachedExtension
+         66   41 000031E0 StorPortGetVirtualAddress
+         67   42 00003240 StorPortInitialize
+         68   43 00002EC0 StorPortLogError
+         69   44 00003AC0 StorPortMoveMemory
+         70   45 00003AE0 StorPortNotification
+         71   46 000043F0 StorPortPause
+         72   47 00004420 StorPortPauseDevice
+         73   48 00003C60 StorPortQuerySystemTime
+         74   49 00004450 StorPortReadPortBufferUchar
+         75   4A 00004470 StorPortReadPortBufferUlong
+         76   4B 00004490 StorPortReadPortBufferUshort
+         77   4C 000044B0 StorPortReadPortUchar
+         78   4D 000044C0 StorPortReadPortUlong
+         79   4E 000044D0 StorPortReadPortUshort
+         80   4F 000044E0 StorPortReadRegisterBufferUchar
+         81   50 00004510 StorPortReadRegisterBufferUlong
+         82   51 00004540 StorPortReadRegisterBufferUshort
+         83   52 00004570 StorPortReadRegisterUchar
+         84   53 00004580 StorPortReadRegisterUlong
+         85   54 00004590 StorPortReadRegisterUshort
+         86   55 00003E00 StorPortReady
+         87   56 000045A0 StorPortRegistryRead
+         88   57 000045A0 StorPortRegistryWrite
+         89   58 00003E00 StorPortResume
+         90   59 00003E00 StorPortResumeDevice
+         91   5A 00003DC0 StorPortSetBusDataByOffset
+         92   5B 00003E00 StorPortSetDeviceQueueDepth
+         93   5C 00003DD0 StorPortStallExecution
+         94   5D 000045B0 StorPortSynchronizeAccess
+         95   5E 00003E00 StorPortValidateRange
+         96   5F 000045D0 StorPortWritePortBufferUchar
+         97   60 000045F0 StorPortWritePortBufferUlong
+         98   61 00004610 StorPortWritePortBufferUshort
+         99   62 00004630 StorPortWritePortUchar
+        100   63 00004640 StorPortWritePortUlong
+        101   64 00004650 StorPortWritePortUshort
+        102   65 00004660 StorPortWriteRegisterBufferUchar
+        103   66 00004690 StorPortWriteRegisterBufferUlong
+        104   67 000046C0 StorPortWriteRegisterBufferUshort
+        105   68 000046F0 StorPortWriteRegisterUchar
+        106   69 00004700 StorPortWriteRegisterUlong
+        107   6A 00004710 StorPortWriteRegisterUshort
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE

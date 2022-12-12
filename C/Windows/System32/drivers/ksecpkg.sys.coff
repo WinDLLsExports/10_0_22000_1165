@@ -1,0 +1,149 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\ksecpkg.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    cng.sys
+    ksecdd.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C001B108 Import Address Table
+             1C001B4B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         924 RtlLookupElementGenericTableAvl
+                         8DF RtlInsertElementGenericTableAvl
+                         607 MmUserProbeAddress
+                         801 RtlCharToInteger
+                         12D ExReleaseFastMutexUnsafe
+                         4D1 KeLeaveCriticalRegion
+                         BE9 _strnicmp
+                         C0F isspace
+                         C32 strncmp
+                         8CC RtlInitString
+                         4F2 KeQueryMaximumProcessorCountEx
+                          A3 ExAcquireResourceExclusiveLite
+                          A4 ExAcquireResourceSharedLite
+                         138 ExReleaseResourceLite
+                         49B KeGetCurrentIrql
+                         179 ExpInterlockedPopEntrySList
+                         862 RtlEqualString
+                          F5 ExInitializePagedLookasideList
+                         10F ExQueryDepthSList
+                         BDD _purecall
+                         53A KeSetEvent
+                         616 NtClose
+                         46F KeClearEvent
+                          F4 ExInitializeNPagedLookasideList
+                         BCF __C_specific_handler
+                         7F3 RtlAppendUnicodeToString
+                         BFB _wcsicmp
+                         B1C ZwEnumerateKey
+                         BFE _wcsnicmp
+                         C48 wcschr
+                         C3D tolower
+                         890 RtlFreeOemString
+                         9B9 RtlUnicodeStringToOemString
+                         9BC RtlUnicodeToMultiByteN
+                          9D ExAcquireFastMutexUnsafe
+                         847 RtlDeleteElementGenericTableAvl
+                         8D9 RtlInitializeGenericTableAvl
+                         B76 ZwQueryObject
+                         863 RtlEqualUnicodeString
+                         BA7 ZwSetInformationObject
+                          E5 ExFreePoolWithTag
+                         627 NtDuplicateObject
+                          B4 ExAllocatePool2
+                         B42 ZwOpenKey
+                          F7 ExInitializeResourceLite
+                         AF0 ZwClose
+                          EC ExGetPreviousMode
+                         B80 ZwQueryValueKey
+                          D5 ExEnterCriticalRegionAndAcquireResourceExclusive
+                         69B ObReferenceObjectByHandle
+                          CE ExDeleteResourceLite
+                         135 ExReleaseResourceAndLeaveCriticalRegion
+                         484 KeEnterCriticalRegion
+                         5CB MmLockPagableDataSection
+                         5FC MmUnlockPagableImageSection
+                         6AB ObfDereferenceObject
+                         356 IoGetDeviceObjectPointer
+                         8D1 RtlInitUnicodeString
+                         566 KeWaitForSingleObject
+                         435 IofCallDriver
+                         2EE IoBuildDeviceIoControlRequest
+                         4AF KeInitializeEvent
+                         BF7 _vsnprintf_s
+                          6F DbgPrintEx
+                         72B PsGetCurrentProcess
+                         17A ExpInterlockedPushEntrySList
+                         436 IofCompleteRequest
+                         C49 wcscmp
+
+    cng.sys
+             1C001B000 Import Address Table
+             1C001B3A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3A SslLookupCipherSuiteInfo
+                           9 BCryptDestroyKey
+                          24 BCryptSetProperty
+                           4 BCryptDecrypt
+                          18 BCryptGetProperty
+                          30 SslDecryptPacket
+                          37 SslImportKey
+                          14 BCryptGenRandom
+                          32 SslExpandNextGenTrafficKey
+                          35 SslExportKeyingMaterial
+                          31 SslEncryptPacket
+                          2F SslDecrementProviderReferenceCount
+                          33 SslExpandWriteKey
+                          34 SslExportKey
+                          38 SslIncrementProviderReferenceCount
+                           D BCryptEncrypt
+                          36 SslFreeObject
+                          39 SslLookupCipherLengths
+                          3B SslOpenProvider
+                          16 BCryptGenerateSymmetricKey
+                           2 BCryptCreateHash
+                          1A BCryptHashData
+                           8 BCryptDestroyHash
+                           1 BCryptCloseAlgorithmProvider
+                          12 BCryptFinishHash
+                          10 BCryptExportKey
+                          1E BCryptOpenAlgorithmProvider
+                          1B BCryptImportKey
+                           C BCryptDuplicateKey
+
+    ksecdd.sys
+             1C001B0F0 Import Address Table
+             1C001B498 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          2C FreeContextBuffer
+                          3D QuerySecurityPackageInfoW
+
+  Summary
+
+        3000 .data
+        1000 .idata
+        2000 .pdata
+        7000 .rdata
+        2000 .reloc
+        1000 .rsrc
+        E000 .text
+        1000 GFIDS
+        1000 INIT
+        4000 PAGE
+        E000 PAGEMSG

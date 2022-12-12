@@ -1,0 +1,162 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-rasbase-raspptp_31bf3856ad364e35_10.0.22000.1098_none_1342dd771f622af5\raspptp.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NDIS.SYS
+    cng.sys
+    NETIO.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000C1E8 Import Address Table
+             1C000C5D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          B4 ExAllocatePool2
+                         428 IoWMIRegistrationControl
+                         5BC MmGetSystemRoutineAddress
+                         8FA RtlIpv4StringToAddressW
+                         902 RtlIpv6StringToAddressW
+                         5CB MmLockPagableDataSection
+                         8D1 RtlInitUnicodeString
+                          B5 ExAllocatePool3
+                          E5 ExFreePoolWithTag
+                         139 ExReleaseRundownProtection
+                         52B KeResetEvent
+                         4AF KeInitializeEvent
+                          A5 ExAcquireRundownProtection
+                         53A KeSetEvent
+                          F8 ExInitializeRundownProtection
+                         16C ExWaitForRundownProtectionRelease
+                         100 ExInterlockedInsertTailList
+                         564 KeWaitForMultipleObjects
+                         49B KeGetCurrentIrql
+                         141 ExRundownCompleted
+                         813 RtlCompareMemory
+                         8F3 RtlIpv4AddressToStringA
+                         6AB ObfDereferenceObject
+                         71E PsCreateSystemThread
+                         9B4 RtlUnicodeStringToAnsiString
+                         69B ObReferenceObjectByHandle
+                         103 ExInterlockedRemoveHeadList
+                         566 KeWaitForSingleObject
+                         AF0 ZwClose
+                         7CE PsTerminateSystemThread
+                         179 ExpInterlockedPopEntrySList
+                         33D IoFreeIrp
+                          CC ExDeleteNPagedLookasideList
+                         59D MmBuildMdlForNonPagedPool
+                         2E2 IoAllocateMdl
+                         17A ExpInterlockedPushEntrySList
+                         10F ExQueryDepthSList
+                         340 IoFreeMdl
+                          F4 ExInitializeNPagedLookasideList
+                         2E0 IoAllocateIrp
+                         3D4 IoReuseIrp
+                         8FB RtlIpv6AddressToStringA
+                         51A KeReleaseSpinLock
+                         4B7 KeInitializeSpinLock
+                         457 KeAcquireSpinLockRaiseToDpc
+
+    NDIS.SYS
+             1C000C000 Import Address Table
+             1C000C3E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         12B NdisMCmRegisterAddressFamilyEx
+                          D9 NdisGetVersion
+                         1DB NdisRetreatNetBufferListDataStart
+                         1C4 NdisReadConfiguration
+                         177 NdisMRegisterMiniportDriver
+                         1E4 NdisSetEvent
+                         207 NdisWaitEvent
+                         1E5 NdisSetOptionalHandlers
+                         163 NdisMPauseComplete
+                         107 NdisInitializeEvent
+                         1AC NdisOpenConfigurationEx
+                         1D9 NdisResetEvent
+                          43 NdisCloseConfiguration
+                         188 NdisMSetMiniportAttributes
+                          33 NdisCancelTimerObject
+                          29 NdisAllocateTimerObject
+                         1C2 NdisQueueIoWorkItem
+                         125 NdisMCmActivateVc
+                          1C NdisAllocateNetBufferList
+                         127 NdisMCmDeactivateVc
+                          4C NdisCmDispatchCallConnected
+                          58 NdisCmRegisterSapComplete
+                          48 NdisCmCloseAddressFamilyComplete
+                          4B NdisCmDeregisterSapComplete
+                          AD NdisFreeNetBufferListPool
+                         141 NdisMDeregisterMiniportDriver
+                         12F NdisMCoIndicateReceiveNetBufferLists
+                          B7 NdisFreeTimerObject
+                           E NdisAdvanceNetBufferListDataStart
+                           D NdisAdvanceNetBufferDataStart
+                          AB NdisFreeNetBufferList
+                          4F NdisCmDispatchIncomingCloseCall
+                          A5 NdisFreeIoWorkItem
+                          49 NdisCmCloseCallComplete
+                         137 NdisMCoSendNetBufferListsComplete
+                         1F1 NdisSetTimerObject
+                         1DA NdisRetreatNetBufferDataStart
+                         128 NdisMCmDeleteVc
+                          BE NdisGetDataBuffer
+                          15 NdisAllocateIoWorkItem
+                          4D NdisCmDispatchIncomingCall
+                          52 NdisCmMakeCallComplete
+                         126 NdisMCmCreateVc
+                          1E NdisAllocateNetBufferListPool
+
+    cng.sys
+             1C000C1D8 Import Address Table
+             1C000C5C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          42 SystemPrng
+
+    NETIO.SYS
+             1C000C168 Import Address Table
+             1C000C550 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          44 GetIfEntry2
+                         17D NmrDeregisterClient
+                          31 FreeMibTable
+                          71 InternalCreateOrRefIpForwardEntry2
+                          5B GetUnicastIpAddressTable
+                         17B NmrClientAttachProvider
+                         1BB RtlCopyBufferToMdl
+                          1D DeleteIpForwardEntry2
+                         1BD RtlCopyMdlToMdl
+                         182 NmrWaitForClientDeregisterComplete
+                          41 GetBestRoute2
+                         180 NmrRegisterClient
+                          4D GetIpForwardTable2
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        7000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE
+        A000 PAGEPPTP
+        3000 PAGEWsk

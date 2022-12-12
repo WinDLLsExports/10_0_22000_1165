@@ -1,0 +1,124 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\BTHUSB.SYS
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    USBD.SYS
+    WppRecorder.sys
+    WDFLDR.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0011080 Import Address Table
+             1C0011340 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         133 ExReleasePushLockExclusiveEx
+                          A1 ExAcquirePushLockExclusiveEx
+                         484 KeEnterCriticalRegion
+                         51A KeReleaseSpinLock
+                         457 KeAcquireSpinLockRaiseToDpc
+                         2E0 IoAllocateIrp
+                         2E2 IoAllocateMdl
+                         59D MmBuildMdlForNonPagedPool
+                         340 IoFreeMdl
+                         33D IoFreeIrp
+                         3D4 IoReuseIrp
+                         3BB IoReleaseRemoveLockEx
+                         568 KfRaiseIrql
+                         4D5 KeLowerIrql
+                         BF6 _vsnprintf
+                         435 IofCallDriver
+                         53A KeSetEvent
+                         4AF KeInitializeEvent
+                         566 KeWaitForSingleObject
+                         5BC MmGetSystemRoutineAddress
+                         3BA IoReleaseRemoveLockAndWaitEx
+                         2D8 IoAcquireRemoveLockEx
+                         AF0 ZwClose
+                         391 IoOpenDeviceRegistryKey
+                         357 IoGetDeviceProperty
+                          E5 ExFreePoolWithTag
+                         37C IoInitializeRemoveLockEx
+                          B4 ExAllocatePool2
+                          8E EtwUnregister
+                          89 EtwRegister
+                         4D1 KeLeaveCriticalRegion
+                          6F DbgPrintEx
+                         82C RtlCopyUnicodeString
+                         BCF __C_specific_handler
+                         2F3 IoCancelIrp
+                         2EE IoBuildDeviceIoControlRequest
+                         88D RtlFreeAnsiString
+                         95F RtlQueryRegistryValuesEx
+                         49B KeGetCurrentIrql
+                          8C EtwSetInformation
+                          77 DbgkWerCaptureLiveKernelDump
+                          94 EtwWriteTransfer
+                         9B4 RtlUnicodeStringToAnsiString
+                         8C8 RtlInitAnsiString
+                         4FC KeQueryTimeIncrement
+                          E3 ExFreePool
+                         B80 ZwQueryValueKey
+                         5C3 MmIsDriverVerifyingByAddress
+                         46F KeClearEvent
+                         4B7 KeInitializeSpinLock
+                          8F EtwWrite
+                         428 IoWMIRegistrationControl
+                         8D1 RtlInitUnicodeString
+
+    USBD.SYS
+             1C0011000 Import Address Table
+             1C00112C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           6 USBD_CreateConfigurationRequestEx
+                           D USBD_ParseConfigurationDescriptorEx
+
+    WppRecorder.sys
+             1C0011040 Import Address Table
+             1C0011300 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 WppAutoLogStart
+                          10 imp_WppRecorderReplay
+                           4 WppAutoLogTrace
+                           E imp_WppRecorderLogGetDefault
+                           C imp_WppRecorderLogDelete
+                           B imp_WppRecorderLogCreate
+                           3 WppAutoLogStop
+
+    WDFLDR.SYS
+             1C0011018 Import Address Table
+             1C00112D8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           8 WdfVersionUnbind
+                           6 WdfVersionBind
+                           9 WdfVersionUnbindClass
+                           7 WdfVersionBindClass
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        2000 .rsrc
+        C000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 NONPAGE
+        5000 PAGE

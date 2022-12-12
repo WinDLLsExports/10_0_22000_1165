@@ -1,0 +1,153 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\Dumpata.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0008028 Import Address Table
+             1C00081B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         6FC PoSetHiberRange
+                         5D5 MmMapMemoryDumpMdl
+                         5D2 MmMapLockedPagesSpecifyCache
+                         2D3 InitializeSListHead
+                         96D RtlRegisterFeatureConfigurationChangeNotification
+                         953 RtlQueryFeatureConfiguration
+                         C42 vDbgPrintExWithPrefix
+                         5B7 MmGetPhysicalAddress
+                         80A RtlClearBit
+                         9C1 RtlUnregisterFeatureConfigurationChangeNotification
+                         80C RtlClearBits
+                          8F EtwWrite
+                         872 RtlFindClearBitsAndSet
+                         5BC MmGetSystemRoutineAddress
+                         17A ExpInterlockedPushEntrySList
+                         59D MmBuildMdlForNonPagedPool
+                         179 ExpInterlockedPopEntrySList
+                         954 RtlQueryFeatureConfigurationChangeStamp
+                         97F RtlSetAllBits
+                         49B KeGetCurrentIrql
+                         4C2 KeInsertQueueDpc
+                         2DF IoAllocateErrorLogEntry
+                         42F IoWriteErrorLogEntry
+                          B4 ExAllocatePool2
+                          E5 ExFreePoolWithTag
+                         4AB KeInitializeDpc
+                         ACA WmiTraceMessageVa
+                         8D1 RtlInitUnicodeString
+                         428 IoWMIRegistrationControl
+                         AC8 WmiQueryTraceInformation
+                         95E RtlQueryRegistryValues
+
+    HAL.dll
+             1C0008000 Import Address Table
+             1C0008190 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           F HalDmaAllocateCrashDumpRegistersEx
+                          54 KeQueryPerformanceCounter
+                          10 HalDmaFreeCrashDumpRegistersEx
+                          55 KeStallExecutionProcessor
+
+  Section contains the following exports for SYS.exe
+
+    00000000 characteristics
+    7348F375 time date stamp
+        0.00 version
+           1 ordinal base
+          64 number of functions
+          64 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000035E0 AtaPortAllocateQueueTag
+          2    1 00003640 AtaPortBuildRequestSenseIrb
+          3    2 000036A0 AtaPortCompleteAllActiveRequests
+          4    3 00003700 AtaPortCompleteRequest
+          5    4 00003750 AtaPortConvertPhysicalAddressToUlong
+          6    5 00003760 AtaPortConvertUlongToPhysicalAddress
+          7    6 00003770 AtaPortCopyMemory
+          8    7 00003790 AtaPortDebugBreak
+          9    8 000037A0 AtaPortDebugPrint
+         10    9 00003810 AtaPortDeviceStateChange
+         11    A 00003870 AtaPortEtwTraceLog
+         12    B 00003980 AtaPortGetBusData
+         13    C 00003990 AtaPortGetDeviceBase
+         14    D 00003980 AtaPortGetParentBusType
+         15    E 000039A0 AtaPortGetPhysicalAddress
+         16    F 000039F0 AtaPortGetScatterGatherList
+         17   10 00003A00 AtaPortGetUnCachedExtension
+         18   11 00003A60 AtaPortInitialize
+         19   12 00003A80 AtaPortInitializeEx
+         20   13 00003B70 AtaPortInitializeQueueTag
+         21   14 00003BD0 AtaPortLogError
+         22   15 00003770 AtaPortMoveMemory
+         23   16 00003C20 AtaPortNotification
+         24   17 00003CC0 AtaPortQuerySystemTime
+         25   18 00003CE0 AtaPortReadPortBufferUchar
+         26   19 00003D00 AtaPortReadPortBufferUlong
+         27   1A 00003D20 AtaPortReadPortBufferUshort
+         28   1B 00003D40 AtaPortReadPortUchar
+         29   1C 00003D50 AtaPortReadPortUlong
+         30   1D 00003D60 AtaPortReadPortUshort
+         31   1E 00003D70 AtaPortReadRegisterBufferUchar
+         32   1F 00003DA0 AtaPortReadRegisterBufferUlong
+         33   20 00003DD0 AtaPortReadRegisterBufferUshort
+         34   21 00003E00 AtaPortReadRegisterUchar
+         35   22 00003E10 AtaPortReadRegisterUlong
+         36   23 00003E20 AtaPortReadRegisterUshort
+         37   24 00003E30 AtaPortRegistryAllocateBuffer
+         38   25 00003E90 AtaPortRegistryFreeBuffer
+         39   26 00003EF0 AtaPortRegistryRead
+         40   27 00003F60 AtaPortRegistryWrite
+         41   28 00003FD0 AtaPortRegistryWriteDeferred
+         42   29 00004040 AtaPortReleaseQueueTag
+         43   2A 000040A0 AtaPortReleaseRequestSenseIrb
+         44   2B 000040F0 AtaPortRequestCallback
+         45   2C 00003980 AtaPortSetBusData
+         46   2D 00004140 AtaPortStallExecution
+         47   2E 00004160 AtaPortTraceNotification
+         48   2F 00004380 AtaPortWritePortBufferUchar
+         49   30 000043A0 AtaPortWritePortBufferUlong
+         50   31 000043C0 AtaPortWritePortBufferUshort
+         51   32 000043E0 AtaPortWritePortUchar
+         52   33 000043F0 AtaPortWritePortUlong
+         53   34 00004400 AtaPortWritePortUshort
+         54   35 00004410 AtaPortWriteRegisterBufferUchar
+         55   36 00004440 AtaPortWriteRegisterBufferUlong
+         56   37 00004470 AtaPortWriteRegisterBufferUshort
+         57   38 000044A0 AtaPortWriteRegisterUchar
+         58   39 000044B0 AtaPortWriteRegisterUlong
+         59   3A 000044C0 AtaPortWriteRegisterUshort
+         60   3B 000044F0 DumpPreInitialize
+         61   3C 00004510 DumpUninitialize
+         62   3D 00004B40 memcpy
+         63   3E 00004B40 memmove
+         64   3F 00004E00 memset
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE

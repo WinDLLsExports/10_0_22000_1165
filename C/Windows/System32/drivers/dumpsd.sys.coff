@@ -1,0 +1,120 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\dumpsd.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C002B028 Import Address Table
+             1C002B2A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         6FC PoSetHiberRange
+                         C42 vDbgPrintExWithPrefix
+                         9C1 RtlUnregisterFeatureConfigurationChangeNotification
+                         96D RtlRegisterFeatureConfigurationChangeNotification
+                         953 RtlQueryFeatureConfiguration
+                         469 KeBugCheckEx
+                         4B7 KeInitializeSpinLock
+                         954 RtlQueryFeatureConfigurationChangeStamp
+                         C41 vDbgPrintEx
+                         C38 strstr
+                          6F DbgPrintEx
+                          94 EtwWriteTransfer
+                         5D0 MmMapIoSpaceEx
+                         5FF MmUnmapIoSpace
+                         5B7 MmGetPhysicalAddress
+                         6D3 PoFxPowerControl
+                         4FC KeQueryTimeIncrement
+                         44F KeAcquireInStackQueuedSpinLockAtDpcLevel
+                         514 KeReleaseInStackQueuedSpinLockFromDpcLevel
+                         455 KeAcquireSpinLockAtDpcLevel
+                         51C KeReleaseSpinLockFromDpcLevel
+                         8D4 RtlInitializeBitMap
+                         97F RtlSetAllBits
+                         808 RtlClearAllBits
+                         80A RtlClearBit
+                         981 RtlSetBit
+                         6C7 PoFxActivateComponent
+                         6CF PoFxIdleComponent
+                         179 ExpInterlockedPopEntrySList
+                          E5 ExFreePoolWithTag
+                         17A ExpInterlockedPushEntrySList
+                         10F ExQueryDepthSList
+                         4AF KeInitializeEvent
+                         566 KeWaitForSingleObject
+                         53A KeSetEvent
+                         568 KfRaiseIrql
+                         4D5 KeLowerIrql
+                         4C2 KeInsertQueueDpc
+                         46A KeCancelTimer
+                         54A KeSetTimer
+                         4EE KeQueryInterruptTimePrecise
+                         46F KeClearEvent
+                         3A2 IoQueueWorkItemEx
+                         538 KeSetCoalescableTimer
+                         6E2 PoFxSetComponentLatency
+                         6E3 PoFxSetComponentResidency
+                         49B KeGetCurrentIrql
+                         435 IofCallDriver
+                          B4 ExAllocatePool2
+                         2EE IoBuildDeviceIoControlRequest
+                         408 IoTryQueueWorkItem
+                         59D MmBuildMdlForNonPagedPool
+                         558 KeSynchronizeExecution
+                         37F IoInvalidateDeviceRelations
+                         813 RtlCompareMemory
+                         5D2 MmMapLockedPagesSpecifyCache
+                         2EF IoBuildPartialMdl
+                         5D3 MmMapLockedPagesWithReservedMapping
+                         600 MmUnmapLockedPages
+                         601 MmUnmapReservedMapping
+
+    HAL.dll
+             1C002B000 Import Address Table
+             1C002B278 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+                          10 HalDmaFreeCrashDumpRegistersEx
+                           F HalDmaAllocateCrashDumpRegistersEx
+                          55 KeStallExecutionProcessor
+
+  Section contains the following exports for dumpsd.sys
+
+    00000000 characteristics
+    876C49E1 time date stamp
+        0.00 version
+           1 ordinal base
+           2 number of functions
+           2 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001510 DumpPreInitialize
+          2    1 00001530 DumpUninitialize
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        9000 .rdata
+        1000 .reloc
+        5000 .rsrc
+       1F000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE

@@ -1,0 +1,128 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\nsiproxy.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NETIO.SYS
+    NDIS.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000B070 Import Address Table
+             1C000B378 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         457 KeAcquireSpinLockRaiseToDpc
+                         51A KeReleaseSpinLock
+                         116 ExRaiseAccessViolation
+                         70D ProbeForWrite
+                         607 MmUserProbeAddress
+                         382 IoIs32bitProcess
+                          B4 ExAllocatePool2
+                         728 PsGetCurrentProcess
+                         9F7 SeCaptureSubjectContextEx
+                         A1A SeLockSubjectContext
+                         9DD SeAccessCheck
+                         35E IoGetFileObjectGenericMapping
+                         A4B SeUnlockSubjectContext
+                         A33 SeReleaseSubjectContext
+                         915 RtlLengthRequiredSid
+                         4B7 KeInitializeSpinLock
+                         996 RtlSubAuthoritySid
+                         696 ObOpenObjectByPointer
+                         68D ObGetObjectSecurity
+                         89B RtlGetDaclSecurityDescriptor
+                         917 RtlLengthSid
+                         829 RtlCreateAcl
+                         7D7 RtlAddAccessAllowedAce
+                         830 RtlCreateSecurityDescriptor
+                         981 RtlSetDaclSecurityDescriptor
+                         BAB ZwSetSecurityObject
+                         AE9 ZwClose
+                         6A4 ObReleaseObjectSecurity
+                         9FF SeConvertStringSecurityDescriptorToSecurityDescriptor
+                         8CB RtlInitUnicodeString
+                         319 IoCreateSymbolicLink
+                         326 IoDeleteDevice
+                         328 IoDeleteSymbolicLink
+                         3A1 IoQueueWorkItem
+                         436 IofCompleteRequest
+                         2E5 IoAllocateWorkItem
+                         3B9 IoReleaseCancelSpinLock
+                         51C KeReleaseSpinLockFromDpcLevel
+                         455 KeAcquireSpinLockAtDpcLevel
+                         2D5 IoAcquireCancelSpinLock
+                          E5 ExFreePoolWithTag
+                         343 IoFreeWorkItem
+                         BC8 __C_specific_handler
+                         566 KeWaitForSingleObject
+                         4AF KeInitializeEvent
+                         8D5 RtlInitializeSid
+                         5BC MmGetSystemRoutineAddress
+                         30D IoCreateDevice
+                         32C IoDeviceObjectType
+                         38B IoIsWdmVersionAvailable
+                         7D6 RtlAbsoluteToSelfRelativeSD
+                         C41 wcschr
+                          B8 ExAllocatePoolWithTag
+                         BF7 _wcsnicmp
+                         A0F SeExports
+                         916 RtlLengthSecurityDescriptor
+                         BDC _snwprintf
+                         9F5 SeCaptureSecurityDescriptor
+                         8B0 RtlGetSaclSecurityDescriptor
+                         8AD RtlGetOwnerSecurityDescriptor
+                         8A3 RtlGetGroupSecurityDescriptor
+                         88D RtlFreeUnicodeString
+                         AF8 ZwCreateKey
+                         B79 ZwQueryValueKey
+                         BB2 ZwSetValueKey
+                         B3B ZwOpenKey
+                         53A KeSetEvent
+
+    NETIO.SYS
+             1C000B010 Import Address Table
+             1C000B318 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         196 NsiGetAllPersistentParametersWithMask
+                         19D NsiRegisterChangeNotificationEx
+                         192 NsiEnumerateObjectsAllPersistentParametersWithMask
+                         191 NsiEnumerateObjectsAllParametersEx
+                         1A2 NsiSetAllPersistentParametersWithMask
+                         1A5 NsiSetParameterEx
+                         19A NsiGetParameterEx
+                         1A1 NsiSetAllParametersEx
+                         18E NsiDeregisterChangeNotificationEx
+                         197 NsiGetModuleHandle
+                         195 NsiGetAllParametersEx
+
+    NDIS.SYS
+             1C000B000 Import Address Table
+             1C000B308 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          D7 NdisGetThreadObjectCompartmentId
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE

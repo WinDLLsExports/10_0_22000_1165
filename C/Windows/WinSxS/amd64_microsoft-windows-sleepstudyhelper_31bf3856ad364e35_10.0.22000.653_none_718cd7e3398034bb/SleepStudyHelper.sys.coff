@@ -1,0 +1,95 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-sleepstudyhelper_31bf3856ad364e35_10.0.22000.653_none_718cd7e3398034bb\SleepStudyHelper.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    WppRecorder.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0009028 Import Address Table
+             1C0009158 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         4B7 KeInitializeSpinLock
+                          94 EtwWriteTransfer
+                         51A KeReleaseSpinLock
+                         708 PoUnregisterPowerSettingCallback
+                          B4 ExAllocatePool2
+                          8E EtwUnregister
+                         8CC RtlInitUnicodeString
+                          89 EtwRegister
+                          E5 ExFreePoolWithTag
+                         14F ExSubscribeWnfStateChange
+                         168 ExUnsubscribeWnfStateChange
+                         113 ExQueryWnfStateData
+                         5BC MmGetSystemRoutineAddress
+                         428 IoWMIRegistrationControl
+                         6F4 PoRegisterPowerSettingCallback
+                          8C EtwSetInformation
+                         457 KeAcquireSpinLockRaiseToDpc
+                         357 IoGetDeviceProperty
+                         BF3 _vsnwprintf
+
+    WppRecorder.sys
+             1C0009000 Import Address Table
+             1C0009130 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 WppAutoLogStart
+                           4 WppAutoLogTrace
+                           3 WppAutoLogStop
+                          10 imp_WppRecorderReplay
+
+  Section contains the following exports for SleepStudyHelper.sys
+
+    00000000 characteristics
+    7FE7A1AC time date stamp
+        0.00 version
+           1 ordinal base
+          18 number of functions
+          18 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000049B0 DllInitialize
+          2    1 00004A40 DllUnload
+          3    2 00002050 SleepstudyHelper_AcquireComponentLock
+          4    3 000020A0 SleepstudyHelper_ComponentActive
+          5    4 00002140 SleepstudyHelper_ComponentActiveLocked
+          6    5 00002190 SleepstudyHelper_ComponentInactive
+          7    6 00002250 SleepstudyHelper_GenerateGuid
+          8    7 000025E0 SleepstudyHelper_GetPdoFriendlyName
+          9    8 000027A0 SleepstudyHelper_Initialize
+         10    9 00002C70 SleepstudyHelper_RegisterComponentEx
+         11    A 00002F70 SleepstudyHelper_RegisterPdoWithParentGuid
+         12    B 00003130 SleepstudyHelper_RegisterPdoWithParentHandle
+         13    C 00003310 SleepstudyHelper_RegisterPdoWithParentPdo
+         14    D 00003500 SleepstudyHelper_ReleaseComponentLock
+         15    E 00003540 SleepstudyHelper_ResetComponentsStartTime
+         16    F 000035E0 SleepstudyHelper_Uninitialize
+         17   10 00003790 SleepstudyHelper_UnregisterComponent
+         18   11 000039C0 SleepstudyHelper_UpdateFriendlyName
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE

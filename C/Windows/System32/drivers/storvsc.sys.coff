@@ -1,0 +1,118 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\storvsc.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    vmbkmcl.sys
+    storport.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000B000 Import Address Table
+             1C000B2B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         2E5 IoAllocateWorkItem
+                         BF1 _vsnwprintf
+                         4F2 KeQueryMaximumProcessorCountEx
+                         564 KeWaitForMultipleObjects
+                         6AB ObfDereferenceObject
+                         71B PsCreateSystemThread
+                         8CB RtlInitUnicodeString
+                         2EE IoBuildDeviceIoControlRequest
+                         4A1 KeGetProcessorIndexFromNumber
+                          94 EtwWriteTransfer
+                          85 EtwActivityIdControl
+                         53A KeSetEvent
+                         69B ObReferenceObjectByHandle
+                         8B9 RtlGetVersion
+                          8E EtwUnregister
+                         5BC MmGetSystemRoutineAddress
+                         343 IoFreeWorkItem
+                          89 EtwRegister
+                         435 IofCallDriver
+                         428 IoWMIRegistrationControl
+                         4AF KeInitializeEvent
+                         3A1 IoQueueWorkItem
+                         566 KeWaitForSingleObject
+                         AE9 ZwClose
+                         7C9 PsTerminateSystemThread
+                         958 RtlQueryRegistryValues
+                         391 IoOpenDeviceRegistryKey
+                          E5 ExFreePoolWithTag
+                          9C ExAcquireFastMutex
+                          B4 ExAllocatePool2
+                         C19 qsort
+                         12C ExReleaseFastMutex
+                         469 KeBugCheckEx
+                         49B KeGetCurrentIrql
+
+    vmbkmcl.sys
+             1C000B150 Import Address Table
+             1C000B408 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          40 VmbChannelSizeofPacket
+                           E VmbChannelGetInterfaceInstance
+                          25 VmbChannelInitSetPrimaryChannel
+                          26 VmbChannelInitSetProcessPacketCallbacks
+                          47 VmbClientChannelInitSetTargetProcessorIndex
+                          29 VmbChannelInitSetStateChangeCallbacks
+                          38 VmbChannelSetAllowableDpcCpuUsage
+                           5 VmbChannelCleanup
+                          3C VmbChannelSetPointer
+                          53 VmbPacketSetCompletionRoutine
+                          50 VmbPacketSendWithExternalMdl
+                          37 VmbChannelSendSynchronousRequest
+                          1D VmbChannelInitSetBounceBufferSizes
+                           C VmbChannelEnable
+                           2 VmbChannelAllocate
+                          2D VmbChannelPacketDeferToPassive
+                          44 VmbClientChannelInitSetRingBufferPageCount
+                          4E VmbPacketInitialize
+                          4B VmbPacketGetChannel
+                          4F VmbPacketSend
+                           4 VmbChannelAllocateForStorage
+                           B VmbChannelDisable
+                          2C VmbChannelPacketComplete
+                           3 VmbChannelAllocateBounceBuffer
+                          24 VmbChannelInitSetMaximumPacketSize
+                          4D VmbPacketGetPointer
+                          1A VmbChannelGetTargetProcessorIndex
+                          55 VmbPacketSetPointer
+                          14 VmbChannelGetPointer
+
+    storport.sys
+             1C000B118 Import Address Table
+             1C000B3D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          10 StorPortGetPhysicalAddress
+                          15 StorPortInitialize
+                          18 StorPortNotification
+                          16 StorPortLogError
+                          2F StorPortStallExecution
+                           A StorPortExtendedFunction
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE

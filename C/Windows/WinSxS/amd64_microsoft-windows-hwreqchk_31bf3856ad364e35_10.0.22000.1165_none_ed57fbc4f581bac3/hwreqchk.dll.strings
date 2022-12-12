@@ -1,0 +1,1689 @@
+                      Evaluated: %-5ls %-3ls %-5ls = %-3ls
+               If another JSON parser is used, besides rapidjson, please take this into account.
+               JSON, currently, does not allow for comments within a JSON document.
+               NOTE: In order to 'BLOCK' on a rule (above), it must evaluate to 'TRUE' and the Constraint must be 'FALSE'.
+               rapidjson provides an override to circumvent this when parsing a JSON document.
+            "BlockedByHomeSkuSModeStateSV=FALSE"
+            "CompareExchange128=TRUE",
+            "CpuCores=TRUE",
+            "CpuFms=TRUE",
+            "LahfSahfSupport=TRUE",
+            "Memory=TRUE",
+            "NXProcessorSupport=TRUE",
+            "PrefetchWSupport=TRUE",
+            "ServerMemory=TRUE"
+            "SSE2ProcessorSupport=TRUE",
+            "SystemDriveSize=TRUE",
+            "Tpm=TRUE",
+            "UefiSecureBoot=TRUE",
+         "Constraints": [
+         "Name": "BlockedByHomeSkuSModeStateSV",
+         "Name": "CompareExchange128",
+         "Name": "CpuCores",
+         "Name": "CpuFmsArmV81AtomicNotSupported",
+         "Name": "CpuFmsBlockingAmd",
+         "Name": "CpuFmsBlockingAmdRR",
+         "Name": "CpuFmsBlockingAmdSR",
+         "Name": "CpuFmsBlockingIntel",
+         "Name": "CpuFmsBlockingIntelKL",
+         "Name": "CpuFmsBlockingIntelKL2",
+         "Name": "CpuSpeed",
+         "Name": "IsArm64",
+         "Name": "LahfSahfSupport",
+         "Name": "Memory",
+         "Name": "NXProcessorSupport",
+         "Name": "OEMIncProductName",
+         "Name": "PrefetchWSupport",
+         "Name": "RefOEMIncProductName",
+         "Name": "ServerMemory",
+         "Name": "SModeAllowedSkus",
+         "Name": "SSE2ProcessorSupport",
+         "Name": "SV1",
+         "Name": "SV2",
+         "Name": "SV2_SERVER",
+         "Name": "SystemDriveSize",
+         "Name": "Tpm",
+         "Name": "UefiSecureBoot",
+         "RuleExpression": "(SQ_HostOsSku GTE 0x00000062 AND SQ_HostOsSku LTE 0x00000065) OR SQ_HostOsSku EQ 0x0000006D OR SQ_HostOsSku EQ 0x0000006F OR SQ_HostOsSku EQ 0x00000071 OR SQ_HostOsSku EQ 0x00000073 OR SQ_HostOsSku EQ 0x00000074 OR SQ_HostOsSku EQ 0x000000CA OR SQ_HostOsSku EQ 0x000000CB"
+         "RuleExpression": "(SQ_SMode EQ 1 OR SQ_SMode EQ 2) AND SModeAllowedSkus EQ FALSE"
+         "RuleExpression": "OEMIncProductName EQ TRUE AND SQ_ProcessorName EQ Intel_R__Core_TM__i7-7820HQ_CPU_@_2.90GHz"
+         "RuleExpression": "SQ_Architecture EQ 12 AND SQ_ARMv81ProcessorSupport EQ FALSE"
+         "RuleExpression": "SQ_Architecture EQ 12"
+         "RuleExpression": "SQ_CompareExchange128Support EQ TRUE OR IsArm64 EQ TRUE"
+         "RuleExpression": "SQ_CpuCoreCount GTE 2"
+         "RuleExpression": "SQ_CpuMhz GTE 1000"
+         "RuleExpression": "SQ_CpuVendor EQ 1 AND SQ_CpuFamily EQ 23 AND SQ_CpuModel EQ 1"
+         "RuleExpression": "SQ_CpuVendor EQ 1 AND SQ_CpuFamily EQ 23 AND SQ_CpuModel EQ 17"
+         "RuleExpression": "SQ_CpuVendor EQ 1 AND SQ_CpuFamily LTE 22"
+         "RuleExpression": "SQ_CpuVendor EQ 2 AND SQ_CpuFamily EQ 6 AND SQ_CpuModel EQ 142 AND SQ_CpuStepping EQ 9 AND SQ_Platform NE 0x00000010"
+         "RuleExpression": "SQ_CpuVendor EQ 2 AND SQ_CpuFamily EQ 6 AND SQ_CpuModel EQ 158 AND SQ_CpuStepping EQ 9 AND SQ_Platform NE 0x00000008 AND RefOEMIncProductName EQ FALSE"
+         "RuleExpression": "SQ_CpuVendor EQ 2 AND SQ_CpuFamily GTE 6 AND SQ_CpuModel LTE 95 AND SQ_CpuModel NE 85"
+         "RuleExpression": "SQ_LahfSahfSupport EQ TRUE OR IsArm64 EQ TRUE"
+         "RuleExpression": "SQ_NXProcessorSupport EQ TRUE OR IsArm64 EQ TRUE"
+         "RuleExpression": "SQ_PrefetchWSupport EQ TRUE OR IsArm64 EQ TRUE"
+         "RuleExpression": "SQ_ProductName EQ Surface_Studio_2 OR SQ_ProductName EQ Precision_5520"
+         "RuleExpression": "SQ_RamMB GTE 3774"
+         "RuleExpression": "SQ_RamMB GTE 471"
+         "RuleExpression": "SQ_SecureBootCapable EQ TRUE"
+         "RuleExpression": "SQ_SSE2ProcessorSupport EQ TRUE OR IsArm64 EQ TRUE"
+         "RuleExpression": "SQ_SystemDiskSizeMB GT 53248"
+         "RuleExpression": "SQ_TpmVersion EQ 20"
+         "VersionId":  "20220311",
+         "VersionId": "20220120",
+         */
+         /*
+         // * Dual Core CPU Requirements *
+         // Block AMD Raven Ridge
+         // Block AMD Summit Ridge
+         // Block Intel Kaby Lake Stepping 9 only
+         // CPU Features ARM64 is not applicable
+         // Do not block if PlatformId is 0x00000008, this indicates Kaby Lake G
+         // Do not block if PlatformId is 0x00000010, this indicates Amber Lake Y
+         // Evaluates to TRUE on ARM64 devices automatically. See comment above (SSE2ProcessorSupport).
+         // Evaluates to TRUE on ARM64 devices automatically. This is because for these
+         // Sun Valley Client requires 64 GB system drive. ~52 GB for fudge factor
+         // Sun Valley Client requires S Mode to be off except for Home based SKUs
+         ]
+        "Name": "CpuFms",
+        "RuleExpression": "CpuFmsBlockingIntel EQ FALSE AND CpuFmsBlockingIntelKL EQ FALSE AND CpuFmsBlockingIntelKL2 EQ FALSE AND CpuFmsBlockingAmd EQ FALSE AND CpuFmsBlockingAmdRR EQ FALSE AND CpuFmsBlockingAmdSR EQ FALSE AND CpuFmsArmV81AtomicNotSupported EQ FALSE"
+        // Combine all of the CPU rules into a single rule
+      {
+      }
+      },
+    HwReqEval.json
+    This files provides the definitions (rules & requirements) for hardware requirements check.
+   "Requirements": [
+   "Rules": [
+   ()  : Provides a way of grouping expressions that can result in higher precendence when evaluating the expression.
+   [Rule_Name]=[TRUE | FALSE]
+   ],
+   10/1/2021 - Created
+   3/11/2022 - Removed reference to CPUMHZ property for SV2 requirement
+   AND : Logical AND
+   Any rule that is evaluated can be referenced in subsequent rules by referencing the rule name as part of the expression.
+   EQ  : Equals 
+   GT  : Greater Than
+   GTE : Greater Than or Equal 
+   LT  : Less Than
+   LTE : Less Than or Equal
+   NE  : Not Equals
+   OR  : Logical OR
+   SQ_Architecture : (0=x86, 9=x64 'Intel or AMD', 5=ARM, 12=ARM64, 6=IA64)
+   SQ_ARMv81ProcessorSupport : (TRUE or FALSE)
+   SQ_CompareExchange128Support : (TRUE or FALSE)
+   SQ_CpuCoreCount : (1, 2, 3, 4, , ...)
+   SQ_CpuFamily : (Not exhaustive! Used/Observed values: 6=Intel, 22=???, 23=???, ...)
+   SQ_CpuMhz : (ULONG value, ...)
+   SQ_CpuModel : (Not exhaustive! Used/Observed values: 1, 17, 85, 95, 126, 142, 147, 158, ...)
+   SQ_CpuStepping : (Not exhaustive! Used/Observed values: 5, 9, 11, ...)
+   SQ_CpuVendor : (1=AMD, 2=Intel, 3=Qualcomm)
+   SQ_HostOsSku : (Not exhaustive (See GetProductInfo API)) : 1=Ultimate, 2=Home Basic, 3=Home Premium, 4=Win10 Enterprise, ...)
+   SQ_IsServer : (TRUE or FALSE)
+   SQ_LahfSahfSupport : (TRUE or FALSE)
+   SQ_NXProcessorSupport : (TRUE or FALSE)
+   SQ_Platform : (Not exhaustive! 0x10=Amber Lake Y, 0x8=Kaby Lake G, ...)
+   SQ_PrefetchWSupport : (TRUE or FALSE)
+   SQ_ProcessorName : (Not exhaustive: Intel_R__Core_TM__i7-7820HQ_CPU_@_2.90GHz, ...)
+   SQ_ProductName : (Not exhaustive: Surface_Studio_2, Precision_5520, ...)
+   SQ_RamMB : (ULONG value, ...)
+   SQ_SecureBootCapable : (TRUE or FALSE)
+   SQ_SecureBootEnabled : (TRUE or FALSE)
+   SQ_SMode : (0 = Unlocked, 1=Trial, 2=Locked, 3=Max SMode Possible)
+   SQ_SSE2ProcessorSupport : (TRUE or FALSE)
+   SQ_SystemDiskSizeMB : (ULONG value, ...)
+   SQ_TpmVersion : (0=TPM not present, 12=1.2, 20=2.0)
+   User defined variables are evaluated using simple boolean logic "RuleXyZ EQ FALSE OR AbcRule EQ TRUE"
+  ExpressionEvaluate: Results Count=%zu, Top Result IsNumber=%ls, Top Result=%lu
+ A^_^
+ A^A\_
+ A_A^_
+ A_A^_^]
+ A_A^A\
+ A_A^A\_^
+ A_A^A]A\_
+ A_A^A]A\_^]
+ H3E H3E
+ tQH;
+!This program cannot be run in DOS mode.
+": null,
+"Header": 
+%hs!%p: 
+%hs(%d) tid(%x) %08X %ws
+%hs(%u)\%hs!%p: 
+%hs: %hs
+%ls%ls
+%ls.Services
+%ls\%ls\%ls
+%ls\%ls\%ls\%ls
+%M.%m.%ls
+%OSDataDrive%\SystemData\Temp
+%programfilesnative%
+%s#%d
+%s#%s
+%s,%s,%d,
+%s\AslLog_%S_%s_%d.txt
+%s\Temp
+%s+%s+%s
+%sysnative%
+%system32%
+%systemdrive%\Program Files
+%systemroot%
+%systemroot%\system32
+%TEMP%
+%USERNAME%
+%USERPROFILE%
+%windir%
+()$^.*+?[]|\-{},:=!
+([\(\s]*)((?:SQ_|\w{0,64})\w+)(?:\s+)(EQ|GT|LT|GTE|LTE|NE)(?:\s+)('?[\w@\.\-]+'?)([\)\s]*)(?:\s*)(AND|OR)?(?:\s*)
+(0x){1}[0-9A-F]{1,8}
+(A^_^[
+(caller: %p) 
+(D$ f
+(D$`f
+(D$0H
+(H;]`u
+(L$@I#
+(t$ H
+(t$`H
+(t$PL
+)D$PH
+)L$0A
+)t$`H
+)t$PH
+*** Adding rule property='%ls' & value='%ls (%lu)' to inventory list ***
+********************************    
+*******************************/
+, <^w
+.?AVbad_alloc@std@@
+.?AVbad_cast@@
+.?AVexception@@
+.?AVfailure@ios_base@std@@
+.?AVlength_error@std@@
+.?AVlogic_error@std@@
+.?AVout_of_range@std@@
+.?AVregex_error@std@@
+.?AVResultException@wil@@
+.?AVruntime_error@std@@
+.?AVsystem_error@std@@
+.00cfg
+.CRT$XCA
+.CRT$XCC
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.data
+.data$brc
+.data$r$brc
+.edata
+.gehcont
+.gfids
+.giats
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.pdata
+.rdata
+.rdata$brc
+.rdata$T$brc
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+.text
+.text$di
+.text$mn
+.text$mn$00
+.text$x
+.text$yd
+.tls$
+.tls$ZZZ
+.u H;
+.u$H;3
+.u%f9G
+.xdata
+.xdata$x
+/*******************************
+/fD9{
+::$DATA
+:\u:L
+:\u4L
+:\u5L
+:V!2m
+;.u%H
+;K$|DH
+??_V@YAXPEAX@Z
+??0bad_cast@@QEAA@AEBV0@@Z
+??0bad_cast@@QEAA@PEBD@Z
+??0exception@@QEAA@AEBQEBD@Z
+??0exception@@QEAA@AEBQEBDH@Z
+??0exception@@QEAA@AEBV0@@Z
+??0exception@@QEAA@XZ
+??1bad_cast@@UEAA@XZ
+??1exception@@UEAA@XZ
+??1type_info@@UEAA@XZ
+??3@YAXPEAX@Z
+??UNEXPECTED??
+?terminate@@YAXXZ
+?what@exception@@UEBAPEBDXZ
+@.data
+@.reloc
+@.rsrc
+@@H98t
+@8|$0u
+@8|$P
+@8y t%H
+@A^_^
+@A_A^_
+@A_A^A\
+@A_A^A]A\^
+@A_A^A]A\_
+@A_A^A]A\_^[
+@A_A^A]A\_^]
+@H;]`u
+@H;]pu
+@H;]Pu
+@SUVWAVAWH
+@SUVWH
+@SVWAVH
+@USVWATAUAVAWH
+@USVWATAVAWH
+@USVWAVAWH
+@UVWATAUAVAWH
+@VWAVH
+@WATAUAVAWH
+@X98~
+[%hs(%hs)]
+[%hs]
+[*QmU
+\$ E3
+\$ UH
+\$ UVWH
+\$ VWAVH
+\$@M;
+\$`Hi
+\$0HcH
+\$hE3
+\$hH;
+\$PH+
+\$xf9
+\$xH;
+\\.\%ls
+\\?\UNC\
+\\?\Volume
+\kernel32.dll
+\ntdll.dll
+\OSDATA\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags
+\Registry\Machine
+\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList
+\Registry\Machine\Software\Microsoft\Windows NT\CurrentVersion\ProfileList
+\Registry\Machine\Software\Microsoft\Windows\CurrentVersion
+\Registry\Machine\System\CurrentControlSet\Control\Session Manager\Environment
+\s{0,4}(\w{1,64})\s*={1}\s*(TRUE|FALSE)\s{0,4}
+\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags
+\SysARM32
+\System32
+\SysWOW64
+\UNC\
+^|H;N
+___lc_codepage_func
+___lc_collate_cp_func
+___lc_handle_func
+___mb_cur_max_func
+__C_specific_handler
+__crtCompareStringW
+__crtLCMapStringW
+__CxxFrameHandler3
+__dllonexit
+__pctype_func
+__uncaught_exception
+_amsg_exit
+_callnewh
+_CxxThrowException
+_errno
+_HEADER_PRESENT_MsaToken
+_initterm
+_ismbblead
+_lock
+_onexit
+_purecall
+_unlock
+_vsnprintf
+_vsnprintf_s
+_vsnwprintf
+_wcsdup
+_wcsicmp
+_wcslwr
+_wcsnicmp
+_wsetlocale
+_wtof
+_wtoi
+_XcptFilter
+` AVH
+`.rdata
+`A^_^[]
+`A_A^_^[
+`A_A^A]A\_^]
+{|?uXH
+{|-uiH
+{00000000-0000-0000-0000-000000000000}
+{xauT
+{zel#|67
+|$ AWH
+|$ E3
+|$ UATAUAVAWH
+|$ UAVAWH
+|$ UH
+|$$E;}
+|$@%u+
+|$@%uVE
+|$8t[E
+|$Dcu
+|]uGH
+}f93u
+}'H+E
+<}w^I
+<0|QH
+>(uBI
+>\t/A
+>=u;A
+0A^_^
+0A__^
+0A_A^_
+0A_A^_^[
+0A_A^A\
+0A_A^A\_^
+0A_A^A]A\_
+0A_A^A]A\_^]
+0A_A^A]A\_H
+32-Bit Memory Error Information (Type 18)
+64-Bit Memory Error Information (Type 33)
+8*u$H
+8,u%H
+8\$"t
+8\$0u
+8\uAI
+8]u+H
+8}u.H
+8A^_^[
+8A_A^_^][
+8eu(H
+8ru>H
+8uu3H
+9\u;H
+9\u@H
+9\u<H
+9\u=H
+9\u5H
+9\uAH
+9\uJH
+9{tu#
+9}g}'H
+9Ct|[D
+9Ct|fD
+9E vQ
+9k0umH
+9S|ucH
+9u'u&H
+9u'uMH
+9Y>)F$
+A@H90t?L
+A^_^[
+A^_^[]
+A^A\_
+A_A]A\_]
+A_A^]
+A_A^]H
+A_A^_
+A_A^_^[
+A_A^_^[]
+A_A^_^]
+A_A^_^][
+A_A^A\
+A_A^A\_]
+A_A^A\_^
+A_A^A\_^[]
+A_A^A]_]
+A_A^A]A\]
+A_A^A]A\_
+A_A^A]A\_^[]
+A_A^A]A\_^]
+A_A^A]A\_^][
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_
+abort
+Abstract:
+AC Power Restored
+AcquireSRWLockExclusive
+Activity
+ActivityResults
+Adding requirement from OneSettings "%ls" version %d
+Adding rule from OneSettings "%ls"
+Additional Information (Type 40)
+address family not supported
+address in use
+address not available
+address_family_not_supported
+address_in_use
+address_not_available
+ADVAPI32.dll
+advapi32.dll
+Aepic
+alnum
+alpha
+already connected
+already_connected
+An unexpected error happened checking requirement '%ls': [0x%.8X]
+api-ms-win-core-winrt-l1-1-0.dll
+api-ms-win-core-winrt-string-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-shcore-scaling-l1-1-1.dll
+APM Timer
+argument list too long
+argument out of domain
+ASL_LOG FAIL: 
+AslAnsiStringCreate
+AslEnvBuildBasic
+AslEnvExpandStrings
+AslEnvExpandStrings failed [%x]
+AslEnvExpandStrings2
+AslEnvExpandStrings2 failed to expand strings for %ws [%x]
+AslEnvGetProcessWowInfo
+AslEnvGetProcessWowInfo failed [%x]
+AslEnvVarQuery failed [%x]
+AslpEnvResolveVars
+AslpEnvResolveVars failed [%x]
+AslpEnvResolveVars failed to fail properly for null buffer
+AslRegistryBuildMachinePath
+AslRegistryBuildMachinePath failed for %ws [%x]
+AslRegistryGetKey
+AslRegistryGetString
+AslRegistryGetStringExpand
+AslRegistryGetUInt32
+AslRegistryGetUInt32_UStr
+AslRegistryOpenKey
+AslRegistryOpenKey passed bad Path [%x]
+AslRegistryOpenSubKey
+AslRegistryOpenSubKey passed bad Path [%x]
+AslStringDuplicate
+AslStringDuplicate failed with "%s" [%x]
+AslStringDuplicateA
+AslTelemetryCreate
+ATAVAWH
+AuthenticAMD
+Authorization: MsaToken 
+B8<"u
+bad address
+bad allocation
+bad cast
+bad file descriptor
+bad locale name
+bad message
+bad_address
+bad_file_descriptor
+Baseboard (or Module) Information (Type 2)
+BinFileVersion
+BIOS Information (Type 0)
+BIOS Language Information (Type 13)
+blank
+BMSRI
+Boot Integrity Services (BIS) Entry Point (Type 31)
+broken pipe
+BuildLabEx
+Built-in Pointing Device (Type 21)
+C$9C w(H
+C(9G(uFH
+C(H;C(s
+C@9G@uN
+C@H98t
+Cache Information (Type 7)
+CallContext:[%hs] 
+CallNtPowerInformation
+CallNtPowerInformationFn failed: [0x%.8X].
+calloc
+CD$0H
+ChannelName
+CHD1p
+CheckHardwareRequirement
+CL$H3
+CL$pI
+CloseHandle
+CloseServiceHandle
+cntrl
+Coinitialize failed: [0x%.8X].
+CoInitializeEx
+CommercialDataOptIn
+CommonFilesDir
+CommonFilesDir (x86)
+CommonProgramFiles
+CommonProgramFiles(x86)
+CompareExchange128 Supported: %lu, Result: [0x%.8X]
+compat
+connection aborted
+connection already in progress
+connection refused
+connection reset
+connection_aborted
+connection_already_in_progress
+connection_refused
+connection_reset
+Constraint Schema:
+Constraints
+ConstructPartialMsgIfA
+ControlService
+Cooling Device (Type 27)
+Copyright (c) Microsoft Corporation
+CorrelationVectors
+Corrupted header
+CoTaskMemAlloc
+CoTaskMemFree
+Could not get version: [NT:%x].
+CoUninitialize
+Counts
+CoWaitForMultipleHandles
+CP9sPu$H
+CPU Architecture: %d, Result: [0x%.8X]
+CPU Arm v81 Supported: %lu, Result: [0x%.8X]
+CPU CpuFamily: %lu, Result: [0x%.8X]
+CPU CpuModel: %lu, Result: [0x%.8X]
+CPU CpuStepping: %lu, Result: [0x%.8X]
+CPU Mhz: %lu, Result: [0x%.8X]
+CPU Vendor: %lu, Result: [0x%.8X]
+CreateDCW
+CreateDXGIFactory1
+CreateEventExW
+CreateFileW
+CreateMutexExW
+CreateMutexW
+CreateSemaphoreExW
+CreateUri
+CredFree
+CredReadW
+cross device link
+CRYPT32.dll
+CryptStringToBinaryW
+CtH;K
+Current SQ_* variables supported (and supported values):
+CX98~
+CxfA+
+D$ E3
+D$ H;
+d$$E9e
+D$(E3
+D$(fD
+D$,D8-
+D$@E3
+D$@Hc
+D$@L+
+D$`E3
+D$`H!|$PE3
+D$`H;
+D$`L+
+D$0,fD
+D$0.fD
+D$0E3
+D$0H;
+D$0H+
+D$0M#
+D$8E3
+D$8Hi
+D$8L+
+D$8M;
+d$HD8 u
+D$hE3
+D$HE3
+D$hH;D$`H
+d$PE3
+d$pE3
+D$pE3
+d$pfD
+D$PH+
+D$xE3
+d$XE3
+d$xE3
+D$XH;
+D;l$d
+D;o }*E
+D;s }XL
+D3D11.dll
+D3D11CreateDevice
+D8"u3H
+D8\$@t
+D8|$!t
+D80|mA
+D8d$!u
+D8d$Ht
+D8l$1E
+D9&tZA
+D9d$(
+D9d$@t
+D9d$d
+D9l$(|
+D9mPtYI
+DataDrive
+DataDrive=
+DebugBreak
+DecodePointer
+DefaultInstall
+DefaultUninstall
+DeleteCriticalSection
+DeleteDC
+Deleting built-in requirement "%ls" version %d
+Deleting built-in rule "%ls"
+deque<T> too long
+destination address required
+destination_address_required
+DestroyPhysicalMonitors
+DetermineCpuVendor failed: [0x%.8X].
+device or resource busy
+deviceid
+DeviceIoControl
+DeviceTicket not included.
+Devinv
+DiagnosticDataSettings
+digit
+directory not empty
+Disclaimer: This JSON file will be and is parsed using rapidjson (rapidjson.org).
+dxgi.dll
+dxva2.dll
+E(=csm
+E8=csm
+E81|BA
+E88|VI
+E9} ~9H
+eax~Z
+Eh=csm
+EH=csm
+ekhHD
+EL$`H
+Electrical Current Probe (Type 29)
+EncodePointer
+End-of-Table (Type 127)
+EnterCriticalSection
+ERROR
+ERROR -- Unexpected end of evaluation stack retrieving LHS: %S
+ERROR -- Unexpected end of evaluation stack retrieving RHS: %S
+ERROR -- Unexpected token '%ls' evaluating expression
+Error allocating memory for device hardware constraints
+Error determining CPU Cores: [0x%.8X].
+Error getting NX Driver Result: [0x%.8X].
+Error getting OS SKU: [0x%.8X].
+Error getting os version: [0x%.8X].
+Error reading registry value to DeterminePlatform, swallowing: [0x%.8X].
+Error reading registry value, swallowing: [0x%.8X].
+Error reading registry: [0x%.8X].
+Error writing NX Driver Needed to registry: [0x%.8x].
+Error writing NX supported value %lu to registry at %ls / %ls: [0x%.8X].
+ERROR#%s#%d
+ERROR. Rule *%ls* was not found in the list of rule definitions [0x%.8X]
+ERROR: No rules available to evaluate [%.8x]
+EtwEventRegister
+EtwEventUnregister
+EtwEventWrite
+Event Log (Type 15)
+EventRegister
+EventSetInformation
+EventUnregister
+EventWriteTransfer
+Ex=csm
+EX=csm
+Exception
+executable format error
+ExitProcess
+ExpandEnvironmentStringsW
+f#D$@H
+f9)tCH
+f9,Au
+f9,Ou
+f9,Qu
+f9,Yu
+f9{bu
+f9{xu
+f9<Cu
+f9<Fu
+f9<Xu
+f90t{f9
+f90uoH
+f94Au
+f94Gu
+f9Axu^
+fA9(t
+fA9,@u
+fA9<Fu
+fA90t
+Failed add inf file to path: [0x%.8X].
+Failed copying hardware requirement name [0x%.8X]
+Failed get services section string: [0x%.8X].
+Failed to add OneSettings parameter Sqm DeviceId: [0x%.8X].
+Failed to allocate %d bytes for user key buffer
+Failed to copy string, swallowing: [0x%.8x].
+Failed to create default queue callback.
+Failed to determine CPU Vendor: [0x%.8X].
+Failed to expand environment variable: %ls
+Failed to get NetworkCostType assuming metered network [0x%.8X].
+Failed to get services section string: [0x%.8X].
+Failed to install and Run NxDriver, falling back to cached result anyways.  Error: [0x%.8X].
+Failed to install and Run NxDriver: [0x%.8x]. Swallowing Failure
+Failed to install driver from inf: [0x%.8X].
+Failed to load driver service: [0x%.8X].
+Failed to open device: [0x%.8X].
+Failed to open inf file: [0x%.8x].
+Failed to open NX Device: [0x%.8X].
+Failed to open reg key [%x]
+Failed to open Service: [0x%.8X].
+Failed to open ServiceManager: [0x%.8X].
+Failed to query key value [%x]
+Failed to Query OneSettings [0x%.8X] :: (ForcedOptIn:%ls, IsOptedIntoCore:%ls, IsOptedIntoCommercial:%ls, AllowedToQueryServer:%ls)
+Failed to Query OneSettings [0x%.8X] :: (ForcedOptIn:[%ls], IsOptedIntoCore:[%ls], IsOptedIntoCommercial:[%ls], AllowedToQueryServer:[%ls])
+Failed to read requirements: [0x%.8X]
+Failed to read rules: [0x%.8X]
+Failed to retrieve DeviceTicket: [0x%.8X]
+Failed to retrieve Sqm DeviceId: [0x%.8X].
+Failed to send IOCTL to NX device: [0x%.8x].
+Failed to set device name: [0x%.8X].
+Failed to start Service:  [0x%.8X].
+Failed to stop service: [0x%.8X].
+Failed to uninstall the Nx driver: [%lu].
+Failed to unload the Nx Service: [%lu].
+Failed to write path to infFilePath: [0x%.8X].
+FAILED: Unsupported architecture, swallowing.
+FailFast
+false
+False
+false
+FALSE
+Family
+fB943
+fB94Bu
+fB94Ju
+fB94qu
+fD;$H
+fD;}@u
+fD9 u
+fD9!H
+fD9"t
+fD9$Fu
+fD9$ou
+fD9&u
+fD9(t
+fD9)H
+fD9)u
+fD9,Au
+fD9.I
+fD9;t)H
+fD9;u
+fD9?u
+fD9<{u
+fD9<Cu
+fD91u
+fD91u?H
+fD92u
+fD94Au
+fD94Bu
+fD98t
+fD99t(H
+fD9D$0t
+fD9t}
+fE9 t$H
+fE9$~u
+fE9,Xu
+fE9,yu
+fE9Lm
+fF9$@u
+fF9$Bu
+fF9,pu
+fF9<Bu
+fF9<Wu
+fF94Bu
+fffffff
+field initializer list is missing an entry
+file exists
+File Name:
+file too large
+filename too long
+filename_too_long
+FileVersion
+FindResourceW
+FlushInstructionCache
+FlushInstructionCache call failed: [%lu].
+Fonecore\internal\sdk\inc\wil\opensource\wil\result_macros.h
+FormatMessageW
+FreeLibrary
+function not supported
+G(H;G(r
+G(H;G(s
+gdi32.dll
+generic
+GenuineIntel
+GetActiveProcessorCount
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThread
+GetCurrentThreadId
+GetDiskFreeSpaceEx failed: [0x%.8X].
+GetDiskFreeSpaceExW
+GetDpiForMonitor
+GetFileAttributesW
+GetFileVersionInfoSizeW
+GetFileVersionInfoW
+GetFirmwareType
+GetLastError
+GetModuleFileNameA
+GetModuleFileNameW
+GetModuleHandleExA
+GetModuleHandleExW
+GetModuleHandleW
+GetMonitorCapabilities
+GetMonitorTechnologyType
+GetNativeSystemInfo
+GetNumberOfPhysicalMonitorsFromHMONITOR
+GetPhysicallyInstalledSystemMemory
+GetPhysicalMonitorsFromHMONITOR
+GetPrivacyLevel
+GetProcAddress
+GetProcAddress(CallNtPowerInformation) failed: [0x%.8X].
+GetProcessHeap
+GetProductInfo
+GetSettings - Failed to add OneSetting parameter OsVer [0x%.8X].
+GetStringTypeW
+GetSystemDirectoryW
+GetSystemFirmwareTable
+GetSystemTimeAsFileTime
+GetSystemWindowsDirectory failed: [0x%.8X].
+GetSystemWindowsDirectoryW
+GetTickCount
+gfffffffH
+GHD1p
+Global\OneSettingQueryMutex
+GlobalFree
+GlobalMemoryStatusEx
+GlobalMemoryStatusEx failed: [0x%.8X].
+graph
+Group Associations (Type 14)
+GtH;O
+H UVWAVAWH
+H WATAUAVAWH
+H!|$@H!|$8H!|$0H!|$(H!|$ H
+H!|$pL
+H!|$XH
+H!D$@H
+H#t$@H
+H#t$XL
+H;\$pr"M
+H;]`u
+H;t$p
+H;t$pr
+H;t$pu
+H+:t/H
+H+KxH
+H9|$h
+H9|$ht
+H9=~y
+H9Ahs
+H9L$ 
+H9l>HsKH
+H9qHt
+H9s u
+H9w u
+HA_A^A]A\_^[]
+Handle
+Hardware Requirement Exception: [0x%.8X]
+Hardware Requirement std::exception: [0x%.8x] %s
+Hardware Requirement wil::ResultException: [0x%.8X]
+Hardware Security (Type 24)
+Hardware\Description\System\CentralProcessor\0
+HcD$$H
+HcL$ H
+HeapAlloc
+HeapFree
+HeapReAlloc
+History:
+Host OS SKU: 0x%.8X, Result: [0x%.8X]
+host unreachable
+host_unreachable
+https://
+hwreqchk
+HWREQCHK JSON parsing failed with '%s' [%d]
+HwReqChk.dll
+HwReqChk.pdb
+HwReqEval
+HwReqOneSettingsTestId
+identifier removed
+iertutil.dll
+If-None-Match:
+illegal byte sequence
+ImpersonateLoggedOnUser
+Inactive (Type 126)
+inappropriate io control operation
+Incorrect hex digit after \u escape in string.
+Incorrect structure type
+InitializeCriticalSectionEx
+interrupted
+invalid argument
+Invalid combination of Host/Current processor architectures passed to AslpEnvResolveVars Host: %x4 Current: %x4
+Invalid encoding in string.
+Invalid escape character in string.
+invalid seek
+invalid string position
+Invalid value type
+Invalid value.
+invalid_argument
+io error
+ios_base::badbit set
+ios_base::eofbit set
+ios_base::failbit set
+iostream
+iostream stream error
+IPMI Device Information (Type 38)
+is a directory
+IsDebuggerPresent
+IsProcessorFeaturePresent
+IsServer: %lu, Result: [0x%.8X]
+iswalpha
+iswdigit
+JanFebMarAprMayJunJulAugSepOctNovDec
+k*do^
+KERNEL32.dll
+kernel32.dll
+kernelbase.dll
+L$ E3
+l$ E3
+L$ H;
+L$ H3
+L$ M;
+L$ SUVWAVAWH
+L$ SVWAVH
+L$ SVWH
+l$ VWATAVAWH
+l$ VWAVH
+L$(E3
+L$@H3
+L$`eH
+L$`L;
+L$<fD
+L$0E3
+L$0H3
+L$8H3
+L$HE3
+L$HH3
+L$hH3
+L$HH3
+L$pE3
+L$pH;
+L$PH;
+L$PH+
+L$PH3
+L$pH3
+L$PH3
+L$pI;
+l$xE3
+L$XH3
+L$XL+
+L;|$pt
+L;|$pt&A
+L;|$ptD
+L;|$pu
+L9{Hu
+L9|$Xt eH
+L9d$@
+L9d$@u
+L9eXt
+L9Ihv(H
+L9l$Ht"H
+LAHFSAHF Supported: %lu, Result: [0x%.8X]
+LAN Remote
+LcA<E3
+LeaveCriticalSection
+Length
+LoadLibrary(powrprof) failed: [0x%.8X].
+LoadLibraryExW
+LoadLibraryW
+LoadResource
+Local\SM0:%lu:%lu:%hs
+LocalAlloc
+localeconv
+LocalFree
+LockResource
+LogFlags
+LogHr
+LogNt
+lower
+lstd::exception: %hs
+M(HcE$I
+M@fD;
+MachineId
+malloc
+Management Controller Host Interface (Type 42)
+Management Device (Type 34)
+Management Device Component (Type 35)
+Management Device Threshold Data (Type 36)
+Manufacturer
+map/set<T> too long
+MBI_SSL
+memcmp
+memcpy
+memcpy_s
+memmove
+Memory Array Mapped Address (Type 19)
+Memory Channel (Type 37)
+Memory Controller Information (Type 5, Obsolete)
+Memory Device (Type 17)
+Memory Device Mapped Address (Type 20)
+Memory Module Information (Type 6, Obsolete)
+memset
+Message
+message size
+Message too long!
+message_size
+Messages
+Metric
+Metrics
+Microsoft.Windows.Compatibility.Asl
+Miss exponent in number.
+Miss fraction part in number.
+Missing a closing quotation mark in string.
+Missing a colon after a name of object member.
+Missing a comma or ']' after an array element.
+Missing a comma or '}' after an object member.
+Missing a name for object member.
+Modern Ring
+mr"iR
+MsaToken
+Msg:[%ws] 
+msvcrt.dll
+MultiByteToWideChar
+N(H;N(s
+Names
+network down
+network reset
+network unreachable
+network_down
+network_reset
+network_unreachable
+no buffer space
+no child process
+No error.
+no link
+no lock available
+no message
+no message available
+no protocol option
+no space on device
+no stream resources
+no such device
+no such device or address
+no such file or directory
+no such process
+no_buffer_space
+no_protocol_option
+not a directory
+not a socket
+not a stream
+not connected
+not enough memory
+not supported
+not_a_socket
+not_connected
+ntdll.dll
+NtOpenKey failed for %ws [%x]
+NtQuerySystemInformation
+NtQuerySystemInformation failed: [0x%.8X].
+Number
+Number too big to be stored in double.
+Nx Driver not present to install. Failing silently.
+NX Supported: %lu, Result: [0x%.8X]
+NxDirectory '%ls' is not valid in system Inventory.
+NxDriver
+NXQuery
+NXQuery.inf
+O(H;O(
+O(H;O(r/
+OEM product name: %ls, Result: [0x%.8X]
+OEM Strings (Type 11)
+OLE32.dll
+On Board Device Information (Type 10, Obsolete)
+Onboard Devices Extended Information (Type 41)
+One or more constraints contained errors while initializing the requirement. Unable to continue.
+onecore\base\appcompat\hwreqchk\hardwarerequirementsettings.cpp
+onecore\base\telemetry\deviceticket\lib\deviceticket.cpp
+onecore\internal\sdk\inc\wil\opensource/wil/resource.h
+OneSettingsClient.dll
+OneSettingsCreateDownloadConfig
+OneSettingsDownloadEndpoint
+OneSettingsEndDownloadSession
+OneSettingsFreeDownloadConfig
+OneSettingsFreeDownloadResponse
+OneSettingsGetResponseDwordProperty
+OneSettingsGetResponseStringProperty
+OneSettingsGetResponseWideStringProperty
+OneSettingsQuery
+OneSettingsSetConfigBoolProperty
+OneSettingsSetConfigDwordProperty
+OneSettingsSetConfigHandleProperty
+OneSettingsSetConfigWideStringProperty
+OneSettingsStartDownloadSession
+OpenSCManagerW
+OpenSemaphoreW
+OpenServiceW
+operation canceled
+operation in progress
+operation not permitted
+operation not supported
+operation would block
+operation_in_progress
+operation_not_supported
+operation_would_block
+OSDataDrive
+OSDataDrive=
+osver
+Other
+Out of memory
+Out of memory [%x]
+Out-of-Band Remote Access (Type 30)
+OutputDebugStringA
+OutputDebugStringW
+owner dead
+p AWH
+p WAVAWH
+p;TXi
+p@QTN/
+p0R^G'
+PA^_^
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+PartA_PrivTags
+Path Combine Failed: [0x%.8X].
+PathFileExistsW
+PCI PME#
+permission denied
+permission_denied
+pHT<m
+Physical Memory Array (Type 16)
+Platform Specific Field 1
+PlatformId: %lu, Result: [0x%.8X]
+Port Connector Information (Type 8)
+Portable Battery (Type 22)
+Power Switch
+PowerDeterminePlatformRoleEx
+powrprof.dll
+pP[\=
+ppT<.
+PrefetchSupport Supported: %lu, Result: [0x%.8X]
+Preprocessing rule '%ls' failed evaluating expression [0x%.8X]
+PRINT
+print
+PrivateCoInternetCombineIUri
+Processor Additional Information (Type 44)
+Processor Information (Type 4)
+Processor version name: %ls, Result: [0x%.8X]
+ProcessorCount: %lu, Result: [0x%.8X]
+ProcessorNameString
+ProductName
+ProfileImagePath
+ProgramData
+ProgramFiles
+ProgramFiles(x86)
+ProgramFilesDir
+ProgramFilesDir (x86)
+protocol error
+protocol not supported
+protocol_not_supported
+Public
+punct
+q*Z~:
+q:_0#
+q;TXi
+q0R^G'
+qcVx:
+qP[\=
+QueryParameters
+QueryPerformanceCounter
+QueryProperty
+qX\pG
+raB3G
+RaiseException
+RaiseFailFastException
+read only file system
+reagent.dll
+realloc
+RefreshAfter
+RefreshInterval
+refreshInterval
+RegCloseKey
+RegCreateKeyExW
+RegDeleteTreeW
+RegEnumValueW
+regex_error
+regex_error(error_backref): The expression contained an invalid back reference.
+regex_error(error_badbrace): The expression contained an invalid range in a { expression }.
+regex_error(error_badrepeat): One of *?+{ was not preceded by a valid regular expression.
+regex_error(error_brace): The expression contained mismatched { and }.
+regex_error(error_brack): The expression contained mismatched [ and ].
+regex_error(error_collate): The expression contained an invalid collating element name.
+regex_error(error_complexity): The complexity of an attempted match against a regular expression exceeded a pre-set level.
+regex_error(error_ctype): The expression contained an invalid character class name.
+regex_error(error_escape): The expression contained an invalid escaped character, or a trailing escape.
+regex_error(error_paren): The expression contained mismatched ( and ).
+regex_error(error_parse)
+regex_error(error_range): The expression contained an invalid character range, such as [b-a] in most encodings.
+regex_error(error_space): There was insufficient memory to convert the expression into a finite state machine.
+regex_error(error_stack): There was insufficient memory to determine whether the regular expression could match the specified character sequence.
+regex_error(error_syntax)
+RegGetValueW
+RegOpenKeyExW
+RegQueryInfoKeyW
+RegSetValueExW
+ReleaseMutex
+ReleaseSemaphore
+ReleaseSRWLockExclusive
+Requirements
+Reserved
+ReservedTokenValue
+resource deadlock would occur
+resource unavailable try again
+result out of range
+ReturnHr
+ReturnNt
+RevertToSelf
+RoActivateInstance
+RoGetActivationFactory
+RoInitialize
+RoUninitialize
+RtlAllocateHeap
+RtlAppendUnicodeStringToString
+RtlAppendUnicodeToString
+RtlAreLongPathsEnabled
+RtlCaptureContext
+RtlCheckPortableOperatingSystem
+RtlDeleteCriticalSection
+RtlDisownModuleHeapAllocation
+RtlDllShutdownInProgress
+RtlEnterCriticalSection
+RtlEqualString
+RtlFreeHeap
+RtlGetNativeSystemInformation
+RtlGetNativeSystemInformation failed [%x]
+RtlGetNtSystemRoot
+RtlGetPersistedStateLocation
+RtlGetVersion
+RtlInitAnsiString
+RtlInitializeCriticalSection
+RtlInitUnicodeString
+RtlInitUnicodeStringEx
+RtlInitUnicodeStringEx failed [%x]
+RtlIsStateSeparationEnabled
+RtlLeaveCriticalSection
+RtlLookupFunctionEntry
+RtlMultiByteToUnicodeN
+RtlStringCchCatW failed [%x]
+RtlStringCchCopyW failed [%x]
+RtlStringCchLengthA failed [%x]
+RtlStringCchLengthW failed [%x]
+RtlUpcaseUnicodeChar
+RtlVirtualUnwind
+RuleExpression
+Rules
+Running on a metered connection.
+s\ax}?
+s+H;{
+s-1-5-18
+s-1-5-19
+s-1-5-20
+s9f9>tz
+SerialNumber
+Service %ls already started
+Service Pack %d
+SetEvent
+SetLastError
+setlocale
+SetThreadAffinityMask
+settings
+Settings
+settings/v2.0/%ls/%ls
+settings-win.data.microsoft.com
+settings-win-ppe.data.microsoft.com
+SetUnhandledExceptionFilter
+setupapi.dll
+SetupCloseInfFile
+SetupDefaultQueueCallbackW
+SetupInitDefaultQueueCallbackEx
+SetupInstallFromInfSectionW
+SetupInstallServicesFromInfSectionW
+SetupOpenInfFileW
+SetupTermDefaultQueueCallback
+SHLWAPI.dll
+Simple
+SIZE_T arithmetic failed [%x]
+SkuNumber
+Sleep
+SleepConditionVariableSRW
+SLIsGenuineLocal
+slwga.dll
+SMode: %lu, Result: [0x%.8X]
+SOFTWARE\Microsoft\SQMClient
+SOFTWARE\Microsoft\Windows NT\CurrentVersion
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags
+Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Appraiser
+SOFTWARE\Microsoft\Windows\CurrentVersion\OneSettings
+Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection
+space
+sprintf_s
+SQ_Architecture
+SQ_ARMv81ProcessorSupport
+SQ_CompareExchange128Support
+SQ_CpuCoreCount
+SQ_CpuFamily
+SQ_CpuMhz
+SQ_CpuModel
+SQ_CpuStepping
+SQ_CpuVendor
+SQ_HostOsSku
+SQ_IsServer
+SQ_LahfSahfSupport
+SQ_NXProcessorSupport
+SQ_Platform
+SQ_PrefetchWSupport
+SQ_ProcessorName
+SQ_ProductName
+SQ_RamMB
+SQ_SecureBootCapable
+SQ_SMode
+SQ_SSE2ProcessorSupport
+SQ_SystemDiskSizeMB
+SQ_TpmVersion
+SSE2 Supported: %lu, Result: [0x%.8X]
+-sSO\
+StartServiceW
+state not recoverable
+strchr
+strcpy_s
+strcspn
+stream timeout
+string too long
+StringFileInfo
+strncmp
+strtoul
+STv/N
+Succeeded Lookup for '%S' - Value=%lu
+Supported Rule Expression Operators:
+SUVWATAUAVAWH
+SVWATAUAVAWH
+SVWAVAWH
+SVWAVH
+swprintf_s
+System
+system
+System Boot Information (Type 32)
+System Configuration Options (Type 12)
+System Enclosure or Chassis (Type 3)
+System Information (Type 1)
+System Power Controls (Type 25)
+System Power Supply (Type 39)
+System Reset (Type 23)
+System Slot (Type 9)
+SystemDiskSizeMB: %lu, Result: [0x%.8X]
+SystemDrive=
+systemroot
+SystemRoot=
+t"@8=
+T$ I+
+t$ UAVAWH
+t$ UWATAUAWH
+t$ UWATAVAWH
+t$ UWAVH
+t$ WATAUAVAWH
+t$ WATAVH
+t$ WAVAWH
+t$ WH
+t$(E3
+T$`E3
+t$`Ic
+t$0E3
+T$8H;
+t$hI;
+t$pH+
+t$PI+
+t%D83t
+t(D8-
+t(D8%C
+t(D8-Q
+t,D8=O'
+t?y&I
+t<f93t7
+t2y"I
+t4y#I
+t6fD9[
+t8E80|3A
+tAfA9(t;H
+tAy'I
+tbs.dll
+TBS.dll not found.
+Tbsi_GetDeviceInfo
+Tbsi_GetDeviceInfo function not found in TBS.dll.
+tC7Ddx
+tCH;0u/H
+tDy'H
+tEE81
+TelemetryClient
+TelIsTelemetryTypeAllowed
+Temperature Probe (Type 28)
+Terminate parsing due to Handler error.
+TerminateProcess
+text file busy
+tGfD91u:H
+The constraint, %ls, could not be parsed. Expected format 'RULENAME=TRUE|FALSE'
+The constraint, %ls, does not match the expected format 'RULENAME=TRUE|FALSE'
+The DEVICE_HARDWARE_SYSINFO structure is a different version than expected. Expected Version:%lu. Actual Version:%lu
+The document is empty.
+The document root must not be followed by other values.
+The surrogate pair in string is invalid.
+tHfD91u;H
+timed out
+timed_out
+tmf90thf9
+tMfD91u@H
+tNH;{
+tNH9B
+toH91uj
+Token is required to be an operator, but is '%ls'
+TokenLeft
+TokenOperator
+TokenRight
+too many files open
+too many files open in system
+too many links
+too many symbolic link levels
+too_many_files_open
+TotalPhysicalMemory: %lu, Result: [0x%.8X]
+tPD80
+tpfD9[
+TPM Device (Type 43)
+TPMVersion: %lu, Result: [0x%.8X]
+TRACE
+tx@8=
+Types
+u HcA<H
+u#H!X
+u&L9G u
+U@fD;
+uAfD;l$`t9L
+UATAUAVAWH
+UAVAWH
+UefiSecureBootCapable: %lu, Result: [0x%.8X]
+uGfD;d$Pt?I
+Unable to copy constraint name : [0x%.8X]
+Unable to preprocess rules [0x%.8X]
+Unexpected numerical evaluation operation
+Unexpected text evaluation operation
+UNEXPECTED: Failed to set thread affinity mask.  Unknown LAHF/SAHF support.
+UnhandledExceptionFilter
+Unknown
+unknown error
+Unknown error.
+Unspecific syntax error.
+upper
+User Defined variables:
+USVWATAUAVAWH
+USVWAVH
+UVWATAUAVAWH
+UVWAVAWH
+uW@85
+UWATAVAWH
+UWAUAVAWH
+UWAVH
+v L9w
+v;fD;
+value too large
+VATAUAVAWH
+vector<bool> too long
+vector<T> too long
+VerifyVersionInfoW
+VerQueryValueW
+VerSetConditionMask
+Version
+VERSION.dll
+VersionId
+VirtualAlloc
+VirtualAlloc call failed: [%lu].
+VirtualFree
+VirtualProtect
+VirtualProtect call failed: [%lu].
+Voltage Probe (Type 26)
+VS_VERSION_INFO
+VWATAVAWH
+VWAVH
+VWAWH
+w fD9>
+w}H9{
+WaitForSingleObject
+WaitForSingleObjectEx
+WakeAllConditionVariable
+WakeupType
+WATAUAVAWH
+WATAVH
+WAVAWH
+wcscat_s
+wcschr
+wcscmp
+wcscpy_s
+wcsncmp
+wcspbrk
+wcsrchr
+wcsstr
+wcstoul
+wdscore.dll
+WdsSetupLogMessageA
+WideCharToMultiByte
+WilError_03
+WinDir=
+windows
+Windows.Internal.Security.WebAuthentication.AuthenticationManager
+Windows.Networking.Connectivity.NetworkInformation
+Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest
+Windows::Compat::HardwareRequirements::Constraint::Parse
+Windows::Compat::HardwareRequirements::DriverManagementUtilities::LoadDriverService
+Windows::Compat::HardwareRequirements::DriverManagementUtilities::OpenDeviceHandle
+Windows::Compat::HardwareRequirements::DriverManagementUtilities::RunInfInstallSection
+Windows::Compat::HardwareRequirements::DriverManagementUtilities::UnloadDriverService
+Windows::Compat::HardwareRequirements::Evaluate::HardwareRequirement
+Windows::Compat::HardwareRequirements::Evaluate::HardwareRequirementRules
+Windows::Compat::HardwareRequirements::Evaluate::PreProcessRules
+Windows::Compat::HardwareRequirements::ExpressionEngine::EvaluateExpression
+Windows::Compat::HardwareRequirements::HardwareInventory::DetermineCpuCoresCount
+Windows::Compat::HardwareRequirements::HardwareInventory::DetermineCpuInfo
+Windows::Compat::HardwareRequirements::HardwareInventory::DetermineCpuMhz
+Windows::Compat::HardwareRequirements::HardwareInventory::DetermineHostOsSku
+Windows::Compat::HardwareRequirements::HardwareInventory::DetermineLahfSahfSupport
+Windows::Compat::HardwareRequirements::HardwareInventory::DetermineNxSupport
+Windows::Compat::HardwareRequirements::HardwareInventory::DeterminePlatform
+Windows::Compat::HardwareRequirements::HardwareInventory::DeterminePrefetchSupport
+Windows::Compat::HardwareRequirements::HardwareInventory::DetermineSModeState
+Windows::Compat::HardwareRequirements::HardwareInventory::DetermineSystemDiskSize
+Windows::Compat::HardwareRequirements::HardwareInventory::DetermineTotalPhysicalMemory
+Windows::Compat::HardwareRequirements::HardwareInventory::DetermineTpmVersion
+Windows::Compat::HardwareRequirements::HardwareInventory::DetermineUefiSecureBoot
+Windows::Compat::HardwareRequirements::HardwareInventory::GetNxDriverResult
+Windows::Compat::HardwareRequirements::HardwareInventory::GetOemProductName
+Windows::Compat::HardwareRequirements::HardwareInventory::GetProcessorVersionName
+Windows::Compat::HardwareRequirements::HardwareInventory::InstallAndRunNxDriver
+Windows::Compat::HardwareRequirements::HardwareInventory::QueryHardware
+Windows::Compat::HardwareRequirements::HardwareRequirementSettings::GetSettings
+Windows::Compat::HardwareRequirements::HardwareRequirementSettings::IsMeteredConnection
+Windows::Compat::HardwareRequirements::JsonData::Merge
+Windows::Compat::HardwareRequirements::JsonData::ParseJson
+Windows::Compat::HardwareRequirements::JsonData::ReadRequirements
+Windows::Compat::HardwareRequirements::Token::EvaluateNumberTokens
+Windows::Compat::HardwareRequirements::Token::EvaluateTextTokens
+Windows::Compat::HardwareRequirements::Token::EvaluateTokens
+Windows::Compat::HardwareRequirements::Token::TryGetReservedTokenValue
+Windows::Compat::HardwareRequirements::Utilities::GetOsVersionInfo
+WindowsCreateString
+WindowsCreateStringReference
+WindowsDeleteString
+WindowsGetStringRawBuffer
+WindowsIsStringEmpty
+WINHTTP.dll
+WinHttpCloseHandle
+WinHttpConnect
+WinHttpGetDefaultProxyConfiguration
+WinHttpGetIEProxyConfigForCurrentUser
+WinHttpGetProxyForUrl
+WinHttpOpen
+WinHttpOpenRequest
+WinHttpQueryAuthSchemes
+WinHttpQueryDataAvailable
+WinHttpQueryHeaders
+WinHttpReadData
+WinHttpReceiveResponse
+WinHttpSendRequest
+WinHttpSetCredentials
+WinHttpSetOption
+WinReIsWimBootEnabled
+WinSqmIsOptedInEx
+wlanapi.dll
+WlanCloseHandle
+WlanEnumInterfaces
+WlanFreeMemory
+WlanGetInterfaceCapability
+WlanOpenHandle
+Wldp.dll
+Wldp.dll not found.
+WldpQueryWindowsLockdownMode
+WldpQueryWindowsLockdownMode failed, swallowing [0x%x].
+WldpQueryWindowsLockdownMode function not found in Wldp.dll.
+WriteFile
+wrong protocol type
+wrong_protocol_type
+WTSAPI32.dll
+WTSEnumerateSessionsW
+WTSFreeMemory
+WTSGetActiveConsoleSessionId
+WTSQueryUserToken
+wXH9w
+x ATAVAWH
+x AVH
+x AWH
+x UATAUAVAWH
+x59t$HteH
+X5AHx
+xdigit
+xg^Jp5|
+XH;]`u
+XH;]Pu
+y|?ut
+Z~$|7
+ZL9d$@uuL
+ZwClose
+ZwEnumerateKey
+ZwOpenKey
+ZwQuerySystemInformation
+ZwQuerySystemInformation failed [%x]
+ZwQueryValueKey

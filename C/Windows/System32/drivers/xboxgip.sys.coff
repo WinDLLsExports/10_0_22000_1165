@@ -1,0 +1,241 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\xboxgip.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    ksecdd.sys
+    NDIS.SYS
+    DevAuthE.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C01DA148 Import Address Table
+             1C01DA790 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         357 IoGetDeviceProperty
+                         85E RtlEqualUnicodeString
+                         391 IoOpenDeviceRegistryKey
+                         B7B ZwQueryValueKey
+                         AEB ZwClose
+                         46A KeCancelTimer
+                          CB ExDeleteLookasideListEx
+                         46F KeClearEvent
+                         494 KeFlushQueuedDpcs
+                         47B KeDelayExecutionThread
+                         566 KeWaitForSingleObject
+                         3BA IoReleaseRemoveLockAndWaitEx
+                         329 IoDetachDevice
+                         6AD ObfReferenceObject
+                         706 PoStartNextPowerIrp
+                         6BA PoCallDriver
+                         3B9 IoReleaseCancelSpinLock
+                         2EE IoBuildDeviceIoControlRequest
+                         33D IoFreeIrp
+                         379 IoInitializeIrp
+                         AF7 ZwCreateFile
+                         69B ObReferenceObjectByHandle
+                         336 IoFileObjectType
+                         6AB ObfDereferenceObject
+                         6F4 PoRegisterPowerSettingCallback
+                         708 PoUnregisterPowerSettingCallback
+                         37F IoInvalidateDeviceRelations
+                         5D2 MmMapLockedPagesSpecifyCache
+                         2F3 IoCancelIrp
+                         72A PsGetCurrentProcessId
+                         732 PsGetCurrentThreadId
+                         B42 ZwOpenProcess
+                         179 ExpInterlockedPopEntrySList
+                         54C KeSetTimerEx
+                         17A ExpInterlockedPushEntrySList
+                         10F ExQueryDepthSList
+                         49B KeGetCurrentIrql
+                         2E5 IoAllocateWorkItem
+                         3A1 IoQueueWorkItem
+                         343 IoFreeWorkItem
+                         7B0 PsSetCreateProcessNotifyRoutine
+                         14F ExSubscribeWnfStateChange
+                         168 ExUnsubscribeWnfStateChange
+                         BC5 ZwUpdateWnfStateData
+                         113 ExQueryWnfStateData
+                         80E RtlCompareMemory
+                         311 IoCreateFile
+                          94 EtwWriteTransfer
+                         BF3 _vsnwprintf
+                         36E IoGetRequestorProcess
+                         37C IoInitializeRemoveLockEx
+                         C2D strncmp
+                         B80 ZwReadFile
+                         B3A ZwOpenEvent
+                          DC ExEventObjectType
+                         BB4 ZwSetValueKey
+                         6FE PoSetSystemState
+                         517 KeReleaseMutex
+                         542 KeSetPriorityThread
+                         564 KeWaitForMultipleObjects
+                         7CA PsTerminateSystemThread
+                         71C PsCreateSystemThread
+                         794 PsQueryProcessAttributesByToken
+                         800 RtlCheckTokenCapability
+                         994 RtlStringFromGUID
+                         7ED RtlAppendUnicodeStringToString
+                         88E RtlFreeUnicodeString
+                         AFA ZwCreateKey
+                         B17 ZwEnumerateKey
+                         4B9 KeInitializeTimer
+                         3DC IoSetDevicePropertyData
+                         C1F sprintf_s
+                         C36 swprintf_s
+                         C4E wcsnlen
+                         BE2 _stricmp
+                         910 RtlIsStateSeparationEnabled
+                         79A PsReferencePrimaryToken
+                         802 RtlCheckTokenMembershipEx
+                         696 ObOpenObjectByPointer
+                         32C IoDeviceObjectType
+                         BAD ZwSetSecurityObject
+                         982 RtlSetDaclSecurityDescriptor
+                         38B IoIsWdmVersionAvailable
+                         918 RtlLengthSid
+                         7D8 RtlAddAccessAllowedAce
+                         7D7 RtlAbsoluteToSelfRelativeSD
+                         C43 wcschr
+                         BF9 _wcsnicmp
+                         831 RtlCreateSecurityDescriptor
+                         A10 SeExports
+                         917 RtlLengthSecurityDescriptor
+                         BDE _snwprintf
+                         9F6 SeCaptureSecurityDescriptor
+                         8B1 RtlGetSaclSecurityDescriptor
+                         8AE RtlGetOwnerSecurityDescriptor
+                         8A4 RtlGetGroupSecurityDescriptor
+                         89C RtlGetDaclSecurityDescriptor
+                         2EA IoAttachDeviceToDeviceStack
+                         30D IoCreateDevice
+                         435 IofCallDriver
+                         2D8 IoAcquireRemoveLockEx
+                         36F IoGetRequestorProcessId
+                         720 PsDereferencePrimaryToken
+                         14B ExSetTimerResolution
+                         A27 SeQueryInformationToken
+                         8D6 RtlInitializeSid
+                         3BB IoReleaseRemoveLockEx
+                          E5 ExFreePoolWithTag
+                          8C EtwSetInformation
+                          F3 ExInitializeLookasideListEx
+                         827 RtlCopyUnicodeString
+                          B8 ExAllocatePoolWithTag
+                         962 RtlRandomEx
+                         4AB KeInitializeDpc
+                         4BB KeInitializeTimerEx
+                         4B3 KeInitializeMutex
+                         4AF KeInitializeEvent
+                         4B7 KeInitializeSpinLock
+                         3B8 IoRegisterShutdownNotification
+                         319 IoCreateSymbolicLink
+                         4DD KePulseEvent
+                         53A KeSetEvent
+                         326 IoDeleteDevice
+                         328 IoDeleteSymbolicLink
+                         51A KeReleaseSpinLock
+                         51C KeReleaseSpinLockFromDpcLevel
+                         455 KeAcquireSpinLockAtDpcLevel
+                         457 KeAcquireSpinLockRaiseToDpc
+                         436 IofCompleteRequest
+                         428 IoWMIRegistrationControl
+                         5BC MmGetSystemRoutineAddress
+                         8CC RtlInitUnicodeString
+                         BF6 _wcsicmp
+                          8E EtwUnregister
+                         B3D ZwOpenKey
+                          89 EtwRegister
+                         8AF RtlGetPersistedStateLocation
+                         8CD RtlInitUnicodeStringEx
+                         BCB __chkstk
+
+    HAL.dll
+             1C01DA040 Import Address Table
+             1C01DA688 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+
+    ksecdd.sys
+             1C01DA108 Import Address Table
+             1C01DA750 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           A BCryptDestroyHash
+                          14 BCryptFinishHash
+                          1B BCryptHashData
+                           5 BCryptCreateHash
+                          1A BCryptGetProperty
+                          1F BCryptOpenAlgorithmProvider
+                           4 BCryptCloseAlgorithmProvider
+
+    NDIS.SYS
+             1C01DA050 Import Address Table
+             1C01DA698 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          42 NdisCloseAdapterEx
+                         207 NdisWaitEvent
+                         1AA NdisOpenAdapterEx
+                          1E NdisAllocateNetBufferListPool
+                         18D NdisMSleep
+                         107 NdisInitializeEvent
+                          18 NdisAllocateMemoryWithTag
+                         1E4 NdisSetEvent
+                         1E0 NdisSendNetBufferLists
+                          AD NdisFreeNetBufferListPool
+                          6F NdisCopyFromNetBufferToNetBuffer
+                          AB NdisFreeNetBufferList
+                         1DA NdisRetreatNetBufferDataStart
+                          1B NdisAllocateNetBufferAndNetBufferList
+                         1DC NdisReturnNetBufferLists
+                          A7 NdisFreeMemory
+                         1B8 NdisQueryAdapterInstanceName
+                          7A NdisDeregisterProtocolDriver
+                          B8 NdisGeneratePartialCancelId
+                         1CF NdisRegisterProtocolDriver
+                           D NdisAdvanceNetBufferDataStart
+                         1A8 NdisOidRequest
+
+    DevAuthE.sys
+             1C01DA000 Import Address Table
+             1C01DA648 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 DevAuthExportKey
+                           2 DevAuthGetHostMessage
+                           1 DevAuthGetDeviceInfo
+                           5 DevAuthProcessDeviceMessage
+                           7 DevAuthUnregister
+                           6 DevAuthRegister
+                           4 DevAuthGetTelemetryInfo
+
+  Summary
+
+      188000 .data
+        2000 .idata
+        3000 .pdata
+        8000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       46000 .text
+        1000 GFIDS
+        1000 INIT
+        3000 PAGE

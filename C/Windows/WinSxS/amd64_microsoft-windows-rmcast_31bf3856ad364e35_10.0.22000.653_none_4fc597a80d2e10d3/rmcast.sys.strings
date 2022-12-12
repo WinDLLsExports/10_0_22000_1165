@@ -1,0 +1,539 @@
+                                                                       
+  *                                                                       
+  *    copyright notice, this list of conditions and the following        
+  *    disclaimer in the documentation and/or other materials             
+  *    notice, this list of conditions and the following disclaimer.      
+  *    provided with the distribution.                                    
+  * (C) 1997-98 Luigi Rizzo (luigi@iet.unipi.it)                          
+  * 1. Redistributions of source code must retain the above copyright     
+  * 2. Redistributions in binary form must reproduce the above            
+  * 980624                                                                
+  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,     
+  * are met:                                                              
+  * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,   
+  * fec.c -- forward error correction based on Vandermonde matrices       
+  * modification, are permitted provided that the following conditions    
+  * OF SUCH DAMAGE.                                                       
+  * OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY       
+  * OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,              
+  * OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY       
+  * PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS      
+  * Portions derived from code by Phil Karn (karn@ka9q.ampr.org),         
+  * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,       
+  * Redistribution and use in source and binary forms, with or without    
+  * Robert Morelos-Zaragoza (robert@spectra.eng.hawaii.edu) and Hari      
+  * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A           
+  * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR        
+  * Thirumoorthy (harit@spectra.eng.hawaii.edu), Aug 1995                 
+  * THIS SOFTWARE IS PROVIDED BY THE AUTHORS ``AS IS'' AND                
+  * TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT       
+  /*                                                                      
+ A_A^_
+ A_A^A\
+ A_A^A\_^
+ A_A^A]A\_
+ Microsoft Corporation. All rights reserved.
+ Operating System
+ t.A8
+ Windows
+!This program cannot be run in DOS mode.
+&A:T$
+(D$ H
+,fD9k8u%H;
+.00cfg
+.data
+.data$brc
+.fffffff
+.gehcont
+.gfids
+.giats
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.pdata
+.rdata
+.rdata$brc
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+.text
+.text$mn
+.text$mn$00
+.text$mn$21
+.xdata
+@!\$ 3
+@8{At
+@8|$Dt
+@8|$Pu
+@A^A\_
+@A_A^_
+@A_A^A\
+@A_A^A\_^[]
+@A_A^A]A\_^]
+@SUVWATAUAVAWH
+@SVWATAUAVAWH
+@t$D9vhu
+@USVWATAUAVAWH
+@USVWATAVAWH
+\$ E3
+\$ UVWATAUAVAWH
+\$HH;
+\$PD9
+\/]}]
+\Device\KsecDD
+\Device\Pgm
+\Device\RawIp
+\SystemRoot\System32
+]\^B_
+]ABORTive
+^`111
+^x)Fh
+__C_specific_handler
+` AUAVAWH
+` UAVAWH
+`A_A^A\_^[]
+`A_A^A]A\^][
+`INIT
+{ ATAVAWH
+{ AVH
+{ AWH
+|$ E3
+|$ UATAUAVAWH
+|$0A_A^
+|$xD)
++fE9S:u
+=SES0t
+=SES2
+=SESRuKH
+=SESSt
+040904B0
+0A_A^_
+0A_A^_^]
+0A_A^A\
+0A_A^A\_^
+0A_A^A]A\_
+0A_A^A]A\_^]
+0XYZAXAY
+10.0.22000.653
+10.0.22000.653 (WinBuild.160101.0800)
+1000100001
+10010000001
+10010001
+101000000001
+101001
+101110001
+1100000000000001
+1100001
+110000100010001
+11001
+1100101000001
+11010000000010001
+11011000000001
+8`Aj/
+-9Bts
+A#W,H
+A(fD9b8u#H
+A;I<u
+A;W<u
+A^A]A\_^
+A_A^]
+A_A^A\
+A_A^A]
+A_A^A]A\]
+A_A^A]A\_
+A_A^A]A\_^[
+A_A^A]A\_^[]
+A_A^A]A\_^]
+A_A^A]A\_^][
+A+H8H
+A8q:u
+A9X u
+-ADD2
+ADD2H
+ADDRH
+ADDRu
+ADDRu|9
+ADDRu7M
+ADDRuw9
+AQAPRQPH
+B.reloc
+B.rsrc
+B>A8D
+B6f;C6s
+bGFIDS
+BINTDI_DISCONNECT_RELEASE
+C>B8D
+C8uWfD9c:uPL9c@uJL9cHuDH
+CMCast
+CompanyName
+ComplexData
+ConnectionContext
+CONTH
+CpfD9
+D$ fD
+d$(E3
+D$(E3
+d$(H;
+D$(Pgm2E3
+D$(Pgm2H
+D$(Pgm2L
+D$(PgmDH
+D$(PgmR3
+D$@E3
+D$@fD
+D$@H;
+D$@t:H
+D$`;H
+D$`E3
+D$0E3
+D$0fD;
+D$0H;
+D$0H9F
+D$0H9G
+D$4E;
+D$DD;
+D$Df9UNu
+D$hE3
+D$LA)
+D$LE3
+D$PE3
+D$PL+
+D$Pue
+D$wfA+
+D$XE8
+D$Xf9K:u+H9K@u%H9KHu
+D$xfD+
+D$Xt%
+D:g9rU
+D:k?s
+D;~<u
+D8|$@t
+D8|$Dt
+D8d$Pu L9c u
+D8d$Qt
+D8k9u
+D8t$Dt
+D8T$PtbD
+D8t$Qt
+D9|$H
+DEVCH
+E#G,I
+E@tDH
+E9|$<t
+E9}(u<H
+E9~<t
+en-US
+EtwRegisterClassicProvider
+EtwUnregister
+EventData
+EVNT|
+ExAcquireResourceExclusiveLite
+ExAllocatePool2
+ExDeleteNPagedLookasideList
+ExDeleteResourceLite
+ExFreePoolWithTag
+ExInitializeNPagedLookasideList
+ExInitializeResourceLite
+ExInterlockedInsertTailList
+ExpInterlockedPopEntrySList
+ExpInterlockedPushEntrySList
+ExQueryDepthSList
+ExQueueWorkItem
+ExReleaseResourceLite
+f#T$Hf
+f;GPr
+f9GFu
+fA9G.tjA
+FAILED
+fD9:r
+fD9S4u
+FdA;Ntw
+fffff
+fffffff
+-fffffff
+FileDescription
+FileVersion
+FtA9D$Dv
+G4fB9D
+gfffffffH
+GlH)GxH
+GRACEful
+H)GxD
+H.data
+H.idata
+h.rdata
+h:O9r
+H;BPv
+H@!D$tA
+H9_0t4H
+H9{(uPH
+H90uRH
+H96u2H
+H98uPH
+H9Fxr
+H9s u
+H9w(t
+H9Z@u
+hA_A^A]A\_^[]
+HA_A^A]A\_^][
+Hc}XI
+Hc1Ic
+HcUHD
+HPAGE
+I=fA;
+I9_`t
+I9Z(u
+I9Z(uh
+Information
+InternalName
+IoAcquireCancelSpinLock
+IoAllocateIrp
+IoAllocateMdl
+IoBuildDeviceIoControlRequest
+IoCreateDevice
+IoDeleteDevice
+IofCallDriver
+IofCompleteRequest
+IoFileObjectType
+IoFreeIrp
+IoFreeMdl
+IoGetDeviceObjectPointer
+IoGetFileObjectGenericMapping
+IoGetRelatedDeviceObject
+IoReleaseCancelSpinLock
+IoWMIRegistrationControl
+K\D9{Ht
+K09y$tkA
+K0D;y8x@A
+KeAcquireSpinLockRaiseToDpc
+KeClearEvent
+KeEnterCriticalRegion
+KeGetCurrentIrql
+KeInitializeDpc
+KeInitializeEvent
+KeInitializeSpinLock
+KeInitializeTimer
+KeLeaveCriticalRegion
+KeReleaseSpinLock
+KeSetEvent
+KeSetTimer
+KeStackAttachProcess
+KeUnstackDetachProcess
+KeWaitForSingleObject
+KEYW0
+L#t$pH
+L$ H+
+l$ I+
+L$ SH
+L$ SUVATAUAVAWH
+L$ UVWATAUAVAWH
+L$(E3
+l$(E3
+L$@L+
+L$`E3
+L$`H3
+L$0E3
+L$1E3
+L$hE3
+L$HE3
+L$HH3
+L$PE3
+L$pE3
+L$pfA
+L$PH3
+L$xH3
+L+B(L
+LegalCopyright
+LEVL@
+M9?t:A
+MaxPacketSize
+MaxSPMInterval
+McgpL
+MD+CpH
+Microsoft
+Microsoft Corporation
+Microsoft-Windows-Pgm-SQM-Provider
+MmBuildMdlForNonPagedPool
+MmGetSystemRoutineAddress
+MmMapLockedPagesSpecifyCache
+MmProbeAndLockPages
+MmUnlockPages
+MXf9O6s(
+Non-parity
+ntoskrnl.exe
+NtWaitForSingleObject
+ObfDereferenceObject
+ObfReferenceObject
+ObReferenceObjectByHandle
+OPCO0
+OriginalFilename
+p AWH
+p fD;
+p WATAUAVAWH
+P[YKZ
+pA^_^
+pA_A^A]_^][
+PA_A^A]A\_^]
+Parameters
+PARITY
+Parity
+Pgm0E
+Pgm0H
+Pgm2A
+Pgm2H
+Pgm2L
+Pgm3A
+Pgm3H
+Pgm5A
+Pgm5H
+Pgm6A
+Pgm6H
+PgmDH
+PgmRH
+PgmSH
+pReceiver
+ProductName
+ProductVersion
+PRVA\
+PsCreateSystemThread
+pSender
+PsGetCurrentProcess
+PsGetVersion
+R8A;R0
+Receiver
+Reliable Multicast Transport
+RichV
+rmcast.pdb
+rmcast.sys
+RSDSq
+RtlAddAccessAllowedAce
+RtlAppendUnicodeStringToString
+RtlAppendUnicodeToString
+RtlCopyUnicodeString
+RtlCreateAcl
+RtlCreateSecurityDescriptor
+RtlEqualSid
+RtlInitUnicodeString
+RtlIntegerToUnicodeString
+RtlLengthSid
+RtlMapGenericMask
+RtlSetDaclSecurityDescriptor
+s AWH
+s WATAUAVAWH
+S%VWV
+s89{(v
+SeAccessCheck
+SeExports
+Selective
+SELECTIVE
+Sender
+SenderFileLocation
+SeQueryInformationToken
+SES0H
+SES2A
+SES2D
+-SESR
+SESRD
+SESRu
+SESRuJI
+SESRuoH
+SESSA
+SqmDWORDDatapointValue
+SqmDWORDEntry
+SqmID
+SqmSessionGuid
+SqmStreamRow
+SqmStreamRowLength
+SqmStringDatapointValue
+SqmStringEntry
+SqmType
+SqmTypeEntry
+StringFileInfo
+strncmp
+SUCCEEDED
+SUVWATAUAVAWH
+SUVWAUAVAWH
+SVWATAUAVAWH
+T$ E3
+t$ WATAUAVAWH
+t$ WAVAWH
+t$(E3
+t$\E3
+T$`9Ht
+t$8E3
+t$HfA
+T$PE3
+T$QE+
+t(L9c(u
+t,fA;
+t:C9rs:
+t{D;~<u
+t0D8P9u*D
+TDI.SYS
+TDI_DISCONNECT_ABORT
+TdiCopyBufferToMdl
+TdiCopyMdlToBuffer
+TdiDefaultConnectHandler
+TdiDefaultDisconnectHandler
+TdiDefaultErrorHandler
+TdiDefaultRcvDatagramHandler
+TdiDefaultRcvExpeditedHandler
+TdiDefaultReceiveHandler
+TdiDefaultSendPossibleHandler
+TdiDeregisterPnPHandlers
+TdiEnumerateAddresses
+TdiMapUserRequest
+TdiRegisterPnPHandlers
+TEMP`
+TEMPD
+tgH;k
+tPfD9MNu6H
+Translation
+TransportAddress
+tSH9H
+u:S>r
+u2I9Z
+uD:C>r
+UHI9q`t}
+u-L9S(t'
+Unicast
+USVWATAUAVAWH
+UVWATAUAVAWH
+UVWAVAWH
+V uvH
+VarFileInfo
+VS_VERSION_INFO
+VWATAUAVH
+VWATAVAWH
+VWAVH
+WATAUAVAWH
+WATAVH
+WAVAWH
+WEVT_TEMPLATE
+win:Informational
+win:SQM
+win:Stop
+WmiQueryTraceInformation
+WmiTraceMessage
+wttbA
+x ATAVAWH
+x AVAWL
+x AVH
+x AWH
+X?8v\
+x7D:k9s
+xA_A^A]A\_^[]
+XA_A^A]A\_^[]
+xA_A^A]A\_^[]
+ZwClose
+ZwCreateEvent
+ZwCreateFile
+ZwCreateKey
+ZwCreateSection
+ZwDeviceIoControlFile
+ZwMapViewOfSection
+ZwOpenKey
+ZwQueryValueKey
+ZwUnmapViewOfSection

@@ -1,0 +1,82 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\IndirectKmd.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    watchdog.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0006000 Import Address Table
+             1C00061C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          D5 ExEnterCriticalRegionAndAcquireResourceExclusive
+                         135 ExReleaseResourceAndLeaveCriticalRegion
+                         53A KeSetEvent
+                         6AB ObfDereferenceObject
+                          B4 ExAllocatePool2
+                         BCA __C_specific_handler
+                         827 RtlCopyUnicodeString
+                         358 IoGetDevicePropertyData
+                          F7 ExInitializeResourceLite
+                          CE ExDeleteResourceLite
+                         4AF KeInitializeEvent
+                         3AF IoRegisterDeviceInterface
+                         3DA IoSetDeviceInterfacePropertyData
+                         78E PsLookupProcessByProcessId
+                          D6 ExEnterCriticalRegionAndAcquireResourceShared
+                         69B ObReferenceObjectByHandle
+                          DC ExEventObjectType
+                         681 ObCloseHandle
+                         3DB IoSetDeviceInterfaceState
+                         88E RtlFreeUnicodeString
+                          9C ExAcquireFastMutex
+                         12C ExReleaseFastMutex
+                         70D ProbeForWrite
+                         607 MmUserProbeAddress
+                          B8 ExAllocatePoolWithTag
+                         566 KeWaitForSingleObject
+                         729 PsGetCurrentProcess
+                         8CC RtlInitUnicodeString
+                          E5 ExFreePoolWithTag
+                         68A ObDuplicateObject
+                         47B KeDelayExecutionThread
+                         BBE ZwUnloadDriver
+                         B29 ZwLoadDriver
+                         2EE IoBuildDeviceIoControlRequest
+                         356 IoGetDeviceObjectPointer
+                         435 IofCallDriver
+
+    watchdog.sys
+             1C0006128 Import Address Table
+             1C00062E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          67 WdLogSingleEntry3
+                          66 WdLogSingleEntry2
+                          65 WdLogSingleEntry1
+                          62 WdLogNewEntry5_WdTrace
+                          68 WdLogSingleEntry4
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text
+        1000 GFIDS
+        1000 INIT
+        6000 PAGE

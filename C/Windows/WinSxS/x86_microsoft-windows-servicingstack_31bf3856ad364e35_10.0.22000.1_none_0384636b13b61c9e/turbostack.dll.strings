@@ -1,0 +1,4876 @@
+              <counterAttribute name="noDisplay" />
+              <data inType="win:UnicodeString" name="" outType="xs:string" />
+              <pattern type="Registry">HKLM\SYSTEM\CurrentControlSet\Services\* [*]</pattern>
+            </counterAttributes>
+            </objectSet>
+            </struct>
+            <counterAttributes>
+            <data inType="win:UInt32" name="" outType="xs:unsignedInt" />
+            <map message="$(string..Message)" value="0" />
+            <objectSet>
+            <struct count="" name="">
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="" type="xsd:hexBinary" wcm:changeImpact="processRestart" />
+            <xsd:maxInclusive value="" />
+            <xsd:minInclusive value="0" />
+          </counter>
+          </include>
+          </template>
+          </valueMap>
+          </xsd:restriction>
+          </xsd:sequence>
+          <channel chid="" message="$(string.)" name="" symbol="" type="Operational" />
+          <counter defaultScale="0" description="" descriptionID="" detailLevel="standard" id="" name="" nameID="" symbol="" type="perf_counter_large_rawcount" uri="Microsoft.Windows.">
+          <event channel="" keywords="win:EventlogClassic" level="win:Informational" message="$(string.event)" opcode="" symbol="" task="" template="" value="" version="0" />
+          <include>
+          <keyword mask="0x" message="$(string.)" name="" symbol="" />
+          <opcode message="$(string.HTTP_OPCODE_RECEIVE_REQUEST.OpcodeMessage)" name="HTTP_OPCODE_RECEIVE_REQUEST" symbol="HTTP_OPCODE_RECEIVE_REQUEST" value="11" />
+          <securityDescriptor name="" />
+          <securityDescriptorDefinition name="WRP_DIRECTORY_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;0x1301bf;;;SY)(A;IOCIOI;GA;;;SY)(A;;0x1301bf;;;BA)(A;IOCIOI;GA;;;BA)(A;CIOI;GRGX;;;BU)(A;OICIIO;GA;;;CO)(A;CIOI;GRGX;;;S-1-15-2-1)" operationHint="replace" />
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)(A;;GRGX;;;S-1-15-2-1)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" />
+          <securityDescriptorDefinition name="WRP_REGKEY_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CI;GR;;;SY)(A;CI;GR;;;BA)(A;CI;GR;;;BU)(A;CI;GR;;;S-1-15-2-1)" operationHint="replace" />
+          <task message="$(string.HTTP_TASK_REQUEST.TaskMessage)" name="HTTP_TASK_REQUEST" symbol="HTTP_TASK_REQUEST" value="1" />
+          <template tid="">
+          <valueMap name="ValueMap">
+          <xsd:restriction base="xsd:integer">
+          <xsd:sequence>
+        {0} -> {1}
+        </channels>
+        </counterSet>
+        </events>
+        </keywords>
+        </maps>
+        </opcodes>
+        </rules>
+        </securityDescriptorDefinitions>
+        </serviceData>
+        </tasks>
+        </templates>
+        </xsd:complexType>
+        </xsd:simpleType>
+        <assemblyIdentity name="_" version="1.0.0.0" />
+        <channels>
+        <counterSet description="" descriptionID="" guid="{}" instances="multipleAggregate" name="" nameID="" symbol="" uri="Microsoft.Windows.">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        <events>
+        <keywords>
+        <maps>
+        <opcodes>
+        <rules context="System">
+        <securityDescriptorDefinitions>
+        <serviceData name="HTTP" displayName="@%SystemRoot%\system32\drivers\.sys,-1" errorControl="normal" imagePath="system32\drivers\.sys" start="demand" type="kernelDriver" description="">
+        <string id="description" value="$(runtime.system32)" />
+        <string id="displayName" value="" />
+        <supportedComponentIdentity xmlns="urn:schemas-microsoft-com:asm.v3" buildType="release" language="neutral" name="" processorArchitecture="*" publicKeyToken="31bf3856ad364e35" settingsVersionRange="0" versionScope="nonSxS" />
+        <tasks>
+        <templates>
+        <xsd:complexType name="" wcm:description="">
+        <xsd:element name="" type="xsd:boolean" wcm:changeImpact="processRestart" wcm:description="" wcm:displayName="" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\')" wcm:scope="allUsers" wcm:subScope="machineIndependent" />
+        <xsd:simpleType name="" wcm:description="">
+        Inspect {0}
+      </accessControl>
+      </categoryInstance>
+      </dsig:Transforms>
+      </migXml>
+      </provider>
+      </stringTable>
+      </supportedComponent>
+      </xsd:schema>
+      <accessControl>
+      <assemblyIdentity name=".Resources" version="6." processorArchitecture="amd64" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      <categoryInstance subcategory="HTTP">
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#"></dsig:DigestValue>
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+      <elements />
+      <id name="Microsoft.Windows.Categories" version="1.0.0.0" publicKeyToken="365143bb27e7ac8b" typeName="SingleInstanceFilesBootCritical" />
+      <id name="Microsoft.Windows.Categories.Services" version="6." publicKeyToken="31bf3856ad364e35" typeName="Service" />
+      <migXml xmlns="">
+      <provider applicationIdentity=".exe" callback="custom" providerGuid="{}" providerName="HvStats" providerType="userMode" symbol="">
+      <provider guid="{}" messageFileName="%SystemRoot%\system32" name="" resourceFileName="" symbol="">
+      <registryValue name="" valueType="REG_SZ" value="" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_DIR_DEFAULT_SDDL" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <signatureDescriptor DRMLevel="" />
+      <stringTable>
+      <supportedComponent>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="Microsoft-Windows-HTTP" targetNamespace="Microsoft-Windows-HTTP">
+      Prestaging files
+    {0}
+    </asmv2:hash>
+    </categoryMembership>
+    </configurationSchema>
+    </counters>
+    </dependentAssembly>
+    </directory>
+    </events>
+    </machineSpecific>
+    </metadata>
+    </registryKey>
+    </resources>
+    </security>
+    </signatureInfo>
+    </supportedComponents>
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+    <categoryMembership>
+    <configurationSchema>
+    <counters xmlns="http://schemas.microsoft.com/win/2005/12/counters" schemaVersion="2.0">
+    <dependentAssembly dependencyType="prerequisite">
+    <directory destinationPath="$(runtime.system32)\" owner="true">
+    <directory destinationPath="$(runtime.windows)\" owner="true" />
+    <events xmlns="http://schemas.microsoft.com/win/2004/08/events">
+    <machineSpecific xmlns="urn:schemas-microsoft-com:asm.v3">
+    <metadata>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID" owner="false">
+    <resources culture="en-US">
+    <security>
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <signatureInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <supportedComponents>
+    Staging component {0}
+  </configuration>
+  </dependency>
+  </directories>
+  </file>
+  </instrumentation>
+  </localization>
+  </memberships>
+  </migration>
+  </registryKeys>
+  </trustInfo>
+  <assemblyIdentity name="Microsoft-Windows-" version="6." processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <configuration xmlns="urn:schemas-microsoft-com:asm.v3" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+  <dependency discoverable="no" resourceType="Resources">
+  <deployment xmlns="urn:schemas-microsoft-com:asm.v3" />
+  <directories>
+  <feature xmlns="urn:schemas-microsoft-com:asm.v3" />
+  <file name=".dll" destinationPath="$(runtime.system32)" sourceName=".dll" importPath="$(build.nttree)\">
+  <instrumentation>
+  <localization>
+  <memberships>
+  <migration settingsVersion="0">
+  <registryKeys>
+  <rescache xmlns="urn:schemas-microsoft-com:rescache.v1" />
+  <trustInfo>
+  Parent Package {0} Update {1}
+  Staging deployment {0}
+  WimApply Path: {0} {1}
+ 070T0
+ add 
+--- Ending key dump ---
+ http://www.microsoft.com/windows0
+ Item 
+ Microsoft Corporation. All rights reserved.
+ Operating System
+--- Starting key dump ---
+ Windows
+!File->IsXpHashPresent && !File->IsXpHashAlgPresent
+!m_fLocked
+!This program cannot be run in DOS mode.
+!TMeta::IsFlagSet(Flags, ServicingExtractCabFileFlags::IgnoreExtractionFailures) || Disposition
+!XlX@
+"0.0s0
+"060<0m0?1S1
+"0Q0{0
+"1&1,10161:1Q1q1
+"Microsoft Window
+$_^[]
+$`2X`F
+$CI.CatalogHint
+$Microsoft Ireland Operations Limited1
+$Microsoft Ireland Operations Limited1&0$
+%0/0B0H0O0x0
+%016I64x
+%08lx
+%40ws %15d %15d
+%hs [HRESULT = 0x%08x - %hs]
+%hs!%p: 
+%hs(%d) tid(%x) %08X %ws
+%hs(%u)\%hs!%p: 
+%hu.%hu.%hu.%hu:%x
+%I64d
+%I64u
+%I64x
+%Microsoft Windows Production PCA 2011
+%Microsoft Windows Production PCA 20110
+%PhPT
+%s%c%s%c%s%c%s%c%s
+%SYSTEMDRIVE%\Programs\UpdateOS\UpdateOS.wim
+%SYSTEMROOT%
+%SystemRoot%
+%u open registry handles from %wZ.
+%Windir%\Logs\Cbs\FilterList.log
+%ws\%ws
+%ws\CbsPersist_%02d%02d%02d%02d%02d%02d.log
+((HRESULT)0x80004001L)
+((HRESULT)0x8007000EL)
+(~`S@
+(080B0L0V0`0j0
+(0B0L0`0
+(caller: %p) 
+(null)
+(PhPT
+(Rich
+(system)
+(unknown enumerant 
+) failed since one or both parameters are empty or just spaces
+)Microsoft Root Certificate Authority 20100
+*.xml
+*Element = State->m_pAllocator->Allocate<DomElement>()
+*NextAttribute = State->m_pAllocator->Allocate<DomAttribute>()
+*ppObject = State->m_pAllocator->Allocate<Applicable>()
+*ppObject = State->m_pAllocator->Allocate<ApplyTo>()
+*ppObject = State->m_pAllocator->Allocate<AssemblyIdentity>()
+*ppObject = State->m_pAllocator->Allocate<BootUILanguage>()
+*ppObject = State->m_pAllocator->Allocate<CategoryMembership>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackage>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageApplicableComponentId>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageApplicableComponents>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageApplicableComponentUpdateId>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageApplicableComponentUpdates>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageApplicableDriverId>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageApplicableDrivers>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageApplicableDriverUpdateId>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageApplicableDriverUpdates>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageApplicableEquivalent>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageApplicableEquivalentId>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageApplicablePartitions>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageApplicableUpdates>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageApplicableUpdatesParent>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageApplicableUpdatesUpdate>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageCapability>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageCapabilityDependency>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageCustomInfo>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageExtended>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageFallbackLanguages>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageFeature>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageFeatures>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageFiles>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageFlightComponent>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageFlightComponentId>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageInfo>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageLinkInfo>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageLocalizedString>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageLocalizedStrings>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackagePhoneInfo>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackagePhoneSecurityPolicyMarker>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageRecall>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageSelectableComponent>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageSelectableComponentId>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageSelectableComponentUpdate>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageSelectableComponentUpdateId>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageSelectableDisplayAssemblyId>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageSelectableDriver>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageSelectableDriverId>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageSelectableDriverUpdate>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageSelectableDriverUpdateId>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageSelectableNone>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageSelectableUpdate>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageServiceToStopId>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageUpdateCapabilities>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageUpdateCapabilityId>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageUpdateComponent>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageUpdateDriver>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageUpdateDriverExtended>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageUpdatePackage>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageUpdates>()
+*ppObject = State->m_pAllocator->Allocate<CbsPackageUpdatesCustomInfo>()
+*ppObject = State->m_pAllocator->Allocate<CbsRebootRequiredType>()
+*ppObject = State->m_pAllocator->Allocate<CbsSelectableCustomInfo>()
+*ppObject = State->m_pAllocator->Allocate<CiXDelta>()
+*ppObject = State->m_pAllocator->Allocate<CiXDeltaLocation>()
+*ppObject = State->m_pAllocator->Allocate<CiXDocument>()
+*ppObject = State->m_pAllocator->Allocate<CiXFile>()
+*ppObject = State->m_pAllocator->Allocate<CiXFileDelta>()
+*ppObject = State->m_pAllocator->Allocate<CiXFileDeltaBasis>()
+*ppObject = State->m_pAllocator->Allocate<CiXFileDeltaSource>()
+*ppObject = State->m_pAllocator->Allocate<CiXFiles>()
+*ppObject = State->m_pAllocator->Allocate<CiXHash>()
+*ppObject = State->m_pAllocator->Allocate<ContainerRecipe>()
+*ppObject = State->m_pAllocator->Allocate<CopyFileOperation>()
+*ppObject = State->m_pAllocator->Allocate<CreateDirectoryOperation>()
+*ppObject = State->m_pAllocator->Allocate<CreateFileOperation>()
+*ppObject = State->m_pAllocator->Allocate<CreateKeyOperation>()
+*ppObject = State->m_pAllocator->Allocate<DeclareCapability>()
+*ppObject = State->m_pAllocator->Allocate<DeclareSet>()
+*ppObject = State->m_pAllocator->Allocate<DeleteFileOperation>()
+*ppObject = State->m_pAllocator->Allocate<DeleteKeyOperation>()
+*ppObject = State->m_pAllocator->Allocate<DeleteKeyValueOperation>()
+*ppObject = State->m_pAllocator->Allocate<Dependency>()
+*ppObject = State->m_pAllocator->Allocate<DependentAssembly>()
+*ppObject = State->m_pAllocator->Allocate<DependentAssemblyIdentity>()
+*ppObject = State->m_pAllocator->Allocate<Deployment>()
+*ppObject = State->m_pAllocator->Allocate<Description>()
+*ppObject = State->m_pAllocator->Allocate<DigestHash>()
+*ppObject = State->m_pAllocator->Allocate<DigestMethod>()
+*ppObject = State->m_pAllocator->Allocate<DigestValue>()
+*ppObject = State->m_pAllocator->Allocate<DirAttributes>()
+*ppObject = State->m_pAllocator->Allocate<Directories>()
+*ppObject = State->m_pAllocator->Allocate<Directory>()
+*ppObject = State->m_pAllocator->Allocate<DirPath>()
+*ppObject = State->m_pAllocator->Allocate<File>()
+*ppObject = State->m_pAllocator->Allocate<FileAttributes>()
+*ppObject = State->m_pAllocator->Allocate<FilePath>()
+*ppObject = State->m_pAllocator->Allocate<Files>()
+*ppObject = State->m_pAllocator->Allocate<FileSize>()
+*ppObject = State->m_pAllocator->Allocate<ForwardDiffInfo>()
+*ppObject = State->m_pAllocator->Allocate<HardlinkFileOperaion>()
+*ppObject = State->m_pAllocator->Allocate<HashTransforms>()
+*ppObject = State->m_pAllocator->Allocate<Id>()
+*ppObject = State->m_pAllocator->Allocate<ImageVersionString>()
+*ppObject = State->m_pAllocator->Allocate<InstallerAssembly>()
+*ppObject = State->m_pAllocator->Allocate<Keyboard>()
+*ppObject = State->m_pAllocator->Allocate<KeyboardLanguage>()
+*ppObject = State->m_pAllocator->Allocate<Language>()
+*ppObject = State->m_pAllocator->Allocate<Languages>()
+*ppObject = State->m_pAllocator->Allocate<LinkInformation>()
+*ppObject = State->m_pAllocator->Allocate<Memberships>()
+*ppObject = State->m_pAllocator->Allocate<MoveFileOperation>()
+*ppObject = State->m_pAllocator->Allocate<MultiPackageIdRef>()
+*ppObject = State->m_pAllocator->Allocate<MultiPartialAssemblyId>()
+*ppObject = State->m_pAllocator->Allocate<NullDiffInfo>()
+*ppObject = State->m_pAllocator->Allocate<OEMInputDocumentInternal>()
+*ppObject = State->m_pAllocator->Allocate<Parent>()
+*ppObject = State->m_pAllocator->Allocate<ParentPackage>()
+*ppObject = State->m_pAllocator->Allocate<Partition>()
+*ppObject = State->m_pAllocator->Allocate<Path>()
+*ppObject = State->m_pAllocator->Allocate<PoqRoot>()
+*ppObject = State->m_pAllocator->Allocate<Product>()
+*ppObject = State->m_pAllocator->Allocate<RecipeFile>()
+*ppObject = State->m_pAllocator->Allocate<ReleaseType>()
+*ppObject = State->m_pAllocator->Allocate<Resolution>()
+*ppObject = State->m_pAllocator->Allocate<Resolutions>()
+*ppObject = State->m_pAllocator->Allocate<ReverseDiffInfo>()
+*ppObject = State->m_pAllocator->Allocate<SecurityDescriptor>()
+*ppObject = State->m_pAllocator->Allocate<Selectable>()
+*ppObject = State->m_pAllocator->Allocate<ServicesToStop>()
+*ppObject = State->m_pAllocator->Allocate<SetFileInformationOperation>()
+*ppObject = State->m_pAllocator->Allocate<SetKeySecurityOperation>()
+*ppObject = State->m_pAllocator->Allocate<SetKeyValueOperation>()
+*ppObject = State->m_pAllocator->Allocate<SinglePackageId>()
+*ppObject = State->m_pAllocator->Allocate<SinglePackageIdRef>()
+*ppObject = State->m_pAllocator->Allocate<SinglePartialAssemblyId>()
+*ppObject = State->m_pAllocator->Allocate<SourcePath>()
+*ppObject = State->m_pAllocator->Allocate<SourceType>()
+*ppObject = State->m_pAllocator->Allocate<Speech>()
+*ppObject = State->m_pAllocator->Allocate<SpeechLanguage>()
+*ppObject = State->m_pAllocator->Allocate<SupportedLanguages>()
+*ppObject = State->m_pAllocator->Allocate<TargetPath>()
+*ppObject = State->m_pAllocator->Allocate<Transform>()
+*ppObject = State->m_pAllocator->Allocate<Update>()
+*ppObject = State->m_pAllocator->Allocate<UserInterface>()
+*ppObject = State->m_pAllocator->Allocate<UserInterfaceLanguage>()
+*ppObject = State->m_pAllocator->Allocate<WcpComponent>()
+*ppObject = State->m_pAllocator->Allocate<WofDecompressFile>()
+*ppObject = State->m_pAllocator->Allocate<WriteFileOperation>()
+*szFormat
+,Code=
+,U6iZJYUm9dBTuHqyp/QgtL85/yb5WHW9OVaAsVIDwyU=0Z
+.?AV_Generic_error_category@std@@
+.?AV_System_error@std@@
+.?AVbad_alloc@std@@
+.?AVbad_array_new_length@std@@
+.?AVerror_category@std@@
+.?AVexception@std@@
+.?AVlength_error@std@@
+.?AVlogic_error@std@@
+.?AVout_of_range@std@@
+.?AVResultException@wil@@
+.?AVruntime_error@std@@
+.?AVsystem_error@std@@
+.?AVtype_info@@
+.00cfg
+.CRT$XCA
+.CRT$XCC
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIC
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.CRT$XPA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.data
+.data$brc
+.data$r$brc
+.data$rs$brc
+.DEFAULT
+.didat$2
+.didat$3
+.didat$4
+.didat$5
+.didat$6
+.didat$7
+.edata
+.gfids
+.giats
+.idata
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.LOG*
+.manifest
+.metadata
+.rdata
+.rdata$brc
+.rdata$r$brc
+.rdata$sxdata
+.rdata$T$brc
+.rdata$voltmd
+.rdata$zzzdbg
+.rsrc
+.rsrc$01
+.rsrc$02
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.SPh@
+.text
+.text$di
+.text$mn
+.text$x
+.text$yd
+.tls$
+.tls$ZZZ
+.xdata$x
+/1f1~1
+: :$:(:,:0:4:8:D:H:L:T:X:`:d:l:p:x:|:
+: :@:L:l:x:
+: :8:E:
+: :W:d:
+: ;.;G;M;Z;
+: ;w;
+: {0}
+:!:1:A:Q:a:q:
+:!:P:u:~:
+:!:R:
+:":K:s:
+:":R:s:
+:";+;4;B;K;m;t;
+:#:d:o:v:
+:$:):1:9:A:I:
+:$:,:4:@:d:l:t:|:
+:$:,:4:<:D:L:T:\:d:l:x:
+:$:,:4:<:D:L:T:\:h:
+:$:,:4:<:D:L:T:\:h:p:
+:$:,:4:<:D:P:p:|:
+:$:,:4:<:H:h:t:
+:$:,:8:X:d:
+:$:0:P:\:d:
+:$:D:W:
+:$;@;
+:%:@:3;x;
+:%:=:
+:%:3:9:u:{:
+:%:A:H:T:Z:`:q:
+:&:.:6:>:V:
+:&:F:
+:&;];i;t;
+:(:P:W:a:{:
+:):P:5;_;
+:);D;
+:*;0;:;I;O;t;
+:*;a;n;};
+:,:;:c:}:
+:,:6:#;.;n;
+:.:R:]:
+:.;&<G<C=
+:.;8;K;Q;X;w;
+:.;9;v;
+:.;N;W;
+:/:9:L:`:f:
+:/:o:
+:/;6;=;R;
+:':1:H:S:Y:
+:':2:8:y:
+::CoGetMalloc(1, &srpIMalloc)
+::DuplicateHandle(GetCurrentProcess(), Handle, GetCurrentProcess(), &HandleInfo->Handle, 0 , 0 , 0x00000002)
+:-:m:
+::NtClose(m_RootKey)
+::RtlCopyLUnicodeString(SubkeyInfo.Name, Data.Id.VersionedKeyform.GetMutablePointer())
+::RtlCreateEnvironment(fClone, &m_Environment)
+::RtlSetEnvironmentVariable(&m_Environment, &TmpName, &TmpValue)
+::RtlStringCchCopyNW(KeyNameBuffer, KeyNameBufferSize, lusKeyName.Buffer, cchKeyName)
+::WriteFile(FileListFile, Blob.Buffer, static_cast<DWORD>(Blob.Length), nullptr, nullptr )
+:;:@:_:r:
+:;:p:
+:-;K;`;u;
+:';W;
+:@:z:
+:@;S;t;
+:];m;
+:^:|:
+:_;p;T<
+:=;J;
+:0:8:X:s:y:
+:1:;:J:d:
+:1:6:@:a:f:p:
+:1;D;n;
+:2;E;_;
+:3:M:k:|:
+:4:\:c:m:
+:4:<:H:h:t:
+:4:G:
+:6:B:K:Z:b:g:w:
+:7:H:
+:7:W:w:
+:8:m:z:
+:8;J;
+:9;n;
+:A:H:_:p:
+:B:H:f:u;
+:B:O:a:
+:C;N;t;z;
+:D:O:w:
+:D:q:
+:i:s:
+:J:\:
+:J:m:
+:K;a;
+:L:Y:
+:o;{;
+:Q:a:
+:s:}:
+:U;b;t;
+:W:o:
+:W;d;
+; ;(;0;8;T;d;p;x;
+;!;&;0;Q;V;`;
+;!;\;
+;!;1;A;Q;a;q;
+;!<2<R<g<
+;!<Q<
+;";G;
+;"<?<E<J<S<
+;"<6<
+;#;);
+;#;.;p;+<4<
+;#;-;7;A;K;U;
+;#;+;1;v;
+;#<5<H<x<
+;$;,;4;<;D;L;T;\;d;l;t;
+;$;,;4;<;D;L;T;\;h;p;
+;$;,;4;<;D;L;T;`;
+;$;,;4;<;D;P;p;x;
+;$;.;z;
+;$;0;<;H;T;`;l;x;
+;$;E;X;f;y;
+;%;,;8;>;D;U;q;x;
+;%;P;{;
+;%<X<f<t<
+;&<2<
+;&<S<
+;(;H;P;`;
+;(;H;T;t;
+;(<T<
+;(<X<e<
+;(>g>
+;);0;D;L;R;
+;);B;Y;l;
+;);l;
+;);S;#<
+;);W;
+;*;1;
+;*;O;[;s;y;~;
+;*<6<
+;,;;;c;|;
+;,;4;t;
+;,=~#@^&'$%
+;.;q;
+;.;s;
+;.<:<t<}<
+;.<9<r<
+;/;d=
+;;;S;x;
+;';1;E;`;j;~;
+;';1;F;W;l;
+;-;e;
+;';s;
+;?;D;`;r;x;
+;?;O;};
+;?;Y;`;t;|;
+;?<U<
+;@<L<]<->I>
+;]<i<
+;_^[]
+;`;j;
+;|$@tF;t$Dt@;\$Ht:;D$Lt4;L$Pt.
+;+<g<
+;<;_;
+;<;D;P;p;
+;'<1<e<
+;=<E<M<U<
+;0;A;V;}<W>]>x>
+;0uu3
+;1;Y;
+;2<l<
+;3<K<U<]<k<q<
+;3<L<W<w<
+;4;@;`;l;
+;4<O<
+;5;|;
+;5<T<Z<e<{<
+;6;S;`;
+;6<><
+;9;];d;n;
+;9;D;b;
+;B<^<
+;c;|;
+;C;M;q;{;
+;C;p;
+;F<c<
+;G4v2
+;I<S<q<
+;j Xj
+;K;`;
+;K0tP
+;L;W;
+;N<s<
+;t$@tC;|$Dt=;L$Ht7;\$Lt1;D$Pt+
+;t04u
+;v<}<
+;W;e;
+;Y;~;
+;Z;m;
+? ?,?4?<?D?L?T?\?d?l?t?|?
+? ?,?J?U?
+? ?,?L?X?x?
+?"?^?d?
+?"?2?B?R?b?r?
+?"?C?
+?"?G?R?w?
+?$?,?4?<?D?L?T?\?d?l?t?|?
+?$?,?4?<?H?h?p?x?
+?$?<?H?P?t?
+?$?D?P?p?x?
+?%?7?@?L?T?f?
+?&?3?K?h?s?
+?&?J?_?
+?(?0?8?D?d?l?x?
+?(?0?T?d?l?t?|?
+?(?4?<?p?
+?(?4?T?`?
+?(?e?k?
+?)?>?
+?)?Y?f?
+?,?1?7?=?C?N?]?b?h?n?t?
+?,?2?]?p?
+?,?B?
+?,?M?
+?.?]?
+?/?8?C?Z?g?r?
+?/?D?[?
+??$ReplaceVariablesInStringCallthrough@U_LUNICODE_STRING@@@Rtl@Implementation@WCP@Windows@@YGJPAXPBU_LBLOB@@PAU_RTL_SMART_LBLOB_UCSCHAR_WRITING_CONTEXT@@@Z
+???O?
+?'?`?
+?'?`?m?
+??0AIAsimovProvider@COM@Windows@@QAE@XZ
+??0CBackupFileCreator@PrimitiveInstaller@@QAE@XZ
+??0CBaseInstaller@PrimitiveInstaller@@IAE@XZ
+??0CFileInstaller@@QAE@XZ
+??0CGacPrimitiveInstaller@@QAE@XZ
+??0CMigInfoInstaller@@QAE@XZ
+??0CRawInstallMap@InstallMap@@QAE@XZ
+??0CRawStoreLayout@ComponentStore@@QAE@XZ
+??0CRegistryInstaller@@QAE@XZ
+??0CSecurityDescriptorFactory@Rtl@Implementation@WCP@Windows@@QAE@XZ
+??0CXmlCursor@@QAE@XZ
+??1CBackupFileCreator@PrimitiveInstaller@@QAE@XZ
+??1CComponentInformation@COM@Windows@@QAE@XZ
+??1CGacPrimitiveInstaller@@QAE@XZ
+??1CMigInfoInstaller@@QAE@XZ
+??1CPbrInstaller@@QAE@XZ
+??1CQueueExecutor@COM@Windows@@QAE@XZ
+??1CRawInstallMap@InstallMap@@QAE@XZ
+??1CRawStoreLayout@ComponentStore@@QAE@XZ
+??1CRegistryInstaller@@QAE@XZ
+??1CSecurityDescriptorFactory@Rtl@Implementation@WCP@Windows@@QAE@XZ
+??1CSettingsInstaller@@QAE@XZ
+??1CShortcutInstaller@@QAE@XZ
+??1CSysprepInstaller@@QAE@XZ
+??1PrivilegeAcquisition@RtlSystemUtil@@QAE@XZ
+?'?C?]?{?
+?'?I?
+?@?k?
+?@?V?
+?_?q?
+?=?J?
+?>?M?U?b?
+?0?:?l?
+?1?;?N?T?[?q?{?
+?1?6?@?a?f?p?
+?1?8?c?y?
+?2?8?B?P?V?
+?3?{?
+?3?u?
+?7?=?K?_?e?
+?8?S?^?
+?8?Z?
+?9?]?
+?9?A?I?Q?Y?
+?A?L?r?
+?Acquire@PrivilegeAcquisition@RtlSystemUtil@@QAEJABU?$Vector@$$CBJ@Windows@@@Z
+?AcquireInstallerComponentPath@LocalInstallerServices@COM@WCP@Windows@@UAGJKPAUIDefinitionIdentity@@PAPA_WPAK@Z
+?AcquireRequiredResources@CRawStoreLayout@ComponentStore@@QAEJXZ
+?AddCatalogMarkFromTlc@CRawStoreLayout@ComponentStore@@QAEJABU_LUNICODE_STRING@@PAUTlcData@2@@Z
+?AddChange@ExecutionQueueDeriver@AiQueue@@QAEJPBVWcpManifest@@0@Z
+?AddComponentImplication@CRawStoreLayout@ComponentStore@@QAEJABUComponentData@2@PAUTlcData@2@@Z
+?AddInspect@ExecutionQueueDeriver@AiQueue@@QAEJABVWcpManifest@@@Z
+?AddInstallerFailureAnnotation@LocalInstallerServices@COM@WCP@Windows@@UAGJKPA_W@Z
+?AddInstallMarkToFamily@CRawInstallMap@InstallMap@@QAEJPAUMapForFamily@2@ABT_FOUR_PART_VERSION@@@Z
+?AddRef@LocalInstallerServices@COM@WCP@Windows@@UAGKXZ
+?AddRef@LocalTransformerServices@COM@WCP@Windows@@UAGKXZ
+?AddTlcMark@CRawStoreLayout@ComponentStore@@QAEJKABUTlcInstaller@2@PAUTlcData@2@@Z
+?AllocGroup@CMultiThreadExecQ@MTEQ@@QAEJPAV?$AutoNewPtr@VCItemGroupContextBase@MTEQ@@@Windows@@PAV?$AutoNewPtr@VCGroup@MTEQ@@@4@@Z
+?ApplySecurityToObjectWithDefaults@@YGJ_NPAUIRtlSystemObject@Rtl@Windows@@PBU_SECURITY_DESCRIPTOR@@@Z
+?C?k?
+?C?N?s?~?
+?ChooseBitnessFromIdentityAndTarget@MacroReplacement@@YGJKPAUIRtlDefinitionIdentity@Rtl@Identity@Windows@@PAK@Z
+?Close@?$Auto@U_ACL@@@Windows@@QAEXXZ
+?Close@?$Auto@U_SECURITY_DESCRIPTOR@@@Windows@@QAEXXZ
+?Close@?$Auto@U_SID@@@Windows@@QAEXXZ
+?Close@CApplicationAccessor@@QAEXXZ
+?Close@CCatalog@@QAEJXZ
+?Close@CMultiThreadExecQ@MTEQ@@QAEJXZ
+?CmsVerifyFileHashes@Rtl@ManifestParser@Windows@@YGJKABU?$Vector@$$CBUHashInfo@Rtl@ManifestParser@Windows@@@3@ABU_LUNICODE_STRING@@PAUIRtlFile@13@PAUIRtlDefinitionIdentity@1Identity@3@PAK@Z
+?CompareIdentityAttributeValue@Rtl@Identity@Windows@@YGJPBU_LUNICODE_STRING@@0PAH@Z
+?CompareSecurityDescriptorFromObjectAgainstManifest@Rtl@Implementation@WCP@Windows@@YGJKPBU_SECURITY_DESCRIPTOR@@0PA_N@Z
+?CompressManifest@Rtl@Implementation@WCP@Windows@@YGJK_NPBU_LBLOB@@PAUIRtlFile@14@@Z
+?ConvertIn@COM@Windows@@YGJPAUIDefinitionIdentity@@PAPAUIRtlDefinitionIdentity@Rtl@Identity@2@@Z
+?ConvertStringSecurityDescriptor@CSecurityDescriptorFactory@Rtl@Implementation@WCP@Windows@@QBEJKABU_LUNICODE_STRING@@PAV?$Auto@U_SECURITY_DESCRIPTOR@@@5@PAK@Z
+?CopyOutPath@COM@Windows@@YGJPBU_LUNICODE_STRING@@PAPA_W@Z
+?CoTaskMemAlloc@COM@Windows@@YGPAXK@Z
+?CoTaskMemFree@COM@Windows@@YGXPBX@Z
+?Create@CCatalog@@QAEJKKPBU_LBLOB@@PAK@Z
+?CreateAdvInstallerQueueFromXml@AiQueue@@YGJPAUIRtlIdentityAuthority@Rtl@Identity@Windows@@PAUIRtlMicrodom@3Microdom@5@PAV?$Auto@U?$Vector@VExecutionQueueEntry@AiQueue@@@Windows@@@5@@Z
+?CreateSecurityDescriptorFromParts@Rtl@Implementation@WCP@Windows@@YGJKPBU_SID@@0PBU_ACL@@1PAV?$Auto@U_SECURITY_DESCRIPTOR@@@4@@Z
+?D?\?d?
+?DecodeTlcInstallerFromMarkValueAndData@ComponentStore@@YGJABU_LUNICODE_STRING@@ABU_LBLOB@@PAUTlcInstaller@1@PA_N@Z
+?DecomposeSecurityDescriptor@Rtl@Implementation@WCP@Windows@@YGJPBU_SECURITY_DESCRIPTOR@@PAKPAV?$Auto@U_SID@@@4@2PAV?$Auto@U_ACL@@@4@3PAG@Z
+?DecompressManifest@Rtl@Implementation@WCP@Windows@@YGJKPAV?$Auto@U_LBLOB@@@4@PAK@Z
+?DoesManifestContainAIs@ExecutionQueueDeriver@AiQueue@@QAEJABVWcpManifest@@PA_N@Z
+?DoesTargetHaveTestRootCert@@YGJPAUIRtlSystemIsolationLayerPublic@Rtl@Windows@@PA_N@Z
+?E?X?
+?ExecutionQueueToXml@AiQueue@@YGJKABU?$Vector@VExecutionQueueEntry@AiQueue@@@Windows@@PAUIRtlIdentityAuthority@Rtl@Identity@3@PAUIRtlXmlWriter@5Microdom@3@@Z
+?F?a?h?
+?F?f?
+?FileHashAlgorithmToDigest@Rtl@Cms@Windows@@YG?AW4_CMS_HASH_DIGESTMETHOD@23@K@Z
+?Finalize@ExecutionQueueDeriver@AiQueue@@QAEJPAV?$Auto@U?$Vector@VExecutionQueueEntry@AiQueue@@@Windows@@@Windows@@PAK@Z
+?FinalizeChanges@CCoordinator@PrimitiveInstaller@@QAEJXZ
+?FinalizeGroup@CMultiThreadExecQ@MTEQ@@QAEJV?$AutoNewPtr@VCGroup@MTEQ@@@Windows@@@Z
+?FinalizeValue@CComponentInformationTableTraits@COM@Windows@@SGXAAV?$Auto@PAVCComponentInformation@COM@Windows@@@3@@Z
+?FindSubject@CCatalog@@QBEJKPBU_LBLOB@@PA_NPAJ@Z
+?FormatFourPartVersion@Rtl@Implementation@WCP@Windows@@YGJKABT_FOUR_PART_VERSION@@PAE1P6I?AU_RTL_UCSCHAR_ENCODER_RETURN_VALUE@@K11@ZPAPAE@Z
+?FsnpDowncaseChar@@YIKK@Z
+?G?j?
+?GenerateCatalogThumbprint@@YGJPBU_LBLOB@@PAV?$Auto@U_LUNICODE_STRING@@@Windows@@@Z
+?get_IsolationAllocator@LocalInstallerServices@COM@WCP@Windows@@UAGJPAPAUIMalloc@@@Z
+?get_RebootIndicator@LocalInstallerServices@COM@WCP@Windows@@UAGJPAW4RebootIndicators@@@Z
+?get_System@LocalInstallerServices@COM@WCP@Windows@@UAGJPAPAUIRtlSystemIsolationLayerPublic@Rtl@4@@Z
+?get_TargetProcessorArchitecture@LocalInstallerServices@COM@WCP@Windows@@UAGJPAK@Z
+?get_UserProfile@LocalInstallerServices@COM@WCP@Windows@@UAGJPAPAUIRtlUserProfile@Rtl@4@@Z
+?GetComDefinitionIdentity@WcpManifest@@UBEJPAV?$AutoComPtr@UIDefinitionIdentity@@@Windows@@@Z
+?GetComponentAbsolutePath@ComponentStore@@YGJKPAUIRtlIdentityAuthority@Rtl@Identity@Windows@@PAUIRtlDefinitionIdentity@345@PAUIRtlSystemIsolationLayer@35@2ABU_LUNICODE_STRING@@PAV?$Auto@U_LUNICODE_STRING@@@5@@Z
+?GetComponentWinningVersion@CRawInstallMap@InstallMap@@QAEJPAUIRtlDefinitionIdentity@Rtl@Identity@Windows@@PAT_FOUR_PART_VERSION@@PA_N_N@Z
+?GetContext@CGroup@MTEQ@@QAEXPAV?$AutoNewPtr@VCItemGroupContextBase@MTEQ@@@Windows@@@Z
+?GetCurrentDllWin32Path@COM@Windows@@YGJPAXPAV?$Auto@U_LUNICODE_STRING@@@2@@Z
+?GetFileHashes@WcpManifest@@SGJABUFile@WcpManifestParser@@PAV?$CVector@UHashInfo@Rtl@ManifestParser@Windows@@VCCallDisposition@2BUCL@@@BUCL@@PAPAUHashInfo@Rtl@ManifestParser@Windows@@@Z
+?GetFileSystemDefaultSecurity@@YGJKPAV?$Auto@U_SECURITY_DESCRIPTOR@@@Windows@@@Z
+?GetIsolationAllocator@LocalTransformerServices@COM@WCP@Windows@@UAGJPAPAUIMalloc@@@Z
+?GetNextCompletedItemIfAvailable@CGroup@MTEQ@@QAEJPAV?$AutoNewPtr@VCItemExecutorBase@MTEQ@@@Windows@@@Z
+?GetParameter@LocalTransformerServices@COM@WCP@Windows@@UAGJKPB_WPAPA_WPAK@Z
+?GetRollbackSystem@LocalTransformerServices@COM@WCP@Windows@@UAGJPAPAUIRtlSystemIsolationLayerPublic@Rtl@4@@Z
+?GetSignerPublicKeyToken@CCatalog@@QAEJPAUIRtlSystemIsolationLayer@Rtl@Windows@@PAU_LBLOB@@@Z
+?GetSystem@LocalTransformerServices@COM@WCP@Windows@@UAGJPAPAUIRtlSystemIsolationLayerPublic@Rtl@4@@Z
+?GetUserProfile@LocalTransformerServices@COM@WCP@Windows@@UAGJPAPAUIRtlUserProfile@Rtl@4@@Z
+?GetUTF8FileWriterStream@Rtl@Windows@@YGJPAUIRtlFile@12@PAV?$Auto@PAUIRtlWOFOUCSStream@Rtl@Windows@@@2@@Z
+?GetWin32PathOfSiblingFile@COM@Windows@@YGJPAXPB_WPAV?$Auto@U_LUNICODE_STRING@@@2@@Z
+?H?|?
+?H?i?
+?HasImpactfulOperation@ExecutionQueueDeriver@AiQueue@@QBE_NXZ
+?Hydrate@DeltaHydrator@@YGJPAUIRtlFile@Rtl@Windows@@PAUDeltaFile@1@100@Z
+?HydrateNull@DeltaHydrator@@YGJPAUIRtlFile@Rtl@Windows@@0@Z
+?InitComponentData@VersionedIndexHelper@ComponentStore@@QAEJ_NPAUIRtlDefinitionIdentity@Rtl@Identity@Windows@@PAUComponentData@2@PA_N@Z
+?Initialize@CApplicationAccessor@@QAEJPAUIRtlDefinitionAppId@Rtl@AppId@Windows@@PAUIRtlAppIdAuthority@345@@Z
+?Initialize@CComponentAccessor@@QAEJPAUIRtlDefinitionIdentity@Rtl@Identity@Windows@@PAUIRtlIdentityAuthority@345@@Z
+?Initialize@CCoordinator@PrimitiveInstaller@@QAEJKKKPAUIRtlPrimitiveInstallerSupport@Rtl@PrimitiveInstallers@Windows@@PAUIRtlPrimitiveInstallerRepairCallback@456@PAUIRtlSystemIsolationLayer@46@@Z
+?Initialize@CMultiThreadExecQ@MTEQ@@QAEJ_NKK@Z
+?Initialize@CQueueExecutor@COM@Windows@@QAEJKPB_WPAVIComponentStoreHelper@23@PAUIRtlSystemIsolationLayer@Rtl@3@PAVCTransactionContent@23@@Z
+?Initialize@CRawInstallMap@InstallMap@@QAEJ_NPAUIRtlIdentityAuthority@Rtl@Identity@Windows@@PAUIRtlKey@46@PAUIRtlSystemIsolationLayer@46@@Z
+?Initialize@CXmlCursor@@QAEJPAXK@Z
+?Initialize@ExecutionQueueDeriver@AiQueue@@QAEJKKK_KPAUIRtlSystemIsolationLayer@Rtl@Windows@@1PBV?$CVector@UTransformsChangeQueueEntry@AiQueue@@VCCallDisposition@Rtl@BUCL@@@BUCL@@@Z
+?Initialize@VersionedIndexHelper@ComponentStore@@QAEJPAUIRtlKey@Rtl@Windows@@_NPAVIStoreLayoutHelper@2@PAUIRtlIdentityAuthority@4Identity@5@@Z
+?InitializeDeltaCompressor@Rtl@Windows@@YGJPAX@Z
+?InitializeStoreContext@CRawStoreLayout@ComponentStore@@QAEJKPAUIRtlIdentityAuthority@Rtl@Identity@Windows@@PAUIRtlAppIdAuthority@4AppId@6@PAUIRtlSystemIsolationLayer@46@2PAUIRtlKey@46@3AAVCRawInstallMap@InstallMap@@PAUIRtlDirectory@46@5@Z
+?InitializeTlcCanonicalData@CRawStoreLayout@ComponentStore@@QAEJABVCApplicationAccessor@@PAUTlcData@2@PA_N@Z
+?IsAnyMidgroundOrAIPresent@WcpManifest@@QBEJPA_N@Z
+?IsComponentFileDeltaOrLZMSCompressed@CRawStoreLayout@ComponentStore@@QAEJABUComponentData@2@ABU_LUNICODE_STRING@@PA_N@Z
+?IsComponentFileStaged@CRawStoreLayout@ComponentStore@@SGJKABUComponentData@2@ABU_LUNICODE_STRING@@PA_N@Z
+?IsMobileStore@LocalInstallerServices@COM@WCP@Windows@@UAG_NXZ
+?IsPhysicallyOffline@LocalInstallerServices@COM@WCP@Windows@@UAG_NXZ
+?IsSafeMode@LocalInstallerServices@COM@WCP@Windows@@UAGJPA_N@Z
+?IsSkuAssembly@LocalInstallerServices@COM@WCP@Windows@@UAG_NXZ
+?IsStateSeparated@LocalInstallerServices@COM@WCP@Windows@@UAG_NXZ
+?LogAiMessage@LocalInstallerServices@COM@WCP@Windows@@UAGXW4LogAiMessageFlags@ICSIMetadataInstallerServices@@W4LogLevel@6@PAU_RTL_TRACING_FACILITY@Rtl@34@QB_W@Z
+?LogAiMessageA@LocalInstallerServices@COM@WCP@Windows@@UAGXW4LogAiMessageFlags@ICSIMetadataInstallerServices@@W4LogLevel@6@PAU_RTL_TRACING_FACILITY@Rtl@34@QBD@Z
+?LookupStringReplacement@MacroReplacement@@YGJKKABU_LUNICODE_STRING@@PAUIRtlSystemIsolationLayer@Rtl@Windows@@PAXPAUIRtlDefinitionIdentity@4Identity@5@PAV?$Auto@U_LUNICODE_STRING@@@5@PAK@Z
+?MakeMarkValueName@ComponentStore@@YGJ_WABU_GUID@@ABU_LUNICODE_STRING@@PAV?$Auto@U_LUNICODE_STRING@@@Windows@@@Z
+?MakeMarkValueValue@ComponentStore@@YGJABU_LUNICODE_STRING@@0PAV?$Auto@U_LBLOB@@@Windows@@@Z
+?ManuallyMarkComponentStaged@CRawStoreLayout@ComponentStore@@QAEJABVCComponentAccessor@@PBU_LBLOB@@@Z
+?MarkServicingStackCorruptHelper@LocalInstallerServices@COM@WCP@Windows@@UAGJXZ
+?MaybeGetCompletedGroup@CMultiThreadExecQ@MTEQ@@QAEJ_NPAV?$AutoNewPtr@VCGroup@MTEQ@@@Windows@@PAK@Z
+?Next@CXmlCursor@@QAEJXZ
+?OpenComponentDerivedData@VersionedIndexHelper@ComponentStore@@QAEJ_NPBU_LUNICODE_STRING@@1PAUComponentData@2@PA_N@Z
+?OpenFamilyMap@CRawInstallMap@InstallMap@@QAEJ_NPAUIRtlDefinitionIdentity@Rtl@Identity@Windows@@PAUMapForFamily@2@PA_N@Z
+?ParseBase16String@Rtl@Implementation@WCP@Windows@@YGJKPBE0P6I?AU_RTL_UCSCHAR_DECODER_RETURN_VALUE@@00@ZPAU_LBLOB@@PA_N@Z
+?ParseFromBlob@WcpManifest@@QAEJABU_LBLOB@@PAVStopWatch@Rtl@Windows@@@Z
+?ParseFromBlob@WcpManifest@@QAEJW4ParseDocumentFlags@XmlParserGenerator@@ABU_LBLOB@@PAVStopWatch@Rtl@Windows@@@Z
+?ParseProcessorArchitecture@Rtl@Identity@Windows@@YGJABU_LUNICODE_STRING@@PAVPSEUDO_ARCH@123@PA_N@Z
+?PhPT
+?PoqWasExecutedInline@LocalInstallerServices@COM@WCP@Windows@@UAG_NXZ
+?ProcessChange@CCoordinator@PrimitiveInstaller@@QAEJABUComponentChange@2@@Z
+?put_RebootIndicator@LocalInstallerServices@COM@WCP@Windows@@UAGJW4RebootIndicators@@@Z
+?Q?b?o?
+?Q?d?
+?QueryComponentFlag@CRawStoreLayout@ComponentStore@@SGJABUComponentData@2@PA_NPAK@Z
+?QueryConfigurationOption@CRawStoreLayout@ComponentStore@@QBEJABU_GUID@@_NPA_N@Z
+?QueryInterface@LocalInstallerServices@COM@WCP@Windows@@UAGJABU_GUID@@PAPAX@Z
+?QueryInterface@LocalTransformerServices@COM@WCP@Windows@@UAGJABU_GUID@@PAPAX@Z
+?QuerySingleResourceOwnershipConfiguration@LocalInstallerServices@COM@WCP@Windows@@UAGJPA_N@Z
+?QuerySmiHiveUpdatesConfiguration@LocalInstallerServices@COM@WCP@Windows@@UAGJPAK@Z
+?QueryUnchangedFileVersions@VersionedIndexHelper@ComponentStore@@QAEJ_N0PAUIRtlDefinitionIdentity@Rtl@Identity@Windows@@ABU_LUNICODE_STRING@@ABU_LBLOB@@PAV?$CVector@T_FOUR_PART_VERSION@@VCCallDisposition@Rtl@BUCL@@@BUCL@@PA_N@Z
+?QueueItemForGroup@CMultiThreadExecQ@MTEQ@@QAEJPAVCGroup@2@PAV?$AutoNewPtr@VCItemExecutorBase@MTEQ@@@Windows@@@Z
+?ReadKeyValue@ComponentStore@@YGJPAUIRtlKey@Rtl@Windows@@PBU_LUNICODE_STRING@@PAV?$Auto@U_LBLOB@@@4@PAPBU_KEY_VALUE_PARTIAL_INFORMATION@@PA_N@Z
+?RedirectWowPath@LocalInstallerServices@COM@WCP@Windows@@UAGJW4RedirectWowPathFlags@ICSIMetadataInstallerServices@@PAUIDefinitionIdentity@@PB_WPAPA_W@Z
+?Release@LocalInstallerServices@COM@WCP@Windows@@UAGKXZ
+?Release@LocalTransformerServices@COM@WCP@Windows@@UAGKXZ
+?RemoveComponentImplication@CRawStoreLayout@ComponentStore@@QAEJABUComponentData@2@PAUTlcData@2@@Z
+?RemoveInstallMarkFromFamily@CRawInstallMap@InstallMap@@QAEJPAUMapForFamily@2@ABT_FOUR_PART_VERSION@@@Z
+?RemoveTlcMark@CRawStoreLayout@ComponentStore@@QAEJKABUTlcInstaller@2@PAUTlcData@2@@Z
+?ReplaceMacros@LocalInstallerServices@COM@WCP@Windows@@UAGJKPB_WPAPA_WPAUIDefinitionIdentity@@@Z
+?ReplaceMacros@LocalTransformerServices@COM@WCP@Windows@@UAGJKPB_WPAPA_WK@Z
+?ReplaceSystemPathStringWithDefaultMacro@Rtl@ComponentMacroReplacement@@YGJW4ReplaceSystemPathStringWithDefaultMacroFlags@12@ABU_LUNICODE_STRING@@PAV?$Auto@U_LUNICODE_STRING@@@Windows@@PAW4ReplaceSystemPathStringWithDefaultMacroDisposition@12@@Z
+?ReplaceVariablesInString@Rtl@Implementation@WCP@Windows@@YGJPBU_LBLOB@@P6I?AU_RTL_UCSCHAR_DECODER_RETURN_VALUE@@PBE1@ZPAXP6GJ30PAU_RTL_SMART_LBLOB_UCSCHAR_WRITING_CONTEXT@@@ZP6IJKPAU_RTL_SMART_LBLOB_WRITING_CONTEXT@@@ZP6IJQBKK6@ZPAU5@@Z
+?ResolvePendingPhases@COM@Windows@@YGJKPAVCQueueExecutor@12@PA_N@Z
+?RtlRunPrimitiveOperationsInXmlAgainstExecutor@@YGJW4RtlRunPrimitivesFlags@@KPBU_LBLOB@@ABU?$Vector@QBU_UNICODE_STRING@@@Windows@@P6GJ0KP6GXPAXPAT_PRIMITIVE_OPERATION_UNION_VALUES@@PAU_PRIMITIVE_OPERATION@@PAE@ZP6GX345@ZP6GJPBU_UNICODE_STRING@@3@Z33PBU_POQ_PROGRESS_INFORMATION@@PAU_POQ_CHECKPOINT_INFORMATION@@PAU_POQ_FAILURE_INFORMATION@@@Z3P6GJ93@ZPBU8@PAU9@PAU_POQ_FAILURE_INFORMATION@@PAW4RtlRunPrimitivesDisposition@@@Z
+?RtlRunPrimitiveOperationsInXmlAgainstSil@@YGJW4RtlRunPrimitivesFlags@@KPAUIRtlSystemIsolationLayer@Rtl@Windows@@PBU_LBLOB@@ABU?$Vector@QBU_UNICODE_STRING@@@4@P6GJPBU_UNICODE_STRING@@PAX@ZPBU_POQ_PROGRESS_INFORMATION@@PAU_POQ_CHECKPOINT_INFORMATION@@PAU_POQ_FAILURE_INFORMATION@@PAW4RtlRunPrimitivesDisposition@@@Z
+?RtlTraceFormat@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBUIRtlSystemIsolationLayerWithPOQ@13@@Z
+?RtlTraceFormat_IRtlBaseIdentity@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+?RtlTraceFormat_IRtlDefinitionAppId@Rtl@WCP@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+?RtlWcpCreateMicrodomFromXmlBlob@Rtl@Implementation@WCP@Windows@@YGJPBU_LBLOB@@PAUIParseErrorCallback@1Microdom@4@PAV?$Auto@PAUIRtlMicrodom@Rtl@Microdom@Windows@@@4@@Z
+?RtlWcpParseManifestFromXml@Rtl@Implementation@WCP@Windows@@YGJKPBU_LBLOB@@PAUIParseErrorCallback@1Microdom@4@PAUIRtlManifestParseErrorCallback@1ManifestParser@4@PAV?$Auto@PAVIRtlCdf@Rtl@Cdf@Windows@@@4@@Z
+?S?v?
+?SetComponentFlag@CRawStoreLayout@ComponentStore@@QAEJ_NKABUComponentData@2@@Z
+?ShouldRunAIs@ExecutionQueueDeriver@AiQueue@@QAEJPAUIRtlDefinitionIdentity@Rtl@Identity@Windows@@PA_N@Z
+?SilCreateDirectories@Rtl@Windows@@YGJPAUIRtlSystemIsolationLayerPublic@12@ABU_LUNICODE_STRING@@@Z
+?SilCreateKeys@Rtl@Windows@@YGJPAUIRtlSystemIsolationLayerPublic@12@ABU_LUNICODE_STRING@@@Z
+?SilDoesFileExist@Rtl@Windows@@YGJPAUIRtlSystemIsolationLayerPublic@12@PAUIRtlDirectory@12@ABU_LUNICODE_STRING@@PA_N@Z
+?SilFindExistingPath@Rtl@Windows@@YGJPAUIRtlSystemIsolationLayerPublic@12@ABU_LUNICODE_STRING@@PAU4@PAV?$Auto@PAUIRtlDirectory@Rtl@Windows@@@2@@Z
+?SilGetRegistryDWORD@Rtl@Windows@@YGJKPAUIRtlKey@12@ABU_LUNICODE_STRING@@PAK2@Z
+?SilGetRegistryDWORD@Rtl@Windows@@YGJKPAUIRtlSystemIsolationLayerPublic@12@ABU_LUNICODE_STRING@@1PAK2@Z
+?SilGetRegistryString@Rtl@Windows@@YGJKPAUIRtlKey@12@ABU_LUNICODE_STRING@@PAV?$Auto@U_LUNICODE_STRING@@@2@PAK@Z
+?SilGetRegistryString@Rtl@Windows@@YGJKPAUIRtlSystemIsolationLayerPublic@12@ABU_LUNICODE_STRING@@1PAV?$Auto@U_LUNICODE_STRING@@@2@PAK@Z
+?SilSetRegistryDWORD@Rtl@Windows@@YGJPAUIRtlSystemIsolationLayerPublic@12@ABU_LUNICODE_STRING@@1K@Z
+?T?a?
+?T?g?
+?TraceChangeList@Rtl@ComponentStore@Windows@@YIXPAUIRtlFormattedOutputStream@13@PBX@Z
+?TryGetRollbackStorageDirectory@LocalTransformerServices@COM@WCP@Windows@@UAGJKPAPAUIRtlDirectory@Rtl@4@@Z
+?TryGetRollbackStorageKey@LocalTransformerServices@COM@WCP@Windows@@UAGJKPAPAUIRtlKey@Rtl@4@@Z
+?VerifyAdvancedInstaller@LocalInstallerServices@COM@WCP@Windows@@UAGJPB_W00PAK@Z
+?VerifyCertChainRoot@CCatalog@@QAEJKPAK@Z
+?VerifyFileAgainstCatalog@Rtl@ComponentStore@Windows@@YGJABVCCatalog@@ABU_LUNICODE_STRING@@PBUIRtlDefinitionIdentity@1Identity@3@ABU_LBLOB@@3PAW4VerifyFileAgainstCatalogDisposition@123@@Z
+?VerifySigner@CCatalog@@QAEJPAUIRtlSystemIsolationLayer@Rtl@Windows@@@Z
+?VirtualPathToPhysical@LocalInstallerServices@COM@WCP@Windows@@UAGJKPB_WPAPA_W@Z
+@.didat
+@.reloc
+@;D$$
+@_^[]
+[%hs(%hs)]
+[%hs]
+\??\C:\
+\??\ExtSandbox\
+\??\ExtSandbox\Logs\
+\??\extstorage
+\??\ExtStorage
+\??\ExtStorage\
+\??\ExtStorage\SystemRoot\
+\??\M:
+\??\M:\
+\\?\UNC\
+\\?\volume{
+\boot
+\CBS.log
+\CbsPersist_*.*
+\ControlSet001\
+\efi\Microsoft\boot
+\efi\Microsoft\recovery\BCD
+\ProvisionalMetadata\CombinedPending.xml
+\ProvisionalMetadata\Files\
+\ProvisionalMetadata\NewBindMappingRemovals.bin
+\ProvisionalMetadata\NewBindMappingRemovals.txt
+\ProvisionalMetadata\NewBindMappings.bin
+\ProvisionalMetadata\NewBindMappings.txt
+\ProvisionalMetadata\NewFilePending.xml
+\ProvisionalMetadata\NewPersistedBindMappings.bin
+\ProvisionalMetadata\NewPersistedBindMappings.txt
+\ProvisionalMetadata\NewPersistedRegistryPending.xml
+\ProvisionalMetadata\NewRegistryPending.xml
+\ProvisionalMetadata\PersistedBindMappings.txt
+\ProvisionalMetadata\PersistedRegistryPending.xml
+\ProvisionalMetadata\TempDir\
+\Registry\Machine\
+\Registry\Machine\COMPONENTS
+\registry\machine\components
+\Registry\Machine\COMPONENTS\
+\Registry\Machine\Components\
+\Registry\Machine\COMPONENTS\DerivedData\Components\
+\Registry\Machine\COMPONENTS\DerivedData\VersionedIndex\
+\Registry\Machine\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib
+\Registry\Machine\SOFTWARE\Microsoft\Windows NT\Currentversion\Vail
+\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing
+\Registry\Machine\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\CapabilityIndex\
+\Registry\Machine\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\PackageIndex\
+\Registry\Machine\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\Packages\
+\Registry\Machine\Software\Microsoft\Windows\CurrentVersion\SideBySide\
+\Registry\Machine\Software\Microsoft\Windows\CurrentVersion\SideBySide\Configuration
+\Registry\Machine\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide\Tracing
+\Registry\Machine\System\CurrentControlSet\
+\Registry\User\
+\systemroot
+\SystemRoot\
+\SystemRoot\ImageUpdate\OEMInput.xml
+\SystemRoot\Servicing\Packages\
+\SystemRoot\System32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\
+\SystemRoot\WinSxS\
+\SystemRoot\WinSxS\Catalogs\
+\SystemRoot\WinSxS\Fusion
+\SystemRoot\WinSxS\InstallTemp
+\SystemRoot\WinSxS\Manifests\
+\SystemRoot\WinSxS\Temp
+\SystemRoot\WinSxS\Temp\
+\SystemRoot\WinSxS\Temp\PendingDeletes
+\Users\ContainerAdministrator\NTUSER.DAT
+\Users\ContainerUser\NTUSER.DAT
+\Users\Default
+\Windows\System32\config
+\Windows\System32\config\BBI
+\Windows\System32\config\BCD-Template
+\Windows\System32\config\ELAM
+\Windows\System32\config\SOFTWARE
+^j@SW
+_^[Y]
+__current_exception
+__current_exception_context
+__CxxFrameHandler3
+__rv.NewCursorValue != 0
+__rv.UcsCharacter != (0xffffffff)
+__tempE
+__tempErr
+_CxxThrowException
+_except_handler4_common
+_FLAGS
+_initterm
+_initterm_e
+_o___std_exception_copy
+_o___std_exception_destroy
+_o___std_type_info_destroy_list
+_o___stdio_common_vsnprintf_s
+_o___stdio_common_vsprintf
+_o___stdio_common_vswprintf
+_o__beginthreadex
+_o__cexit
+_o__configure_narrow_argv
+_o__crt_atexit
+_o__errno
+_o__execute_onexit_table
+_o__initialize_narrow_environment
+_o__initialize_onexit_table
+_o__invalid_parameter_noinfo
+_o__invalid_parameter_noinfo_noreturn
+_o__purecall
+_o__register_onexit_function
+_o__seh_filter_dll
+_o__strnicmp
+_o__wcsicmp
+_o__wcsnicmp
+_o__wsplitpath_s
+_o_free
+_o_isdigit
+_o_malloc
+_o_terminate
+_o_tolower
+_o_wcstoul
+_RtlGetPendingXmlVersion@8
+`.data
+{*}.TM*
+{bf1a281b-ad7b-4476-ac95-f47682990ce7}
+{fail} 
+|a|t@
+|hK,_
+}onecore\base\servicing\turbostack\lib\turbostackutil.cpp
+~0.0.0.0
+~p_^]
+< <,<0<@<D<T<X<`<p<|<
+< <;<
+< <'<.<5<B<_<y<~<
+< <<<L<X<|<
+< <A<F<P<q<v<
+<!<)<1<9<f<k<s<{<
+<!<'</<=<C<
+<!=Q=t=
+<"<(<9<R<Y<e<k<q<
+<"=J=y=
+<#<)</<5<L<v<
+<#<=<Q<
+<#<1<7<R=
+<$<,<4<<<D<L<T<\<d<l<t<|<
+<$<,<8<X<`<h<p<x<
+<$<4<@<H<h<p<x<
+<$<D<P<p<x<
+<$=0=P=x=
+<%<-<N<i<w<
+<%<3<<<g<
+<%=b=
+<&<.<6<N<
+<&<-<Q<y<
+<&=4=C=h=
+<(<?<O<V<
+<(<4<T<\<h<
+<(<H<P<X<`<x<
+<)<D<N<b<}<
+<)<F<P<V<\<a<k<
+<)<Q<[<
+<*=l=
+<,<4<<<D<P<p<x<
+<,=B=O=
+<.=Z=
+</<><
+</assembly>
+<;<i<
+<;<o<
+<;=e=
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<@=L=X=
+<]?a?e?i?m?q?u?y?
+<]<d<{<
+<`<r<
+<+<t<
+<+=<=
+<+=q=x=
+<<<`<g<q<
+<-<<<a<
+<<<F<T<~<?=m=
+<<=J=_=i=
+<'<3<?<K<W<r<~<
+<'<J<m<
+<-<L<T<g<o<
+<'<M<b<
+<-<q<
+<=<X<
+<==I=
+<==J=
+<><O<`<o<
+<><O<v<
+<'>n>
+<0@0H0P0h0
+<0<E<
+<0=6=
+<0B0L0[0a0
+<1<:<Q<Z<q<
+<1=S=t=
+<2=t=
+<4<;<H<V<\<
+<4<b<
+<5<L<\<}<
+<6=D=
+<7=?=M=e=l=z=
+<7=m=
+<8<}=
+<8<E<i<
+<8<H<T<\<|<
+<8<Y<s<
+<9<u<
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" description="Deployment" displayName="Deployment" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+<B<u<
+<b<v<
+<C<J<T<n<
+<D<l<
+<D=~=
+<E<|<
+<F<W<l<
+<F=m=
+<H=\=b=h=r=|=
+<I<a<k<y<
+<J=[={=
+<m>s>
+<p\uo
+<P<c<
+<P=W=
+<R=Y=o=~=
+<T<~<
+<V<b<
+<v=x>
+<w<~<
+<W<d<
+<W<n<u<K=i=t=
+= =@=H=T=t=|=
+= ='=<=b=
+= =i=s=
+= >c>
+=!=*=@=+><>~>
+=!=?=f=
+=!=+=5=?=I=S=
+=!='=1=@=F=
+=!='=v=
+=!=6=
+=!=F=e=
+=!>2>Q>^>x>
+="='=1=N=X=^=d=i=s=
+="=7=C=R=b=r=
+="=D=L=S=\=
+=">u>
+=#===n=t=}=
+=#=s=
+=#>A>G>Q>`>f>
+=#>O>U>_>n>t>
+=$=,=4=<=D=L=T=\=d=l=t=
+=$=,=4=<=D=L=T=\=d=l=t=|=
+=$=,=4=<=H=l=t=|=
+=$=,=s=
+=$=+=8=F=L=
+=$=0=P=\=|=
+=$=b=|=
+=$=X=d=
+=$>5>l>
+=&>q>}>
+=(=;=A=H=d=
+=(===T=
+=(=2=F=a=k=
+=(=N=k=~=
+=(>q>
+=(>s>
+=(>S>e>x>
+=(>X>
+=)=<=B=I=e=
+=)>>>
+=)>7>K>X>j>
+=*=A=d=
+=*=R=Y=c=}=
+=*>7>
+=,=?=V=q=
+=/=>=R=Y=_=o=v=|=
+=/>9>
+=;=Y=l=
+=?=L=
+=?=U=}=
+=@>F>w>
+=[?a?
+=]=g=
+=<=D=L=T=d=l=t=|=
+=<=L=T=\=d=l=t=
+='=4>c>
+=->P>
+=0v0}0
+=1=6=@=a=f=p=
+=2=6=<=@=F=J=b=f=
+=3=c=z=
+=3=O=f=
+=4=\=
+=4=<=X=h=t=|=
+=6>?>
+=7=f=
+=7=g=r=
+=7>U>b>
+=8=E=[=n=
+=8>D>}>
+=9=Q=z=
+=9=S=
+=C=}=
+=D>P>\>
+=E=q=
+=G=O=W=
+=H>U>s>
+=L=T=\=l=x=
+=M=S=q=~>
+=m=z=
+=s>}>
+=T=^={=
+=T=g=
+=U>s>
+=VhPT
+> ?;?E?X?l?r?
+> >&>,>2>B>G>M>S>Y>i>n>t>z>
+> >(>\>l>x>
+> >->V>_>k>x>
+>!?0?r?
+>!?2?Z?a?w?
+>!>7>B>
+>"?\?j?q?
+>">2>B>R>b>r>
+>#><>W>w>
+>#>->7>i>q>
+>#>K>V>~>
+>$?K?u?
+>$>,>`>p>|>
+>$>,>4><>D>L>T>\>d>l>
+>$>,>4><>D>L>T>\>d>l>t>|>
+>$>,>4><>D>L>T>\>d>l>x>
+>$>,>4><>L>X>x>
+>$>4>
+>%>7>@>L>T>c>
+>%>J>]>
+>%>M>S>f>
+>&?y?
+>&>{>
+>&>0>9>C>L>V>h>
+>&>r>*?]?
+>(>,>4>@>D>L>P>X>\>d>h>p>t>|>
+>(>?>
+>(>=>}>
+>(>8>\>d>l>t>|>
+>)?n?
+>)?S?
+>)>2>]>
+>)>J>S>]>g>s>
+>*?J?|?
+>.?d?
+>.?v?
+>.>r>}>
+>.>X>d>
+>/>^>
+>:?[?
+>:?B?{?
+>:>i>
+>:>m>
+>;?j?
+>;?U?[?f?t?z?
+>;>i>w>
+>;>J?v?
+>?>J>r>}>
+>@?G?M?Z?c?
+>@?k?
+>@>c>
+>@>F>d>s?
+>[>w>}>
+>_>i>|>
+>+?<?\?q?
+>=?m?s?
+>=?w?
+>'>@>
+>->2>8>>>D>T>Y>_>e>k>{>
+>->8>^>
+>->8>F>
+>0?k?
+>0?L?k?
+>0H0Y0a0w0
+>1><>K>W>c>v>
+>2>.?e?}?
+>3>G>
+>4>@>H>h>p>
+>5?;?Y?
+>8>@>H>P>`>
+>8>j>
+>A>P>
+>A>Y>q>
+>B?u?
+>B>K>U>
+>C?|?
+>C?f?
+>D?[?
+>F?P?c?i?p?
+>F>L>r>
+>G>u>
+>H?i?
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+>K?s?
+>K>o>
+>K>R>
+>P>p>P?a?
+>S>f>
+>t>D?
+>T>t>
+>W>t>~>
+0 0(00080@0H0P0\0|0
+0 0(0H0P0X0`0|0
+0 0,080D0P0\0h0t0
+0 0@0L0l0t0|0
+0 0'0<0J0
+0 0A0_0
+0 0N0Y0
+0!0&0,02080C0R0W0]0c0i0t0}0
+0!0&000Q0V0`0
+0!0U0~0
+0"1.1@1d1p1
+0"1r1
+0#0'0+0/030I0
+0#0J0[0
+0#0K0R0\0v0
+0$0,040<0D0L0T0\0d0l0t0|0
+0$0,040<0D0L0T0\0d0p0
+0$0,040<0D0L0X0x0
+0$0;0^0
+0$000X0`0h0p0x0
+0$050
+0$1.1J1
+0%060E0
+0%1f1
+0&0;0L0a0v0
+0&0a0
+0&0M0
+0&0p0
+0&1.161>1F1t1
+0&1`1
+0(0.0s0
+0(1j1
+0)040\0g0
+0)1h1
+0*080C0^0b0f0j0n0r0v0z0~0
+0*0L0S0a0
+0,040<0\0|0
+0,0F0K0S0[0c0k0
+0,141<1D1L1T1\1d1l1t1|1
+0,191K1f1
+0,1s1
+0.0|0
+0.0B0f0|0
+0.0S0
+0/0<0c0
+0/090?0J0
+0:0j0
+0:0K0
+0;0A0^0i1
+0;1I1^1s1
+0;1Y1f1v1
+0?1I1U1e1
+0@0Q0
+0@1m1
+0+0?0y0
+0+030S0
+0+050D0N0]0g0
+0+1@1{1
+0+1{1
+0+1C1J1W1e1k1
+0+1G1M1W1e1k1
+0<1:2r2
+0=0P0
+000<0D0x0
+0000000000000000000000000000000000000000000000000000000000000000
+0-1M1^1
+030m0
+040?0W0
+040904B0
+041<1D1L1X1
+051q1
+070d0
+080D0d0p0
+090K0w0
+090V0u0z0
+0a1h1q1x1
+0B1\1
+0B1S1l1
+0C0]0{0
+0C0Y0s0
+0C1P1|1
+0c1p1}1
+0C1V1]1
+0E1^1f1u1
+0g0#1
+-0h0u0
+0h3l3p3t3x3|3
+0I0k0
+0J0`0
+-0M0x0
+0M1W1k1z1
+0O0e0
+0O0U0
+0O0v0
+0o0w0
+0P0]0o0
+0Q0p0
+0r1}1
+0V0_0o0x0
+0Y0o0v0
+'0Z0e0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+1 1,1L1T1`1
+1 1A1F1P1q1v1
+1!161=1D1K1Y1n1
+1!1F1Q1y1
+1!21272=2D2K2
+1!2A2K2c2h2p2x2
+1!4%4)4-4145494=4A4W4
+1"1(1.1F1T1Z1`1f1l1r1x1~1
+1"1(121@1F1{1
+1"1P1Z1d1n1x1
+1$1,141<1D1L1T1\1d1l1t1|1
+1$1,141<1D1L1T1\1h1
+1$1,181@1`1h1
+1$101P1X1d1
+1$141@1`1l1
+1$191.4j4
+1$1D1L1X1x1
+1$2{2
+1$222E2
+1%101>1D1|1
+1%1P1
+1%2e2
+1&1;1[1p1
+1(0&0
+1(131[1f1
+1)1>1
+1)1P2
+1)1t1
+1)272
+1)2L2o2
+1*1/191S1r1{1
+1*10171S1{1
+1*191A1f1
+1*1Q1\1
+1*2D2\2u2
+1*2Q2n2
+1.0.0.0
+1.1Q1}1
+1.2^2
+1/0-0
+1/161@1Z1n1
+1/2U2{2
+1:1Y1z1
+1;1g1
+1;1h1
+1;1N1r133j3
+1?1I1i1
+1@1f1
+1@2E2m2
+1+131S1
+1+1C1
+1<1^1i1
+1<1D1L1X1x1
+1<1D1o1~1
+1<1j1
+1<1S1_1
+1<2F2Y2_2f2
+1=1w1
+1>1i1n1v1~1
+1>2V2`2
+10.0.22000.1
+10.0.22000.1 (WinBuild.160101.0800)
+100701213655Z
+101q1
+101Y1
+102O2
+1'1.1
+1'1/1M1U1]1e1m1
+1'1@1Y1r1
+111019184142Z
+111G1_1{1
+112>2L2
+1'1G1`1
+1-1S1
+1'232;2s2
+1'2O2
+131L2r3~3
+141@1I1Y1_1|1
+171A1U1p1z1
+171R1
+1'737V7
+181x1
+182B2T2s2
+182X2i2
+1B2g2m2r2x2
+1B2O2
+1b2x2
+1d2{2
+1F1c1v1
+1fc8b3b9a1e18e3b
+1G2T2
+1H2w2
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+1I2f2
+1K1n1
+1K2X2t2
+1L1\1h1p1
+1l2t2
+1O1k1q1{1
+1O2t2}2Q3
+1p1z1
+1P2c2y2
+1Q1_1t1
+1V1m2y2
+1X1b1u1{1
+1Y1^1x1
+1Y1g1v1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+2 2&2n2{2
+2 2(242T2`2
+2 2,2L2T2`2
+2 2.242e2
+2 2@2H2T2t2
+2 2-2A2G2
+2!2:2S2l2
+2"2&2*2.22262:2>2B2F2J2N2R2V2Z2^2b2f2j2n2r2v2z2~2
+2"2)2@2Y2g2
+2"2*282>2n2
+2"2,262@2y2
+2"2:2q2
+2"262;2A2G2M2]2b2h2n2t2
+2"2G2N2y2~2
+2#222Q2a2j2
+2#2k2
+2#2l2v2
+2#303e3y3
+2#3C3n3
+2#3W3
+2$2*2g2t2
+2$2,242<2D2L2d2p2x2
+2$2,242<2D2L2T2\2d2l2t2|2
+2$2D2d2
+2$2D2L2T2\2d2l2x2
+2$2q2
+2%2-2
+2&2}2
+2&2c2
+2&2M2^2~2
+2&3<3
+2(2N2c2
+2(3/3D3R3
+2)202
+2)2M2b2i4
+2*242
+2,2Y2
+2,373T3[3
+2.3:3
+2.383K3Q3X3w3
+2/3P3X3_3e3p3w3
+2;2d2
+2?2_2
+2?2E2N2T2r2z2
+2@2G2Q2k2
+2\2u2
+2^3i3
+2+2]2k2
+2<3Q3W3
+2>2K2X2e2{2
+201015172821Z
+201215212914Z
+202;2a2
+20210605020433.074Z0
+20210605085251Z
+20210606085251Z0w0=
+211202212914Z0p1
+21262@2a2f2p2
+213>3N3^3n384E4
+213h3
+213V3\3i3}3
+220112172821Z0
+222V2}2
+2-262>2
+2'272G2W2g2w2
+2'272U2i2}2
+229879+4633440
+233=3m3
+233u3
+24282<2@2D2X2\2l2p2
+242D2P2X2
+242i2{2
+243>3R3m3w3
+250701214655Z0|1
+253<3F3P3W3
+261019185142Z0
+262Q2l2
+273H3n3
+273I3
+274M4
+282D2d2l2t2
+292s2
+2A2T2r2
+2C2f2p2
+2F2l2
+2H2Q2^2d2p2
+2H3h3y3
+2l3t3|3
+2PhPT
+2r4a5g5q5
+2S3.4^4|4
+2S3]3x3
+2T2\2d2l2t2|2
+2T2Z2x2z3
+2T3^3-4
+2V3`3j3t3~3
+2Y2c2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+3 3,3L3X3x3
+3 3-3E3L3R3\3k3s3
+3 404<4\4d4p4
+3!3&303Q3V3`3
+3!313A3Q3a3q3
+3"31373\3
+3"343S3e3x3
+3"373H3Y3n3
+3"3Z3x3
+3"4d4
+3#3*3i3x3
+3#383M3E6
+3#3K3V3~3
+3$3,343@3`3l3
+3$3,343<3D3L3T3\3d3l3t3|3
+3$3,343<3D3L3T3\3d3l3x3
+3$3,343<3T3`3h3
+3$3?3
+3$3<3
+3$34383L3P3d3h3l3t3
+3$34393?3E3K3[3`3f3l3r3
+3$3D3L3T3\3h3
+3$3K3
+3$4O4m4{4
+3%3+32383B3M3S3Y3_3e3k3
+3%3a3
+3%3Q3k3|3
+3%4X4
+3&3D3W3_3g3o3w3
+3&464K4`4v4
+3&4b4
+3&4N4
+3(343T3\3d3l3t3|3
+3(494_4t4
+3)3/3
+3)313X3M4W4j4{4
+3*3?3\3
+3*3O3i3
+3,323U3t3|3
+3,4e4]5j5w5
+3,4g4
+3/3?3O3_3o3
+3/3Q4n4{4
+3/494A4O4U4k4~4
+3/4n4
+3/4w4
+3;3A3O3U3[3a3
+3;4U4i4
+3?3w3
+3@3L3h3
+3@4N4`4y4
+3[3a3q3
+3]4k4
+3]4p4$5w5<6
+3^3l3}3
+3+3O3p3
+3<3L3X3`3
+3=4q4
+303`3
+304<4
+3090W0S1
+31363@3a3f3p3
+31bf3856ad364e35
+324b4
+3'3;3x3
+3-3}3
+3-3<3M3f3j3n3r3v3z3~3
+3'3L3Y3i3
+3'4/474?4G4s4
+3-4>4N4^4n4
+343<3D3L3T3`3
+343M3f3
+344M4X4m4
+3-4d4r4
+353<3I3W3]3q4
+383Q3[3
+393E3N3
+3A3L4u4
+3A3M3X3
+3A7x7
+3B3\3m3
+3B3Y3w3
+3d3~3
+3D3q3
+3D4O4
+3f3{3
+3G3N3X3r3
+3M3[3p3
+3m4~4
+3R3Z3m3
+3S3n3
+3S3s3
+3T3s3
+3T3s3y3
+3W3r3
+3W5u5y5}5
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+4 4(4H4d4t4
+4 4?4G4}4
+4 404<4D4x4
+4 43494h4
+4 4A4F4P4q4v4
+4 5&5A5N6z6
+4 5|6
+4!4&404Q4V4`4
+4!4.4<4J4V4]4h4
+4!4+454c4m4w4
+4!414A4Q4a4q4
+4!4G4\4
+4!4K4j4
+4!5;5_5t5i7
+4!5'545C5I5
+4!5-5J5i5
+4!5I5
+4"454;4B4k4
+4#4;4H4
+4#5=5[5l5{5
+4#5T5
+4$4,444<4D4L4T4\4d4l4t4|4
+4$484=4d4o4
+4$4D4L4X4|4
+4%474S4e4x4
+4%4A4S4`4r4z4
+4&5O5s5
+4(40484@4H4T4t4
+4(444A4Q4Z4d4x4
+4(4K4s4
+4(5t5
+4)4;4X4
+4*4=4P4c4v4
+4*4>4Q4
+4*444K4V4\4
+4,404H4L4d4h4l4p4x4|4
+4,484X4d4
+4,4A4V4
+4,4G4g4x4
+4.4U4
+4/4?4O4_4l4y4
+4/4?4S4^4e4
+4/4C4}4
+4/5p5
+4:4M4q4/6
+4:7>7B7F7J7N7R7V7l7
+4;4G4
+4@4b4
+4@5J5X5i5q5x5~5
+4_4j4
+4+424<4V4j4
+4+434H4Q4W4
+4+5B6P6p6
+4<4L4T4\4d4l4t4|4
+4<4R4
+4<5g5
+4=5F5
+404<4T4X4t4x4
+404>4C4I4R4Y4d4j4q4
+405@5I5Y5t5
+405O5W5j5o5t5y5~5
+414<4
+414k4
+414Z4
+424v4
+425@5R5i5
+425f5q5
+434d4
+434K4
+4-4@4
+4'4>4J4Q4V4\4h4u4
+444?4g4r4
+444_4
+445O5Y5l5
+454K4\4
+464c4i4s4
+475e5
+484a4
+484E4]4
+494`4q4
+494I4T4
+4B4e4k4y4
+4c5p5
+4D4T4`4
+4D5W5c5
+4E4r4
+4g4I6
+4H5U5
+4h5z5
+4I4[4s4
+4I4X4
+4K4p4
+4K5e5m5
+4O4^4
+4P4l4r4|4
+4Q5\5
+4q5w5
+4R4l4r4}4
+4t4z4
+4W4a4t4z4
+4W4i4y4
+4W6]6x6
+4X4`4
+4x5l6t6
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+5 5(505<5\5h5p5
+5 5'5.555<5J5
+5 5A5F5P5q5v5
+5 5k5~5
+5!5(5.575<5B5[5p5
+5!5*5A5Q5a5q5
+5!515A5U5
+5!525v5
+5!6X6}6
+5"5b5
+5#5/575C5O5W5c5
+5#5;5s5
+5#5~5
+5#5'5+5/535I5
+5#575?5_5i5}5
+5#6<6Z6{6
+5#6R6
+5$5,545<5D5L5T5\5d5l5x5
+5$5,545<5H5h5t5
+5$5,585\5d5l5t5|5
+5$505P5\5|5
+5$545<5D5L5T5\5d5|5
+5$6*686I6Q6^6i6u6
+5$6.6A6G6N6j6
+5$6F6p6
+5%606X6c6
+5&505
+5&535L5Y5p5
+5&5x5
+5(5f5p5
+5(5H5P5X5h5
+5(6B6O6\6l6
+5)5L5
+5)5P5
+5)5V5`5
+5*5/575?5G5O5
+5*5B5b5w5
+5,535=5W5k5
+5,5A5
+5,6>6R7
+5,696W6
+5,6m6
+5,6S6f6
+5.5Z5
+5.6x6
+5/6\6q6
+5`7f7p7
+5+5[5~5
+5<5\5
+5<5l5
+5<6F6Y6_6f6
+5>5^5
+5>6m6
+50585L5T5h5p5
+515<5
+51565@5a5f5p5
+516L6
+525C5I5V5h5p5
+535>5f5q5
+535D5a5
+536|6
+545;5I5o5v5
+545<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+545D5P5p5x5
+5'5V5}5
+565/7_7~7
+565F5Q5}5
+566A6H6
+585@5H5P5l5|5
+586V6
+595G5`5y5
+595s5
+596i6y6
+5A5M5S5]5d5
+5b5l5
+5B6S6
+5C5R5o5
+5c6:7
+5E5O5Y5c5m5
+5F6X6
+5F6x7
+5G5R5x5
+5Genu
+5ineI
+5j5~5
+5L5_5
+5L5S5|5
+5L6V6j6
+5M5w5
+5N6[6t6
+5n6u6
+5O6U6n6w7
+5P5f5!7X7y7
+5p5z5
+5Q6c6
+5S5c5
+5U5f5s5}5
+5U5k5
+5v7{7
+5Z6j6
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+6 6,6L6T6\6h6
+6 646<6P6X6`6h6|6
+6 6D6T6|6
+6 787B7`7
+6!6&606Q6V6`6
+6!6)676=6L6]6y6
+6!616A6Q6a6q6
+6"6(656G6V6
+6"686M6b6w6
+6#62686N6d6z6
+6#6-656C6I6
+6$6,646<6D6L6T6\6d6l6t6|6
+6$6,646<6D6L6T6\6d6l6x6
+6$6,646<6D6L6X6|6
+6$6a6p6
+6$7>7D7O7]7c7
+6$747@7`7l7
+6$7d7
+6%6U6\6i6p6~6
+6%717v7
+6%727P7
+6&70767D7
+6(6@6
+6(7.7
+6(7K7Y7z7
+6)6;6T6u6
+6)696M6V6q6
+6*656]6h6
+6*6C6f6
+6,676@6I6T6]6j6
+6.6F6U6
+6.7p7
+6/6<6K6W6d6s6
+6:6H6
+6;6B6L6f6z6
+6[7h7
+6_6t6
+6`6m6
+6+6A6w6
+6+6x6
+6+7<7m7z7
+6+737s7
+6+7C7{7
+6<6D6L6X6x6
+6<6e6u6
+6<6M6
+6<748
+6=6`6
+6=7Z7
+61666@6a6f6p6
+61696W6s6
+626=6e6p6
+627C7c7t7
+636\6}6
+646D6L6T6\6d6l6
+647`7
+657?7I7S7]7g7q7
+6'6-6
+6'7$9y9
+6'7[8|8
+676H6f6s6
+6'7G7
+6-7G7X7
+686@6H6P6X6`6h6x6
+687Y7{7
+696^6
+696J6i6z6
+699>9F9N9V9^9
+6A6G6Q6]6l6
+6B6|6U7
+6B6L6
+6b7p7
+6bd6b9abf345378f
+6C6n6y6
+6C7a7g7
+6D7P7Y7`8
+6E6w6
+6F6}6
+6F6M6W6q6
+6H7R7e7k7r7
+6K6Z6
+6L6j6
+6l6v6
+6L7o7
+6M6S6]6l6r6
+6N6h6n6y6
+6RPQV
+6S6i6
+6S8Y8t8
+6U8r8
+6W6\6e6j6s6x6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+7 7(747T7\7d7p7
+7 7@7H7P7X7d7
+7 7@7L7l7x7
+7 7+777J7f7r7}7
+7 7A7F7P7q7v7
+7!7&707Q7V7`7
+7!7+7H7`7f7l7r7
+7!717A7Q7Z7q7
+7!7M7
+7"818
+7"8q8{8
+7#707H7l7x7~7
+7#7-777Y7i7
+7#848
+7#8-828F8K8Q8W8]8m8r8x8~8
+7$7,747<7D7L7T7\7d7l7t7|7
+7$7,747<7D7L7T7\7d7p7x7
+7$7,747<7D7L7T7\7h7
+7$747=9
+7$7F7\7
+7%73797q7
+7%7D7S7^7r7x7
+7&757]7
+7&8F8[8m8
+7)7@7
+7)787N7T7Z7g7
+7)7v7
+7)8c8y8
+7)8P8
+7*7 8
+7*7<7K7
+7*8N8
+7,7@7f7x7
+7,747<7H7l7t7|7
+7,7J7Y7
+7,7M7X7y7
+7.7U8
+7.7Z7m7t7
+7.9t<
+7/7<7P7i7z7
+7/7M7
+7/8O8z8
+7:7^7e7o7
+7:8r8
+7?7P7a7
+7]8b8
+7]8p8
+7_7y7
+7`8t8
+7+7V7[7c7k7s7{7
+7+8L8m8
+7<7D7L7T7\7d7l7t7|7
+707F7
+708_8
+70A0T0Z0a0}0
+717<7d7o7
+718B8Y8f8
+727@7X7
+72787E7W7i7
+727K7f7
+72869E9
+728O8\8
+737=7D7I7S7q7{7
+737L7g7
+747<7D7L7X7`7
+768G8X8
+7-7[81;6;Q;l;#=K=O=S=W=[=_=c=g=k=o=s=w=
+7'7|7
+7'757;7R8
+777=7J7
+777=8x8\9
+777A7I7W7]7
+778g8
+7-7I7P7\7b7h7y7
+787B7a7r7w7
+787K7g7
+7'888M8b8w8
+797E7
+798r8}8
+7A7]7z7
+7a7y7
+7a8m8
+7B7y7
+7c8q8w8
+7D7m7}7
+7D7O7z7
+7F7u7
+7I7|7
+7I7a7
+7K7[7p7
+7N7b7
+7P7|7
+7s:P;
+7s:w:{:
+7T7t7~7
+7W7w7
+7X7q7
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+8 8(80888@8L8l8t8|8
+8 8,8L8X8|8
+8 8;8
+8 8@8H8d8t8
+8 8@8H8T8t8|8
+8!8+858o8
+8!818A8Q8a8q8
+8!8J8n8u8
+8!9,9d:
+8"8-858>8N8T8Z8`8f8l8r8
+8"8j8{8
+8"9/9C9
+8#8>8Q8
+8#8H8
+8#8H8k8
+8#9d9t9
+8#9n9
+8#9S9
+8$8,848<8D8L8T8\8d8l8t8|8
+8$8.8q8
+8$808P8X8d8
+8$9<9D9L9T9`9
+8%8B8G8L8Q8V8[8`8}8
+8%8M8T8^8x8
+8%tVQ
+8&859d9
+8&868A8
+8(80868s8
+8(868L8j8
+8)838
+8)9c9w9
+8)9C9Z9y9
+8)9E9
+8*8C8
+8,8G8g8x8
+8,8P8i8
+8.8h8
+8/:J:|:
+8/8<8
+8/8c8t8
+8:9z9
+8@8\8b8l8z8
+8]9c9q9-:M:
+8^8r8
+8_^[]
+8|8^:i>
+8+8T8|8
+8+9}9
+8<8i8
+8<8V8`8h8v8|8
+8=9j9
+8=9J9
+8>9w9w>
+809e9q9
+81868@8a8f8p8
+81888E8S8Y8g9
+819>9\9
+828D8r8
+828s8
+848@8
+848d8
+848Q8
+878F8g8
+878L8Z8
+879\9b9o9
+879C9j9
+879J9q9
+8'8|8
+8-848@8F8L8]8y8
+8'8a8r8
+8'9X9
+8a:~:
+8A8f8~8
+8b9m9
+8D8K8Y8j8q8
+8D8O8w8
+8D8u8
+8e8l9
+8F9V9
+8G9T9{9
+8i8s8
+8K8q8
+8M8]8k8w8
+8p9z9
+8q<~<
+8T8t8|8
+8v8#9
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+9 9(909@9d9l9t9|9
+9 9(90989@9H9T9t9
+9 9(949T9`9
+9 9*9A9F9P9q9v9
+9 9@9L9l9x9
+9 9`9
+9!:l:h;x;
+9!9)919O9::i:
+9!9=9B9Y9l9q9
+9!919A9Q9a9q9
+9"9/9V9`9
+9"9w9
+9"9W9o9v:
+9#:):3:B:H:q:
+9#9)9D9h9
+9#9;9F9]9j9u9
+9#9+979@9E9K9U9_9o9
+9#9F9L9V9e9k9
+9#9K9d9
+9$:\:
+9$:9:Z:k:
+9$9*909A9]9d9p9v9|9
+9$9,949
+9$9,949<9D9L9T9\9d9l9t9|9
+9$9,949R9Z9b9j9r9
+9$9,989X9`9h9t9
+9$989M9l9
+9$9Q;
+9%:4:u:
+9%9,9
+9%93999i9z9
+9&:,:g:
+9&:5:D:k:
+9&:q:
+9&9,9_9y9
+9&9.969U9_9~9
+9&9\9q9
+9(9?9V9H:Z<^<b<f<j<n<r<v<z<~<
+9(90989D9d9p9x9
+9(979S9l9
+9(9Q9
+9):C:I:T:b:h:
+9):L:m:
+9)99:e:
+9*:A:G:Q:`:f:u:
+9,:D:N:V:d:j:
+9,929L:
+9.:>:
+9/:::O:
+9/:;:D:
+9/9I9Z9k9u9
+9::G:
+9::P:
+9':A:z:
+9;:K:
+9?9J9
+9@9U9
+9[9b9
+9_(s-j
+9`:{:
+9+:[:~:
+9+:o:
+9<:K:_:e:v:&;u;
+9<:R:~:
+9>:n:x:
+90:@:K:p:
+90A0I0t0
+919c9j9q9
+919Q9f9
+92;>;
+93:9:I:a:
+939M9k9|9
+94:t:
+949E9p9
+96:M:R:o:
+969]9
+979o9
+979V9c9
+989F9[9|9
+989H9q9
+989T9d9p9
+9-9`9l9
+999D9o9z9
+9'9K9W9{9
+9'9w9~9
+9A:b:
+9C9W9}9
+9E9M9
+9F=`=x=
+9G9|9
+9G9Z9
+9K9V9d9~9
+9L:c:u:
+9l:u:}:
+9L9y9
+9n:x<v=
+9n9}9
+9P4t~j
+9pLtb
+9Q9l9
+9R9!:D:
+9T:q:
+9T:Y:
+9V4tv
+9VhH6
+9y:}<
+9Z9z9
+A$j2[
+absent
+acceptreject
+AcquireSRWLockExclusive
+AcquireSRWLockShared
+AcrHelper::GetCixEntryFromHash
+AcrHelper::GetFileNameFromMissingFile
+actionOnly
+Added %S to WER report.
+address family not supported
+address in use
+address not available
+Advanced Installer present in package {0}
+Advanced Installers failed to run
+ADVAPI32.dll
+Ah;Fhv
+AI Queue Execution Done
+Al;Flr
+algId == ((4 << 13) | (0) | 12)
+Algorithm
+allowDoqAndPoqSeparate
+allowedOffline
+allowNonAdminToInstall
+allowQueryRemove
+alpha
+alpha64
+already connected
+AMD64
+amd64
+amd64.arm
+amd64.x86
+amd64armREG_DWORDHKEY_LOCAL_MACHINEbooleanstringmultiStringunsignedIntdisplayName
+AnalyzeContainerPackages
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-crt-private-l1-1-0.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+api-ms-win-crt-string-l1-1-0.dll
+applicabilityEvaluation
+applicable
+applicableEquivalent
+applicablePartitions
+applicationData
+ApplyContainerChanges
+applyTo
+ApplyTransactionPOQsToSil
+ApplyTransactionPOQsToSil( ApplyFlags, Session->m_System, Windows::MakeConstVector(vSilsToRun), &FailureInfo, nullptr, &ApplyDisposition)
+archive
+argument list too long
+argument out of domain
+arm.x86
+ARM64
+arm64
+arm64.arm
+arm64.x86
+Array size too big
+assembly
+assemblyIdentity
+Assert failed to build string.
+ASSERT: %hs
+ASSERT: Assert failed to build string.
+Assertion failed in %hs(%i)
+Attempt to delete a file which has no bind-mapping, relative path: {0}, full path {1}
+attempts
+attributes
+Attributes
+Backup
+BackupDir->DeleteExistingFile( Windows::Rtl::IRtlDirectory::DeleteExistingFileFlags::MissingFileIsOk | Windows::Rtl::IRtlDirectory::DeleteExistingFileFlags::OpenForBackupIntent | Windows::Rtl::IRtlDirectory::DeleteExistingFileFlags::MarkDeletePending, Windows::Rtl::ObjAttrFromName(ManifestName), nullptr)
+BackupRestore.Acquire(Windows::MakeConstVector({ (17L), (18L), (8L), (9L) }))
+bad address
+bad allocation
+bad array new length
+bad file descriptor
+bad message
+baselineVersion
+Basis
+BCD.REG
+bcrypt.dll
+BCryptCloseAlgorithmProvider
+BCryptCreateHash
+BCryptDestroyHash
+BCryptFinishHash
+BCryptGetProperty
+BCryptHashData
+BCryptOpenAlgorithmProvider
+Beginning expansion
+BfGenerateBatchedConfig
+binaryPartition
+BINDFLTAPI.dll
+boot.cim
+Boot\
+BOOT_EFI
+BootUILanguage
+bR"zO
+branch
+broken pipe
+BS_EFIESP
+BUCL::Rtl::Add<TraitsT::TSize>(Offset, Count, TotalSize)
+BUCL::Rtl::AddInPlaceWithOverflowCheck(&MaximumLength , Sources[i].Length)
+BUCL::Rtl::BlockLookupTable<unsigned __int64,unsigned __int64,&long __stdcall Windows::Rtl::CompareIntegers<unsigned __int64>(unsigned __int64 const &,unsigned __int64 const &,int *),struct BUCL::Rtl::BlockLookupTablePODSetPolicy<unsigned __int64,unsigned __int64> >::Insert
+BUCL::Rtl::Increment(&Length)
+BUCL::Rtl::Multiply(Length, static_cast<TMeta::size_t>(sizeof(WCHAR)), Length)
+BUCL::Rtl::Multiply<SIZE_T>(Data.Length, 2 * TraitsT::TCharSize, BytesNeeded)
+BUCL::Rtl::Multiply<TraitsT::TSize>(Count, TraitsT::TCharSize, cbCount)
+BUCL::Rtl::Multiply<TraitsT::TSize>(Offset, TraitsT::TCharSize, cbOffset)
+build update
+buildCompare
+buildFilter
+buildType
+BuiltinAttributes->PresentAttributes & Windows::Identity::Rtl::AttributeFlags::PublicKeyToken
+BuiltinAttributes->PresentAttributes & Windows::Identity::Rtl::AttributeFlags::Version
+BWSSj`j
+C(;C,u
+C0M0W0a0k0
+C8PQQ
+Cab_ExtractOneToBuffer
+Cab_FreeBuffer
+CabAPI.dll
+cabpath
+Calculating Remove/Add/Existing closures
+CallContext:[%hs] 
+Cannot find parent for path: %S.
+Cannot install component at multiple versions {0} and {1}.
+Cannot remove component that is not installed {0}.
+Cannot remove component that is not installed, {0}, reference: {1}
+Can't get the hash from dpx for file: {0} in cabinet: {1}
+Can't recreate the root key.
+Can't understand the catalog algorithm in catalog {0}
+capability
+capabilityIdentity
+cardinality
+Catalog is Microsoft signed.
+Catalog.VerifyCertChainRoot(FlagsToVerify, &Disposition)
+Catalog.VerifySigner(DirectSystem)
+categoryMembership
+CBSLogCompress
+CBSLogHardMaxInMB
+CBSLogMaxInMB
+CbsLogMonitorProvider
+CbsPackageParser::ParseApplicable
+CbsPackageParser::ParseApplyTo
+CbsPackageParser::ParseCbsPackage
+CbsPackageParser::ParseCbsPackageApplicableComponentId
+CbsPackageParser::ParseCbsPackageApplicableComponents
+CbsPackageParser::ParseCbsPackageApplicableComponentUpdateId
+CbsPackageParser::ParseCbsPackageApplicableComponentUpdates
+CbsPackageParser::ParseCbsPackageApplicableDriverId
+CbsPackageParser::ParseCbsPackageApplicableDrivers
+CbsPackageParser::ParseCbsPackageApplicableDriverUpdateId
+CbsPackageParser::ParseCbsPackageApplicableDriverUpdates
+CbsPackageParser::ParseCbsPackageApplicableEquivalent
+CbsPackageParser::ParseCbsPackageApplicableEquivalentId
+CbsPackageParser::ParseCbsPackageApplicablePartitions
+CbsPackageParser::ParseCbsPackageApplicableUpdates
+CbsPackageParser::ParseCbsPackageApplicableUpdatesParent
+CbsPackageParser::ParseCbsPackageApplicableUpdatesUpdate
+CbsPackageParser::ParseCbsPackageCapability
+CbsPackageParser::ParseCbsPackageCapabilityDependency
+CbsPackageParser::ParseCbsPackageCustomInfo
+CbsPackageParser::ParseCbsPackageExtended
+CbsPackageParser::ParseCbsPackageFallbackLanguages
+CbsPackageParser::ParseCbsPackageFeature
+CbsPackageParser::ParseCbsPackageFeatures
+CbsPackageParser::ParseCbsPackageFiles
+CbsPackageParser::ParseCbsPackageFlightComponent
+CbsPackageParser::ParseCbsPackageFlightComponentId
+CbsPackageParser::ParseCbsPackageInfo
+CbsPackageParser::ParseCbsPackageLinkInfo
+CbsPackageParser::ParseCbsPackageLocalizedString
+CbsPackageParser::ParseCbsPackageLocalizedStrings
+CbsPackageParser::ParseCbsPackagePhoneInfo
+CbsPackageParser::ParseCbsPackagePhoneSecurityPolicyMarker
+CbsPackageParser::ParseCbsPackageRecall
+CbsPackageParser::ParseCbsPackageSelectableComponent
+CbsPackageParser::ParseCbsPackageSelectableComponentId
+CbsPackageParser::ParseCbsPackageSelectableComponentUpdate
+CbsPackageParser::ParseCbsPackageSelectableComponentUpdateId
+CbsPackageParser::ParseCbsPackageSelectableDisplayAssemblyId
+CbsPackageParser::ParseCbsPackageSelectableDriver
+CbsPackageParser::ParseCbsPackageSelectableDriverId
+CbsPackageParser::ParseCbsPackageSelectableDriverUpdate
+CbsPackageParser::ParseCbsPackageSelectableDriverUpdateId
+CbsPackageParser::ParseCbsPackageSelectableNone
+CbsPackageParser::ParseCbsPackageSelectableUpdate
+CbsPackageParser::ParseCbsPackageServiceToStopId
+CbsPackageParser::ParseCbsPackageUpdateCapabilities
+CbsPackageParser::ParseCbsPackageUpdateCapabilityId
+CbsPackageParser::ParseCbsPackageUpdateComponent
+CbsPackageParser::ParseCbsPackageUpdateDriver
+CbsPackageParser::ParseCbsPackageUpdateDriverExtended
+CbsPackageParser::ParseCbsPackageUpdatePackage
+CbsPackageParser::ParseCbsPackageUpdates
+CbsPackageParser::ParseCbsPackageUpdatesCustomInfo
+CbsPackageParser::ParseCbsRebootRequiredType
+CbsPackageParser::ParseCbsSelectableCustomInfo
+CbsPackageParser::ParseDeclareCapability
+CbsPackageParser::ParseDeclareSet
+CbsPackageParser::ParseDocument
+CbsPackageParser::ParseInstallerAssembly
+CbsPackageParser::ParseLinkInformation
+CbsPackageParser::ParseMultiPackageIdRef
+CbsPackageParser::ParseMultiPartialAssemblyId
+CbsPackageParser::ParseParent
+CbsPackageParser::ParseParentPackage
+CbsPackageParser::ParsePartition
+CbsPackageParser::ParseRecipeFile
+CbsPackageParser::ParseSelectable
+CbsPackageParser::ParseServicesToStop
+CbsPackageParser::ParseSinglePackageId
+CbsPackageParser::ParseSinglePackageIdRef
+CbsPackageParser::ParseSinglePartialAssemblyId
+CbsPackageParser::ParseUpdate
+CbsWcpErrorReport(1 , Wer, &data, nullptr, nullptr)
+CBSWdsLog
+CbsWerLoad(Wer.GetInitPointer())
+CCbsStoreParameters::Initialize
+CCbsStoreParameters::PopulateOfflineStoreCreationParametersInternals
+cch <= MAX_PATH
+CERT_E_CHAINING
+CERT_E_EXPIRED
+CERT_E_INVALID_NAME
+CERT_E_INVALID_POLICY
+CERT_E_ISSUERCHAINING
+CERT_E_MALFORMED
+CERT_E_REVOKED
+CERT_E_UNTRUSTEDCA
+CERT_E_UNTRUSTEDROOT
+CERT_E_UNTRUSTEDTESTROOT
+CFileInstallerHierarchy
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+CIM path doesn't exist at {0}
+CimCloseImage
+CimCloseStream
+CimCommitImage
+CimCreateFile
+CimCreateFile failed for file {0}
+CimCreateImage
+CimDeletePath
+cimfs.dll
+Cimutil failed output: {0}
+cimutil.exe
+cix_hash_type
+CiXParser::ParseCiXDelta
+CiXParser::ParseCiXDeltaLocation
+CiXParser::ParseCiXDocument
+CiXParser::ParseCiXFile
+CiXParser::ParseCiXFileDelta
+CiXParser::ParseCiXFileDeltaBasis
+CiXParser::ParseCiXFileDeltaSource
+CiXParser::ParseCiXFiles
+CiXParser::ParseCiXHash
+CiXParser::ParseDescription
+CiXParser::ParseDocument
+CloseHandle
+CloseThreadpoolTimer
+CmsGetFileHashInformation
+CoCreateGuid
+CoCreateGuid failed
+CoCreateInstance
+CoGetMalloc
+CompanyName
+CompareFileTime
+CompareStringOrdinal
+completelyOfflineCapable
+component
+Component {0} is a nested deployment which is not allowed
+Component {0} is a top-level component that's not a deployment
+Component architecture {0} is incompatible with the store architecture {1}
+Component Id not internally consistent
+Component Id not internally consistent expected {0} got {1}
+Component of a lower version was provided compared to what we already had. Provided {0}, we have {1}
+Component that is not a deployment has a dependency: {0}
+Component.man
+COMPONENT_BASED_SERVICING_LOGFILE
+COMPONENT_BASED_SERVICING_LOGLEVEL
+COMPONENT_STORE
+ComponentAccess.Initialize(Change.Winner, GetRtlIdentityAuthority())
+ComponentClosureSet.SeenComponents.size() == 2
+ComponentData.Key->DeleteRecursively( Windows::Rtl::IRtlKey::DeleteRecursively_Flags::OpenForBackupIntent | Windows::Rtl::IRtlKey::DeleteRecursively_Flags::WorkAroundRestorePrivilege, nullptr)
+ComponentId.DefId->GetBuiltinAttributes(0, &BuiltinAttributes)
+COMPONENTS
+components
+components\configuration
+compress
+compressed
+Computed component changelist:
+Computing associated packaging metadata to write
+config
+connection aborted
+connection already in progress
+connection refused
+connection reset
+connector
+ConstructPartialMsgVA
+Container
+ContainerPending.xml
+ContainerRecipeParser::ParseContainerRecipe
+ContainerRecipeParser::ParseDirAttributes
+ContainerRecipeParser::ParseDirectories
+ContainerRecipeParser::ParseDirectory
+ContainerRecipeParser::ParseDirPath
+ContainerRecipeParser::ParseDocument
+ContainerRecipeParser::ParseFile
+ContainerRecipeParser::ParseFileAttributes
+ContainerRecipeParser::ParseFilePath
+ContainerRecipeParser::ParseFiles
+ContainerRecipeParser::ParseFileSize
+ContainerRecipeParser::ParsePath
+ContainerRecipeParser::ParseSecurityDescriptor
+ContainerRecipeParser::ParseSourcePath
+ContainerRecipeParser::ParseSourceType
+ContainerRecipeParser::ParseTargetPath
+Contents FOR Scavenge.xml  {0}
+ControlSet001\Control\ProductOptions
+ConvertHResultToNtStatus
+ConvertNtStatusToHResult
+ConvertSecurityDescriptorToStringSecurityDescriptorW
+ConvertStringSecurityDescriptorToSecurityDescriptorW
+CopyFile
+CopyFileW
+Corrupt manifest hash stored for {0}
+CoTaskMemAlloc
+CoTaskMemFree
+Could not allocate a backup name for the log file: %ws, we'll just continue with our current log file.
+Could not expand default user profile path environment variables
+Could not expand environment variables in default user profile path
+Could not find catalog for {0}.
+Could not load online components hive
+Could not load WDSCORE DLL from path: %ws.  Continuing without text file logging.
+Could not open {0}
+Could not open file {0}
+Could not parse {0}
+Could not parse {0}.
+Could not parse partition details
+Could not query file size for {0}
+Could not query for open registry keys
+Couldn't create key '{0}'
+Couldn't create key '{0}' in deleted keys hive
+Couldn't create key '{0}' in dest hive
+Couldn't create value '{0}' under key '{1}' in dest hive
+Couldn't delete subkey '{0}'
+Couldn't find subkey '{0}' in map
+Couldn't get the windows dir
+Couldn't open subkey '{0}'
+Couldn't reopen subkey '{0}'
+Couldn't set key security on subkey '{0}'
+CreateDirectory
+CreateDirectoryW
+CreateEventW
+CreateFile
+CreateFileW
+CreateGlobbedPackage
+CreateHardLinkW
+CreateImageManifest
+CreateKey
+CreateMutexExW
+CreateNewOfflineStore
+CreateNewPseudoWindows
+CreateNewPseudoWindowsEx
+CreateNewWindows
+CreatePath(
+CreateProcessW
+CreateSemaphoreExW
+CreateThreadpoolTimer
+CreateUdxJob
+CreateWellKnownSid
+creationTime
+critical update
+cross device link
+CRYPT_E_ASN1_CORRUPT
+CRYPT_E_NOT_FOUND
+cSSQPW
+culture
+CUMULATIVE Dpx time: {0}
+currentDevices
+currentdevices
+CurrentIP
+CurrentState
+Customer,
+customInformation
+CWcpDll::Initialize
+CXmlLogicalState::{dtor}::<lambda_8c2b19ee88e223e5f4c3fe4036301ddd>::operator ()
+D$  7
+D$ ;D$H
+D$ @;D$,
+D$ `|
+D$ SVWj
+D$ t hh
+D$$Pj
+D$$VW
+D$(j'P
+D$,PQ
+D$\d{
+D$\LJ
+D$d,{
+D$Dd;
+D$dxy
+D$HSV
+D$pSVW3
+D$pXz
+D$TPja
+D$X z
+DbgPrint
+debug
+DebugBreak
+debugCompare
+declareCapability
+declareSet
+default
+Default
+default
+DEFAULT
+Default
+DEFAULT.REG
+DelayExecution
+delegate
+DeleteCriticalSection
+DeletedKeys
+DeletedValues
+DeleteFile
+DeleteFileW
+DeleteKey
+DeleteKeyValue
+DeleteMe
+Deleting, source {0}, dest {1}
+Delta
+delta_basis_root
+DeltaBasisSearch
+dependency
+dependencyType
+dependentAssembly
+deployment
+Deployment closure {0}
+Deployment2
+DerivedData\TransformSettingsVersion
+Description
+description
+Desktop
+Desperate fallback CopyFile failed from {0} to {1}
+destination
+destination address required
+Destination Directory {0} doesn't exist.
+destinationPath
+detect
+detectComponent
+detectDriver
+detectNone
+detectUpdate
+development kit
+device or resource busy
+deviceInstallRequired
+DeviceIoControl
+Didn't find hash for file {0}
+DigestMethod
+DigestValue
+directories
+Directories
+Directory
+directory
+directory not empty
+DismountRegistryHives
+displayAssembly
+displayFileName
+displayName
+displaySourceName
+disposition
+Disposition == MacroReplacement::LookupStringReplacementDisposition::ReplacementIsPath
+distribution
+distributionCompare
+dman.ddsm.xml
+does not support sparse files.
+DoesPackageContainAIs
+DoesTargetHaveTestRootCert(DirectSystem, &fImageHasTestRoot)
+download
+DPhPT
+dpx.dll
+DpxNewJob
+driver
+driverExtended
+DRIVERS
+DRIVERS.REG
+DtCSV
+Duplicate component operation found for {0}, reference: {1}
+Duplicated package in list
+DuplicateHandle
+dwBytesRead == dwSizeToRead
+dwLastError
+E_FAIL
+E_INVALIDARG
+E_NOTIMPL
+E_POINTER
+E_UNEXPECTED
+E0c0w0
+EFI system, BCD hive located at {0}
+EFI\Microsoft\Boot\
+EFIESP
+efiesp
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+eIc0"
+elevate
+embeddedSign
+Emplacing instead, source {0}, dest {1}
+Empty Cix entry list encountered for hash {0}
+Empty hydration list encountered for {0}
+Empty missing file list supplied
+Empty name is not valid.
+EnableLog
+encoding
+Encountered a RAW file when we expected a forward or reverse delta {0}
+Encountered empty full file path
+Encountered uncompressed manifest {0}
+endOfFile
+EnterCriticalSection
+EnumerateComponentsByVersionlessHash
+EnumeratePackages
+Enumerating existing installed packages
+Enumerating Packages
+ErrInfo: Component {0} is a nested deployment which is not allowed
+ErrInfo: Component that is not a deployment has a dependency: {0}.
+ErrInfo: Found unexpected SxS component {0}
+Error {0} while executing operation id {1} on {2}
+Error,
+Error: 
+Error: MOF AI is not supported on OneCore/WCOS, please contact aipanel with questions. Component is: {0}
+ERROR_ACCESS_DENIED
+ERROR_ADVANCED_INSTALLER_FAILED
+ERROR_ALREADY_EXISTS
+ERROR_BAD_ENVIRONMENT
+ERROR_DISK_FULL
+ERROR_FAIL_NOACTION_REBOOT
+ERROR_FAIL_REBOOT_INITIATED
+ERROR_FAIL_REBOOT_REQUIRED
+ERROR_FILE_NOT_FOUND
+ERROR_INSUFFICIENT_BUFFER
+ERROR_INTERNAL_ERROR
+ERROR_INVALID_DATA
+ERROR_INVALID_DATATYPE
+ERROR_INVALID_FLAGS
+ERROR_INVALID_HANDLE
+ERROR_MOD_NOT_FOUND
+ERROR_PATH_NOT_FOUND
+ERROR_REQUEST_OUT_OF_SEQUENCE
+ERROR_SERVICE_DEPENDENCY_FAIL
+ERROR_SERVICE_DOES_NOT_EXIST
+ERROR_SHARING_VIOLATION
+ERROR_SUCCESS_REBOOT_INITIATED
+ERROR_SUCCESS_REBOOT_REQUIRED
+ERROR_SXS_ASSEMBLY_IS_NOT_A_DEPLOYMENT
+ERROR_SXS_ASSEMBLY_MISSING
+ERROR_SXS_ASSEMBLY_NOT_FOUND
+ERROR_SXS_FILE_HASH_MISMATCH
+ERROR_SXS_FILE_NOT_PART_OF_ASSEMBLY
+ERROR_SXS_IDENTITIES_DIFFERENT
+ERROR_SXS_MANIFEST_IDENTITY_SAME_BUT_CONTENTS_DIFFERENT
+ERROR_SXS_MANIFEST_PARSE_ERROR
+ERROR_SXS_TRANSACTION_CLOSURE_INCOMPLETE
+Exception
+exclusive
+executable format error
+ExecuteMidgroundInstallers
+ExecutePoqRegistryOperationsInternal
+exist
+ExpandAndNullTerminateEnvironmentVariableString
+ExpandEnvironmentStringsW
+-extracted
+Extracting top-level package family {0}
+F$_[^
+FACILITY_ACPI_ERROR_CODE
+FACILITY_CLUSTER_ERROR_CODE
+FACILITY_COMMONLOG
+FACILITY_DEBUGGER
+FACILITY_DRIVER_FRAMEWORK
+FACILITY_FILTER_MANAGER
+FACILITY_FIREWIRE_ERROR_CODE
+FACILITY_FVE_ERROR_CODE
+FACILITY_FWP_ERROR_CODE
+FACILITY_GRAPHICS_KERNEL
+FACILITY_HID_ERROR_CODE
+FACILITY_HYPERVISOR
+FACILITY_IO_ERROR_CODE
+FACILITY_ITF
+FACILITY_MONITOR
+FACILITY_NDIS_ERROR_CODE
+FACILITY_NTSSPI
+FACILITY_NTWIN32,Code=
+FACILITY_RPC_RUNTIME
+FACILITY_RPC_STUBS
+FACILITY_STATE_MANAGEMENT
+FACILITY_SXS_ERROR_CODE
+FACILITY_TERMINAL_SERVER
+FACILITY_TRANSACTION
+FACILITY_USB_ERROR_CODE
+FACILITY_VIDEO
+FACILITY_WIN32
+Facility=
+FACILTIY_MUI_ERROR_CODE
+Fail to construct SD from parts
+Fail to generate driverlist file name.
+Fail to generate FLTBLIB file name.
+Failed adding element to cbs array
+Failed call to ExpandEnvironmentStrings for string '{0}'
+Failed call to GetModuleFileName
+Failed call to ORCreateHive
+Failed creating file %S
+Failed getting maintenance flags.
+Failed in IsAnyMidgroundOrAIPresent for {0}
+Failed initial query of value to get type, size, and value of registry value: %S
+Failed inserting element io cbs array
+Failed NTFS compressing file %S
+Failed open volume path {0}
+Failed querying session10
+Failed StringCbPrintfA.
+Failed StringCchCopyNW.
+Failed to acquire log manager
+Failed to add CbsLogMonitor provider
+Failed to add container for cabinet: {0}
+Failed to add log name log directory: %ws
+Failed to add the new string
+Failed to allocate buffer
+Failed to allocate CBS log environment variable memory for offline WER report.
+Failed to allocate CBS log name for offline WER report.
+Failed to allocate delete search string for backup logs directory path: %ws
+Failed to allocate delete search string for backup logs path.
+Failed to allocate directory string
+Failed to allocate empty string for blank string identity.
+Failed to allocate full path to WDSCORE DLL.
+Failed to allocate identity name
+Failed to allocate log directory for offline WER report.
+Failed to allocate log directory from windows directory: %ws
+Failed to allocate log file name: %ws
+Failed to allocate new string
+Failed to allocate new string.
+Failed to allocate path for oldest backup log.
+Failed to allocate pending.xml path for offline WER report.
+Failed to allocate relative path to WDSCORE DLL.
+Failed to allocate Sessions.xml path for offline WER report.
+Failed to allocate string
+Failed to allocate string for name
+Failed to allocate string for string id.
+failed to allocate string to format: %S
+Failed to allocate string to format: %S
+Failed to allocate string to read registry value: %S
+Failed to allocate Wds path from windows directory: %ws
+Failed to allocate windir string
+Failed to allocate windows directory for offline WER report.
+Failed to clean logs for {0}
+Failed to cleanup inherited aces from DACL for the file {0}
+Failed to cleanup inherited aces from SACL for the file {0}
+Failed to close element.
+Failed to close old hive, we may be leaking it.
+Failed to coerce string.
+Failed to commit the CIM image
+Failed to compare security in manifest: {0}
+Failed to compress target file {0}
+Failed to compress temporary file at {0} (which has destination {1})
+Failed to concat backslash onto string.
+Failed to concat CBS name on to log directory: %ws
+Failed to concat full path to WDSCORE DLL
+Failed to concat second string.
+Failed to concat string.
+Failed to configure logging settings
+Failed to convert security descriptor for {0} to string
+Failed to copy {0} to {1}
+Failed to copy command '{0}' to temporary buffer
+Failed to copy file from {0} to {1}; falling back to straight copy...
+Failed to copy identity: %S
+Failed to copy language
+Failed to copy language string to normalized string.
+Failed to copy manifest Identity
+Failed to copy name
+Failed to copy new string.
+Failed to copy parent of path: %S
+Failed to copy processor to normalized buffer.
+Failed to copy processorArchitecture
+Failed to copy publicKeyToken
+Failed to copy source string to destination
+Failed to copy string
+Failed to copy the catalog file
+Failed to copy version
+Failed to copy version to buffer.
+Failed to create CbsSession
+Failed to create CbsSession with error {0} - waiting for a second and trying again
+Failed to create extract job for location: {0}
+Failed to create file: %S
+Failed to create filter driver list file.
+Failed to create hard link between {0}:{1}
+Failed to create hardlink from {0} to {1}
+Failed to create microdom from xml content.
+Failed to create path: %S
+Failed to create string builder.
+Failed to create the well known sid for WinAuthenticatedUserSid
+Failed to create Windows Error Report.
+Failed to create XML writer.
+Failed to CreateFile on {0}
+Failed to CreateProcess with command {0}
+Failed to delete {0} from the CIM.
+Failed to delete extra backup log files.
+Failed to delete oldest backup log.
+Failed to delete registry log file {0}
+Failed to delete temp directory
+Failed to delete the directory {0} with disposition {1}.
+Failed to delete the inherited ACE
+Failed to delete working folder: {0}
+Failed to determine size of string.
+Failed to duplicate sz
+Failed to emit attribute.
+Failed to ensure log directory ended with a backslash: %ws
+Failed to ensure that logging directory exists: %ws
+Failed to ensure Wds path ended with a backslash: %ws
+Failed to ensure windows directory ended with a backslash for offline WER report.
+Failed to enumerate directory entries in cabinet: {0}
+Failed to enumerate subkeys of '{0}'
+Failed to enumerate values at index {0} of subkey
+Failed to extract {0}
+Failed to extract file in WIM from image path '{0}' to destination path '{1}'
+Failed to extract mum from {0}
+Failed to find assemblyidentity.
+Failed to find BasisEntry for hash {0} and file {1}
+Failed to find file separator '' in keyform {0}
+Failed to find hash lookup entry for hash {0}
+Failed to format string.
+Failed to get {0}
+Failed to get all files from '{0}' using pattern '{1}'
+Failed to get attributes for file: %S
+Failed to get backing store on handle for file {0}
+Failed to get container from job in cabinet: {0}
+Failed to get containers from job in cabinet: {0}
+Failed to get current key attributes for subkey '{0}'
+Failed to get data out of builder.
+Failed to get directory entries in cabinet: {0}
+Failed to get file name of directory entry in cabinet: {0}
+Failed to get guid string.
+Failed to get hash for {0}
+Failed to get hash of file {0} in cabinet: {1}
+Failed to get key attributes for subkey '{0}'
+Failed to get length of passed in string
+Failed to get log path from: %ws
+Failed to get mini filter info.
+Failed to get proc address FilterFindClose.
+Failed to get proc address FilterFindFirst.
+Failed to get proc address FilterFindNext.
+Failed to get proc address for ConstructPartialMsgVA.
+Failed to get proc address for CurrentIP.
+Failed to get proc address for WdsGenericSetupLogInit.
+Failed to get proc address for WdsGetSetupLog.
+Failed to get proc address for WdsSetupLogDestroy.
+Failed to get proc address for WdsSetupLogInit.
+Failed to get proc address for WdsSetupLogMessageA.
+Failed to get proc address for WerReportAddDump.
+Failed to get proc address for WerReportAddFile.
+Failed to get proc address for WerReportCloseHandle.
+Failed to get proc address for WerReportCreate.
+Failed to get proc address for WerReportSetParameter.
+Failed to get proc address for WerReportSetUIOption.
+Failed to get proc address for WerReportSubmit.
+Failed to get security information for {0}
+Failed to get size of destination string.
+Failed to get size of existing string
+Failed to get SystemRoot from offline CurrentVersion registry key
+Failed to get temporary file name
+Failed to get temporary path
+Failed to get the group sid for {0}
+Failed to get windows directory for WDSCORE DLL path.
+Failed to get Windows directory.
+Failed to GetVolumeInformation for path {0}
+Failed to hydrate file {0}
+Failed to hydrate source file
+Failed to initialize cbs session
+Failed to initialize logging with dll: %ws, log directory: %ws
+Failed to initialize logging with DLL: %ws, log file: %ws
+Failed to load {0}
+Failed to load fltlib.dll.
+Failed to load hive from {0}
+Failed to load identity from attributes.
+Failed to load offline {0} hive
+Failed to load offline default user registry hive
+Failed to load offline EFI BCD hive
+Failed to load offline Non-EFI BCD hive
+Failed to load offline store from boot directory {0} and windows directory {1}
+Failed to load RtlPublishWnfStateData; will not report progress
+Failed to load running partition store
+Failed to load the default user profile registry hive
+Failed to load WDSCORE DLL: %ws
+Failed to load wer.
+Failed to move log: %ws to backup log: %ws, continuing anyway.
+Failed to normalize {0}
+Failed to normalize language: %S
+Failed to normalize processor: %S
+Failed to normalize public key token: %S
+Failed to normalize version: %S
+Failed to obtain non-zero CBS log environment variable size for offline WER report.
+Failed to open {0}
+Failed to open destination file at {0}
+Failed to open element.
+Failed to open file at {0}
+Failed to open hive at {0}
+Failed to open image index {0} for WIM at {1}
+Failed to open key: %S
+Failed to open regkey configuration.
+Failed to open subkey '{0}'
+Failed to open the registry root: n/a, key: %S.
+Failed to open WIM at {0}
+Failed to parse security in manifest: {0}
+Failed to populate information about offline store
+Failed to process values for key '{0}'
+Failed to public allocate string for string id: %S
+Failed to query Consent Key.
+Failed to query file compression state for file {0}
+Failed to query for STORE_ARCH
+Failed to query info for root key
+Failed to query info for subkey '{0}'
+Failed to query key info
+Failed to query key value watsonconsent.
+Failed to query path to default user profile directory
+Failed to query processor architecture offline from CBS
+Failed to query registry value: %S
+Failed to query system processor architecture
+Failed to query value to get type and size of registry root: n/a, value: %S
+Failed to read file {0}
+Failed to read file contents {0}.
+Failed to read file from {0}
+Failed to register CbsLogMonitor provider
+Failed to rename file from {0} to {1}; falling back to straight copy...
+Failed to replace hive at {0} with {1}
+Failed to retrieve CBS log environment variable size for offline WER report.
+Failed to save hive to {0}
+Failed to save hive to temporary location {0}
+Failed to send WER report.
+Failed to set compression on file {0}
+Failed to set original file attributes on file {0}
+Failed to set post process compression algorithm for cabinet: {0}
+Failed to set registry value: %S
+Failed to set SDDL on directory {0}
+Failed to set the hash type on the job for container: {0}
+Failed to set WIM temporary path for WIM at {0} to {1}
+Failed to set Windows Error Report parameters.
+Failed to set WOF backing store on handle
+Failed to SetHandleInformation
+Failed to shred identity.
+Failed to shred identity: %S
+Failed to store log path argument: %ws
+Failed to submit the Windows Error Report.
+Failed to test InternalIsEqualbyAttribute
+Failed to unload BCD hive
+Failed to unload default user registry hive
+Failed to unload offline registry hive {0}
+Failed to unload online components hive
+Failed to upload wer report.
+Failed to validate component name: %S
+Failed to write all lines
+Failed to write file at {0} with data from {1}
+Failed to write filter driver file.
+Failed to write out bytes
+Failed to write registry pending.xml elements
+Failed to write registry pending.xml operations to writer
+Failed unloading hive file: {0}, key: {1}, with flags: {2}, NTSTATUS: {3}
+Failed updating maintenance flags.
+FailFast
+Failure in applying primitives, {0} {1} {2} {3} {4}
+Fallback CopyFile failed from {0} to {1}
+fallbackLanguage
+fAlreadyExisted
+false
+FALSE
+Family.VersionlessKey->DeleteRecursively( Windows::Rtl::IRtlKey::DeleteRecursively_Flags::OpenForBackupIntent | Windows::Rtl::IRtlKey::DeleteRecursively_Flags::WorkAroundRestorePrivilege, nullptr)
+Family.VersionlessKey->GetNumberOfChildren(0, &SubKeys, &SubValues)
+Family.VersionlessKey->OpenExistingKey( Windows::Rtl::IRtlKey::OpenExistingKeyFlags::KeyNotFoundIsOk | Windows::Rtl::IRtlKey::OpenExistingKeyFlags::OpenForBackupIntent, ((((0x00020000L)) | (0x0001) | (0x0008) | (0x0010)) & (~(0x00100000L))) | ((((0x00020000L)) | (0x0002) | (0x0004)) & (~(0x00100000L))), Windows::Rtl::ObjAttrFromName(Key.Name), &MajorMinorKey, &Disposition)
+feature pack
+FeaturePackage
+File {0} doesn't exist
+File '{0}' doesn't exist, creating an empty hive.
+File {0} is not in WinSxS
+File {0} not found in the CIM.
+file exists
+file too large
+File too large {0}
+File->DigestHash->DigestMethod->Algorithm == WcpManifestParser::DigestMethodType::SHA256
+File->DigestHash->HashTransforms->Transform->Algorithm == WcpManifestParser::TransformType::Identity
+fileAttribute
+filedeltas
+FileDescription
+FileList
+FileListFile.IsValid()
+filename too long
+Files
+FileSize
+FilesRepositoryRoot
+FileVersion
+FilterFindClose
+FilterFindFirst
+FilterFindNext
+final
+FindClose
+FindFirstFileExW
+FindFirstFileW
+FindNextFileW
+flags
+Flags == EnumeratePackagesFlags::Installed
+Flags == GetPackageInfoFlags::Installed
+flight
+flightComponent
+FlushSink.Hr()
+force
+FORCE_INMOBILE
+FORCE_NO_ACL_SUPPORT
+forceDisplay
+FormatMessageW
+forwardDiffInfo
+Found a CIM related file: {0}
+Found a provisional, canonical package to stage and ignoring InstalledComponentsByVersionlessHash, ID: {0}
+Found a provisional, diff package to stage and utilizing InstalledComponentsByVersionlessHash, ID: {0}
+Found corrupt reference {0} for {1}. Skipping it.
+Found CreateDirectory call, adding to list {0}
+Found differing manifest: {0}
+Found package {0}
+Found SetFileInfo on a mapping or directory being created in this session {0}
+Found SetFileInfo on an existing mapping source, {0} dest {1}
+Found SetFileInfo op on a file not in CreateDirectory, CreateFile, or MoveFile call, we can only do this in imaging {0}
+Found SetFileInfo op on a file with no existing bind-mapping or not created in this session, we can only do this in imaging, continuing... {0}
+Found unexpected existing component path for {0} even though it was reported as not installed. Overwriting existing install.
+Found unexpected SxS component {0}
+Found unnecessary components hive modification in registry pending.xml, ignoring {0}
+foundation
+fPhPT
+FreeAndZeroCSI_BROKEN_COMPONENT
+FreeAndZeroCSI_REPAIRED_COMPONENT
+FreeLibrary
+Ft;Fxty
+function not supported
+fValid
+G0_^]
+G9sPt
+GeneratePackageFileList
+GenerateTransformerList
+generic
+GetAppIdAuthority
+GetConsoleScreenBufferInfo
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThread
+GetCurrentThreadId
+GetDefaultUserHiveRoot
+GetEnvironmentVariableW
+GetExitCodeProcess
+GetExitCodeThread
+GetFileAttributesExW
+GetFileAttributesW
+GetFileContents
+GetFileInformationByHandleEx
+GetFileSizeEx
+GetFileVersionInfoSizeW
+GetFileVersionInfoW
+GetFinalPathNameByHandleW
+GetFriendlyInstallerName
+GetFullPathNameW
+GetIdentityAuthority
+GetIServicingAcrHelper
+GetIServicingCommitter
+GetIServicingFileHashProvider
+GetIServicingFusionInstaller
+GetIServicingFusionStore
+GetIServicingQuerier
+GetIServicingStager
+GetLastError
+GetLoadedHiveKeyNameInternal
+GetModuleFileNameA
+GetModuleFileNameW
+GetModuleHandleExW
+GetModuleHandleW
+GetPrimitiveInstallerSupport
+GetProcAddress
+GetProcessHeap
+GetRtlIdentityAuthority()->Parse(0, &Data.Id.IdString, &Data.Id.DefId)
+GetRunningDllPath(&ModuleDir)
+GetSecurityDescriptorControl
+GetSecurityDescriptorDacl
+GetSecurityDescriptorGroup
+GetSecurityDescriptorLength
+GetSecurityDescriptorOwner
+GetSecurityDescriptorSacl
+GetSecurityInfo
+GetStdHandle
+GetSystemInfo
+GetSystemStore
+GetSystemTime
+GetSystemTimeAsFileTime
+GetSystemWindowsDirectoryW
+GetTemporaryPath
+GetTemporaryPath failed
+Getting DPX progress failed with {0}.
+GetVersionEx failed.
+GetVersionExW
+GetVolumeInformationByHandleW
+GetVolumePathNameW
+GetWindowsDirectoryW
+GH:FH
+GlobalMemoryStatusEx
+gQQQQQQQQh
+group
+guest
+guidance
+HardlinkFile
+hashalg
+HashDigestLength
+hDpxDll.IsValid()
+HeapAlloc
+HeapFree
+Hf94Au
+hidden
+HKEY_CURRENT_USER
+HKEY_LOCAL_MACHINE
+HKEY_LOCAL_MACHINE\
+HKEY_LOCAL_MACHINE\BCD
+HKEY_LOCAL_MACHINE\COMPONENTS
+HKEY_LOCAL_MACHINE\DEFAULT
+HKEY_LOCAL_MACHINE\DRIVERS
+HKEY_LOCAL_MACHINE\SAM
+HKEY_LOCAL_MACHINE\SECURITY
+HKEY_LOCAL_MACHINE\SOFTWARE
+HKEY_LOCAL_MACHINE\SYSTEM
+HKEY_LOCAL_MACHINE\TEMPLATE
+HKEY_USERS
+HKEY_USERS\.DEFAULT
+host unreachable
+hotfix
+hotpatch
+HRESULT_FROM_NT(
+HRESULT_FROM_WIN32(
+http://schemas.microsoft.com/embedded/2004/10/ImageUpdate
+http://schemas.microsoft.com/embedded/2019/06/ImageUpdate
+http://www.w3.org/2000/09/xmldsig#
+http://www.w3.org/2000/09/xmldsig#sha1
+http://www.w3.org/2000/09/xmldsig#sha256
+http://www.w3.org/2000/09/xmldsig#sha384
+http://www.w3.org/2000/09/xmldsig#sha512
+HX+HT
+I0G1-0+
+identifier
+identifier removed
+identity
+Identity != nullptr
+Identity contains invalid public key token: %*.*ws.
+Identity is missing public key token {0}
+Identity missing language.
+Ignoring file {0} because the size is 0
+Ignoring loading {0} hive when doing file commit on the container sandbox
+illegal byte sequence
+ImageIdentity
+ImageVersionString
+ImpactfulOperations->OpenRegistryKey( Windows::Rtl::IRtlSystemIsolationLayerPublic::OpenRegistryKeyFlags::KeyNotFoundIsOk | Windows::Rtl::IRtlSystemIsolationLayerPublic::OpenRegistryKeyFlags::OpenForBackupIntent, (((0x001F0000L) | (0x0001) | (0x0002) | (0x0004) | (0x0008) | (0x0010) | (0x0020)) & (~(0x00100000L))), g_cVersionedIndexComponents, &VersionedIndexKey, &Disposition)
+ImpactfulOperations->TransferFile( Windows::Rtl::IRtlSystemIsolationLayerPublic::TransferFile_Flags::QueueCopyOperation | Windows::Rtl::IRtlSystemIsolationLayerPublic::TransferFile_Flags::ReplaceIfExists, Windows::Rtl::IRtlSystemIsolationLayerPublic::TransferFile_Operations::HardLinkWithCopyFallback, nullptr, WinnerManifestPath, nullptr, RtlEx::ConcatenateStrings(g_cWinSxSManifests, ComponentFullId.VersionedKeyform, L".manifest"_LUS), nullptr)
+ImpactfulOperations->TransferFile( Windows::Rtl::IRtlSystemIsolationLayerPublic::TransferFile_Flags::ReplaceIfExists | Windows::Rtl::IRtlSystemIsolationLayer::TransferFile_Flags::OpenForBackupIntent, Windows::Rtl::IRtlSystemIsolationLayerPublic::TransferFile_Operations::HardLinkWithCopyFallback, nullptr, CatalogSourceDestPair.first, nullptr, CatalogSourceDestPair.second, nullptr)
+inappropriate io control operation
+Index of element to insert exceeds the number of elements.
+Info: 
+Informational,
+InitializeCriticalSection
+InitializeCriticalSectionAndSpinCount
+InitializeCriticalSectionEx
+InitializeCSI_BROKEN_COMPONENT
+InitializeCSI_REPAIRED_COMPONENT
+Initialized store, arch={0}, style={1}, compact={2}, windir={3}, sandbox={4}
+InitializeModule
+InitializeSListHead
+InitializeStoreParameters
+install
+Install type dependencies are not allowed, {0}
+InstallAllPackages
+InstallContext.m_Layout.AddCatalogMarkFromTlc( CatalogThumbprint, &TlcData)
+InstallContext.m_Layout.AddTlcMark(ComponentStore::TlcMarkKind::Install, Reference, &TlcData)
+InstallContext.m_Layout.AddTlcMark(ComponentStore::TlcMarkKind::Pin, Reference, &TlcData)
+InstallContext.m_Layout.AddTlcMark(ComponentStore::TlcMarkKind::Staged, Reference, &TlcData)
+InstallContext.m_Layout.ManuallyMarkComponentStaged(ComponentAccess, ClosureInfo->Hash256.GetConstPointer())
+InstallContext.m_Layout.RemoveTlcMark(ComponentStore::TlcMarkKind::Install, Reference, &TlcData)
+InstallContext.m_Layout.RemoveTlcMark(ComponentStore::TlcMarkKind::Pin, Reference, &TlcData)
+InstallContext.m_Layout.RemoveTlcMark(ComponentStore::TlcMarkKind::Staged, Reference, &TlcData)
+InstallContext.m_Layout.SetComponentFlag(false , ComponentStore::ComponentFlags::ClosureFlag_ManifestsPresent, ComponentData)
+InstallContext.m_Winners.AddInstallMarkToFamily( &Family, ComponentFullId.Version)
+InstallContext.m_Winners.OpenFamilyMap( false , Change.Shadowed, &Family, nullptr)
+InstallContext.m_Winners.OpenFamilyMap( false , Change.Winner ? Change.Winner : Change.Shadowed, &Family, nullptr)
+InstallContext.m_Winners.RemoveInstallMarkFromFamily( &Family, ShadowedFullId.Version)
+installed
+Installer Queue is empty
+installerAssembly
+Installing all packages!
+Installing new component {0}, reference: {1}
+Installing new reference for {0}, reference: {1}
+Installing package {0}
+InstallMap::WriteWinnersFromChangelist(InstallContext.m_Winners, Windows::MakeVector(MergedChangelist))
+InstallPackagesToFolder
+installrequested
+instrumentation
+integrate
+InternalName
+interrupted
+Introducing a SIL redirection for package root {0}
+Introducing a SIL redirection for sandbox {0}
+invalid
+invalid argument
+Invalid argument ppvObject
+Invalid argument: pbIsEqual
+Invalid argument: pbIsNull
+Invalid argument: pIdentity
+Invalid argument: pszIdentity
+Invalid argument: szIdentity
+Invalid argument: szName
+Invalid character in name: %S
+Invalid delimiter: %wc.
+Invalid empty field found in version: %S
+invalid map<K, T> key
+Invalid non-digit found in version: %S
+Invalid path.
+Invalid pointer ppvObject
+Invalid public key token or insufficient buffer for public key token: %S
+Invalid public key token provided: %S
+invalid seek
+invalid string position
+io error
+is a directory
+IsCompactOSEnabled
+IsDebuggerPresent
+IsIdentityPnPDriver
+isolated
+IsProcessorFeaturePresent
+IsSkuAssembly
+IU_KEY{def28724-55b8-4563-9ad7-190e68f7031f}
+IU_RESERVE_DISK
+IU_SPACE_BOOT{b1fd52dd-3a8f-42d1-9aa1-eee0257e8e89}
+j X9A
+j(PSW
+j(Zj)X
+j.Yf;
+j.Zj)
+j\Yf9
+j\Yf9Lr
+j\Yf9LV
+j\Zf9TA
+j<_j(
+JanFebMarAprMayJunJulAugSepOctNovDec
+jtZjaf
+JVhPT
+jXZ_[
+kernel32.dll
+KERNEL32.dll
+kernelbase.dll
+Key '{0}' missing from live hive (runtime delete or power loss resume), values are therefore deleted. Skipping.
+Key: %wZ, PID: %d
+Key: %wZ, Process name: %wZ
+Key->EnumerateKeys(0, &KeyEnumerator)
+Key->OpenExistingKey( Windows::Rtl::IRtlKey::OpenExistingKeyFlags::KeyNotFoundIsOk, ((((0x00020000L)) | (0x0001) | (0x0008) | (0x0010)) & (~(0x00100000L))), ObjAttr, &ComponentKey, &Disposition)
+Keyboard
+KeyEnumerator->Next( Windows::MakeVector(SubkeyInfos), &cFetched)
+KeyEnumerator->Next( Windows::Vector<Windows::Rtl::KEY_SUBKEY_INFORMATION>(SubkeyInfo), &cFetched)
+L$ ^[3
+L$$Pj
+L$,_^3
+L$|_^[3
+L$<_^[3
+L$<Pjb
+L$4^3
+L$T_^[3
+L$t_^3
+L93u+
+langProjectionPeakDisk
+language
+Language
+language pack
+Languages
+Last Counter
+Last Help
+lastAccessTime
+lastWriteTime
+LdrGetDllHandle
+LdrGetDllHandleEx
+LdrGetProcedureAddress
+LdrLoadDll
+LdrUnloadDll
+LeaveCriticalSection
+Legal_Policy_Statement
+LegalCopyright
+length
+LI|kQ
+linkInformation
+list too long
+Loading registry hive {0} with flags 0x{1}
+LoadLibraryExA
+LoadLibraryExW
+LoadLibraryW
+local pack
+Local\SM0:%lu:%lu:%hs
+LocalAlloc
+LocalFree
+localizedStrings
+Location
+LogAdapter::ConsoleLogger::GetHandleInfo
+LogAdapter::Logger::LogNumObjects
+LogHr
+LogNt
+LogPath
+Logs\CBS
+Logs\Cbs\FilterList.log
+LPhPT
+lstd::exception: %hs
+lstrcmpW
+lusSanitizedFilePath.Length != 0
+m_fLocked
+m_ulSize == 0
+M0K0I
+mainos
+MaintenanceFlags
+MajorMinorKey->DeleteRecursively( Windows::Rtl::IRtlKey::DeleteRecursively_Flags::OpenForBackupIntent | Windows::Rtl::IRtlKey::DeleteRecursively_Flags::WorkAroundRestorePrivilege, nullptr)
+MajorMinorKey->GetNumberOfChildren(0, nullptr, &SubValues)
+Manifest ({0}) does not match original identity ({1})
+Manifest does not match previously installed manifest for identity, {0}, reference: {1}
+Manifest is corrupt: {0}
+Manifest is invalid: {0}
+Manifest is missing: {0}
+Manifest missing or corrupt: {0}
+Manifests
+manifestVersion
+map/set too long
+MapVariable
+memberships
+memcmp
+memcpy
+memmove
+memset
+MergeTwoChangeLists
+message size
+microsoft
+Microsoft
+Microsoft Corporation
+Microsoft Corporation1
+Microsoft Corporation1&0$
+Microsoft Corporation1.0,
+Microsoft Corporation1-0+
+Microsoft Corporation1200
+Microsoft Time-Stamp PCA 2010
+Microsoft Time-Stamp PCA 20100
+Microsoft Time-Stamp Service
+Microsoft Time-Stamp Service0
+Microsoft Windows0
+Microsoft.BackgroundIntelligentTransfer.Management.Resources
+Microsoft.BaseOS.ImgUpd.UpdateOS.PowerToys.reg
+Microsoft.CertificateServices.PKIClient.Cmdlets.Resources
+Microsoft.DeviceErrata.reg
+Microsoft.Errata.reg
+Microsoft.Ink.Resources
+Microsoft.KeyDistributionService.Cmdlets.Resources
+Microsoft.Management.Infrastructure.CimCmdlets.Resources
+Microsoft.Management.Infrastructure.Resources
+Microsoft.Phone.Test.BaseOS.ImgUpd.UpdateOS.PowerToys.reg
+Microsoft.PowerShell.Activities.Resources
+Microsoft.PowerShell.Cmdletization.OData.Resources
+Microsoft.PowerShell.Commands.Diagnostics.Resources
+Microsoft.PowerShell.Commands.Management.Resources
+Microsoft.PowerShell.Commands.Utility.Resources
+Microsoft.PowerShell.ConsoleHost.Resources
+Microsoft.PowerShell.Editor.Resources
+Microsoft.PowerShell.GPowerShell.Resources
+Microsoft.PowerShell.GraphicalHost.Resources
+Microsoft.PowerShell.ISECommon.Resources
+Microsoft.PowerShell.LocalAccounts.Resources
+Microsoft.PowerShell.PSReadline.Resources
+Microsoft.PowerShell.ScheduledJob.Resources
+Microsoft.PowerShell.Security.Resources
+Microsoft.PowerShell.Utility.Activities.Resources
+Microsoft.PowerShell.Workflow.Host.Resources
+Microsoft.PowerShell.Workflow.ServiceCore.Resources
+Microsoft.Windows.Appx.PackageManager.Commands.Resources
+Microsoft.WindowsAuthenticationProtocols.Commands.Resources
+Microsoft.WSMan.Management.Resources
+Microsoft\Windows NT\CurrentVersion\
+Microsoft\Windows NT\CurrentVersion\ProfileList
+Microsoft\Windows\CurrentVersion\Component Based Servicing
+MicrosoftSettings.reg
+Microsoft-Windows-AppReadiness-Service
+Microsoft-Windows-AppxInstaller
+Microsoft-Windows-CDP
+Microsoft-Windows-ConsoleLogon
+Microsoft-Windows-Cortana.Andromeda.AppxMain
+Microsoft-Windows-Cortana.Andromeda-Deployment
+Microsoft-Windows-Cortana.HoloLens.AppxMain
+Microsoft-Windows-Cortana.HoloLens-Deployment
+Microsoft-Windows-DefaultApp
+Microsoft-Windows-Devices-Picker
+Microsoft-Windows-DirectoryServices-ADAM-Tools
+Microsoft-Windows-Media-Player
+Microsoft-Windows-Microsoft-Data-Access-Components-Jet
+Microsoft-Windows-Mirage-Capture
+Microsoft-Windows-OCR-
+Microsoft-Windows-Onecore-Security-WebAuthBridge-Internet.appxmain
+Microsoft-Windows-Onecore-Security-WebAuthBridge-Internet-A.appxmain
+Microsoft-Windows-Onecore-Security-WebAuthBridge-Internet-Appx
+Microsoft-Windows-Onecore-Security-WebAuthBridge-Internet-B.appxmain
+Microsoft-Windows-Onecore-Security-WebAuthBridge-InternetSso.appxmain
+Microsoft-Windows-Onecore-Security-WebAuthBridge-InternetSso-Appx
+Microsoft-Windows-Onecore-Security-WebAuthBridge-IntranetSso.appxmain
+Microsoft-Windows-Onecore-Security-WebAuthBridge-IntranetSso-Appx
+Microsoft-Windows-PowerShell
+Microsoft-Windows-PowerShell-Adm.Resources
+Microsoft-Windows-PowerShell-V3
+Microsoft-Windows-Rasppp
+Microsoft-Windows-SecureStartup-BitLockerAccessAgent
+Microsoft-Windows-SecureStartup-BitLockerAccessAgent-Binaries-Multi
+Microsoft-Windows-Servicing-Core
+Microsoft-Windows-Servicing-Core-X86
+Microsoft-Windows-Shell-Other-Cursors
+Microsoft-Windows-Spelling-SpellCheck
+Microsoft-Windows-TapiClient
+Microsoft-Windows-Virtual-SmartCard-Subsystem-Onecore-Deployment
+Microsoft-Windows-WAB
+Microsoft-Windows-Wallet-Service
+Microsoft-Windows-WinBioEnrollmentDataModel
+Microsoft-Windows-WordbreakerStemmer-Neutral
+Microsoft-Windows-XamlHost
+milestone
+Mismatched public key token found between manifest and catalog for {0}
+Mismatched public key token found for {0}. Checking if signed by Microsoft.
+Missing removal found for updated component {0}.
+mobileoperator
+MobileStoreVersion
+Module initialized WDS logging
+Module starts contributing to an existing logging session
+Module: {0} Version: {1}.{2}.{3}.{4}
+MoveFile
+MoveFileExW
+Moving a file that already has a bind-mapping for its source, source {0}, dest {1}
+Msg:[%ws] 
+Multihop must be use cabinets.
+N0L0J
+NETFX4ASPNET
+NETFX4CLIENT
+NETFX4-WCF-CLIENT
+NETFX4-WCF-EXTENDED
+network down
+network reset
+network unreachable
+neutral
+never
+New pbl doesn't exist at {0}
+New Persisted Bind-Mappings Content: {0}
+NewTempBytesRequired > TempBytesRequired
+No applicable transformers found for container sandbox
+no buffer space
+no child process
+no link
+no lock available
+no message
+no message available
+No more than one flag set check failed: __e
+No pending.xml found for container sandbox
+no protocol option
+No quote found
+No registry operations present for sandbox
+no space on device
+no stream resources
+no such device
+no such device or address
+no such file or directory
+no such process
+No tag found
+Non-EFI system, BCD hive located at {0}
+nonSxS
+nonsxs
+normal
+normFlags
+not a directory
+not a socket
+not a stream
+Not able to add %S to WER report.
+Not able to add CBS log files to Windows Error Report.
+Not able to add file %S: to Windows Error Report.
+Not able to add files to offline WER report.
+Not able to add FilterList.log to Windows Error Report.
+Not able to add mini dump to Windows Error Report.
+Not able to add pending.xml to offline WER report.
+Not able to add Sessions.xml to offline WER report.
+Not able to query image name
+not connected
+not enough memory
+Not opening hive {0} as it doesn't exist
+Not opening hive {0} as it is a WCI reparse point
+not supported
+Not using in memory cache. Total memory is {0}.
+notContentIndexed
+Not-null check failed: FileHashInfo
+Not-null check failed: FileName
+Not-null check failed: FullOfflineHiveFilePath
+Not-null check failed: Key
+Not-null check failed: KeyNameBuffer
+Not-null check failed: Path
+Not-null check failed: pContents
+Not-null check failed: pValue
+Not-null check failed: pwszMigrationRoot
+Not-null check failed: pwszOutputDir
+Not-null check failed: szWin32FilePath
+Not-null check failed: Target
+Not-null check failed: vpfnDpxNewJob
+NtClose
+NtCommitRegistryTransaction
+NtCreateFile
+NtCreateRegistryTransaction
+ntdll.dll
+NtFlushKey
+NtLoadKey2
+NtOpenKey
+NtOpenKeyEx
+NtOpenKeyEx(&m_RootKey, ((((0x00020000L)) | (0x0001) | (0x0008) | (0x0010)) & (~(0x00100000L))), &RootKeyAttributes, (0x00000004L))
+NtQueryEa Failed
+NtQueryEaFile
+NtQueryInformationFile
+NtQueryInformationProcess
+NtQueryOpenSubKeysEx
+NtQueryPerformanceCounter
+NtQueryValueKey
+NtQueryWnfStateData
+NtSetEaFile
+NTSTATUS_FROM_WIN32(
+NtUnloadKey2
+NtUpdateWnfStateData
+ntuser.dat
+NTUSER.DAT
+NTUSER.DAT.REG
+NtWaitForSingleObject
+NtWriteFile
+nullDiffInfo
+Number of fields found did not match expected number of fields in version: %S
+NumCBSPersistLogs
+Numeric overflow in version: %S
+O:SYG:SYD:PAI(A;OICI;FA;;;SY)(A;OICI;FA;;;BA)(A;OICI;FR;;;BU)(A;OICI;FR;;;AC)
+O0M0K
+objectid_
+objectid_*
+ObjectLength
+OEMInput
+OEMInputParser::ParseBootUILanguage
+OEMInputParser::ParseDocument
+OEMInputParser::ParseImageVersionString
+OEMInputParser::ParseKeyboard
+OEMInputParser::ParseKeyboardLanguage
+OEMInputParser::ParseLanguage
+OEMInputParser::ParseLanguages
+OEMInputParser::ParseOEMInputDocumentInternal
+OEMInputParser::ParseProduct
+OEMInputParser::ParseReleaseType
+OEMInputParser::ParseResolution
+OEMInputParser::ParseResolutions
+OEMInputParser::ParseSpeech
+OEMInputParser::ParseSpeechLanguage
+OEMInputParser::ParseSupportedLanguages
+OEMInputParser::ParseUserInterface
+OEMInputParser::ParseUserInterfaceLanguage
+OEMSettings.reg
+offline
+offset
+og\cL
+oK0D$"<
+OL_^]
+Old pbl doesn't exist at {0}
+OLE32.dll
+On allocating cbs array
+ondemand pack
+OneCore
+onecore\base\cbs\identityutil\cbsidentity.cpp
+onecore\base\cbs\identityutil\cbsidentityutil.cpp
+onecore\Base\cbs\mobile\inc\PKGCommon.h
+onecore\base\cbs\mobile\iucommon\iuutils.cpp
+onecore\base\cbs\mobile\iucommon\lib\objfre\i386\pendingxmlparser.cpp
+onecore\base\cbs\mobile\registryapi\registryapi.cpp
+onecore\base\cbs\parser\helper.cpp
+onecore\base\cbs\parser\lib\objfre\i386\cbspackageparser.cpp
+onecore\base\cbs\util\cbsfile.cpp
+onecore\base\cbs\util\cbsmaintenanceactions.cpp
+onecore\base\cbs\util\cbspath.cpp
+onecore\base\cbs\util\cbsreg.cpp
+onecore\base\cbs\util\cbsstr.cpp
+onecore\base\cbs\util\cbsutil.cpp
+onecore\Base\cbs\Util\inc\CbsArray.h
+onecore\Base\cbs\util\inc\CbsAuto.h
+onecore\Base\cbs\Util\inc\CbsStringArray.h
+onecore\base\cbs\werlib\cbswer.cpp
+onecore\Base\published\LogAdapter.h
+onecore\Base\published\LogAdapterConsole.h
+onecore\base\servicing\cix\parser\objfre\i386\cixparser.cpp
+onecore\base\servicing\containerrecipe\lib\containerrecipe.cpp
+onecore\base\servicing\containerrecipe\lib\objfre\i386\containerrecipeparser.cpp
+onecore\base\servicing\filelist\lib\filelist.cpp
+onecore\base\servicing\oeminput\lib\objfre\i386\oeminputparser.cpp
+onecore\base\servicing\offlinehives\offlinehives.cpp
+onecore\base\servicing\poqregexecutehelper\poqregexecutehelper.cpp
+onecore\Base\servicing\rtllibex\inc\ComEnumeratorHelper.h
+onecore\base\servicing\rtllibex\lib\rtlexutil.cpp
+onecore\base\servicing\turbostack\lib\acrhelper.cpp
+onecore\base\servicing\turbostack\lib\cimhelper.cpp
+onecore\base\servicing\turbostack\lib\fusion.cpp
+onecore\base\servicing\turbostack\lib\generateimagemanifest.cpp
+onecore\base\servicing\turbostack\lib\globals.cpp
+onecore\base\servicing\turbostack\lib\install.cpp
+onecore\base\servicing\turbostack\lib\mycbsutil.cpp
+onecore\base\servicing\turbostack\lib\objfre\i386\wcpstagingcomponentparser.cpp
+onecore\base\servicing\turbostack\lib\package.cpp
+onecore\base\servicing\turbostack\lib\snippets.cpp
+onecore\base\servicing\turbostack\lib\stdinc.h
+onecore\base\servicing\turbostack\lib\turbostackutil.h
+onecore\base\servicing\util\servicinghelper.cpp
+onecore\base\wcp\wcpstub\cwcpdll.cpp
+onecore\base\xml\parsergenerator\lib\xpgutil.cpp
+onecore\internal\Base\inc\auto_hive.h
+onecore\internal\Base\inc\blockpool.h
+onecore\internal\base\inc\rtlstringutil.h
+onecore\internal\Base\inc\rtlstringutil.h
+onecore\internal\base\inc\rtlsystemutil.h
+onecore\internal\Base\inc\rtlsystemutil.h
+onecore\internal\Base\inc\wcpmanifest.h
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+onecore\internal\sdk\inc\wil\Staging.h
+onecore\private\Base\inc\BlockLookupTable.h
+onecore\private\Base\inc\LogAdapter.h
+onecore\private\Base\inc\logadapter.h
+onecore\private\Base\inc\RtlExObjUtil.h
+onecore\private\Base\inc\RtlExStringUtil.h
+onecore\private\Base\inc\udom_xmlwalker.h
+onoff
+OOBEInProgress
+OpenExistingOfflineStore
+OpenProcess
+OpenSemaphoreW
+Operation callback returned 'done'
+operation canceled
+operation in progress
+operation not permitted
+operation not supported
+operation would block
+optional
+ORAdvanceSubkeyEnumerator
+ORAdvanceValueEnumerator
+ORCleanupSubkeyEnumerator
+ORCleanupValueEnumerator
+ORCloseHive
+ORCloseKey
+ORCreateHive
+ORCreateKey
+ORDeleteKey
+ORDeleteValue
+ORGetKeySecurity
+ORGetValue
+OriginalFilename
+Originating RTL Failure with Exception at {0}({1})[{2}] {3}
+ORInitializeSubkeyEnumerator
+ORInitializeValueEnumerator
+OROpenHive
+OROpenKey
+ORQueryInfoKey
+ORQuerySubkeyEnumerator
+ORQueryValueEnumerator
+ORSaveHive
+ORSetKeySecurity
+ORSetValue
+ORStartSubkeyEnumerator
+ORStartValueEnumerator
+OS CIM doesn't exist at {0}
+OSPool
+OsVersion
+Out of memory when allocating query buffer
+OutMut->Buffer = static_cast<BYTE*>(this->ReserveBytes(InBlob.Length, Alignment))
+OutputDebugStringA
+OutputDebugStringW
+OutputLString.Buffer = static_cast<PWCHAR>(Allocator.ReserveBytes(BytesRequired, alignof(WCHAR)))
+OVERRIDE
+owner dead
+Owners
+Package
+package
+Package
+Package {0} cannot contain nested sub-packages
+Package {0} cannot have parenting rules
+Package {0} is not supported on non-stateseparated images
+Package {0} need to have apply directory if it is PreProcessed
+Package architecture {0} is incompatible with the store architecture {1}
+Package file list finished.
+packageExtended
+packageSize
+Parameters->Set_pszExternalServicingDirectory(szExternalStorage)
+Parameters->Set_pszHostRegistryBcdPath(Win32HivePath.Buffer)
+Parameters->Set_pszHostRegistryDefaultUserPath(L"HKEY_LOCAL_MACHINE\\TEMPLATE")
+Parameters->Set_pszHostRegistryDefaultUserPath(Win32HivePath.Buffer)
+Parameters->Set_pszHostRegistryMachineComponentsPath(L"HKEY_LOCAL_MACHINE\\COMPONENTS")
+Parameters->Set_pszHostRegistryMachineComponentsPath(Win32HivePath.Buffer)
+Parameters->Set_pszHostRegistryMachineDriversPath(L"HKEY_LOCAL_MACHINE\\DRIVERS")
+Parameters->Set_pszHostRegistryMachineDriversPath(Win32HivePath.Buffer)
+Parameters->Set_pszHostRegistryMachineSAMPath(L"HKEY_LOCAL_MACHINE\\SAM")
+Parameters->Set_pszHostRegistryMachineSAMPath(Win32HivePath.Buffer)
+Parameters->Set_pszHostRegistryMachineSecurityPath(L"HKEY_LOCAL_MACHINE\\SECURITY")
+Parameters->Set_pszHostRegistryMachineSecurityPath(Win32HivePath.Buffer)
+Parameters->Set_pszHostRegistryMachineSoftwarePath(L"HKEY_LOCAL_MACHINE\\SOFTWARE")
+Parameters->Set_pszHostRegistryMachineSoftwarePath(Win32HivePath.Buffer)
+Parameters->Set_pszHostRegistryMachineSystemPath(L"HKEY_LOCAL_MACHINE\\SYSTEM")
+Parameters->Set_pszHostRegistryMachineSystemPath(Win32HivePath.Buffer)
+Parameters->Set_pszHostRegistryUserDotDefaultPath(L"HKEY_LOCAL_MACHINE\\DEFAULT")
+Parameters->Set_pszHostRegistryUserDotDefaultPath(Win32HivePath.Buffer)
+Parameters->Set_pszHostSystemDrivePath(NullTerminatedBuffer.Buffer)
+Parameters->Set_pszHostSystemDrivePath(wsRootPath.c_str())
+Parameters->Set_pszHostWindowsDirectoryPath(NullTerminatedBuffer.Buffer)
+Parameters->Set_pszHostWindowsDirectoryPath(wsWindowsPath.c_str())
+Parameters->Set_pszTargetWindowsDirectoryPath(SystemRoot.Buffer)
+Parameters->Set_pszTargetWindowsDirectoryPath(wsWindowsPath.c_str())
+parent
+Parsed package {0}
+ParseDefinitionBaseIdentity
+ParseDocument failed
+ParseManifest
+ParseManifestEx
+partition
+PathMatchSpecW
+PayLoadDir->DeleteRecursively( 0, nullptr)
+PblAdditions.xml
+pdwValue
+pdwVersion
+pending.xml
+PendingXmlParser::ParseCopyFileOperation
+PendingXmlParser::ParseCreateDirectoryOperation
+PendingXmlParser::ParseCreateFileOperation
+PendingXmlParser::ParseCreateKeyOperation
+PendingXmlParser::ParseDeleteFileOperation
+PendingXmlParser::ParseDeleteKeyOperation
+PendingXmlParser::ParseDeleteKeyValueOperation
+PendingXmlParser::ParseDocument
+PendingXmlParser::ParseHardlinkFileOperaion
+PendingXmlParser::ParseMoveFileOperation
+PendingXmlParser::ParsePoqRoot
+PendingXmlParser::ParseSetFileInformationOperation
+PendingXmlParser::ParseSetKeySecurityOperation
+PendingXmlParser::ParseSetKeyValueOperation
+PendingXmlParser::ParseWofDecompressFile
+PendingXmlParser::ParseWriteFileOperation
+PERF (analysis): Number of manifests parsed for analysis: {0}
+PERF (installers): Manifest parsing for installers (TSFEATURE-share-with-compute) took: {0}
+PERF (installers): Number of cache hits: {0}
+PERF (installers): Number of manifests parsed: {0}
+PERF (installers): Total cache memory footprint: {0} ({1} Mb)
+PERF (planning) : Time taken to parse all on-device packages (TSFEATURE-removal): {0}
+PERF (planning): Analyzing all installers took: {0}
+PERF (planning): Calculating all catalog thumbprints for the purposes of writing metadata took: {0}
+PERF (planning, parsing): Time spent parsing manifests: {0}
+PERF (planning, parsing): Time spent parsing packages: {0}
+PERF: Advanced Installer invocations present in the transaction: {0}
+PERF: Amount of prep work before expansion: {0}
+PERF: Analyze the file system took: {0}
+PERF: Applying the file system changes took: {0}
+PERF: Applying the registry changes took: {0}
+PERF: Backing up the registry took: {0}
+PERF: Beginning commit tracing for session {0}
+PERF: Beginning servicing query for session {0}
+PERF: Beginning servicing tracing for session {0}
+PERF: Components involved in invoking AIs: {0}
+PERF: Diff the registry took: {0}
+PERF: Dump the file system took: {0}
+PERF: Dump the registry took: {0}
+PERF: Dumping pending.xml took: {0}
+PERF: File matching time: {0}.
+PERF: Finalize the CIM : {0}
+PERF: Gather installers for containers took: {0}
+PERF: Hitting the disk for commit took: {0}
+PERF: Initialize CIM : {0}
+PERF: Loading the hives took: {0}
+PERF: Manifest parsing time: {0}.
+PERF: Processing the container recipe file took {0}
+PERF: Running all Advanced Installers took: {0}
+PERF: Running all midgrounds installers took: {0}
+PERF: Saving the registry changes took: {0}
+PERF: Scavenging the WinSxS Store took: {0}
+PERF: Total time taken to plan everything: {0}
+PERF: Update the CIM with {0} operations specified in {1} : {2}
+PERF: Writing packaging metadata took: {0}
+performDeviceInstallsPriorToReboot
+permanence
+permanent
+permanentuntilreset
+permission denied
+Persisted Mappings Content {0}
+pfnNtCommitRegistryTransaction(Transaction, 0)
+Ph!@ 
+Phd@ 
+phDpxDll
+phoneComponent
+phoneGroupingKey
+phoneInformation
+phoneOwner
+phoneOwnerType
+phoneRelease
+phoneSecurityPolicyMarker
+phoneSubComponent
+phoneTargetGroups
+pIsEqual
+Pj Pj
+Pj\WW
+Pj~YQ
+PjjWj
+pMalloc
+POQ: {0}
+possible
+postprocess_compression_algorithm
+pOther
+PPPPj
+ppscz
+PQQQQj
+PQQQQQQ
+PQQSVW
+PQRhHo
+PQShHo
+PQSQj
+PQSVW
+preProcessed
+prerelease
+prerequisite
+present
+Primitive Operations Queue
+PrivCopyFileExW
+ProcessorArchitecture
+processorArchitecture
+product
+Product
+Production
+production
+ProductName
+Product-onecore__Microsoft-Windows-PowerShell-PackageManagement-Deployment-OneCore
+ProductPolicy
+ProductVersion
+projectionPeakDisk
+Propagating RTL Failure with Exception at {0}({1})[{2}] {3}
+protocol error
+protocol not supported
+PRQRj
+PRRRRRR
+psczDirectory
+psczIdentity
+psczPath
+psczStringId
+psczValue
+psfName
+PSj Z
+PSSSSh
+PSSSSW
+publicKeyToken
+PublicKeyToken
+publicKeyToken
+PVj(Z
+PVQh|s
+PVQh8
+pvVersion
+PVVVVVVS
+PW;3u"
+Q;C|t
+Q;Cpt
+QPQhX
+QPQQQ
+QPQQQSh 
+QQhPT
+QQhX9
+QQPQQ
+QQQPW
+QQQSP
+QQSVW
+QQVQQ
+QQVQQP
+QRPh(
+QRQhL
+QSSSP
+QSSSSSP
+QSVWh
+QueryFileHash
+QueryPerformanceCounter
+QVPRRh
+QVQPQj
+R!s4Z
+r~akow
+RaiseException
+RaiseFailFastException
+ranking
+rCPQR
+read only file system
+ReadAllBytes failed for console output file {0}
+ReadFile
+ReadKeyUtf8StringValueIntoUnicode( ComponentKey, &g_LUNICODE_STRING_identity, &Data.Id.IdString, &fRead)
+ReadKeyValue
+readOnly
+rebootRequired
+recall
+Recipe
+Recipe Path {0}
+recipeFile
+Redmond1
+RegCloseKey
+region_
+Registry value is not a DWORD type.
+Registry value is not a string type.
+RegistryDiffs
+RegistryDiffs\DeletedKeys
+RegistryDiffs\DeletedValues
+RegistryDiffs\Updated
+RegOpenKeyExW
+RegQueryValueExW
+RegSetValueExW
+release
+ReleaseMutex
+releaseQuality
+ReleaseSemaphore
+ReleaseSRWLockExclusive
+ReleaseSRWLockShared
+ReleaseType
+releaseType
+RemainingAttributes < CountBaseAttributes
+removable
+Removal Mappings Content {0}
+RemoveDirectoryW
+Removing component {0}, reference: {1}
+Removing package {0}
+Removing reference for {0}, reference: {1}
+Removing reference on previously loaded registry hive: {0}
+required
+RESERVEDISK
+ResetEvent
+Resolution
+Resolutions
+resolved
+resource deadlock would occur
+resource unavailable try again
+restart
+result out of range
+ReturnHr
+ReturnNt
+reverseDiffInfo
+revision
+revisionCompare
+RjdPj
+RQPQQ
+RQVSQ
+RRh`@
+RRPRRRRQ
+RRRPQ
+RRRQP
+RtlAllocateHeap
+RtlAllocateLBlob
+RtlCalculateUtf16StringLengthFromLUtf8String
+RtlCombineNtPathSegments
+RtlCompareLUnicodeStrings
+RtlConvertNtFilePathToWin32FilePath
+RtlConvertNtRegistryPathToWin32RegistryPath
+RtlConvertWin32FilePathToNtFilePath
+RtlConvertWin32RegistryPathToNtRegistryPathWithSid
+RtlCopyLBlob
+RtlCopyLUnicodeString
+RtlCopyLUtf8StringToLUnicodeString
+RtlCreateDefaultXmlWriter
+RtlCreateEnvironment
+RtlCreateUnicodeStringFromAsciiz
+RtlCreateUtf8UCSStringBuilder
+RtlDeallocateUnicodeString
+RtlDecodeBase64LUtf8StringToLBlob
+RtlDecodeUtf16LE
+RtlDecodeUtf8
+RtlDeleteAce
+RtlDeleteCriticalSection
+RtlDestroyEnvironment
+RtlDestroyGrowingList
+RtlDisownModuleHeapAllocation
+RtlDllShutdownInProgress
+RtlDosPathNameToNtPathName_U
+RtlDosPathNameToRelativeNtPathName_U_WithStatus
+RtlDowncaseUCSCharacter
+RtlDuplicateLUnicodeString
+RtlEncodeUtf16LE
+RtlEncodeUtf8
+RtlEnterCriticalSection
+RtlFreeHeap
+RtlFreeLBlob
+RtlFreeLUnicodeString
+RtlFreeLUtf8String
+RtlFreeUnicodeString
+RtlGetAppIdAuthority
+RtlGetDirectSystem
+RtlGetEncodingSizeUtf16
+RtlGetEncodingSizeUtf8
+RtlGetGroupSecurityDescriptor
+RtlGetIdentityAuthority
+RtlGetSystem
+RtlHashLBlob
+RtlHashLUnicodeString
+RtlHashLUtf8String
+RtlIndexIntoGrowingList
+RtlInitializeCriticalSection
+RtlInitLUnicodeStringFromNullTerminatedString
+RtlInitLUnicodeStringFromUnicodeString
+RtlInitUnicodeString
+RtlInitUnicodeStringFromLUnicodeString
+RtlLeaveCriticalSection
+RtlMurmurHashLBlob
+RtlNotifyFeatureUsage
+RtlNsDestroy
+RtlNtStatusToDosError
+RtlNtStatusToDosErrorNoTeb
+RtlParseDottedVersion
+RtlPublishWnfStateData
+RtlQueryEnvironmentVariable_U
+RtlRaiseStatus
+RtlReallocateLBlob
+RtlReallocateLUnicodeString
+RtlReallocateLUtf8String
+RtlReallocateUnicodeString
+RtlRegisterFeatureConfigurationChangeNotification
+RtlReleaseRelativeName
+RtlReplaceSystemPathMappings
+RtlReplaceSystemPathMappings( 0x0000002, Windows::MakeVector(PossiblePathValues, 1), &Session->m_System)
+RtlReportErrorOrigination
+RtlReportErrorPropagation
+RtlSetEnvironmentVariable
+RtlSmartMultiUcsEncoder_Utf16LE
+RtlSmartUcsEncoder_Utf16LE
+RtlSplitLUnicodeString
+RtlSplitNtPath
+RtlString::FixedString<struct _LUNICODE_STRING,24>::Reallocate
+RtlString::FixedString<struct _LUNICODE_STRING,255>::Reallocate
+RtlSubAuthorityCountSid
+RtlSubAuthoritySid
+RtlSystemUtil::AutoEnvironment::Initialize
+RtlSystemUtil::AutoEnvironment::SetVariable
+RtlSystemUtil::QueryNullTerminatedEnvironmentValue
+RtlTimeToTimeFields
+RtlTranscodeLBlobs
+RtlUnregisterFeatureConfigurationChangeNotification
+RtlWcpDllDebugEntrypoint
+RtlXmlDestroyNextLogicalThing
+RtlXmlDestroyNextLogicalThing(this)
+RtlXmlExtentToUtf8String
+Running Advanced Installers
+Running Advanced Installers in Container
+S _^[
+S$[_^
+S$9:tI
+S_FALSE
+S256H
+SAM.REG
+Sandbox
+SandboxDir
+scavenge.xml
+ScavengeContext.m_Layout.ManifestsDir->DeleteExistingFile( Windows::Rtl::IRtlDirectory::DeleteExistingFileFlags::MissingFileIsOk | Windows::Rtl::IRtlDirectory::DeleteExistingFileFlags::OpenForBackupIntent | Windows::Rtl::IRtlDirectory::DeleteExistingFileFlags::MarkDeletePending, Windows::Rtl::ObjAttrFromName(ManifestName), nullptr)
+ScavengeContext.m_Layout.RootDir->OpenExistingDirectory( Windows::Rtl::IRtlDirectory::OpenExistingDirectoryFlags::DirectoryMissingIsOk, (((0x00020000L)) | ( 0x0001 ) | ( 0x0080 ) | ( 0x0008 ) | (0x00100000L)) | (0x00010000L), Windows::Rtl::ObjAttrFromName(ShadowedFullId.VersionedKeyform), (0x00000001|0x00000002|0x00000004), 0x00000020 | 0x00000001 | 0x00004000, &PayLoadDir, &Disposition)
+ScavengeContext.m_Layout.RootDir->OpenExistingDirectory( Windows::Rtl::IRtlDirectory::OpenExistingDirectoryFlags::DirectoryMissingIsOk, (((0x00020000L)) | ( 0x0001 ) | ( 0x0080 ) | ( 0x0008 ) | (0x00100000L)), Windows::Rtl::ObjAttrFromName(L"Backup"_LUS), (0x00000001|0x00000002|0x00000004), 0x00000001 | 0x00000020 | 0x00004000, &BackupDir, nullptr)
+scavengeSequence
+Scenario == InitializeScenario::GenerateMissingFileList || Scenario == InitializeScenario::MobileExternalStage || Scenario == InitializeScenario::GenerateMissingFileAndDestination
+Scenario == InitializeScenario::MobileInstallFromExternalStage || Scenario == InitializeScenario::MobileInstallForMobileReset || Scenario == InitializeScenario::AccountDatabaseChanges || Scenario == InitializeScenario::ContainerCommit
+SECURITY
+security update
+SECURITY.REG
+SecurityDescriptor
+securityDescriptor
+selectable
+selectType
+selfUpdate
+SendWerReport
+separate
+separately
+service
+service pack
+serviceCompare
+servicelevel
+servicePackLevel
+servicesToStop
+servicing\Sessions\Sessions.xml
+SERVICING_FILES
+SERVICING_FILESDISK
+SERVICING_METADATA
+SERVICING_METADATADISK
+SERVICING_STAGING_ROOT
+SERVICING_STAGING_ROOTDISK
+ServicingCommitter::Initialize
+ServicingCommitter::InstallPackage
+ServicingCommitter::RemovePackage
+ServicingDpxLoad
+ServicingExtractCabFile
+ServicingExtractPackageFamily
+ServicingGetFileHashInfo::GetFileHash
+ServicingGetFileHashInfo::GetFileHash {0} {1}
+ServicingGetFileHashInfo::Initialize {0} {1}
+ServicingPackageInfo::GetProperty
+ServicingPackageInfo::GetPropertyList
+ServicingQuerier::EnumeratePackages
+ServicingQuerier::GetPackageInfo
+ServicingStackComponent,Microsoft.Windows.Categories,publicKeyToken=365143bb27e7ac8b,version=1.0.0.0
+ServicingStager::Initialize
+Session->m_OfflineParameters.Allocate()
+Session->m_OfflineParameters->GetRerootedSIL(&Session->m_System)
+Session->m_OfflineParameters->Initialize(InitFlags, BootDrive.empty() ? nullptr : BootDrive.c_str(), ImageWinDir.empty() ? nullptr : ImageWinDir.c_str(), SandboxTempSxS.empty() ? nullptr : SandboxTempSxS.c_str())
+sessionGuide
+SetConsoleTextAttribute
+SetEvent
+SetFileAttributesW
+SetFileInformation
+SetFileInformationByHandle
+SetHandleInformation
+SetIsolationIMalloc
+SetKeySecurity
+SetKeyValue
+SetLastError
+SetSecurityInfo
+SetTestMode
+SetThreadpoolTimer
+SetUdxGlobalLogger
+SetUnhandledExceptionFilter
+Sh_^[
+sha256
+SHA256
+sha-256
+sha-384
+sha-512
+shallow
+Sharing violation was encountered but expected
+SHLWAPI.dll
+signInfo
+SilCreateBufferedSil
+SilCreateRerootedSil
+SilDoesDirectoryExist
+siliconvendor
+Skipping install for already installed component {0}, reference: {1}
+Sl_^[
+Sleep
+SleepConditionVariableCS
+SOFTWARE
+software update
+SOFTWARE.REG
+SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing
+SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide
+SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide\Configuration
+source
+Source
+source
+sourceComponent
+sourcePackage
+SourcePath
+SourceType
+Sp_^[
+sparseFile
+Speech
+sPhPT
+SPPWj
+SSj0j
+SSQWR
+SSRQP
+SSSSPSS
+SSSSS
+SSSSSS
+StageComponent
+staged
+StageFilesInComponent
+Staging {0}, but we already have it
+Staging package {0}
+Staging top-level package family {0}
+standalone
+Start
+Starting Turbostack provisional staging work
+State
+state
+state not recoverable
+State.m_WalkCursor.IsUtf8()
+State\Features
+State\Packages
+StateSeparated
+Status
+STATUS_ACCESS_DENIED
+STATUS_ACCESS_VIOLATION
+STATUS_ADVANCED_INSTALLER_FAILED
+STATUS_BUFFER_OVERFLOW
+STATUS_BUFFER_TOO_SMALL
+STATUS_CANCELLED
+STATUS_CANNOT_DELETE
+STATUS_DELETE_PENDING
+STATUS_DIRECTORY_NOT_EMPTY
+STATUS_DISK_FULL
+STATUS_DLL_NOT_FOUND
+STATUS_DUPLICATE_NAME
+STATUS_DUPLICATE_OBJECTID
+STATUS_EFS_NOT_ALLOWED_IN_TRANSACTION
+STATUS_ENTRYPOINT_NOT_FOUND
+STATUS_FILE_CORRUPT_ERROR
+STATUS_FILE_IS_A_DIRECTORY
+STATUS_ILLEGAL_CHARACTER
+STATUS_IMPLEMENTATION_LIMIT
+STATUS_INFO_LENGTH_MISMATCH
+STATUS_INSUFFICIENT_RESOURCES
+STATUS_INTEGER_OVERFLOW
+STATUS_INTERNAL_ERROR
+STATUS_INVALID_DEVICE_REQUEST
+STATUS_INVALID_HANDLE
+STATUS_INVALID_IMAGE_FORMAT
+STATUS_INVALID_PARAMETER
+STATUS_INVALID_SID
+STATUS_INVALID_TRANSACTION
+STATUS_KEY_DELETED
+STATUS_LOG_GROWTH_FAILED
+STATUS_MEDIA_WRITE_PROTECTED
+STATUS_NAME_TOO_LONG
+STATUS_NO_MEMORY
+STATUS_NO_MORE_ENTRIES
+STATUS_NO_MORE_FILES
+STATUS_NO_MORE_MATCHES
+STATUS_NOINTERFACE
+STATUS_NOT_CAPABLE
+STATUS_NOT_IMPLEMENTED
+STATUS_NOT_SAME_DEVICE
+STATUS_NOT_SUPPORTED
+STATUS_OBJECT_NAME_COLLISION
+STATUS_OBJECT_NAME_NOT_FOUND
+STATUS_OBJECT_PATH_NOT_FOUND
+STATUS_OBJECT_PATH_SYNTAX_BAD
+STATUS_OBJECT_TYPE_MISMATCH
+STATUS_REQUEST_OUT_OF_SEQUENCE
+STATUS_RESOURCE_DATA_NOT_FOUND
+STATUS_RESOURCE_NAME_NOT_FOUND
+STATUS_RESOURCE_TYPE_NOT_FOUND
+STATUS_REVISION_MISMATCH
+STATUS_RM_METADATA_CORRUPT
+STATUS_RM_NOT_ACTIVE
+STATUS_SHARING_VIOLATION
+STATUS_SMI_PRIMITIVE_INSTALLER_FAILED
+STATUS_SUCCESS
+STATUS_SXS_ASSEMBLY_MISSING
+STATUS_SXS_ASSEMBLY_NOT_FOUND
+STATUS_SXS_COMPONENT_STORE_CORRUPT
+STATUS_SXS_FILE_HASH_MISMATCH
+STATUS_SXS_IDENTITIES_DIFFERENT
+STATUS_SXS_IDENTITY_DUPLICATE_ATTRIBUTE
+STATUS_SXS_IDENTITY_PARSE_ERROR
+STATUS_SXS_INVALID_ACTCTXDATA_FORMAT
+STATUS_SXS_INVALID_IDENTITY_ATTRIBUTE_NAME
+STATUS_SXS_INVALID_IDENTITY_ATTRIBUTE_VALUE
+STATUS_SXS_MANIFEST_IDENTITY_SAME_BUT_CONTENTS_DIFFERENT
+STATUS_SXS_MANIFEST_PARSE_ERROR
+STATUS_SXS_TRANSACTION_CLOSURE_INCOMPLETE
+STATUS_TM_INITIALIZATION_FAILED
+STATUS_TOO_LATE
+STATUS_TRANSACTION_NOT_ACTIVE
+STATUS_TRANSACTIONAL_CONFLICT
+STATUS_UNDEFINED_CHARACTER
+STATUS_UNMAPPABLE_CHARACTER
+STATUS_UNSUCCESSFUL
+STATUS_XML_PARSE_ERROR
+STORE_ARCH
+StoreCtx.AddComponentImplication(ComponentData, &TlcData)
+StoreCtx.RemoveComponentImplication(ComponentData, &TlcData)
+stream timeout
+string
+string size too big
+string too long
+StringCchPrintf failed.
+StringFileInfo
+StringFromGUID2
+StringFromGUID2 failed
+strncmp
+subsume
+Success,
+Successfully deleted working folder: {0}
+SupportedLanguages
+supports sparse files.
+SVPh`
+SVWP3
+system
+SYSTEM
+System Volume Information
+System.Management.Automation.Resources
+SYSTEM.REG
+System\CurrentControlSet\Services\TrustedInstaller
+SYSTEM\Setup
+System->OpenRegistryKey(Windows::Rtl::IRtlSystemIsolationLayerPublic::OpenRegistryKeyFlags::KeyNotFoundIsOk, ((((0x00020000L)) | (0x0001) | (0x0008) | (0x0010)) & (~(0x00100000L))), DerivedDataToUse, &Key, &Disposition)
+System->OpenRegistryKey(Windows::Rtl::IRtlSystemIsolationLayerPublic::OpenRegistryKeyFlags::KeyNotFoundIsOk, ((((0x00020000L)) | (0x0001) | (0x0008) | (0x0010)) & (~(0x00100000L))), PackageStoreToUse, &Key, &Disposition)
+system32\
+System32\config
+System32\config\
+System32\config\Components
+system32\FltLib.dll
+systemData
+systemdrive
+SystemRoot
+SystemSetupInProgress
+szAppend
+szAppend2
+szBuffer
+szEle
+szFormat
+szLanguage
+szName
+szOfflineBootDirectory == nullptr && szOfflineWindowsDirectory == nullptr
+szOut
+szPackageManifest
+szPath
+szProcessor
+szPublicKeyToken
+szStart
+szTag
+szVersion
+t#hly
+t#hLy
+t#hly
+t#hLy
+t#hly
+t#hLy
+t#hly
+t#hLy
+t#hly
+t#Rhxv
+t#WSh
+t$ t&
+t$$;F
+t$$SV
+T$0QQV
+t$RVh
+t$VRh<v
+t(Vh ^
+t)QRS
+t+Vh,
+t+Vh8
+t<8b0t%
+t<ShPm
+t=f;M
+t>ShX
+t2SVh
+t2SVhx
+t2Vh 
+t2Vh\
+t2WhH
+t2Whl
+t6j8j
+t7f;E
+t8Wh\
+targetPartition
+TaskScheduler.Resources
+tcf90t^Pj Z
+Template
+temporary
+TempRoot
+TempSxS
+TerminateProcess
+TEST_COMMIT_PENDING_VAR
+text file busy
+tgSh0
+Thales TSS ESN:0842-4BE6-C29A1%0#
+The hash returned by DPX {0} is not equal to the hash in the manifest {1} for file {2}
+The PnP driver component: {0} is not allowed for an image that uses deconstructed drivers 
+This image is unserviceable, because it is not cleanly composable
+TI failed to load components hive
+tIf9_
+timed out
+TlcData.Key->DeleteRecursively( Windows::Rtl::IRtlKey::DeleteRecursively_Flags::OpenForBackupIntent | Windows::Rtl::IRtlKey::DeleteRecursively_Flags::WorkAroundRestorePrivilege, nullptr)
+TlP0X
+tMj<j
+tO|F5
+Too many delimiters in string id.
+too many files open
+too many files open in system
+too many links
+too many symbolic link levels
+toQj 
+Transform
+Transformers.txt
+TransformersPending.xml
+Transforms
+Translation
+TRUST_E_EXPLICIT_DISTRUST
+TRUST_E_FAIL
+TRUST_E_NOSIGNATURE
+TRUST_E_PROVIDER_UNKNOWN
+TRUST_E_SUBJECT_NOT_TRUSTED
+TryEnterCriticalSection
+Trying to open store in online mode on non desktop platform which is not supported
+Trying to save more than the known amount of hives (known: {0}, param: {1}).
+tSf97tN
+t'SWVRPj
+tTWShD
+Turbo Servicing
+TURBOSTACK STAGE MOVING FILE {0} {1}
+TurboStack version {0} loaded from {1}
+turbostack.dll
+TurboStack.dll
+TurboStack.pdb
+TwiddleComponentImplications
+typeName
+U0S0Q
+u3h<}
+u3hT~
+u6j@Z
+udx.dll
+uKVWj
+Unable to get procedure CreateNewOfflineStore
+Unable to get procedure CreateNewPseudoWindows
+Unable to get procedure CreateNewPseudoWindowsEx
+Unable to get procedure CreateNewWindows
+Unable to get procedure DismountRegistryHives
+Unable to get procedure FreeAndZeroCSI_BROKEN_COMPONENT
+Unable to get procedure FreeAndZeroCSI_REPAIRED_COMPONENT
+Unable to get procedure GetAppIdAuthority
+Unable to get procedure GetIdentityAuthority
+Unable to get procedure GetSystemStore
+Unable to get procedure InitializeCSI_BROKEN_COMPONENT
+Unable to get procedure InitializeCSI_REPAIRED_COMPONENT
+Unable to get procedure OpenExistingOfflineStore
+Unable to get procedure ParseManifest
+Unable to get procedure ParseManifestEx
+Unable to get procedure RtlWcpDllDebugEntrypoint
+Unable to get procedure SetIsolationIMalloc
+Unable to get procedure WcpSetHelperCallback
+Unable to parse attribute {0} string: {1}
+Unable to parse ProcessorArchitecture: {0}
+Unable to parse PublicKeyToken string: {0}
+Unable to set catalog hint for file {0}
+Unexpected component installed multiple times {0}.
+Unexpected copy file operation source {0} dest {1}
+Unexpected CSI error report data size.
+Unexpected DeleteKey operation in NewPersistedRegistry.xml {0}
+Unexpected DeleteKeyValue operation in NewPersistedRegistry.xml {0}
+Unexpected Operation {0}
+Unexpected package state: {0}.
+Unexpected removal at multiple versions {0} and {1}.
+Unexpected removal of non-existing bind-mapping source {0}, dest {1}
+Unexpected write file operation path {0}
+UnhandledExceptionFilter
+uninstallrequested
+unknown
+Unknown
+Unknown arch specified: {0}
+Unknown compare option
+unknown error
+Unknown exception
+Unknown interface to compare against.
+Unknown processor architecture: %u
+Unknown state
+Unloading registry hive: {0}
+UnloadStatus
+Unsupported identity type, {0}, reference: {1}. Type must be win32 or win32-policy.
+Unvouched component {0} by {1}
+Unvouched package {0} by {1}
+up8_=t_3
+update
+update rollup
+update.cat
+update.mum
+updateComponent
+UpdateContainerCim
+Updated
+updateDriver
+updateos
+UPDATEOS_Mount
+urn:ContainerIndex
+urn:schemas-microsoft-com:asm.v1
+urn:schemas-microsoft-com:asm.v2
+urn:schemas-microsoft-com:asm.v3
+urn:schemas-microsoft-com:cbs
+urn:schemas-microsoft-com:HashTransforms.Identity
+urn:schemas-microsoft-com:HashTransforms.ManifestInvariant
+UserInterface
+Users\Default
+Users\Default\NTUSER.DAT
+v,ShD8
+V|LDm
+VailGuestRoot
+Valid flags check failed: ExtraFlags
+Valid flags check failed: Flags
+VALIDATE
+value
+value too large
+Value too long
+VarFileInfo
+Vau2=
+Vd_^[
+vector too long
+VerifyCatalog
+Verifying ({0}) catalog {1}
+VerifyVersionInfoW
+VerQueryValueW
+VerSetConditionMask
+version
+Version
+version
+VERSION.dll
+versionCompare
+VersionedIndexKey->DeleteRecursively(Windows::Rtl::IRtlKey::DeleteRecursively_Flags::OpenForBackupIntent, nullptr)
+versionScope
+VirtualProtect
+VirtualQuery
+Visibility
+VkQ@w
+vpfnDpxNewJob
+VPh!@ 
+VPhd@ 
+VPVVj
+VS_VERSION_INFO
+vTh(8
+VVh`@
+VWj@Z
+VWjbZ
+VWjd_
+VWjdX
+VWjkZ
+w<VWj
+Wait during DPX progress failed.
+WaitForSingleObject
+WaitForSingleObject failed
+WaitForSingleObjectEx
+WaitForThreadpoolTimerCallbacks
+WakeAllConditionVariable
+Warning,
+Warning: 
+Warning: Component architecture {0} is incompatible with the store architecture {1}
+WARNING: DeleteDirectory call detected for directory not owned by non-provisional package or already deleted, ignoring delete {0}
+Warning: WER service is not available, skip reporting
+Washington1
+WatsonConsent
+WCF-HTTP-Activation-Feature
+WCF-NonHTTP-Activation-Feature
+WCP CMIT Component Store
+wcp.dll
+wcp_dll
+WcpDll->Initialize(CreatePath(ModuleDir, L"wcp.dll").c_str())
+WcpDll->RtlWcpDllDebugEntrypoint(0, Op)
+WcpInitialize
+WcpSetHelperCallback
+WcpShutdown
+WcpStagingComponentParser::ParseAssemblyIdentity
+WcpStagingComponentParser::ParseCategoryMembership
+WcpStagingComponentParser::ParseDependency
+WcpStagingComponentParser::ParseDependentAssembly
+WcpStagingComponentParser::ParseDependentAssemblyIdentity
+WcpStagingComponentParser::ParseDeployment
+WcpStagingComponentParser::ParseDigestHash
+WcpStagingComponentParser::ParseDigestMethod
+WcpStagingComponentParser::ParseDigestValue
+WcpStagingComponentParser::ParseDocument
+WcpStagingComponentParser::ParseFile
+WcpStagingComponentParser::ParseForwardDiffInfo
+WcpStagingComponentParser::ParseHashTransforms
+WcpStagingComponentParser::ParseId
+WcpStagingComponentParser::ParseMemberships
+WcpStagingComponentParser::ParseNullDiffInfo
+WcpStagingComponentParser::ParseReverseDiffInfo
+WcpStagingComponentParser::ParseTransform
+WcpStagingComponentParser::ParseWcpComponent
+wcschr
+wcsncmp
+wcsrchr
+wcsstr
+Wds logger is already initialized
+WDS logging is not enabled in the registry, continuing without logging.
+wdscore.dll
+WdsGenericSetupLogInit
+WdsGetSetupLog
+WdsLogRegisterProvider
+WdsLogUnRegisterProvider
+WdsSetupLogDestroy
+WdsSetupLogInit
+WdsSetupLogMessageA
+We already have {0}, but the hash doesn't match. Have: {1}, given {2}
+WER service not available
+wer.dll
+WerReportAddDump
+WerReportAddFile
+WerReportCloseHandle
+WerReportCreate
+WerReportSetParameter
+WerReportSetUIOption
+WerReportSubmit
+wholefile
+WideCharToMultiByte
+WIL Origination: {0}
+WilError_03
+WilStaging_02
+WIM - {0}: {1}
+WimApply
+WIMApplyImage
+WIMCloseHandle
+WIMCreateFile
+WIMExtractImagePath
+wimgapi.dll
+WIMGAPI.DLL
+WIMGetMountedImageInfo
+WIMLoadImage
+WIMRegisterMessageCallback
+WIMSetTemporaryPath
+WIMUnmountImage
+WIMUnregisterMessageCallback
+win32
+win32-policy
+Windows
+windows
+Windows Communication Foundation
+Windows::Identity::Rtl::IsIdentityPnPDriver(ComponentId.DefId, &fPnpDriver)
+Windows::Rtl::AutoHive::Load
+Windows::Rtl::AutoHive::Unload
+Windows::Rtl::IPoolAllocator::AddAlignedBlob
+Windows::Rtl::RtlGetSystem(0, nullptr, &Session->m_DirectSystem)
+Windows::Rtl::SilCreateBufferedSil(Windows::Rtl::SilCreateBufferedSilFlags::Offline, Session->m_System, &ImpactfulOperations)
+Windows::Rtl::SilCreateBufferedSil(Windows::Rtl::SilCreateBufferedSilFlags::Offline, Session->m_System, &ScavengeSystem)
+Windows::StringUtil::Rtl::AppendBase16Data
+Windows::StringUtil::Rtl::CoerceStringShallow
+Windows::StringUtil::Rtl::ConcatenateStringsInList
+Windows::StringUtil::Rtl::Impl::AppendTranscodedStringToPreallocatedBuffer
+Windows::StringUtil::Rtl::Impl::CalculateEncodingLengthForString
+Windows::StringUtil::Rtl::SplitNtPath
+Windows::StringUtil::Rtl::SplitWin32Path
+Windows::StringUtil::Rtl::SubStringByByteCount
+Windows::StringUtil::Rtl::SubStringByCharCount
+Windows::WCP::Rtl::IsCompactOSEnabled(Session->m_System, &Session->m_fCompactOSEnabled)
+Windows\PERFORM-TEST-INUPDATEOS-MARKER
+Windows\PERFORM-TEST-UI-MARKER
+windows\servicing\packages\
+Windows\System32\config
+Windows\System32\config\BCD
+Windows\System32\config\DRIVERS
+Windows\System32\config\OVERRIDE
+Windows\System32\config\SAM
+Windows\System32\config\SECURITY
+Windows\System32\config\SOFTWARE
+Windows\System32\config\SYSTEM
+Windows\System32\config\VALIDATE
+Windows\System32\SMI\Store\Machine\SCHEMA.DAT
+Windows\TEST-INUPDATEOS-FAILED-MARKER
+Windows\TEST-INUPDATEOS-SUCCEEDED-MARKER
+Windows\TEST-UI-FAILED-MARKER
+Windows\TEST-UI-SUCCEEDED-MARKER
+windows\winsxs\
+Windows\WinSxS\Manifests
+windows\winsxs\manifests
+windows\winsxs\manifests\
+WINDOWS_TRACING_FACILITY_
+WINDOWS_TRACING_FLAGS
+WINDOWS_TRACING_LOGFILE
+WINDOWS_WCP_INSKUASSEMBLY
+WINDOWS_WCP_POQEXEC_FAILURE2
+WindowsWcpAIFailure3
+WindowsWcpOtherFailure3
+WindowsWcpStoreCorruption
+Winners
+winsxs\manifests
+winsxs\pending.xml
+Wj4Y+
+wof_provider_file
+WofDecompressFile
+WorkingDirectory
+wow64
+WPQQV
+writeableType
+WriteFile
+WriteWinnersFromChangelist
+wrong protocol type
+wrong version format
+WSQhPl
+WVhPT
+x"VSj
+X:\Windows
+X[_^]
+X0k@4H
+XML parse error: {0} at line {1}, column {2} : {3}
+xmlns
+XmlParserGenerator::GenerateDom
+XmlParserGenerator::ParseLString
+XmlParserGenerator::ReportError
+xpress
+xpresshuff
+Y*30T
+y/PhPT
+y?PhPT
+y?Shp
+y@Ph<
+Y__^[
+y|Wh$
+Y<}ua;
+y0Vhp
+yesno
+yjPh<
+YPhPT
+ytVhp
+YY_^]
+z.9Wv

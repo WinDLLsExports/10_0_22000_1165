@@ -1,0 +1,206 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-rpc-kernel_31bf3856ad364e35_10.0.22000.1_none_1550217b86afa75f\msrpc.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C001B000 Import Address Table
+             1C001B2E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         34F IoGetCurrentProcess
+                         659 NtQuerySystemInformation
+                         5E3 MmPageEntireDriver
+                         9AE RtlUnicodeStringToAnsiString
+                         BC8 __C_specific_handler
+                          B5 ExAllocatePool3
+                          E5 ExFreePoolWithTag
+                          A1 ExAcquirePushLockExclusiveEx
+                         133 ExReleasePushLockExclusiveEx
+                         469 KeBugCheckEx
+                         9CC RtlValidSid
+                         9CB RtlValidSecurityDescriptor
+                         B4A ZwOpenThreadTokenEx
+                         B68 ZwQueryInformationToken
+                         AE9 ZwClose
+                         85B RtlEqualSid
+                         484 KeEnterCriticalRegion
+                         4D1 KeLeaveCriticalRegion
+                         132 ExReleasePushLockEx
+                         53A KeSetEvent
+                         11A ExRaiseStatus
+                         16A ExUuidCreate
+                          F5 ExInitializePagedLookasideList
+                          CD ExDeletePagedLookasideList
+                         179 ExpInterlockedPopEntrySList
+                         17A ExpInterlockedPushEntrySList
+                         10F ExQueryDepthSList
+                         AE0 ZwAlpcSendWaitReceivePort
+                         AD7 ZwAlpcDeletePortSection
+                         AD9 ZwAlpcDeleteSectionView
+                         ADF ZwAlpcQueryInformationMessage
+                         AE1 ZwAlpcSetInformation
+                         ADE ZwAlpcQueryInformation
+                         AD3 ZwAlpcCreatePortSection
+                         AD5 ZwAlpcCreateSectionView
+                         ADB ZwAlpcDisconnectPort
+                         4E2 KeQueryActiveProcessorCountEx
+                         BC5 ZwWaitForSingleObject
+                         AC9 ZwAlertThread
+                         6AB ObfDereferenceObject
+                         B85 ZwRemoveIoCompletionEx
+                         714 PsAttachSiloToCurrentThread
+                         721 PsDetachSiloFromCurrentThread
+                         6AC ObfDereferenceObjectWithTag
+                         7C9 PsTerminateSystemThread
+                         AF6 ZwCreateIoCompletion
+                         69B ObReferenceObjectByHandle
+                         71B PsCreateSystemThread
+                         72D PsGetCurrentServerSilo
+                         6AE ObfReferenceObjectWithTag
+                         3E8 IoSetIoCompletionEx
+                         B42 ZwOpenProcessTokenEx
+                         B24 ZwImpersonateAnonymousToken
+                         BA3 ZwSetInformationThread
+                         B12 ZwDuplicateToken
+                         729 PsGetCurrentProcessId
+                         731 PsGetCurrentThreadId
+                         917 RtlLengthSid
+                         823 RtlCopySid
+                         916 RtlLengthSecurityDescriptor
+                         7D6 RtlAbsoluteToSelfRelativeSD
+                         BF4 _wcsicmp
+                         887 RtlFreeAnsiString
+                         C4F wcsstr
+                         88D RtlFreeUnicodeString
+                         2D3 InitializeSListHead
+                         AD0 ZwAlpcConnectPort
+                         AD1 ZwAlpcConnectPortEx
+                         AD6 ZwAlpcCreateSecurityContext
+                         ADA ZwAlpcDeleteSecurityContext
+                         ACF ZwAlpcCancelMessage
+                         AD4 ZwAlpcCreateResourceReserve
+                         178 ExpInterlockedFlushSList
+                         8CB RtlInitUnicodeString
+                         47B KeDelayExecutionThread
+                         551 KeStackAttachProcess
+                         4FC KeQueryTimeIncrement
+                         561 KeUnstackDetachProcess
+                         4AF KeInitializeEvent
+                         566 KeWaitForSingleObject
+                          6E DbgPrint
+                         928 RtlMultiByteToUnicodeN
+
+  Section contains the following exports for msrpc.sys
+
+    00000000 characteristics
+    873FD005 time date stamp
+        0.00 version
+           1 ordinal base
+          76 number of functions
+          76 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0005E080 DllInitialize
+          2    1 000417D0 DllUnload
+          3    2 00041840 I_RpcAllocate
+          4    3 00029540 I_RpcCompleteAndFree
+          5    4 000359E0 I_RpcExceptionFilter
+          6    5 00029250 I_RpcFreeBuffer
+          7    6 00032060 I_RpcFreePipeBuffer
+          8    7 0002AA10 I_RpcGetBuffer
+          9    8 00041880 I_RpcGetBufferWithObject
+         10    9 00031CB0 I_RpcGetCompleteAndFreeRoutine
+         11    A 00035300 MesBufferHandleReset
+         12    B 0002C7B0 MesDecodeBufferHandleCreate
+         13    C 00049D10 MesDecodeIncrementalHandleCreate
+         14    D 00035270 MesEncodeDynBufferHandleCreate
+         15    E 00049DC0 MesEncodeFixedBufferHandleCreate
+         16    F 0002C4F0 MesEncodeIncrementalHandleCreate
+         17   10 00031940 MesHandleFree
+         18   11 0002C670 MesIncrementalHandleReset
+         19   12 00049E80 MesInqProcEncodingId
+         20   13 000495F0 NDRCContextBinding
+         21   14 00049600 NDRCContextMarshall
+         22   15 00049630 NDRCContextUnmarshall
+         23   16 000021C0 Ndr64AsyncClientCall
+         24   17 0004AF00 NdrAllocate
+         25   18 0004B0A0 NdrAsyncClientCall
+         26   19 0004B6F0 NdrClientCall2
+         27   1A 00002480 NdrClientCall3
+         28   1B 0004BE20 NdrClientContextMarshall
+         29   1C 0004D0A0 NdrClientContextUnmarshall
+         30   1D 0004AF20 NdrClientInitialize
+         31   1E 0004AFD0 NdrClientInitializeNew
+         32   1F 00049FE0 NdrMesProcEncodeDecode
+         33   20 0004A3C0 NdrMesProcEncodeDecode2
+         34   21 000573B0 NdrMesProcEncodeDecode3
+         35   22 0004A6D0 NdrMesSimpleTypeAlignSize
+         36   23 00057410 NdrMesSimpleTypeAlignSizeAll
+         37   24 0004A730 NdrMesSimpleTypeDecode
+         38   25 000574D0 NdrMesSimpleTypeDecodeAll
+         39   26 0004A810 NdrMesSimpleTypeEncode
+         40   27 00057630 NdrMesSimpleTypeEncodeAll
+         41   28 0001C4D0 NdrMesTypeAlignSize
+         42   29 0004A900 NdrMesTypeAlignSize2
+         43   2A 000577A0 NdrMesTypeAlignSize3
+         44   2B 000266B0 NdrMesTypeDecode
+         45   2C 00026880 NdrMesTypeDecode2
+         46   2D 00031610 NdrMesTypeDecode3
+         47   2E 0001C290 NdrMesTypeEncode
+         48   2F 0001C120 NdrMesTypeEncode2
+         49   30 000310E0 NdrMesTypeEncode3
+         50   31 0004AAC0 NdrMesTypeFree2
+         51   32 00057900 NdrMesTypeFree3
+         52   33 00041950 RpcAsyncCancelCall
+         53   34 000291A0 RpcAsyncCompleteCall
+         54   35 00028CF0 RpcAsyncGetCallStatus
+         55   36 000319F0 RpcAsyncInitializeHandle
+         56   37 00028D90 RpcBindingBind
+         57   38 00029650 RpcBindingCopy
+         58   39 0002DDE0 RpcBindingCreateW
+         59   3A 000296B0 RpcBindingFree
+         60   3B 00041A50 RpcBindingReset
+         61   3C 00041A90 RpcBindingSetAuthInfoExW
+         62   3D 00041C70 RpcBindingSetAuthInfoW
+         63   3E 00035680 RpcBindingSetOption
+         64   3F 00028B90 RpcBindingUnbind
+         65   40 000359E0 RpcExceptionFilter
+         66   41 00032750 RpcRaiseException
+         67   42 00049700 RpcSsDestroyClientContext
+         68   43 00041CA0 RpcStringFreeW
+         69   44 00041CF0 UuidCompare
+         70   45 00041D90 UuidCreate
+         71   46 00041DB0 UuidCreateNil
+         72   47 00041D90 UuidCreateSequential
+         73   48 00035840 UuidEqual
+         74   49 00041DC0 UuidFromStringW
+         75   4A 00041E10 UuidIsNil
+         76   4B 00041E40 UuidToStringW
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .ndr64
+        5000 .pdata
+       12000 .rdata
+        2000 .reloc
+        1000 .rsrc
+        1000 .text
+        1000 GFIDS
+        1000 INIT
+       40000 PAGEKRPC
+        1000 PAGERPCD

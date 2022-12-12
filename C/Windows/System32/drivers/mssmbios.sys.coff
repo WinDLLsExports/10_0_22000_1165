@@ -1,0 +1,101 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\mssmbios.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    WMILIB.SYS
+    ksecdd.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0009058 Import Address Table
+             1C0009288 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         8C2 RtlInitAnsiString
+                         7E9 RtlAnsiStringToUnicodeString
+                         88D RtlFreeUnicodeString
+                         50C KeRegisterBugCheckReasonCallback
+                         47E KeDeregisterBugCheckReasonCallback
+                         959 RtlQueryRegistryValuesEx
+                         4B7 KeInitializeSpinLock
+                         AF8 ZwCreateKey
+                         B3B ZwOpenKey
+                         AE9 ZwClose
+                         BB2 ZwSetValueKey
+                         826 RtlCopyUnicodeString
+                         3C9 IoReportRootDevice
+                         30D IoCreateDevice
+                         2EA IoAttachDeviceToDeviceStack
+                         8CB RtlInitUnicodeString
+                         37C IoInitializeRemoveLockEx
+                         428 IoWMIRegistrationControl
+                         2D8 IoAcquireRemoveLockEx
+                         436 IofCompleteRequest
+                         2E5 IoAllocateWorkItem
+                         435 IofCallDriver
+                         3BB IoReleaseRemoveLockEx
+                         3BA IoReleaseRemoveLockAndWaitEx
+                         329 IoDetachDevice
+                         343 IoFreeWorkItem
+                         3A2 IoQueueWorkItemEx
+                         706 PoStartNextPowerIrp
+                         6FD PoSetPowerState
+                         6BA PoCallDriver
+                         B0B ZwDeleteKey
+                         BF1 _vsnwprintf
+                         51A KeReleaseSpinLock
+                         457 KeAcquireSpinLockRaiseToDpc
+                         6AB ObfDereferenceObject
+                         424 IoWMIQueryAllData
+                         423 IoWMIOpenBlock
+                         C24 strchr
+                         B76 ZwQuerySystemInformation
+                          B4 ExAllocatePool2
+                          E5 ExFreePoolWithTag
+                         326 IoDeleteDevice
+                         BC8 __C_specific_handler
+
+    WMILIB.SYS
+             1C0009000 Import Address Table
+             1C0009230 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 WmiCompleteRequest
+                           4 WmiSystemControl
+
+    ksecdd.sys
+             1C0009018 Import Address Table
+             1C0009248 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1A BCryptGetProperty
+                          1F BCryptOpenAlgorithmProvider
+                           5 BCryptCreateHash
+                          1B BCryptHashData
+                          14 BCryptFinishHash
+                           A BCryptDestroyHash
+                           4 BCryptCloseAlgorithmProvider
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE

@@ -1,0 +1,684 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\rmclient.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    msvcrt.dll
+    api-ms-win-core-synch-l1-2-0.dll
+    api-ms-win-eventing-provider-l1-1-0.dll
+    api-ms-win-core-util-l1-1-0.dll
+    api-ms-win-core-synch-l1-1-0.dll
+    api-ms-win-core-libraryloader-l1-2-0.dll
+    api-ms-win-core-profile-l1-1-0.dll
+    api-ms-win-core-processthreads-l1-1-0.dll
+    api-ms-win-core-sysinfo-l1-1-0.dll
+    api-ms-win-core-rtlsupport-l1-1-0.dll
+    api-ms-win-core-errorhandling-l1-1-0.dll
+    api-ms-win-core-psm-key-l1-1-0.dll
+    api-ms-win-core-psm-key-l1-1-3.dll
+    api-ms-win-core-registry-l1-1-0.dll
+    api-ms-win-core-heap-l1-1-0.dll
+    api-ms-win-core-threadpool-l1-2-0.dll
+    api-ms-win-core-localization-l1-2-0.dll
+    api-ms-win-core-debug-l1-1-0.dll
+    api-ms-win-core-handle-l1-1-0.dll
+    api-ms-win-core-processthreads-l1-1-3.dll
+    api-ms-win-core-quirks-l1-1-0.dll
+    api-ms-win-core-heap-l2-1-0.dll
+    api-ms-win-core-delayload-l1-1-1.dll
+    api-ms-win-core-delayload-l1-1-0.dll
+    ntdll.dll
+
+  Image has the following delay load dependencies:
+
+    api-ms-win-core-winrt-string-l1-1-0.dll
+    api-ms-win-core-com-l1-1-0.dll
+    api-ms-win-core-winrt-error-l1-1-0.dll
+    RPCRT4.dll
+    ext-ms-win-com-psmregister-l1-1-0.dll
+    api-ms-win-appmodel-runtime-l1-1-1.dll
+    api-ms-win-appmodel-state-l1-2-0.dll
+    api-ms-win-core-psm-rtimer-l1-1-1.dll
+    ext-ms-win-sysmain-plmapi-l1-1-0.dll
+    api-ms-win-core-winrt-error-l1-1-1.dll
+    api-ms-win-core-com-l1-1-1.dll
+
+  Section contains the following exports for RMCLIENT.dll
+
+    00000000 characteristics
+    22780DB3 time date stamp
+        0.00 version
+           1 ordinal base
+         149 number of functions
+         149 number of names
+
+    ordinal hint RVA      name
+
+          3    0 00008C20 AppModelQueryLifecyclePolicy
+          1    1 0000A630 CreateResourceManagerClientProxy
+          4    2 00004EB0 CrmActivityAllocate
+          5    3 00004D70 CrmActivityFree
+          6    4 000091E0 CrmActivityFreeWindowClosedReasons
+          7    5 00002DA0 CrmActivityQueryWindowClosedReasons
+          8    6 0001E370 CrmActivityRenew
+          9    7 00009100 CrmActivityRequest
+         10    8 0001E380 CrmActivityRequestAndWait
+         11    9 00004CE0 CrmActivityStart
+         12    A 00004DB0 CrmActivityStop
+         13    B 00002A60 CrmActivityWindowClosedReasonSubscribe
+         14    C 0001E390 CrmActivityWindowClosedReasonUnsubscribe
+         15    D 00004B50 CrmRegister
+         16    E 0001E3A0 CrmSubscribe
+         17    F 000019B0 CrmUnregister
+         18   10 0001E3B0 CrmUnsubscribe
+         19   11 0001E3C0 CrmWorkStart
+         20   12 0001E3C0 CrmWorkStop
+          2   13 0001BD60 DeleteResourceManagerClientProxy
+         21   14 00002500 DllCanUnloadNow
+         22   15 00008300 DllGetActivationFactory
+         23   16 00018FA0 DllGetClassObject
+         24   17 0001C860 HamAddDependency
+         25   18 0001C8E0 HamAddHostDependency
+         26   19 00005290 HamCloseActivity
+         27   1A 0001C960 HamCompleteExtendedExecution
+         28   1B 0000A300 HamConnectForDebugging
+         29   1C 000065B0 HamConnectForExtendedExecution
+         30   1D 0001CA50 HamConnectForFullTrust
+         31   1E 0000A390 HamConnectForServicing
+         32   1F 0000A290 HamConnectForSessionState
+         33   20 00009F10 HamConnectForStateChangeNotifications
+         34   21 00002CB0 HamConnectToServer
+         35   22 00002CD0 HamConnectToServerEx
+         36   23 000054A0 HamCreateActivity
+         37   24 000054D0 HamCreateActivityEx
+         38   25 00001B20 HamCreateActivityForProcess
+         39   26 0001E4B0 HamCreateAutoRestartActivity
+         40   27 0001CAE0 HamCreateExtendedExecution
+         41   28 00001DF0 HamDebugClosePackageHandle
+         42   29 0001CC10 HamDebugModeEnable
+         43   2A 00001D40 HamDebugOpenPackageHandle
+         44   2B 00001E50 HamDebugQueryPackageState
+         45   2C 0001CC90 HamDebugSuspendPackage
+         46   2D 0001CD10 HamDebugTerminatePackage
+         47   2E 00006970 HamDisconnectForDebugging
+         48   2F 00006970 HamDisconnectForExtendedExecution
+         49   30 00006970 HamDisconnectForFullTrust
+         50   31 00006970 HamDisconnectForServicing
+         51   32 00006970 HamDisconnectForSessionState
+         52   33 00006970 HamDisconnectForStateChangeNotifications
+         53   34 00006970 HamDisconnectFromServer
+         54   35 0001CDA0 HamFullTrustClosePackageHandle
+         55   36 0001CE20 HamFullTrustOpenPackageHandle
+         56   37 0001CF10 HamFullTrustTerminatePackage
+         57   38 00002B80 HamGetApplicationInterruptiveUIState
+         58   39 00006FB0 HamGetApplicationStateForPsmKey
+         59   3A 0001CF90 HamGetInterruptiveUIStateForAumid
+         60   3B 0001D0F0 HamGetPackageInterruptiveUIState
+         61   3C 00005170 HamGetStateSnapshotForAumid
+         62   3D 0001D250 HamHostIdCreateSingleUse
+         63   3E 0001D320 HamHostIdFind
+         64   3F 000058F0 HamHostIdFindOrCreate
+         65   40 000087D0 HamHostIdInitializeKey
+         66   41 00001A30 HamHostIdRetrieveDynamicId
+         67   42 0001E5B0 HamInitializeActivityAutoRestartProperties
+         68   43 000092A0 HamInitializeActivityDynamicProperties
+         69   44 0000A820 HamInitializeStateChangeFlags
+         70   45 0001D400 HamIsHostBeingDebugged
+         71   46 0001D510 HamPendDiagnosticsToWaitTimeout
+         72   47 00009FA0 HamPlmNotifyNewSession
+         73   48 00007700 HamPopulateActivityProperties
+         74   49 00008360 HamPopulateActivityPropertiesByClass
+         75   4A 0001D550 HamQueryActivityPendDiagnostics
+         76   4B 0001D5D0 HamQueryApplicationUsageInfo
+         77   4C 00007B20 HamQueryCallerTerminateReason
+         78   4D 00014F10 HamQueryPackageStateSummary
+         79   4E 00007900 HamQueryPackageUsageInfo
+         80   4F 0001D730 HamQueryTaskCompletionsForTerminateGraph
+         81   50 00002160 HamRegisterDesktopProcessWithAppContainerToken
+         82   51 0001D7D0 HamRemoveDependency
+         83   52 0001D850 HamRemoveHostDependency
+         84   53 0001D8D0 HamResetExternalResourcePriority
+         85   54 00002100 HamServicingClosePackageHandle
+         86   55 00001EB0 HamServicingEnableServicing
+         87   56 00001F80 HamServicingOpenPackageHandle
+         88   57 00002050 HamServicingQueryActiveAppsInPackage
+         89   58 00001F10 HamServicingTerminatePackage
+         90   59 0001D960 HamSessionStateLogoffSession
+         91   5A 0001D9E0 HamSessionStateLogoffUser
+         92   5B 0001DA90 HamSetCommitProperties
+         93   5C 0001DBB0 HamSetExternalResourcePriority
+         94   5D 00005780 HamStartActivityAsync
+         95   5E 0001DC30 HamStartExtendedExecutionAsync
+         96   5F 00005110 HamStopActivity
+         97   60 0001DCB0 HamTerminateActivityHost
+         98   61 00001920 HamTerminateActivityHostEx
+         99   62 00014FE0 HamTerminateApplicationHost
+        100   63 0001DCE0 HamTerminateHostOnProcessExit
+        101   64 0001DD80 HamTerminateIfSuspendedByProcess
+        102   65 0001DE00 HamTerminateSelf
+        103   66 0001DE70 HamTerminateSelfOnProcessExit
+        104   67 00006EC0 HamTryEstimateRemainingQuiesceTime
+        105   68 000057E0 HamUpdateActivityProperties
+        106   69 00006F70 RmAccessCheck
+        107   6A 0001C0C0 RmAccessCheckOnSelf
+        108   6B 0001B940 RmAcquireResourceSet
+        109   6C 00009670 RmAcquireResourceSetEx
+        110   6D 0001C100 RmAcquireResources
+        111   6E 000091D0 RmActivityImportanceInitialize
+        112   6F 0001B980 RmActivityImportanceTakeMostImportant
+        113   70 00009960 RmApplyResourceSet
+        114   71 0001B950 RmApplyResourceSetToHost
+        115   72 0001C1C0 RmAvailabilityCheck
+        116   73 0001B590 RmConnectProcessManager
+        117   74 0000A400 RmConnectToResourceManager
+        118   75 0001B9B0 RmDisconnectFromResourceManager
+        119   76 0001B670 RmDisconnectProcessManager
+        120   77 00012CD0 RmEnableLimits
+        121   78 00018FF0 RmGameModeDisableForRegisteredProcess
+        122   79 000190D0 RmGameModeDisableForRegisteredProcessById
+        123   7A 000191B0 RmGameModeGetLargestValidResourceRequest
+        124   7B 00019290 RmGameModeInitializeResourceRequest
+        125   7C 000192D0 RmGameModeReenableForRegisteredProcess
+        126   7D 000193B0 RmGameModeReenableForRegisteredProcessById
+        127   7E 00019490 RmGameModeRegisterPairedAuxiliaryProcess
+        128   7F 000195A0 RmGameModeRegisterPairedAuxiliaryProcessById
+        129   80 000196B0 RmGameModeRegisterProcess
+        130   81 000197B0 RmGameModeRegisterProcessById
+        131   82 000198B0 RmGameModeUnregisterProcess
+        132   83 00019990 RmGameModeUnregisterProcessById
+        133   84 0001C240 RmGetNotification
+        134   85 0001B9F0 RmQueryHostMemoryLimitValues
+        135   86 00009440 RmRegisterActivityHostCallbacks
+        136   87 00019A70 RmRegisterForGameMode
+        137   88 0001C290 RmRegisterResource
+        138   89 0001B960 RmReleaseResourceSet
+        139   8A 000092B0 RmReleaseResourceSetEx
+        140   8B 0001C2F0 RmReleaseResources
+        141   8C 0001BAA0 RmResourceLimitFlagsInitialize
+        142   8D 0001BAC0 RmResourceLimitsInitialize
+        143   8E 00008AF0 RmResourceSetPropertiesInitialize
+        144   8F 0001BB00 RmSetHostLimit
+        145   90 0001B6F0 RmSetProcessManagement
+        146   91 0001B970 RmUnregisterActivityHost
+        147   92 000092C0 RmUnregisterActivityHostCallbacks
+        148   93 00019A80 RmUnregisterForGameMode
+        149   94 0001BB10 RmUpdateResourceSetProperties
+
+  Section contains the following imports:
+
+    msvcrt.dll
+             180026DF0 Import Address Table
+             180030BE8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          5A _XcptFilter
+                         493 malloc
+                          B7 _amsg_exit
+                          C8 _callnewh
+                         4B1 qsort
+                         459 free
+                         376 _vsnwprintf
+                         4A0 memcpy_s
+                         4A2 memmove_s
+                         2AA _purecall
+                         49F memcpy
+                          5E __C_specific_handler
+                         29C _onexit
+                          84 __dllonexit
+                         34E _unlock
+                         1F2 _lock
+                          62 __CxxFrameHandler3
+                         189 _initterm
+                         49E memcmp
+                         4A3 memset
+
+    api-ms-win-core-synch-l1-2-0.dll
+             180026D50 Import Address Table
+             180030B48 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          2D Sleep
+                          15 InitOnceExecuteOnce
+
+    api-ms-win-eventing-provider-l1-1-0.dll
+             180026DC8 Import Address Table
+             180030BC0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           3 EventRegister
+                           5 EventUnregister
+                           9 EventWriteTransfer
+                           4 EventSetInformation
+
+    api-ms-win-core-util-l1-1-0.dll
+             180026DB0 Import Address Table
+             180030BA8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 DecodePointer
+                           4 EncodePointer
+
+    api-ms-win-core-synch-l1-1-0.dll
+             180026CB8 Import Address Table
+             180030AB0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          26 ReleaseSemaphore
+                           B CreateSemaphoreExW
+                          1D LeaveCriticalSection
+                          1A InitializeCriticalSectionEx
+                          1B InitializeSRWLock
+                          36 WaitForSingleObject
+                          23 ReleaseMutex
+                           6 CreateEventW
+                          29 SetEvent
+                           1 AcquireSRWLockShared
+                          25 ReleaseSRWLockShared
+                          37 WaitForSingleObjectEx
+                          21 OpenSemaphoreW
+                           0 AcquireSRWLockExclusive
+                           F DeleteCriticalSection
+                           9 CreateMutexExW
+                          24 ReleaseSRWLockExclusive
+                          11 EnterCriticalSection
+
+    api-ms-win-core-libraryloader-l1-2-0.dll
+             180026B98 Import Address Table
+             180030990 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          10 GetModuleFileNameA
+                          14 GetModuleHandleExW
+                          15 GetModuleHandleW
+                           1 DisableThreadLibraryCalls
+                          16 GetProcAddress
+
+    api-ms-win-core-profile-l1-1-0.dll
+             180026C18 Import Address Table
+             180030A10 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 QueryPerformanceCounter
+
+    api-ms-win-core-processthreads-l1-1-0.dll
+             180026BD8 Import Address Table
+             1800309D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          11 GetCurrentThreadId
+                           D GetCurrentProcessId
+                           C GetCurrentProcess
+                          55 TerminateProcess
+                          1A GetProcessId
+
+    api-ms-win-core-sysinfo-l1-1-0.dll
+             180026D68 Import Address Table
+             180030B60 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1A GetTickCount
+                          16 GetSystemTimeAsFileTime
+                          1B GetTickCount64
+
+    api-ms-win-core-rtlsupport-l1-1-0.dll
+             180026C98 Import Address Table
+             180030A90 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          11 RtlVirtualUnwind
+                           B RtlLookupFunctionEntry
+                           2 RtlCaptureContext
+
+    api-ms-win-core-errorhandling-l1-1-0.dll
+             180026B28 Import Address Table
+             180030920 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           D SetLastError
+                           F SetUnhandledExceptionFilter
+                          11 UnhandledExceptionFilter
+                           5 GetLastError
+
+    api-ms-win-core-psm-key-l1-1-0.dll
+             180026C28 Import Address Table
+             180030A20 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           8 PsmGetKeyFromToken
+                           C PsmIsValidKey
+                           B PsmIsDynamicKey
+
+    api-ms-win-core-psm-key-l1-1-3.dll
+             180026C48 Import Address Table
+             180030A40 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           5 PsmGetAumidFromKey
+
+    api-ms-win-core-registry-l1-1-0.dll
+             180026C68 Import Address Table
+             180030A60 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           E RegEnumKeyExW
+                           0 RegCloseKey
+                           3 RegCreateKeyExW
+                          1E RegOpenKeyExW
+                          25 RegQueryValueExW
+
+    api-ms-win-core-heap-l1-1-0.dll
+             180026B60 Import Address Table
+             180030958 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 HeapAlloc
+                           6 HeapFree
+                           0 GetProcessHeap
+
+    api-ms-win-core-threadpool-l1-2-0.dll
+             180026D88 Import Address Table
+             180030B80 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1A SetThreadpoolTimer
+                           C CreateThreadpoolTimer
+                           6 CloseThreadpoolTimer
+                          22 WaitForThreadpoolTimerCallbacks
+
+    api-ms-win-core-localization-l1-2-0.dll
+             180026BC8 Import Address Table
+             1800309C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           9 FormatMessageW
+
+    api-ms-win-core-debug-l1-1-0.dll
+             180026AE8 Import Address Table
+             1800308E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           5 IsDebuggerPresent
+                           7 OutputDebugStringW
+                           4 DebugBreak
+
+    api-ms-win-core-handle-l1-1-0.dll
+             180026B50 Import Address Table
+             180030948 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 CloseHandle
+
+    api-ms-win-core-processthreads-l1-1-3.dll
+             180026C08 Import Address Table
+             180030A00 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1C GetProcessInformation
+
+    api-ms-win-core-quirks-l1-1-0.dll
+             180026C58 Import Address Table
+             180030A50 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 QuirkIsEnabled
+
+    api-ms-win-core-heap-l2-1-0.dll
+             180026B80 Import Address Table
+             180030978 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 GlobalFree
+                           0 GlobalAlloc
+
+    api-ms-win-core-delayload-l1-1-1.dll
+             180026B18 Import Address Table
+             180030910 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 ResolveDelayLoadedAPI
+
+    api-ms-win-core-delayload-l1-1-0.dll
+             180026B08 Import Address Table
+             180030900 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 DelayLoadFailureHook
+
+    ntdll.dll
+             180026E98 Import Address Table
+             180030C90 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         250 NtSetInformationJobObject
+                         57F RtlReleaseSRWLockExclusive
+                         58A RtlReportException
+                         11E NtCreateJobObject
+                         2B9 RtlAcquireSRWLockExclusive
+                          F4 NtAssignProcessToJobObject
+                         101 NtClose
+                         1E4 NtQueryInformationProcess
+                         515 RtlNtStatusToDosError
+                         5EF RtlSubscribeWnfStateChangeNotification
+                         209 NtQueryWnfStateData
+                         626 RtlUnsubscribeWnfNotificationWaitForCompletion
+                         648 RtlWakeAddressAll
+                         6B1 TpAllocWork
+                         1E2 NtQueryInformationJobObject
+                         647 RtlWaitOnAddress
+                         156 NtDuplicateObject
+                         6C6 TpPostWork
+                         6E7 TpWaitForWork
+                         6D0 TpReleaseWork
+                         407 RtlFreeHeap
+                         37F RtlDeleteCriticalSection
+                         3BD RtlEnterCriticalSection
+                         4E6 RtlLeaveCriticalSection
+                         63E RtlValidSid
+                         1B4 NtOpenProcessToken
+                         5E5 RtlSleepConditionVariableSRW
+                         64C RtlWakeAllConditionVariable
+                         545 RtlQueryPackageClaims
+                         2BA RtlAcquireSRWLockShared
+                         498 RtlInitializeSRWLock
+                         56B RtlRbInsertNodeEx
+                         489 RtlInitializeConditionVariable
+                         580 RtlReleaseSRWLockShared
+                         56C RtlRbRemoveNode
+                         55B RtlQueryTokenHostIdAsUlong64
+                         1E7 NtQueryInformationToken
+                         340 RtlCopySid
+                         333 RtlConvertSidToUnicodeString
+                         4E9 RtlLengthSid
+                         27F NtTerminateProcess
+                         2DF RtlAllocateHeap
+                         201 NtQuerySystemInformation
+
+  Section contains the following delay load imports:
+
+    api-ms-win-core-winrt-string-l1-1-0.dll
+              00000001 Characteristics
+      0000000180032720 Address of HMODULE
+      0000000180036130 Import Address Table
+      000000018002EBA8 Import Name Table
+      000000018002EF90 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000B586    17 WindowsStringHasEmbeddedNull
+                                    000000018000BB9B     A WindowsCreateString
+                                    000000018000B69C    13 WindowsIsStringEmpty
+                                    000000018000B75D    10 WindowsGetStringRawBuffer
+
+    api-ms-win-core-com-l1-1-0.dll
+              00000001 Characteristics
+      0000000180032728 Address of HMODULE
+      0000000180036078 Import Address Table
+      000000018002EAF0 Import Name Table
+      000000018002EFA0 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000BD65    4B CreateStreamOnHGlobal
+                                    000000018000BD53    38 CoReleaseMarshalData
+                                    000000018000B6AE     7 CoCreateFreeThreadedMarshaler
+                                    000000018000BD77    28 CoInitializeEx
+                                    000000018000B611    42 CoTaskMemAlloc
+                                    000000018000BD41    2F CoMarshalInterface
+                                    000000018000BD2F    46 CoUninitialize
+
+    api-ms-win-core-winrt-error-l1-1-0.dll
+              00000001 Characteristics
+      0000000180032730 Address of HMODULE
+      00000001800360E8 Import Address Table
+      000000018002EB60 Import Name Table
+      000000018002EFC0 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000BBBF    10 RoTransformError
+                                    000000018000BBAD    12 SetRestrictedErrorInfo
+                                    000000018000B6C0     A RoOriginateErrorW
+                                    000000018000B74B     9 RoOriginateError
+
+    RPCRT4.dll
+              00000001 Characteristics
+      0000000180032738 Address of HMODULE
+      0000000180036000 Import Address Table
+      000000018002EA78 Import Name Table
+      000000018002EFE0 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000BDAD    A4 NdrClientCall3
+                                    000000018000BD0B    2E I_RpcExceptionFilter
+                                    000000018000BD1D   206 RpcSsDestroyClientContext
+                                    000000018000B7FA   1A2 RpcExceptionFilter
+                                    000000018000BD9B   170 RpcBindingBind
+                                    000000018000BD89   173 RpcBindingCreateW
+                                    000000018000B76F    44 I_RpcMapWin32Status
+                                    000000018000B80C   174 RpcBindingFree
+
+    ext-ms-win-com-psmregister-l1-1-0.dll
+              00000001 Characteristics
+      0000000180032740 Address of HMODULE
+      0000000180036158 Import Address Table
+      000000018002EBD0 Import Name Table
+      000000018002F000 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000B81E     7 PsmQueryBackgroundActivationType
+
+    api-ms-win-appmodel-runtime-l1-1-1.dll
+              00000001 Characteristics
+      0000000180032748 Address of HMODULE
+      0000000180036048 Import Address Table
+      000000018002EAC0 Import Name Table
+      000000018002F010 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000B8A9    1E ParseApplicationUserModelId
+
+    api-ms-win-appmodel-state-l1-2-0.dll
+              00000001 Characteristics
+      0000000180032750 Address of HMODULE
+      0000000180036058 Import Address Table
+      000000018002EAD0 Import Name Table
+      000000018002F020 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000B934     2 CloseState
+                                    000000018000B9BF    22 GetSystemAppDataKey
+                                    000000018000B9D1    26 OpenStateExplicitForUserSid
+
+    api-ms-win-core-psm-rtimer-l1-1-1.dll
+              00000001 Characteristics
+      0000000180032758 Address of HMODULE
+      00000001800360C8 Import Address Table
+      000000018002EB40 Import Name Table
+      000000018002F040 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000BA6E     4 PsmTimerInitialize
+                                    000000018000B9E3     6 PsmTimerStart
+                                    000000018000BA80     2 PsmTimerCleanup
+
+    ext-ms-win-sysmain-plmapi-l1-1-0.dll
+              00000001 Characteristics
+      0000000180032760 Address of HMODULE
+      0000000180036168 Import Address Table
+      000000018002EBE0 Import Name Table
+      000000018002F060 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000BB2F     0 MemUtilEmptyProcess
+                                    000000018000BB1D     4 MemUtilIsWorkingSetTooLargeForSwap
+                                    000000018000BA92     8 MemUtilQueryProcessMetrics
+
+    api-ms-win-core-winrt-error-l1-1-1.dll
+              00000001 Characteristics
+      0000000180032768 Address of HMODULE
+      0000000180036110 Import Address Table
+      000000018002EB88 Import Name Table
+      000000018002F098 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000BBD1     1 IsErrorPropagationEnabled
+                                    000000018000BC5C     6 RoGetMatchingRestrictedErrorInfo
+                                    000000018000BC6E     C RoReportFailedDelegate
+
+    api-ms-win-core-com-l1-1-1.dll
+              00000001 Characteristics
+      0000000180032770 Address of HMODULE
+      00000001800360B8 Import Address Table
+      000000018002EB30 Import Name Table
+      000000018002F0B8 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000BC80    52 RoGetAgileReference
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        3000 .pdata
+       11000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       20000 .text

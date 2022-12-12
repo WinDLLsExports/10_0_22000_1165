@@ -1,0 +1,110 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\winusb.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    USBD.SYS
+    WppRecorder.sys
+    WDFLDR.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0016078 Import Address Table
+             1C00162A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          E3 ExFreePool
+                         357 IoGetDeviceProperty
+                          E5 ExFreePoolWithTag
+                         3DA IoSetDeviceInterfacePropertyData
+                         BF9 _wcsnicmp
+                         457 KeAcquireSpinLockRaiseToDpc
+                         51A KeReleaseSpinLock
+                         53A KeSetEvent
+                         566 KeWaitForSingleObject
+                         12D ExReleaseFastMutexUnsafe
+                          B4 ExAllocatePool2
+                          FF ExInterlockedInsertHeadList
+                         2E2 IoAllocateMdl
+                         100 ExInterlockedInsertTailList
+                         340 IoFreeMdl
+                         103 ExInterlockedRemoveHeadList
+                         4AF KeInitializeEvent
+                         428 IoWMIRegistrationControl
+                         5BC MmGetSystemRoutineAddress
+                         8BA RtlGetVersion
+                         4B7 KeInitializeSpinLock
+                         8CC RtlInitUnicodeString
+                         959 RtlQueryRegistryValues
+                         358 IoGetDevicePropertyData
+                         BF3 _vsnwprintf
+                         2EF IoBuildPartialMdl
+                         4D1 KeLeaveCriticalRegion
+                         6B3 PoDirectedDripsSetDeviceFlags
+                          6F DbgPrintEx
+                         817 RtlCopyUnicodeString
+                         484 KeEnterCriticalRegion
+                          9D ExAcquireFastMutexUnsafe
+                         962 RtlRandomEx
+                         88F RtlGUIDFromString
+
+    HAL.dll
+             1C0016000 Import Address Table
+             1C0016230 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+
+    USBD.SYS
+             1C0016010 Import Address Table
+             1C0016240 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           E USBD_ParseDescriptors
+                           D USBD_ParseConfigurationDescriptorEx
+
+    WppRecorder.sys
+             1C0016050 Import Address Table
+             1C0016280 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 WppAutoLogTrace
+                          10 imp_WppRecorderReplay
+                           2 WppAutoLogStart
+                           3 WppAutoLogStop
+
+    WDFLDR.SYS
+             1C0016028 Import Address Table
+             1C0016258 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           9 WdfVersionUnbindClass
+                           8 WdfVersionUnbind
+                           6 WdfVersionBind
+                           7 WdfVersionBindClass
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       11000 .text
+        1000 GFIDS
+        1000 INIT
+        6000 PAGE

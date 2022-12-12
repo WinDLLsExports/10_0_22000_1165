@@ -1,0 +1,78 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\tbs.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0007000 Import Address Table
+             1C00070E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          E5 ExFreePoolWithTag
+                         8CB RtlInitUnicodeString
+                         B3B ZwOpenKey
+                         B79 ZwQueryValueKey
+                         AE9 ZwClose
+                         64F NtQueryInformationFile
+                         8AE RtlGetPersistedStateLocation
+                          94 EtwWriteTransfer
+                         AF5 ZwCreateFile
+                         92E RtlNtStatusToDosError
+                         AF4 ZwCreateEvent
+                         B0F ZwDeviceIoControlFile
+                         BC5 ZwWaitForSingleObject
+                          8C EtwSetInformation
+                          89 EtwRegister
+                          8E EtwUnregister
+                          B4 ExAllocatePool2
+
+  Section contains the following exports for tbs.sys
+
+    00000000 characteristics
+    B7E220C3 time date stamp
+        0.00 version
+           1 ordinal base
+          15 number of functions
+          15 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001010 DllInitialize
+          2    1 00003BA0 DllUnload
+          3    2 00002930 Tbsi_Context_Create
+          4    3 00002A60 Tbsi_Create_Windows_Key
+          5    4 00002B10 Tbsi_GetDeviceInfo
+          6    5 00002BD0 Tbsi_Get_OwnerAuth
+          7    6 00003420 Tbsi_Get_TCG_Log
+          8    7 00003480 Tbsi_Physical_Presence_Command
+          9    8 00003500 Tbsi_Revoke_Attestation
+         10    9 00003590 Tbsip_Cancel_Commands
+         11    A 000035E0 Tbsip_Context_Close
+         12    B 00003620 Tbsip_Submit_Command
+         13    C 00003660 Tbsip_Submit_Command_NonBlocking
+         14    D 000036A0 Tbsip_TestInterruptInformation
+         15    E 00003760 Tbsip_TestMorBit
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE

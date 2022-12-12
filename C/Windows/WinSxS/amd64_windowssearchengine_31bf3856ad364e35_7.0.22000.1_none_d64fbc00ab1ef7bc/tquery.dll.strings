@@ -1,0 +1,6410 @@
+       
+    Contains: %s
+    Prefix: %s
+    Suffix: %s
+  Replacing with width: %d offset: %d
+ !!!!!!!!!!!
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGCHIJKLLMNOPQRCSTUVCPWCPXYOODCPZ[DOCWPX\CP]^_`aaaaa+.b@ccdeC\PeaaaaabfghccdC\PiOCej\CPkCPlmDOOCPnoODCkPl\CPpqrODCsPt\CP
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCHI
+ $"4$
+ (CatalogName TEXT_TEXT(127) DEFAULT NULL, CatalogID INTEGER PRIMARY KEY, IsDeleted LONG_INTEGER DEFAULT 0, UNIQUE (CatalogName COLLATE "UNICODE_en-US" ASC, CatalogID ASC));
+ (CatalogName) VALUES(?);
+ (Id INTEGER PRIMARY KEY, UniqueKey TEXT NOT NULL UNIQUE, Name TEXT NOT NULL, PropertyId INTEGER NOT NULL, VariantType INTEGER NOT NULL, StorageType INTEGER NOT NULL, MaxSize INTEGER, Flags INTEGER NOT NULL);
+ (IndexDescription) VALUES(?);
+ (IndexID INTEGER PRIMARY KEY, IndexDescription LONGBINARY_BLOB(5104) DEFAULT NULL);
+ (IndexID LONG_INTEGER DEFAULT NULL, PropertyID LONG_INTEGER DEFAULT NULL, Property LONGBINARY_BLOB(2147483647) DEFAULT NULL, PRIMARY KEY (IndexID ASC, PropertyID ASC)) WITHOUT ROWID;
+ (IndexID, PropertyID, Property) VALUES(?, ?, ?) ON CONFLICT(IndexID, PropertyID) DO UPDATE SET Property = excluded.Property;
+ (OccID UNSIGNEDLONG_INTEGER DEFAULT NULL, OccPage LONGBINARY_BLOB(
+ (OccID, OccPage) VALUES(?, ?) ON CONFLICT(OccID) DO UPDATE SET OccPage = excluded.OccPage;
+ (Partition UNSIGNEDLONG_INTEGER DEFAULT NULL, szKey LONGBINARY_BLOB(
+ (Partition, szKey, PID, WidStart, Data) VALUES(?, ?, ?, ?, ?) ON CONFLICT(Partition, szKey, PID, WidStart) DO UPDATE SET Data = excluded.Data;
+ (UniqueKey, Name, PropertyId, VariantType, StorageType, MaxSize, Flags) VALUES (?, ?, ?, ?, ?, ?, ?);
+ (WorkId INTEGER NOT NULL, ColumnId INTEGER NOT NULL, Value BLOB NOT NULL, PRIMARY KEY (WorkId, ColumnId)) WITHOUT ROWID;
+ (WorkId, ColumnId, Value) VALUES (?, ?, ?) ON CONFLICT(WorkId, ColumnId) DO UPDATE SET Value = excluded.Value;
+ [INTERVALS(
+ [MINVALUE/'
+ _^]H
+ 1stRws
+ A\_^
+ A^_^
+ A^_^[]
+ A^_^][
+ A^_^H
+ A^A\_^[
+ A__^][
+ A_A^_
+ A_A^_^[
+ A_A^_^]
+ A_A^_H
+ A_A^A\
+ A_A^A\_^
+ A_A^A\H
+ A_A^A]
+ A_A^A]_^
+ A_A^A]_^][
+ A_A^A]A\]
+ A_A^A]A\_
+ A_A^A]A\_^[
+ A_A^A]A\_^]
+ abs='
+ add='
+ AGGREGATE 
+ AND 
+ Async
+ AVG(
+ BYFREQUENCY(
+ BYFREQUENCY(System.ThumbnailCacheID,3
+ ChildCount(
+ Chptrd
+ DATERANGE(
+ Deep='true'
+ DefrCatVer
+ DefrTrm
+ DESC
+ Distrb
+ Exact='
+ ExactString='
+ ExtdTyp
+ FIRST(
+ Fixing reference. ClientBase: 0x%I64x Buffer: 0x%I64x at 0x%x
+ Fixing vector 0x%I64x
+ Found %d Variants at 0x%I64x
+ FROM 
+ GenerateParseTree
+ GenOp
+ H3E H3E
+ HitCnt
+ HoldRw
+ IgNoiseOnly
+ IgnoreSBRI
+ intervals='
+ MAX(
+ Microsoft Corporation. All rights reserved.
+ MIN(
+ multiply='
+ --noimpl--
+ NOT 
+ op='
+ OR WORKID=
+ ORDER BY 
+ ORDER BY Partition ASC, szKey ASC, PID ASC, WidStart ASC LIMIT 1;
+ OVER (
+ PhraseAll='
+ PhraseExactAll='
+ PhraseExactPIDs='
+ PhrasePIDs='
+ PhrasePrefixAll='
+ PhrasePrefixPIDs='
+' PID='
+ REPRESENTATIVEOF(System.Music.AlbumID,System.ThumbnailCacheID,3
+ reusewhere(
+ Scrll
+ Search
+ SET IndexDescription=? WHERE IndexID=?;
+ SET IsDeleted = ? WHERE CatalogName COLLATE "UNICODE_en-US" = ? AND CatalogID = ?;
+ SUM(
+ System.Shell.OmitFromView != 'true'
+ TermAll='
+ TermExactAll='
+ TermExactPIDs='
+ TermPIDs='
+ TERMS='
+' TERMS='
+ Type='
+ Type="
+ UseCI
+' value='
+ Watch
+ WHERE 
+ WHERE CatalogName COLLATE "UNICODE_en-US" = ? AND CatalogID = ?;
+ WHERE ColumnId = ?;
+ WHERE IndexID=? AND PropertyID=?;
+ WHERE IndexID=?;
+ WHERE OccID=?;
+ WHERE Partition < :Partition ORDER BY Partition DESC, szKey DESC, PID DESC, WidStart DESC LIMIT 1;
+ WHERE Partition = :Partition AND (szKey < :Key OR (szKey = :Key AND (PID < :PID OR (PID = :PID AND WidStart < :WidStart)))) ORDER BY Partition DESC, szKey DESC, PID DESC, WidStart DESC LIMIT 1;
+ WHERE Partition = :Partition AND (szKey < :Key OR (szKey = :Key AND (PID < :PID OR (PID = :PID AND WidStart <= :WidStart)))) ORDER BY Partition DESC, szKey DESC, PID DESC, WidStart DESC LIMIT 1;
+ WHERE Partition = :Partition AND (szKey > :Key OR (szKey = :Key AND (PID > :PID OR (PID = :PID AND WidStart > :WidStart))))  ORDER BY Partition ASC, szKey ASC, PID ASC, WidStart ASC LIMIT 1;
+ WHERE Partition = :Partition AND szKey = :Key AND PID = :PID AND WidStart = :WidStart;
+ WHERE Partition > :Partition ORDER BY Partition ASC, szKey ASC, PID ASC, WidStart ASC LIMIT 1;
+ WHERE UniqueKey = ?;
+ WHERE WorkId = ? AND ColumnId = ?;
+ WHERE WorkId = ? LIMIT 1;
+ WHERE WorkId = ?;
+ x&b(.**,
+!!!!#$%  "&&'
+!"""""""""""
+!.*.P.
+!\$ D
+!\$ E3
+!|$(H
+!|$0L
+!l$0I!.
+!Q0!Q
+!t$ L
+!This program cannot be run in DOS mode.
+" ."2
+" dsc="
+" len="
+" RankMeth="
+"""""""
+"$.&F
+",$.L
+">$J"
+"></Rst>
+"X& ,r.
+#\$0L
+#\'G7
+#D$0H
+#text
+$9\$@t.H
+$A+D$
+$AH;] t(A
+$D8h0
+$I;D$
+$V"n&m
+%08lX-%04X-%04X-%02X%02X%02X%02X%02X%02X%02X%02X\
+%2d-%02d-%04d %2d:%02d%wc
+%4d %s
+%4hd-%2hd-%2hd %2hd:%2hd:%2hd:%3hd
+%4hd/%2hd/%2hd %2hd:%2hd:%2hd:%3hd
+%5s%4.4x.000
+%5s%4.4x.001
+%5s%4.4x.002
+%d-%d
+%d%s-%s
+%hs!%p: 
+%hs(%d) tid(%x) %08X %ws
+%hs(%u)\%hs!%p: 
+%I64d
+%I64u
+%s'%s'%s
+%s(%u) %s : %s
+%s,%d
+%s: %5s
+%s: %s
+%s\%s
+%s\%s.mui
+%s\%s\%s.mui
+%s_DATA_%d
+%s_OCC_%d
+%u - %S (%Id)
+%ws\CLSID
+%ws\PersistentHandler
+&'))/
+&-_.,
+&|*B,8.n2
+&''''''''''''''''''''''''''''''''''''''''''''''''++
+&F;|&
+&fE9h
+((,,)),
+(([^\?\*\[\]\^\|])|(\|\[.\]))+
+((++,,,,,,--66.;;;;99777::::::4<<<88@@==BBDDFFHHHHHCCEEGGIJKOOPNNQQQLRSSMUUTTWWXXXXAA??5//YY\\^0_1ZZbbcdd``````````````````aaa[]eehffgg223iiijjjklmnnopppq))rrst**uuwwvxzyyyyy{{|}}~~~~
+()$^.*+?[]|\-{},:=!
+([\S]+)|
+(2&D,
+(A^_^[
+(A_A^A]A\_^][
+(caller: %p) 
+(D$ f
+(D$ H
+(D$ L
+(D$@f
+(D$`f
+(D$0f
+(D$0H
+(D$pB
+(D$Pf
+(D$pf
+(D$Pf
+(D$pf
+(D$Pf
+(D$pf
+(fA90u
+(t$ H
+(t$`H
+(t$`L
+(t$PH
+(t$PL
+(WORKID=
+) DEFAULT NULL, PID UNSIGNEDSHORT_INTEGER DEFAULT NULL, WidStart UNSIGNEDLONG_INTEGER DEFAULT NULL, Data LONGBINARY_BLOB(
+) DEFAULT NULL, PRIMARY KEY (OccID ASC)) WITHOUT ROWID;
+) DEFAULT NULL, PRIMARY KEY (Partition ASC, szKey ASC, PID ASC, WidStart ASC)) WITHOUT ROWID;
+)))))
+)),)),((
+))|,,
+),)))
+)::;<=>
+):<=>
+);*,)))^_`;b;;;;;);)
+)D$@A
+)D$`A
+)D$0L
+)D$P3
+)D8kd
+)L$PA
+)L$pA
+)L$PA
+)t$ H
+)t$`M
+)t$0H
+*.dir
+*dc55TTTT6655\a5
+,-----------
+, Asc
+, Des
+, IncomingWids: %d
+, Path, System.FileAttributes, System.DateModified, System.DateCreated, System.DateAccessed, System.Size
+,$H#*H
+,J(""
+,J(@.
+.*[0-9].*
+.*\.(mp3|mp2|m4a|m4v)$
+-...........
+.?AU?$default_delete@UICatalogTable@inverted@@@std@@
+.?AU?$default_delete@UIDatabaseConnectionFactory@inverted@@@std@@
+.?AU?$default_delete@UIDatabaseIdentifierValidator@inverted@@@std@@
+.?AU?$default_delete@UIIndexDataTableFactory@inverted@@@std@@
+.?AU?$default_delete@UIIndexOccurrenceTableFactory@inverted@@@std@@
+.?AU?$default_delete@UIPropertyBagTable@inverted@@@std@@
+.?AU?$default_delete@VCIndexInfo@CGlobalFreshTest@inverted@@@std@@
+.?AUhresult_access_denied@winrt@@
+.?AUhresult_canceled@winrt@@
+.?AUhresult_changed_state@winrt@@
+.?AUhresult_class_not_available@winrt@@
+.?AUhresult_class_not_registered@winrt@@
+.?AUhresult_error@winrt@@
+.?AUhresult_illegal_delegate_assignment@winrt@@
+.?AUhresult_illegal_method_call@winrt@@
+.?AUhresult_illegal_state_change@winrt@@
+.?AUhresult_invalid_argument@winrt@@
+.?AUhresult_no_interface@winrt@@
+.?AUhresult_not_implemented@winrt@@
+.?AUhresult_out_of_bounds@winrt@@
+.?AUhresult_wrong_thread@winrt@@
+.?AUsqlite3_error@@
+.?AV_System_error@std@@
+.?AV<lambda_01bba83e3aec52471bb1a9060296df1a>@@
+.?AV<lambda_0688b6fd2b33af95485ebcae4a4614a9>@@
+.?AV<lambda_06e169ec88e07a69682699bfe5988e2d>@@
+.?AV<lambda_09814d75faf03ac65af71490d40aa09b>@@
+.?AV<lambda_09a9708a9991144632614db2e6876d3c>@@
+.?AV<lambda_0f194cd8ce5bb99243deded5a7d7b7dc>@@
+.?AV<lambda_10efaed70454555b962acb0c8f1bcdd3>@@
+.?AV<lambda_1386101e5f266f35d8b0f707b5d5cdef>@@
+.?AV<lambda_145659d1da9ea6563fec3263dee389b6>@@
+.?AV<lambda_148009f514895efe88a934a0af20a4de>@@
+.?AV<lambda_185053b93e3527f3f21ab447581fee7f>@@
+.?AV<lambda_1989990d988abb7e59d08ca0e708fc78>@@
+.?AV<lambda_1dd2b84842bb05fdb2f9b5464d08b1f4>@@
+.?AV<lambda_1fb8582f541f26db7e5e9331debe71ce>@@
+.?AV<lambda_2143b750fafd48e9375d55346840ebd8>@@
+.?AV<lambda_22db74719aa2a92dd9334db7ccfed19e>@@
+.?AV<lambda_2359744a6d726976e1ff81c972e4f2e1>@@
+.?AV<lambda_25d6d27891888137befc3333bebab7d7>@@
+.?AV<lambda_26317c05f925c0f2b2704a5acaf4f323>@@
+.?AV<lambda_299c7e20d31c95da0ecc7e839034fec9>@@
+.?AV<lambda_2e75402b6b256ec98488b11d56a5d20b>@@
+.?AV<lambda_2ffafa0fab80309130e2c5fd65838a40>@@
+.?AV<lambda_31ae95651d60d57ddba1184ade05d841>@@
+.?AV<lambda_31c8830476201d3d2591db2108722e85>@@
+.?AV<lambda_32b846b8a02df2d70263d677daa013a0>@@
+.?AV<lambda_3530836d53173db97dafa8696e97945a>@@
+.?AV<lambda_3fb8952de9677e2c76bcf240abdaa097>@@
+.?AV<lambda_400fe692df54aa0eaacf0f632abd034a>@@
+.?AV<lambda_40e0d6e4d66e37130efb6993a7d28bda>@@
+.?AV<lambda_421862a2d1053e1db8b18deed1207aa2>@@
+.?AV<lambda_428622406d5ec9e3b25f33f3e496850d>@@
+.?AV<lambda_4596fa12cc5c821d083e056cf438c816>@@
+.?AV<lambda_47467608b4775fb44d4ba44b908a952d>@@
+.?AV<lambda_4b157ae93e9584a949a26a97c947acfa>@@
+.?AV<lambda_4d0e3a19dcfc587e99e56ea921df41ef>@@
+.?AV<lambda_4d1cb733f76f6bf6102ef46b4ca0ecd5>@@
+.?AV<lambda_4d2278c6c29b48d7d5dd9a7a593bcc41>@@
+.?AV<lambda_5016afcbce322b2aad6332bbf409ca6e>@@
+.?AV<lambda_51047d2c742132fa5d8197baba4c7d26>@@
+.?AV<lambda_5b79596690f714d78b547c9fa42807c0>@@
+.?AV<lambda_5bc706c608d49d48f1219a49dc8facc7>@@
+.?AV<lambda_5c260975f0b45484f965ee104e7a4802>@@
+.?AV<lambda_60fce4a3f9aa8f1b373a29e8f9724202>@@
+.?AV<lambda_67d8fe0e6b46995030f0c7ea461156aa>@@
+.?AV<lambda_6ac7765cf622285f36e48b513402c72b>@@
+.?AV<lambda_6bf67cf5ea3f53ea73cdaae9034577fe>@@
+.?AV<lambda_6f2490d32fd63bf7c72dff986c6a958f>@@
+.?AV<lambda_7e5095d9b4880f4e79c82eb4293e1f80>@@
+.?AV<lambda_832796730f4a5eea565e694a73bd75a6>@@
+.?AV<lambda_85c2cd2d1703fffe60cf9e6681baba3d>@@
+.?AV<lambda_8cb70c2ce1141461991bfe18208f4cb1>@@
+.?AV<lambda_8d46f6452a89fce26dca9c659c87fd6c>@@
+.?AV<lambda_8fb44b1675b6f5f94f7a5f9c60fc5019>@@
+.?AV<lambda_90f05ed692c8d648a2478ef77253e7d6>@@
+.?AV<lambda_91bff25c85aa2fa71674b59cfc9136ee>@@
+.?AV<lambda_9593b0223b43ca854d70de1dc0a0d7a4>@@
+.?AV<lambda_980a05db996dc75e54e943c9de0af08f>@@
+.?AV<lambda_a1eb937cec346328407c8fe9fa7613c2>@@
+.?AV<lambda_a6c6fa64bbf39b4d6598d6e55392d5e7>@@
+.?AV<lambda_a80d19d2506564d6ca3ae0b44bec4e1c>@@
+.?AV<lambda_ae9a931f85409c58506199b5b2f63006>@@
+.?AV<lambda_aecb6c0754de3bac090dd8f9d0809dc6>@@
+.?AV<lambda_b675f3ffa45a0b92364aea496a2379e0>@@
+.?AV<lambda_baf28229fa28ee4982015f902b22c90b>@@
+.?AV<lambda_c3bb244c7795591d2a3d7c8dbf26400e>@@
+.?AV<lambda_c3f6b323cdccc284ddb0749ef228bbe1>@@
+.?AV<lambda_c42f5a4a4ef3e1468d04b976bfac776f>@@
+.?AV<lambda_c495868913fee61aab08739c5f6761ee>@@
+.?AV<lambda_c9beaa1de7a125375b8e6a398e926f9c>@@
+.?AV<lambda_cb72bc110807943602755ac238f9419c>@@
+.?AV<lambda_d51cc4e815d038409759c285a44652b9>@@
+.?AV<lambda_d5e2c1be32e4f22a17b9205613d20a14>@@
+.?AV<lambda_d89819d2e2a0ea0679194c1b45c3324f>@@
+.?AV<lambda_da7097f9bdd7ef680fcd52c8a871bb9b>@@
+.?AV<lambda_dac1af74c2d0b652ae60dc40effdb67b>@@
+.?AV<lambda_dcf773549dae31694ebeaf8bc4ded161>@@
+.?AV<lambda_df275b73f5e5ddd0bb7087af49793034>@@
+.?AV<lambda_df831de00d9ed48cd8c7bf0d8a4bde2b>@@
+.?AV<lambda_e0daf0154599596c0ae08d10d9b5c5f7>@@
+.?AV<lambda_e21fc257ef62d69ccd4ceecf446f78cd>@@
+.?AV<lambda_e26cb96c9cee0aeb2f48eb122eb697dc>@@
+.?AV<lambda_e849ed5c46c2f59d8b7181792306942c>@@
+.?AV<lambda_e954ac1628cb4e49b432a374ad7bed65>@@
+.?AV<lambda_ea443a3d5b17dcba70935b4494c887bf>@@
+.?AV<lambda_eba9fedc805f54692d8a0ead66c98bf2>@@
+.?AV<lambda_f52f8bd72acbaf3b452febd74b964e46>@@
+.?AVAllNoiseException@@
+.?AVbad_alloc@std@@
+.?AVbad_array_new_length@std@@
+.?AVbad_cast@std@@
+.?AVbad_optional_access@std@@
+.?AVbad_weak_ptr@std@@
+.?AVCAtlException@ATL@@
+.?AVCPListException@@
+.?AVexception@std@@
+.?AVfilesystem_error@filesystem@std@@
+.?AVinvalid_argument@std@@
+.?AVlength_error@std@@
+.?AVlogic_error@std@@
+.?AVout_of_range@std@@
+.?AVResultException@wil@@
+.?AVruntime_error@std@@
+.?AVSafeIntException@@
+.?AVsystem_error@std@@
+.?AVTPResultException@@
+.?AVtype_info@@
+.\%s.mui
+.\%s\%s.mui
+.00cfg
+.bss$00
+.bss$03
+.bss$dk00
+.bss$dk01
+.bss$pr00
+.bss$zz
+.contact
+.CRT$XCA
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIC
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.CRT$XPA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.data
+.data$00
+.data$00$brc
+.data$03
+.data$dk00
+.data$dk00$brc
+.data$dk03$brc
+.data$pr00
+.data$r$brc
+.data$rs$brc
+.data$zz
+.data$zz$brc
+.didat$2
+.didat$3
+.didat$4
+.didat$5
+.didat$6
+.didat$7
+.edata
+.gehcont
+.gfids
+.giats
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.library-ms
+.P6A?AUCAllocatorState@?$sparse_bit_allocator@_K@@XZ
+.P6A?AV?$CComPtr@VCPropRetriever@@@ATL@@XZ
+.P6A?AVCIndexScanStats@inverted@@XZ
+.P6A?AVCLocaleNameCache@inverted@@XZ
+.pdata
+.rdata
+.rdata$00
+.rdata$00$brc
+.rdata$01
+.rdata$brc
+.rdata$r
+.rdata$T$brc
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zz
+.rdata$zz$brc
+.rdata$zzzdbg
+.rsrc
+.rsrc$01
+.rsrc$02
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.searchconnector-ms
+.settingcontent-ms
+.text
+.text$di
+.text$lp00tquery.dll!20_pri7
+.text$lp01tquery.dll!20_pri7
+.text$lp03tquery.dll!30_clientonly
+.text$lp04tquery.dll!30_clientonly
+.text$mn
+.text$mn$00
+.text$np
+.text$x
+.text$yd
+.text$zs
+.text$zy
+.text$zz
+.TIFF
+.tls$
+.tls$ZZZ
+.u/H;/u
+.u/H;+u
+.xdata
+.xdata$x
+.XJXX
+/13=?AJLUj
+/w?t8
+:"t5D
+::_noindex_::
+:=======
+:L;L$`
+:Partition
+:WidStart
+;;;&':)[&'));;
+;\$0s>
+;\$8r
+;~ sEL
+;B0r9;B4s4+B0
+;C |[L
+;C0sk
+;Cxr?;C|s:+Cx
+;Cxs7
+;D$$r
+;D$pr
+;E`w<D
+;F$rEH
+;f9;u2
+;l$0t
+;l$Dr
+;mt`f
+;n0s+H
+;q0sMI
+;t$ r
+;T$\s'+T$XH
+;T$8r&;T$<s
+;T$ds
+;t$Pr
+;T$Pu
+??0?$basic_ios@_WU?$char_traits@_W@std@@@std@@IEAA@XZ
+??0?$basic_istream@_WU?$char_traits@_W@std@@@std@@QEAA@PEAV?$basic_streambuf@_WU?$char_traits@_W@std@@@1@_N@Z
+??0?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAA@PEAV?$basic_streambuf@_WU?$char_traits@_W@std@@@1@_N@Z
+??0?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAA@XZ
+??0_Locinfo@std@@QEAA@PEBD@Z
+??0_Lockit@std@@QEAA@H@Z
+??0CDriveInfo@@QEAA@PEBGK@Z
+??0CFullPath@@QEAA@PEBG@Z
+??0CFullPropSpec@@QEAA@AEBV0@@Z
+??0CiStorage@@QEAA@PEBGKPEAUICiCAdviseStatus@@KH@Z
+??0CMemSerStream@@QEAA@PEAEK@Z
+??0CPidLookupTable@@QEAA@XZ
+??0CUnNormalizer@@QEAA@XZ
+??0facet@locale@std@@IEAA@_K@Z
+??0XAct@@QEAA@XZ
+??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+??1?$basic_istream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+??1?$basic_ostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+??1?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+??1_Locinfo@std@@QEAA@XZ
+??1_Lockit@std@@QEAA@XZ
+??1CAllocStorageVariant@@IEAA@XZ
+??1CiStorage@@UEAA@XZ
+??1CMemSerStream@@UEAA@XZ
+??1CPhysStorage@@UEAA@XZ
+??1CPidLookupTable@@QEAA@XZ
+??1facet@locale@std@@MEAA@XZ
+??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@_J@Z
+??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@_K@Z
+??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@F@Z
+??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@G@Z
+??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@H@Z
+??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@I@Z
+??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@J@Z
+??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@K@Z
+??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@M@Z
+??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@N@Z
+??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@P6AAEAVios_base@1@AEAV21@@Z@Z
+??Bid@locale@std@@QEAA_KXZ
+??Bios_base@std@@QEBA_NXZ
+?_Decref@facet@locale@std@@UEAAPEAV_Facet_base@3@XZ
+?_Getcat@?$ctype@_W@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z
+?_Getcat@?$ctype@D@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z
+?_Getcoll@_Locinfo@std@@QEBA?AU_Collvec@@XZ
+?_Getgloballocale@locale@std@@CAPEAV_Locimp@12@XZ
+?_Incref@facet@locale@std@@UEAAXXZ
+?_Init@locale@std@@CAPEAV_Locimp@12@_N@Z
+?_Ipfx@?$basic_istream@_WU?$char_traits@_W@std@@@std@@QEAA_N_N@Z
+?_Lock@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAAXXZ
+?_Mtx_delete@threads@stdext@@YAXPEAX@Z
+?_Mtx_lock@threads@stdext@@YAXPEAX@Z
+?_Mtx_new@threads@stdext@@YAXAEAPEAX@Z
+?_Mtx_unlock@threads@stdext@@YAXPEAX@Z
+?_Osfx@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAXXZ
+?_Pninc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAPEA_WXZ
+?_Syserror_map@std@@YAPEBDH@Z
+?_Throw_C_error@std@@YAXH@Z
+?_Unlock@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAAXXZ
+?_Winerror_map@std@@YAHH@Z
+?_Xbad_alloc@std@@YAXXZ
+?_Xbad_function_call@std@@YAXXZ
+?_Xlength_error@std@@YAXPEBD@Z
+?_Xout_of_range@std@@YAXPEBD@Z
+?_Xregex_error@std@@YAXW4error_type@regex_constants@1@@Z
+?{uTH
+?233333
+?At$L
+?c_str@?$_Yarn@D@std@@QEBAPEBDXZ
+?ContainsDrive@CDriveInfo@@SAHPEBG@Z
+?CoTaskAllocator@@3VCCoTaskAllocator@@A
+?eback@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+?egptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+?epptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+?ffffff
+?fill@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBA_WXZ
+?flags@ios_base@std@@QEBAHXZ
+?flush@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV12@XZ
+?gbump@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXH@Z
+?GetBlob@CMemDeSerStream@@UEAAXPEAEK@Z
+?GetByte@CMemDeSerStream@@UEAAEXZ
+?GetChar@CMemDeSerStream@@UEAAXPEADK@Z
+?GetDiskSpace@CDriveInfo@@QEAAXAEA_J0@Z
+?GetDouble@CMemDeSerStream@@UEAANXZ
+?GetDrive@CDriveInfo@@SAXPEBGPEAG@Z
+?GetFloat@CMemDeSerStream@@UEAAMXZ
+?GetGUID@CMemDeSerStream@@UEAAXAEAU_GUID@@@Z
+?getloc@ios_base@std@@QEBA?AVlocale@2@XZ
+?GetLong@CMemDeSerStream@@UEAAJXZ
+?GetSectorSize@CDriveInfo@@QEAAKXZ
+?GetString@CMemDeSerStream@@UEAAPEADXZ
+?GetULong@CMemDeSerStream@@UEAAKXZ
+?GetUShort@CMemDeSerStream@@UEAAGXZ
+?GetWChar@CMemDeSerStream@@UEAAXPEAGK@Z
+?GetWString@CMemDeSerStream@@UEAAPEAGXZ
+?good@ios_base@std@@QEBA_NXZ
+?gptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+?H;^0t
+?H;~0t
+?I;}0
+?I;~0t
+?id@?$collate@_W@std@@2V0locale@2@A
+?id@?$collate@D@std@@2V0locale@2@A
+?id@?$ctype@_W@std@@2V0locale@2@A
+?id@?$ctype@D@std@@2V0locale@2@A
+?imbue@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAAXAEBVlocale@2@@Z
+?Init@CPidLookupTable@@QEAAHPEAVPRcovStorageObj@@@Z
+?is@?$ctype@_W@std@@QEBA_NF_W@Z
+?is@?$ctype@D@std@@QEBA_NFD@Z
+?IsSameDrive@CDriveInfo@@QEAAHPEBG@Z
+?IsWriteProtected@CDriveInfo@@QEAAHXZ
+?MakePath@CFullPath@@QEAAXPEBG@Z
+?pbase@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+?PeekULong@CMemDeSerStream@@UEAAKXZ
+?pptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+?PutBlob@CMemSerStream@@UEAAXPEBEK@Z
+?PutByte@CMemSerStream@@UEAAXE@Z
+?PutChar@CMemSerStream@@UEAAXPEBDK@Z
+?PutDouble@CMemSerStream@@UEAAXN@Z
+?PutFloat@CMemSerStream@@UEAAXM@Z
+?PutGUID@CMemSerStream@@UEAAXAEBU_GUID@@@Z
+?PutLong@CMemSerStream@@UEAAXJ@Z
+?PutString@CMemSerStream@@UEAAXPEBD@Z
+?PutULong@CMemSerStream@@UEAAXK@Z
+?PutUShort@CMemSerStream@@UEAAXG@Z
+?PutWChar@CMemSerStream@@UEAAXPEBGK@Z
+?PutWString@CMemSerStream@@UEAAXPEBG@Z
+?QueryPidLookupTable@CiStorage@@QEAAPEAVPRcovStorageObj@@K@Z
+?rdbuf@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBAPEAV?$basic_streambuf@_WU?$char_traits@_W@std@@@2@XZ
+?Read@CCiFile@@QEAAXXZ
+?ResetType@CAllocStorageVariant@@IEAAXAEAVPMemoryAllocator@@@Z
+?setbuf@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAAPEAV12@PEA_W_J@Z
+?setf@ios_base@std@@QEAAHHH@Z
+?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W0@Z
+?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+?SetProperty@CFullPropSpec@@QEAAHPEBG@Z
+?SetProperty@CFullPropSpec@@QEAAXK@Z
+?setstate@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEAAXH_N@Z
+?sgetc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@QEAAGXZ
+?showmanyc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAA_JXZ
+?SkipBlob@CMemDeSerStream@@UEAAXK@Z
+?SkipByte@CMemDeSerStream@@UEAAXXZ
+?SkipChar@CMemDeSerStream@@UEAAXK@Z
+?SkipDouble@CMemDeSerStream@@UEAAXXZ
+?SkipFloat@CMemDeSerStream@@UEAAXXZ
+?SkipGUID@CMemDeSerStream@@UEAAXXZ
+?SkipLong@CMemDeSerStream@@UEAAXXZ
+?SkipULong@CMemDeSerStream@@UEAAXXZ
+?SkipUShort@CMemDeSerStream@@UEAAXXZ
+?SkipWChar@CMemDeSerStream@@UEAAXK@Z
+?snextc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@QEAAGXZ
+?sputc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@QEAAG_W@Z
+?sputn@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@QEAA_JPEB_W_J@Z
+?sync@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAAHXZ
+?t`fA;
+?tie@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBAPEAV?$basic_ostream@_WU?$char_traits@_W@std@@@2@XZ
+?tMfE;
+?tolower@?$ctype@_W@std@@QEBA_W_W@Z
+?tolower@?$ctype@_W@std@@QEBAPEB_WPEA_WPEB_W@Z
+?tolower@?$ctype@D@std@@QEBADD@Z
+?tolower@?$ctype@D@std@@QEBAPEBDPEADPEBD@Z
+?tVfA;
+?uflow@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAAGXZ
+?uncaught_exception@std@@YA_NXZ
+?UnNormalizeKey@CUnNormalizer@@QEAAXAEBVCKeyBuf@@AEAUtagPROPVARIANT@@PEAGK@Z
+?widen@?$ctype@_W@std@@QEBA_WD@Z
+?width@ios_base@std@@QEAA_J_J@Z
+?width@ios_base@std@@QEBA_JXZ
+?xsgetn@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAA_JPEA_W_J@Z
+?xsputn@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAA_JPEB_W_J@Z
+@ ;C0s
+@ I+@
+@.data
+@.didat
+@.reloc
+@8{HtV
+@8|$(
+@8|$(u
+@8|$1
+@8|$2
+@8|$2t
+@8|$L
+@8~ t
+@8=lN
+@80u%H
+@84+u
+@88u(H
+@88u@H
+@88u4H
+@8D9`
+@8t$ 
+@8t$\
+@8t$2
+@8t$2t
+@8t$2u
+@8t$A
+@8t$At5I
+@8t$BtCD
+@8t$xt
+@8uwt'I
+@A^_]
+@A^_^
+@A^_^[]
+@A^_^][
+@A^_^H
+@A^A\]
+@A_A^]
+@A_A^_
+@A_A^_^[
+@A_A^_^]
+@A_A^A\
+@A_A^A\_[
+@A_A^A\_]
+@A_A^A\_^
+@A_A^A\_^][
+@A_A^A]
+@A_A^A]A\_^[
+@A_A^A]A\_^]
+@A_A^A]A\_^]H
+@Clsid
+@L;L$`
+@L+>I
+@Path
+@ProcessorArchitecture
+@PZZZZH
+@SUVWATAUAVAWH
+@SUVWATAVAW
+@SUVWATAVAWH
+@SUVWAUAVAWH
+@SUVWAVAWH
+@SUVWAVH
+@SUVWAWH
+@SUVWH
+@SVWATAUAVAW
+@SVWATAUAVAWH
+@SVWATAVAWH
+@SVWAVAWH
+@SVWAVH
+@SVWH
+@SWAVAWH
+@SWAVH
+@SWAWH
+@t.I+
+@u;L9;u$E3
+@UATAUAVAWH
+@UAVAWH
+@USVWATAUAVAWH
+@USVWATAVAWH
+@USVWAUAVAWH
+@USVWAVAWH
+@USVWAVH
+@USVWAWH
+@USVWH
+@USWAVAWH
+@USWH
+@UVWATAUAVAW
+@VAVH
+@wYtQA
+[ UVWH
+[%hs(%hs)]
+[%hs]
+[^\^\?]*
+[^\|\*\?].*
+[^\|\[\]]*
+[4B69
+[BigTable] _GetIDataConvert - Can't set OLEDB ver to 2.0. Error: 0x%x
+[BigTable] _GetIDataConvert - Couldn't get IDataConvert interface %x
+[BigTable] _StoreDate - Unexpected dest storage type %4x
+[BigTable] accessor can be byref: %d
+[BigTable] adding '%ws'
+[BigTable] App bug: Deleting an accessor that wasn't freed
+[BigTable] byref column status IsNull
+[BigTable] CAccessor: construction failed, bindstatus=%x, binding %d
+[BigTable] CAccessor: construction failed, sc=%x
+[BigTable] CAccessorBase::Release threw 0x%x
+[BigTable] CAccessorBase::Release threw std::bad_alloc
+[BigTable] calling free on array type %x, # %x, pb %x
+[BigTable] calling free on vector type %x, # %x, pb %x
+[BigTable] CanConvertType: conversion from invalid type
+[BigTable] CanConvertType: conversion to array
+[BigTable] CanConvertType: conversion to byref type for short type
+[BigTable] CanConvertType: conversion to empty or null type
+[BigTable] CanConvertType: conversion to invalid type
+[BigTable] CanConvertType: conversion to vector
+[BigTable] COLEDBVaraint::OLEDBConvert - Using OLEDB library for conversion
+[BigTable] COLEDBVariant::CopyToOAVariant - bad variant type %d 
+[BigTable] colinfo::set, adding rowid column
+[BigTable] colinfo::set, adding WID column
+[BigTable] colinfo::set, after loop, cBoundColumns: %d
+[BigTable] colinfo::set, old # cols %d, new # cols %d
+[BigTable] colinfo::set, top of loop, cBoundColumns: %d
+[BigTable] column %d status IsNull -> VT_EMPTY
+[BigTable] Column unavailable: prop = 0x%x
+[BigTable] conpt: unknown advise cookie %x
+[BigTable] CRowBufferSet::~CRowBufferSet, unreleased row buffer %x
+[BigTable] CRowBufferSet::CheckAllHrowsReleased, unreleased row buffer(s)
+[BigTable] CRowSeekNext::GetRows - non-zero skip count %d
+[BigTable] CRowSeekNext::GetRows failed, sc=%x
+[BigTable] CRowset::_FetchRows - error %x thrown
+[BigTable] CRowset::_FetchRows, 0 rows, sc 0x%x
+[BigTable] CRowset::AddRefChapter called!
+[BigTable] CRowset::ReleaseChapter called!
+[BigTable] CTableCursor::_CheckBinding - bad data offset
+[BigTable] CTableCursor::_CheckBinding - bad length offset
+[BigTable] CTableCursor::_CheckBinding - bad status offset
+[BigTable] CTableCursor::_CheckBinding - direct vector
+[BigTable] CTableCursor::_CheckBinding - incorrect field width
+[BigTable] CTableCursor::_CheckBinding - length data overlap
+[BigTable] CTableCursor::_CheckBinding - status data overlap
+[BigTable] CTableCursor::_CheckBinding - value data overlap
+[BigTable] CTableVariant does not handle date conversions.
+[BigTable] CTableVariant::FixDataPointers [this:0x%I64x] (Bias: 0x%I64x) pThis32->vt:0x%x
+[BigTable] CTableVariant::FixDataPointers recursively setting variant vector!
+[BigTable] CTableVariant::FixDataPointers SafeArray32
+[BigTable] CTableVariant::FixDataPointers setting safearray BSTRs to 0x%I64x
+[BigTable] CTableVariant::FixDataPointers setting safearray to 0x%I64x with array at 0x%I64x
+[BigTable] CTableVariant::FixDataPointers setting vector to 0x%I64x
+[BigTable] CTableVariant::Init from vt_variant
+[BigTable] Current fixed size = %x, var size = %x, new %s data = %x
+[BigTable] CVIQuery unreferenced.  Deleting.
+[BigTable] Empty pool segment to be freed %x
+[BigTable] First variable allocation segment, new segment = %08x, size = %06x
+[BigTable] GetData column %d, status 0x%x
+[BigTable] Grow var allocation segment %x, new size %06x
+[BigTable] Growing fixed data for allocation at %x, new size = %x, new data = %x
+[BigTable] MapPhaseAndReason - reason: %d phase: %d
+[BigTable] Need to grow available data for var allocation
+[BigTable] New variable allocation segment linked to %x, new segment = %08x, size = %06x
+[BigTable] OLEDBConvert - _GetDataPointer returned NULL
+[BigTable] OLEDBConvert - _GetOLEDBType returned error 0x%x for type %x
+[BigTable] OLEDBConvert - DataConvert returned error 0x%x
+[BigTable] OLEDBConvert - GetConversionSize returned error 0x%x
+[BigTable] original column count: %d
+[BigTable] pid: 0x%x, _cColumns: %d
+[BigTable] Pool page(s) can be deallocated, loc = %x, size = %x
+[BigTable] save away type %x, val %x
+[BigTable] ScodeToRowStatus: missing conversion for %x
+[BigTable] Sizing Array of BSTR: 0x%I64x BSTR[%d]: %xI64x (size: %d)
+[BigTable] skipping bookmark column
+[BigTable] Splitting fixed data for window from variable data
+[BigTable] SrcVar.vt = 0x%x
+[BigTable] tblvarnt free of unknown type %x
+[BigTable] Unexpected dest storage type %4x
+[BigTable] Unsupported variant type %4x
+[BigTable] VarDataSize32 sizing %d BSTR(s) vector at abstrRef: 0x%I64x 
+[BigTable] VarDataSize32 sizing BSTR at bstrRef: 0x%I64x with size %d
+[BigTable|Accessor] byref copy, vtDst 0x%x varnt.vt 0x%x
+[BigTable|Accessor] byref non-vector copy, vtDst 0x%x, varnt.vt 0x%x
+[BigTable|Accessor] copying column %d, vtsrc 0x%x, vtdst 0x%x
+[BigTable|Accessor] loading deferred value
+[BigTable|Accessor] successfully loaded deferred value
+[BigTable|Notify] conpt: addref
+[BigTable|Notify] conpt: release, new crefs: %lx
+[BigTable|Notify] conptcontainer: addref
+[BigTable|Notify] conptcontainer: release
+[BigTable|Notify] enumconpt: release, new crefs: %lx
+[BigTable|Notify] rownotfy: notify client veto'ed
+[BigTable|Notify] rownotfy: pinging asynch client %x
+[BigTable|Notify] rownotfy: pinging notify client %x
+[BigTable|Notify] rownotfy: pinging notify client %x for FAIL
+[BigTable|Notify] rownotfy: pinging watch client %x
+[BigTable|Notify] rownotfy: watch type %d
+[BigTable|Notify] rownotfy:(end) pinging asynch client
+[BigTable|Notify] rownotfy:(end) pinging notify client
+[BigTable|Notify] rownotfy:(end) pinging notify client for FAIL
+[BigTable|Notify] rownotfy:(end) pinging watch client
+[BigTable|Notify] set notify thread die event %lx
+[BigTable|Notify] starting rowset notify thread
+[BigTable|Proxy] 
+[BigTable|Proxy]  Calling ShrinkWatchRegion
+[BigTable|Proxy] ...64bit client finished querying 32bit server.
+[BigTable|Proxy] ~CSvcQueryProxy
+[BigTable|Proxy] 64bit client querying 32bit server!
+[BigTable|Proxy] Calling GetWatchInfo
+[BigTable|Proxy] Calling SetWatchMode
+[BigTable|Proxy] Compare
+[BigTable|Proxy] CSvcQueryProxy
+[BigTable|Proxy] CSvcQueryProxy unreferenced.  Deleting.
+[BigTable|Proxy] FetchValue
+[BigTable|Proxy] FindIndicesForWID
+[BigTable|Proxy] FreeCursor
+[BigTable|Proxy] GAP
+[BigTable|Proxy] GetNotifications
+[BigTable|Proxy] GetNotifications %d, sc %lx
+[BigTable|Proxy] GetQueryStatus
+[BigTable|Proxy] GetQueryStatusEx
+[BigTable|Proxy] GetRows 0x%x
+[BigTable|Proxy] RatioFinished
+[BigTable|Proxy] ReExecuteSequentialOrPseudoQuery
+[BigTable|Proxy] Refresh
+[BigTable|Proxy] Refresh (end)
+[BigTable|Proxy] RestartPosition
+[BigTable|Proxy] SetBindings
+[BigTable|Proxy] StartWatching
+[BigTable|Proxy] Stop
+[BigTable|Proxy] StopWatching
+[BigTable|RegTrans]   widstart 0x%x, offset %d
+[BigTable|RegTrans]  =============== Entering GetRowsAt ========= 
+[BigTable|RowBuf] CRowBufferSet::Add - duplicate row: %x
+[BigTable|RowBuf] CRowBufferSet::Add - new row buffer = %x
+[CIWrapper] CCiCDeferredPropRetriever::RetrieveDeferredValueByPropSpec - Exception caught %s
+[CIWrapper] CPropRetriever::EndPropertyRetrieval - Exception caught 0x%x
+[CIWrapper] CPropRetriever::RetrieveValueByPid - Exception caught 0x%x
+[CIWrapper] CPropRetriever::RetrieveValueByPid - std::bad_alloc exception caught
+[CIWrapper] CQuerySession::AddScope() exception caught: 0x%X
+[CIWrapper] CQuerySession::AddScope() std::bad_alloc exception caught
+[CIWrapper] CQuerySession::AddScopeList() exception caught: 0x%X
+[CIWrapper] CQuerySession::AddScopeList() std::bad_alloc exception caught
+[CIWrapper] CQuerySession::CreateEnumerator: QI failed for reason 0x%X
+[CIWrapper] CQuerySession::CreatePropRetriever failed to create CCiCDeferredPropRetriever
+[CIWrapper] CQuerySession::Init() exception caught: 0x%X
+[CIWrapper] CQuerySession::Init() std::bad_alloc exception caught
+[CIWrapper] CSecurityCache: failed to get token handle. Error (%d) 
+[EventLog] CEventLog constructed!
+[EventLog] CEventLog::Report() called; Severity 0x%04x, Category %d, Args %d
+[EventLog] EventLog could not be registered! Error 0x%08x
+[EventLog] EventLog registered
+[Exceptions] GetOleError - mapping %08x to E_FAIL
+[Exceptions] mr mid for error %#x
+[Filter Registration] Indexing Services model for  path: %ws 0x%x 
+[Filter Registration] Indexing Services model for extension %ws 0x%x 
+[Filter Registration] Indexing Services model for mime type %ws via extension %ws 0x%x 
+[Filter Registration] Indexing Services model for mime type %ws; no extension/clsid found so use path: %ws 0x%x 
+[FTEEventLog] CResString Failed to LoadResString, LastError is %d
+[IDXPIDestruction] CRequestServer, _cRefs is %d
+[IDXPIDestruction] CRequestServer::CRequestServer constructor is called
+[IDXPIDestruction] CRequestServer::Release, _cRefs is %d before decrement
+[IDXPIGlobalObjectManager] The First RequestServer Named Pipe is created!!!!!!
+[IDXPIPerfCntr] Attempt to load PerfCounters succeeded!
+[IDXPIPerfCntr] Attempting to load PerfCounters...
+[IDXPIPerfCntr] CreateInstance() was called with an invalid index
+[IDXPIPlugin] CPipeServer::Connect
+[IDXPIPlugin] CRequestServer::DeferredAPC for _pWorkThread 0x%x
+[IDXPIPlugin] CRequestServer::DoIt for pThread 0x%x is being removed!
+[IDXPIPlugin] CRequestServer::DoIt for pThread 0x%x is not being removed!
+[IDXPIPlugin] CRequestServer::Release, _pevtDone
+[IDXPIPlugin] CRequestServer::Release, about to delete this
+[IDXPIPlugin] Exception caught in CRequestQueue::LookupDocStore(). hr=%08X
+[IDXPIPlugin] std::bad_alloc exception caught in CRequestQueue::LookupDocStore().
+[IDXPIPropMapper] AddEntry %u for %ws
+[IDXPIPropMapper] CPidLookupTable::AddEntry: Adding PropertyName %ws (NormalizedName %ws) to the %dth entry
+[IDXPIPropMapper] CPidLookupTable::AddEntry: Adding propid 0x%x to the %dth entry
+[IDXPIPropMapper] CPidLookupTable::AddEntry: GrowAndRehash
+[IDXPIPropMapper] CPidLookupTable::AddEntry: Pid added is 0x%x
+[IDXPIPropMapper] CPidLookupTable::Lookup: pwcNormName is %ws
+[IDXPIPropMapper] CPidLookupTable::StoreInTable, Hash value is %d
+[IDXPIPropMapper] FindPropid propid found: iEntry is %d
+[IDXPIPropMapper] FindPropid propid found: rPid is 0x%x
+[IDXPIPropMapper] FindPropid propid not found
+[IDXPIPropMapper] FindPropid, length of the Normalized name %ws is %d
+[IDXPIPropMapper] HashString: %ws
+[IDXPIPropMapper] PropertyToPropid: calls FindPropid on pidTable
+[IDXPIPropMapper] PropertyToPropid: resulted pid is 0x%x
+[IDXPIPropMapper] PropidToProperty: resulted propid is 0x%x
+[Index] **** CI MAY HAVE LOST IMPORTANT INFO ***
+[Index] **** EMPTYING CI RCOV OBJECT ***** 
+[Index] ~CAllocStorageVariant -- Memory Leak: vt=%x
+[Index] AreSettingsIdentical - caught exception 0x%x
+[Index] AreSettingsIdentical - caught std::bad_alloc exception
+[Index] before %#x, after %#x
+[Index] can't SFF, %d mappings are open
+[Index] CComparators::GetComparator Unknown property type %d in comparison.
+[Index] CComparators::GetPointerComparator Unknown property type %d in comparison.
+[Index] CCopyRcovObject::DoIt. Error 0x%X
+[Index] CCopyRcovObject::DoIt. std::bad_alloc error
+[Index] CDbProperties::Marshall, emit %d of %d properties
+[Index] CDriveInfo::IsWriteProtected[%wc]: dwError is %d
+[Index] CFunnyPath::SetPath - The path (%ws) is not valid.
+[Index] Ci Version Mismatch - OnDisk 0x%X Binaries 0x%X
+[Index] CiStorage::CiStorage.. fAbsolutelyUnWritable == %d
+[Index] closing a stream with %d open views
+[Index] CLowerFunnyPath::SetPath - path (%ws) is not valid.
+[Index] CLSIDFromString for language resource clsid %ws failed 0x%x 
+[Index] CMmStream::ExtendFile - SetEndOfFile returned %#x
+[Index] CMmStream::ExtendFile - SetFilePointer returned %d
+[Index] CMmStream::Map -- MapViewOfFile returned %#x
+[Index] CMmStream::Map -- reducing map to 0x%x bytes
+[Index] CMmStream::Open -- Not enogh disk space, need %I64d have %I64d
+[Index] CMmStream::Open error %d, can't make '%ws' compressed
+[Index] CMmStream::Open error %d, can't make '%ws' sparse
+[Index] CMmStream::SetSize -- Map handle close failed %#x
+[Index] CMmStream::SetSize -- Not enogh disk space, need %I64d have %I64d
+[Index] CMmStream::ShrinkFromFront: can't re-establish the map: Error %#x
+[Index] CMmStream::ShrinkFromFront: set zero data failed %#x
+[Index] CMmStream::Write -- Not enogh disk space, need %I64d have %I64d
+[Index] Content index physical storage: %ws
+[Index] CRcovStrmTrans::Cleaning up a Failed Previous Trans
+[Index] Create instance for language resource in dll %ws failed 0x%x 
+[Index] CreateFile(%ws) failed: hr = 0x%x
+[Index] CreateFile(%ws) returned %#x
+[Index] Creating default wordbreaker
+[Index] CSdidLookupTable::Lookup - exception %x
+[Index] CSdidLookupTable::LookupSDID - exception %x
+[Index] CSecurityStoreWrapper::Load caught exception 0x%X
+[Index] CSecurityStoreWrapper::Load caught std::bad_alloc exception
+[Index] DocStore Is not providing property mapper. Error 0x%X
+[Index] DoSetCatState sc is %d or %#x
+[Index] dwFileAttribute is %#x
+[Index] Emptying contents of backup stream
+[Index] Error 0x%x lowercasing path
+[Index] Error reading checksum for record %u (cbRec = %u).
+[Index] Error reading checksum.
+[Index] Exception 0x%x caught during cimanager internal shutdown
+[Index] Exception 0x%X caught in CSecurityStoreWrapper::Load
+[Index] Exception 0x%x caught:  GetOverrideProperties failed
+[Index] Exception 0x%x caught:  LoadStemmer for locale 0x%x failed 
+[Index] Exception 0x%x caught:  LoadWordBreaker for locale 0x%x failed 
+[Index] Exception 0x%x caught: LoadLanguageParameter for locale 0x%x failed 
+[Index] Exception 0x%x caught: LoadNeutralWordBreaker
+[Index] Exception 0x%x caught: LoadNoiseWordList for locale 0x%x failed 
+[Index] Exception 0x%x caught: LoadTsaurusFile for locale 0x%x failed 
+[Index] Exception 0x%X in LookupSDID
+[Index] Flush
+[Index] FlushFileBuffers failed, error %#x, throwing: %d
+[Index] FlushUpdates - caught exception 0x%x
+[Index] FlushUpdates - caught std::bad_alloc exception
+[Index] FlushViewOfFile failed, error %#x, throwing: %d
+[Index] Get volume handle succeeded for volume %wc
+[Index] GetFileSize %ws failed
+[Index] GetProcAddress of DllGetClassObject for language resource dll %ws failed 0x%x 
+[Index] GetSettings - caught exception 0x%x
+[Index] GetSettings - caught std::bad_alloc exception
+[Index] Had an allocation error.
+[Index] Incorrect checksum 0x%x (should be 0x%x) for record %u (cbRec = %u).  pvRec = 0x%x
+[Index] Incorrect checksum 0x%x (should be 0x%x).  pvRec = 0x%x
+[Index] InitFromBlob - caught exception 0x%x
+[Index] InitFromBlob - caught std::bad_alloc exception
+[Index] Invalid argument(s) passed.
+[Index] IsDBCSCodePage failed, 0x%x
+[Index] llcbBackup %#I64d, backup size %#I64d
+[Index] llcbPrimary %#I64d, primary size %#I64d
+[Index] LoadLibrary for language resource dll %ws failed 0x%x 
+[Index] Map
+[Index] Must have had allocation error.
+[Index] Phase2 of CRcomStrmAppendTrans failed 0x%X
+[Index] Phase2 of CRcomStrmAppendTrans failed with std::bad_alloc
+[Index] Phase2 of CRcomStrmWriteTrans failed 0x%X
+[Index] Phase2 of CRcomStrmWriteTrans failed with std::bad_alloc
+[Index] Phase2 of CRcovStrmMDTrans failed 0x%X
+[Index] Phase2 of CRcovStrmMDTrans failed with std::bad_alloc
+[Index] Phase2 of ShrinkFromFront() failed 0x%X
+[Index] Phase2 of ShrinkFromFront() failed with std::bad_alloc
+[Index] Physical index name: %ws
+[Index] PIDTABLE: Invalid named property
+[Index] PIDTABLE: Invalid propid
+[Index] PRcovStorageObj - this=0x%X Backup is not consistent
+[Index] PRcovStorageObj - this=0x%X Lengths not equal
+[Index] PRcovStorageObj - this=0x%X Primary is not consistent
+[Index] QueryExistingWidSetStream %ws
+[Index] QueryNewWidSetStream %S
+[Index] QueryServerThreadProc exception error 0x%x
+[Index] QueryServerThreadProc exception std::bad_alloc
+[Index] Read
+[Index] ReadFile %#x, into %#p, offset %#I64x cb, %d
+[Index] RegQueryValueEx (%ws) returned 0x%x
+[Index] Save Progress = %d percent
+[Index] SecurityStoreWrapper::Empty exception 0x%X
+[Index] SecurityStoreWrapper::Empty std::bad_alloc exception
+[Index] SetSize
+[Index] SFF attempt start 4k page 0x%x, 0x%x pages
+[Index] SFF succeeded
+[Index] ShrinkFromFront
+[Index] ShutdownActiveServers is called
+[Index] std::bad_alloc exception 0x%X in LookupSDID
+[Index] std::bad_alloc exception caught during cimanager internal shutdown
+[Index] std::bad_alloc exception caught in CSecurityStoreWrapper::Load
+[Index] std::bad_alloc exception caught:  GetOverrideProperties failed
+[Index] std::bad_alloc exception caught:  LoadStemmer for locale 0x%x failed 
+[Index] std::bad_alloc exception caught:  LoadWordBreaker for locale 0x%x failed 
+[Index] std::bad_alloc exception caught: LoadLanguageParameter for locale 0x%x failed 
+[Index] std::bad_alloc exception caught: LoadNeutralWordBreaker
+[Index] std::bad_alloc exception caught: LoadNoiseWordList for locale 0x%x failed 
+[Index] std::bad_alloc exception caught: LoadTsaurusFile for locale 0x%x failed 
+[Index] std::bad_alloc exception in LookupSDID
+[Index] strPath == %ws
+[Index] Unexpected SafeArray type: vt=%x
+[Index] Unhandled child (%d) of class CRestriction
+[Index] Unhandled child (%d) of class CRestriction during unmarshaling
+[Index] Unknown property type %d (%x) used in comparison.
+[Index] Unmap
+[Index] UnmapViewOfFile returned %#x
+[Index] UnmarshallRowSeekDescription, invalid eMethod: %d
+[Index] Write
+[Index] WriteFile %#x, from %#p, offset %#I64x cb, %d
+[OTHER]
+[P#6X
+[Parse] Absolute Coercion node with value of %f
+[Parse] Addition Coercion node with value of %f
+[Parse] Content node with weight %d
+[Parse] Freetext node with weight %d
+[Parse] Multiplication Coercion node with value of %f
+[Parse] NOT node with weight of %d
+[Parse] Parse: %s node, %d restrictions, %d weight
+[Parse] Parse: VECTOR node, %d restrictions, RankMethod %lu, Weight %d
+[Parse] ParseContentExpression: Proximity node, %d restrictions, weight %d
+[Parse] Reg Expr node with weight of %d
+[Parse] Relational "maybe" Property node with weight %d
+[Parse] Relational Property node with weight %d
+[PerfCounter] BAD: AddTo not initialized counter
+[PerfCounter] BAD: Decrement not initialized counter
+[PerfCounter] BAD: Increment not initialized counter
+[PerfCounter] BAD: Set not initialized counter
+[PerfCounter] BAD: Unable to add to(+=) counter, it has never been set correctly
+[PerfCounter] BAD: Unable to decrement counter, it has never been set correctly
+[PerfCounter] BAD: Unable to increment counter, it has never been set correctly
+[PerfCounter] BAD: Unable to set counter, it has never been set correctly
+[PerfCounter] MSFTESQL:  Writing out data for %ls instance %ls.
+[PerfCounter] MSFTESQL:  Writing out data for %ls with no instances.
+[PerfCounter] MSFTESQL: cannot create share "%ls" it already exists.
+[PerfCounter] MSFTESQL: cannot create share "%ls" it already exists. 0x%08x
+[PerfCounter] MSFTESQL: Cannot get perf statistics on library %ls.
+[PerfCounter] MSFTESQL: Cannot open Reg Key "%ls".  Error 0x%08x in RegOpenKeyEx.
+[PerfCounter] MSFTESQL: Cannot open shared memory "%ls".  Error 0x%08x in MapViewOfFile.
+[PerfCounter] MSFTESQL: Cannot open shared memory "%ls".  Error 0x%08x in OpenFileMappingW.
+[PerfCounter] MSFTESQL: Cannot query value First Counter in reg key "%ls".  Error 0x%08x in RegQueryValueEx.
+[PerfCounter] MSFTESQL: Close() performing final termination.
+[PerfCounter] MSFTESQL: CreateFileMapping() failed: share "%ls" 0x%08x
+[PerfCounter] MSFTESQL: did not open correctly.
+[PerfCounter] MSFTESQL: failed to load perfmon info from registry
+[PerfCounter] MSFTESQL: Foreign request not supported.
+[PerfCounter] MSFTESQL: found object %ls with %d instances.
+[PerfCounter] MSFTESQL: found object %ls with no instances.
+[PerfCounter] MSFTESQL: In Close(): opencount = %u.
+[PerfCounter] MSFTESQL: In Collect().  Query='%ls'.
+[PerfCounter] MSFTESQL: In Open() function.
+[PerfCounter] MSFTESQL: In PerfmonIDXClose(): opencount = %u.
+[PerfCounter] MSFTESQL: In PerfmonIDXCollect().  Query='%ls'.
+[PerfCounter] MSFTESQL: In PerfmonIDXOpen() function.
+[PerfCounter] MSFTESQL: Initialization succeeded.
+[PerfCounter] MSFTESQL: Insufficient buffer. Size=%u, Needed=%u.
+[PerfCounter] MSFTESQL: MapViewOfFile( ) failed: share "%ls" 0x%08x
+[PerfCounter] MSFTESQL: Object %ls requested.
+[PerfCounter] MSFTESQL: Object %ls requesting %u bytes.
+[PerfCounter] MSFTESQL: Open count is now %d.
+[PerfCounter] MSFTESQL: PerfmonIdxClose() performing final termination.
+[PerfCounter] MSFTESQL: Saving performance data for %ls.
+[PerfCounter] MSFTESQL: space needed = %u.
+[PerfCounter] PerformanceLibraryDefinition::Init() Failed
+[PerfCounter] pmo::Load() failed because library did not init OK
+[PerfCounter] pmo::Load() failed because object is already loaded
+[PerfCounter] spo::Load() failed because CreateInstance() failed
+[PerfCounter] spo::Unload() failed because object was not loaded
+[PidTable] PIDTABLE: %d properties stored
+[PidTable] PIDTABLE: Hash size = %u
+[PidTable] PIDTABLE: Named property
+[PidTable] PIDTABLE: Next Propid = %u
+[PidTable] PIDTABLE: Numbered property
+[PidTable] PIDTABLE: Record size = %d bytes
+[PropTime] Failed to fetch value (pid = 0x%x)
+[PropTime] Not enough space to fetch value (pid = 0x%x)
+[PropTime] Sharing violation fetching value (pid = 0x%x)
+[Proxy] 
+[Proxy] ~CPipeClient: 0x%x
+[Proxy] 32bit client querying 64bit server, fixing columns!
+[Proxy] apc %s t 0x%x p %#x msg %d cb %d err %d
+[Proxy] cached/busy items: %d / %d
+[Proxy] CancelAPC caught 0x%x
+[Proxy] CancelAPC caught std::bad_alloc
+[Proxy] Canceling server %p io pipe %p
+[Proxy] cb old props %d, cb new props: %d
+[Proxy] closing pipe: %#x
+[Proxy] connect clientver %d, remote %d, machine '%ws', user '%ws'
+[Proxy] connecting from pipe 0x%x
+[Proxy] converting from vt: %#x
+[Proxy] Converting new props to old props, catalog '%ws'
+[Proxy] CPipeServer::Connect.. GetLastError() == %d
+[Proxy] created pipe %#x
+[Proxy] created pipe 0x%x
+[Proxy] DataWriteRead msg %d, cb %d
+[Proxy] deleting server pipe 0x%x
+[Proxy] disable notify
+[Proxy] disabled notify
+[Proxy] Disconnect of server %p failed %d
+[Proxy] disconnecting from pipe 0x%x
+[Proxy] doit CRequestServer %p
+[Proxy] DoWork exception error 0x%x
+[Proxy] dwr done, msg %d cb: %d
+[Proxy] dwr done, other, cb: %d
+[Proxy] dwr done, this, cb: %d
+[Proxy] dwr eventdata triggered, _pvDataTemp: %p
+[Proxy] dwr tossing spurious notify msg %d cb: %d
+[Proxy] enable notify
+[Proxy] enabled notify
+[Proxy] exception in APC error %#x, this %#x, pipe %#x
+[Proxy] exception in APC error std::bad_alloc, this %#x, pipe %#x
+[Proxy] failed initial read error 0x%x, pipe %p
+[Proxy] failed initial read error std::bad_alloc, pipe %p
+[Proxy] finish msg %d, cb %d, sc 0x%x, to pipe %#x
+[Proxy] freecursor failed 0x%x, rudely terminating connection
+[Proxy] freecursor failed with std::bad_alloc, rudely terminating connection
+[Proxy] GetRows returned 0x%x
+[Proxy] HandleRequestNoThrow rs %p msg %d caught 0x%x
+[Proxy] more data available
+[Proxy] Non 32 bit pointer 0x%I64x !!!
+[Proxy] NotifyWriteRead complete cb %d, msg %d
+[Proxy] Out of CRequestQueue::DoWork reason=%d
+[Proxy] peek says no more to read
+[Proxy] ReadFileEx cb %d this 0x%x, pipe 0x%x
+[Proxy] Releasing request server %p
+[Proxy] Rowset props cmdtimeout: %d
+[Proxy] Rowset props flags: 0x%x
+[Proxy] Rowset props maxresults: %d
+[Proxy] Status at end of getrows: 0x%x
+[Proxy] status at end of getrows: 0x%x
+[Proxy] Successfully disconnected an idle client.
+[Proxy] this=%p destructing pipe 0x%x
+[Proxy] total msg cb: %d
+[Proxy] type %d, %d scopes, %d depths
+[Proxy] wait for RequestServer
+[Proxy] waiting for connect of pipe %#x
+[Proxy] wfsoex wakeup: %d
+[Proxy] WriteFileEx cb %d this 0x%x pipe 0x%x
+[Query] _hashCanonicalName already contains same entry for element %d
+[Query] Add worker thread %d of %d
+[Query] caching sdid %x, granted: %x
+[Query] Catastrophic error 0x%x in EvalQuery
+[Query] Catastrophic std::bad_alloc error in EvalQuery
+[Query] cbPickleBuf %d, cbInput %d
+[Query] CCanonicalNameEntry: GetCanonicalName failed hr %0xd
+[Query] CCanonicalNameEntry: GetSearchInfoFlags failed hr %0xd
+[Query] CCanonicalNameEntry: QI failed hr %0xd
+[Query] CCanonicalNameEntry: skipping element flags %0xd
+[Query] CGetCmdProps::SetCardinalityValue -- Cardinality mismatch
+[Query] CopyDbProp: index value out of range: %x
+[Query] CopyDbProp: Invalid VARIANT type: %x
+[Query] Could not allocate DBPROPSET array for GetProperties
+[Query] CParseCommandTree - child list in multi-nested command tree ignored
+[Query] CPidRemapper:PropertyToPropid - Exception caught 0x%x
+[Query] CPidRemapper:PropertyToPropid - std::bad_alloc exception caught
+[Query] CPidRemapper:PropidToProperty - Exception caught 0x%x
+[Query] CPidRemapper:PropidToProperty - std::bad_alloc exception caught
+[Query] CQueryOptimizer::FetchDeferredValue failed, 0x%x
+[Query] Creating ScopeEnumerator
+[Query] CRequestServer::DoCreateQuery, GetPropertyMapper failed
+[Query] CSdidLookupTable::AccessCheck failed, GetLastError is %d
+[Query] CSvcQuery: Query already active.
+[Query] CValueIndex constructor CreateValueIndexRetriever failed: 0x%x
+[Query] DBOP_content_feedback: cres is %d
+[Query] DBOP_content_probabilistic: cres is %d
+[Query] DbProp.dwPropertyID: %x has dwStatus= %x
+[Query] DBPROP_CI_QUERY_TYPE: invalid variant type: %x
+[Query] Deleting extra idle thread
+[Query] disconnect failed: error 0x%x
+[Query] disconnect failed: std::bad_alloc
+[Query] DoCreateQuery - GetPropertyDatabase failed 0x%x
+[Query] DoCreateQuery - QI for property mapper failed 0x%x
+[Query] DupImpersonationToken failed to get token, %x
+[Query] ERROR: regex string value of 0 
+[Query] Exception %08x while creating query
+[Query] Exception %08x while doing QueryInterface 
+[Query] Exception 0x%x caught creating query worker threads. Running with %d threads.
+[Query] Exception 0x%x caught in CQSeqExecute::GetRows
+[Query] Failed to do GetProperties (0x%X)
+[Query] GetDiskFreeSpace( %ws ) returned %d
+[Query] GetDiskFreeSpaceEx( %ws ) returned %d
+[Query] GetWeight: Unknown DBOP: %d
+[Query] Got an Invalid PropertySet
+[Query] Got an Invalid Variant
+[Query] Growing DFA state array.
+[Query] Growing NFA State transition array.
+[Query] Hit an Invalid variant type
+[Query] Inavlid Machine Count: %x
+[Query] Initialization must occur before IDBInfo can be called
+[Query] Insufficient Resource.
+[Query] Integer Overflow.
+[Query] Invalid CI_QUERY_TYPE values: %x
+[Query] Invalid ClientGuid, cGuids = %x
+[Query] Invalid DBPROP_COMMANDTIMEOUT values: %x
+[Query] Invalid regex (%wc at end of string
+[Query] Invalid regex.
+[Query] Invalid regex.  Missing %wc
+[Query] Invalid regex.  Nothing to repeat.
+[Query] Invalid regex. Nothing to repeat
+[Query] Invalid regex. Nothing to repeat.
+[Query] Invalid regex: End repeat count %d < start %d
+[Query] Invalid regex: Nested repeats?
+[Query] Invalid regex: No end to repeat specification.
+[Query] Invalid regex: Repeat count %d out of bounds.
+[Query] Invalid regex: Repeat count %d too big.
+[Query] Invalid value for PropertyID(%x)
+[Query] InvalidPropertyID(%x)
+[Query] isidle? %d
+[Query] lokCreatePropnameTable: GetAt failed at %d element hr %0xd
+[Query] lokCreatePropnameTable: GetAt skipped %d element
+[Query] lokCreatePropnameTable: GetPropertyDescriptionByName(System.Null) failed hr %0xd
+[Query] Marshalled size = %d bytes
+[Query] Marshalling invalid restriction!
+[Query] No class factory is available for CLSID_EXTENDEDERROR.
+[Query] non-Native PropID(%x)
+[Query] ParseTree - null tree
+[Query] ParseTree - unexpected operator %d
+[Query] PropID: %x, dwStatus: %x
+[Query] PropStatus (0x%X) for (%d) th property
+[Query] pWorker->DoIt() failed with error 0x%x
+[Query] pWorker->DoIt() failed with std::bad_alloc error
+[Query] ResumeThread result 0xffffffff and error %d waiting for thread %d to die
+[Query] SetError - node %x error %x
+[Query] SetProperties dwOptions Invalid: %u
+[Query] skipped PropID(%x)
+[Query] std::bad_alloc exception caught creating query worker threads. Running with %d threads.
+[Query] std::bad_alloc exception while doing QueryInterface 
+[Query] Svc IInternalQuery unreferenced.  Deleting.
+[Query] Unexpected pProp[j].dwStatus: j=%x, dwStatus=%x 
+[Query] Unhandled expression type %d
+[Query] Value index fetch of property for row (wid = 0x%x) failed %d
+[Query] Value index query column 0x%x copy failed srcvt 0x%x, offset 0x%x, dbstat 0x%x
+[Query] Value index query column 0x%x copy failed srcvt 0x%x, workid 0x%x, dbstat 0x%x
+[Query] Wait result %d and error %d waiting for thread %d to die
+[Query] Waited 1 second for thread %d to die
+[Query] Work queue shutdown: exiting
+[Query] Work queue shutdown: woke up threads
+[Query] work queue, shutdown, so not adding item
+[Query] Work queue: %d pending
+[Query] Work queue: abort worker thread.
+[Query] Work queue: add 0x%x
+[Query] Work queue: delete 0x%x
+[Query] Work queue: remove 0x%x
+[Query] Worker 0x%x: done waiting for death
+[Query] Worker 0x%x: SET completion
+[Query] Worker 0x%x: WAIT for death
+[Query] Worker: SET available
+[Query] WorkerThread 0x%x: exiting
+[QUtil] GetLCIDFromString is %ws; lcid=0x%x
+[QUtil] GetStringFromLCID: browser locale is %ws; lcid=0x%x
+[QUtil] GetStringFromLCID: browser locale not found, lcid=0x%x
+[Regex] "%c" --> 
+[Regex] Adding transition from %u on %u to %u
+[Regex] DFA move[ %u, %u ] = %u
+[Regex] First range = 
+[Regex] RANGE
+[Regex] Range %u to %u
+[Regex] REPEAT: At least %u times
+[Regex] REPEAT: Exactly %u times
+[Regex] Secondary range = 
+[Regex] Singleton = %u
+[Regex] Undefined transition from %u on %u
+[Results] Worker 0x%x: WAIT for work
+[Results] Worker: RESET available
+[SecStore] SECSTORE: %d file records
+[SecStore] SECSTORE: Hash size = %u
+[SecStore] SECSTORE: new SD record
+[SecStore] SECSTORE: Record size = %d bytes
+[SecStore] SECSTORE: SD record
+[TripoliBufferCache] not flushing %ws at %#p, _fNeedToFlush = FALSE.
+[TripoliBufferCache] not flushing %ws at %#p, fFailFlush = FALSE. In failure path?
+[TripoliBufferCache] Physical index %#x closed
+[UtilCommon] CEnumString::Clone failed with std::bad_alloc.
+[UtilCommon] CEnumString::Clone failed. 0x%08x
+[UtilCommon] Error %d in CEventSem
+[UtilCommon] InitializeAcl failed with error %d
+[UtilCommon] InitializeSecurityDescriptor failed with error %d
+[UtilCommon] Integer overflow occurred while computing the size of buffer to be allocated.
+[UtilCommon] InternalStringHash is returning fixed value, 0, as hash value.Possibly caused by empty string.
+[UtilCommon] LCMapString() converted %ld out of %ld characters
+[UtilCommon] MSFTESQL: ReportEvent() Failed. 0x%08x
+[UtilCommon] TComPointer<T>::InitializeByQI: QI failed! 0x%08x
+[UtilCommon] TPointer::operator&: Possible resource leak - m_pT not zero
+[UtilFileSystem] CreateDirectory %ls failed. 0x%08x
+[UtilFileSystem] Error delnoding '%ls'. 0x%08x
+[UtilFileSystem] SetFileSecurity %ls failed. 0x%08x
+[UtilSecurity] ImpersonateLoggedOnUser failed. 0x%08x
+[UtilSecurity] OpenThreadToken() failed with error 0x%08x.
+[UtilSecurity] RevertToSelf() failed. 0x%08x
+[UtilSecurity] SetSecurityDescriptorDacl failed. 0x%08x
+[Words] %ws
+[XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX]
+[ZZY^]]\addeee`_ijjllkginooppmq
+\$ E3
+\$ I;
+\$ UH
+\$ UVAVH
+\$ UVWATAUAVAW
+\$ UVWATAUAVAWH
+\$ UVWATAVH
+\$ UVWAVAWH
+\$ UVWH
+\$ UWAVH
+\$ UWAWH
+\$ VWATAVAWH
+\$ VWAVH
+\$ WH
+\$$;Z
+\$(E3
+\$(H;
+\$(I;
+\$(I9
+\$@;\$D
+\$@;^
+\$@9^
+\$@D9d$D
+\$@H#
+\$@H;
+\$@H;]
+\$@H;_XtQH
+\$@I;
+\$`D;\$p
+\$`D;\$t
+\$`D8k
+\$`E;
+\$`fD+
+\$`H;
+\$`I;
+\$<D8|$0ue
+\$093
+\$093t
+\$093t6H
+\$093t9H
+\$0E3
+\$0f;
+\$0fA;
+\$0fD
+\$0fD;
+\$0fE;
+\$0H#
+\$0I#
+\$0I;
+\$8A;
+\$8A;S(r
+\$8D;
+\$8E;
+\$8E3
+\$8fA
+\$8H;
+\$8H;\$8
+\$8H;\$8u#H
+\$8H+
+\$8I;
+\$8I9
+\$D;_
+\$DE;
+\$DE3
+\$h;\$Xt
+\$hD;\$l
+\$HD;\$X
+\$HD8c
+\$HE3
+\$hE3
+\$HE3
+\$HE8{
+\$hH;
+\$hH;\$pt)I
+\$hH;\$pt2I
+\$hH+
+\$HI#
+\$HI;
+\$hK+
+\$hL;
+\$P9^
+\$PA+
+\$PD;
+\$pD;k
+\$pE;
+\$PfD
+\$PH;^htNH
+\$PH;_0u
+\$PH+
+\$PH+\$HH
+\$PI;
+\$PI;V
+\$pM;
+\$XD;\$\
+\$xD8k
+\$xE3
+\$XE3
+\$xE3
+\$XE3
+\$XH;
+\$XH;\$`t
+\$xI#
+\$xI;
+\*\.[^\.]*
+\\.\a:
+\\.\pipe\
+\\?\UN
+\|\[(.)\]
+\|\[(..+)\]
+\|\[.[^\[\]]+\]
+\CiAB
+\CiAD
+\CiMG
+\CiPT
+\CiST
+\edb.log
+\Implemented Categories
+\INDEX.000
+\INDEX.001
+\INDEX.002
+\InprocServer32
+\pipe\
+\Projects\
+\Required Categories
+\SETTINGS.DIA
+\SOFTWARE\Microsoft\Windows Search
+\ukH;
+]`L;s
+]`uWL;{
+]8Y65
+]'H9_@
+]hA9}\
+]HD9_ t.D
+]PD9g
+]PH!]HM
+]wL;s
+]wuQL;{
+^ +| +$
+^(?:ABORT|ACTION|ADD|AFTER|ALL|ALTER|ALWAYS|ANALYZE|AND|AS|ASC|ATTACH|AUTOINCREMENT|BEFORE|BEGIN|BETWEEN|BY|CASCADE|CASE|CAST|CHECK|COLLATE|COLUMN|COMMIT|CONFLICT|CONSTRAINT|CREATE|CROSS|CURRENT|CURRENT_DATE|CURRENT_TIME|CURRENT_TIMESTAMP|DATABASE|DEFAULT|DEFERRABLE|DEFERRED|DELETE|DESC|DETACH|DISTINCT|DO|DROP|EACH|ELSE|END|ESCAPE|EXCEPT|EXCLUDE|EXCLUSIVE|EXISTS|EXPLAIN|FAIL|FILTER|FIRST|FOLLOWING|FOR|FOREIGN|FROM|FULL|GENERATED|GLOB|GROUP|GROUPS|HAVING|IF|IGNORE|IMMEDIATE|IN|INDEX|INDEXED|INITIALLY|INNER|INSERT|INSTEAD|INTERSECT|INTO|IS|ISNULL|JOIN|KEY|LAST|LEFT|LIKE|LIMIT|MATCH|NATURAL|NO|NOT|NOTHING|NOTNULL|NULL|NULLS|OF|OFFSET|ON|OR|ORDER|OTHERS|OUTER|OVER|PARTITION|PLAN|PRAGMA|PRECEDING|PRIMARY|QUERY|RAISE|RANGE|RECURSIVE|REFERENCES|REGEXP|REINDEX|RELEASE|RENAME|REPLACE|RESTRICT|RIGHT|ROLLBACK|ROW|ROWS|SAVEPOINT|SELECT|SET|TABLE|TEMP|TEMPORARY|THEN|TIES|TO|TRANSACTION|TRIGGER|UNBOUNDED|UNION|UNIQUE|UPDATE|USING|VACUUM|VALUES|VIEW|VIRTUAL|WHEN|WHERE|WINDOW|WITH|WITHOUT)$
+^(dscf|img|cimg|misc|mg)[_0-9]*\..{3,5}$
+^[a-zA-Z_][a-zA-Z0-9_]*$
+^~I>m
+^0H+^(H
+^x>?]
+^XB6I
+_(H;_0
+_@+_0H
+__C_specific_handler
+__C_specific_handler_noexcept
+__current_exception
+__current_exception_context
+__CxxFrameHandler3
+__CxxFrameHandler4
+__std_terminate
+__std_type_info_compare
+__TYPE
+_6,/L
+_6iB*
+_8H;_@t)H
+_ABSOLUTE
+_aCols32 0x%I64x
+_aCols64 0x%I64x
+_AFTER
+_AGGREGATE
+_ALLVERSION_TRAVERSAL
+_AROUND
+_ARRAY
+_BEFORE
+_BETWEEN
+_BITWISE
+_BYFREQUENCY
+_CAST
+_CheckWordList: Queue Flush (%d docs, %d bytes)
+_CHILDCOUNT
+_COALESCE_TABLE
+_COERCE
+_COERCION
+_COMPLETIONS
+_CONST
+_CONTAINS
+_CONTENTS
+_COUNT
+_CxxThrowException
+_DATA_
+_DATE
+_DATEADD
+_DATERANGE
+_DATEUNIT
+_DAY_PLUS
+_DEEP_ALLVERSION_TRAVERSAL
+_DEEP_LATESTVERSION_TRAVERSAL
+_DEEP_TRAVERSAL
+_DEFAULT
+_DELIMITED_ID
+_DESC
+_DOTDOT_SCOPE
+_EDITDISTANCE
+_EXACT
+_EXCLUDE_SEARCH_TRAVERSAL
+_FALSE
+_FIRST
+_FORMSOF
+_FREETEXT
+_FROM
+_FUZZY
+_GETGMTDATE
+_GROUP_ON
+_HOUR
+_IN_GROUP
+_initterm
+_initterm_e
+_INTERVALS
+_INTNUM
+_IS_NOT
+_ISABOUT
+_kzzkk{{_~~_
+_LATESTVERSION_TRAVERSAL
+_LIKE
+_MATCHES
+_MAX_TOKEN
+_MIN_TOKEN
+_MINUTE
+_MINVALUE
+_MONTH
+_Mtx_destroy_in_situ
+_Mtx_init_in_situ
+_Mtx_lock
+_Mtx_unlock
+_MULTIPLY
+_NEAR
+_NOT_LIKE
+_NULL
+_o____lc_codepage_func
+_o___std_exception_copy
+_o___std_exception_destroy
+_o___std_type_info_destroy_list
+_o___stdio_common_vsnprintf_s
+_o___stdio_common_vsnwprintf_s
+_o___stdio_common_vsprintf
+_o___stdio_common_vswprintf
+_o___stdio_common_vswscanf
+_o__aligned_free
+_o__aligned_malloc
+_o__callnewh
+_o__cexit
+_o__configure_narrow_argv
+_o__crt_atexit
+_o__errno
+_o__execute_onexit_table
+_o__initialize_narrow_environment
+_o__initialize_onexit_table
+_o__invalid_parameter_noinfo
+_o__invalid_parameter_noinfo_noreturn
+_o__itow_s
+_o__recalloc
+_o__register_onexit_function
+_o__seh_filter_dll
+_o__stricmp
+_o__ultow
+_o__ultow_s
+_o__wcsicmp
+_o__wcsnicmp
+_o__wcsnset
+_o__wcsupr
+_o__wtol
+_o_ceilf
+_o_floor
+_o_free
+_o_iswalpha
+_o_iswdigit
+_o_iswspace
+_o_iswxdigit
+_o_log
+_o_log2
+_o_malloc
+_o_qsort
+_o_realloc
+_o_strerror
+_o_terminate
+_o_towlower
+_o_towupper
+_o_wcscat_s
+_o_wcscpy_s
+_o_wcsncpy_s
+_o_wcstol
+_o_wcstoul
+_o_wmemcpy_s
+_OCC_
+_ORDER
+_OVER
+_PASSTHROUGH
+_PREFIX_STRING
+_Properties
+_PROPERTYNAME
+_PropertyStore
+_PropertyStore_Metadata
+_PROPID
+_QUARTER
+_Query_perf_counter
+_Query_perf_frequency
+_RANGE_BOUNDARY_AFTER
+_RANGE_BOUNDARY_BEFORE
+_RANK_BY
+_RANKMETHOD
+_REALNUM
+_REPRESENTATIVEOF
+_REUSEWHERE
+_SCALAR_FUNCTION_REF
+_SECOND
+_SELECT
+_SHALLOW_ALLVERSION_TRAVERSAL
+_SHALLOW_LATESTVERSION_TRAVERSAL
+_SHALLOW_TRAVERSAL
+_SOME
+_Strcoll
+_STRING
+_Strxfrm
+_t/fA;
+_TABLE
+_TRUE
+_UMINUS
+_UNION
+_UNKNOWN
+_USING
+_Wcscoll
+_Wcsxfrm
+_WEEK
+_WEIGHT
+_WEIGHTFACTOR
+_WHERE
+_WITH
+_YEAR
+` AUAVAWH
+` UAUAWH
+` UAVAWH
+`.rdata
+`08B$
+`6hr 
+`A^_^
+`A__^[]
+`A__^][
+`A_A^_^[
+`A_A^_^]
+`A_A^A\_^[]
+`A_A^A\_^][
+`A_A^A]A\_^[
+`A_A^A]A\_^]
+`syLS
+{ ATAVAWH
+{ AVH
+{(H;{0
+{|]u H
+{|^t"
+{||urH
+{|-t)
+{00000000-0000-0000-0000-000000000000}
+{0H;{@
+{1D49F57D-47D2-4AEE-A69B-593EC558773F}
+{4D144E38-5812-4F6D-A82A-C60A8F7E68D6}
+{76a9d19a-d4d5-4ea9-a0b1-7598c205c793}
+{78FE669A-186E-4108-96E9-77B586C1332F}
+{e[Ke
+|$ ;{
+|$ ATAVAWH
+|$ AUAVAWH
+|$ AVH
+|$ E3
+|$ I;
+|$ M;
+|$ UATAUAVAWH
+|$ UAVAWH
+|$ UH
+|$$E3
+|$(;G
+|$(A^
+|$(D!|$0E3
+|$(H;
+|$(H9|$ t-H
+|$(L9
+|$@@8
+|$@D;}
+|$@D8
+|$@E;_(r
+|$@fE
+|$@H;
+|$@L;
+|$@L9T$x@
+|$`D;|$p
+|$`D;|$t
+|$`D8
+|$`E3
+|$`H;|$h
+|$`H+|$XH
+|$`I#
+|$`I;
+|$0;;tcD9s
+|$0f;
+|$0fA;
+|$0fD;
+|$0H;
+|$0H;\$h
+|$4L;
+|$8&r
+|$8;>
+|$8A_A^A\
+|$8D;
+|$8E;_(r
+|$8E;g(r
+|$8E;o(r
+|$8fE
+|$8H;
+|$8HcW
+|$8Ic
+|$8L;
+|$fI;
+|$hD;|$l
+|$HD;|$X
+|$HD8
+|$hD8
+|$HE;_(r
+|$HE3
+|$hE3
+|$HfA
+|$hfD
+|$hH;
+|$HH;
+|$hI#
+|$HL;
+|$HM;
+|$p;W
+|$pA;
+|$PE;_(r
+|$PE;g(r
+|$PE3
+|$pE8>
+|$PH;^
+|$pH;|$x
+|$pI+
+|$XD;|$\
+|$xD8t$0
+|$XE3
+|$XfD
+|]u H
+|6fD9Q
+|H;D$`
+|-u]H
+}`H;8t:L
+}0L9k
+}gH;\$H
+}HL9f
+}pH9}
+}PI;]0
+}xI9?uZH
+~@SHRF
+~0H+~(H
+~D$ H
+~D$`H
+~D$hf
+~D$HI
++C0A;
++CatalogID
++CatalogName
++D$8I
++D$PD;
++H+_ H
++IndexID
++OccID
++Partition
++PropertyID
++szKey
++T$`H
++T$8H
++T$XH
++WidStart
++WorkID
+<)~1<*t
+</cWids></Rst>
+</FakePid>
+</FPS>
+</FPS></PidDef>
+</GenerateMethod>
+</Groups>
+</Key>
+</Keys></Rst>
+</Loc></SortKey>
+</Locale>
+</MaxReslt><QTmOut>
+</Occ>
+</Occ><Wt>
+</op>
+</OpAnd>
+</OpBitwise>
+</OpExpression>
+</OpFreeText>
+</OpNear>
+</OpNot>
+</OpOr>
+</OpPhrase>
+</OpProperty>
+</OpRank>
+</OpScope>
+</OpVectorProperty>
+</Ord><Loc>0x
+</Phase>
+</Phrase><Locale>
+</Pid>
+</Pid><Ord>
+</Pid><Properties Count=
+</Pid><Wt>
+</PidMap>
+</Properties></ColGroup
+</PropFlags><MaxReslt>
+</QTmOut>
+</QueryCols>
+</QueryID>
+</RealPid>
+</Rst>
+</RstCollection>
+</RstTree>
+</SortCols>
+</var>
+</Wt></ColProp>
+</Wt></Rst>
+<+t)<.u
+<B/tBE
+<b~2<d~
+<B>N@E
+<base Indexing Service dbtype>
+<bitwise comparison operator>
+<boolean comparison operator>
+<ColGroup><Pid>0x
+<ColProp><Pid>0x
+<contentHelper>
+<end of input>
+<FPS>
+<GenerateMethod>
+<Groups Count="
+<H}u&H
+<Key PID="0x
+<Keys Count="
+<literal>
+<none>
+<Occ>
+<OpAll
+<OpAnd
+<OpBitwise 
+<OpCombinedRank PIDRanks='
+<OpDocSet CustomWidSet='
+<OpDocSet WIDS='
+<OpExpression
+<OpFreeText
+<OpNear
+<OpNone
+<OpNot
+<OpOr
+<OpPhrase
+<OpProperty 
+<OpRange
+<OpRank type='
+<OpReuseWhere ID='
+<OpScope
+<OpVectorProperty 
+<OpWord PIDs='
+<P\t"H
+<Phase>
+<Pid>0x
+<PidDef><FakePid>0x
+<PidMap>
+<PropFlags>0x
+<QueryCols Count="
+<QueryID>%#x</QueryID><catalog>%ls</catalog><cver>0x%x</cver><LCID>%d</LCID>%ls
+<QueryID>%#x</QueryID><ErrMsg>Exception creating query retail trace 0x%08x</ErrMsg>
+<QueryID>%#x</QueryID><ErrMsg>Exception creating query retail trace std::bad_alloc</ErrMsg>
+<QueryID>%#x</QueryID><msgtype>CreateQuery</msgtype><ErrMsg>%ls</ErrMsg><HR>0x%08x</HR>
+<QueryID>%#x</QueryID><msgtype>CreateQuery</msgtype><ErrMsg>std::bad_alloc</ErrMsg><HR>0x%08x</HR>
+<QueryID>%#x</QueryID><msgtype>HandleRequest</msgtype><ErrMsg>%ls</ErrMsg><HR>0x%08x</HR>
+<QueryID>%#x</QueryID><RowsReq>%d</RowsReq><RowsRcvd>%d</RowsRcvd><HR>0x%08x</HR>
+<QueryID>0x
+<RealPid>0x
+<Rst Type="
+<RstCollection Count="
+<RstTree>
+<SortCols Count="
+<SortKey><Pid>0x
+<wH;]@t
+<wu&2
+'= all', '= some'
+====>>>>>>>
+=L9o<
+>@8|$@t
+>>>>????????????????????????????????????????????????AAAAAAAAAAA
+>H+|$8H
+>I;@@
+0;Q0D
+0_^]H
+0000000000000000000
+0123456789ABCDEF
+02.00
+04.00.0000
+040904B0
+0A^^]
+0A^_]
+0A^_^
+0A^_^[]
+0A^_^][
+0A^_^H
+0A^A\_
+0A__[
+0A_A^]
+0A_A^_
+0A_A^_^[
+0A_A^_^]
+0A_A^A\
+0A_A^A\^]
+0A_A^A\_]
+0A_A^A\_^
+0A_A^A\_^][
+0A_A^A]
+0A_A^A]_^
+0A_A^A]A\_
+0A_A^A]A\_^[
+0A_A^A]A\_^]
+0A_A^A]A\_^]H
+0J&H$a
+0x%08x
+0X82'
+10.0.10240
+-1lonecoreuap\base\appmodel\search\tquery\mssci\seccache.cxx
+1X82'
+233333333333
+2J.,(
+3333333
+33333333A
+33333333D
+333344444444444
+3E8%x
+4$M;4$tiI
+444477
+4xD;A
+5Y9SY+
+5Y9SYA+
+6$:&:(:*:,
+66a\6
+6D;v(t A
+6I;6u
+7.0.22000.1
+7.0.22000.1 (WinBuild.160101.0800)
+7;D$@v<A
+777777
+7fD;&tNL
+7fD;>u
+8"u%f
+8\$ t
+8\$@t
+8\$@u4H
+8\$2t
+8\$2u
+8\$Hu
+8\$Pt;H
+8]wt'H
+8^u`H
+8_@tNH
+8_}t-H
+8|u#H
+8}tSH
+888888
+89:u69z
+8A^_^[
+8A^A]_]
+8A_A^_^][
+8A_A^A]A\_^[]
+8A_A^A]A\_^][
+8D$0t
+8EPt*
+9;u99{
+9;v H
+9;v%H
+9;v*H
+9;v,H
+9;v5H
+9\$ u
+9\$ v
+9\$(}w8
+9\$,v
+9\$@t
+9\$0t
+9\$8vLL
+9]@t f
+9_ vD
+9_,u13
+9|$ u.I
+9|$@}:D
+9|$\u8E3
+9|$`t
+9|$`u
+9|$hu,E3
+9|$hu0E3
+9|$Lu
+9|$Tt
+9|$Xu@E3
+9}_vWA
+9~(uk
+9~<t 
+9~0t'I
+9+j75
+9+vJH
+91v!H
+93t:H
+93t7H
+93t8H
+93tcL
+93tfL
+99v*H
+99v0H
+99v7H
+9A s:
+9C$u'H
+9D$(v
+9D$@t
+9D$Xu
+9E#u*A
+9Egs9
+9Egsr
+9G tI
+9H)sPH
+9H;2u
+-9I|7G
+9l$@u
+9l$DvwD
+9l$PvA@
+9n(vAH
+9n8vPH
+9O$~i
+9qpv!
+9s$vF
+9s4v(H
+9spu]H
+9T$$u
+9t$,u
+9T$0u
+9T$4u
+9t$Dt*H
+9t$Pt
+9W,v'L
+9x u/H
+9y t4L
+9Y<v H
+9Y0v;;_8
+9YXu H
+A f9Ews
+A H+A(H
+A H9A
+A SQLite identifier may not contain a null character.
+A(A9P
+A(H+A H
+A.HREF
+A;^XA
+A;|$ r
+A;~,r
+A;<$sf
+A;F$}gL
+A;F<t$I
+A;G$}iI
+A;Gdw
+A;Q(r
+A;R(r
+A;T$(r
+A;U(r
+A;v4r
+A;W(r
+A@H+A8H
+A@uMA
+A\E9g
+A]A\]
+A^_^[
+A^_^[]
+A^_^][
+A^_^H
+A^A\]
+A^A\_
+A^A\_^[]
+A^A\_^]
+A^A]A\_]
+A^A]A\_^
+A__^[]
+A_A\_
+A_A\_^[]
+A_A]]
+A_A]A\_^
+A_A]A\_^[
+A_A^]
+A_A^]H
+A_A^_
+A_A^_[]
+A_A^_^[
+A_A^_^[]
+A_A^_^]
+A_A^_^][
+A_A^_H
+A_A^A\
+A_A^A\_]
+A_A^A\_^
+A_A^A\_^[
+A_A^A\_^[]
+A_A^A\_^][
+A_A^A]
+A_A^A]_]
+A_A^A]_^
+A_A^A]_^[
+A_A^A]_^[]
+A_A^A]A\]
+A_A^A]A\]H
+A_A^A]A\^
+A_A^A]A\_
+A_A^A]A\_^[
+A_A^A]A\_^[]
+A_A^A]A\_^]
+A_A^A]A\_^][
+A_HREF
+A_Href
+A`H+AXH
+A`H9AP
+A<;A4@
+A<D;@<
+A0;A4@
+A0D;A4
+A8;A4@
+A8^ht
+A8H94
+A9:r_H
+A9^ ~8H
+A9~,v5I
+A9+r.M
+A9>v4
+A94$t
+A9C r
+A9F0t&H
+A9T$<
+A9v8uBI
+A9w ~2I
+ABBBBBBBBBBB
+AbortMerge
+Absolute
+ACCESS
+Access
+AccessCheck
+AccessDebugTracer
+AccessRetailTracer
+Acf9B@t=
+AcquireSRWLockExclusive
+AcquireSRWLockShared
+Active Sessions
+ActivityError
+ActivityIntermediateStop
+ActivityStoppedAutomatically
+AddAccessAllowedAce
+AddAce
+AddScope
+AddVirtualScope
+AdminPropertyDatabase
+advapi32.dll
+AFTER(
+aggregate
+AHI;APu
+AHI9A
+All bits
+AllArray
+ALLOCSIZE
+AllocSize
+AllowFindMyFiles
+AllowIndexingEncryptedStoresOrItems
+AllowOCR
+AllowUsingDiacritics
+AllowWindowsIndexer
+alnum
+alpha
+Always use content index
+AlwaysUseAutoLangDetection
+And" Count="
+APH9QH
+api-ms-win-containers-cmclient-l1-1-0.dll
+api-ms-win-containers-cmclient-l1-2-0.dll
+api-ms-win-containers-cmclient-l1-5-0.dll
+api-ms-win-core-apiquery-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-datetime-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-file-l1-2-0.dll
+api-ms-win-core-file-l1-2-1.dll
+api-ms-win-core-file-l2-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-heap-obsolete-l1-1-0.dll
+api-ms-win-core-interlocked-l1-1-0.dll
+api-ms-win-core-io-l1-1-0.dll
+api-ms-win-core-io-l1-1-1.dll
+api-ms-win-core-job-l2-1-0.dll
+api-ms-win-core-kernel32-legacy-l1-1-0.dll
+api-ms-win-core-kernel32-legacy-l1-1-1.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-libraryloader-l1-2-1.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-localization-l1-2-2.dll
+api-ms-win-core-localization-obsolete-l1-2-0.dll
+API-MS-Win-Core-LocalRegistry-L1-1-0.dll
+api-ms-win-core-memory-l1-1-0.dll
+api-ms-win-core-namedpipe-l1-1-0.dll
+api-ms-win-core-path-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-1.dll
+api-ms-win-core-processthreads-l1-1-3.dll
+api-ms-win-core-processtopology-obsolete-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-psapi-l1-1-0.dll
+api-ms-win-core-realtime-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-rtlsupport-l1-1-0.dll
+api-ms-win-core-shlwapi-legacy-l1-1-0.dll
+api-ms-win-core-shlwapi-obsolete-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-string-l2-1-0.dll
+api-ms-win-core-string-obsolete-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-synch-l1-2-1.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-threadpool-l1-2-0.dll
+api-ms-win-core-timezone-l1-1-0.dll
+api-ms-win-core-winrt-l1-1-0.dll
+api-ms-win-core-winrt-string-l1-1-0.dll
+api-ms-win-crt-private-l1-1-0.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+api-ms-win-crt-string-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+api-ms-win-service-core-l1-1-1.dll
+api-ms-win-service-management-l1-1-0.dll
+api-ms-win-service-winsvc-l1-1-0.dll
+api-ms-win-shcore-registry-l1-1-0.dll
+api-ms-win-shell-namespace-l1-1-0.dll
+api-ms-win-winrt-search-folder-l1-1-0.dll
+ApiSetQueryApiSetPresence
+APPID
+AppID
+Application
+APPLICATION=
+arm64
+AROUND(
+ARRAY
+Array
+ARRAY, BITWISE
+ARRAY,COERCE,CONTAINS,DEEP,DERIVATIONAL,EXCLUDE,FORMSOF,FREETEXT,INFLECTIONAL,ISABOUT,MATCHES,NEAR,PARAGRAPH,PASSTHROUGH,PROPERTYNAME,PROPID,RANKMETHOD,SENTENCE,SCOPE,SEARCH,SHALLOW,SOUNDEX,THESAURUS,TRAVERSAL,TYPE,WEIGHT,WORD
+AssignProcessToJobObject
+Asynchronous Rowset Processing
+ATAVAWH
+ATAVH
+ATL$__a
+ATL$__z
+Attrib
+ATTRIB
+AUAVAWH
+Autocommit Isolation Levels
+Ax<cuV
+AXD9f
+AxH9AhrQv)H
+B ;C0s
+B 9A u6
+B f9A 
+B fA9
+B I;F8
+B$f9A$u,
+B&f9A&u"
+B(;A(
+B(f9A(u
+B(H9B t
+B*f9A*u
+B,;A,
+B,f9A,
+B.f9A.
+B~JjV
+B0;A0
+B0f9A0
+B0H;B8
+B2f9A2
+B4f9A4
+B6f9A6
+B8f9A8
+BackOffTime
+bad allocation
+bad array new length
+bad cast
+Bad optional access
+bad_weak_ptr
+BCCCCCCCCCCC
+BCP9{T
+bcVVV
+bD9eXt
+BEFORE(
+BEGIN TRANSACTION;
+BeginCacheTransaction
+BETWEEN(
+BHH;BP
+BhH9B8
+BhH9B8r
+BIN.BASE64
+BIN.HEX
+Binary
+Bitwise
+blank
+blob cb
+blob cb 
+Blob value is too long.
+Blocking Storage Objects
+Bookmark
+Bookmark Type
+Bookmarks Ordered
+BOOL, 
+BOOLEAN
+bs-BA-Cyrl
+bs-BA-Latn
+bs-Cyrl-BA
+bs-Latn-BA
+BSTR, 
+BTEJH
+BYFREQ_
+BYREF
+C +C`
+C 9D$ 
+C 9t$0s
+C H;WPt
+C H+C
+c UAVAWI
+C(H+8H
+C(H+C H
+C(H9C 
+c(L;k0
+C@9G@
+C\9G\u
+C`+CPH
+C`9G`u
+C++/WinRT version:2.0.201201.7
+C0f9G0u#
+C0f9G0u*
+C0H+C(H
+C0HcS<H
+C2f9G2u
+C49G4u"H
+C8fD!t
+c9\$@t
+C9fD97u
+callContext
+CallContext
+callContext
+CallContext:[%hs] 
+CancelIo
+Catalog
+catalog
+Catalog Location
+Catalog Term
+Catalog Usage
+CatalogID
+CatalogManager
+CatalogManagerIdx
+CatalogName
+CatalogStorageManager
+CContentParserWordSink::PutBreak -- Bad break type %d
+CD$ H
+CD$0H
+CD$8H
+CD$hH
+CD$pH
+CD$PL
+CD$xH
+CDDDDDDDDDDD
+CD'H(
+CDHcC
+CDHcK
+cDims:%d fFeatures:0x%x cbElements:%d cLocks:%d pvData:0x%I64x
+CdplIsSupported
+CdplProtectFileToLevel
+CfD9S
+CGc2`
+Chapter
+Characterization
+CHARACTERIZATION
+CharNextW
+CharUpperW
+CHH;C@
+CHH;C@r
+CHH;CP
+ChildCount
+CI Query Server Thread
+CI_E_MULTIPLE_PROTECTED_USERS_UNSUPPORTED
+CI_E_PROTECTED_CATALOG_SID_MISMATCH
+ciDelete
+CIMANGERH
+ciNew
+ciNewNoThrow
+CInvertedDocument::AddProperty, SyncTransferStatus CP_EMPTYFOLDERASPLACEHOLDER for wid: %d
+CInvertedDocument::AddProperty, SyncTransferStatus CP_EXCLUDEDFROMSYNC for wid: %d
+CInvertedDocument::AddProperty, SyncTransferStatus CP_HASLASTSYNCERROR for wid: %d
+CInvertedDocument::AddProperty, SyncTransferStatus CP_HASLASTSYNCWARNING for wid: %d
+CInvertedDocument::AddProperty, SyncTransferStatus CP_TRANSFERSTATUS_DOWNLOADING for wid: %d
+CInvertedDocument::AddProperty, SyncTransferStatus CP_TRANSFERSTATUS_UPLOADING for wid: %d
+CI-RcovStorageObj01
+CI-RcovStorageObj1
+CIState
+CiState
+CL$ H
+CL$(f
+CL$0H
+CL$8H
+CL$8L
+CL$8M
+CL$PE
+CL$xA
+CL$XD
+CL$XH
+CL$xI
+ClassID
+CLASSID
+ClassId
+ClientPipeName
+Client-side property cache has updated, found %ls
+Client-side property cache has updated, still can not find %ls
+CloseHandle
+CloseServiceHandle
+CloseThreadpool
+CloseThreadpoolTimer
+CloseThreadpoolWork
+CLSID
+CLSID\
+CLSID\%ws\PersistentAddinsRegistered\%ws
+CLSID\%ws\PersistentHandler
+CLSIDFromProgID
+CLSIDFromString
+CmsCloseActivity
+CmsCloseContainer
+CmsCreateActivity
+CmsMapNamedPipeToContainer
+CmsOpenContainer
+CmsRegisterForContainerNotifications
+CmsStartActivityAsync
+cntrl
+CoCreateFreeThreadedMarshaler
+CoCreateGuid
+CoCreateInstance
+CoCreateInstanceEx
+coefficient
+Coerce (absolute)">
+Coerce (add)">
+Coerce (multiply)">
+CoGetClassObject
+CoGetMalloc
+CoImpersonateClient
+CoIncrementMTAUsage
+CoInitializeEx
+Column '%s' already exists but has type '%u' instead of type '%u'.
+Column Definition
+Column Privileges
+combase.dll
+CombinedRank
+Command Time Out
+COMMIT TRANSACTION;
+CompanyName
+CompareBmk
+CompareFileTime
+CompareStringA
+CompareStringEx
+CompareStringOrdinal
+CompareStringW
+Completion
+Component Categories
+CompressedFileSizeAfterBytes
+CompressedFileSizeBeforeBytes
+computer
+Connect
+ConnectNamedPipe
+Container
+ContainerId
+Content"><Phrase>
+Contents
+CONTENTS
+ContentTypes
+ControlService
+ConvertSecurityDescriptorToStringSecurityDescriptorW
+ConvertSidToStringSidW
+ConvertStringSecurityDescriptorToSecurityDescriptorW
+ConvertStringSidToSidW
+CopyFileExW
+CopySid
+CoreCount
+CoRevertToSelf
+CorruptionSwallowed
+Costly
+CoTaskMemAlloc
+CoTaskMemFree
+CoTaskMemRealloc
+CoUninitialize
+Count
+countIndices
+CP9GPt
+CpmcGetContainerIdForUser
+CREATE
+Create
+CREATE TABLE 
+CREATE TABLE IF NOT EXISTS 
+CreateDirectoryW
+CreateEventW
+CreateFileMappingW
+CreateFileW
+CreateJobObjectW
+CreateMutexExW
+CreateNamedPipeW
+CreatePropMapperStorage
+CreatePropMapperStorage2
+CreatePseudoQuery
+CreateQuery
+CreateSecurityStoreStorage
+CreateSemaphoreExW
+CreateSemaphoreW
+CreateStreamOnHGlobal
+CreateThread
+CreateThreadpool
+CreateThreadpoolTimer
+CreateThreadpoolWork
+CreateWaitableTimerExW
+cryptdll.dll
+CT$(L
+CT$0L
+CT$XH
+CT$xH
+CT$XH
+CT$xH
+CtfD;
+CTPuePPvwCxPyz\Ce{|}GPPCe
+Current Catalog
+currentContextId
+currentContextMessage
+currentContextName
+CURSOR: <begin> %s - Decoders: %d, WidFilter: %s
+CURSOR: <end>   %s - ResultWids: %s
+Cx<bu
+CX9GXu
+CXH9CH
+D D"@$B&D
+D!D$ L
+D!D$(D!D$,L!D$0H;Q
+D!D$P
+D#E0D
+D#OtH
+D#U0D
+D$ ;D$$
+D$ 9w
+D$ D;G
+D$ E3
+d$ E3
+D$ E3
+d$ E3
+D$ E3
+D$ H;
+D$ H;D$ 
+D$ H+D$(H
+D$ H9<
+D$ I+
+D$ Li
+D$ Mi
+D$"PtvH
+D$$A;
+D$$E3
+D$(D!L$ D
+D$(E3
+d$(fD
+D$(fD
+D$(H;Q
+D$(H+D$ H
+D$(I;
+D$(L+
+D$(M+
+D$,D8-
+d$@9_t
+D$@A;
+D$@D;3
+D$@D8h
+D$@D9H
+D$@D9H s
+D$@E;](r
+D$@E;_(r
+d$@E;l$(r
+D$@E3
+d$@E3
+D$@E3
+d$@E3
+D$@E3
+D$@f9
+D$@fD;x
+D$@fH
+D$@H;
+D$@H;D$(t
+D$@H+
+D$@H9B
+D$@Hi
+D$@L#
+d$@L;
+D$@L;
+D$@L+
+D$@M;
+d$@M+
+D$\E;l$(r
+D$`;j
+D$`9p
+D$`D;A
+D$`D;I
+D$`E3
+d$`E3
+D$`f9
+D$`fA
+D$`H)
+D$`H;
+D$`H+
+D$`H+D$XH
+D$`H9D$h
+D$`I;
+D$`I+
+D$`L#
+D$`M;
+D$|fA
+D$|fD
+D$<+,
+D$<9D$@H
+D$<E3
+d$<tB
+D$0!\$(H
+D$0!D$ 
+D$0@8w
+D$0A;
+D$0D;
+d$0E;g\w=A
+D$0E3
+d$0E3
+D$0E3
+d$0E3
+D$0E3
+D$0fA
+D$0fD
+D$0fD9 t
+D$0H#
+D$0H;
+D$0H;G
+D$0H;G0tQ
+D$0H;Wxt
+D$0H+D$(H
+D$0H+D$8H
+D$0H9B
+D$0H9D$@
+D$0Hc
+D$0I;
+D$0I+D$(H
+D$0L#
+D$0L+
+D$49L$8t
+d$4D;
+D$4E;
+d$4E;
+D$4f9D$0f
+D$4fD
+d$4H;
+d$4H;_
+d$4L;
+d$4M;
+D$6fD
+D$8@8i
+d$8A;T$(r
+D$8A9u
+D$8D;
+d$8D;l$X
+d$8E;\$(r
+d$8E;l$(r
+D$8E3
+D$8fA
+D$8fD
+D$8H;
+D$8H+
+D$8Hi
+d$8I;W8tiH
+d$8L+
+D$8L+
+d$8L+
+D$8L+
+D$D;C A
+d$D9]
+D$DA;
+D$DD;
+D$DD9k 
+D$DE;
+D$H!D$@
+D$H@80
+D$H9t$\u}
+D$HA;
+d$HA;
+D$HA;E
+D$HD;
+d$HE;l$(r
+D$hE3
+d$hE3
+D$HE3
+d$hE3
+D$hf;
+d$hfD
+D$HfD
+D$hfD;x
+D$hH;
+D$HH;
+d$hH;]
+D$hH9D$`t
+D$HI;P8tlH
+D$HL;
+D$hL;
+D$HL;
+D$LH9
+D$LI;
+D$P;D$@r
+D$P;D$`u
+D$p;Z
+D$p@8y
+D$P+|$PL
+D$PA;
+d$PA;T$(r
+D$pD+
+D$PD+D$X
+d$PD9f
+d$PE;l$(r
+D$PE;Y(r
+D$PE;Z(r
+D$pE3
+D$PE3
+D$pE3
+D$PE3
+D$pE3
+D$PE3
+D$pE3
+D$PE3
+D$pf;
+d$pfD
+D$pfD
+D$PfD90t
+D$PH;
+D$pH;D$0v
+D$PH;G
+D$PH;H
+D$PH+
+D$pH+D$PH
+D$PH+D$XH
+D$pH+D$XH
+D$pH+D$xI
+D$PH9
+D$pH9D$xu
+D$PHcH
+D$PI;
+D$pI;
+D$pI+
+D$PI+
+d$PL;
+d$pL;d$x
+d$PL;e
+D$PL;G
+D$PL;H
+D$RL;
+D$RM+
+D$tA;
+D$tD;
+D$TD;
+D$tfA
+D$TH;
+D$TH;\$P~
+D$X;{
+d$x;|$@sDD
+D$xA+
+D$XD9X,
+D$xE;
+D$xE3
+D$Xf;
+D$xfA
+D$XfA;4BuH
+D$xfA94@t
+d$XfD
+D$xfD
+D$xfI
+d$XH;
+D$XH;
+D$xH+
+D$xH9E
+D$XI;
+D$XI9D$
+d$XL;
+D;~$r
+D;a v
+D;C(r
+D;d$@rHL
+D;d$<
+D;D$L
+D;D$Ls
+D;D$T
+D;d$Tr
+D;D$Ts
+D;l$$r
+D;l$\
+D;l$l
+D;l$P
+D;l$p
+D;l$t
+D;S s
+D;t$@
+D;X |
+D;Y r
+D+L$0D
+D8-$U
+D8%@{
+D8%=S
+D8%pR
+D8-[s.
+D8\$@
+D8\$@t
+D8\$@u
+D8\$`
+D8\$2
+D8\$2t
+D8\$2u
+D8|$`
+D8|$0tCH
+D8|$8
+D8|$P
+D8|$Pt
+D8|$PtBL
+D8=%4.
+D8>tMH
+D8a8t
+D8d$@
+D8d$0
+D8d$0t
+D8d$0t/H
+D8d$0tNH
+D8d$2t
+D8d$8
+D8d$8t
+D8l$0M
+D8l$2u
+D8L$P
+D8l$Pu
+D8m/t
+D8odt$A
+D8-Os.
+D8t$0
+D8t$0t
+D8t$0u
+D8t$2
+D8t$2u
+D8t$Ptr
+D8v\t*D
+D8wpu+E3
+D8yxt$H
+D9;}BH
+D9;}JH
+D9\$`u
+D9]Pv8D9_
+D9{0u
+D9{0vPD
+D9|$(u
+D9|$@A
+D9|$d
+D9=i/
+D95UI
+D95v:
+D96u@H
+D9A |
+D9A r
+D9A s
+D9A4v(M
+D9c$t
+D9c0u
+D9d$ 
+D9d$(|
+D9d$\ukH
+D9d$8|
+D9d$PtNH
+D9e`t
+D9i v*L
+D9I0v
+D9K(vbE
+D9l$(|
+D9m$I
+D9mPt
+D9n u
+D9s t
+D9t$,t(H
+D9t$0
+D9t$0t
+D9t$P
+D9v|udL
+D9w0uDD
+D9y0v[H
+Data Layer Provider Configs
+Data Source
+Data Source Object Threading Model
+DatabaseEngineIsESEOverrideActive
+DatabaseEseOverride
+DataTypeCount
+DataTypeString
+DATERANGE_
+DATETIME
+DATETIME.TZ
+DAY_PLUS
+DBMS Name
+DBMS Version
+DBTYPE_
+DBTYPE_BOOL
+DBTYPE_BSTR
+DBTYPE_BYREF, DBTYPE_VECTOR
+DBTYPE_CY
+DBTYPE_DATE
+DBTYPE_DECIMAL
+DBTYPE_FILETIME
+DBTYPE_GUID
+DBTYPE_I1
+DBTYPE_I2
+DBTYPE_I2, DBTYPE_I4, DBTYPE_R4, DBTYPE_R8, DBTYPE_CY, DBTYPE_DATE, DBTYPE_BSTR, DBTYPE_BOOL, DBTYPE_STR, DBTYPE_WSTR
+DBTYPE_I4
+DBTYPE_I8
+DBTYPE_NULL
+DBTYPE_R4
+DBTYPE_R8
+DBTYPE_STR
+DBTYPE_STR | DBTYPE_BYREF
+DBTYPE_UI1
+DBTYPE_UI2
+DBTYPE_UI4
+DBTYPE_UI8
+DBTYPE_WSTR
+DBTYPE_WSTR | DBTYPE_BYREF
+DD$(L
+DD0Hu
+DebugBreak
+DECIMAL
+Default behavior of equals parsing
+Default Highest Priority
+Defer catalog verification
+Defer scope and security testing
+DelayLoadFailureHook
+Delete
+DELETE FROM 
+DeleteCriticalSection
+DeleteFileW
+deque<T> too long
+DeregisterEventSource
+Description
+DeviceIoControl
+Dice Coeff.">
+digit
+Directory
+DIRECTORY
+DisableBackoff
+DisableRemovableDriveIndexing
+DisableSoftReset
+DisableThreadLibraryCalls
+Disconnect
+DisconnectNamedPipe
+DllCanUnloadNow
+DllGetActivationFactory
+DllGetClassObject
+DllRegisterServer
+DllUnregisterServer
+DOCAPPNAME
+DocAppName
+DocAuthor
+DOCAUTHOR
+DOCBYTECOUNT
+DocByteCount
+DOCCATEGORY
+DocCategory
+DocCharCount
+DOCCHARCOUNT
+DOCCOMMENTS
+DocComments
+DOCCOMPANY
+DocCompany
+DOCCREATEDTM
+DocCreatedTm
+DOCEDITTIME
+DocEditTime
+DOCHIDDENCOUNT
+DocHiddenCount
+DOCKEYWORDS
+DocKeywords
+DocLastAuthor
+DOCLASTAUTHOR
+DOCLASTPRINTED
+DocLastPrinted
+DocLastSavedTm
+DOCLASTSAVEDTM
+DocLineCount
+DOCLINECOUNT
+DocManager
+DOCMANAGER
+DOCNOTECOUNT
+DocNoteCount
+DocPageCount
+DOCPAGECOUNT
+DOCPARACOUNT
+DocParaCount
+DocPartTitles
+DOCPARTTITLES
+DocPresentationTarget
+DOCPRESENTATIONTARGET
+DocRevNumber
+DOCREVNUMBER
+DOCSECURITY
+DocSecurity
+DocSet
+DocSet>"><cWids>
+DOCSLIDECOUNT
+DocSlideCount
+DocSubject
+DOCSUBJECT
+DocTemplate
+DOCTEMPLATE
+DOCTHUMBNAIL
+DocThumbnail
+DOCTITLE
+DocTitle
+document
+Documents
+DOCWORDCOUNT
+DocWordCount
+DoNotComputeExpensiveProperties
+Don't compute expensive properties like max rank and total results
+DROP TABLE IF EXISTS 
+DuplicateHandle
+Dw=&:s
+Dw=':s
+Dw=]:s
+Dw=|:s
+Dw=}:s
+Dw=~:s
+Dw=2"
+Dw=4##
+Dw=c:s
+Dw=D:s
+Dw=E:s
+Dw=ext-ms-onecore-appmodel-staterepository-internal-l1-1-3.dll
+Dw=g:s
+Dw=i:s
+Dw=onecoreuap\base\appmodel\search\common\utils\crchash.cxx
+Dw=onecoreuap\Base\appmodel\Search\tquery\internal\include\rstprop.hxx
+Dw=s:s
+Dw=U:s
+Dw=u:s
+Dw=y:s
+E 9G<
+E 9H 
+e A_A^]
+e A_A^A]A\]
+E D9e0t
+E H+E
+E(9H 
+E(H;P
+E(H;U8t
+E(L+T$@I
+E,$A9V
+E;\$(r
+E;](r
+E;|$(r
+E;A4r
+E;Edv
+E;u(r
+E;Y(r
+E@H;E8uqE3
+E0H+E(H
+E4H9}0~pH
+E8A;G8A
+E8'uD
+E9f8udD9eXt
+E9fhu
+E9H8}
+E9S@wUH
+EDH;}@
+EditDistance
+EDP://EnterpriseIds
+EDP://EvaluationFlags
+EDP://ExemptEnterpriseIds
+EDP://PolicyFlags
+EdpGetPrimaryIdentities
+EDPStatus
+EFFHQQGGQQLMKQQQQQ
+EFGHIJKLMN
+efswrt.dll
+eGHHeiH
+egI;]
+EhH;Exs
+EhH+ExH
+EHuuI
+EMPTY
+empty 
+EMPTY, 
+Enable the rowset events connection point for this query
+EnableCDPL
+EnablePerUserCatalog
+EndCacheTransaction
+end-of-file
+EN-GB
+EnterCriticalSection
+EnterpriseDataProtect
+EnumDependentServicesW
+EN-US
+en-US
+ePD9g
+EPL;p
+EqualSid
+ernelbase.dll
+Error
+ERROR
+Error formatting string.
+ErrorLoadingWordBreaker
+ESENT.dll
+ESEOverrideIsActive
+ES-ES
+ES-MX
+etInitFailureStamp
+ETWBufferSize
+ETWLogging
+EventActivityIdControl
+EventEnabled
+EventRegister
+EventSetInformation
+EventThrottleBlockPeriodMs
+EventThrottleFlushPeriodMs
+EventThrottleMaxControlPeriodMs
+EventThrottleMaxEvents
+EventUnregister
+EventWriteTransfer
+EWH9E
+ewM9,$u
+Exact Word Prefix">
+Exact Word">
+ExceptInitialize
+Exception
+EXH+EPH
+eXM+ePI
+ExpandEnvironmentStringsW
+Expression
+Extended Properties
+Extension
+ExternPropagateEventToOpenQueries
+ext-ms-win32-subsystem-query-l1-1-0
+ext-ms-win32-subsystem-query-l1-1-0.dll
+ext-ms-win-advapi32-eventlog-l1-1-0
+ext-ms-win-advapi32-eventlog-l1-1-0.dll
+ext-ms-win-advapi32-eventlog-l1-1-1
+ext-ms-win-advapi32-eventlog-l1-1-2
+ext-ms-win-containers-policymanagercli-l1-1-0.dll
+ext-ms-win-devmgmt-policy-l1-1-0.dll
+ext-ms-win-edputil-policy-l1-1-0.dll
+ext-ms-win-els-elscore-l1-1-0.dll
+ext-ms-win-session-usertoken-l1-1-0
+ext-ms-win-session-usertoken-l1-1-0.dll
+ext-ms-win-shell32-shellfolders-l1-1-0.dll
+F 9|$hrfA
+F H+F
+F(I;V8
+F(I;V8t6L
+f;)tE
+f;.t7A
+f;+t?fD;3t9A
+f;+t'f9k
+f;8u=H
+f;Apt
+f;D$@u
+f;K0uEH
+f;q u#H
+f;t$0u%H
+f;t$0u'H
+f;t$D
+F@A96tEH
+F@D8 
+F`I9FPu
+F0A9B(t
+F0H;F8t
+F0H+F(H
+F0I+F(H
+F0SHRF
+F0u(A
+F8$1u
+F8, u
+F8B;L 
+F8H9G8t
+f9)tCH
+f9,Au
+f9,Bu
+f9,Fu
+f9,Gu
+f9,Ku
+f9,Zu
+f9\$8u
+f9<Au
+f9<Bu
+f9<Cu
+f9<Fu
+f9<Ht
+f9<Hu
+f9<Ju
+f9<nu
+f9<pu
+f9<Qu
+f9<Xu
+f9<Yu
+f90u.
+f93tRA
+f94Au
+f94Bu
+f94Gu
+f94Hu
+f94xu
+f98t_H
+f99tKH
+f9A t
+f9A(u
+f9A.u
+f9A0t:f
+f9A4u
+f9A8t
+f9D$P
+f9G0u,
+f9H tAH
+f9L$0
+f9N(t
+fA;4Rt?fD;
+fA;4Ru
+fA;7sSH
+fA;F(uBI
+fA;F(uXI
+fA;X8
+fA;Zpu A9Z`u
+fA9,Hu
+fA9,Xu
+fA9:t
+fA9<@u
+fA9<^u
+fA9<Nu
+fA9<Ru
+fA9<wu
+fA90t
+fA94@u
+fA94Bu
+fA94Qu
+fA9F 
+fA9F uyH
+fA9LE
+fA9tU
+fA9V 
+fA9z v
+fA9Z*
+Failed to insert or update the value in the index data table.
+Failed to insert or update the value in the index occurrence table.
+Failed to insert or update the value in the property bag.
+Failed to insert or update the value in the property store.
+FailFast
+failureCount
+FailureId
+failureId
+failureType
+FallbackError
+FALSE
+fB9,Bu
+fB9,Fu
+fB9<@u
+fB9<Bu
+fB9<Ju
+fB9<ru
+fB94@u
+fB94Bu
+fB94hu
+fB94yu
+fB9DA0u
+fB9L[
+fC;4J
+fC94|u
+fD;>u
+fD;0t H
+fD;0t~H;
+fD;0u
+fD;2t
+fD;2u
+fD;7t,@
+fD;7v
+fD;8uwH
+fD;e@u{L
+fD;F8tbD
+fD;L$$
+fD;L$(
+fD;qpt
+fD;X s
+fD9 t
+fD9 u
+fD9!H
+fD9$^u
+fD9$~u
+fD9$Au
+fD9$Bu
+fD9$Fu
+fD9$Hu
+fD9$Ju
+fD9$Nu
+fD9$pu
+fD9$Xu
+fD9$Yu
+fD9&t
+fD9)H
+fD9,Au
+fD9,Ou
+fD9,ru
+fD9:t
+fD9|M
+fD9<~u
+fD9<Au
+fD9<Bu
+fD9<Fu
+fD9<Ou
+fD9<ru
+fD9<Xu
+fD9<xu
+fD9<zu
+fD9<Zu
+fD93t
+fD94^u
+fD94_u
+fD94Au
+fD94Cu
+fD94Gu
+fD94Nu
+fD94pu
+fD94Xu
+fD94yu
+fD94Zu
+fD95i
+fD95w
+fD96t
+fD97wO
+fD98u
+fD98ucH+
+fD99t(H
+fD9A r
+fD9c 
+fD9D$PtF
+fD9f0
+fD9HDu
+fD9o0
+fD9o0t+f9O0uoI
+fD9't
+fD9tA
+fD9tE
+fE;|$
+fE9$Fu
+fE9$Pu
+fE9$Wu
+fE9,Du
+fE9,Fu
+fE9,xu
+fE9<@u
+fE9<^u
+fE9<Au
+fE94qu
+fE94wu
+fE9dE
+Fetch Backwards
+FetchValue
+fF9$@u
+fF9$Bu
+fF9,Bu
+fF9<Bu
+fF9<Gu
+fF9<pu
+fF94@u
+fF94Bu
+fffffff
+fG9$Au
+fG9$Nu
+fG9<Fu
+fG94Du
+fG9tM
+FH9|$(
+File size is too large.
+file:
+file://
+file:///
+file_size
+FileAccessTime
+fileanc
+FileAttributes
+FileCreateTime
+FileDescription
+FileDirectoryName
+FileIndex
+FILEINDEX
+fileName
+FileName
+Filename
+FILENAME
+fileName
+FilePath
+FilePathName
+FileShortName
+FileSize
+FileSizeAfterBytes
+FileSizeBeforeBytes
+FileStorageType
+FILETIME
+FileTimeToLocalFileTime
+FileTimeToSystemTime
+FileType
+FileUSN
+FileVersion
+FileWriteTime
+FilterExtension
+Final OpTree
+FindClose
+FindFirstFileW
+FindIndices
+FindNextFileW
+FindResourceExW
+First Counter
+First Help
+First Rows
+FIRST_
+fixed
+FIXED.14.4
+FLOAT
+FLUSH
+FLUSH COMPLETE: (Index: %d) Documents: %d, Wordlist Size: %d, Index Pages: %d
+Flush Threshold Values are cFlushDocuments = %d, cIdleFlushDocuments = %d, cbFlushMaxSize = %d, cbIdleFlushMaxSize = %d
+FlushDocuments
+FlushDocumentsCount
+FlushFileBuffers
+FlushMaxSize
+FlushViewOfFile
+folder
+FoldStringW
+ForceMasterMerge
+ForceMerge
+ForceRemove
+Foreign
+FormatMessageA
+FormatMessageW
+Found length width: %d offset: %d
+Found status width: %d offset: %d
+Found type: %d width: %d
+Found value type: %d width: %d offset: %d
+FPCeP
+FR-CA
+FreeCursor
+FreeLibrary
+FreeLibraryWhenCallbackReturns
+FreeSid
+FreeText
+Fresh Test Reload required merging Flushing Wordlist
+Fresh Test Reloaded (changes were made since this merge was started)
+FRESH TEST:  WIDs in the new, but not in the old:
+FRESH TEST:  WIDs in the old, but not in the new:
+FRESH TEST: Update (%s)
+FR-FR
+function
+G I+G
+G$9G w0H
+G$H+A$H
+G(I;W8
+G(I;W8t[L
+G(I;W8t|H
+G(I;W8t6L
+G(I;W8ttL
+G@D;p
+G@D9h
+G@H;G8
+G@H;GHt
+G@H+C@H
+G`+GP;A0w
+G`+GPH
+G0D9<
+G0H+G(H
+G0I+G(H
+G8D;0r
+G8D;p
+G8H+C8u
+g8H9_0
+G8L9g8
+-gather
+Generate parse tree
+generic
+Generic options string
+GenuD
+GetAce
+GetAclInformation
+GetActiveProcessorCount
+GetApproximatePosition
+GetCalendarInfoW
+GetCompressedFileSizeW
+GetComputerNameW
+GetCPInfo
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThread
+GetCurrentThreadId
+GetDiskFreeSpaceExW
+GetDiskFreeSpaceW
+GetDriveTypeW
+GetFileAttributesExW
+GetFileAttributesW
+GetFileInformationByHandle
+GetFileInformationByHandleEx
+GetFileSize
+GetFileSizeEx
+GetFileTime
+GetLastError
+GetLengthSid
+GetLocaleInfoEx
+GetLocaleInfoW
+GetLocalTime
+GetLogicalDrives
+GetLogicalProcessorInformationEx
+GetModuleFileNameA
+GetModuleFileNameW
+GetModuleHandleExA
+GetModuleHandleExW
+GetModuleHandleW
+GetNamedPipeClientComputerNameW
+GetNamedPipeClientProcessId
+GetNLSVersion
+GetNLSVersionEx
+GetNotify
+GetOverlappedResult
+GetParseTree
+GetPriorityClass
+GetProcAddress
+GetProcessHeap
+GetQueryMetadata
+GetRowCount
+GetRows
+GetRowsetNotify
+GetRowsStatistics
+GetScopeStatistics
+GetSecurityDescriptorLength
+GetSidLengthRequired
+GetSidSubAuthority
+GetStringTypeExW
+GetSystemDefaultLangID
+GetSystemDefaultLCID
+GetSystemDefaultLocaleName
+GetSystemDefaultUILanguage
+GetSystemDirectoryW
+GetSystemInfo
+GetSystemPowerStatus
+GetSystemPreferredUILanguages
+GetSystemTimeAsFileTime
+GetThreadTimes
+GetTickCount
+GetTickCount64
+GetTimeFormatW
+GetTokenInformation
+GetUserDefaultLangID
+GetUserDefaultLCID
+GetUserDefaultUILanguage
+GetUserNameExW
+GetVersionExW
+GetVolumeNameForVolumeMountPointW
+GetVolumePathNameW
+GetWatchInfo
+gfffffffH
+gfffffffI
+gH;\$8u&H
+GH;CHu
+GhD94
+GL;L$`
+GLOBAL
+Global
+Global\
+Global\MsWds-Notify-Event
+GlobalAlloc
+GlobalFree
+GlobalLock
+GlobalUnlock
+GpD9w
+GpH;Gx
+gponecore\internal\sdk\inc\wil\opensource/wil/result.h
+graph
+Group
+GROUP BY Support
+GROUP ON 
+GX;G`
+H AVH
+H f9O 
+h H9)uo
+H SVWH
+H UATAUAVAWH
+h UAVAWH
+H UVWH
+H VWATAVAWH
+H WATAUAVAWH
+H!:H9
+H!\$0!\$8!\$<
+H!\$0H
+H!\$P
+H!|$@!|$H
+H!|$8!|$@3
+H!9H!y
+H!D$0I
+H!t$XA
+H#^`H
+H#~`H
+H#D$@L
+H#D$8H
+H#D$8L
+H#D$HH
+H#D$hH
+H#D$HH
+H#D$hL
+H#D$HL
+H#D$pH
+H#D$pL
+H#D$XH
+H#D$xH
+H#D$XH
+H#D$XL
+H#EwH;A
+H#L$(H
+H#L$`H
+H#L$`L
+H#L$0D
+H#L$hD
+H#L$hH
+H#L$hL
+H#L$pH
+H#L$PH
+H#L$pH
+H#L$PH
+H#L$pH
+H#L$pL
+H#L$PL
+H#L$pL
+H#L$xH
+H#L$xL
+H#M H
+H#N`H
+H#T$(
+H#T$hL
+H;;t<H
+H;\$`t
+H;\$h
+H;\$Pt
+H;]0tOH
+H;^0t
+H;^0t?H
+H;^0t>H
+H;^0t3H
+H;^0tDL
+H;^0tLH
+H;^0tvH
+H;^0u
+H;^HtpH
+H;^pv
+H;_0t
+H;_0t#H
+H;_0t[L
+H;_0t_
+H;_0tIH
+H;_0tIL
+H;_0tQL
+H;{ u
+H;{@r
+H;{0r
+H;{8r
+H;{xr
+H;|$`
+H;|$Hr
+H;}8t%H
+H;}Hr
+H;}Xr
+H;~@tFH
+H;~hr
+H;~ht
+H;3tPH
+H;A w
+H;A@v
+H;B@s)
+H;C(s
+H;C@s
+H;C@v
+H;C@v H
+H;C8r
+H;CHs
+H;D$`tfH
+H;D$0r
+H;D$0u
+H;D$8
+H;D$8u
+H;D$p
+H;D$ps.H
+H;D$Xt)H
+H;F@v
+H;G t
+H;G t[H
+H;GhH
+H;GhtDH
+H;GHu
+H;Khr
+H;L$ 
+H;NPr
+H;O@r
+H;P H
+H;Q w
+H;Q0u
+H;S v
+H;s`r
+H;s8r
+H;spr
+H;t$H
+H;T$Hw
+H;V u#L
+H;W H
+H;wPr
+H;wpr
+H;wxr
+H;wXr
+H;x r
+H;Z0ttH
+H@t(H
+H@t,H
+H_^[]
+h_^][
+H`H9HPt
+H+\$@H
+H+|$ H
+H+|$XI
+H+}@H
+H+APH
+H+AxL
+H+B0H
+H+BPH
+H+C H
+H+C(H
+H+CHH;
+H+D$0L
+H+D$Hu
+H+D$P@
+H+D$PH
+H+F0u
+H+F8H
+H+G8H
+H+GXH
+H+L$(H
+H+L$HH
+H+L$PH
+H+L$pL
+H+MxH
+H+Q0L;
+H+S(A
+H+T$HH
+H+V(A
+H+V(H
+H<A9I<
+H9\$ 
+H9\$(
+H9\$puoI
+H9]pu2H
+H9^0tKH
+H9_8un3
+H9{@v
+H9{`t'H
+H9{0v
+H9{8v
+H9{xvO
+H9|$ 
+H9|$`
+H9|$0v/3
+H9|$pu
+H9|$X
+H9~hv
+H97uCL
+H98t:H
+H98t0E3
+H9A(u
+H9A8u?H
+H9AxsNH
+H9Cht/A
+H9D$(
+H9D$@u(
+H9D$\u
+H9D$0
+H9D$p
+H9D$pt#H
+H9D$x
+H9Ehs
+H9G(u
+H9Ghs
+H9i8vx3
+H9K(u)H
+H9K(u+H
+H9K(uFH
+H9K(uGH
+H9Khv
+H9KXu
+H9l$ t5H
+H9Q0tRH
+H9S`H
+H9s`v
+H9s8v
+H9SHs H
+H9spv
+H9t$`
+H9t$8t
+H9t$H
+H9w@v
+H9wHsAH
+H9wht
+H9wPv
+H9wpv
+H9wxv%H
+H9wXv%H
+H9Y(t
+H9y(u
+H9y8v"3
+HA^A\
+HA_A^_[
+HA_A^A\_^[
+HA_A^A]A\_[
+HA_A^A]A\_^[]
+hA_A^A]A\_^[]
+HA_A^A]A\_^[]
+hA_A^A]A\_^[]
+HA_A^A]A\_^[]H
+HA_A^A]A\_^][
+hA_A^A]A\_^][
+HA_A^A]A\_^][
+Hardware
+HcC@H;CHsd
+HcD$@H
+HcD$PHk
+HcL$ HcD$$H
+HcL$XH
+HcMPD
+HcS$H
+HeapAlloc
+HeapDestroy
+HeapFree
+HeapReAlloc
+HeapSetInformation
+HeapSize
+Heterogeneous Table Support
+HHQQGQGFQQ
+hidden
+HITCOUNT
+HitCount
+HKEY_CLASSES_ROOT
+HKEY_CURRENT_CONFIG
+HKEY_CURRENT_USER
+HKEY_DYN_DATA
+HKEY_LOCAL_MACHINE
+HKEY_PERFORMANCE_DATA
+HKEY_USERS
+Hold Rows
+HResult
+hresult
+HResult
+hresult
+HResult
+hresult
+hTbF2<
+HTMLHEADING1
+HtmlHeading1
+HtmlHeading2
+HTMLHEADING2
+HTMLHEADING3
+HtmlHeading3
+HtmlHeading4
+HTMLHEADING4
+HtmlHeading5
+HTMLHEADING5
+HtmlHeading6
+HTMLHEADING6
+HtmlHref
+HTMLHREF
+https
+I#G H
+I#S0H
+I/L/[/
+I;^(u!H
+I;^0t
+I;^0t6H
+I;_0t
+I;_0tTH
+I;A@s1
+I;D$@v
+I;E@v
+I;E@wD
+I;F@v
+I;F@v I
+I;G@v
+I;Ixw9
+I;IxwmD
+I;u0t
+i^l]m
+I+~(H
+I+C0u
+I+C8H
+I+F H
+I+FxH
+I+T$(A
+I+U(A
+I+V(A
+I+V(H
+I+VxH
+I+W(A
+I9,$M
+I9>u$I
+I9N8u
+IAccessor
+IChapteredRowset
+IcI$~
+IColumnsInfo
+IConnectionPointContainer
+IConvertType
+iD$h,
+IDBAsynchStatus
+Identifier
+IdleFlushDocuments
+IdleFlushDocumentsCount
+IdleFlushMaxSize
+IdleMergeIndicesPerLevel
+IdleWatermark
+IDX_IndexManagerTable_Primary
+IDX_PropertyStore_Primary
+IDX_PropertyTable_Primary
+IFilterUsage
+Ignore noise only clauses
+Ignore sort by rank index
+ihf9n
+iL$h,
+IMG.ALT
+Img_Alt
+IMG_ALT
+ImpersonateLoggedOnUser
+ImpersonateLoggedOnUser failed with error code %d
+ImpersonateLoggedOnUser() failed with error 0x%08x.
+ImpersonateNamedPipeClient
+ImpersonateSelf
+Inconsistent state data size in wnf_query
+Index data page key too long.
+IndexData
+IndexDataIdx
+IndexDescription
+IndexerCorruption
+IndexerDatabaseSize
+IndexerFlushFailure
+IndexerMergeFailure
+IndexerMergeInformation
+IndexerQueryExecutionClient
+IndexerQueryExecutionClient_Aggregate
+IndexerQueryExecutionService
+IndexerQueryExecutionService_Aggregate
+IndexerWorkAttributionActivity_Aggregate
+IndexID
+IndexingFileAggregationDataMetric
+IndexMasterMergeCount
+IndexOccIdx
+IndexOccurrence
+IndiceCount
+Indices
+INFLECTIONAL
+INFLECTIONAL, THESAURUS
+Information
+Initial OpTree
+InitializeAcl
+InitializeCriticalSection
+InitializeCriticalSectionAndSpinCount
+InitializeCriticalSectionEx
+InitializeSecurityDescriptor
+InitializeSid
+InitializeSListHead
+InitializeSRWLock
+InitOnceBeginInitialize
+InitOnceComplete
+InitOnceExecuteOnce
+InitPropVariantFromFileTime
+InitPropVariantFromFileTimeVector
+InitPropVariantFromPropVariantVectorElem
+InitPropVariantFromStringVector
+InitPropVariantFromUInt32Vector
+inner
+Inner Prod.">
+INSERT INTO 
+Integrated Security
+Interface
+InterlockedFlushSList
+InterlockedPopEntrySList
+InterlockedPushEntrySList
+InternalName
+InternalProperty"><Pid>0x
+invalid hash bucket count
+Invalid hybrid table mode '%s'.
+Invalid integer %i for boolean value.
+Invalid size for double.
+Invalid size for float.
+Invalid size for GUID column.
+Invalid size for GUID.
+Invalid size for int16_t.
+Invalid size for int32_t.
+Invalid size for int64_t.
+Invalid size for uint16_t.
+Invalid size for uint32_t.
+Invalid size for uint8_t.
+Invalid size for Unicode text.
+Invalid SQLite database connection.
+invalid string position
+Invalid Unicode string.
+invalid unordered_map<K, T> key
+invalid vector subscript
+InvertedOnlyMD5
+InvertedOnlyPids
+IRowset
+IRowsetAsynch
+IRowsetIdentity
+IRowsetInfo
+IRowsetLocate
+IRowsetScroll
+IRowsetWatchAll
+IRowsetWatchRegion
+IsDBCSLeadByteEx
+IsDebuggerPresent
+IsDeleted
+IsFreshMerge: wid %d believed originated in index: %d (pid: %d)
+IsMasterMerge
+IsMSSearchEnabled
+Isolation Levels
+Isolation Retention
+IsProcessorFeaturePresent
+ISupportErrorInfo
+IsValidLocaleName
+IsValidSid
+ItemCount
+itemsIndexed
+iu-CA-Latn
+iu-Latn-CA
+IWordBreaker::GetLicenseToUse returned 0x%x
+IWordBreaker::Init returned 0x%x
+j(H9z@
+J<;H<u
+J0H;J8tHL
+J0L;J8
+J0L;J8t
+j4p6*8t<
+Jaccard
+Jaccard Coeff.">
+ja-JP_radstr
+JetAddColumnW
+JetAttachDatabaseW
+JetAttachRetrySuccess
+JetBeginSessionW
+JetBeginTransaction
+JetCloseDatabase
+JetCloseTable
+JetCommitTransaction
+JetCreateDatabaseW
+JetCreateInstanceW
+JetCreateTableColumnIndex3W
+JetCreateTableColumnIndexW
+JetDelete
+JetDeleteTableW
+JetDetachDatabaseW
+JetEndSession
+JetEnumerateColumns
+JetError
+JetErrorCategory
+JetErrorFileMissing
+JetErrorWithPossibleCorruption
+JetGetDatabaseInfoW
+JetGetErrorInfoW
+JetGetTableColumnInfoW
+JetGotoBookmark
+JetInit
+JetInitFailure
+JetInitFailureCount
+JetMakeKey
+JetMove
+JetOpenDatabaseW
+JetOpenTableW
+JetPrepareUpdate
+JetPrereadKeys
+JetResizeDatabase
+JetRetrieveColumn
+JetRetrieveColumns
+JetRetrieveKey
+JetRollback
+JetSeek
+JetSetColumn
+JetSetColumns
+JetSetIndexRange
+JetSetSystemParameterW
+JetTerm
+JetUpdate
+K H91t
+k VWAVH
+K VWAVH
+K@H91t
+K@L+K8I
+K`dF4
+K8+K(H
+K8+K(L
+kernel32.dll
+KfA9]
+KH+K8H
+kI8XI
+ko-KR
+KPH9CHt
+KXF9T
+L!L$ H
+L!L$8D!L$0H
+L#{0M
+L#F0M
+L#v`I
+l$ 9_`vaD
+l$ A;
+L$ E3
+l$ E3
+L$ E3
+l$ f;A
+L$ H;
+L$ H3
+L$ SH
+L$ SVWATAUAVAWH
+L$ SVWAVH
+L$ SVWH
+L$ SWH
+L$ USVWAVAWH
+L$ USWAVH
+L$ UVWATAUAVAWH
+L$ UVWAVAWH
+L$ UVWH
+L$ UWATAVAWH
+l$ VWATAUAVH
+L$ VWATAVAWH
+l$ VWATAVAWH
+l$ VWAUAVAWH
+l$ VWAVH
+L$ VWAVH
+l$ VWAVH
+L$ WH
+l$ WH
+L$ WH
+l$ WH
+L$ WH
+l$$f#
+L$(D+
+L$(E3
+l$(E3
+L$(E3
+l$(E3
+L$(fD
+l$(fD
+L$(H;
+L$(H;|$8r
+L$(H;Q
+L$(H+
+L$(H3
+l$(L+
+l$(M;
+l$(w(
+l$@D+
+L$@D+
+L$@D8i
+l$@E;}(r
+L$@E3
+l$@E8nh
+l$@fD
+l$@fD;
+L$@H;
+l$@H;
+L$@H+
+L$@H3
+L$@H9L$H
+l$@I;
+l$@I;?
+L$@I+
+l$\9y
+L$\fA
+L$`;J
+l$`@8i
+l$`D;l$p
+l$`D;l$t
+l$`D8
+l$`E3
+L$`E3
+L$`fA
+L$`fA;
+l$`fD
+L$`fD
+L$`H#
+l$`H;
+L$`H+L$hH
+L$`H3
+L$`t5H
+L$0;Q r
+L$0A;
+l$0A;
+l$0A9n
+L$0D;
+L$0D9
+l$0E;
+L$0E3
+l$0fD
+L$0fD
+l$0fD
+L$0fff
+L$0H;
+L$0H+
+L$0H3
+L$0L;O
+L$0L+
+L$4 L
+l$4D;
+L$4D;
+l$4E;
+l$4H;
+l$4I;
+l$4L;
+l$4M;
+L$6fA
+L$8;Q(r
+L$89H
+l$8A;
+l$8D!l$@E
+L$8D;
+l$8D;
+L$8D+
+L$8E;
+l$8E;}(r
+L$8E;a(r
+L$8E;i(r
+L$8E;y(r
+l$8E3
+L$8E3
+L$8fB
+L$8H+
+L$8H3
+l$8I;
+L$8I;
+L$8I;9
+L$8M;
+L$DE3
+L$H!C
+L$hA9\
+l$HD;
+l$hD;l$l
+l$HD;l$X
+l$hD8
+l$HE;}(r
+l$HE3
+L$hE3
+l$hE3
+l$HE3
+L$hE3
+L$hf;
+l$hfD
+L$HfD
+L$hfD
+L$HfD;
+L$HH;
+l$HH;
+L$hH;
+L$HH;
+L$HH;L$H
+L$HH+
+L$hH+
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH97
+L$HHc
+l$HL;
+l$hM+
+L$P;N
+L$P;Q(r
+l$PD;
+L$PE;i(r
+L$PE;y(r
+L$PE3
+L$pH!]
+l$PH;
+L$PH;
+L$PH;L$h
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pHc
+l$PL;
+L$Pt2H
+L$RE3
+L$xA;
+L$xD9`
+L$XE3
+L$xE3
+L$XE3
+L$xE3
+L$XE3
+L$xE3
+L$XE3
+l$xfD
+l$XfD
+l$XfE
+l$XH#
+L$xH;
+L$XH;
+L$xH;
+l$xH;]
+L$XH;L$h
+L$XH+
+L$XH3
+L$xH3
+L$XH3
+L$xH3
+L$XH3
+L$xI;
+L$xIi
+L$xL#
+L;{@r
+L;{8r
+L;|$Pt
+L;d$x
+L;d$xu
+L;L$`u
+L;Q w
+L;S s
+L;t$@
+L;u0r
+L;V s
+L;W s
+L;X r
+L+AXH
+L9#tAI
+L9#u H
+L9&uFH
+L9?tzH
+L9\$xE
+L9{8t
+L9{Hu
+L9|$(t
+L9|$0t
+L9|$8t
+L9|$xv;H
+L9}0t
+L96t3H
+L9A r
+L9A s
+L9a@uE
+L9fPv
+L9I(A
+L9mXL
+L9q0tfH
+L9t$@u
+L9t$H
+L9t$X
+L9u t
+L9u@t
+L9u0v
+L9y@tuA
+LcA H
+LcF I
+LCIDToLocaleName
+LCMapStringEx
+LCMapStringW
+LeaveCriticalSection
+LegalCopyright
+length
+Like: %s
+lineNumber
+LineNumber
+list too long
+Literal Bookmarks
+Literal Row Identity
+lllllllpppppppuuuuuuuyyyyyyy}}}}}}}
+LMNOPQQQRQQQSQTUVWQXQYLZ[\]^_`LaLbcdefLghijLkLLLmnmnqr
+LoadLibraryExW
+LoadLibraryW
+LoadResource
+LoadStringW
+Local\SM0:%lu:%lu:%hs
+Locale
+Locale Identifier
+LocaleNameToLCID
+LocalFree
+Location
+LockResource
+LogHr
+LogNt
+LogonEventSessionEndWithThreshold
+lower
+LPSTR, 
+LPWSTR
+LPWSTR, 
+LSID\%ws\InProcServer32
+lstrcmpiW
+lstrcmpW
+lstrlenA
+M H1E
+M#u0M
+M#w0M
+M;B t-E98u(fA
+M;u0H
+M;ZhvtA
+M+VPI
+m0H9AH
+m4H+L$HH
+M8H+D$xI
+M9/t"M+
+M9A(t
+M9g8v(I
+M9't H
+MachineName
+map/set too long
+MappingFreePropertyBag
+MappingGetServices
+MappingRecognizeText
+MapViewOfFile
+masterMerge
+Max">
+MaxCursorsUsed
+MaxDocuments
+MaxEntriesFlushed
+MaxEntriesStored
+maximum
+Maximum Open Chapters
+Maximum Open Rows
+Maximum Rank
+Maximum Row Size
+Maximum Rows
+Maximum Tables in SELECT
+MaxKeyCount
+MaxPerUserCatalog
+MaxWordList
+MD5 Unchanged - Not commiting the following properties:
+MD5Final
+MD5Init
+MD5Update
+MEDIAEDITOR
+MediaEditor
+MedianKeyCount
+MEDIAOWNER
+MediaOwner
+MEDIAPRODUCTION
+MediaProduction
+MEDIAPROJECT
+MediaProject
+MediaRating
+MEDIARATING
+MediaSequence_No
+MEDIASEQUENCE_NO
+MEDIASOURCE
+MediaSource
+MEDIASTATUS
+MediaStatus
+MEDIASUPPLIER
+MediaSupplier
+memchr
+memcmp
+memcpy
+memmove
+Memory Usage
+memset
+MERGE
+MERGE BACKOUT: (Indexes: %d - %d  size: %d into: %d, level: %d)
+MERGE COMPLETE: (Indexes: %d - %d  size: %d into: %d, level: %d)
+MERGE STARTING: (Indexes: %d - %d  size: %d into: %d, level: %d) 
+MergedKey
+MergeIndicesPerLevel
+MergeLevel
+MergeLevelAfterMax
+MergeTime
+message
+Message
+message
+MH;D$`
+mHighest
+Microsoft Corporation
+Microsoft OLE DB Provider for Microsoft Indexing Service
+Microsoft Tripoli Query
+Microsoft.Windows.Search.Indexer
+Microsoft.Windows.Search.Indexer.Aggregated.High
+Microsoft.Windows.Search.Indexer.Aggregated.Low
+Microsoft.Windows.Search.Indexer.Aggregated.Medium
+Microsoft.Windows.Search.Indexer.Aggregated.Normal
+Microsoft.Windows.Search.Indexer.Diagnostics
+Microsoft.Windows.Search.Indexer.Trace
+Microsoft.Windows.Search.Indexer.WorkAttribution
+Microsoft.Windows.TlgAggregateInternal
+MicrosoftTelemetryAssertTriggeredUM
+Min">
+MinEntriesFlushed
+minimum
+MINIMUM, MAXIMUM, JACCARD COEFFICIENT, DICE COEFFICIENT, INNER PRODUCT
+MinKeyCount
+MINUTE
+module
+Module
+module
+Module_Raw
+MONTH
+mOt3D
+movie
+MPB9L 
+MsFteWds
+MsFteWds_Container_%ws
+Msg:[%ws] 
+MSGARTICLEID
+MsgArticleID
+MsgDate
+MSGDATE
+MSGFROM
+MsgFrom
+MsgMessageID
+MSGMESSAGEID
+MSGNEWSGROUP
+MsgNewsgroup
+MSGNEWSGROUPS
+MsgNewsgroups
+MSGRECEIVEDDATE
+MsgReceivedDate
+MsgReferences
+MSGREFERENCES
+MsgSubject
+MSGSUBJECT
+msvcp_win.dll
+MultiByteToWideChar
+Multiple Parameter Sets
+Multiple Results
+Multiple Storage Objects
+Multiply
+music
+MusicStackThumbnailCacheIds
+Mwf9H
+N f9H
+N H#MHH
+N I;N(t
+N@L9!t
+N`I+NXH
+n0A;}
+N0I;N8
+N0I;N8t
+Natural Lang"><Phrase>
+nb-NO
+NetApiBufferFree
+NetShareGetInfo
+netutils.dll
+network
+Neutral
+NEUTRAL
+neutral
+NEWSARTICLEID
+NewsArticleId
+NEWSDATE
+NewsDate
+NEWSFROM
+NewsFrom
+NewsGroup
+NEWSGROUP
+NEWSGROUPS
+NewsGroups
+NewsMsgId
+NEWSMSGID
+NEWSRECEIVEDDATE
+NewsReceivedDate
+NEWSREFERENCES
+NewsReferences
+NEWSSUBJECT
+NewsSubject
+NLIRRANK
+NLIRRank
+NLS Version
+NLS Version (Defined)
+No content op tree created.
+No freetext op tree created.
+NoiseFile
+None"></Rst>
+NOPQRSTUVWXDEFG
+NoRemove
+Not">
+not_supported_alpha
+not_supported_alpha64
+not_supported_arm32on64
+not_supported_ia32on64
+not_supported_ia64
+not_supported_mips
+not_supported_msil
+not_supported_ppc
+not_supported_shx
+Notification Phases
+NPI9J
+NtClose
+ntdll.dll
+ntelA
+NtQuerySecurityAttributesToken
+NtQueryWnfStateData
+NtUpdateWnfStateData
+NULL 
+NULL Collation Order
+NULL, 
+NumAllocationFailures
+NUMBER
+NumBucketLimitReached
+NumFlushes
+NumLargeEventFailures
+NXD9D
+nXH;nx
+O 9A(t
+o*~e3
+O:%sD:(A;;0xC0100000;;;%s)(A;;0xC0100000;;;SY)(A;;0xC0100000;;;BA)(A;;0xC0100000;;;BG)(A;;0xC0100000;;;S-1-15-3-1024-724741592-1210917904-489960769-637019204-3345707629-3097053430-1727148295-85063603)(A;;0xC0100000;;;S-1-15-2-128907917-1049808183-3772720920-2589851895-2273257875-2082631859-2896883434)(A;;0xC0100000;;;S-1-15-2-1861897761-1695161497-2927542615-642690995-327840285-2659745135-2630312742)
+O:SYD:(A;;0xC0100000;;;SY)(A;;0x0012019B;;;AU)(A;;0x0012019B;;;BA)(A;;0x0012019B;;;BG)(A;;0x0012019B;;;S-1-15-3-1024-724741592-1210917904-489960769-637019204-3345707629-3097053430-1727148295-85063603)(A;;0x0012019B;;;S-1-15-3-128907917-1049808183-3772720920-2589851895-2273257875-2082631859-2896883434)(A;;0x0012019B;;;S-1-15-3-1861897761-1695161497-2927542615-642690995-327840285-2659745135-2630312742)
+o\$PH
+O0LcG<H
+OccID
+OccPage
+oD$ f
+OD~CP
+OfD92s
+Oh9i(t
+oHD90vmH
+OhH9O
+oL$0f
+OLE DB Services
+OLE DB Version
+OLE Object Support
+OLEAUT32.dll
+ON, OFF
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+onecore\internal\sdk\inc\wil\opensource\wil\result_macros.h
+onecore\internal\sdk\inc\wil\opensource\wil\token_helpers.h
+onecore\internal\sdk\inc\wil\Resource.h
+onecore\internal\sdk\inc\wil\Staging.h
+onecoreuap\base\appmodel\search\common\containerhelper\containerhelper.cpp
+onecoreuap\base\appmodel\search\common\edphelper\edphelper.cpp
+onecoreuap\Base\appmodel\Search\common\include\access_token_provider.h
+onecoreuap\Base\appmodel\Search\common\include\DatabaseEngineOverride.h
+onecoreuap\Base\appmodel\Search\common\include\lmstr.hxx
+onecoreuap\Base\appmodel\Search\common\include\OleError.h
+onecoreuap\Base\appmodel\Search\common\include\PerUserCatalogResetHelper.h
+onecoreuap\Base\appmodel\Search\common\include\PrivateComActivationHelper.h
+onecoreuap\Base\appmodel\Search\common\include\recovery.h
+onecoreuap\Base\appmodel\Search\common\include\SearchTraceAggregatedProvider.h
+onecoreuap\Base\appmodel\Search\common\include\SearchTraceWorkAttribution.h
+onecoreuap\Base\appmodel\Search\common\include\sparse_bit.h
+onecoreuap\Base\appmodel\Search\common\include\strsafeex.hxx
+onecoreuap\Base\appmodel\Search\common\include\thread_access_token_context.h
+onecoreuap\Base\appmodel\Search\common\include\thread_impersonation_token.h
+onecoreuap\Base\appmodel\Search\common\include\TPUtils.h
+onecoreuap\Base\appmodel\Search\common\include\usersidhelper.h
+onecoreuap\Base\appmodel\Search\common\include\utf8.h
+onecoreuap\Base\appmodel\Search\common\include\WinRAIIThrowing.h
+onecoreuap\base\appmodel\search\common\jobmanager\jobmanager.cpp
+onecoreuap\base\appmodel\search\common\pkmutild\lmstr.cxx
+onecoreuap\base\appmodel\search\common\pkmutild\namestr.cxx
+onecoreuap\base\appmodel\search\common\screenonsession\screenoneventmanager.cpp
+onecoreuap\base\appmodel\search\common\secstoreblob\secstoreblob.cpp
+onecoreuap\base\appmodel\search\common\staterepositoryhelper\staterepositoryhelper.cpp
+onecoreuap\base\appmodel\search\common\stgvar\dbcmdbas.cxx
+onecoreuap\base\appmodel\search\common\stgvar\stgvara.cxx
+onecoreuap\base\appmodel\search\common\stgvar\stgvarb.cxx
+onecoreuap\base\appmodel\search\common\sysimprs\sysimprs.cxx
+onecoreuap\base\appmodel\search\common\telemetry\telemetry.cpp
+onecoreuap\base\appmodel\search\common\utils\regredirect.cxx
+onecoreuap\base\appmodel\search\common\volumeidurl\volumeid.cxx
+onecoreuap\base\appmodel\search\tquery\bigtable\colinfo.cxx
+onecoreuap\base\appmodel\search\tquery\bigtable\conpt.cxx
+onecoreuap\base\appmodel\search\tquery\bigtable\dberror.cxx
+onecoreuap\base\appmodel\search\tquery\bigtable\hraccess.cxx
+onecoreuap\base\appmodel\search\tquery\bigtable\odbvarnt.cxx
+onecoreuap\base\appmodel\search\tquery\bigtable\rowbuf.cxx
+onecoreuap\base\appmodel\search\tquery\bigtable\rownotfy.cxx
+onecoreuap\base\appmodel\search\tquery\bigtable\rowseek.cxx
+onecoreuap\base\appmodel\search\tquery\bigtable\rowset.cxx
+onecoreuap\base\appmodel\search\tquery\bigtable\svcproxy.cxx
+onecoreuap\base\appmodel\search\tquery\bigtable\tablecol.cxx
+onecoreuap\base\appmodel\search\tquery\bigtable\tablecur.cxx
+onecoreuap\base\appmodel\search\tquery\bigtable\tblalloc.cxx
+onecoreuap\base\appmodel\search\tquery\bigtable\tblvarnt.cxx
+onecoreuap\base\appmodel\search\tquery\cicommon\ciexcpt.cxx
+onecoreuap\base\appmodel\search\tquery\cicommon\crequest.cxx
+onecoreuap\base\appmodel\search\tquery\cicommon\idxpmlib.cxx
+onecoreuap\base\appmodel\search\tquery\cicommon\istrmfil.cxx
+onecoreuap\base\appmodel\search\tquery\cidso\datasrc.cxx
+onecoreuap\base\appmodel\search\tquery\cidso\parsver.cxx
+onecoreuap\base\appmodel\search\tquery\cidso\session.cxx
+onecoreuap\base\appmodel\search\tquery\cifrmwrk\cimanger.cxx
+onecoreuap\base\appmodel\search\tquery\cifrmwrk\qoptimiz.cxx
+onecoreuap\base\appmodel\search\tquery\cifrmwrk\queryserver.cxx
+onecoreuap\base\appmodel\search\tquery\cifrmwrk\restparser.cpp
+onecoreuap\base\appmodel\search\tquery\cifrmwrk\restvolumeparser.cpp
+onecoreuap\base\appmodel\search\tquery\cifrmwrk\srequest.cxx
+onecoreuap\base\appmodel\search\tquery\cifrmwrk\srequest.hxx
+onecoreuap\base\appmodel\search\tquery\deflang\defbreak.cxx
+onecoreuap\base\appmodel\search\tquery\dll\legacyexports.cpp
+onecoreuap\base\appmodel\search\tquery\dll\pkmcntrs.cxx
+onecoreuap\base\appmodel\search\tquery\filtereg\filterregistration.cxx
+onecoreuap\base\appmodel\search\tquery\filtereg\languageregistry.cxx
+onecoreuap\base\appmodel\search\tquery\filtereg\languageresources.cxx
+onecoreuap\Base\appmodel\Search\tquery\fteinclude\tripoliLangRes.hxx
+onecoreuap\base\appmodel\search\tquery\fteutil\enumstr.cxx
+onecoreuap\base\appmodel\search\tquery\fteutil\eventlog.cxx
+onecoreuap\base\appmodel\search\tquery\fteutil\eventsem.cxx
+onecoreuap\base\appmodel\search\tquery\fteutil\fsutil.cxx
+onecoreuap\Base\appmodel\Search\tquery\fteutil\include\serover.hxx
+onecoreuap\base\appmodel\search\tquery\fteutil\jetutil.cpp
+onecoreuap\base\appmodel\search\tquery\fteutil\normalizer.cxx
+onecoreuap\base\appmodel\search\tquery\fteutil\perflib.cxx
+onecoreuap\base\appmodel\search\tquery\fteutil\pmlib.cxx
+onecoreuap\base\appmodel\search\tquery\fteutil\pmswap.cxx
+onecoreuap\base\appmodel\search\tquery\fteutil\secutil.cxx
+onecoreuap\base\appmodel\search\tquery\fteutil\url.cxx
+onecoreuap\base\appmodel\search\tquery\ftsqlpar\colname.hxx
+onecoreuap\base\appmodel\search\tquery\ftsqlpar\iparsess.cxx
+onecoreuap\base\appmodel\search\tquery\icommand\cmdprutl.cxx
+onecoreuap\base\appmodel\search\tquery\icommand\colgrp.cxx
+onecoreuap\base\appmodel\search\tquery\icommand\fakerowset.cxx
+onecoreuap\base\appmodel\search\tquery\icommand\parsexpr.cxx
+onecoreuap\base\appmodel\search\tquery\icommand\parstree.cxx
+onecoreuap\base\appmodel\search\tquery\icommand\parstree.hxx
+onecoreuap\base\appmodel\search\tquery\icommand\propbase.cxx
+onecoreuap\base\appmodel\search\tquery\icommand\proprst.cxx
+onecoreuap\base\appmodel\search\tquery\icommand\qryspec.cxx
+onecoreuap\base\appmodel\search\tquery\icommand\searchquery.cpp
+onecoreuap\base\appmodel\search\tquery\icommand\stdqspec.cxx
+onecoreuap\base\appmodel\search\tquery\icommand\svccatpx.hxx
+onecoreuap\base\appmodel\search\tquery\icommand\svcquery.cxx
+onecoreuap\base\appmodel\search\tquery\icommand\vquery.cxx
+onecoreuap\Base\appmodel\Search\tquery\include\atlext.hxx
+onecoreuap\Base\appmodel\Search\tquery\include\dynarray.hxx
+onecoreuap\Base\appmodel\Search\tquery\include\errormsg_tripoli.hxx
+onecoreuap\Base\appmodel\Search\tquery\include\eventsem_tripoli.hxx
+onecoreuap\Base\appmodel\Search\tquery\include\IncrementalCompressor.h
+onecoreuap\Base\appmodel\Search\tquery\include\IndexDefinition.h
+onecoreuap\Base\appmodel\Search\tquery\include\indexdefinition.h
+onecoreuap\Base\appmodel\Search\tquery\include\Intervals.h
+onecoreuap\Base\appmodel\Search\tquery\include\secutil_tripoli.hxx
+onecoreuap\Base\appmodel\Search\tquery\include\smartcls_tripoli.hxx
+onecoreuap\Base\appmodel\Search\tquery\include\strres.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\accbase.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\catalog.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\crequest.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\dbgproxy.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\funypath.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\hraccess.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\lcase.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\proxymsg.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\psavtrak.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\rowseek.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\tablecur.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\tblalloc.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\tgrow.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\thrd32.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\VIQuery.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\WIDToOffset.hxx
+onecoreuap\Base\appmodel\Search\tquery\internal\include\worker.hxx
+onecoreuap\base\appmodel\search\tquery\inverted\cursorallarray.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\cursorandornot.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\cursorarray.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\cursorbitwise.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\cursorlike.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\cursorreusewhere.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\cursorscope.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\CursorUtils.h
+onecoreuap\base\appmodel\search\tquery\inverted\decodinglayer.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\decodinglayeroccurrences.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\decodinglayerpages.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\DecodingLayerPages.h
+onecoreuap\base\appmodel\search\tquery\inverted\encodinglayer.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\freshtest.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\include\JetDatabaseConnection.h
+onecoreuap\Base\appmodel\Search\tquery\inverted\include\Operators.h
+onecoreuap\base\appmodel\search\tquery\inverted\invertedindex.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\invertedutils.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\jetcatalogmanagertable.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\jetcatalogpropertystoretable.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\jetcatalogtable.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\jetindexdatatable.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\jetindexoccurrencetable.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\jetpropertybagtable.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\operators.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\optimizer.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\query.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\simple256decompressor.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\sortcursor.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\storagelayer.cpp
+onecoreuap\base\appmodel\search\tquery\inverted\wordlist.cpp
+onecoreuap\base\appmodel\search\tquery\mssci\defprp.cxx
+onecoreuap\base\appmodel\search\tquery\mssci\prpret.cxx
+onecoreuap\base\appmodel\search\tquery\mssci\qrysess.cxx
+onecoreuap\base\appmodel\search\tquery\mssci\scopelist.cxx
+onecoreuap\base\appmodel\search\tquery\mssci\seccache.cxx
+onecoreuap\base\appmodel\search\tquery\ntciutil\circstob.cxx
+onecoreuap\base\appmodel\search\tquery\ntciutil\cistore.cxx
+onecoreuap\base\appmodel\search\tquery\ntciutil\file.cxx
+onecoreuap\base\appmodel\search\tquery\ntciutil\include\rcstrmit.hxx
+onecoreuap\base\appmodel\search\tquery\ntciutil\phystr.cxx
+onecoreuap\base\appmodel\search\tquery\ntciutil\pidtable.cxx
+onecoreuap\base\appmodel\search\tquery\ntciutil\prcstob.cxx
+onecoreuap\base\appmodel\search\tquery\ntciutil\propmap.cxx
+onecoreuap\base\appmodel\search\tquery\ntciutil\rcstxact.cxx
+onecoreuap\base\appmodel\search\tquery\ntciutil\secstore.cxx
+onecoreuap\base\appmodel\search\tquery\ntciutil\worker.cxx
+onecoreuap\base\appmodel\search\tquery\ntciutil\wsecstor.cxx
+onecoreuap\base\appmodel\search\tquery\qlib2\cidbprop.cxx
+onecoreuap\base\appmodel\search\tquery\qlib2\dbprputl.cxx
+onecoreuap\base\appmodel\search\tquery\qlib2\driveinf.cxx
+onecoreuap\base\appmodel\search\tquery\qlib2\mmstrm.cxx
+onecoreuap\base\appmodel\search\tquery\qlib2\regacc.cxx
+onecoreuap\base\appmodel\search\tquery\qlib2\shtole.cxx
+onecoreuap\base\appmodel\search\tquery\querylib\doquery.cxx
+onecoreuap\base\appmodel\search\tquery\querylib\lgplist.cxx
+onecoreuap\base\appmodel\search\tquery\querylib\plist.cxx
+onecoreuap\base\appmodel\search\tquery\querylib\weblcid.cxx
+onecoreuap\base\appmodel\search\tquery\restrict\coldesc.cxx
+onecoreuap\base\appmodel\search\tquery\restrict\irest.cxx
+onecoreuap\base\appmodel\search\tquery\restrict\pickle.cxx
+onecoreuap\base\appmodel\search\tquery\restrict\pidmap.cxx
+onecoreuap\base\appmodel\search\tquery\restrict\pidremap.cxx
+onecoreuap\base\appmodel\search\tquery\restrict\restrict.cxx
+onecoreuap\Base\appmodel\Search\tquery\tripoli\include\smart_tripoli.hxx
+onecoreuap\Base\appmodel\Search\tquery\tripoli\include\smart2.hxx
+onecoreuap\Base\appmodel\Search\tquery\tripoli\include\xolemem.hxx
+onecoreuap\base\appmodel\search\tquery\tripolipi\hybriddatabaseenginebuilder.cpp
+onecoreuap\base\appmodel\search\tquery\tripolipi\invertedapplication.cpp
+onecoreuap\base\appmodel\search\tquery\tripolipi\inverteddocument.cpp
+onecoreuap\base\appmodel\search\tquery\tripolipi\invertedproject.cpp
+onecoreuap\base\appmodel\search\tquery\tripolipi\invertedquery.cpp
+onecoreuap\base\appmodel\search\tquery\tripolipi\jetdatabase.cpp
+onecoreuap\base\appmodel\search\tquery\tripolipi\jetdatabaseenginebuilder.cpp
+onecoreuap\base\appmodel\search\tquery\tripolipi\propstorereader.cxx
+onecoreuap\base\appmodel\search\tquery\tripolipi\proputils.cxx
+onecoreuap\base\appmodel\search\tquery\tripolipi\sqlitedatabase.cpp
+onecoreuap\base\appmodel\search\tquery\tripolipi\sqlitedatabaseenginebuilder.cpp
+onecoreuap\base\appmodel\search\tquery\tripolipi\vityperet.cxx
+onecoreuap\base\appmodel\search\tquery\txtfilt\mmistrm.cxx
+onecoreuap\base\appmodel\search\tquery\txtfilt\tfilt.cxx
+onecoreuap\base\appmodel\search\tquery\valueindex\aggregate.cxx
+onecoreuap\base\appmodel\search\tquery\valueindex\aggregatesorter.cxx
+onecoreuap\base\appmodel\search\tquery\valueindex\group.cxx
+onecoreuap\base\appmodel\search\tquery\valueindex\groupcursor.cxx
+onecoreuap\base\appmodel\search\tquery\valueindex\grouper.cxx
+onecoreuap\base\appmodel\search\tquery\valueindex\offsettovalue.cxx
+onecoreuap\base\appmodel\search\tquery\valueindex\scopeinfo.cxx
+onecoreuap\base\appmodel\search\tquery\valueindex\valueindex.cxx
+onecoreuap\base\appmodel\search\tquery\valueindex\vicursor.cxx
+onecoreuap\base\appmodel\search\tquery\valueindex\vimanager.cxx
+onecoreuap\base\appmodel\search\tquery\valueindex\viquery.cxx
+onecoreuap\base\appmodel\search\tquery\valueindex\widtooffset.cxx
+onecoreuap\base\appmodel\search\tquery\xpr\compare.cxx
+onecoreuap\base\appmodel\search\tquery\xpr\fa.cxx
+onecoreuap\base\appmodel\search\tquery\xpr\state.cxx
+onecoreuap\base\appmodel\search\tquery\xpr\xlatchar.cxx
+OpenEventW
+OpenFileMappingW
+OpenProcess
+OpenProcessToken
+OpenSCManagerW
+OpenSemaphoreW
+OpenServiceW
+OpenThreadToken
+OpenThreadToken() failed with error %#x
+Or" Count="
+ORDER BY Columns in Select List
+Original
+OriginalFilename
+OriginalPersistentHandler
+originatingContextId
+originatingContextMessage
+originatingContextName
+oT$@f
+Others' Changes Visible
+Others' Inserts Visible
+Output Parameter Availability
+OutputDebugStringW
+OverrideProperties
+Owner
+p _P2
+p AWH
+P I9UXt
+p WATAUAVAWH
+p WAVAWH
+p!PZa
+p!Qva
+p"W2;
+p"Yz*
+p#]4S
+p#Y>3
+p(^4d
+P(I;P0uwL
+p)Z4^
+p*SZI/<
+p:_0#
+p:_Z<
+p:T~Q
+p;\pI
+p;Rtm
+p;UT[
+P_^]H
+p`Wvp'
+p+Q|d
+p+V4p
+P>V/d
+p0\:#7
+p0\Ps
+p08B0
+p0X44
+p1QzL
+p2]^S.I
+p2W8{
+p3Rxk
+p3UX>
+p3WT}
+P4%/X
+P6%?4
+p6]L!
+p9Qzd&
+p9Y>S
+PA^_^
+pA^_^
+pA^_^[]
+PA^_^[]
+pA^_^[]
+PA^_^[]
+PA^_^][
+pA^_^][
+PA_A^_^[
+PA_A^_^]
+pA_A^_^]
+PA_A^_^]
+pA_A^_^]
+PA_A^_^]
+pA_A^_^]
+PA_A^_^]
+pA_A^A\_^
+PA_A^A\_^
+pA_A^A\_^[]
+PA_A^A\_^[]
+pA_A^A\_^[]
+PA_A^A\_^][
+pA_A^A]A\_^[
+PA_A^A]A\_^[
+pA_A^A]A\_^[
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+pa-Arab
+PackageFamilyNames
+PageSize
+pAQ:g
+parent
+ParseContentRestriction: GenerateMethod 0x%x > GENERATE_METHOD_MAX_USER
+ParseNearRestriction: Invalid child operator %d
+ParsePropertyRestriction: Invalid comparison operator %d
+ParsePropertyRestriction: Invalid property
+ParsePropertyRestriction: pidAll property value query
+ParseRestriction: Invalid restriction type %d
+ParseRestriction: Max restriction tree depth exceeded.
+PartA_PrivTags
+Partial Item Update Commited - Updated PIDs:
+Partition
+paS|+
+Pass By Ref Accessors
+pASzr?}
+path:
+PathCchFindExtension
+PathFileExistsW
+PathFindExtensionW
+PathIsRootW
+PathIsSameRootW
+PathStripPathW
+pB[|W
+pBZR)
+pC_:!?<
+pCPr$
+pcPZt
+pcU>>
+PEDP://IntentEnterpriseId
+PeekNamedPipe
+Percentage
+PerfmonClose
+PerfmonCollect
+PerfmonIDXClose
+PerfmonIDXCollect
+PerfmonIDXOpen
+PerfmonOpen
+Perform OR freetext query by default
+Perform stemming on freetext query
+Persistent ID Type
+PerVolumeCatalogs
+pH;{8
+pH;k8r
+PHH;PPteH
+phPpo/@
+Phrase
+Phrase" Count="
+pHWr|.
+picture
+pid = 0x%x
+pid = 0x%x, %ws
+pid = 0x%x, propid = %u
+PID deleted by omission: %d
+PIDTABLE
+PIDTABLEI9
+piX:2
+piZ:@
+pJ\\6.
+pJ^|T
+pJQ|2
+pjSt=
+pjY>e'H
+pk\T8
+pK\zn
+PolicyManager_GetPolicyInt
+PolicyManager_IsPolicySetByMobileDeviceManager
+poS8 
+PostMergeIndiceCount
+PostMergeLevel
+PostMergeMaxId
+PostMergeMinId
+pP%H+
+pP%L+
+pP\<I6
+PpfA;
+pPSr`/
+PPTP00
+PPTP00#
+PPTP008
+PPTP00C
+PPTP00J
+PPTP00k
+PPTP00u\
+PPTP00u4
+PPTP00ud
+PPTP00uD
+PPTP00ut
+PPTP00uT
+pPYrl
+pQRv3
+pr\4m?
+PRAGMA cache_size=-512;
+PRAGMA freelist_count;
+PRAGMA journal_mode=WAL;
+PRAGMA page_count;
+PRAGMA synchronous=NORMAL;
+PreMergeIndiceCount
+PreMergeLevel
+PreMergeMaxId
+PreMergeMinId
+PreventIndexingEmailAttachments
+PreventIndexingLowDiskSpaceMB
+PreventIndexingOfflineFiles
+PreventIndexingOutlook
+PreventIndexingPublicFolders
+PreventIndexingUncachedExchangeFolders
+PreventRemoteQueries
+print
+Private
+Prob" Count="
+Process
+product
+ProductName
+ProductVersion
+Prompt
+Property
+Property values buffer too long.
+Property">
+PropertyBag
+PropertyCompare
+PropertyID
+PropertyMapper
+PropertyStore
+PROPSYS.dll
+PropVariantChangeType
+PropVariantClear
+PropVariantCompareEx
+PropVariantCopy
+PropVariantGetElementCount
+PropVariantGetStringElem
+PropVariantGetUInt32Elem
+PropVariantToUInt32VectorAlloc
+PropVariantToUInt32WithDefault
+PropVariantToUInt64
+ProtectStatus
+Protocol
+ProtocolCount
+Protocols
+ProtocolString
+Provider
+Provider capabilities
+Provider Friendly Name
+Provider Name
+Provider Version
+Proximity
+Proximity" Count="
+prPv`
+prSP7
+PSCreateMemoryPropertyStore
+PSFormatForDisplay
+PSFormatForDisplayAlloc
+PSGetNameFromPropertyKey
+PSGetPropertyDescription
+PSGetPropertyDescriptionByName
+PSGetPropertySystem
+pSXx{
+pSY^m&
+PT-BR
+pt-BR
+Public
+punct
+PUTPeee
+pX^\R&
+pxTXA
+q _P2
+Q H;Q
+q!Qva
+q"Yz*
+q#]4S
+q#Y>3
+q(^4d
+Q(H9Q
+q)Z4^
+q:_0#
+q:T~Q
+q:TRY
+q:Z\d
+q;\pI
+q;Rtm
+q;UT[
+q@]VB6)
+q@TxW7h
+q[P0d
+q[Q|,
+q[X2??4
+Q`H+QXH
+Q`L;I@
+q`Wvp'
+q{Sr"
+q+Q|d
+q+V4p
+q0\Ps
+-Q0QQQQQQ:Q=>QQQBi
+q0R^G'
+q0X44
+q1[|<
+q1P:/
+q1QzL
+q1T|].Q
+q2W8{
+q2XR_
+q3Rxk
+q3UX>
+q3WT}
+Q8I9Q
+q8T^*
+q9Wp^
+qAQ:g
+qaS|+
+qASzr?}
+qB[|W
+qbQ^?
+qBZR)
+qC_:!?<
+QCCRRRRQQOFFRRQQQQQQQQQQQQQQQQQQ
+qCPr$
+qcU>>
+qDuration
+qerror
+qExtension
+qFileName
+QFODCP
+qh\487P
+QH9C@
+qhPpo/@
+qHWr|.
+qi[P%6
+qi^66
+qi_4@
+QISearch
+qiX:2
+qiZ:@
+qJ\\6.
+qJ^|T
+qJQ|2
+qk\T8
+qK\zn
+qkUvA?
+qKVX2
+qP[\=
+QPH;QX
+qPSr`/
+qPYrl
+QQ!"#,QQQQQy
+QQ()+QQQQQQQQQ9Q;QQQQQQQ
+QQ4QQQ
+QQGQQQQQQ
+QQQ QQ5Q7
+QQQ8@fu
+QQQQ<?QAir
+QQQQQ
+QQQQQQ
+QQQQQQQQ
+QQQQQQQQQQQQQ
+QQQQQQQQQQQQQQ$QQQQQ.QQQQQQQQQQQQQQQ
+QQQQQQQQQQQQQQQQQQQQQQ
+qQQT/
+qQRv3
+qQueryDuration_ms
+qR\pW
+qrPv`
+qrSP7
+qRXPz
+qSXx{
+qSY^m&
+qTt&M
+Query Parse Tree
+Query Restriction
+QUERY: Filter Executed - Results: %d  (before trimming)
+QUERY: Filter Executed - Results: %d, Decoders: %d  (after trimming)
+QUERY: Starting - Decoders: %d
+QueryFullProcessImageNameW
+QueryHitCount
+QueryHitPKEYs
+QueryParserRecursionLimitReach
+QueryPerformanceCounter
+QueryRank
+QueryRankvector
+QueryServiceStatus
+QueryStatus
+QueryStatusEx
+QueryUnbiasedInterruptTime
+QueryUnfiltered
+QueryUserToken
+QueryVirtualPath
+QueryWin32SubsystemHost
+QueueUserAPC
+Quick Restart
+qxTXA
+qyV00
+r ;T$Ts
+r A;^
+r A;U
+r D;O
+r!A;T$
+r!A;W
+r!E;~
+r"A;w
+r#A;V
+r$D;f
+R$fA;Z*sZI
+r(A;T$
+r*H+A
+r:A;A
+r:E;O
+r;A;A
+r<A;A
+r=A;A
+r>A;A
+r2H9S8v,H
+r3H9S8v-H
+r8A;C
+r9A;@
+RaiseException
+RaiseFailFastException
+Range
+Range">
+RankVector
+RANKVECTOR
+RatioFinished
+rCE;K
+RcovStorageObj1
+RcovStorageObj2
+RcovStorageObj3
+RcovStorageTrans1
+ReadFile
+ReadFileEx
+Read-Only Data Source
+reason
+RebuildIndex
+recordedtv
+Reentrant Events
+Refresh
+RegCloseKey
+RegCreateKeyExW
+RegDeleteKeyExW
+RegDeleteKeyW
+RegDeleteValueW
+RegEnumKeyExW
+RegEnumValueW
+RegGetValueW
+RegisterEventSourceW
+REGISTRY
+RegNotifyChangeKeyValue
+RegOpenKeyExW
+RegQueryInfoKeyW
+RegQueryValueExW
+RegSetValueExW
+ReleaseMutex
+ReleaseSemaphore
+ReleaseSRWLockExclusive
+ReleaseSRWLockShared
+Remote sort order consistent with client machine
+Remove Deleted Rows
+RemoveDirectoryW
+RemoveScope
+RemoveVirtualScope
+Replacing variant with size %d and offset 0x%x 
+ReportEventW
+REPRESENTATIVE_
+RequestedResults
+Reset Datasource
+ResetEvent
+Reseting variant with size %d and offset 0x%x 
+ResolveDelayLoadedAPI
+ResolveLocaleName
+RestartPosition
+Results Found
+ResumePseudoQuery
+ResumeThread
+RetailTracerDisable
+RetailTracerEnable
+RetailTracerReleaseAll
+Return PROPVARIANTs in variant binding
+ReturnHr
+ReturnNt
+ReuseWhere
+RevertToSelf
+RevertToSelf() failed with error %d
+RevertToSelf() failed with error 0x%08x.
+RfA9T
+rH;D$`
+rmE;C
+RoGetActivationFactory
+ROLLBACK TRANSACTION;
+RoOriginateLanguageException
+Row Length: Win32 %d Win64 %d
+Row Privileges
+Row Threading Model
+RowCount
+RowCountAccurate
+RowID
+Rowset Async Notification Thread
+Rowset Conversions on Command
+Rowset Fetch Position Change Notification
+Rowset Query Status
+Rowset Release Notification
+RpA.i
+rqM;;tlE
+rqstsrv H
+RtlAllocateHeap
+RtlCaptureContext
+RtlCompareMemory
+RtlCompareUnicodeString
+RtlDisownModuleHeapAllocation
+RtlDllShutdownInProgress
+RtlFreeHeap
+RtlGetPersistedStateLocation
+RtlInitUnicodeString
+RtlIsStateSeparationEnabled
+RtlLookupFunctionEntry
+RtlNotifyFeatureUsage
+RtlNtStatusToDosError
+RtlNtStatusToDosErrorNoTeb
+RtlQueryFeatureConfiguration
+RtlRegisterFeatureConfigurationChangeNotification
+RtlSubscribeWnfStateChangeNotification
+RtlUnregisterFeatureConfigurationChangeNotification
+RtlUnsubscribeWnfStateChangeNotification
+RtlUpcaseUnicodeChar
+RtlVirtualUnwind
+RV)60
+Rx7&]
+s <Dt
+s I9>t\I
+S t;L
+s WATAUAVAWH
+s WAVAWH
+s!A+^
+s!A+W
+s!fD;Q
+S(H;S0uPL
+S:(ML;;NW;;;LW)
+S@H;SH
+S@L+S8I
+s[H;u
+s^A;P
+S<;P<
+S0H;S8
+S0H;S8t
+S0H;S8tcH
+S0H;S8tdH
+S0H;S8tgH
+S0H;S8tlL
+S0H;S8tSH
+S0H;S8tUH
+S0H;S8tyH
+S0H+S(A
+S0H+S(H
+s2A+C
+s3A+@
+s5A+A
+s6A+A
+s7A+A
+s8A+A
+Schema
+sCL;K
+Scope
+SCOPE
+ScopeManager
+ScreenOnEnteringIdleEvent
+ScreenOnFlushEvent
+ScreenOnIndexingFileEvent
+ScreenOnMergeEvent
+ScreenOnProcessFileSystemChangeEvent
+ScreenOnQueryEvent
+ScreenOnQueryResultsEvent
+ScreenOnSessionGuid
+Scroll Backwards
+SDID = %d, cb = %d, hash = %08x, chain = %d
+Search
+Search Service
+SearchFilterHandler
+SearchIndexerCore.dll
+SearchIndexerFallbackError_Aggregate
+SearchPathW
+SECOND
+SECSTORE
+SecStore
+SECURITY
+SecurityStore
+SELECT 
+SELECT "System.ItemUrl", "System.Document.CharacterCount", "System.Photo.Flash", "System.Image.Compression", "System.Rating", "System.Size", "System.Image.HorizontalResolution", "System.DateCreated", "System.DRM.IsProtected", "System.Author", "System.Comment" FROM %s
+SELECT CatalogID, CatalogName, IsDeleted FROM 
+SELECT ColumnId, Value FROM 
+SELECT count(*) FROM 
+SELECT COUNT(*) FROM sqlite_schema WHERE type='table' and name=?;
+SELECT Data FROM 
+SELECT Id, StorageType FROM 
+SELECT IndexDescription FROM 
+SELECT IndexID FROM 
+SELECT IndexID, IndexDescription FROM 
+SELECT OccPage FROM 
+SELECT Partition, szKey, PID, WidStart FROM 
+SELECT Property FROM 
+SELECT UniqueKey, Id FROM 
+SELECT Value FROM 
+SELECT WorkId, Value FROM 
+SendNotify
+Server Cursor
+ServerId
+ServerPipeName
+SessionType
+SetBindings
+SetCatState
+SetEndOfFile
+SetErrorMode
+SetEvent
+SetFileAttributesW
+SetFilePointer
+SetFileSecurityW
+SetInformationJobObject
+SetLastError
+SetNamedPipeHandleState
+SetPartition
+SetScopePrioritization
+SetSecurityDescriptorDacl
+SetSecurityDescriptorGroup
+SetSecurityDescriptorOwner
+SetThreadDescription
+SetThreadpoolTimer
+SetThreadToken
+SetUnhandledExceptionFilter
+SetupCache
+SetupCompletedSuccessfully
+SetWaitableTimerEx
+SetWatchMode
+Shared
+SHCreateItemFromParsingName
+SHGetFolderPathW
+SHGetKnownFolderPath
+SHGetValueW
+SHORTFILENAME
+ShortFilename
+Shrink
+ShrinkWatchRegion
+SHSetValueW
+Single Data Layer Provider Config
+Size: %d (Min: %d, Max: %d)
+SizeofResource
+sjbYRPOK
+Skip Deleted Bookmarks
+SkipInternalReuse
+SkipMergeWithCorruptedOccTable
+Sleep
+SleepConditionVariableCS
+SleepEx
+Software
+Software\Classes\CLSID\
+Software\Classes\MIME\Database\Content Type\
+Software\Microsoft\Active Setup\Installed Components\{89820200-ECBD-11CF-8B85-00AA005B4383}
+SOFTWARE\Microsoft\Windows Search
+Software\Microsoft\Windows Search\ContentIndexCommon\LanguageResources\NeutralOverrideProperties
+Software\Microsoft\Windows Search\ContentIndexCommon\LanguageResources\Override
+SOFTWARE\Microsoft\Windows Search\Databases
+SOFTWARE\Microsoft\Windows Search\Databases\Windows
+SOFTWARE\Microsoft\Windows Search\Gather\Windows\SystemIndex\Extensions
+SOFTWARE\Microsoft\Windows Search\Gathering Manager\Applications
+SOFTWARE\Microsoft\Windows Search\HybridDatabase
+Software\Microsoft\Windows Search\Tracing
+Software\Microsoft\Windows Search\Tracing\EventThrottleLastReported
+Software\Microsoft\Windows Search\Tracing\EventThrottleState
+Software\Microsoft\Windows\CurrentVersion\Explorer\Search\Preferences
+Software\Microsoft\Windows\CurrentVersion\StructuredQuery
+SOFTWARE\Policies\Microsoft\Windows\Windows Search
+Some bits
+SortChoices
+SORTCHOICES
+source storage type %4x
+space
+SPH;S
+sPH;s`t
+sPH;s`tNH
+sPL;s`
+SQL Content Query Locale String
+SQL query built: 
+SQL query: 
+SQL statement not entirely processed.
+SQL statement unexpectedly returned multiple rows.
+SQL statement unexpectedly returned no rows.
+SQL statement unexpectedly returned row results.
+SQL Support
+SQLite
+sqlite3_bind_blob
+sqlite3_bind_blob64
+sqlite3_bind_double
+sqlite3_bind_int
+sqlite3_bind_int64
+sqlite3_bind_null
+sqlite3_bind_parameter_index
+sqlite3_bind_text
+sqlite3_bind_text64
+sqlite3_busy_timeout
+sqlite3_changes
+sqlite3_clear_bindings
+sqlite3_close
+sqlite3_column_blob
+sqlite3_column_bytes
+sqlite3_column_double
+sqlite3_column_int
+sqlite3_column_int64
+sqlite3_column_text
+sqlite3_column_type
+sqlite3_db_handle
+sqlite3_errmsg
+sqlite3_extended_errcode
+sqlite3_finalize
+sqlite3_free
+sqlite3_get_autocommit
+sqlite3_indexer_extensions_init
+sqlite3_last_insert_rowid
+sqlite3_open_v2
+sqlite3_prepare_v2
+sqlite3_reset
+sqlite3_step
+sqlite3_wal_checkpoint_v2
+sr-BA-Cyrl
+sr-BA-Latn
+sr-Cyrl
+sr-Cyrl-BA
+sr-Cyrl-CS
+SRDictionaryToPropertySet
+sr-Latn
+sr-Latn-BA
+sr-Latn-CS
+sr-SP-Cyrl
+sr-SP-Latn
+srvcli.dll
+SspiCli.dll
+StackThumbnailCacheIds
+Start
+StartRow
+STARTUP
+StartWatching
+StatDeletedDocuments
+StatFlushes
+StatIndexes
+StatMasterMergeRunning
+StatMasterMerges
+StatMerges
+StatModifiedDocuments
+StatModifiedDocumentsUnchanged
+StatNewDocuments
+StatProperties
+StatPropertiesInvertedIndex
+StatPropertiesPropertyStore
+StatRunningMerges
+StatValueIndexes
+StatWordLists
+std::exception: %hs
+StemmerClass
+StemmerDLLPathOverride
+StgDeserializePropVariant
+StgSerializePropVariant
+StopAsynch
+StopWatching
+storageanc
+StoreAppRevisionDataCorruption
+strchr
+StrChrW
+StrCmpIW
+StrCmpNIW
+stream
+STRING
+string too long
+StringFileInfo
+StringFromCLSID
+StringFromGUID2
+Strong Row Identity
+StrStrIW
+StrStrW
+Structured Storage
+StructuredQuery
+SubmitThreadpoolWork
+Subquery Support
+Supports multiple configs
+SUVWATAUAVAWH
+SUVWATAVAW
+SUVWATAVAWH
+SUVWAVH
+SUVWAWH
+SUVWH
+SVWATAUAVAWH
+SVWATAUAWH
+SVWATAVAWH
+SVWATAVH
+SVWAUAVAWH
+SVWAVAWH
+SVWAVH
+SwallowJETDiskIOError
+SWATAUAVAWH
+SWATAVAWH
+sYA+W
+Synonym">
+system
+System
+SYSTEM
+System.FileName
+System.Message.ConversationIndex
+System.Null
+System.Search.ReverseFileName
+SYSTEM\ControlSet001\Control
+System\CurrentControlSet\Control\ContentIndex\Language
+SYSTEM\CurrentControlSet\Services\%s\Performance
+SYSTEMINDEX
+SystemIndex
+SystemIndexNormalization
+SystemTimeToFileTime
+SystemTimeToTzSpecificLocalTime
+sZA+^
+szKey
+'t <"t
+t 98u
+t L;L$`t A
+t!L;L$`t!E
+t"@8=W
+t"f;Z
+t"f9Q
+t"r)L
+t#9{tt>
+t$ 9\$,v9
+T$ A;
+t$ AWH
+t$ E3
+T$ E3
+t$ E3
+T$ E3
+t$ E3
+T$ E3
+t$ E3
+t$ H;
+T$ H;
+T$ H+
+t$ I3
+t$ UWATAUAVH
+t$ UWATAVAWH
+t$ UWAUAVAWH
+t$ UWAVH
+t$ UWAWH
+t$ WATAUAVAW
+t$ WATAUAVAWH
+t$ WATAVH
+t$ WAVAWH
+t$ WH
+t$$E3
+T$(;|$ 
+t$(D!t$0I
+t$(D;
+T$(fD
+T$(I;
+T$(M+
+T$@;T$<
+T$@A;
+t$@A_A^A]A\_
+t$@D8i
+T$@E3
+T$@fA
+T$@fD
+T$@H;
+t$@H;}
+t$\E;|$(r
+t$\fD
+T$`;W
+T$`9W
+T$`A;
+t$`E;
+T$`E2
+T$`E3
+t$`E3
+t$`H;
+T$`H+
+T$`L9*
+T$`L9<
+t$0!D$(H
+T$0;P
+T$0;W
+T$0@8j
+T$08Z
+T$0A;
+T$0D8r
+T$0D8R
+T$0E3
+t$0E3
+t$0f;
+T$0fD
+t$0fD;
+T$0H;
+t$0H;
+T$0H;
+T$0H;T$8t
+t$0H+
+T$0H+
+T$0H9
+t$0I#
+t$0I;
+T$0I;T$8
+T$0I;T$8t
+T$0I;T$8t9L
+T$0L;
+T$0L+
+T$4A;
+T$4E3
+t$4E3
+T$4L;
+T$8;S
+T$8E;
+t$8E;~(r
+t$8E;n(r
+T$8E3
+t$8E3
+t$8f;
+T$8fD
+t$8fD;
+T$8H;
+t$8H;
+t$8H+
+t$8I;
+T$8I;
+t$8L;
+t$8L+
+T$8M;
+t$8M;
+T$8M;
+T$8M+
+t$90t
+t$BA;
+t$fD;z
+t$fD9
+t$H;w
+t$hE;
+t$hE3
+T$HE3
+T$hE3
+t$HfD
+T$HfD
+t$HfD
+t$HfE
+T$hfE;
+t$hH;
+t$hH+
+t$hI#
+t$HL+
+T$lH;
+T$P;W
+T$P9W
+t$PD;^(r"E3
+t$PD;f(r
+T$PD8~H
+T$pD9\$Dt
+t$PE;~(r
+t$PE;n(r
+T$PE3
+t$pE3
+t$pfE
+T$PH;
+T$pH;
+T$PH;
+t$PH+
+T$pH+
+T$pH9
+T$PI+
+T$pI+
+T$PI9:
+T$PL;
+t$pL;t$xL
+t$PL+
+t$pu:H
+T$Pu[
+T$qt2H
+T$XD;
+t$xD+qP
+T$XE3
+t$xE3
+T$XE3
+t$XE3
+T$xE3
+t$XE3
+T$xfE+
+T$XH;
+T$XH+
+T$xH+
+T$XH+
+T$xH+
+T$XH+
+T$xH9
+t$XI#
+T$XI;
+t$xI;
+T$xI;
+T$XI+
+T$XL;
+t$xM;
+t(D8-
+t(D8%
+t)9;u,H+
+t)H!U
+t)H!U H
+t)I9p
+t)L;|$Pt,E
+t)r7D
+t*D9X`t$H
+t*fff
+t*H;\$Pt-D
+t,9;v
+t,D8=~e
+t/H!L$@H
+t:fA#
+t;fA;
+t;H95
+t?H;~h
+t@fD#
+t@L;P
+t[A9_
+t[fA9)tUH
+t]fE;
+t}@8k8H
+t~fD;
+t+I;~
+t=fE#
+t1E8'u,3
+t1fA;
+t1fD9Q
+t3L;{8s#H
+t4D8k`
+t4L;P
+t5H+CHH
+t7f9Q
+t7HcS
+t7x:L
+t8H;~
+Table
+tAfD;
+Tailored Query (Search Results Files) Optimized OpTree
+Tailored Query (Search Results Music) Optimized OpTree
+Tailored Query (Search Results Pictures / Video / TV) Optimized OpTree
+Tailored Query (Search Results Settings) Optimized OpTree
+Tailored Query (Search Suggestions Browser Favorites / History) Optimized OpTree
+Tailored Query (Search Suggestions Files (Everywhere)) Optimized OpTree
+Tailored Query (Search Suggestions Files (Files scope)) Optimized OpTree
+Tailored Query (Search Suggestions History) Optimized OpTree
+Tailored Query (Search Suggestions Music) Optimized OpTree
+Tailored Query (Search Suggestions Settings) Optimized OpTree
+Tailored Query (WinRT Data Model) Optimized OpTree
+tBD8-
+tblRH
+tCD9t$0
+tDD9aL
+teL;M@t_A
+TelemetryAssert
+TerminateJobObject
+TerminateProcess
+Text value is too long.
+tF8_}tAH
+tfA9o
+tgA8X
+tGH9{
+The catalog entry to delete was not found.
+The catalog entry to update was not found.
+The catalog is corrupt
+The index data table entry was not found.
+The index entry to delete was not found.
+The index entry to update was not found.
+The SQL string is too large.
+The SQLite implementation did not behave exactly as the Jet implementation did.
+THESAURUS
+threadId
+TIME.TZ
+tJ@8p
+tJfD9{
+tjH;M
+tKfA9
+tKH9M
+TlgAggregateSummary
+TlsGetValue
+TlsSetValue
+tMfD9
+tND9{ t
+tnH;k0thA
+tOD9@
+toD9s
+TotalBytesToIndex
+TotalChunksRead
+TotalDurationInSeconds
+TotalEntriesFlushed
+TotalFATItemsProcessed
+TotalNTFSItemsProcessed
+TotalNumberOfEvents
+TotalResultsRequested
+TotalResultsReturned
+tPD8=
+tQH9M
+tqrvwvw
+TQUERY.dll
+TQUERY.DLL
+tquery.dll
+tquery.pdb
+Transaction DDL
+TransactionErrors
+TransactionTypes
+TransactNamedPipe
+Translation
+trfD9e
+TryAcquireSRWLockExclusive
+TsaurusFile
+tTfD;6uUfD;
+tuHcSt
+txA8X
+tYH;_
+TypeLib
+tZM!~
+U I;U(
+u!H;B
+u$D;Z
+u%9T$<u
+u%I9X8u
+u&D9_
+u)fD9Q
+u,8L$Qu&8L$Ru 8L$Su
+u,A8j
+u@f9Ahu
+u_}/H
+u_D9s
+U|;&'
+u}f9]
+u}fD;
+u+8_8t
+uA;j r<H;W@t6H
+uaD9I8u[D9I
+UATAUAVAWH
+UATAVH
+UAVAWH
+uBD;r r<H;W
+uBfD9u
+uF;j rAH;
+uF9s0u<
+uffD;Q
+ugI;]
+u-H+S
+UI4, 
+UI8, 
+Unable to convert strings longer than int chars.
+Unable to get the impersonation token after ImpersonateSelf() succeeded.
+uNfE;
+UnhandledExceptionFilter
+Unknown
+UNKNOWN
+unknown
+Unknown column type %i.
+unknown error
+Unknown exception
+Unknown Op 
+Unknown0x
+UnmapViewOfFile
+unordered_map/set too long
+unsupported
+uPD;w
+upD9b
+Updatability
+UPDATE 
+UPDATEAFTERMERGE:  WIDs originated in the merge range
+UpdateDocuments
+upper
+urn:schemas-microsoft-com:office:office#
+Use Bookmarks
+UseFormsOf
+UseLowFragmentationHeap
+USVWATAUAVAWH
+USVWATAVAWH
+USVWATAVH
+USVWATAWH
+USVWAVAWH
+USVWAVH
+USVWH
+uUH;r rOH
+UUUUUUU
+UUUUUUUUH
+UVATAVAWH
+UVWATAUAVAW
+UVWATAUAVAWH
+UVWATAVH
+UVWAVAWH
+UWATAVAWH
+UWAUAVAWH
+UWAUAVH
+UWAVH
+uwE;W
+UwfD;
+uxfD;Q
+uZI9v`tWI
+V I;V(
+v j" $L(`*Z,
+v(M;~0
+v*fE;
+V@H;VH
+V@H;VHH
+v@I9>uNL
+V`I;Vh
+V0H;V8
+V0H;V8t
+V0H;V8t=H
+V0H;V8tcH
+V0H;V8tQH
+V0H;V8tUH
+V0H+V(H
+V0I;V8
+V0I;V8t
+V0I;V8tOL
+V0I+V(H
+VACUUM;
+Value
+VarFileInfo
+VATAUAVAWH
+VECTOR
+vector too long
+Vector" Count="
+vector<bool> too long
+VERBOSE
+Verbose
+VerifyVersionInfoW
+VerSetConditionMask
+VHI;VPt
+video
+VirtualAlloc
+VirtualFree
+VPATH
+VPath
+VS_VERSION_INFO
+vt: %d pStr: 0x%I64x
+vt: %d size: 0x%I64x pBlob: 0x%I64x
+vt: %d value: 0x%I64x
+VT_VECTOR | 
+VWATAUAVAWH
+VWATAUAVH
+VWATAUAWH
+VWATAVAW
+VWATAVAWH
+VWATH
+VWAUAVAWH
+VWAVH
+W I;W(uRL
+w(@8q(tF
+w(H9w@v$
+W@H;WHt
+w\tDA
+w^tQA
+w_tEA
+W`H;Wh
+w+t.H
+W0H;W8
+W0H;W8t
+W0H;W8tcH
+W0H;W8tiH
+W0H;W8tKH
+W0H;W8tqH
+W0H;W8ttH
+W0H+W(H
+W0I;W8
+W0I;W8t
+W0I;W8tQH
+W0I+W(L
+w6fA;
+w7;~ s*L
+WaitForMultipleObjects
+WaitForMultipleObjectsEx
+WaitForSingleObject
+WaitForSingleObjectEx
+WaitForThreadpoolTimerCallbacks
+WaitForThreadpoolWorkCallbacks
+WaitNamedPipeW
+WaitOnAddress
+WakeAllConditionVariable
+WakeByAddressAll
+Warning
+WATAUAVAWH
+WATAUAVAWI
+WATAVH
+WATAWH
+WAVAW
+WAVAWH
+WBDLLPathOverride
+WBreakerClass
+wcschr
+wcscmp
+wcscspn
+wcsncmp
+wcsrchr
+wcsspn
+wcsstr
+wCt;A
+weD8ocu
+weight specification
+WEVT_TEMPLATE
+Where ID
+WideCharToMultiByte
+WidExistsInMultipleIndexes(%d) - can be reused
+WidStart
+WidToPath
+wilActivity
+WilError_03
+wilResult
+WilStaging_02
+Window Handle
+Windows
+Windows OS Major Version
+Windows OS Minor Version
+Windows Search Server Version
+Windows Search Service
+Windows.Internal.StateRepository.ApplicationExtension
+Windows.Internal.StateRepository.PackageLocation
+Windows.Internal.StateRepository.PackageUser
+windows.searchFilterHandler
+Windows.System.Internal.UserManager
+Windows\SystemIndex
+WindowsCreateStringReference
+WindowsDeleteString
+WindowsGetStringRawBuffer
+WinRTDataModel
+wjt[A
+wLt~A
+wNt A
+wOH9W
+Word Prefix">
+Word">
+WordBreakerHistory
+WordListMemoryConsumptionWithoutFlush
+Work Queue Worker Thread
+WorkId
+WorkID
+WORKID
+WorkIdToPath
+wotZA99
+wPH;w`t/H
+wPH;w`tfH
+wqt%A
+Wr|&l
+WRITE
+write
+Write
+WriteFile
+WriteFileEx
+WS2_32.dll
+WSearch
+wsearch
+WSearchIdxPi
+WseIdxPm
+WTTWW
+WVD&a
+WXH;W`t
+wxyz}
+x ATAVAWD
+x ATAVAWH
+x AUAVAWH
+x AUH
+x AV3
+x AVAWH
+x AVAWL;
+x AVH
+x AWH
+X D9k
+x L9}
+x UATAUAVAWH
+x UATAUH
+x UAVAWH
+X UVWATAUAVAWH
+x!fD9#t
+x$D9c$@
+x_^[]
+x<fD9#t-E3
+xA^_[]
+xA_A^_^[]
+XA_A^_^[]H
+xA_A^_^][
+XA_A^A\_^[
+XA_A^A]A\_[
+xA_A^A]A\_^
+XA_A^A]A\_^[]
+xA_A^A]A\_^[]
+XA_A^A]A\_^[]
+xA_A^A]A\_^[]
+XA_A^A]A\_^][
+xdigit
+XDNIA
+XDNIE3
+XH;k8
+XL!t$8H
+XTTWWW
+XXXXX
+xz{z{
+y@H+y8H
+y\D9y`u
+Y^M.0
+y|?uF
+Y|c&`
+Y0H;Y(t
+Y8I;^@
+Y9SY+
+Y9SYA+M
+YhH;_pt
+Z>07L
+Z0w.e
+zh-CHS
+zh-CHT
+ZH-CN
+zh-Hans
+zh-Hant
+ZH-HK
+ZH-MO
+ZH-SG
+ZH-TW
+ZZVVVZ

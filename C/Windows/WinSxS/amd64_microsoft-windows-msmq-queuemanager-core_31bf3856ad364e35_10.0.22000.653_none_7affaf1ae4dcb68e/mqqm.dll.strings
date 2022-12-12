@@ -1,0 +1,2914 @@
+      <destination>http://*</destination>
+      <destination>http://target_host/msmq/private$/destination_queue</destination>
+      <from>http://external_host/msmq/external_queue</from>
+      <from>https://external_host/*</from>
+      <through>http://intermediate_host/msmq</through> 
+      <to>http://internal_host/msmq/internal_queue</to> 
+      In following example any message with a logical address that starts with 
+      is defined in the <StreamReceiptURL> element. 
+      the string http://external_host/* will use the stream receipt URL that 
+     address in the <to> element.
+     addresses to a single physical address.
+     Asterisk-terminated URLs can define a redirection from multiple logical 
+     Asterisk-terminated URLs can define a redirection of multiple physical addresses 
+     Asterisk-terminated URLs can define the use of a single stream receipt URL 
+     being redirected by <redirection> rules.  
+     defines the default stream receipt URL that is used by the local 
+     Each <outbound_redirections> element may contain 0 or more <exception> subelements.
+     Each <Redirections> element contains 0 or more <redirection> elements, each 
+     Each <StreamReceiptSetup> element contains 0 or more <setup> subelements, 
+     Each <StreamReceiptSetup> element may contain one <default> element, which 
+     each of which in turn contains exactly one <LogicalAddress> subelement and exactly 
+     element in one of the <setup> elements. 
+     for multiple logical addresses.
+     from being redirected by <redirection> rules. 
+     given in the <to> element.
+     In the following example, all messages sent to private queues on special_host 
+     In the following example, all messages sent using the HTTP protocol 
+     In the following example, any message with a logical address that starts 
+     In the following example, no messages sent to internal hosts 
+     Limited use of regular expressions in a <destination> element is supported. 
+     Limited use of regular expressions in a <from> element is supported. 
+     Limited use of regular expressions in an <exception> element is supported with the same 
+     message is sent to the logical URL specified in <LogicalAddress>. 
+     MSMQ service in every outgoing streamed (transactional) SRMP message, 
+     of destination queues to a single address of a virtual directory on a intermediate host.
+     of the logical address given in the <from> subelement to the physical address 
+     of the physical address of the destination queue given in the <destination> subelement 
+     of which contains exactly one <from> subelement and exactly one <to> 
+     of which in turn contains exactly one <destination> subelement and exactly one <through> 
+     one <StreamReceiptURL> subelement. Each <setup> elememt describes the URL 
+     physical address of the local order queue.
+     restrictions as for the <destination> element above. 
+     SRMP message arriving at the queue specified in <StreamReceiptURL> to the 
+     subelement. Each <redirection> element describes a redirection (or mapping)
+     The <outbound_redirections> element contains 0 or more <redirection> subelements, each 
+     This is a sample XML file that demonstrates stream receipt redirection. 
+     to the virtual directory on the intermediate host given in the <through> subelement.
+     to which a stream receipt is sent (<StreamReceiptURL>) when an SRMP 
+     unless the logical address of the message matches the <LogicalAdress> 
+     Use it as a template to create your own stream receipt redirection files.
+     will be redirected through the intermediate host. 
+     will not be redirected through the intermediate host. 
+     with the string https://external_host/* will be redirected to the physical 
+     You can use <exception> elements to exclude messages sent to specific queues from
+     You can use the keyword 'local_names' to exclude messages sent to any internal (intranet) host 
+    <LogicalAddress>http://external_host/*</LogicalAddress> 
+    <LogicalAddress>https://external_host/msmq/external_queue</LogicalAddress> 
+    <StreamReceiptURL>http://internal_host/msmq/virtual_order_queue</StreamReceiptURL>
+    <StreamReceiptURL>https://internal_host/msmq/virtual_order_queue</StreamReceiptURL>
+   -->
+   template to create your own outbound message redirection files.
+   template to create your own queue redirection files.
+   This is a sample XML file that demonstrates queue redirection. Use it as a
+   This is a sample XML mapping file that demonstrates outbound message redirection. Use it as a
+  <!--
+  </redirection>
+  </setup>
+  <default>http://internal_host/msmq/virtual_order_queue</default>
+  <exception>http://special_host/msmq/private$/*</exception>
+  <exception>local_names</exception>
+  <redirection>
+  <setup>
+  -->
+  --> 
+  Each <setup> element also defines an implicit mapping that redirects every 
+ !"#$%&'()*+,-./0123
+ 4$$& ($*$, .
+ A^_[
+ A^_]
+ A^_^
+ A^_^][
+ A__^
+ A_A^_
+ A_A^_^]
+ A_A^A\
+ A_A^A\_^
+ A_A^A]_^
+ A_A^A]A\_
+ A_A^A]A\_^]
+ H3E H3E
+ HTTP/1.1
+ J;D7
+ Microsoft Corporation. All rights reserved.
+ Operating System
+ u;f9u
+ Windows
+!:H!x D
+!alias
+!D$ M
+!D$hA
+!default
+!destination
+!from
+!LogicalAddress
+!name
+!StreamReceiptURL
+!t$hH
+!This program cannot be run in DOS mode.
+!through
+"@$$& ($*$, .
+#I;9v
+$M9/u
+$P<PuZ
+$uIf9p
+%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x
+%04d%02d%02dT%02d%02d%02d
+%04hx
+%04X:%04d%3d
+%08d.*
+%08x%04x%04x%02x%02x%02x%02x%02x%02x%02x%02x
+%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x%n
+%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x\%u
+%08x%n
+%d.%d.%d.%d:%d
+%I64d
+%ld,%ld,%ld
+%s %s%s
+%s (%s)
+%s , %s
+%s%s%s
+%s%s%s$%s
+%s%S%s%s%s
+%s, %s
+%s\%08x
+%s\%s
+%s\%s$
+%s\%s%04d-%02d-%02d-%02d-%02d-%02d-%04d
+%s\%s%s
+%s\%s\%lu
+%s\%s\%s
+%s\{%s}
+%s\msmq
+%s\private$\%s
+%s=%08u:
+%s=%s
+%u.%u.%u.%u:%u%n
+&MQF section is not valid: DL queue without NULL terminator
+(A^_^[
+(D$@f
+(D$`D
+(D$Pf
+(Failed to convert address: %d)
+(H;]@u
+(H;]Pu
+(L$0f
+(t$@H
+(t$@I
+(t$`I
+(t$0L
+(t$PH
+(t$PI
+)t$@H
+)t$@L
+)T$0H
+)t$PH
+*** Unknown Queue ***
+*.xml
+*usH9-ls
+,  " 
+..localmachine
+.?AUCSelfSetupException@@
+.?AUillegal_index@CContextMap@@
+.?AVbad_alloc@std@@
+.?AVbad_api@@
+.?AVbad_base64@@
+.?AVbad_CryptoApi@@
+.?AVbad_document@@
+.?AVbad_ds_result@@
+.?AVbad_format_name@@
+.?AVbad_hresult@@
+.?AVbad_packet_size@@
+.?AVbad_reference@@
+.?AVbad_request@@
+.?AVbad_route@@
+.?AVbad_rpc_result@@
+.?AVbad_signature@@
+.?AVbad_socket_error@@
+.?AVbad_srmp@@
+.?AVbad_time_format@@
+.?AVbad_time_value@@
+.?AVbad_unicode_file@@
+.?AVbad_utf8@@
+.?AVbad_win32_error@@
+.?AVbad_xml_encoding@@
+.?AVbad_XmldsigElement@@
+.?AVconnection_closed@@
+.?AVexception@@
+.?AVfailure@ios_base@std@@
+.?AVlength_error@std@@
+.?AVlogic_error@std@@
+.?AVname_resolution_error@@
+.?AVNoSuchElementException@@
+.?AVout_of_range@std@@
+.?AVregistry_access_error@@
+.?AVruntime_error@std@@
+.?AVsocket_transport_exception@@
+.00cfg
+.CRT$XCA
+.CRT$XCC
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.data
+.data$brc
+.data$r$brc
+.edata
+.gehcont
+.gfids
+.giats
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.pdata
+.rdata
+.rdata$brc
+.rdata$T$brc
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+.text
+.text$AFX_AUX
+.text$AFX_CORE1
+.text$di
+.text$mn
+.text$mn$00
+.text$x
+.text$yd
+.tls$
+.tls$ZZZ
+.xdata
+.xdata$x
+//localhost
+:[u$H
+;\u(f
+;>uuL
+;0tHH
+;DEADLETTER
+;DEADXACT
+;i0wJH
+;JOURNAL
+;M(s+
+;q0wZH
+;XACTONLY
+??0CColumns@@QEAA@I@Z
+??0CDSBaseUpdate@@QEAA@XZ
+??0exception@@QEAA@AEBQEBD@Z
+??0exception@@QEAA@AEBQEBDH@Z
+??0exception@@QEAA@AEBV0@@Z
+??0exception@@QEAA@XZ
+??1CColumns@@QEAA@XZ
+??1CDSBaseUpdate@@QEAA@XZ
+??1exception@@UEAA@XZ
+??1type_info@@UEAA@XZ
+?_set_se_translator@@YAP6AXIPEAU_EXCEPTION_POINTERS@@@ZP6AXI0@Z@Z
+?456789:;<=
+?Add@CColumns@@QEAAXAEBK@Z
+?GetFalconSectionName@@YAJAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator_static@_W@2@V_STL70@@@std@@@Z
+?GetObjectType@CDSBaseUpdate@@QEAAKXZ
+?HQ8@
+?Init@CCancelRpc@@QEAAXXZ
+?Init@CDSBaseUpdate@@QEAAJPEAVBufferReader@@H@Z
+?KeepErrorHistory@COutputReport@@QEAAXPEB_WGJ@Z
+?SenderStream=
+?set_terminate@@YAP6AXXZP6AXXZ@Z
+?terminate@@YAXXZ
+?what@exception@@UEBAPEBDXZ
+@.data
+@.reloc
+@.rsrc
+@`98~
+@`I+@hH=
+@0BD=
+@66\[
+@6666
+@6666[
+@666666
+@8|$(u
+@8|$atr
+@8|$X
+@8=D^
+@85Y?
+@8h u
+@8h!t
+@8h!u
+@8h)t
+@8h)u
+@8h1t
+@8h1u
+@8h8u
+@8h9t
+@8h9u
+@8hIt
+@8hit
+@8hiu
+@8hIu
+@8hiu
+@8hIu
+@8hiu
+@8hIu
+@8i)u*H
+@8i1u*H
+@8iIu*H
+@8j uUD
+@8j uVD
+@8j!t
+@8j!u
+@8j(uUD
+@8j(uVD
+@8j)t
+@8j)u
+@8j0uU@
+@8j0uV@
+@8j1t
+@8j1u
+@8j8uUD
+@8j8uVD
+@8j9t
+@8j9u
+@8jHuU@
+@8jhuUD
+@8jHuV@
+@8jhuVD
+@8jIt
+@8jit
+@8jiu
+@8jIu
+@8jiu
+@8k(D
+@8k)t
+@8k)u
+@8k1t
+@8k1u
+@8kIt
+@8kIu
+@8p0uTA
+@8pHuTA
+@8r)t
+@8r)u;D
+@8r9t
+@8r9u<D
+@8t$`u
+@8x)t
+@8x)uH9h
+@8xIt
+@8yQw
+@A^_]
+@A^_^
+@A^_^[]
+@A^_^][
+@A^A\_^]
+@A^A]A\
+@A__^][
+@A_A^]
+@A_A^_
+@A_A^_^[
+@A_A^_^]
+@A_A^A\
+@A_A^A]_^[]
+@A_A^A]_^][
+@A_A^A]A\_
+@A_A^A]A\_^[
+@A_A^A]A\_^]
+@Hc)H
+@HH98t
+@HR k
+@SUVWATAUAVAWH
+@SUVWATAVAWH
+@SUVWAVAWH
+@SUVWAVH
+@SUVWAWH
+@SUVWH
+@SVATAUAVAWH
+@SVWATAUAVAWH
+@SVWH
+@SWATAUAVAWH
+@SWAVH
+@u0D8=
+@UATAUAVAWH
+@UAVAWH
+@USAVH
+@USVATAUAVAWH
+@USVAWH
+@USVH
+@USVWATAUAVAWH
+@USVWATAUAVH
+@USVWATAUAWH
+@USVWATAVAWH
+@USVWATAVH
+@USVWAUAVAWH
+@USVWAVAWH
+@USVWAVH
+@USVWH
+@USWATAUAVAWH
+@USWATAVH
+@USWH
+@UVWH
+@UWAVH
+@VWAVH
+[fE;|
+\$ A;
+\$ E3
+\$ UH
+\$ UVWATAUAVAWH
+\$ UVWAVAWH
+\$ UVWH
+\$ VWAVH
+\$ WATAWH
+\$ WH
+\$$D;
+\$(H+
+\$@D9=
+\$@H;
+\$@H9k u
+\$@Hc
+\$`H;
+\$`u.H
+\$0E3
+\$0H#
+\$0H;
+\$hH!\$@H
+\$HH;
+\$hH;
+\$HH+
+\$hL;
+\$hL9{Xu
+\$P9{Xu
+\$PE3
+\$PH#
+\$pM;
+\$px I+
+\$px#H+
+\$XE3
+\$XH;
+\*.xml
+-\C2T
+\Clustered\
+\j%07x.mq
+\KernelObjects\LowPagedPoolCondition
+\l%07x.mq
+\LQS\
+\mapping
+\p%07x.mq
+\Parameters
+\r%07x.mq
+\storage
+\storage\lqs
+]X4/P
+_ M9s8
+___lc_codepage_func
+___lc_handle_func
+___mb_cur_max_func
+__C_specific_handler
+__crtGetStringTypeW
+__crtLCMapStringA
+__crtLCMapStringW
+__CxxFrameHandler3
+__CxxFrameHandler4
+__dllonexit
+__mb_cur_max
+__pctype_func
+__uncaught_exception
+_amsg_exit
+_CxxThrowException
+_Default
+_errno
+_initterm
+_itow_s
+_lock
+_ltow
+_onexit
+_purecall
+_resetstkoflw
+_snscanf_s
+_snwscanf_s
+_strnicmp
+_unlock
+_vsnprintf
+_vsnwprintf
+_waccess
+_wcsicmp
+_wcsnicmp
+_wstrtime
+_wtoi
+_wtoi64
+_wtol
+_XcptFilter
+` AUAVAWH
+` UAVAWH
+`.rdata
+`0:dz
+`A^_[
+`A^_^
+`A^_^[]
+`A^A\_^]
+`A^A]_^]
+`A_A^_^]
+`A_A^A\^]
+`A_A^A\_^
+`A_A^A]A\_^]
+`A1G,
+`lt9H
+{ AUAVAWH
+{ UATAUAVAWH
+{4zaoBtxH;
+{text/xml
+|$ ATAVAWH
+|$ AVH
+|$ AWH
+|$ E3
+|$ UATAUAVAWH
+|$ UATAVH
+|$ UAVAWH
+|$ UH
+|$(E3
+|$(fD
+|$@;t$8
+|$@E3
+|$@H+
+|$@H+t$@L
+|$@Ic
+|$`9\$h
+|$`D8
+|$0E3
+|$0H+
+|$8E3
+|$8fD
+|$8Hc
+|$8I;
+|$HE;
+|$HfA
+|$JfD
+|$l.u
+|$l.u"f
+|$l.u#f
+|$P upf9o,tzH
+|$PH;
+|$pH9
+|$XH;
+|$XI9v
+|$XL9s t
+|*+?()
+|*+?().][\^:-
+}  uJD
+}`fD9
+~@D9>u'Lc
++ LOOP Z
++9|$pt
++K(;K$
+<!-- 
+<!-- Limited use of regular expressions in <LogicalAddress> elements is supported. 
+<![CDATA[
+<!DOCTYPE
+</MESSAGE ID>
+</NEXT HOP>
+</ORIGINAL QUEUE>
+</outbound_redirections>
+</redirections>
+</StreamReceiptSetup>
+</TARGET QUEUE>
+<{0u 
+<A]ugf
+<G.t5f
+<g45P]FB
+<local>
+<MESSAGE ID>
+<NEXT HOP>
+<Notification><Event>%d</Event><ObjectGuid>%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x</ObjectGuid><DomainController>%s</DomainController></Notification>
+<Notification><Event>%d</Event><ObjectGuid>%40[^<]</ObjectGuid><DomainController>%260[^<]</DomainController></Notification>
+<ORIGINAL QUEUE>
+<outbound_redirections xmlns="msmq_outbound_mapping.xml">
+<redirections xmlns="msmq-queue-redirections.xml">
+<StreamReceiptSetup xmlns="msmq-streamreceipt-mapping.xml">
+<TARGET QUEUE>
+=vk01
+>D9>u
+0$v4<J
+0123456789
+040904B0
+08B k
+0A^[]
+0A^_[
+0A^_^
+0A^_^][
+0A^A\_
+0A^A\_^]
+0A^A]_^]
+0A^A]A\_^
+0A__^
+0A_A]A\_^
+0A_A^]
+0A_A^_
+0A_A^_^]
+0A_A^A\
+0A_A^A\^[
+0A_A^A\_]
+0A_A^A\_^
+0A_A^A\_^[]
+0A_A^A\_^][
+0A_A^A]_^
+0A_A^A]_^[]
+0A_A^A]A\]
+0A_A^A]A\_
+0A_A^A]A\_^[
+0A_A^A]A\_^]
+0L!5H
+10.0.22000.653
+10.0.22000.653 (WinBuild.160101.0800)
+200 OK
+2333333
+3333333
+3J;D7
+400 Bad Request
+413 Request Entity Too Large
+500 Internal Server Error
+501 Not Implemented
+503 Service Unavailable
+66666666666
+8&t'H
+8\$HH
+8_ t%H9_
+8_^][
+8A^_[]
+8A^_^[
+8A_A^^[
+8A_A^_^[]
+8LcG0H
+8Q!u,;h
+9\$0t^
+9\$h@
+9]Pt=
+9^Tt1H
+9|$`@
+9|$HA
+9=u$H
+9=uWD
+9>t4H
+98vPH
+9C0t,
+9C0t.
+9C0t+
+9C0tL
+9Heapu
+9HPuq
+9Hu%H
+9M(vNH
+9T$ u,D
+9T$\t
+9t$0t
+9t$4t{H
+9t$tH
+9w0t:H
+A H!AHH
+A$9A ww
+A$I;G
+A;V r
+A]A\_^[
+A^_^[
+A^_^[]
+A^_^][
+A^A\]
+A^A\_^]
+A^A]A\
+A^A]A\_]
+A^A]A\_^
+A^A]A\_^[]
+A_^[]
+A_A\_
+A_A\_^]
+A_A]A\
+A_A]A\_^
+A_A^]
+A_A^_
+A_A^_^]
+A_A^_^][
+A_A^A\
+A_A^A\^[
+A_A^A\_]
+A_A^A\_^
+A_A^A\_^[
+A_A^A\_^[]
+A_A^A\_^][
+A_A^A]
+A_A^A]_]
+A_A^A]_^
+A_A^A]_^[]
+A_A^A]A\
+A_A^A]A\]
+A_A^A]A\^[
+A_A^A]A\^[]
+A_A^A]A\_
+A_A^A]A\_[
+A_A^A]A\_[]
+A_A^A]A\_^[
+A_A^A]A\_^[]
+A_A^A]A\_^]
+A_A^A]A\_^][
+A0H!A@
+A1G,3
+A3G,%
+A4tbfD9
+A4zaoB
+A8h!t
+A8h!u
+A8h)t
+A8h)u
+A8h1t
+A8h1u
+A8h9t
+A8h9u
+A8hit
+A8hIt
+A8hIu
+A8hiu
+A8hIu
+A8hiu
+A8J)t
+A8N!t
+A8p!t
+A8q!t
+A8q!uHH
+A8Q)t
+A8Q)u=A
+A8q0u
+A8qHu
+A9V v
+A9v0v=H
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/A
+abort
+ACCEPT
+Ack Packet is not valid
+AckTimeout
+AcquireCredentialsHandleW
+AcquireSRWLockExclusive
+action
+ACTIVEDS.dll
+ad/adprov
+AddAccessAllowedAce
+admcomnd
+admin
+admin_queue$
+AdminMqf
+admutils
+ADVAPI32.dll
+AHH+A@H
+AhH+ApH
+AHH90teL
+AHH90toL
+Algorithm
+AllocateMore
+Allocation Failure in receive packet procedure
+AllowNonauthenticatedRpc
+alnum
+alpha
+application/octet-stream
+appnotify
+At:LcC@H
+ATAUAVH
+ATAVAWH
+Authenticate
+Authenticated
+AUTHZ.dll
+AuthzAccessCheck
+AuthzFlags
+AuthzFreeContext
+AuthzFreeResourceManager
+AuthzGetInformationFromContext
+AuthzInitializeContextFromSid
+AuthzInitializeResourceManager
+AxH+ApH=
+B(D9@
+B84:u
+BackupwithNoTraceFileLimit
+bad allocation
+Base Header is not valid
+BasePriority
+BCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+BindInterfaceIP
+blank
+bltDH
+body@
+BodyType
+boundary=
+BpH+BhH
+BSTR_UserFree64
+BSTR_UserMarshal64
+BSTR_UserSize64
+BSTR_UserUnmarshal64
+Bypassing
+c AUAVAWH
+C H+C
+c UAVAWH
+C@)C<
+C@H;A
+C@uzH
+c^4c/i
+C`D9 ~
+C`Hc0H
+C`Hc8H+
+C0A9F
+C0A9G
+C0L9sPt
+C8;C<u=
+CanonicalizationMethod
+CertCloseStore
+CertFindCertificateInStore
+CertFreeCertificateChain
+CertFreeCertificateContext
+CertGetCertificateChain
+certificate@
+CertInfoCacheExpirationTime
+CertInfoCacheSize
+CertOpenStore
+CertOpenSystemStoreW
+CertVerifyCertificateChainPolicy
+CF\;@
+Cf9+u
+CGetPacket2RemoteOv::GetPacket2RemoteSucceeded
+cgroup
+CharLowerW
+ChekPtrIsAlligned: pointer is not alligned for the given poindted type
+CHf9x
+CHfA9H
+CHfD9@
+CHL9 t#H
+CHL9sht
+Class
+CleanupInterval
+CloseCluster
+CloseClusterResource
+CloseHandle
+CloseSessionOnNonLocal
+CLUSAPI.dll
+ClusterResourceCloseEnum
+ClusterResourceControl
+ClusterResourceEnum
+ClusterResourceOpenEnum
+cntrl
+commitmentCode
+commitmentReceipt
+commitmentReceiptRequest
+CommitTransaction
+CompanyName
+CompareStringW
+ComposeRPCEndPointName
+config
+CONNECT
+CONNECT 
+CONNECTED
+Connection refused
+Connection State
+CONNECTOR
+CONNECTOR=%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x%s
+ConnectorType
+ConsRec
+Content-Id:
+Content-Id: %.*s%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+Content-Length:
+Content-Length: %d
+Content-Type:
+Content-Type: %s
+Content-Type: %s; boundary="MSMQ - SOAP boundary, %d"; type=text/xml
+Content-Type: %s; charset=UTF-8
+ConvertSidToStringSidW
+CopyFileExW
+CopyFileW
+CopySid
+Correlation
+CoTaskMemFree
+cqmgr
+cqpriv
+cqueue
+CreateDirectoryW
+CreateEventW
+CreateFileA
+CreateFileMappingW
+CreateFileW
+CreateIoCompletionPort
+CreateSemaphoreW
+CreateThread
+CreateTime
+CreateTransaction
+CreateWriter
+Creation of new group failed
+crrqmgr
+CRYPT32.dll
+CryptAcquireContextW
+CryptCreateHash
+CryptDecrypt
+CryptDestroyHash
+CryptDestroyKey
+CryptEncrypt
+CryptExportKey
+CryptGenKey
+CryptGenRandom
+CryptGetHashParam
+CryptGetUserKey
+CryptHashData
+CryptImportKey
+CryptKeyEnhExpirationTime
+CryptKeyExpirationTime
+CryptReceiveKeyCacheSize
+CryptReleaseContext
+CryptSendKeyCacheSize
+CryptSetKeyParam
+CryptVerifySignatureW
+csecobj
+CT+CP
+CT9CPu
+current
+D$ E3
+d$ E3
+D$ E3
+d$ E3
+D$ E3
+d$ E3
+D$ E3
+d$ E3
+D$ E3
+d$ E3
+D$ E3
+d$ E3
+D$ E3
+d$ E3
+D$ E3
+d$ E3
+D$ E3
+d$ E3
+D$ E3
+d$ E3
+D$ f9
+D$ fD
+D$ fD9|$`t L
+D$ H;G0
+D$ H+
+D$(_Pe
+D$(DAe
+D$(E3
+D$(fD
+D$(H;
+D$(OAe
+D$(XAe
+D$@;D$HuOH
+D$@;D$HuRH
+D$@D;
+D$@D8 usH
+D$@E3
+D$@H;
+D$@HcH
+D$@I+
+D$@L+
+d$@t3H
+D$`%A
+D$``T
+D$`9D$h
+D$`E3
+D$`HcH
+D$<H;
+D$0E3
+d$0fD
+D$0fD#
+D$0fH
+D$0H!|$(H!|$ 3
+D$0H;C
+D$0HcH
+D$0Hi
+D$0L+
+D$2L;
+D$4+D$0
+D$80fD
+D$8D!D$0f
+D$8E3
+D$8fD
+D$8H90tDM
+D$8L9
+D$AH;
+D$CL;
+D$d9D$`
+d$DD9c(tvD
+D$dE3
+D$H!T$PH
+D$hD;
+D$hE3
+D$HE3
+D$hfA
+D$HH;
+D$hH;
+D$HH;
+D$HH;FXtOH
+d$HHc
+D$HLc
+D$P@w
+D$PE3
+D$pE3
+D$PE3
+D$pE3
+D$PH;
+d$PH;
+D$pL+
+D$pLc
+D$TE3
+d$THc
+d$XD;
+D$XE3
+D$xH;
+D$XH;
+D$xI;
+D$XI+
+D$xtiH
+D;|$t
+D;}@r
+D;}Xr
+D;eXs
+D;O0w}H
+D;vxv
+D8"u*H
+D8?fA
+D8@!t
+D8@)t
+D8@1t
+D8@9t
+D8@it
+D8@It
+D8@it
+D8@It
+D8`!t
+D8`)t
+D8`1t
+D8{9t
+D8{9u
+D8{At
+D8{Au
+D8{Qt
+D8{Qu
+D8}0u
+D85xi
+D8A!t
+D8A!u
+D8A)t
+D8A)u
+D8A1t
+D8A1u
+D8A9t
+D8A9u
+D8Ait
+D8AIt
+D8Aiu
+D8AIu
+D8B!u
+D8B)u
+D8B1u
+D8B9u
+D8BIu
+D8Biu
+D8e u.H
+D8f0u$H
+D8g0tWH
+D8k(E
+D8l$PuKH;
+D8N$u
+D8P9t
+D8Q9u
+D8R9u
+D8t$@
+D8u7t
+D8X u
+D8X uTE
+D8X!u
+D8X(u
+D8X(uTE
+D8X)u
+D8X@u
+D8X@uTE
+D8X0u
+D8X1u
+D8X8u
+D8X8uTE
+D8x9t
+D8X9u
+D8x9u
+D8X9u
+D8x9u
+D8X9u
+D8x9u
+D8X9u
+D8xAt
+D8XAu
+D8xAu
+D8XAu
+D8xAu
+D8XAu
+D8Xhu
+D8XHu
+D8XhuTE
+D8XIu
+D8Xiu
+D8XIu
+D8Xiu
+D8XPu
+D8XPuTE
+D8xQt
+D8xQu
+D8XQu
+D8xQu
+D8XQu
+D8xQu
+D8XQu
+D8xQu
+D8XQu
+D8y9u*H
+D8yAu*H
+D8yQu*H
+D8z@uUD
+D8z@uVD
+D8z8uUD
+D8z8uVD
+D8z9t
+D8z9u
+D8zAt
+D8zAu
+D8zPuUD
+D8zPuVD
+D8zQt
+D8zQu
+D9%@R
+D9%f<
+D9|$0
+D9|$8t'A
+D9|$p
+D9} A
+D9}@vq
+D9}wA
+D9}Xv5
+D9~Xt?D9?u:H
+D9+uIf
+D95Em
+D9a(t`E
+D9d$@
+D9D$0u?H
+D9d$8
+D9e@u
+D9I(t
+D9l$`
+D9l$ht
+D9l$PtrD8
+D9Q t
+D9S t
+D9shu
+D9t$0t-L
+D9t$twlL
+D9'te
+D9u0uMH
+D9uHu
+D9vPt
+D9x0w9H
+DeadLetter
+Debug section is not included while MQF included
+DebugBreak
+decidedAt
+decision
+DecryptMessage
+DefaultCommit
+DeferFirstConnectAttempt
+DeferredInit
+DeleteCriticalSection
+DeleteFalconKeyValue
+DeleteFileW
+DeleteSecurityContext
+deliveryReceipt
+deliveryReceiptRequest
+DeliveryRetryTimeOutScale
+DenyOldRemoteRead
+DepClient
+Dependent Clients Response
+deque<T> too long
+DestinationMqf
+DigestMethod
+DigestValue
+digit
+DIRECT
+DIRECT=%s%s
+DisableMsmqVSSWriter
+Disallowed
+DISCONNECT
+Disconnect network
+DISCONNECTED
+DISCONNECTING
+DL=%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+DL=%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x@%s
+DllGetClassObject
+DnsFilterClusterIp
+DontRestartTrace
+DoRemoteReadStartReceive
+DoronJ
+Double
+DriverName
+DSEnterpriseListRefresh
+DsGetDcNameW
+DSListRefreshErrorRetryInterval
+DsMakeSpnW
+DSNextEnterpriseListRefreshTime
+DSNextSiteListRefreshTime
+DSPARSE.dll
+DsSecurityCache
+DSSiteListRefresh
+DSUpdateInterval
+DumpAccessCheckFailure
+dumpauthzutl
+DUPLICATE
+DuplicateHandle
+durable
+duration
+E ;E(t
+E 9E0u"f
+e A_A^]
+e A_A^A]A\]
+E(=csm
+e@A_A^]
+E`D9%[
+E`I+@
+e0A_A^A]A\]
+e0L9a
+E4tMH
+E8<$u I
+E8=csm
+E8c8t
+E8P9t
+E8x9t
+E8x9u
+E8xAt
+E8xAu
+E8xQt
+E8xQu
+E8Y u
+E8Y(u
+E8Y@u
+E8Y8u
+E8Yhu
+E8YPu
+E97vy
+effffff
+Eh=csm
+EH=csm
+EK E3
+Empty
+EnableCreateQueueThroughService
+EnableTrace
+EncryptMessage
+EnterCriticalSection
+Envelope!Header!Msmq
+Envelope!Header!path!to
+EOD_RESEND
+epA_A^]
+EqualSid
+EstablishConnectionNotCompleted
+Event%d
+EventActivityIdControl
+EventEnabled
+EventRegister
+EventSetInformation
+EventUnregister
+EventWrite
+EventWriteTransfer
+Ex=csm
+EX=csm
+exception
+Exception in CSockTransport::Send
+EXH;F0t!H
+EXI;G0tLH
+ExitProcess
+ExpandEnvironmentStringsW
+expiresAt
+extension@
+f#D$XH
+f;D$`uJH
+f9*t]H
+f9,^u
+f9,Au
+f9,Bu
+f9,Cu
+f9,Ft
+f9,Fu
+f9,Hu
+f9,Ju
+f9,Xu
+f9\$Pu5L
+f9{,vyH
+f9|$p
+f9+t)
+f9+te
+f9+u!
+f9<Au
+f9<Bu
+f9<Cu
+f9<Hu
+f9<Nu
+f94Au
+f94Au\H
+f94Bt
+f94Bu
+f94Cu
+f94Jt
+f9Ah@
+f9D$Ru
+f9tC`u
+fA;DM
+fA9,@u
+fA9,Cu
+fA9,Su
+FA9.}
+fA9?t
+fA9|E
+fA9<@u
+fA9<Fu
+fA94@u
+fA94Au
+fA94Bu
+fA94DujI
+fA94Su
+fA9LE
+Failed to send message to connector queue
+Falcon
+false
+FALSE
+fault
+fB9,Bu
+fB9<bu
+fB9<zu
+fB94Bu
+fC9,Qu
+fC94Au
+fD*aEContent-Length:
+fD; s
+fD9 t
+fD9 u
+fD9!tDH
+fD9$Au
+fD9$Bu
+fD9$Cu
+fD9$Fu
+fD9$H}TH
+fD9$Hu
+fD9$Ju
+fD9$Nu
+fD9$xu
+fD9$Xu
+fD9(t
+fD9(u
+fD9)tc
+fD9,~u
+fD9,Au
+fD9,Au6D9o
+fD9,Bu
+fD9,Cu
+fD9,Gu
+fD9.t
+fD9?tbE
+fD9|$p
+fD9|E
+fD9|M
+fD9<Au
+fD9<Bu
+fD9<Cu
+fD9<Gu
+fD9<Ju
+fD9<Nu
+fD9<ru
+fD9<x}
+fD92u-L
+fD94{u
+fD94Au
+fD94Bu
+fD94Cu
+fD94Fu
+fD94GuvH
+fD94Hu
+fD94pu
+fD94Qu
+fD94x}
+fD94Xu
+fD95)
+fD951
+fD95a
+fD97u
+fD98t
+fD9DA
+fD9l}
+fD9LM
+fD9t$pt
+fD9u`uFH
+fE9$@u
+fE9$Fu
+fE9$vu
+fE9,$ugA
+fE9,Du
+fE9.uXA
+fE9\E
+fE9<Iu
+fE9<nt
+fE94@u
+fE94Du
+fE94Ru
+fE94Xu
+fF9${u
+fF9$Bu
+fF9,Fu
+fF9,qu
+fF9<Cu
+fffffff
+fG9,|u
+fG9,Gu
+fG9<Qu
+Fh@8p
+FH9x 
+FH9x(
+FileDescription
+FileSizeForProfile
+FileVersion
+filterDuplicates
+FindClose
+FindFirstFileW
+FindNextFileW
+First
+fixed
+Flags
+FlushFileBuffers
+FlushViewOfFile
+ForceNameResolutionDirect
+FOREIGN
+Foreign Address: %ls
+FormatMessageW
+Fp@8p
+freeaddrinfo
+FreeAddrInfoW
+FreeContextBuffer
+FreeCredentialsHandle
+FreeLibrary
+FtfE3
+G ;X8
+G D9o0u
+G(;o0v
+G,;D$Pu
+G/f9F
+G@H;F
+g_CancelRpc
+g_hProvVer
+G4zaoBH
+G8H;F
+G8H+G0H;
+GC://<GUID=%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x>
+Get Dependent Clients
+Get next send message Request is failed
+Get Private Queues
+Get Propagate Flag
+Get Report Queue
+GetAce
+GetAclInformation
+getaddrinfo
+GetAddrInfoW
+GetComputerDnsNameInternal
+GetComputerNameExW
+GetComputerNameInternal
+GetComputerNameW
+GetComputerObjectNameW
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThreadId
+GetDateFormatW
+GetDomainFQDNName
+GetExitCodeThread
+GetFalconKey
+GetFalconKeyValue
+GetFalconServiceName
+GetFileAttributesW
+GetFileSecurityW
+GetFileSize
+GetLastError
+GetLengthSid
+GetLocalTime
+GetModuleHandleW
+GetPrivateProfileStringW
+GetProcAddress
+GetQueuedCompletionStatus
+GetSafeDataAndAdvancePointer: too small buffer to read from
+GetSecurityDescriptorControl
+GetSecurityDescriptorDacl
+GetSecurityDescriptorGroup
+GetSecurityDescriptorLength
+GetSecurityDescriptorOwner
+GetSecurityDescriptorSacl
+GetSystemInfo
+GetSystemTimeAsFileTime
+GetTickCount
+GetTimeFormatW
+GetTokenInformation
+GetTraceEnableFlags
+GetTraceEnableLevel
+GetTraceLoggerHandle
+GetUserNameExW
+GetVersionExW
+gfffffffI
+gfffffffL
+Gh@8p
+GH9X 
+gmtime
+graph
+group
+GUID=http://www.microsoft.com/App=MSMQ/VER=2.000/SAPP=Express
+h AVH
+H USH
+h VWAUAVAWH
+H!]HI
+H!|$hM
+H!A0H!A(H!A0H
+H!H0H!H(H!H0H
+H!T$0H
+H){0H
+H){XH
+H;\$Pt(
+H;]@u
+H;]0u
+H;_0t:H
+H;|$@u
+H;8u$A
+H;A0t@H
+H;C0u
+H;G$t
+H;i<vJH
+H;K0r
+H;L$PshH
+H;N@u
+H;NHu
+H;Q tX
+H;x0s
+h_^[]
+H_^[]
+H+L$8H;D$8v
+H9\$Ps
+H9](u
+H9_ s
+H9_ s9L
+H9{ s
+H9{ s(L
+H9{ s6L
+H9{ sAL
+H9|$@
+H9}Xv
+H9~@u
+H9~8u
+H95eA
+H95vA
+H9Aps
+H9Bht
+H9GHu
+H9GXu
+H9j u
+H9k s.L
+H9L$Pt
+H9l$Pt
+H9MhuoH
+H9Q r/H
+H9Qpv$H
+H9r u
+H9s s.L
+H9s s/L
+H9t$Pt
+H9w s&L
+H9w s+L
+H9Y@u
+hA^_^[
+HA^_^[
+hA^_^[
+HA_A^_^[]
+HA_A^A]A\_^[]
+hA_A^A]A\_^][
+Hardened_MSMQ
+HashAlgorithm
+HashMessageProperties
+Hc\$PL
+HcC@f9,Ft
+HcC@H
+HcG@fA9
+HcG@fA94D
+HcG@fA94Gu|L
+HcH`H
+HcO`f
+Hct$ A
+Header
+HeapH
+HeapSetInformation
+Holding
+Host:
+Host: %s
+htnA+
+HTTP Message being sent on wire
+HTTP/1.0
+HTTP/1.1
+HTTP/MULTICAST Message arrived in QM - After insertion into queue
+HTTP/MULTICAST Message arrived in QM - Before insertion into queue
+HTTP://
+http://schemas.xmlsoap.org/rp/
+http://schemas.xmlsoap.org/soap/envelope/
+http://schemas.xmlsoap.org/srmp/
+http://www.w3.org/2000/02/xmldsig#dsa
+http://www.w3.org/2000/02/xmldsig#md5
+http://www.w3.org/2000/02/xmldsig#sha1
+http://www.w3.org/2001/04/xmlenc#sha256
+http://www.w3.org/2001/04/xmlenc#sha512
+Http10Delivery
+HttpAccept
+HttpAuthr
+HttpCleanupInterval
+HttpPipeLine
+HttpResponseTimeout
+HttpRetryOnError403
+https
+HTTPS://
+HttpsPipeLine
+I!v0I
+I;C(tID9
+I;S tV
+I_RpcExceptionFilter
+I_RpcServerIsClientDisconnected
+I_RpcServerTurnOnOffKeepalives
+I_RpcServerUseProtseq2W
+I_RpcServerUseProtseqEp2W
+I0+C@
+I0L;I(w
+I9:u)A8h!t
+I9:u)A8h)t
+I9:u)A8h9t
+I9:u)A8hit
+I9^(u!L
+I92u)E8x9t
+I92u)E8xAt
+I92u)E8xQt
+I9E(uFH
+IdleAckDelay
+IdnNameCompare
+IgnoreOsNameValidation
+IgnoreOsNameValidationForReceive
+IIDFromString
+iL$t`
+INACTIVE
+Incoming Sequences
+InitializeAcl
+InitializeCriticalSection
+InitializeCriticalSectionAndSpinCount
+InitializeSecurityContextW
+InitializeSecurityDescriptor
+Initmclistener
+Inrcv
+inReplyTo
+InSeq
+InSeqBreakOnSignatureCheck
+InSeqCheckInterval
+InSeqCheckSignatures
+InSeqCleanupInterval
+InSeqNew
+InSeqSrmp
+INSERTED
+Instance
+Insufficent resources. Can't issue send request
+Insufficient resources
+Internal Header is not valid
+InternalName
+IntervalToPublicCache
+invalid map/set<T> iterator
+Invalid parameter passed to C runtime function.
+Invalid string length
+invalid string position
+ios_base::badbit set
+ios_base::eofbit set
+ios_base::failbit set
+isalnum
+isalpha
+iscntrl
+isdigit
+isgraph
+IsLocalSystemCluster
+islower
+isprint
+ispunct
+isspace
+isupper
+IsValidSecurityDescriptor
+IsValidSid
+iswalpha
+iswdigit
+iswspace
+isxdigit
+j*.mq
+J{60kB.
+joinstat
+Journal
+JournalQuota
+K WAVAWH
+K..localmachine
+K0A8} 
+K0L9sPt
+KCLOSURE
+KeepAliveInterval
+KeepAliveTimeToFirst
+KERNEL32.dll
+KHL9sht
+ktmw32.dll
+L!D$@
+L!l$ L
+L!w0I
+L#d$PH
+L$ E3
+l$ E3
+L$ E3
+l$ E3
+L$ E3
+l$ E3
+L$ E3
+l$ E3
+L$ E3
+L$ SH
+L$ SVWAVH
+L$ SVWH
+L$ SWH
+l$ UH
+L$ USH
+L$ UVWATAUAVAWH
+l$ VWATAVAWH
+l$ VWAUAVAWH
+l$ VWAVH
+L$ WH
+L$$E3
+l$(E3
+l$(L!D$ H
+l$(Lcw D
+L$@D8!
+l$@E3
+L$@E3
+l$@E3
+L$@H3
+L$@HcQ
+L$`E3
+L$`f;
+L$`H3
+L$`HcQ
+L$0;y
+L$0D;
+l$0D9|$$v2H
+L$0E3
+L$0H3
+L$8E3
+L$8H3
+L$8I;L$0
+L$8Lc
+L$d;L$xL
+L$HE3
+L$hE3
+L$HE3
+L$HH3
+L$hH3
+l$PE3
+L$PE3
+l$PE3
+L$pE3
+l$PE3
+L$PfD
+L$PH+
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PtJL
+L$XE3
+L$xE3
+L$XE3
+L$xE3
+L$XE3
+L$XfD
+L$XH3
+L$xH3
+L$XH3
+L$xH3
+l$zfD
+l*.mq
+L;0u(A
+L;BHt
+L;CHt
+L;I r
+L+A`H
+L+C@H;S@v
+L9 t3H
+L9|$XH
+L9~Xt
+L90t$M
+L98uWH
+L9Ipv(H
+L9k u
+L9l$X
+L9o0t
+L9s(u&L
+L9s8t
+L9t$ t
+L9zXu
+Label
+lastOrdinal
+LastPrivateQueueId
+LcA@H
+LcA<E3
+LcAPH
+LcC@H
+LcD$`I
+Lcd4(9\5
+Lcf D
+LcF@H
+LcG@I
+LcG`M
+LDAP://%ls
+LDAP://%ls/%ls
+LDAP://%ls/<GUID=%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x>
+LDAP://<GUID=%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x>
+LDAP://cn=msmq,
+le/4;
+lE9>}
+LeaveCriticalSection
+LegalCopyright
+LIORA
+LIORD
+LIORE
+LIORH
+list<T> too long
+LoadLibraryExW
+LoadLibraryW
+LoadStringW
+LOCAL
+LOCAL CONNECTION
+local_names
+LocalAlloc
+localeconv
+LocalFree
+localhost
+localsecurity
+localsend
+Location:
+LOCKED
+LogDataCreated
+LogMgrBuffers
+LogMgrChkptInterval
+LogMgrFileSize
+LogMgrFlushInterval
+LogMgrRepeatAsynchLimit
+LogMgrSleepAsynch
+LogMgrTimerInterval
+LookupAccountNameW
+LookupAccountSidW
+lower
+LPSAFEARRAY_UserFree64
+LPSAFEARRAY_UserMarshal64
+LPSAFEARRAY_UserSize64
+LPSAFEARRAY_UserUnmarshal64
+lwpta
+M0L90t
+M0L98
+M96u9
+MACHINE
+MACHINE=%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x%s
+MachineCache\EnterpriseId
+MachineCache\LongLiveTime
+MachineCache\MachineDeadletterQuota
+MachineCache\MachineJournalQuota
+MachineCache\MachineQuota
+MachineCache\MQISServer
+MachineCache\MQS
+MachineCache\MQS_DepClients
+MachineCache\MQS_Routing
+MachineCache\MQS_TransparentSFD
+MachineCache\QMId
+MachineCache\SiteId
+MachineCache\SiteName
+MakeSelfRelativeSD
+malloc
+map/set<T> too long
+mapping
+MapViewOfFile
+MaxInSessions
+MaxMappedFiles
+MaxMessageSize
+MaxSysQueue
+MaxTraceFileSize
+MaxUnackedPacket
+McEPI
+member;Range=%d-%d
+memchr
+memcmp
+memcpy
+memcpy_s
+memmove
+memmove_s
+memset
+Message Queuing - QM2QM V1
+Message Queuing - QMRT V1
+Message Queuing - QMRT V2
+Message Queuing - RemoteRead V1
+Message Queuing Manager
+Message Queuing VSS Writer Backup File
+MessageCleanupInterval
+MessageID
+MessageIdHigh32
+Microsoft
+Microsoft Corporation
+Microsoft Enhanced RSA and AES Cryptographic Provider
+Microsoft Message Queuing
+Microsoft Unified Security Protocol Provider
+ModifyTime
+MoveFileExW
+mqad.dll
+MQADBeginDeleteNotification
+MQADCreateObject
+MQADDeleteObject
+MQADDeleteObjectGuid
+MQADDeleteObjectGuidSid
+MQADEndDeleteNotification
+MQADEndQuery
+MQADFreeMemory
+MQADGetADsPathInfo
+MQADGetComputerSites
+MQADGetGenObjectProperties
+MQADGetObjectProperties
+MQADGetObjectPropertiesGuid
+MQADGetObjectSecurity
+MQADGetObjectSecurityGuid
+MQADInit
+MQADNotifyDelete
+MQADQMGetObjectSecurity
+MQADQueryAllLinks
+MQADQueryAllSites
+MQADQueryConnectors
+MQADQueryForeignSites
+MQADQueryLinks
+MQADQueryMachineQueues
+MQADQueryQueues
+MQADQueryResults
+MQADQuerySiteServers
+MQADQueryUserCert
+MQADSetObjectProperties
+MQADSetObjectPropertiesGuid
+MQADSetObjectSecurity
+MQADSetObjectSecurityGuid
+MQF section is not valid: Direct queue without NULL terminator
+Mqf section is not valid: private queue Uniquifier can not be 0
+MQF section is not valid: Queue type is not valid
+MQGetResourceHandle
+MQInSeqs
+mqinseqs.*
+MqLogMgr.dll
+MQQM.DLL
+MQQM.dll
+mqqm.pdb
+mqrpcBindQMService
+mqrpcIsLocalCall
+mqrpcIsTcpipTransport
+mqsec.dll
+MQSec_AccessCheck
+MQSec_AcquireCryptoProvider
+MQSec_CalculateServiceSid
+MQSec_CanGenerateAudit
+MQSec_ChooseBestAlgorithm
+MQSec_ConvertSDToNT4Format
+MQSec_CopySecurityDescriptor
+MQSec_GetAdminSid
+MQSec_GetAnonymousSid
+MQSec_GetDefaultPrivateQueueSecurityDescriptor
+MQSec_GetDefaultPublicQueueSecurityDescriptor
+MQSec_GetDefaultQueueAuthentication
+MQSec_GetDefaultSecDescriptor
+MQSec_GetImpersonationObject
+MQSec_GetLocalMachineSid
+MQSec_GetNetworkServiceSid
+MQSec_GetPrivLevelForProvider
+MQSec_GetProviderForPrivLevel
+MQSec_GetPubKeysFromDS
+MQSec_GetWorldSid
+MQSec_IsDC
+MQSec_IsWeakHashAlgorithm
+MQSec_MakeAbsoluteSD
+MQSec_MakeSelfRelative
+MQSec_RemovePrivilegesFromProcessToken
+MQSec_RpcAuthnLevel
+MQSec_SetDirectorySecurityForService
+MQSec_SetPrivilegeInThread
+MQSec_StorePubKeys
+MQSec_StorePubKeysInDS
+MQSec_TraceThreadTokenInfo
+MQSec_UpdateLocalMachineSid
+MQSigCreateCertificate
+MQSigHashMessageProperties
+MQTrans
+mqtrans.*
+MQUInitGlobalScurityVars
+mqutil.dll
+--MSMQ - SOAP boundary, %d
+--MSMQ - SOAP boundary, %d--
+MSMQ Incoming HTTP Messages
+MSMQ Incoming Multicast Session
+MSMQ IS
+MSMQ Outgoing HTTP Session
+MSMQ Outgoing Multicast Session
+MSMQ Queue
+MSMQ Service
+MSMQ Session
+MSMQ Writer
+msmq.namespace.xml
+MSMQ:
+MSMQ\MY
+msmq_ADIntegrated
+msmq_HTTPSupport
+msmq_outbound_mapping.xml
+msmq_TriggersInstalled
+msMQ-Custom-Recipient
+MSMQGetOperatingSystem
+MsmqIpPingPort
+MsmqIpPort
+msmqlog.
+MsmqMode
+msMQQueue
+msmq-queue-mapping.xml
+msmq-queue-redirections.xml
+msMQ-Recipient-FormatName
+msmqreg.bkp
+MsmqRootPath
+MSMQStorage
+msmq-streamreceipt-mapping.xml
+MsmqTelemetryProvider
+MSMQTriggers
+msmqwebacl.bkp
+msvcrt.dll
+MultiByteToWideChar
+MULTICAST
+Multicast Message being sent on wire
+MULTICAST=%s
+MulticastAcceptRetryTimeout
+MulticastAddress
+MulticastBindIP
+MulticastCleanupInterval
+MulticastConnectionRetryTimeout
+MulticastRateKbitsPerSec
+MulticastReceiversCleanupTimeout
+MulticastTimeToLive
+MulticastWindowSizeInMSecs
+multipart/related
+mustUnderstand
+mwt:H
+Native Message arrived in QM - After insertion into queue
+Native Message arrived in QM - Before insertion into queue
+Native Message being sent on wire
+ncacn_ip_tcp
+ncalrpc
+Ndr64AsyncClientCall
+Ndr64AsyncServerCallAll
+NdrAsyncServerCall
+NdrClientCall3
+NdrServerCall2
+NdrServerCallAll
+NEED VALIDATION
+negative
+negativeOnly
+NETAPI32.dll
+NetApiBufferFree
+NetGetJoinInformation
+NetNameForPerfCounters
+NewRemoteReadClientDenyWorkgroupServer
+NewRemoteReadServerAllowNoneSecurityClient
+NewRemoteReadServerDenyWorkgroupClient
+NO LABEL
+noconnect
+Not Found
+notify_queue$
+NtClose
+NtDeviceIoControlFile
+ntdll.dll
+NtOpenEvent
+o&L2"
+O\f9N
+O<;O@tR+O@
+objectGUID
+OldRemoteRead
+ole32.dll
+OLEAUT32.dll
+onhold
+ONHOLD
+OnHold Queues
+OnPostRestore
+OnPrepareSnapshot
+OnPreRestore
+OpenCluster
+OpenClusterResource
+OpenProcess
+OpenProcessToken
+order_queue$
+OriginalFilename
+outbound_redirections
+OutputDebugStringA
+p AWH
+p Uz=7a
+p WATAUAVAWH
+p WATAVH
+p WAVAWH
+p"[|U
+p"U8Y
+p*.mq
+p;TXi
+p`]z@6X
+p{\Rh.
+P0:dz
+p0:dz
+p0R^G'
+p0Zt}
+p2U8k
+p3XpZ.x
+p3Z>J
+P7XSY
+p9W<_
+PA\_^
+PA^_]
+PA^_^
+pA^_^
+PA^_^
+pA^_^
+PA^_^
+PA^_^[]
+pA^_^][
+PA^_^][
+PA^A\_[]
+PA^A]_^]
+PA__[
+PA__^][
+PA_A\^
+pA_A\_^]
+PA_A]A\_^[]
+PA_A^_^[
+pA_A^_^[
+PA_A^_^]
+pA_A^_^]
+PA_A^_^]
+pA_A^A\^]
+PA_A^A\_^
+PA_A^A\_^[]
+pA_A^A\_^[]
+PA_A^A]_^[]
+pA_A^A]_^[]
+PA_A^A]A\_^[
+pA_A^A]A\_^[
+PA_A^A]A\_^[
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+Packet have not been acknowledged
+Packet is not valid
+PacketSequentialIdMsmq3Format
+PagedPoolPollingInterval
+paP^V7
+paSXr
+PathWWWRoot
+PAUSE
+pb]\t'
+PCLOSURE
+PerfCreateInstance
+PerfDeleteInstance
+PerfSetCounterRefValue
+PerfSetCounterSetInfo
+PerfStartProviderEx
+PerfStopProvider
+PermitInsecureNacks
+PH;]@u
+PH;]Pu
+Ping Response
+plt)H
+plt+H
+pltdH
+positive
+positiveOnly
+POST %s %s
+POST %s HTTP/1.1
+PostQueuedCompletionStatus
+pP[\=
+pP_2M
+PrepInfo
+previous
+print
+Priority
+PRIVATE
+PRIVATE$
+PRIVATE$/
+PRIVATE$\
+private$\admin_queue$
+private$\notify_queue$
+PRIVATE=%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x\%08x%s
+PrivLevel
+ProduceRPCErrorTracing
+ProductName
+ProductVersion
+ProgressReportTime
+PropagateFlag
+Properties
+properties
+Provider
+provider string is not NULL terminated
+proxy
+Proxy-Accept: NonInteractiveClient
+Ps,_0
+psQXd
+pubcache
+PUBLIC
+PUBLIC=%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x%s
+PulseEvent
+punct
+PurgeInconsistentQueues
+Put packet to the driver failed
+pXX8*
+pySxF.=
+q Uz=7a
+q"[|U
+q"U8Y
+q#Xr0
+q*Z~:
+q:_0#
+q;TXi
+q@kNULL
+q`]z@6X
+q{\Rh.
+q0R^G'
+q2V<3
+q3Z>J
+Q890746_SleepMilliseconds
+Q890746_WaitMilliseconds
+q9W<_
+qaP^V7
+qaSXr
+qb]\t'
+qB^|p
+QCLOSURE
+qcVx:
+qH]:S
+qlt#L
+qlt-A
+QM Ordering Ack
+QM Response Message
+qm/creatobj
+qm/strex
+qm/ual
+qm\perf
+qm\RemoteReadSrv
+qm2qm_v1_0_R_QMRemoteCancelReceive
+qm2qm_v1_0_R_QMRemoteCloseCursor
+qm2qm_v1_0_R_QMRemoteCloseQueue
+qm2qm_v1_0_R_QMRemoteEndReceive
+qm2qm_v1_0_R_QMRemotePurgeQueue
+qm2qm_v1_0_R_QMRemoteStartReceive
+qm2qm_v1_0_R_QMRemoteStartReceive2
+qm2qm_v1_0_R_QMRemoteStartReceiveByLookupId
+qmacapi
+QM-Admin Commands
+qmcomm_v1_0_S_QMCreateRemoteCursor
+qmcommnd
+QMEnvironmentEventManager
+QMGuidChanged
+qmlog
+QMLog
+QMMain
+QMMgmtFacility
+qmnotify
+QmPbKeyCacheExpirationTime
+QmPbKeyCacheSize
+qmperf
+qmpkt
+qmremote
+QmReplService
+qmrpcsrv
+qmrtopen
+qmsecutl
+QMsvc
+qmthrd
+QMThreadNo
+qmutil
+QosCleanupIntervalMultiplier
+QosSessAppName
+QosSessPolicyLoc
+qP[\=
+qP_2M
+qQT<t
+QueryContextAttributesW
+QueryPerformanceCounter
+QueryTraceW
+queue
+QueueCreated
+QueueName
+QueuesAliasPath
+QueueType
+Quota
+qX\pG
+qx]~g
+qXX8*
+qySxF.=
+raB3G
+rand_s
+Read from socket failed
+Read from socket Failed
+Read packet from socket Failed
+ReadFile
+receivedAt
+recovery
+RecvAckTimeoutMult
+redirection
+redirections
+Reference
+RegCloseKey
+RegCreateKeyExW
+RegCreateKeyTransactedW
+RegDeleteValueW
+RegEnumKeyExW
+RegEnumValueW
+RegisterEventSourceW
+RegisterServiceCtrlHandlerW
+RegisterTraceGuidsW
+registry
+RegOpenKeyExW
+RegOpenKeyTransactedW
+RegQueryInfoKeyW
+RegQueryValueExW
+regqueue
+RegSetValueExW
+ReIssueRemoteCancelInterval
+REJECT
+RejectEnhRC2IfLen40
+relatesTo
+Release Unused session
+ReleaseSemaphore
+ReleaseSRWLockExclusive
+REMOTE
+RemoteRead_v1_0_S_CancelReceive
+RemoteRead_v1_0_S_CloseCursor
+RemoteRead_v1_0_S_CloseQueue
+RemoteRead_v1_0_S_CreateCursor
+RemoteRead_v1_0_S_EndReceive
+RemoteRead_v1_0_S_MoveMessage
+RemoteRead_v1_0_S_PurgeQueue
+RemoteRead_v1_0_S_SetUserAcknowledgementClass
+remotereadcli
+RemoveDirectoryW
+RemoveDuplicateCleanup
+RemoveDuplicateSize
+ReplaceFileW
+Report
+ReportEventW
+ReportQueueGuid
+ResetEvent
+ResponseMqf
+Restore
+RestoreComponents
+RestrictAdminApi
+RESUME
+Rich}
+RMClientName
+rmdupl
+RMFlushInterval
+RoundTripDelay
+RoutingRefreshInterval
+RpcAsyncAbortCall
+RpcAsyncCompleteCall
+RpcAsyncInitializeHandle
+RpcBindingFree
+RpcBindingInqAuthClientW
+RpcBindingInqAuthInfoW
+RpcBindingServerFromClient
+RpcBindingSetOption
+RpcBindingToStringBindingW
+RpcCancelTimeout
+RpcEpRegisterW
+RpcLocalEp
+RpcMgmtSetComTimeout
+RpcMgmtStopServerListening
+RpcRaiseException
+rpcrt4.dll
+RPCRT4.dll
+RpcServerInqBindings
+RpcServerInqCallAttributesW
+RpcServerListen
+RpcServerRegisterAuthInfoW
+RpcServerRegisterIf2
+RpcServerRegisterIfEx
+RpcServerUseProtseqEpW
+RpcServerUseProtseqW
+RpcSsDestroyClientContext
+RpcStringBindingParseW
+RpcStringFreeW
+RRClientDisconnectInterval
+rrcontext
+rrSrvCommon
+RtlCaptureContext
+RtlImageNtHeader
+RtlInitUnicodeString
+RtlIpv4AddressToStringW
+RtlIpv6AddressToStringA
+RtlIpv6AddressToStringW
+RtlLookupFunctionEntry
+RtlVirtualUnwind
+S H+S
+s HcH
+s I+s
+s WATAUAVAWH
+s WAVAWH
+S43>P
+SafeAddPointers cause overflow
+SafeAlignUp4Ptr cause overflow
+sample_map.xml
+sample_outbound_map.xml
+se:Body
+se:Envelope
+se:Header
+se:mustUnderstand="1"
+SeAssignPrimaryTokenPrivilege
+SeBackupPrivilege
+SeCreatePagefilePrivilege
+SeCreatePermanentPrivilege
+SeCreateTokenPrivilege
+section_cast: buffer to small for casting
+section_cast: section is before packet start
+Secur32.dll
+security
+Security
+Security section is not valid: No roon for _SecuritySectionEx
+Security section is not valid: No roon for _SecuritySubSectionEx
+security\EnablePingService
+security\EnableReportMessages
+security\LqsUpdatedSD
+security\MachineAccount
+security\MaxAdminCommandsPerSecond
+security\RcvOnlyEnhMsgAuthn
+SeDebugPrivilege
+SeEnableDelegationPrivilege
+SeIncreaseBasePriorityPrivilege
+SeLoadDriverPrivilege
+SeLockMemoryPrivilege
+Send Test Message
+SendBy
+SendEnhRC2With40
+Sending
+Sending message from DEP RT
+Sending message from DEP(EX) RT
+Sending message from QM
+sendReceiptsTo
+sendTo
+SendWindowinBytes
+sentAt
+SeqID
+SeqIDAtLastRestore
+SeqMaxAckDelay
+SeqResend10Time
+SeqResend13Time
+SeqResend46Time
+SeqResend79Time
+SeRemoteShutdownPrivilege
+SeRestorePrivilege
+services
+SeSecurityPrivilege
+SeShutdownPrivilege
+session
+sessmgr
+SeSystemEnvironmentPrivilege
+SeSystemtimePrivilege
+Set Propagate Flag
+Set Report Queue
+SeTakeOwnershipPrivilege
+SeTcbPrivilege
+SetEnvironmentVariableW
+SetEvent
+SetFalconKeyValue
+SetFalconServiceName
+SetFileAttributesW
+SetFilePointer
+SetFileSecurityW
+setlocale
+SetProcessMitigationPolicy
+SetSecurityDescriptorDacl
+SetSecurityDescriptorGroup
+SetSecurityDescriptorOwner
+SetServiceStatus
+SetThreadStackGuarantee
+SetUnhandledExceptionFilter
+setup
+setup\CreateMsmqObj
+setup\JoinStatus
+setup\KeepCurrentDomain
+setup\LocalUser
+setup\MachineDN
+setup\MachineDomain
+setup\MachineDomainFQDN
+setup\OSType
+Setup\StoragePaths
+setup\UserSid
+setupResult\MsmqObjResult
+SetupStatus
+SeUndockPrivilege
+sf9t$0tj@8t$Pt[H9t$8t$
+SHELL32.dll
+SHGetKnownFolderPath
+Signature
+Signature!SignatureValue
+Signature!SignedInfo
+SignatureMethod
+Single
+SitesUpdateInterval
+SkipRevocationCheck
+Sleep
+SleepConditionVariableSRW
+SOAPAction: "MSMQMessage"
+Software\Microsoft\InetStp
+SOFTWARE\Microsoft\MSMQ
+Software\Microsoft\MSMQ\Clustered QMs
+SOFTWARE\Microsoft\MSMQ\Clustered QMs\
+SOFTWARE\Microsoft\MSMQ\Parameters
+SOFTWARE\Microsoft\MSMQ\Setup
+Software\Microsoft\MSMQ\Triggers
+Software\Microsoft\MSMQ\Triggers\Clustered
+SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Connections
+SourceQmGuid
+space
+sprintf_s
+srand
+st/lib/encryptor
+start
+StartServiceCtrlDispatcherW
+StartTraceW
+StckH
+StopTraceW
+storage
+StoreAckTimeout
+StoreInSeqLogPath
+StoreJournalPath
+StoreLogPath
+StoreMqLogPath
+StorePersistentPath
+StoreReliablePath
+StoreXactLogPath
+strchr
+strcspn
+Stream
+streamId
+Streamname
+streamReceipt
+StreamReceipt_map.xml
+streamReceiptRequest
+StreamReceiptSetup
+string too long
+StringFileInfo
+StringFromGUID2
+strncmp
+strtoul
+SUVWATAUAVAWH
+SUVWAUAVAWH
+SUVWAVH
+SUVWAWH
+SUVWH
+SVATAVAWH
+SVAVAWH
+SVWATAUAVAWH
+SVWATAUH
+SVWATAVAWH
+SVWAVAWH
+SVWAVH
+SVWAWH
+SWAVH
+SWAWH
+swscanf_s
+symmkey
+Sysprep
+SysQueuePriority
+SYSTEM$
+SystemQueue
+SystemResourceTracker
+SystemTimeToFileTime
+t D8=
+t H9K
+t"x%@2
+T$ 9T;
+t$ E3
+T$ E3
+t$ E3
+T$ E3
+t$ E3
+T$ E3
+t$ E3
+T$ E3
+t$ E3
+T$ E3
+t$ E3
+T$ E3
+t$ E3
+T$ fD
+T$ H+
+t$ UWATAVAWH
+t$ UWAUAVAWH
+t$ UWAVH
+t$ UWAWH
+t$ WATAUAVAWH
+t$ WAVAWH
+t$ WH
+t$(fD
+t$(H;
+t$:fD
+T$@E3
+t$@fD
+T$`H;V0
+T$`Hi
+T$0fD
+T$0Hi
+t$2fD
+T$8A;
+t$BfD
+T$d9T$xwtI
+t$fE9
+t$PE3
+T$PE3
+t$pfD
+t$pH!q
+t$pL!q
+t$RfD
+t$x(H
+t$xE3
+T$XE3
+t&fD9
+t*x-E;>A
+t*y,3
+t.E8n
+t.fD9p
+t/H;]
+t:H9X
+t[A8v
+t_D8o
+t{A;x
+t=L9u
+t>D9h
+t>xBH
+t5I;0u!A
+t5I;2u!A
+t5LcC
+t8f9p
+t8I;7u$A
+t8x:H
+t9\$(u]H
+t9H9{
+tbD9H
+tBI;7u.A
+tbL;=
+tCD8u8u
+TCP IPv6: %S
+TCP: %S
+TCPNoDelay
+tEfD9
+teHcD$pH
+TerminateProcess
+tExHH
+text/xml
+tff9p
+tiH;5Z
+TimeStamp
+tJ!]8D
+t'L!D$0H
+tL9~@u
+TlsAlloc
+TlsGetValue
+TlsSetValue
+tMH9Z
+tnH;5K
+tnH;u
+tOL9gPuIM
+tOLcC@H
+towupper
+tpD!l$T
+Trace
+TraceEvent
+TraceMessage
+Transaction
+Transactional
+TransactionMode
+Transactions
+Transforms
+Translation
+trD9I(tl
+triggers_queue$
+TryConnectInterval
+tTxVH
+TUUUUUU
+tWxZH
+tYH9y
+u fD959
+u HcA<H
+u"f9s
+u%A8h!t
+u%A8h)t
+u%A8h1t
+u%A8h9t
+u%A8hit
+u%A8hIt
+u%E8x9t
+u%E8xAt
+u%E8xQt
+u&I;~
+u(E8n,t
+u)A8h1t
+u)A8hIt
+u)H;N
+u*fD95A
+u.D+D$pH
+u`LcE
+u{I9F
+u<@:o u6H
+u>fD95Q
+u0D;x
+u3!KtH
+u4fD95I
+u4I9A
+U8H;S@t
+u'9|$0u
+ualapi.dll
+UalInstrument
+UalStart
+UalStop
+UATAUAVAWH
+UATAVH
+UAVAWH
+uCD9uow
+uE9\$pv?
+ueH9F
+ugD90
+u-HcC@H
+uHfD95Y
+uHHcG0H
+uKf93u
+umHcC@H
+unH9F
+UnhandledExceptionFilter
+UNKNOWN
+UnmapViewOfFile
+UnregisterTraceGuids
+Unresolved yet
+Un-synchronized Acknowledge number
+UpdateRecvAcknowledgeNo threw an exception
+upper
+UseCircularTraceFileMode
+UseQoS
+User section is not valid: Direct queue need to be NULL terminated
+User section is not valid: private queue Uniquifier can not be 0
+User section is not valid: Uniquifier can not be 0
+USER32.dll
+UserCacheExpirationTime
+UserCacheSize
+usermap
+USVWATAUAVAWH
+USVWATAVAWH
+USVWAVAWH
+USVWAVH
+USWAVH
+uuid:
+uuid:%d%lc%n
+UuidCreate
+UuidToStringW
+UVATAVAWH
+UVWATAUAVAWH
+UVWATAVH
+UVWATAWH
+UVWAUAVH
+UVWAVAWH
+UWATAUAVH
+UWATAVAWH
+UWATH
+UWAUAVAWH
+UWAVH
+UWAWH
+uZD9=
+v;fD;
+VarFileInfo
+VATAWH
+vector<T> too long
+verifypacket
+VerifySignMqf
+VH9VL
+VirtualAlloc
+VirtualProtect
+VirtualQuery
+VS_VERSION_INFO
+VSSAPI.DLL
+VWATAUAVH
+VWATAUAWH
+VWATAVAWH
+VWATH
+VWAUAVAWH
+VWAVH
+VWAWH
+w#H;-(U
+W/e=TfG
+W>>gy3&
+WaitForMultipleObjects
+WaitForSingleObject
+WAITING
+WaitMaxInSessions
+WaitTime
+WakeAllConditionVariable
+WATAUAVAWH
+WATAVH
+WATAWH
+WAVAWH
+wcschr
+wcscmp
+wcscspn
+wcsncmp
+wcspbrk
+wcsrchr
+wcsspn
+wcsstr
+wcstombs
+wcstoul
+Wh@8r
+WideCharToMultiByte
+WINHTTP.dll
+WinHttpCrackUrl
+WinHttpCreateUrl
+WinHttpSettings
+Workgroup
+Write on socket failed.
+Write packet to socket Failed
+WriteFile
+WritePrivateProfileStringW
+writer/mqwriter
+WS2_32.dll
+WSAAddressToStringW
+WSAConnect
+WSAEnumProtocolsW
+WSAIoctl
+WSARecv
+WSASend
+WSASocketW
+WSAStringToAddressW
+WSOCK32.dll
+x ATAUAVAWLc
+x ATAUAVH
+x ATAUAWH
+x ATAVAWH
+x AVH
+x AWH
+x UATAUAVAWH
+x UATAVH
+x UAVAWH
+x;D8e
+X`j@k
+x5D9~4s/E
+XA^_^[
+XA^A\_^[]
+XA__^[
+XA_A^_^[]
+xA_A^A]A\_^[]
+XA_A^A]A\_^[]
+XactAbortCommitRetryInterval
+XactData
+XactDeadLetterAlways
+XactDelayReceiveNack
+XactGetDTC
+XactGetWhereabouts
+xactin
+xactlog
+xactmode
+xactout
+xactping
+xactrm
+XactStatus
+xCommitmentDetail
+xConnectorId
+xdigit
+xLD9{
+xmlns
+xmlns:se="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/srmp/"
+xmlns="http://schemas.xmlsoap.org/rp/" se:mustUnderstand="1"
+xmlns="msmq.namespace.xml"
+Y0Hc1
+YHH;_Pt
+ylt<H
+YVA.,

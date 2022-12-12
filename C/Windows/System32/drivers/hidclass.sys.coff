@@ -1,0 +1,208 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\hidclass.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    WMILIB.SYS
+    HIDPARSE.SYS
+    WppRecorder.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C002E088 Import Address Table
+             1C002E560 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          8C EtwSetInformation
+                         12C ExReleaseFastMutex
+                         4B7 KeInitializeSpinLock
+                         826 RtlCopyUnicodeString
+                          94 EtwWriteTransfer
+                         2DE IoAllocateDriverObjectExtension
+                          8E EtwUnregister
+                          9C ExAcquireFastMutex
+                         5BC MmGetSystemRoutineAddress
+                          89 EtwRegister
+                         428 IoWMIRegistrationControl
+                         4AF KeInitializeEvent
+                         37F IoInvalidateDeviceRelations
+                         B79 ZwQueryValueKey
+                         B3B ZwOpenKey
+                         59C MmBadPointer
+                         53A KeSetEvent
+                         BC8 __C_specific_handler
+                         370 IoGetRequestorSessionId
+                         469 KeBugCheckEx
+                         363 IoGetInitiatorProcess
+                         70D ProbeForWrite
+                         729 PsGetCurrentProcessId
+                         A2D SeQuerySessionIdToken
+                         46F KeClearEvent
+                         74D PsGetProcessImageFileName
+                         6AD ObfReferenceObject
+                         357 IoGetDeviceProperty
+                         5D2 MmMapLockedPagesSpecifyCache
+                         731 PsGetCurrentThreadId
+                         36E IoGetRequestorProcess
+                         566 KeWaitForSingleObject
+                         54A KeSetTimer
+                         4AB KeInitializeDpc
+                         892 RtlGetActiveConsoleId
+                         33D IoFreeIrp
+                         4B9 KeInitializeTimer
+                         46A KeCancelTimer
+                         2E0 IoAllocateIrp
+                         52B KeResetEvent
+                         3B9 IoReleaseCancelSpinLock
+                         BF1 _vsnwprintf
+                         6AB ObfDereferenceObject
+                         88D RtlFreeUnicodeString
+                         56E KseQueryDeviceFlags
+                         BB2 ZwSetValueKey
+                         37C IoInitializeRemoveLockEx
+                         3DC IoSetDevicePropertyData
+                         358 IoGetDevicePropertyData
+                          85 EtwActivityIdControl
+                         447 KdRefreshDebuggerNotPresent
+                         378 IoIncrementKeepAliveCount
+                         876 RtlFindMessage
+                          8F EtwWrite
+                         324 IoDecrementKeepAliveCount
+                         30D IoCreateDevice
+                         510 KeReleaseGuardedMutex
+                         435 IofCallDriver
+                         44C KeAcquireGuardedMutex
+                         A3F SeSinglePrivilegeCheck
+                          6E DbgPrint
+                         C49 wcsncmp
+                         3AF IoRegisterDeviceInterface
+                         3BA IoReleaseRemoveLockAndWaitEx
+                         3DB IoSetDeviceInterfaceState
+                         329 IoDetachDevice
+                         4B0 KeInitializeGuardedMutex
+                         BEF _vsnprintf
+                         2EA IoAttachDeviceToDeviceStack
+                         708 PoUnregisterPowerSettingCallback
+                         168 ExUnsubscribeWnfStateChange
+                         3DA IoSetDeviceInterfacePropertyData
+                         6FD PoSetPowerState
+                         6E8 PoGetSystemWake
+                         6FF PoSetSystemWake
+                         113 ExQueryWnfStateData
+                         706 PoStartNextPowerIrp
+                         6C7 PoFxActivateComponent
+                         6D9 PoFxRegisterDevice
+                         6E6 PoFxUnregisterDevice
+                         6F4 PoRegisterPowerSettingCallback
+                         B7C ZwQueryWnfStateData
+                         6DF PoFxReportDevicePoweredOn
+                         6CE PoFxIdleComponent
+                         6E5 PoFxStartDevicePowerManagement
+                         14F ExSubscribeWnfStateChange
+                         6E3 PoFxSetDeviceIdleTimeout
+                         3D4 IoReuseIrp
+                         6C9 PoFxCompleteDevicePowerNotRequired
+                         958 RtlQueryRegistryValues
+                         8C2 RtlInitAnsiString
+                         AE9 ZwClose
+                         436 IofCompleteRequest
+                         3A1 IoQueueWorkItem
+                          E5 ExFreePoolWithTag
+                         343 IoFreeWorkItem
+                          B4 ExAllocatePool2
+                         51A KeReleaseSpinLock
+                         391 IoOpenDeviceRegistryKey
+                         6F6 PoRequestPowerIrp
+                         8CB RtlInitUnicodeString
+                         49B KeGetCurrentIrql
+                         2F3 IoCancelIrp
+                         457 KeAcquireSpinLockRaiseToDpc
+                         3BB IoReleaseRemoveLockEx
+                         2E5 IoAllocateWorkItem
+                         326 IoDeleteDevice
+                         2D8 IoAcquireRemoveLockEx
+                         6B3 PoDirectedDripsSetDeviceFlags
+                         B3E ZwPowerInformation
+                         962 RtlRunOnceExecuteOnce
+                         B66 ZwQuerySystemInformation
+                          B7 ExAllocatePoolWithQuotaTag
+                         761 PsGetVersion
+                         887 RtlFreeAnsiString
+                         959 RtlQueryRegistryValuesEx
+                          77 DbgkWerCaptureLiveKernelDump
+                         9AE RtlUnicodeStringToAnsiString
+                         4FC KeQueryTimeIncrement
+
+    WMILIB.SYS
+             1C002E030 Import Address Table
+             1C002E508 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 WmiCompleteRequest
+                           4 WmiSystemControl
+
+    HIDPARSE.SYS
+             1C002E000 Import Address Table
+             1C002E4D8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 HidP_FreeCollectionDescription
+                          1B HidP_SysPowerCaps
+                           5 HidP_GetCaps
+                          1C HidP_SysPowerEvent
+                           6 HidP_GetCollectionDescription
+
+    WppRecorder.sys
+             1C002E048 Import Address Table
+             1C002E520 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          10 imp_WppRecorderReplay
+                           C imp_WppRecorderLogDelete
+                           B imp_WppRecorderLogCreate
+                           2 WppAutoLogStart
+                           5 imp_WppRecorderConfigure
+                           3 WppAutoLogStop
+                           4 WppAutoLogTrace
+
+  Section contains the following exports for HIDCLASS.SYS
+
+    00000000 characteristics
+    B2DEB7D7 time date stamp
+        0.00 version
+           1 ordinal base
+           4 number of functions
+           4 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00039120 DllInitialize
+          2    1 00039860 DllUnload
+          3    2 00017440 HidNotifyPresence
+          4    3 000385A0 HidRegisterMinidriver
+
+  Summary
+
+        2000 .data
+        1000 .edata
+        2000 .idata
+        2000 .pdata
+        7000 .rdata
+        2000 .reloc
+        3000 .rsrc
+       22000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 NONPAGE
+        A000 PAGE

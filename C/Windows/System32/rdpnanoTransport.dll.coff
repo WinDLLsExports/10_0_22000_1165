@@ -1,0 +1,315 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\rdpnanoTransport.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    WS2_32.dll
+    MSWSOCK.dll
+    bcrypt.dll
+    Secur32.dll
+    ADVAPI32.dll
+    CRYPT32.dll
+    ntdll.dll
+    KERNEL32.dll
+    IPHLPAPI.DLL
+
+  Section contains the following exports for RdpNanoTransport.dll
+
+    00000000 characteristics
+    FFFFFFFF time date stamp
+        0.00 version
+           1 ordinal base
+           7 number of functions
+           7 number of names
+
+    ordinal hint RVA      name
+
+          5    0 00026E40 CreateRdpUdpIceWrapper
+          1    1 0002D070 CreateRdpUdpStreamWrapper
+          2    2 00037040 CreateRdpWebSocketStreamWrapper
+          6    3 00003370 DllMain
+          7    4 00026F20 FreeRdpUdpIceWrapper
+          3    5 0002DB90 FreeRdpUdpStreamWrapper
+          4    6 000370C0 FreeRdpWebSocketStreamWrapper
+
+  Section contains the following imports:
+
+    WS2_32.dll
+             180210500 Import Address Table
+             1802FAFD0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          A9 getnameinfo
+                          A4 freeaddrinfo
+                          A5 getaddrinfo
+                          5A WSAStringToAddressW
+                          13 WSAAddressToStringW
+                          48 WSARecv
+                             Ordinal   112
+                             Ordinal    22
+                             Ordinal    15
+                             Ordinal    14
+                             Ordinal     9
+                             Ordinal     8
+                             Ordinal    10
+                             Ordinal   151
+                             Ordinal     6
+                             Ordinal     5
+                             Ordinal    13
+                             Ordinal     1
+                          50 WSASendTo
+                          4D WSASend
+                          4A WSARecvFrom
+                          2E WSAEventSelect
+                             Ordinal    18
+                             Ordinal     4
+                          57 WSASocketW
+                          3A WSAIoctl
+                             Ordinal   111
+                             Ordinal   116
+                             Ordinal   115
+                             Ordinal    21
+                             Ordinal     7
+                             Ordinal     3
+                             Ordinal     2
+
+    MSWSOCK.dll
+             1802104D0 Import Address Table
+             1802FAFA0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           3 GetAcceptExSockaddrs
+                           0 AcceptEx
+
+    bcrypt.dll
+             180210610 Import Address Table
+             1802FB0E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           E BCryptDestroyKey
+                           8 BCryptDecrypt
+                          12 BCryptEncrypt
+                          1F BCryptGenerateSymmetricKey
+                          34 BCryptSetProperty
+                           2 BCryptCloseAlgorithmProvider
+                           D BCryptDestroyHash
+                          1D BCryptGenRandom
+                          26 BCryptOpenAlgorithmProvider
+                          21 BCryptGetProperty
+                          1B BCryptFinishHash
+                          22 BCryptHashData
+                           6 BCryptCreateHash
+
+    Secur32.dll
+             1802104E8 Import Address Table
+             1802FAFB8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          22 InitSecurityInterfaceW
+                          17 FreeContextBuffer
+
+    ADVAPI32.dll
+             180210000 Import Address Table
+             1802FAAD0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         11D EventActivityIdControl
+                         122 EventUnregister
+                         254 RegCloseKey
+                         285 RegOpenKeyExW
+                         292 RegQueryValueExW
+                         128 EventWriteTransfer
+                         120 EventRegister
+
+    CRYPT32.dll
+             180210040 Import Address Table
+             1802FAB10 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          75 CertVerifyCertificateChainPolicy
+                          58 CertOpenStore
+                          12 CertCloseStore
+                          25 CertDuplicateCertificateContext
+                          1C CertCreateCertificateContext
+                          40 CertFreeCertificateContext
+                           4 CertAddCertificateContextToStore
+                          45 CertGetCertificateChain
+                          3D CertFreeCertificateChain
+
+    ntdll.dll
+             180210680 Import Address Table
+             1802FB150 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         554 RtlUnwindEx
+                         5F8 VerSetConditionMask
+                         2BC RtlCaptureStackBackTrace
+
+    KERNEL32.dll
+             1802100A0 Import Address Table
+             1802FAB70 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         375 IsValidCodePage
+                         28D GetOEMCP
+                         183 FindNextFileA
+                         173 FindFirstFileExA
+                         59C UnregisterWaitEx
+                         16E FindClose
+                          C2 CreateFileW
+                         5F0 WriteConsoleW
+                         530 SetStdHandle
+                         2A9 GetProcessHeap
+                         4FC SetEnvironmentVariableA
+                         1A3 FreeEnvironmentStringsW
+                         22E GetEnvironmentStringsW
+                         427 QueryDepthSList
+                         358 InterlockedFlushSList
+                         35A InterlockedPushEntrySList
+                         359 InterlockedPopEntrySList
+                         158 ExitThread
+                         157 ExitProcess
+                         268 GetModuleFileNameA
+                         338 HeapAlloc
+                         33C HeapFree
+                         1AA GetACP
+                         2C7 GetStdHandle
+                         245 GetFileType
+                         33F HeapReAlloc
+                         21A GetDateFormatW
+                         2FE GetTimeFormatW
+                         377 IsValidLocale
+                         305 GetUserDefaultLCID
+                         14C EnumSystemLocalesW
+                         198 FlushFileBuffers
+                         5F1 WriteFile
+                         1E2 GetConsoleCP
+                         1F4 GetConsoleMode
+                         50C SetFilePointerEx
+                         341 HeapSize
+                         431 QueryPerformanceFrequency
+                         1CF GetCommandLineW
+                         1CE GetCommandLineA
+                         1A4 FreeLibrary
+                         26C GetModuleHandleExW
+                         2A4 GetProcAddress
+                         256 GetLastError
+                         2BF GetQueuedCompletionStatus
+                          6B CancelIoEx
+                         3AB LoadLibraryW
+                          7F CloseHandle
+                         4FF SetEvent
+                          B3 CreateEventA
+                         5B9 WaitForMultipleObjects
+                         444 RaiseException
+                          C7 CreateIoCompletionPort
+                         519 SetLastError
+                         407 PostQueuedCompletionStatus
+                         129 EnterCriticalSection
+                         3A5 LeaveCriticalSection
+                         351 InitializeCriticalSectionAndSpinCount
+                         106 DeleteCriticalSection
+                         5BB WaitForSingleObject
+                         564 SleepEx
+                          B6 CreateEventW
+                         55A SetWaitableTimer
+                         561 Sleep
+                         43A QueueUserAPC
+                         571 TerminateThread
+                         582 TlsAlloc
+                         584 TlsGetValue
+                         585 TlsSetValue
+                         583 TlsFree
+                         26A GetModuleHandleA
+                         3B5 LocalFree
+                         1A0 FormatMessageW
+                         5A9 VerifyVersionInfoA
+                         3D4 MultiByteToWideChar
+                         5DD WideCharToMultiByte
+                         19F FormatMessageA
+                         58B TryEnterCriticalSection
+                         214 GetCurrentThreadId
+                         430 QueryPerformanceCounter
+                         494 ReleaseSemaphore
+                         4B7 RtlPcToFileHeader
+                         125 EncodePointer
+                          FF DecodePointer
+                         123 DuplicateHandle
+                         5BC WaitForSingleObjectEx
+                         20F GetCurrentProcess
+                         56B SwitchToThread
+                         213 GetCurrentThread
+                         234 GetExitCodeThread
+                         2CC GetStringTypeW
+                         2DD GetSystemTimeAsFileTime
+                         2F9 GetTickCount
+                         26D GetModuleHandleW
+                         1B9 GetCPInfo
+                          93 CompareStringW
+                         399 LCMapStringW
+                         25A GetLocaleInfoW
+                         4A6 ResetEvent
+                         354 InitializeSListHead
+                         4AE RtlCaptureContext
+                         4B5 RtlLookupFunctionEntry
+                         4BC RtlVirtualUnwind
+                         592 UnhandledExceptionFilter
+                         552 SetUnhandledExceptionFilter
+                         570 TerminateProcess
+                         370 IsProcessorFeaturePresent
+                         36A IsDebuggerPresent
+                         2C5 GetStartupInfoW
+                         210 GetCurrentProcessId
+                          EE CreateTimerQueue
+                         55F SignalObjectAndWait
+                          E7 CreateThread
+                         543 SetThreadPriority
+                         2F4 GetThreadPriority
+                         25E GetLogicalProcessorInformation
+                          EF CreateTimerQueueTimer
+                          71 ChangeTimerQueueTimer
+                         110 DeleteTimerQueueTimer
+                         27F GetNumaHighestNodeNumber
+                         2A5 GetProcessAffinityMask
+                         539 SetThreadAffinityMask
+                         489 RegisterWaitForSingleObject
+                         59B UnregisterWait
+                         2F7 GetThreadTimes
+                         1A5 FreeLibraryAndExitThread
+                         269 GetModuleFileNameW
+                         3AA LoadLibraryExW
+                         30E GetVersionExW
+                         5AB VirtualAlloc
+                         5B1 VirtualProtect
+                         5AE VirtualFree
+                         300 GetTimeZoneInformation
+
+    IPHLPAPI.DLL
+             180210090 Import Address Table
+             1802FAB60 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3D GetAdaptersAddresses
+
+  Summary
+
+       2E000 .data
+       17000 .pdata
+       EC000 .rdata
+        6000 .reloc
+        1000 .rsrc
+      20F000 .text

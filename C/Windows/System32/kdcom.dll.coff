@@ -1,0 +1,72 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\kdcom.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0007018 Import Address Table
+             1C00070F8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         C04 atol
+                         43B KdDebuggerNotPresent
+                         48A KeFindConfigurationEntry
+                         C33 strstr
+                          8C EtwSetInformation
+                         BF1 _vsnprintf
+                          94 EtwWriteTransfer
+                          89 EtwRegister
+                         6FA PoSetHiberRange
+                         287 HalPrivateDispatchTable
+                         BEB _strupr
+
+    HAL.dll
+             1C0007000 Import Address Table
+             1C00070E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          51 KdComPortInUse
+                          55 KeStallExecutionProcessor
+
+  Section contains the following exports for kdcom.dll
+
+    00000000 characteristics
+    32D01CB2 time date stamp
+        0.00 version
+           1 ordinal base
+           5 number of functions
+           5 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000017C0 KdInitialize
+          2    1 00001820 KdPower
+          3    2 000018C0 KdReceivePacket
+          4    3 00001D00 KdSendPacket
+          5    4 00001880 KdSetHiberRange
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE

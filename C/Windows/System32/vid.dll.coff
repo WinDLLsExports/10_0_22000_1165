@@ -1,0 +1,438 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\vid.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntdll.dll
+    api-ms-win-core-heap-l1-1-0.dll
+    api-ms-win-core-errorhandling-l1-1-0.dll
+    api-ms-win-eventing-provider-l1-1-0.dll
+    api-ms-win-core-libraryloader-l1-2-0.dll
+    api-ms-win-core-io-l1-1-0.dll
+    api-ms-win-core-synch-l1-1-0.dll
+    api-ms-win-core-file-l1-1-0.dll
+    api-ms-win-core-file-l2-1-0.dll
+    api-ms-win-core-handle-l1-1-0.dll
+    api-ms-win-core-processthreads-l1-1-0.dll
+    api-ms-win-core-perfcounters-l1-1-0.dll
+    api-ms-win-core-profile-l1-1-0.dll
+    api-ms-win-core-sysinfo-l1-1-0.dll
+    api-ms-win-core-memory-l1-1-0.dll
+
+  Image has the following delay load dependencies:
+
+    DEVOBJ.dll
+
+  Section contains the following exports for vid.dll
+
+    00000000 characteristics
+     FC5D615 time date stamp
+        0.00 version
+           1 ordinal base
+         201 number of functions
+         201 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000017F0 VidAdjustNestedTlbSize
+          2    1 00001980 VidAllocateMemoryBlockReadWriteBuffers
+          3    2 00001B10 VidAssertVirtualProcessorInterrupt
+          4    3 00001CB0 VidAttachPartition
+          5    4 00001E30 VidChangePartitionLifeState
+          6    5 00001FF0 VidCheckForIoIntercept
+          7    6 00002190 VidClearVirtualProcessorInterrupt
+          8    7 00002310 VidCloneTemplateCreate
+          9    8 000024D0 VidCloneTemplateDestroy
+         10    9 00002650 VidCloneTemplateDestroyDetached
+         11    A 000027E0 VidCloneTemplateDetach
+         12    B 000167D0 VidCloseStatisticsHandle
+         13    C 000029B0 VidControlGpaAccessTracking
+         14    D 00002B80 VidCreateCpuGroup
+         15    E 00002D20 VidCreateDaxFileMemoryBlock
+         16    F 00003020 VidCreateExoPartition
+         17   10 000031C0 VidCreateMemoryBlock
+         18   11 000033F0 VidCreateMemoryBlockGpaRange
+         19   12 000035E0 VidCreateMmioGpaRange
+         20   13 000037C0 VidCreatePartition
+         21   14 000039B0 VidCreateSynicPort
+         22   15 00003BB0 VidCreateVaGpaRange
+         23   16 00003E00 VidDeleteCpuGroup
+         24   17 00003F80 VidDeletePartition
+         25   18 00003FC0 VidDestroyGpaRange
+         26   19 00004000 VidDestroyGpaRangeCheckSecure
+         27   1A 000041D0 VidDestroyMemoryBlock
+         28   1B 00004350 VidDestroyMemoryBlockReadWriteBuffers
+         29   1C 000044D0 VidDestroySynicPort
+         30   1D 00004650 VidDetachPartition
+         31   1E 00017970 VidDllStatsGetPartitionCounters
+         32   1F 00017B80 VidDllStatsGetSharedBuffer
+         33   20 00017C50 VidDllStatsGetVmPerfRootInstance
+         34   21 000047D0 VidDmBalloon
+         35   22 00004A70 VidDmConsolidationDisable
+         36   23 00004BF0 VidDmConsolidationEnable
+         37   24 00004D80 VidDmHotAdd
+         38   25 00004F60 VidDmHotAddUndo
+         39   26 00005120 VidDmMemoryBlockQueryTopology
+         40   27 00005330 VidDmSlpDisable
+         41   28 000054B0 VidDmSlpQuery
+         42   29 00005690 VidDmSlpSetup
+         43   2A 00005980 VidDmSlpWaitForDisable
+         44   2B 00005B00 VidDmUnBalloon
+         45   2C 00005DD0 VidDmWorkingSetModify
+         46   2D 00005FA0 VidEncryptDecryptData
+         47   2E 000061D0 VidEpfRestore
+         48   2F 000063F0 VidEpfSave
+         49   30 00006630 VidEpfSuspendBegin
+         50   31 000067B0 VidEpfSuspendEnd
+         51   32 00006930 VidExoAccessVaFault
+         52   33 00006AD0 VidExoBrokerReceive
+         53   34 00006D70 VidExoBrokerSend
+         54   35 00006F10 VidExoControlGpaAccessTracking
+         55   36 000070A0 VidExoGetVpState
+         56   37 00007250 VidExoInstallIntercept
+         57   38 000073E0 VidExoMapGpaRange
+         58   39 00007580 VidExoPinGpaRanges
+         59   3A 00007700 VidExoRegisterInterceptResult
+         60   3B 000078A0 VidExoSetVpState
+         61   3C 00007B10 VidExoUnmapGpaRange
+         62   3D 00007CA0 VidExoUnpinGpaRanges
+         63   3E 00007E20 VidExoVpCreate
+         64   3F 00007FD0 VidExoVpDestroy
+         65   40 00008150 VidExoVpMap
+         66   41 00008300 VidFlushMemoryBlockMapping
+         67   42 00008490 VidFlushMemoryBlockPageRange
+         68   43 00008620 VidGetCpuGroupProperty
+         69   44 000087C0 VidGetExoPartitionProperty
+         70   45 00008970 VidGetExoSystemInformation
+         71   46 000089F0 VidGetExoSystemTopology
+         72   47 00008AB0 VidGetHvLogicalProcessorCount
+         73   48 00008C70 VidGetHvLogicalProcessorRuntime
+         74   49 00008E70 VidGetHvMemoryBalance
+         75   4A 00009050 VidGetHvPartitionId
+         76   4B 000091D0 VidGetHvVpRuntime
+         77   4C 000093B0 VidGetIsolationLuid
+         78   4D 00009530 VidGetMemoryBlockProtectionBitmap
+         79   4E 000096C0 VidGetPartitionIds
+         80   4F 000096F0 VidGetPartitionProperty
+         81   50 00009890 VidGetProcessorTopology
+         82   51 00009A80 VidGetRootReferenceTime
+         83   52 00009C00 VidGetRpcSession
+         84   53 00009DE0 VidGetSecurityCookie
+         85   54 00009F90 VidGetSystemInformation
+         86   55 0000A1F0 VidGetSystemTopology
+         87   56 0000A480 VidGetVirtualProcessorRunningStatus
+         88   57 00001010 VidGetVirtualProcessorState
+         89   58 0000A610 VidGetVirtualProcessorStateEx
+         90   59 0000A7C0 VidGpaAccessTrackingDisable
+         91   5A 0000A940 VidGpaAccessTrackingEnable
+         92   5B 0000AAC0 VidHandleMessageAndGetNextMessage
+         93   5C 0000ADE0 VidInitEncryptionKeys
+         94   5D 0000AF60 VidInjectSyntheticMachineCheckEvent
+         95   5E 0000B130 VidIsolatedInsertPages
+         96   5F 0000B3A0 VidMapHvGlobalStatsPage
+         97   60 0000B540 VidMapHvLocalStatsPage
+         98   61 0000B6E0 VidMapHvRootStatsPage
+         99   62 0000B880 VidMapHypercallDoorbellPage
+        100   63 0000BA10 VidMapMemoryBlockPageRange
+        101   64 0000BAC0 VidMapMemoryBlockPageRangeEx
+        102   65 0000BCC0 VidMapVpStatePage
+        103   66 0000BE60 VidMarkPagePoisoned
+        104   67 0000BFF0 VidMemReserveGetTarget
+        105   68 0000C220 VidMemReserveIoSpaceConvert
+        106   69 0000C3B0 VidMemReserveIoSpacePagesAdd
+        107   6A 0000C590 VidMemReserveIoSpacePagesRelease
+        108   6B 0000C720 VidMemReservePagesAdd
+        109   6C 0000C900 VidMemReservePagesRelease
+        110   6D 0000CA90 VidMemReserveSetTarget
+        111   6E 0000CCE0 VidMemXferConnectClose
+        112   6F 0000CE60 VidMemXferConnectDisable
+        113   70 0000CFE0 VidMemXferConnectEnable
+        114   71 0000D240 VidMemXferConnectOpen
+        115   72 0000D3C0 VidMemXferSendAsync
+        116   73 0000D490 VidMessageSlotHandleAndGetNext
+        117   74 0000D610 VidMessageSlotMap
+        118   75 000167F0 VidOpenStatisticsHandle
+        119   76 0000D7B0 VidPhuBegin
+        120   77 0000D940 VidPhuCommit
+        121   78 0000DAC0 VidPhuEnd
+        122   79 0000DC40 VidPhuFreePersistedData
+        123   7A 0000DDC0 VidPhuOpenMemoryBlockFile
+        124   7B 0000DF90 VidPhuPersistGpaRange
+        125   7C 0000E160 VidPhuPersistMemoryBlock
+        126   7D 0000E330 VidPopulateCpuidInformation
+        127   7E 0000E5B0 VidPrefetchDirectMapRanges
+        128   7F 0000E740 VidProtectMemoryBlockPages
+        129   80 0000E8C0 VidQueryMemoryBlockFaultClusterInfo
+        130   81 0000EA90 VidQueryPartitionInformation
+        131   82 0000EE50 VidQueryVaGpaRangeWorkingSetInfo
+        132   83 0000EFE0 VidReadMemoryBlockPageRange
+        133   84 0000F030 VidReadWriteMappedMemoryBlockPageRange
+        134   85 0000F210 VidReadWriteMemoryBlockPageRange
+        135   86 0000F5D0 VidRegisterApicEoiHandler
+        136   87 0000F760 VidRegisterCpuidHandler
+        137   88 0000F930 VidRegisterCpuidResult
+        138   89 0000FAD0 VidRegisterExceptionHandler
+        139   8A 0000FC70 VidRegisterIoPortHandler
+        140   8B 0000FE10 VidRegisterMsrAddressHandler
+        141   8C 0000FFB0 VidRegisterMsrHandler
+        142   8D 00010140 VidRegisterTripleFaultHandler
+        143   8E 000102D0 VidReleaseEncryptionKeys
+        144   8F 00010450 VidReleasePages
+        145   90 000105E0 VidReopenExoPartition
+        146   91 00010660 VidReservePages
+        147   92 00010860 VidResetPartition
+        148   93 000109E0 VidResetPoisonedPage
+        149   94 00010B70 VidRestorePartitionState
+        150   95 00010D10 VidSavePartitionState
+        151   96 00010F30 VidSchedulerAssistRestore
+        152   97 000110E0 VidSchedulerAssistSave
+        153   98 00011290 VidSchedulerAssistSuspend
+        154   99 00011410 VidSetCpuGroupProperty
+        155   9A 000115A0 VidSetMailboxKey
+        156   9B 00011760 VidSetMemoryBlockClientNotifications
+        157   9C 00011970 VidSetMemoryBlockFlushAfterWrite
+        158   9D 00011B00 VidSetMemoryBlockNotificationQueue
+        159   9E 00011C90 VidSetPartitionCpuFrequencyCap
+        160   9F 00011E10 VidSetPartitionFriendlyName
+        161   A0 00012060 VidSetPartitionProperty
+        162   A1 00012200 VidSetPeerProcess
+        163   A2 00012380 VidSetPropertySynicPort
+        164   A3 00012510 VidSetSystemInformation
+        165   A4 00012740 VidSetVirtualProcessorState
+        166   A5 00012770 VidSetVirtualProcessorStateEx
+        167   A6 00012920 VidSetupMessageQueue
+        168   A7 00012AA0 VidSevSnpControlStateRestore
+        169   A8 00012C50 VidSevSnpControlStateSave
+        170   A9 00012E00 VidSgxResetMemoryBlocks
+        171   AA 00012F80 VidStartVirtualProcessor
+        172   AB 00013100 VidStatsMap
+        173   AC 000132E0 VidStatsMapNuma
+        174   AD 000134C0 VidStatsUnMap
+        175   AE 00013640 VidStatsUnMapNuma
+        176   AF 000137C0 VidStopVirtualProcessor
+        177   B0 00013960 VidSuspendApply
+        178   B1 00013AE0 VidSuspendClear
+        179   B2 00013C60 VidTranslateGpa
+        180   B3 00013E80 VidTranslateGvaToGpa
+        181   B4 00014130 VidTriggerCreate
+        182   B5 000142E0 VidTriggerDestroy
+        183   B6 00014460 VidTriggerUpdateParameters
+        184   B7 00014600 VidTrimPartitionMemory
+        185   B8 00014780 VidUnmapHvGlobalStatsPage
+        186   B9 00014910 VidUnmapHvLocalStatsPage
+        187   BA 00014AA0 VidUnmapHvRootStatsPage
+        188   BB 00014C30 VidUnmapMemoryBlockPageRange
+        189   BC 00014DF0 VidUnprotectMemoryBlockPages
+        190   BD 00014F70 VidUnregisterCpuidResult
+        191   BE 000150F0 VidUnregisterHandler
+        192   BF 00015270 VidVsmCheckGpaPageVtlAccess
+        193   C0 00015420 VidVsmEnableVpVtl
+        194   C1 00015660 VidVsmGetMemoryBlockProtections
+        195   C2 00015870 VidVsmGetPartitionConfig
+        196   C3 00015A50 VidVsmPrecommitMgmtVtlPageRange
+        197   C4 00015BF0 VidVsmQueryMemoryBlockProtections
+        198   C5 00015DC0 VidVsmQueryProtectionsDirty
+        199   C6 00015F40 VidVsmSetMemoryBlockProtections
+        200   C7 000160F0 VidVsmSetPartitionConfig
+        201   C8 00016270 VidWriteMemoryBlockPageRange
+
+  Section contains the following imports:
+
+    ntdll.dll
+             180019328 Import Address Table
+             180022EC0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         95C memcpy
+                         643 RtlVirtualUnwind
+                         4FF RtlLookupFunctionEntry
+                         2FF RtlCaptureContext
+                         991 wcscpy_s
+                         56B RtlRbRemoveNode
+                         56A RtlRbInsertNodeEx
+                         924 _vsnwprintf
+                         3A7 RtlDosPathNameToNtPathName_U
+                         151 NtDeviceIoControlFile
+                         407 RtlFreeHeap
+                         98E wcschr
+                         514 RtlNtStatusToDosError
+                         411 RtlGUIDFromString
+                         8EA __chkstk
+                         960 memset
+
+    api-ms-win-core-heap-l1-1-0.dll
+             1800191B0 Import Address Table
+             180022D48 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 HeapAlloc
+                           0 GetProcessHeap
+                           6 HeapFree
+
+    api-ms-win-core-errorhandling-l1-1-0.dll
+             180019148 Import Address Table
+             180022CE0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          11 UnhandledExceptionFilter
+                           F SetUnhandledExceptionFilter
+                           5 GetLastError
+                           D SetLastError
+                           7 RaiseException
+
+    api-ms-win-eventing-provider-l1-1-0.dll
+             180019300 Import Address Table
+             180022E98 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           5 EventUnregister
+                           9 EventWriteTransfer
+                           3 EventRegister
+                           4 EventSetInformation
+
+    api-ms-win-core-libraryloader-l1-2-0.dll
+             1800191E0 Import Address Table
+             180022D78 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           D FreeLibrary
+                           1 DisableThreadLibraryCalls
+                          16 GetProcAddress
+                          18 LoadLibraryExA
+
+    api-ms-win-core-io-l1-1-0.dll
+             1800191D0 Import Address Table
+             180022D68 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 DeviceIoControl
+
+    api-ms-win-core-synch-l1-1-0.dll
+             180019290 Import Address Table
+             180022E28 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          18 InitializeCriticalSection
+                           1 AcquireSRWLockShared
+                          24 ReleaseSRWLockExclusive
+                           F DeleteCriticalSection
+                           0 AcquireSRWLockExclusive
+                          1B InitializeSRWLock
+                          11 EnterCriticalSection
+                          1D LeaveCriticalSection
+                          25 ReleaseSRWLockShared
+
+    api-ms-win-core-file-l1-1-0.dll
+             180019178 Import Address Table
+             180022D10 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           7 CreateFileW
+
+    api-ms-win-core-file-l2-1-0.dll
+             180019188 Import Address Table
+             180022D20 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           B ReOpenFile
+
+    api-ms-win-core-handle-l1-1-0.dll
+             180019198 Import Address Table
+             180022D30 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 CloseHandle
+                           2 DuplicateHandle
+
+    api-ms-win-core-processthreads-l1-1-0.dll
+             180019258 Import Address Table
+             180022DF0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           C GetCurrentProcess
+                          11 GetCurrentThreadId
+                          55 TerminateProcess
+                           D GetCurrentProcessId
+
+    api-ms-win-core-perfcounters-l1-1-0.dll
+             180019220 Import Address Table
+             180022DB8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           D PerfStopProvider
+                           3 PerfDeleteInstance
+                           B PerfStartProvider
+                           0 PerfCreateInstance
+                           7 PerfSetCounterRefValue
+                           8 PerfSetCounterSetInfo
+
+    api-ms-win-core-profile-l1-1-0.dll
+             180019280 Import Address Table
+             180022E18 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 QueryPerformanceCounter
+
+    api-ms-win-core-sysinfo-l1-1-0.dll
+             1800192E0 Import Address Table
+             180022E78 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          16 GetSystemTimeAsFileTime
+                          11 GetSystemInfo
+                          1A GetTickCount
+
+    api-ms-win-core-memory-l1-1-0.dll
+             180019208 Import Address Table
+             180022DA0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          36 VirtualProtect
+                          39 VirtualQuery
+
+  Section contains the following delay load imports:
+
+    DEVOBJ.dll
+              00000001 Characteristics
+      0000000180028BF0 Address of HMODULE
+      000000018002A000 Import Address Table
+      0000000180020FD8 Import Name Table
+      00000001800210A0 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    00000001800013EC    10 DevObjDestroyDeviceInfoList
+                                    00000001800013B6    14 DevObjGetClassDevs
+                                    00000001800013C8    12 DevObjEnumDeviceInterfaces
+                                    00000001800013DA    1D DevObjGetDeviceInterfaceDetail
+                                    000000018000132B     7 DevObjCreateDeviceInfoList
+
+  Summary
+
+        5000 .data
+        1000 .didat
+        1000 .pdata
+        B000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       18000 .text

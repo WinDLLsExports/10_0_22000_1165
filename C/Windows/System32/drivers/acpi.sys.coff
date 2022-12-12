@@ -1,0 +1,367 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\acpi.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    WMILIB.SYS
+    WppRecorder.sys
+    ext-ms-win-ntos-ksr-l1-1-4.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C008B0E0 Import Address Table
+             1C008BA98 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         428 IoWMIRegistrationControl
+                         B7D ZwQuerySystemInformation
+                         82C RtlCopyUnicodeString
+                         4AB KeInitializeDpc
+                         4B9 KeInitializeTimer
+                         4B7 KeInitializeSpinLock
+                         4AF KeInitializeEvent
+                          F4 ExInitializeNPagedLookasideList
+                         3AD IoRegisterBootDriverReinitialization
+                         308 IoConnectInterruptEx
+                         469 KeBugCheckEx
+                         B55 ZwPowerInformation
+                         BF6 _vsnprintf
+                         53A KeSetEvent
+                         8F1 RtlIoDecodeMemIoResource
+                         80E RtlCmDecodeMemIoResource
+                         912 RtlIsRangeAvailable
+                         BF8 _vsnwprintf
+                         891 RtlFreeRangeList
+                         8DA RtlInitializeRangeList
+                         7EA RtlAddRange
+                         8EF RtlInvertRangeList
+                         933 RtlNotifyFeatureUsage
+                         4C2 KeInsertQueueDpc
+                         455 KeAcquireSpinLockAtDpcLevel
+                         51C KeReleaseSpinLockFromDpcLevel
+                         179 ExpInterlockedPopEntrySList
+                          F8 ExInitializeRundownProtection
+                         17A ExpInterlockedPushEntrySList
+                         10F ExQueryDepthSList
+                         3CF IoReserveDependency
+                         3D2 IoResolveDependency
+                         30D IoCreateDevice
+                         2EA IoAttachDeviceToDeviceStack
+                         566 KeWaitForSingleObject
+                         37F IoInvalidateDeviceRelations
+                         3CC IoRequestDeviceEject
+                         349 IoGetAttachedDeviceReference
+                         C38 strstr
+                         C35 strnlen
+                          7E EmClientRuleEvaluate
+                         999 RtlStringFromGUID
+                         893 RtlFreeUnicodeString
+                         69E ObReferenceObjectByPointer
+                         3DC IoSetDevicePropertyData
+                         380 IoInvalidateDeviceState
+                         71E PsCreateSystemThread
+                         69B ObReferenceObjectByHandle
+                         AF0 ZwClose
+                         115 ExQueueWorkItem
+                         52A KeReportCacheIncoherentDevice
+                         3AF IoRegisterDeviceInterface
+                         3DA IoSetDeviceInterfacePropertyData
+                         3B9 IoReleaseCancelSpinLock
+                         391 IoOpenDeviceRegistryKey
+                         BB9 ZwSetValueKey
+                         BEF _strtoui64
+                         2F0 IoBuildSynchronousFsdRequest
+                         9A7 RtlTimeToTimeFields
+                         330 IoDuplicateDependency
+                         3D9 IoSetDependency
+                         6AE ObfReferenceObjectWithTag
+                         6AC ObfDereferenceObjectWithTag
+                         404 IoTestDependency
+                         6FF PoSetPowerState
+                          A5 ExAcquireRundownProtection
+                         6BA PoCallDriver
+                         2D5 IoAcquireCancelSpinLock
+                         701 PoSetSystemWake
+                         3CE IoRequestDeviceRemovalForReset
+                         2E0 IoAllocateIrp
+                         402 IoSynchronousCallDriver
+                         33D IoFreeIrp
+                         9C1 RtlUnregisterFeatureConfigurationChangeNotification
+                         329 IoDetachDevice
+                         A45 SeSinglePrivilegeCheck
+                         328 IoDeleteSymbolicLink
+                          CC ExDeleteNPagedLookasideList
+                         357 IoGetDeviceProperty
+                         319 IoCreateSymbolicLink
+                         32E IoDisconnectInterruptEx
+                         287 HalPrivateDispatchTable
+                         5CB MmLockPagableDataSection
+                         5FC MmUnlockPagableImageSection
+                         54A KeSetTimer
+                         103 ExInterlockedRemoveHeadList
+                         46A KeCancelTimer
+                         2DF IoAllocateErrorLogEntry
+                         42F IoWriteErrorLogEntry
+                          F7 ExInitializeResourceLite
+                         484 KeEnterCriticalRegion
+                          A4 ExAcquireResourceSharedLite
+                         138 ExReleaseResourceLite
+                         4D1 KeLeaveCriticalRegion
+                          A3 ExAcquireResourceExclusiveLite
+                         40F IoUnregisterPlugPlayNotification
+                         B40 ZwOpenFile
+                         B2E ZwLoadDriver
+                         2EE IoBuildDeviceIoControlRequest
+                         3B6 IoRegisterPlugPlayNotification
+                         46F KeClearEvent
+                         358 IoGetDevicePropertyData
+                         6D2 PoFxNotifySurprisePowerOn
+                         8E7 RtlIntegerToUnicodeString
+                          82 EmProviderRegister
+                         C56 wcsstr
+                         8C8 RtlInitAnsiString
+                         7EF RtlAnsiStringToUnicodeString
+                         9DF RtlxAnsiStringToUnicodeSize
+                         4E2 KeQueryActiveProcessorCountEx
+                          7C EmClientQueryRuleState
+                         268 HalDispatchTable
+                         BB4 ZwSetSystemInformation
+                         7ED RtlAnsiCharToUnicodeChar
+                          C6 ExCreateCallback
+                         120 ExRegisterCallback
+                         3DB IoSetDeviceInterfaceState
+                         436 IofCompleteRequest
+                          A1 ExAcquirePushLockExclusiveEx
+                         132 ExReleasePushLockEx
+                         5BC MmGetSystemRoutineAddress
+                         424 IoWMIQueryAllData
+                         421 IoWMIExecuteMethod
+                         863 RtlEqualUnicodeString
+                         2A7 HeadlessDispatch
+                         5B7 MmGetPhysicalAddress
+                         706 PoShutdownBugCheck
+                         5D0 MmMapIoSpaceEx
+                         53F KeSetImportanceDpc
+                         3A2 IoQueueWorkItemEx
+                         564 KeWaitForMultipleObjects
+                         7CE PsTerminateSystemThread
+                         568 KfRaiseIrql
+                         4D5 KeLowerIrql
+                         70A PoUnregisterPowerSettingCallback
+                          9C ExAcquireFastMutex
+                         12C ExReleaseFastMutex
+                         6F6 PoRegisterPowerSettingCallback
+                         4DB KeProcessorGroupAffinity
+                         547 KeSetSystemGroupAffinityThread
+                         530 KeRevertToUserGroupAffinityThread
+                         84C RtlDeleteRange
+                         881 RtlFindRange
+                         355 IoGetDeviceNumaNode
+                         554 KeStartDynamicProcessor
+                         16C ExWaitForRundownProtectionRelease
+                         356 IoGetDeviceObjectPointer
+                         47B KeDelayExecutionThread
+                         139 ExReleaseRundownProtection
+                         8F2 RtlIoEncodeMemIoResource
+                         AFF ZwCreateKey
+                         B80 ZwQueryValueKey
+                         B42 ZwOpenKey
+                         B1C ZwEnumerateKey
+                         9B4 RtlUnicodeStringToAnsiString
+                         88D RtlFreeAnsiString
+                         9B7 RtlUnicodeStringToInteger
+                         B1E ZwEnumerateValueKey
+                         5FF MmUnmapIoSpace
+                         4EB KeQueryHighestNodeNumber
+                         4F5 KeQueryNodeActiveProcessorCount
+                         4DE KeQueryActiveGroupCount
+                         BE7 _stricmp
+                         4B0 KeInitializeGuardedMutex
+                         B2C ZwInitiatePowerAction
+                         44C KeAcquireGuardedMutex
+                         510 KeReleaseGuardedMutex
+                         816 RtlCompareUnicodeString
+                         87A RtlFindLeastSignificantBit
+                         2F3 IoCancelIrp
+                         410 IoUnregisterPlugPlayNotificationEx
+                         AFC ZwCreateFile
+                         336 IoFileObjectType
+                         3D4 IoReuseIrp
+                         6BF PoCreateThermalRequest
+                         6EB PoGetThermalRequestSupport
+                         6C1 PoDeleteThermalRequest
+                         704 PoSetThermalPassiveCooling
+                         703 PoSetThermalActiveCooling
+                         80F RtlCmEncodeMemIoResource
+                         855 RtlDuplicateUnicodeString
+                         141 ExRundownCompleted
+                         11C ExReInitializeRundownProtection
+                         3C6 IoReportInterruptInactive
+                         3C5 IoReportInterruptActive
+                         6FC PoSetHiberRange
+                          77 DbgkWerCaptureLiveKernelDump
+                         542 KeSetPriorityThread
+                         4FC KeQueryTimeIncrement
+                          94 EtwWriteTransfer
+                          B4 ExAllocatePool2
+                          E5 ExFreePoolWithTag
+                         8D1 RtlInitUnicodeString
+                          8F EtwWrite
+                          87 EtwEventEnabled
+                         51A KeReleaseSpinLock
+                         457 KeAcquireSpinLockRaiseToDpc
+                         96D RtlRegisterFeatureConfigurationChangeNotification
+                         953 RtlQueryFeatureConfiguration
+                         954 RtlQueryFeatureConfigurationChangeStamp
+                         343 IoFreeWorkItem
+                             Ordinal     4
+                          AD ExAcquireSpinLockShared
+                         13F ExReleaseSpinLockShared
+                         160 ExTryQueueWorkItem
+                         166 ExUnregisterCallback
+                         10E ExNotifyCallback
+                          AB ExAcquireSpinLockExclusive
+                         13D ExReleaseSpinLockExclusive
+                          6F DbgPrintEx
+                         616 NtClose
+                         C32 strncmp
+                         C34 strncpy_s
+                          71 DbgPrompt
+                          73 DbgSetDebugFilterState
+                         C39 strtok_s
+                          6C DbgCommandString
+                         43A KdDebuggerEnabled
+                         C2B strchr
+                         C36 strrchr
+                         14A ExSetTimer
+                         4EE KeQueryInterruptTimePrecise
+                         BE9 _strnicmp
+                         8AE RtlGetNextRange
+                         8A8 RtlGetFirstRange
+                         4A7 KeInitializeAffinityEx2
+                         4A2 KeGetProcessorNumberFromIndex
+                         4F0 KeQueryMaximumGroupCount
+                         4F2 KeQueryMaximumProcessorCountEx
+                         46D KeCheckProcessorAffinityEx
+                         8F0 RtlInvertRangeListEx
+                         50E KeRegisterProcessorChangeCallback
+                         4A1 KeGetProcessorIndexFromNumber
+                         4E7 KeQueryGroupAffinity
+                         828 RtlCopyRangeList
+                         95F RtlQueryRegistryValuesEx
+                         B7E ZwQuerySystemInformationEx
+                         2D2 InitSafeBootMode
+                         93F RtlNumberOfSetBitsUlongPtr
+                         BFB _wcsicmp
+                         84B RtlDeleteOwnersRanges
+                         3A1 IoQueueWorkItem
+                         49B KeGetCurrentIrql
+                         2E5 IoAllocateWorkItem
+                         435 IofCallDriver
+                         6AB ObfDereferenceObject
+                         4B2 KeInitializeTimer2
+                         464 KeCancelTimer2
+                         53F KeSetTimer2
+                         A8D VslQuerySecureDevice
+                         6AD ObfReferenceObject
+                         6F8 PoRequestPowerIrp
+                         326 IoDeleteDevice
+                         813 RtlCompareMemory
+                         43E KdEnableDebugger
+                         423 IoWMIOpenBlock
+                         43D KdDisableDebugger
+                         4EC KeQueryInterruptPartitionCount
+                         4ED KeQueryInterruptPartitionInformation
+                          8C EtwSetInformation
+                         BF0 _strupr
+                          89 EtwRegister
+
+    HAL.dll
+             1C008B000 Import Address Table
+             1C008B9B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1F HalGetMessageRoutingInfo
+                          53 KeFlushWriteBuffer
+                          20 HalGetProcessorIdByNtNumber
+                          3D HalSetBusDataByOffset
+                          19 HalGetBusDataByOffset
+                          1E HalGetMemoryCachingRequirements
+                          52 KdHvComPortInUse
+                          51 KdComPortInUse
+                          55 KeStallExecutionProcessor
+                          54 KeQueryPerformanceCounter
+                          1C HalGetInterruptTargetInformation
+                           C HalConvertDeviceIdtToIrql
+
+    WMILIB.SYS
+             1C008B068 Import Address Table
+             1C008BA20 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 WmiSystemControl
+                           2 WmiCompleteRequest
+
+    WppRecorder.sys
+             1C008B080 Import Address Table
+             1C008BA38 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 WppAutoLogTrace
+                          10 imp_WppRecorderReplay
+                           2 WppAutoLogStart
+                           3 WppAutoLogStop
+
+    ext-ms-win-ntos-ksr-l1-1-4.dll
+             1C008B0A8 Import Address Table
+             1C008BA60 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           3 KsrEnumeratePersistedMemory
+                          14 KsrPersistMetadata
+                          15 KsrQueryMetadata
+                           6 KsrFreePersistedMemoryBlock
+                           5 KsrFreePersistedMemory
+                           7 KsrGetFirmwareInformation
+
+  Section contains the following exports for ACPI.SYS
+
+    00000000 characteristics
+    831BA216 time date stamp
+        0.00 version
+           1 ordinal base
+           2 number of functions
+           2 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000B0DE0 DeRegisterOpRegionHandler
+          2    1 000B0E20 RegisterOpRegionHandler
+
+  Summary
+
+        5000 .data
+        1000 .edata
+        3000 .idata
+        8000 .pdata
+       11000 .rdata
+        5000 .reloc
+        5000 .rsrc
+       6C000 .text
+        1000 GFIDS
+        6000 INIT
+       2B000 PAGE
+        1000 PAGECONS

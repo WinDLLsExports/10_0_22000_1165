@@ -1,0 +1,8038 @@
+                val ThreadingModel = s 'Apartment'
+            {
+            }
+            ForceRemove 'Programmable'
+            InprocServer32 = s '%MODULE%'
+            ProgID = s 'IImeIPointSrv1041.15'
+            ProgID = s 'ImeCommonAPI1041.15'
+            ProgID = s 'ImeCommonAPIClassFactory1041.15'
+            ProgID = s 'ImeKeyEventHandler1041.15'
+            ProgID = s 'MSIME.Japan.15'
+            ProgID = s 'MSIME.Japan.FEDict.15'
+            ProgID = s 'MSIME.Japan.FELang.15'
+            ProgID = s 'MSIME.Japan.JpnReaderDS.15'
+            ProgID = s 'MSIME.Japan.LMDS.15'
+            'TypeLib' = s '{00d25261-a9e4-40b2-bf1e-a8a13df2542a}'
+            val AppID = s '%APPID%'
+            VersionIndependentProgID = s 'IImeIPointSrv1041'
+            VersionIndependentProgID = s 'ImeCommonAPI1041'
+            VersionIndependentProgID = s 'ImeCommonAPIClassFactory1041'
+            VersionIndependentProgID = s 'ImeKeyEventHandler1041'
+            VersionIndependentProgID = s 'MSIME.Japan'
+            VersionIndependentProgID = s 'MSIME.Japan.FEDict'
+            VersionIndependentProgID = s 'MSIME.Japan.FELang'
+            VersionIndependentProgID = s 'MSIME.Japan.JpnReaderDS'
+            VersionIndependentProgID = s 'MSIME.Japan.LMDS'
+        {
+        }
+        CLSID = s '{019f7150-e6db-11d0-83c3-00c04fddb82e}'
+        CLSID = s '{46b73c9c-0e62-41ee-86c0-2f8997777f48}'
+        CLSID = s '{6a91029e-aa49-471b-aee7-7d332785660d}'
+        CLSID = s '{88c524ca-551b-4c01-9a42-cdb16b745291}'
+        CLSID = s '{99a73266-0cdf-4479-88af-1842cbaada22}'
+        CLSID = s '{a38f3677-32fc-4dac-99b3-d804b193d2c4}'
+        CLSID = s '{ac7d68a4-c4e5-450f-a89b-d630b25bb996}'
+        CLSID = s '{e126b7dd-1c3b-4821-b861-a6da9ce6f096}'
+        CLSID = s '{FC8F7769-98CE-4ED3-B8F6-888B9D028657}'
+        CurVer = s 'IImeIPointSrv1041.15'
+        CurVer = s 'ImeCommonAPI1041.15'
+        CurVer = s 'ImeCommonAPIClassFactory1041.15'
+        CurVer = s 'ImeKeyEventHandler1041.15'
+        CurVer = s 'MSIME.Japan.15'
+        CurVer = s 'MSIME.Japan.FEDict.15'
+        CurVer = s 'MSIME.Japan.FELang.15'
+        CurVer = s 'MSIME.Japan.JpnReaderDS.15'
+        CurVer = s 'MSIME.Japan.LMDS.15'
+        ForceRemove {019f7150-e6db-11d0-83c3-00c04fddb82e} = s 'Microsoft IME (Japanese) IFEDict'
+        ForceRemove {46b73c9c-0e62-41ee-86c0-2f8997777f48} = s 'Microsoft IME (Japanese) IFELang'
+        ForceRemove {6a91029e-aa49-471b-aee7-7d332785660d} = s 'Microsoft IME (Japanese)'
+        ForceRemove {88c524ca-551b-4c01-9a42-cdb16b745291} = s 'ImeCommonAPI_JPN_Desktop_V1 Class'
+        ForceRemove {99a73266-0cdf-4479-88af-1842cbaada22} = s 'IImeIPointSrv wrapper class'
+        ForceRemove {a38f3677-32fc-4dac-99b3-d804b193d2c4} = s 'ImeKeyEventHandler Class'
+        ForceRemove {ac7d68a4-c4e5-450f-a89b-d630b25bb996} = s 'Microsoft IME Japan LM Suggestion Data Source'
+        ForceRemove {e126b7dd-1c3b-4821-b861-a6da9ce6f096} = s 'ImeCommonAPIClassFactory_JPN_Desktop_V1 Class'
+        ForceRemove {FC8F7769-98CE-4ED3-B8F6-888B9D028657} = s 'Microsoft IME Japanese Reader Data Source'
+    "1,//www."
+    {
+    }
+    +-    = <>          \$  %#&*@0123456789       ABCDEFGHIJKLMNOPQRSTUVWXYZ       abcdefghijklmnopqrstuvwxyz    
+    <Link Source="AddressOnly" Target="AddressOnly:BuiltInContextDS" />
+    <Link Source="AddressOnly:AddressDS" Target="AddressOnly:BuiltInRespondent" />
+    <Link Source="AddressOnly:BuiltInContextDS" Target="AddressOnly:AddressDS" />
+    <Link Source="BuiltInFlatPrimitiveDS_ReverseConversion" Target="BuiltInRespondent_ReverseConversion" />
+    <Link Source="Candidate" Target="Candidate:BuiltInContextDS" />
+    <Link Source="Candidate:BuiltInContextDS" Target="Candidate:ContactDDDS" />
+    <Link Source="Candidate:BuiltInContextDS" Target="Candidate:LMDS" />
+    <Link Source="Candidate:ContactDDDS" Target="Candidate:JpnRankerDS" />
+    <Link Source="Candidate:JpnRankerDS" Target="Candidate:BuiltInRespondent" />
+    <Link Source="Candidate:LMDS" Target="Candidate:JpnRankerDS" />
+    <Link Source="Cloud" Target="Cloud:BuiltInContextDS" />
+    <Link Source="Cloud:BingASDS" Target="Cloud:ReaderDS" />
+    <Link Source="Cloud:BingFilterDS" Target="Cloud:JpnRankerDS" LinkWeight="200" />
+    <Link Source="Cloud:BuiltInContextDS" Target="Cloud:BingASDS" />
+    <Link Source="Cloud:BuiltInContextDS" Target="Cloud:IHDS" />
+    <Link Source="Cloud:FilterDS" Target="Cloud:BuiltInRespondent" />
+    <Link Source="Cloud:IHDS" Target="Cloud:JpnRankerDS" LinkWeight="300" />
+    <Link Source="Cloud:JpnRankerDS" Target="Cloud:FilterDS" />
+    <Link Source="Cloud:ReaderDS" Target="Cloud:BingFilterDS" />
+    <Link Source="CloudAndSupplemental" Target="CloudAndSupplemental:BuiltInContextDS" />
+    <Link Source="CloudAndSupplemental:BingASDS" Target="CloudAndSupplemental:ReaderDS" />
+    <Link Source="CloudAndSupplemental:BingFilterDS" Target="CloudAndSupplemental:JpnRankerDS" LinkWeight="300" />
+    <Link Source="CloudAndSupplemental:BuiltInContextDS" Target="CloudAndSupplemental:BingASDS" />
+    <Link Source="CloudAndSupplemental:BuiltInContextDS" Target="CloudAndSupplemental:IHDS" />
+    <Link Source="CloudAndSupplemental:BuiltInContextDS" Target="CloudAndSupplemental:JpnDateTimeDS" />
+    <Link Source="CloudAndSupplemental:BuiltInContextDS" Target="CloudAndSupplemental:LMDS" />
+    <Link Source="CloudAndSupplemental:BuiltInContextDS" Target="CloudAndSupplemental:RomajiDS" />
+    <Link Source="CloudAndSupplemental:FilterDS" Target="CloudAndSupplemental:BuiltInRespondent" />
+    <Link Source="CloudAndSupplemental:IHDS" Target="CloudAndSupplemental:JpnRankerDS" LinkWeight="400" />
+    <Link Source="CloudAndSupplemental:JpnDateTimeDS" Target="CloudAndSupplemental:JpnRankerDS" LinkWeight="70" />
+    <Link Source="CloudAndSupplemental:JpnRankerDS" Target="CloudAndSupplemental:FilterDS" />
+    <Link Source="CloudAndSupplemental:LMDS" Target="CloudAndSupplemental:JpnRankerDS" LinkWeight="80" />
+    <Link Source="CloudAndSupplemental:ReaderDS" Target="CloudAndSupplemental:BingFilterDS" />
+    <Link Source="CloudAndSupplemental:RomajiDS" Target="CloudAndSupplemental:JpnRankerDS" LinkWeight="100" />
+    <Link Source="Conversion" Target="Conversion:LMDS" />
+    <Link Source="Conversion:JpnRankerDS" Target="Conversion:BuiltInRespondent" />
+    <Link Source="Conversion:LMDS" Target="Conversion:JpnRankerDS" LinkWeight="100" />
+    <Link Source="ConversionPlus" Target="ConversionPlus:BuiltInContextDS" />
+    <Link Source="ConversionPlus:BuiltInContextDS" Target="ConversionPlus:IHDS" />
+    <Link Source="ConversionPlus:BuiltInContextDS" Target="ConversionPlus:LMDS" />
+    <Link Source="ConversionPlus:BuiltInContextDS" Target="ConversionPlus:SDDS" />
+    <Link Source="ConversionPlus:BuiltInFlatPrimitiveDS" Target="ConversionPlus:BuiltInRespondent" />
+    <Link Source="ConversionPlus:FilterDS" Target="ConversionPlus:BuiltInFlatPrimitiveDS" />
+    <Link Source="ConversionPlus:IHDS" Target="ConversionPlus:JpnRankerDS" LinkWeight="700" />
+    <Link Source="ConversionPlus:JpnRankerDS" Target="ConversionPlus:FilterDS" />
+    <Link Source="ConversionPlus:LMDS" Target="ConversionPlus:JpnRankerDS" LinkWeight="100" />
+    <Link Source="ConversionPlus:SDDS" Target="ConversionPlus:JpnRankerDS" LinkWeight="200" />
+    <Link Source="EngineService" Target="EngineService:LMDS" />
+    <Link Source="EngineService:FilterDS" Target="EngineService:BuiltInRespondent" />
+    <Link Source="EngineService:LMDS" Target="EngineService:FilterDS" />
+    <Link Source="JapaneseReverseConversion" Target="LMDS_ReverseConversion"  />
+    <Link Source="LMDS_ReverseConversion" Target="BuiltInFlatPrimitiveDS_ReverseConversion" />
+    <Link Source="Prediction" Target="Prediction:BuiltInContextDS" />
+    <Link Source="Prediction:BuiltInContextDS" Target="Prediction:IHDS" />
+    <Link Source="Prediction:BuiltInContextDS" Target="Prediction:JpnDateTimeDS" />
+    <Link Source="Prediction:BuiltInContextDS" Target="Prediction:RinnaDS" />
+    <Link Source="Prediction:BuiltInContextDS" Target="Prediction:RomajiDS" />
+    <Link Source="Prediction:BuiltInContextDS" Target="Prediction:SDDS" />
+    <Link Source="Prediction:BuiltInFlatPrimitiveDS" Target="Prediction:BuiltInRespondent" />
+    <Link Source="Prediction:FilterDS" Target="Prediction:BuiltInFlatPrimitiveDS" />
+    <Link Source="Prediction:IHDS" Target="Prediction:JpnRankerDS" LinkWeight="700" />
+    <Link Source="Prediction:JpnDateTimeDS" Target="Prediction:JpnRankerDS" LinkWeight="80" />
+    <Link Source="Prediction:JpnRankerDS" Target="Prediction:FilterDS" />
+    <Link Source="Prediction:RinnaDS" Target="Prediction:JpnRankerDS" />
+    <Link Source="Prediction:RomajiDS" Target="Prediction:JpnRankerDS" LinkWeight="100" />
+    <Link Source="Prediction:SDDS" Target="Prediction:JpnRankerDS" LinkWeight="200" />
+    <Link Source="PredictionHistoryOnly" Target="PredictionHistoryOnly:BuiltInContextDS" />
+    <Link Source="PredictionHistoryOnly:BuiltInContextDS" Target="PredictionHistoryOnly:IHDS" />
+    <Link Source="PredictionHistoryOnly:IHDS" Target="PredictionHistoryOnly:JpnRankerDS" LinkWeight="700" />
+    <Link Source="PredictionHistoryOnly:JpnRankerDS" Target="PredictionHistoryOnly:BuiltInRespondent" />
+    <Link Source="Supplemental" Target="Supplemental:BuiltInContextDS" />
+    <Link Source="Supplemental:BuiltInContextDS" Target="Supplemental:IHDS" />
+    <Link Source="Supplemental:BuiltInContextDS" Target="Supplemental:JpnDateTimeDS" />
+    <Link Source="Supplemental:BuiltInContextDS" Target="Supplemental:LMDS" />
+    <Link Source="Supplemental:BuiltInContextDS" Target="Supplemental:RomajiDS" />
+    <Link Source="Supplemental:FilterDS" Target="Supplemental:BuiltInRespondent" />
+    <Link Source="Supplemental:IHDS" Target="Supplemental:JpnRankerDS" LinkWeight="700" />
+    <Link Source="Supplemental:JpnDateTimeDS" Target="Supplemental:JpnRankerDS" LinkWeight="70" />
+    <Link Source="Supplemental:JpnRankerDS" Target="Supplemental:FilterDS" />
+    <Link Source="Supplemental:LMDS" Target="Supplemental:JpnRankerDS" LinkWeight="80" />
+    <Link Source="Supplemental:RomajiDS" Target="Supplemental:JpnRankerDS" LinkWeight="100" />
+    <Node Id="AddressOnly" />
+    <Node Id="AddressOnly:AddressDS" CLSID="{2AC015F2-103C-4186-A114-A0C70AC941AC}"/>
+    <Node Id="AddressOnly:BuiltInContextDS" CLSID="{8804A84F-24F7-448A-943F-F67ABEF3102D}" />
+    <Node Id="AddressOnly:BuiltInRespondent" CLSID="{2EFE331A-319D-4927-A7A6-85BDC64E120E}" />
+    <Node Id="BuiltInFlatPrimitiveDS_ReverseConversion" CLSID="{B27DC07F-4DC5-4897-8D91-BB439BDA6FC7}" />
+    <Node Id="BuiltInRespondent_ReverseConversion" CLSID="{2EFE331A-319D-4927-A7A6-85BDC64E120E}" />
+    <Node Id="Candidate" />
+    <Node Id="Candidate:BuiltInContextDS" CLSID="{8804A84F-24F7-448A-943F-F67ABEF3102D}" />
+    <Node Id="Candidate:BuiltInRespondent" CLSID="{2EFE331A-319D-4927-A7A6-85BDC64E120E}" />
+    <Node Id="Candidate:ContactDDDS" CLSID="{334796A6-31DC-4B5D-8FD7-14E82186417C}" />
+    <Node Id="Candidate:JpnRankerDS" CLSID="{d284acc0-ceed-46cc-9484-38709e695510}" />
+    <Node Id="Candidate:LMDS" CLSID="{ac7d68a4-c4e5-450f-a89b-d630b25bb996}" />
+    <Node Id="Cloud" />
+    <Node Id="Cloud:BingASDS" CLSID="{06254B9D-05E9-4FBE-968D-F46DBDC91AF9}" />
+    <Node Id="Cloud:BingFilterDS" CLSID="{D26165CD-5994-4614-976D-CB45750C5F80}" />
+    <Node Id="Cloud:BuiltInContextDS" CLSID="{8804A84F-24F7-448A-943F-F67ABEF3102D}" />
+    <Node Id="Cloud:BuiltInRespondent" CLSID="{2EFE331A-319D-4927-A7A6-85BDC64E120E}" />
+    <Node Id="Cloud:FilterDS" CLSID="{1dc08c0f-a60f-4c62-9a1b-26e181ce8db1}" />
+    <Node Id="Cloud:IHDS" CLSID="{d53cd902-7edc-430f-a1e0-c38c01b6fe8b}" />
+    <Node Id="Cloud:JpnRankerDS" CLSID="{d284acc0-ceed-46cc-9484-38709e695510}" />
+    <Node Id="Cloud:ReaderDS" CLSID="{FC8F7769-98CE-4ED3-B8F6-888B9D028657}" />
+    <Node Id="CloudAndSupplemental" />
+    <Node Id="CloudAndSupplemental:BingASDS" CLSID="{06254B9D-05E9-4FBE-968D-F46DBDC91AF9}" />
+    <Node Id="CloudAndSupplemental:BingFilterDS" CLSID="{D26165CD-5994-4614-976D-CB45750C5F80}" />
+    <Node Id="CloudAndSupplemental:BuiltInContextDS" CLSID="{8804A84F-24F7-448A-943F-F67ABEF3102D}" />
+    <Node Id="CloudAndSupplemental:BuiltInRespondent" CLSID="{2EFE331A-319D-4927-A7A6-85BDC64E120E}" />
+    <Node Id="CloudAndSupplemental:FilterDS" CLSID="{1dc08c0f-a60f-4c62-9a1b-26e181ce8db1}" />
+    <Node Id="CloudAndSupplemental:IHDS" CLSID="{d53cd902-7edc-430f-a1e0-c38c01b6fe8b}" />
+    <Node Id="CloudAndSupplemental:JpnDateTimeDS" CLSID="{418201e2-6c9f-42cc-9061-586d9f46ac9e}" />
+    <Node Id="CloudAndSupplemental:JpnRankerDS" CLSID="{d284acc0-ceed-46cc-9484-38709e695510}" />
+    <Node Id="CloudAndSupplemental:LMDS" CLSID="{ac7d68a4-c4e5-450f-a89b-d630b25bb996}" />
+    <Node Id="CloudAndSupplemental:ReaderDS" CLSID="{FC8F7769-98CE-4ED3-B8F6-888B9D028657}" />
+    <Node Id="CloudAndSupplemental:RomajiDS" CLSID="{3D78E42E-FAEA-47D6-8EE2-301A5DEBC025}" />
+    <Node Id="Conversion" />
+    <Node Id="Conversion:BuiltInRespondent" CLSID="{2EFE331A-319D-4927-A7A6-85BDC64E120E}" />
+    <Node Id="Conversion:JpnRankerDS" CLSID="{d284acc0-ceed-46cc-9484-38709e695510}" />
+    <Node Id="Conversion:LMDS" CLSID="{ac7d68a4-c4e5-450f-a89b-d630b25bb996}" />
+    <Node Id="ConversionPlus" />
+    <Node Id="ConversionPlus:BuiltInContextDS" CLSID="{8804A84F-24F7-448A-943F-F67ABEF3102D}" />
+    <Node Id="ConversionPlus:BuiltInFlatPrimitiveDS" CLSID="{B27DC07F-4DC5-4897-8D91-BB439BDA6FC7}" />
+    <Node Id="ConversionPlus:BuiltInRespondent" CLSID="{2EFE331A-319D-4927-A7A6-85BDC64E120E}" />
+    <Node Id="ConversionPlus:FilterDS" CLSID="{1dc08c0f-a60f-4c62-9a1b-26e181ce8db1}" />
+    <Node Id="ConversionPlus:IHDS" CLSID="{d53cd902-7edc-430f-a1e0-c38c01b6fe8b}" />
+    <Node Id="ConversionPlus:JpnRankerDS" CLSID="{d284acc0-ceed-46cc-9484-38709e695510}" />
+    <Node Id="ConversionPlus:LMDS" CLSID="{ac7d68a4-c4e5-450f-a89b-d630b25bb996}" />
+    <Node Id="ConversionPlus:SDDS" CLSID="{A2A80041-8359-46BD-9B79-9C780FD998C2}" />
+    <Node Id="EngineService" />
+    <Node Id="EngineService:BuiltInRespondent" CLSID="{2EFE331A-319D-4927-A7A6-85BDC64E120E}" />
+    <Node Id="EngineService:FilterDS" CLSID="{1dc08c0f-a60f-4c62-9a1b-26e181ce8db1}" />
+    <Node Id="EngineService:LMDS" CLSID="{ac7d68a4-c4e5-450f-a89b-d630b25bb996}" />
+    <Node Id="JapaneseReverseConversion" />
+    <Node Id="LMDS_ReverseConversion" CLSID="{AC7D68A4-C4E5-450F-A89B-D630B25BB996}" />
+    <Node Id="Prediction" />
+    <Node Id="Prediction:BuiltInContextDS" CLSID="{8804A84F-24F7-448A-943F-F67ABEF3102D}" />
+    <Node Id="Prediction:BuiltInFlatPrimitiveDS" CLSID="{B27DC07F-4DC5-4897-8D91-BB439BDA6FC7}" />
+    <Node Id="Prediction:BuiltInRespondent" CLSID="{2EFE331A-319D-4927-A7A6-85BDC64E120E}" />
+    <Node Id="Prediction:FilterDS" CLSID="{1dc08c0f-a60f-4c62-9a1b-26e181ce8db1}" />
+    <Node Id="Prediction:IHDS" CLSID="{d53cd902-7edc-430f-a1e0-c38c01b6fe8b}" />
+    <Node Id="Prediction:JpnDateTimeDS" CLSID="{418201e2-6c9f-42cc-9061-586d9f46ac9e}" />
+    <Node Id="Prediction:JpnRankerDS" CLSID="{d284acc0-ceed-46cc-9484-38709e695510}" />
+    <Node Id="Prediction:RinnaDS" CLSID="{A19B036E-22B2-4A97-82A2-12D283A46001}" />
+    <Node Id="Prediction:RomajiDS" CLSID="{3D78E42E-FAEA-47D6-8EE2-301A5DEBC025}" />
+    <Node Id="Prediction:SDDS" CLSID="{A2A80041-8359-46BD-9B79-9C780FD998C2}" />
+    <Node Id="PredictionHistoryOnly" />
+    <Node Id="PredictionHistoryOnly:BuiltInContextDS" CLSID="{8804A84F-24F7-448A-943F-F67ABEF3102D}" />
+    <Node Id="PredictionHistoryOnly:BuiltInRespondent" CLSID="{2EFE331A-319D-4927-A7A6-85BDC64E120E}" />
+    <Node Id="PredictionHistoryOnly:IHDS" CLSID="{d53cd902-7edc-430f-a1e0-c38c01b6fe8b}" />
+    <Node Id="PredictionHistoryOnly:JpnRankerDS" CLSID="{d284acc0-ceed-46cc-9484-38709e695510}" />
+    <Node Id="Supplemental" />
+    <Node Id="Supplemental:BuiltInContextDS" CLSID="{8804A84F-24F7-448A-943F-F67ABEF3102D}" />
+    <Node Id="Supplemental:BuiltInRespondent" CLSID="{2EFE331A-319D-4927-A7A6-85BDC64E120E}" />
+    <Node Id="Supplemental:FilterDS" CLSID="{1dc08c0f-a60f-4c62-9a1b-26e181ce8db1}" />
+    <Node Id="Supplemental:IHDS" CLSID="{d53cd902-7edc-430f-a1e0-c38c01b6fe8b}" />
+    <Node Id="Supplemental:JpnDateTimeDS" CLSID="{418201e2-6c9f-42cc-9061-586d9f46ac9e}" />
+    <Node Id="Supplemental:JpnRankerDS" CLSID="{d284acc0-ceed-46cc-9484-38709e695510}" />
+    <Node Id="Supplemental:LMDS" CLSID="{ac7d68a4-c4e5-450f-a89b-d630b25bb996}" />
+    <Node Id="Supplemental:RomajiDS" CLSID="{3D78E42E-FAEA-47D6-8EE2-301A5DEBC025}" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CLSID" DataType="System.String" />
+    <Property Id="GUID" DataType="System.String" />
+    <Property Id="LinkWeight" DataType="System.Int32" GUID="{EDA7C1BD-8959-4174-9982-7DDA0D0F1CED}" />
+    -=
+    1,file:
+    1,ftp:
+    1,http:
+    1,mailto:
+    1,news:
+    1,www.
+    2,windows
+    a=
+    AppsKey=80 00 00 89 00 00
+    ba=
+    BackSpace Ctrl+H=80 15 0E 0E 0E 15
+    BackSpace Ctrl+H=80 15 15 36 FE 15
+    BackSpace Ctrl+H=80 15 1C 1C 00 15
+    BackSpace Ctrl+H=80 15 1F 1F 00 15
+    BackSpace Ctrl+H=FF 15 15 15 00 15
+    BackSpace Ctrl+H=FF 15 15 36 FE 15
+    BackSpace Ctrl+H=FF 80 80 36 FE 80
+    be=
+    bi=
+    bo=
+    bu=
+    bya=
+    bye=
+    byi=
+    byo=
+    byu=
+    ca=
+    ce=
+    cha=
+    che=
+    chi=
+    cho=
+    chu=
+    ci=
+    co=
+    Ctrl+
+    Ctrl+B=FF FA FF FA FF FF
+    Ctrl+BackSpace=80 FF FF FF FF FF
+    Ctrl+BackSpace=84 00 00 00 00 00
+    Ctrl+BackSpace=84 04 04 04 00 15
+    Ctrl+BackSpace=84 55 1F 1F 00 15
+    Ctrl+C=80 46 30 30 07 06
+    Ctrl+Delete=80 00 00 B7 00 00
+    Ctrl+Delete=80 00 00 B7 FE 00
+    Ctrl+Delete=80 16 00 00 00 16
+    Ctrl+Delete=80 16 00 B7 00 16
+    Ctrl+Delete=FF FF FF FF FF FF
+    Ctrl+Enter=80 09 09 09 09 09
+    Ctrl+Enter=80 49 00 00 00 00
+    Ctrl+Enter=80 49 09 09 09 09
+    Ctrl+F1=80 40 00 00 00 00
+    Ctrl+F1=C1 00 00 00 00 00
+    Ctrl+F1=F1 00 00 00 00 00
+    Ctrl+F10=85 00 00 00 00 00
+    Ctrl+F10=F0 00 00 00 00 00
+    Ctrl+F10=F5 00 00 00 00 00
+    Ctrl+F10=F5 F5 F5 F5 F5 F5
+    Ctrl+F12=F0 F0 F0 F0 F0 F0
+    Ctrl+F2=80 40 00 00 00 00
+    Ctrl+F2=B0 00 00 00 00 00
+    Ctrl+F2=F1 00 00 00 00 00
+    Ctrl+F3=80 40 00 00 00 00
+    Ctrl+F3=94 00 00 00 00 00
+    Ctrl+F3=94 94 94 94 94 94
+    Ctrl+F4=80 00 00 00 00 00
+    Ctrl+F4=80 40 00 00 00 00
+    Ctrl+F5=80 40 00 00 00 00
+    Ctrl+F5=CC 00 00 00 00 00
+    Ctrl+F5=CC 00 00 8C 00 00
+    Ctrl+F6=80 40 00 00 00 00
+    Ctrl+F6=99 99 99 99 00 00
+    Ctrl+F6=99 99 99 99 99 99
+    Ctrl+F7=9A 97 97 97 00 00
+    Ctrl+F7=9A 9A 9A 9A 9A 9A
+    Ctrl+F7=F1 00 00 00 00 00
+    Ctrl+F7=F1 40 00 00 00 00
+    Ctrl+F8=80 F8 F8 F8 F8 F8
+    Ctrl+F8=9B 9B 9B 9B 00 00
+    Ctrl+F8=9C 9C 9C 9C 9C 9C
+    Ctrl+F9=80 40 00 00 00 00
+    Ctrl+F9=80 F9 F9 F9 F9 F9
+    Ctrl+F9=95 95 95 95 00 00
+    Ctrl+F9=9B 9B 9B 9B 9B 9B
+    Ctrl+I=80 00 18 18 18 00
+    Ctrl+I=80 09 09 09 09 09
+    Ctrl+ImeOff=80 28 28 28 28 28
+    Ctrl+INS=80 00 00 00 00 00
+    Ctrl+INS=80 40 0E 0E 0E 0E
+    Ctrl+PageDown=80 00 00 00 00 00
+    Ctrl+PageUp=80 00 00 00 00 00
+    Ctrl+R=80 53 19 1C 17 11
+    Ctrl+Shift+
+    Ctrl+Shift+BackSpace=80 4D 0D 0D 0D 0D
+    Ctrl+Shift+BackSpace=85 55 1F 1F 00 15
+    Ctrl+Shift+Enter=80 4D 0D 0D 0D 0D
+    Ctrl+Shift+Home Shift+Home=80 00 00 00 00 00
+    Ctrl+Shift+SPACE=80 82 82 82 82 82
+    Ctrl+Shift+SPACE=82 81 17 17 81 81
+    Ctrl+Shift+SPACE=82 82 82 82 82 82
+    Ctrl+Shift+SPACE=87 00 00 00 00 00
+    Ctrl+Shift+SPACE=87 82 82 82 82 82
+    Ctrl+SPACE=80 46 30 8A 07 06
+    Ctrl+SPACE=80 81 18 18 18 00
+    Ctrl+SPACE=80 83 83 83 83 83
+    Ctrl+SPACE=83 83 83 83 83 83
+    Ctrl+TAB=80 00 00 00 00 00
+    Ctrl+TAB=80 09 09 09 09 09
+    Ctrl+Z=80 46 1C 1C 07 06
+    Ctrl+Z=80 4D 1F 1F 0F 0E
+    cu=
+    cya=
+    cye=
+    cyi=
+    cyo=
+    cyu=
+    da=
+    de=
+    Delete Ctrl+G=80 16 00 00 00 16
+    Delete Ctrl+G=80 16 16 36 FE 16
+    Delete Ctrl+G=FF 16 16 16 00 16
+    Delete Ctrl+G=FF 16 16 36 FE 16
+    Delete Ctrl+G=FF 80 80 36 FE 80
+    dha=
+    dhe=
+    dhi=
+    dho=
+    dhu=
+    di=
+    do=
+    du=
+    dwa=
+    dwe=
+    dwi=
+    dwo=
+    dwu=
+    dya=
+    dye=
+    dyi=
+    dyo=
+    dyu=
+    e=
+    End Ctrl+F=80 14 1A 39 00 14
+    End Ctrl+F=80 39 FF FF FF 39
+    End=80 14 00 39 FE 14
+    End=80 14 1A 39 FE 00
+    End=80 14 1A 39 FE FE
+    End=80 39 FF FF FF 39
+    Enter Ctrl+M=80 09 09 2B 09 09
+    Enter Ctrl+M=80 49 09 2B 09 09
+    Enter Ctrl+M=80 AC FF FF FF FF
+    Enter=80 14 FF FF FF 14
+    Enter=FF FF FF 35 FF FF
+    Esc=80 4D 0D 0D 0D 0D
+    Esc=80 4D 1F 1F 0E 0E
+    Esc=80 4D 1F 1F 0F 0E
+    Esc=80 4D 1F 36 0F 0E
+    Esc=80 D0 D0 D0 D0 D0
+    F1=80 00 00 00 00 00
+    F1=80 40 00 00 00 00
+    F10 Ctrl+T=80 6F 2F 2F 2F 2F
+    F10=80 6F 2F 2F 2F 2F
+    F10=C7 FF FF FF FF FF
+    F10=D0 6F 2F 2F 2F 2F
+    F10=D0 D0 D0 D0 D0 D0
+    F2=80 00 00 00 00 00
+    F2=80 00 AD AD AD 00
+    F2=80 40 00 00 00 00
+    F2=80 92 92 92 92 92
+    F3=80
+    F3=80 00 00 00 00 00
+    F3=80 06 00 00 00 06
+    F3=80 40 00 00 00 00
+    F4=80
+    F4=80 00 00 00 00 00
+    F4=80 09 09 09 09 09
+    F4=80 40 00 00 00 00
+    F5 Ctrl+W=80 22 22 22 22 22
+    F5 Ctrl+Y=80 62 62 62 62 62
+    F5=80 00 00 00 00 00
+    F5=80 40 00 00 00 00
+    F5=80 62 00 00 00 00
+    F6 Ctrl+J=80 24 24 24 24 24
+    F6 Ctrl+U=80 64 24 24 24 24
+    F6=80 00 00 00 00 00
+    F6=C3 FF FF FF FF FF
+    F7 Ctrl+I=80 65 25 25 25 25
+    F7 Ctrl+J=80 65 25 25 25 25
+    F7 Ctrl+K=80 25 25 25 25 25
+    F7=80 00 00 00 00 00
+    F7=C4 FF FF FF FF FF
+    F8 Ctrl+L=80 26 26 26 26 26
+    F8 Ctrl+O=80 67 27 27 27 27
+    F8=80 00 00 00 00 00
+    F8=C5 FF FF FF FF FF
+    F9 Ctrl+O=80 27 27 27 27 27
+    F9 Ctrl+P=80 66 26 26 26 26
+    F9=80 00 00 00 00 00
+    F9=C6 FF FF FF FF FF
+    fa=
+    fe=
+    fi=
+    fo=
+    fu=
+    fwa=
+    fwe=
+    fwi=
+    fwo=
+    fwu=
+    fya=
+    fye=
+    fyi=
+    fyo=
+    fyu=
+    ga=
+    ge=
+    gi=
+    go=
+    gu=
+    gwa=
+    gwe=
+    gwi=
+    gwo=
+    gwu=
+    gya=
+    gye=
+    gyi=
+    gyo=
+    gyu=
+    ha=
+    he=
+    hi=
+    ho=
+    Home Ctrl+A=80 13 19 38 00 13
+    Home Ctrl+A=80 38 FF FF FF 38
+    Home=80 0D 0D 0D 0D 0D
+    Home=80 13 00 38 FE 13
+    Home=80 13 19 38 FE 00
+    Home=80 13 19 38 FE FE
+    Home=80 38 FF FF FF 38
+    hu=
+    hya=
+    hye=
+    hyi=
+    hyo=
+    hyu=
+    i=
+    IImeIPointSrv1041 = s 'IImeIPointSrv wrapper class'
+    IImeIPointSrv1041.15 = s 'IImeIPointSrv wrapper class'
+    ImeCommonAPI1041 = s 'ImeCommonAPI_JPN Class'
+    ImeCommonAPI1041.15 = s 'ImeCommonAPI_JPN_Desktop_V1 Class'
+    ImeCommonAPIClassFactory1041 = s 'ImeCommonAPIClassFactory_JPN Class'
+    ImeCommonAPIClassFactory1041.15 = s 'ImeCommonAPIClassFactory_JPN_Desktop_V1 Class'
+    ImeKeyEventHandler1041 = s 'ImeKeyEventHandler Class'
+    ImeKeyEventHandler1041.15 = s 'ImeKeyEventHandler Class'
+    INS=80 00 00 00 00 00
+    INS=80 40 0E 0E 0E 0E
+    ja=
+    je=
+    ji=
+    jo=
+    ju=
+    jya=
+    jye=
+    jyi=
+    jyo=
+    jyu=
+    ka=
+    ke=
+    ki=
+    ko=
+    ku=
+    kwa=
+    kya=
+    kye=
+    kyi=
+    kyo=
+    kyu=
+    L2F1=B0
+    L2F10=80
+    L2F11=F4
+    L2F12=F4
+    L2F13=80
+    L2F14=80
+    L2F15=80
+    L2F2=92
+    L2F3=93
+    L2F4=80
+    L2F5=91
+    L2F6=F3
+    L2F7=A5
+    L2F8=A6
+    L2F9=F0
+    la=
+    le=
+    li=
+    lka=
+    lke=
+    lo=
+    ltsu=
+    ltu=
+    lu=
+    lwa=
+    lya=
+    lye=
+    lyi=
+    lyo=
+    lyu=
+    ma=
+    me=
+    mi=
+    mo=
+    MSIME.Japan = s 'Microsoft IME (Japanese)'
+    MSIME.Japan.15 = s 'Microsoft IME (Japanese)'
+    MSIME.Japan.FEDict = s 'Microsoft IME (Japanese) IFEDict'
+    MSIME.Japan.FEDict.15 = s 'Microsoft IME (Japanese) IFEDict'
+    MSIME.Japan.FELang = s 'Microsoft IME (Japanese) IFELang'
+    MSIME.Japan.FELang.15 = s 'Microsoft IME (Japanese) IFELang'
+    MSIME.Japan.JpnReaderDS = s 'Microsoft IME Japanese Reader Data Source'
+    MSIME.Japan.JpnReaderDS.15 = s 'Microsoft IME Japanese Reader Data Source'
+    MSIME.Japan.LMDS = s 'Microsoft IME Japan LM Suggestion Data Source'
+    MSIME.Japan.LMDS.15 = s 'Microsoft IME Japan LM Suggestion Data Source'
+    mu=
+    mya=
+    mye=
+    myi=
+    myo=
+    myu=
+    n'=
+    na=
+    ne=
+    ni=
+    nn=
+    no=
+    NoRemove CLSID
+    nu=
+    nya=
+    nye=
+    nyi=
+    nyo=
+    nyu=
+    o=
+    pa=
+    PageDown  Ctrl+X=80 1D FF FF FF 1D
+    PageDown Ctrl+X=80 14 30 1D 00 14
+    PageDown=80 00 00 1D 00 00
+    PageDown=80 00 1D 1D 00 00
+    PageDown=80 14 00 1D 00 14
+    PageDown=80 1D FF FF FF 1D
+    PageUp Ctrl+E=80 13 30 1E 00 13
+    PageUp Ctrl+E=80 1E FF FF FF 1E
+    PageUp=80 00 00 1E 00 00
+    PageUp=80 00 1E 1E 00 00
+    PageUp=80 13 00 1E 00 13
+    PageUp=80 1E FF FF FF 1E
+    pe=
+    pi=
+    po=
+    pu=
+    pya=
+    pye=
+    pyi=
+    pyo=
+    pyu=
+    qa=
+    qe=
+    qi=
+    qo=
+    qu=
+    qwa=
+    qwe=
+    qwi=
+    qwo=
+    qwu=
+    qya=
+    qye=
+    qyi=
+    qyo=
+    qyu=
+    ra=
+    re=
+    ri=
+    ro=
+    ru=
+    rya=
+    rye=
+    ryi=
+    ryo=
+    ryu=
+    sa=
+    se=
+    sha=
+    she=
+    shi=
+    Shift+
+    Shift+BackSpace=80 15 1F 1F 00 15
+    Shift+BackSpace=80 15 1F 1F 0F 0E
+    Shift+BackSpace=80 15 1F 1F FE 15
+    Shift+BackSpace=80 4D 0D 0D 0D 0D
+    Shift+BackSpace=FF 15 15 15 00 15
+    Shift+BackSpace=FF 15 15 15 FE 15
+    Shift+Delete=80 16 00 00 00 16
+    Shift+Delete=80 16 B1 B1 00 16
+    Shift+Enter=80 09 09 09 09 09
+    Shift+Enter=80 49 09 09 07 18
+    Shift+Enter=80 D1 09 09 09 09
+    Shift+Enter=80 FE FE FE FE FE
+    Shift+Esc=80 4D 0D 0D 0D 0D
+    Shift+Esc=80 4D 0D 1F 0D 0D
+    Shift+Esc=80 4D 0E 0E 0E 0E
+    Shift+Esc=80 FF FF FF FF FF
+    Shift+Esc=84 4D 0E 0E 0E 0E
+    Shift+F1=80 00 00 00 00 00
+    Shift+F1=80 40 00 00 00 00
+    Shift+F10=80 00 00 00 00 00
+    Shift+F10=80 00 00 89 00 00
+    Shift+F2=80 00 00 00 00 00
+    Shift+F2=80 40 00 00 00 00
+    Shift+F2=80 92 92 92 92 92
+    Shift+F3=80 00 00 00 00 00
+    Shift+F3=80 40 00 00 00 00
+    Shift+F4=80 00 00 00 00 00
+    Shift+F4=80 40 00 00 00 00
+    Shift+F5=80 00 00 00 00 00
+    Shift+F5=80 40 00 00 00 00
+    Shift+F5=80 62 22 22 22 22
+    Shift+F6=80 00 00 00 00 00
+    Shift+F6=80 62 22 22 22 22
+    Shift+F6=80 64 24 24 24 24
+    Shift+F7=80 00 00 00 00 00
+    Shift+F7=80 40 00 00 00 00
+    Shift+F7=80 65 25 25 25 25
+    Shift+F8=80 00 00 00 00 00
+    Shift+F8=80 40 00 00 00 00
+    Shift+F8=80 67 27 27 27 27
+    Shift+F9=80 00 00 00 00 00
+    Shift+F9=80 40 00 00 00 00
+    Shift+F9=80 66 26 26 26 26
+    Shift+Home=80 00 00 00 00 00
+    Shift+Home=80 FE FE FE FE FE
+    Shift+ImeOff=80 66 26 26 26 26
+    Shift+INS=80 00 00 00 00 00
+    Shift+INS=80 40 0E 0E 0E 0E
+    Shift+PageDown=80 00 00 00 00 00
+    Shift+PageUp=80 00 00 00 00 00
+    Shift+SPACE=80 1C FF FF FF 1C
+    Shift+SPACE=88 46 1C 1C 07 06
+    Shift+SPACE=88 46 21 1C 21 00
+    Shift+SPACE=88 46 30 30 07 06
+    Shift+SPACE=88 82 1C 1C 07 06
+    Shift+SPACE=FF FF D2 1C FF FF
+    Shift+TAB=80 00 00 00 00 00
+    Shift+TAB=80 00 17 17 17 00
+    Shift+TAB=80 09 09 09 09 09
+    Shift+TAB=80 FE FE FE FE FE
+    Shift+TAB=FF FF D2 1C FF FF
+    sho=
+    shu=
+    si=
+    so=
+    SPACE=80 1B FF FF FF 1B
+    SPACE=81 06 2D 30 07 06
+    SPACE=81 46 30 30 07 06
+    SPACE=87 FF FF FF FF FF
+    SPACE=FF 81 FF FF FF 81
+    SPACE=FF FF D2 D2 FF FF
+    su=
+    swa=
+    swe=
+    swi=
+    swo=
+    swu=
+    sya=
+    sye=
+    syi=
+    syo=
+    syu=
+    ta=
+    TAB=80 D2 80 8A 80 80
+    TAB=80 D2 D2 D2 80 80
+    TAB=FF 8A FF FF FF FF
+    te=
+    tha=
+    the=
+    thi=
+    tho=
+    thu=
+    ti=
+    to=
+    tsa=
+    tse=
+    tsi=
+    tso=
+    tsu=
+    tu=
+    twa=
+    twe=
+    twi=
+    two=
+    twu=
+    tya=
+    tye=
+    tyi=
+    tyo=
+    tyu=
+    u=
+    va=
+    ve=
+    vi=
+    vo=
+    vu=
+    vya=
+    vye=
+    vyi=
+    vyo=
+    vyu=
+    wa=
+    we=
+    wha=
+    whe=
+    whi=
+    who=
+    whu=
+    wi=
+    wo=
+    wu=
+    wye=
+    wyi=
+    xa=
+    xe=
+    xi=
+    xka=
+    xke=
+    xn=
+    xo=
+    xtsu=
+    xtu=
+    xu=
+    xwa=
+    xya=
+    xye=
+    xyi=
+    xyo=
+    xyu=
+    ya=
+    ye=
+    yi=
+    yo=
+    yu=
+    za=
+    ze=
+    zi=
+    zo=
+    zu=
+    zya=
+    zye=
+    zyi=
+    zyo=
+    zyu=
+   $!$$ $$"#$$$##$$$$$$#$$$$$$$$$$$#$$$$$$$
+   ^ _         
+  / ~ |  `' "()  []{}    
+  </Links>
+  </Nodes>
+  </Properties>
+  <Links>
+  <Nodes>
+  <Properties>
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefg
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ /RestoreDictionary
+ _^[]
+ =FF 80 80 36 80 80
+ =FF 80 80 36 FF 80
+ 00000000000000000000000000000000
+ 0-0T0{0
+ Ctrl+A=80 13 19 7D 00 13
+ Ctrl+A=80 51 20 20 20 11
+ Ctrl+A=80 53 19 19 20 13
+ Ctrl+A=FF FF 17 17 17 FF
+ Ctrl+C=80 14 1A 1A 21 14
+ Ctrl+D=80 12 12 12 12 12
+ Ctrl+D=80 12 18 18 18 12
+ Ctrl+D=80 12 18 18 21 12
+ Ctrl+D=FF FF FF 8D FF FF
+ Ctrl+E=80 11 17 1C 20 17
+ Ctrl+E=80 1C FF FF FF 1C
+ Ctrl+E=80 40 1C 1C 00 00
+ Ctrl+E=80 53 1C 1C 20 13
+ Ctrl+E=80 80 80 FF FF 80
+ Ctrl+E=80 FE FE 1C 20 FE
+ Ctrl+E=FF 1C FF 1C FF FF
+ Ctrl+F=80 14 1A 1A 21 14
+ Ctrl+F=80 14 1A 3E 00 14
+ Ctrl+F=80 52 21 21 21 12
+ Ctrl+F=FF FF 18 18 18 FF
+ Ctrl+K=80 11 20 20 20 11
+ Ctrl+K=80 1E 00 00 00 00
+ Ctrl+K=80 51 20 20 20 11
+ Ctrl+K=FF 8E FF 8E FF FF
+ Ctrl+L=80 12 21 21 21 12
+ Ctrl+L=80 1D 00 00 00 00
+ Ctrl+L=80 52 21 21 21 12
+ Ctrl+L=FF 8D FF 8D FF FF
+ Ctrl+N=80 49 0A 0A 0A 0A
+ Ctrl+N=80 54 0A 0A 0A 0A
+ Ctrl+N=FF 1B FF 1B FF FF
+ Ctrl+Q=80 51 20 20 20 11
+ Ctrl+R=80 53 19 19 20 13
+ Ctrl+S=80 11 11 11 11 11
+ Ctrl+S=80 11 17 17 17 11
+ Ctrl+S=80 11 17 17 20 11
+ Ctrl+S=80 11 3F 3F 17 11
+ Ctrl+S=FF FF FF 8E FF FF
+ Ctrl+W=80 12 21 21 21 12
+ Ctrl+X=80 14 18 1B 21 18
+ Ctrl+X=80 1B FF FF FF 1B
+ Ctrl+X=80 40 1B 1B 00 00
+ Ctrl+X=80 54 1B 1B 21 14
+ Ctrl+X=80 80 80 FF FF 80
+ Ctrl+X=80 FE FE 1B 21 FE
+ Ctrl+Z=80 1C FF FF FF 1C
+ http://www.microsoft.com/windows0
+ Microsoft Corporation. All rights reserved.
+ Microsoft Operations Puerto Rico1&0$
+ Operating System
+ uG%D
+ Windows
+!;!:3
+!0/0F0{0
+!This program cannot be run in DOS mode.
+!VStartBulkChangeW
+"%s" "%s" %s
+"C1","
+"C2","
+"imapijpnLibW
+"Microsoft Window
+"opeW[]
+"oW[eQ
+#Changes the current conversion mode%Changes the current Auto-tuning level,Changes the current set of punctuation marks0Changes the current set of parentheses and slash<Toggles the input method between romaji input and kana input)Toggles between half-width and full-width5Toggles among hiragana, full-width katakana and asciiCToggles among hiragana, full-width katakana and half-width katakana5Toggles between full-width ascii and half-width ascii
+$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$`2X`F
+$0< t
+$0< tk
+$0< tS
+$0<0u
+$090F0e0k0
+$0t(<0t$< u
+$0V0^0v0
+$Displays the menu for candidate list
+$Microsoft Ireland Operations Limited1
+$Ph<'
+$PhT(
+$SVWP
+%;1)\5\`e
+%[MS-IME 2000 
+%2.2X
+'%APPID%' = s 'imjpapi'
+%hs!%p: 
+%hs(%d) tid(%x) %08X %ws
+%hs(%u)\%hs!%p: 
+%Microsoft Windows Production PCA 2011
+%Microsoft Windows Production PCA 20110
+%RE^zz}v
+%s,%d,%d
+%s/%s/%u
+%s\%s
+%s\%s\%s
+%s\IMEJP
+%s\Microsoft\IME\15.0
+%s\Microsoft\IME\15.0\IMEJP
+%u.%u.%u.%u
+%X21p
+&0E0X0p0w0}0
+()$^.*+?[]|\-{},:=!
+()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[
+()[]{}<>
+(~]SW@j
+(~HW@j
+(050M0_0
+(caller: %p) 
+) -> 
+)9{Dt$
+)Microsoft Root Certificate Authority 20100
+)O8)O03
+,+1oq2vs709C0R+Ep/rO12nggWCNWNp5plRekpp2DXwE=0Z
+,AppsKey
+,BackSpace
+,CTRL
+,Ctrl
+,CTRL
+,Ctrl
+,Delete
+,Enter
+,HELP
+,Home
+,HOME
+,Home
+,HOME
+,Home
+,ImeOff
+,ImeOn
+,Insert
+,Oz=U
+,PF10
+,PF11
+,PF12
+,PF13
+,PF14
+,PF15
+,PF16
+,PgDn
+,PgUp
+,RETURN
+,ROLLDOWN,
+,ROLLUP
+,Sc&L
+,SHIFT
+,Shift
+,SHIFT
+,Shift
+,SPACE
+,SVW3
+,XFER
+.?AV_com_error@@
+.?AV<lambda_2b6303aa0a99ed644446c4df64b460e3>@@
+.?AV<lambda_5c002cac854c4d610fb0e908d462aa84>@@
+.?AV<lambda_5f390a9f7a65ed8263963f7c5c6a77a3>@@
+.?AV<lambda_c5729b889cad4de445cca25ce6833177>@@
+.?AV<lambda_c9dcf0d1d5508512d0e319c8cf4facc1>@@
+.?AVbad_alloc@std@@
+.?AVbad_cast@@
+.?AVbad_function_call@std@@
+.?AVCAtlException@ATL@@
+.?AVexception@@
+.?AVlength_error@std@@
+.?AVlogic_error@std@@
+.?AVout_of_range@std@@
+.?AVregex_error@std@@
+.?AVResultException@wil@@
+.?AVruntime_error@std@@
+.00cfg
+.1~(C
+.9uka
+.bss$00
+.bss$01
+.bss$03
+.bss$dk00
+.bss$dk01
+.bss$dk03
+.bss$pr00
+.bss$pr01
+.bss$pr03
+.bss$zz
+.CRT$XCA
+.CRT$XCC
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.data
+.data$00
+.data$03
+.data$dk00
+.data$dk00$brc
+.data$dk01$brc
+.data$dk03
+.data$dk03$brc
+.data$pr03
+.data$r$brc
+.data$zz
+.data$zz$brc
+.dctx
+.dctxc
+.DEFAULT
+.didat$2
+.didat$3
+.didat$4
+.didat$5
+.didat$6
+.didat$7
+.edata
+.gfids
+.giats
+.idata
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.orpc$lp03imjpapi.dll!30_clientonly
+.P6G_NPAUIRegistryAccess@SettingsManager@TextInputSettings@WindowsInternal@@AAVSettingValue@123@@Z
+.P6G_NPAUIRegistryAccess@SettingsManager@TextInputSettings@WindowsInternal@@PBGAAVSettingValue@123@@Z
+.P6GXPAUIRegistryAccess@SettingsManager@TextInputSettings@WindowsInternal@@ABVSettingValue@123@@Z
+.P6GXPAUIRegistryAccess@SettingsManager@TextInputSettings@WindowsInternal@@PBGABVSettingValue@123@@Z
+.rdata
+.rdata$00
+.rdata$00$brc
+.rdata$01
+.rdata$03
+.rdata$03$brc
+.rdata$brc
+.rdata$sxdata
+.rdata$T$brc
+.rdata$voltmd
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zz
+.rdata$zz$brc
+.rdata$zzzdbg
+.rsrc
+.rsrc$01
+.rsrc$02
+.text
+.text$di
+.text$lp01imjpapi.dll!20_pri7
+.text$lp03imjpapi.dll!30_clientonly
+.text$mn
+.text$mn$00
+.text$np
+.text$x
+.text$yd
+.text$zy
+.text$zz
+.tls$
+.tls$ZZZ
+.xdata$x
+//     
+//    "Source Word Read" and "Altanative Word Disp" are optional.
+//    If "Altanative Word Disp" is not specified the source word will be discared.
+//  "W","Source Word Disp","Source Word Read","Altanative Word Disp"
+// "C1","Character List",,"Altanative Caracter List"   (1:1 char mapping)
+// "C2","Character",,"Altanative Surrogate Caracter"   (1char : 1 surrogate char mapping)
+// -*-coding: shift_jis; -*-
+// E0, E1, E2 are dupulicated in IImeKbd (HiroakiK 980818) IME98A RAID#1467
+// F4, F6, FB are dupulicated in IImeKbd (HiroakiK 970722)
+// publishing standard glyph definition table
+/_eR"
+/0N0q0
+/IT /Y
+: :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+: :$:,:0:8:<:D:H:P:T:\:`:h:l:t:x:
+: :,:8:D:P:\:h:t:
+: :':E:P:`:
+: :@:L:l:t:|:
+: :@:s:
+: :<:J:z:
+: :=:V:f:z:
+: :0:T:\:d:
+: :1:D:K:X:`:p:w:
+: :M:j:
+: ;E;o;
+: ;S;
+:!:.:`:y:
+:!:B:O:
+:!;+;9;X;t;
+:":&:*:.:2:6:::>:B:F:J:N:o:
+:":?:a:
+:":2:
+:":6:O:a:
+:":U:a:s:
+:":X:b:~:
+:#:+:9:B:Y:i:u:
+:#:4:;:F:]:k:s:
+:#:6:=:V:]:
+:#:6:F:R:Y:
+:#:8:H:x:
+:#:E:
+:#:T:w:
+:#;(;
+:#;+;q;y;
+:#;>;E;l;
+:$:,:4:<:D:L:T:\:d:l:t:|:
+:$:,:4:8:<:D:X:x:
+:$:,:8:X:`:l:
+:$:-:9:F:V:g:
+:$:+:2:9:@:F:R:]:b:g:m:w:
+:$:0:P:`:h:t:
+:$:0:T:\:d:l:
+:$:4:<:H:l:t:|:
+:$:D:L:T:\:h:
+:$:J:
+:$:L:T:`:
+:$:N:\:{:
+:$:X:e:}:
+:$;0;B;e;
+:%:*:P:^:
+:%:-:U:
+:%:9:C:M:\:e:
+:%:D:l:
+:%:O:e:
+:%:U:
+:%;7;
+:%;U;x;
+:&:<:T:a:y:
+:&:1:<:G:R:]:h:s:
+:&:A:W:f:
+:&;4;
+:&;C;v;
+:(:^:k:
+:(:<:H:r<
+:(:0:8:@:P:t:|:
+:(:2:N:x:
+:(:4:@:L:X:d:p:|:
+:(:5:B:I:S:c:u:
+:(:A:V:
+:(:A:Z:a:
+:(:H:P:\:|:
+:(:H:T:t:
+:(;|;
+:(;<;M;
+:(;5;I;V;h;
+:(;M;W;b;
+:(;T;d;j;
+:):>:
+:):3:X:c:s:y:
+:):t:
+:):y:
+:);B;];j;
+:*:B:d:|:
+:*:p:
+:*:W:z:
+:*<A<
+:,:@:P:`:p:
+:,:<:L:j:s:
+:,:2:
+:,:4:T:l:p:|:
+:,:5:\:c:
+:,:8:@:X:`:p:
+:,:e:s:
+:,;F;S;
+:,;O;
+:,;Q;
+:.:3:G:L:V:[:e:j:t:z:
+:.:7:U:_:m:
+:.:V:_:}:
+:.;~;
+:.;h;|;
+:/:W:v:
+:/;5;V;a;
+:/;9;U;[;_;h;l;
+:/;A;d;
+:/;h;t;
+:::]:
+:::P:d:x:
+:-:I:g:
+:-:P:f:
+:-:W:c:u:
+:-;:;L;l;
+:;:k:
+:';[;
+:-;\;
+:';3;E;n;
+:-;9;F;p;
+:';I;c;
+:-;o;
+:-;p;
+:?:H:n:
+:?:Z:
+:[:a:
+:[:W;
+:\:|:
+:\;x;
+:^:h:v:
+:_:q:
+:_;s<
+:_^[]
+:+:8:h:u:
+:+:N:x:
+:+:S:`:~:
+:+:Y:e:l:
+:+;@;K;V;r;
+:+;\;
+:+;=;K;W;
+:+;2;
+:+;7;2<g<
+:+;N;c;
+:<:^:
+:<:D:L:X:|:
+:<:g:
+:<:L:s:
+:<:L:T:\:d:l:t:|:
+:<:L:X:`:
+:<:L:X:`:x:
+:<;q;
+:=:X:
+:=;G;N;r;
+:=;m;
+:=;p;y;
+:>:a:
+:>:S:h:
+:0:6:t:
+:0:8:@:H:d:h:p:t:
+:0:8:H:T:t:|:
+:0:E:P:x:
+:0:L:a:n:w:|:
+:0:S:
+:1:=:O:\:
+:1:D:s:
+:1;A;U;u;
+:1;B;Z;
+:1;c;
+:1;u<
+:2:B:
+:2:b:
+:2;b;
+:2;c;x;
+:3:=:_:h:o:
+:3:c:
+:3;C;
+:4:<:H:h:p:
+:4:D:P:X:|:
+:4:K:c:
+:4:L:T:`:
+:4;Q;o;|;
+:5:;:@:e:k:p:
+:5:r:
+:5;e;
+:6:=:5;<;b<
+:7:L:
+:7:l:
+:7:Q:a:
+:7;d;
+:7;W;^;i;p;
+:7;Y;
+:7;Z;
+:8:@:N:Z:i:u:
+:8:E:]:o:
+:8;E;Y;f;x;
+:8;P;c;
+:8<F<b<
+:9:@:E:J:O:W:
+:9:G:c:o:}:
+:9:K:
+:9;l;
+:A:`:
+:A:i:
+:B:Q:~:
+:B:U:
+:b;s;|;
+:C:s:
+:C:Y:
+:C;e;
+:C;X;e;z;
+:D:t:
+:E;U;o;
+:F:~:
+:F;t;
+:H:\:
+:H:U:m:
+:H:X:d:l:
+:hZX,
+:I:g:
+:J:[:
+:K:~:
+:L:\:h:
+:L:k:
+:L;u;
+:M;Z;q;{;
+:N},z
+:N},z v
+:onecoreuap\windows\feime\win8\jpn\suggestion\lib\sflmelm\mtfcontainerconverter.cpp
+:Reverts last determined character(s) to undetermined state$Inserts last determined character(s)!Converts all the input characters
+:T:w:
+:u!f;q
+:U:z:
+:U;\;p;
+:W:o:
+:W:s:
+:W;a;k;#<,<3<
+:W;j;
+:WVD+Yq
+:x:~:
+:X;l;
+:Y:}:
+:Y:~:
+:yW0~0Y0
+:Z;c;i;n;
+:Z;i;
+; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+; ;(;0;L;\;h;p;
+; ;(;H;d;t;
+; ;,;L;T;`;
+; ;?;
+; ;?;c;
+; ;@;H;d;t;
+; ;8;<;@;D;H;L;P;`;d;h;x;|;
+; ;l;
+; ;T;d;p;x;
+; <;<
+; <0<7<
+; <3<
+; <X<
+;!;);/;O;Z;`;f;l;
+;!;3;E;x;
+;!;7;F;x;
+;!;D;_;f;y;
+;!<*<A<S<p<x<
+;!<i<!=
+;";<;L;\;
+;";>;T;g;
+;";M;
+;";P;f;p;w;
+;"<Q<
+;"<Q<e<l<
+;#;F;~;#<Z<
+;#<1<;<_<{<
+;#<3=
+;$;(;0;4;<;@;H;L;T;X;t;x;
+;$;,;4;<;D;L;T;\;d;l;x;
+;$;,;4;<;D;L;T;`;h;
+;$;,;4;<;D;L;X;x;
+;$;,;8;@;h;|;
+;$;,;8;\;l;
+;$;,;8;X;d;
+;$;,;d;l;
+;$;,;D;L;T;\;d;
+;$;0;<;H;d;l;t;|;
+;$;0;<;H;T;`;l;
+;$;0;P;X;p;x;
+;$;D;L;X;x;
+;$<,<8<\<d<
+;$<0<B<k<w<
+;$<2<I<T<a<h<z<
+;%;2;w;
+;%<.<W<
+;%<6<W<^<p<w<
+;&;6;<;];c;};
+;&;6;J;T;d;n;
+;&;8;W;g;
+;&;A;
+;&<2<D<}<
+;&<L<s<
+;(;.;3;A;G;L;Z;`;e;s;y;~;
+;(;/;9;C;g;
+;(;@;S;f;y;
+;(;>;K;X;c;o;
+;(;0;8;@;L;l;
+;(;4;T;\;h;
+;(;B;U;f;
+;(;Q;
+;(<;<m<
+;(<{<
+;(<<<c<~<
+;(<5<M<_<
+;(<9<Q<Z<n<u<
+;);?;I;B<j<
+;);0;I;\;d;
+;);6;E;N;s;
+;);7;g;
+;);i;
+;);M;o;
+;);N;W;|;
+;)<E<Z<
+;*;6;H;q;};
+;*;9;[;
+;*;S;p;|;
+;*<Z<
+;,;5;R;g;|;
+;,;B;
+;,;L;X;x;
+;,;W;
+;,<=<
+;,<P<
+;.<R<
+;/;h;u;
+;/;K;^;
+;/;S;[;
+;/<d<
+;:;h;t;
+;-;:;{;
+;;;^;
+;;;A;H;O;V;];d;q;
+;;;G;Y;
+;;;S;
+;';1;?;T;r;
+;';9;a;
+;-;C;b;r;
+;-;E;a;w;
+;-;H;\;#===L=g=x=
+;-;k;y;
+;';n;
+;?<g<}<
+;?<Y<s<
+;@;X;w;
+;[<v<
+;\;|;
+;\;h;r;{;
+;]<r<{<
+;^ }/;
+;`<s<
+;{L|+;{P}&=
+;~(}'
+;~<&>
+;+<5<
+;'<.<B<M<^<c<
+;<;L;T;\;d;l;t;|;
+;<;L;v;
+;<;N;V;i;q;
+;<<c<&=L>#?
+;'<f<
+;-<M<
+;>;O;
+;>;v;
+;0;8;@;L;l;t;|;
+;0;A;^;o;
+;0;b;
+;0;L;m;
+;0;R;
+;0;Z;m;
+;0<:<}<
+;0<a<z<
+;0<q<
+;0<Y<
+;1;Q;q;w;|;
+;1;T;x;
+;1;U;l;
+;2;6;R;V;q;
+;2;n;
+;3;j;
+;3<P<\<}<
+;4;@;d;l;t;|;
+;4;<;D;P;p;x;
+;4;<;H;h;p;x;
+;4;<;H;P;t;
+;4;<;T;\;d;l;t;|;
+;4;>;L;a;
+;4<:<j<s<
+;4<d<
+;5;L;W;x;
+;5;X;h;
+;6;^;y;
+;6;A;_;j;
+;6;F;r;
+;6;n;
+;7;^;l;
+;7;H;^;
+;7;Y;
+;8;\;};
+;8;e;~;
+;8;G;b;w;
+;8;H;l;x;
+;8<[<
+;8<`<
+;8<E<]<o<
+;9;i;
+;9<B<n<
+;A;P;i;t;
+;a;v;
+;a<{<
+;a<n<
+;a<z<
+;APv.
+;B;N;`;
+;B;q;
+;C`t#
+;C<s<
+;D$(|e
+;D;f;
+;D;T;`;
+;d;v;
+;D=#>
+;E;{;
+;E;Q;c;
+;F$}S
+;F;i;
+;F4uY
+;G u]
+;G||}
+;G|to
+;g<|<
+;G4tU
+;H;k;
+;HLuL
+;HTrb
+;i;p;
+;I;S;
+;J;[;n;
+;J;p;
+;K;{;
+;K<l<
+;L$$|
+;N,s 
+;O;i;
+;R;t;
+;R;u;
+;S;e;
+;S<]<g<p<v<
+;S<_<
+;S<|<
+;S<D=j=
+;t$0s?
+;T;^;
+;W;j;
+;X<l<
+;Z;x;
+;Z<h<w<
+? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?h?l?p?t?x?|?
+? ?&?h?
+? ?(?4?T?
+? ?'?.?H?O?V?d?
+? ?9?p?
+? ?T?d?p?x?
+?!?:?t?
+?!?'?T?^?p?
+?!?7?F?x?
+?"?,?<?_?w?
+?"?,?6?P?X?b?
+?"?'?5?:???M?R?W?e?j?o?}?
+?"?4?
+?"?4?E?Q?V?a?u?|?
+?"?l?y?
+?#?.?7?Z?i?r?
+?#?-?;?P?n?~?
+?#?@?
+?#?_?
+?#?6?G?
+?#?C?
+?#?D?|?
+?#?L?S?j?
+?$?,?@?`?l?
+?$?,?<?L?T?h?p?x?
+?$?,?4?<?D?L?T?\?d?l?
+?$?,?4?<?D?L?T?`?
+?$?,?4?<?L?\?
+?$?,?8?X?d?
+?$?<?T?\?d?
+?$?0?T?\?d?
+?$?0?T?\?d?l?t?|?
+?$?4?<?D?L?\?d?
+?$?4?<?D?T?\?h?
+?$?D?P?p?|?
+?$?E?Q?c?
+?$?h?r?
+?$?L?w?
+?$?X?h?t?|?
+?%?6?k?
+?%?9?F?U?^?
+?%?E?i?x?
+?%?O?i?
+?&?D?
+?(?[?
+?(?3?R?
+?(?4?@?L?X?d?p?|?
+?(?H?P?\?|?
+?(?H?P?\?d?
+?)?/?5?=?C?I?O?W?^?d?x?
+?)?>?R?\?
+?)?q?~?
+?)?W?
+?*?;?f?
+?*?6?H?q?~?
+?*?R?o?u?
+?,?[?g?
+?,?<?D?T?\?d?|?
+?,?4?<?D?P?X?|?
+?,?4?<?L?X?x?
+?,?7?V?
+?,?8?@?`?h?p?
+?,?N?p?
+?,?O?w?~?
+?.?M?a?
+?/?^?l?x?
+?/?<?\?i?
+?/?5?
+?/?8?J?t?
+?/?C?O?a?
+?/?h?u?
+?:?h?u?
+?:?I?Q?Y?a?i?q?
+?:?L?v?
+?;?i?
+?;?W?c?t?
+?;?Y?|?
+?'?,?1?6?D?I?N?S?a?f?k?p?~?
+?-?;?a?{?
+?-???x?
+??_V@YAXPAX@Z
+?'?=?N?[?v?
+??0bad_cast@@QAE@ABV0@@Z
+??0bad_cast@@QAE@PBD@Z
+??0exception@@QAE@ABQBD@Z
+??0exception@@QAE@ABQBDH@Z
+??0exception@@QAE@ABV0@@Z
+??0exception@@QAE@XZ
+??1bad_cast@@UAE@XZ
+??1exception@@UAE@XZ
+??1type_info@@UAE@XZ
+??3@YAXPAX@Z
+?-?f?
+?'?J?r?
+?[?f?w?
+?^?x?
+?+?=?B?
+?+?C?M?
+?+?G?
+?+?G?Z?
+?=?`?
+?=?m?
+?=u/W
+?0?;?G?M?
+?0?8?@?H?P?\?|?
+?0?8?@?H?P?`?
+?0?8?D?d?l?x?
+?0?J?^?
+?0?w?
+?0O0s0
+?1?Q?n?
+?3???
+?3???F?Y?
+?3???K?W?b?n?
+?3?`?
+?3?B?a?q?|?
+?3?P?p?
+?3?Y?q?
+?4?;?
+?4?<?D?L?T?\?h?
+?4?<?D?P?p?x?
+?5?;?o?x?}?
+?5?\?h?z?
+?6?e?q?
+?6?f?
+?7?}?
+?8?F?
+?8?I?c?
+?8?Z?k?
+?9?A?H?N?^?v?
+?9?w?
+?a?m?
+?B?u?
+?b?y?
+?C?Y?
+?D?j?
+?D?S?
+?E?\?g?
+?F?[?
+?F?]?y?
+?F?c?~?
+?F?Y?x?
+?G?z?
+?H?t?
+?H?U?m?
+?h?x?
+?H?Z?d?k?x?
+?j?v?
+?K?W?
+?O?i?
+?Q?t?
+?S?g?
+?T?_?s?
+?terminate@@YAXXZ
+?what@exception@@UBEPBDXZ
+?X?e?}?
+?X?n?
+?Y?b?|?
+@"@uI
+@$f9P
+@.3A.
+@.didat
+@.reloc
+@^[_]
+@_^[]
+@H tQ
+@H u:
+@tK@3
+[%hs(%hs)]
+[%hs]
+[>GVL
+[LongWord]
+[MS-IME 2000 
+[onecoreuap\windows\feime\win8\jpn\em\main\candidatelist.cpp
+[Sh70
+[t ;G
+[Unknown]
+[W0_0
+[W0~0Y0
+\0d0l0x0
+\Color
+\color
+\Dicts
+\EInsertCharWW
+\imjppsgf.fil
+\Implemented Categories
+\Required Categories
+\StyleList
+\WINLOGON.EXE
+]%04d-%02d-%02dT%02d:%02d:%02d.%03d
+]0l0u0
+]MRhQ
+^ @_[^
+^ _^[
+^0Y9~@uR
+^D9~T
+^HQQ$
+^ShHW
+_";^"tF
+_;bW0
+_^@[]
+_^[;E
+_^[Y]
+_____________________________
+___lc_codepage_func
+___lc_collate_cp_func
+___lc_handle_func
+___mb_cur_max_func
+__crtCompareStringA
+__crtCompareStringW
+__crtLCMapStringA
+__crtLCMapStringW
+__CxxFrameHandler3
+__dllonexit
+__MIDL___MIDL_itf_imapijpn_0002_0000_0001WWW,
+__MIDL___MIDL_itf_imapijpn_0002_0010_0001WWW
+__pctype_func
+_=K}J
+_amsg_exit
+_callnewh
+_CxxThrowException
+_errno
+_except_handler4_common
+_ftol2
+_ftol2_sse
+_get_errno
+_IMJP_15_KnlDict_DicWriteMutex
+_IMJP_15_UD_FileMapping_{b4f0aa5b-77d3-486f-b999-53049e87159e}
+_IMJP_15_UD_Mutex_{24471f0a-93ba-4398-b4c1-54a70707b2c2}
+_IMJP_15_Uty.MutexObject
+_initterm
+_ismbblead
+_lock
+_onexit
+_Pjd[
+_purecall
+_resetstkoflw
+_set_errno
+_snprintf_s
+_unlock
+_vsnprintf
+_vsnprintf_s
+_vsnwprintf
+_vsnwprintf_s
+_wcsdup
+_wcsicmp
+_wcsnicmp
+_wsetlocale
+_wtoi
+_XcptFilter
+`.data
+`0b0e0g0i0
+`8tSA
+`InsertString
+`OOnKeyUpW
+{%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X}
+{;bW0
+{`0Q0
+{~0g0
+{+g>\
+{00000000-0000-0000-0000-000000000000}
+{03b5835f-f03c-411b-9ce2-aa23e1171e36}
+{531FDEBF-9B4C-4A43-A2AA-960E8FCDC732}
+{6a498709-e00b-4c45-a018-8f9e4081ae40}
+{71p5 v
+{81d4e9c9-1d3b-41bc-9e6c-4b40bf79e35e}
+{81EA0A17-AA39-455B-BA20-EA79A8F98966}
+{A028AE76-01B1-46C2-99C4-ACD9858AE02F}
+{B115690A-EA02-48D5-A231-E3578D2FDF80}
+{C2CB2CF0-AF47-413E-9780-8BC3A3C16068}
+{E429B25A-E5D3-4D1F-9BE3-0C608477E3A1}
+{SVh0n
+| j\Yf;
+|$(}0
+|$hWQ
+|$pWQ
+|1;9t-
+|hK,_
+|k;0~
+}"WVhH
+}(!%D
+}}F9U
+}gF;u
+~ 9~$t
+~$9~(t
+~(9~,t
+~,9~$t
+~,9~0t
+~@9~Dt
+~<9~@t
+~09~4t
+~4_^]
+~49~8t
+~89~<t
+~H9_||
+~L?u6
+~L?ur
+~L|u\
+~OjgY+
+~sf;X
++0?0P0q0
++g>\n0
++GL+OL
++GL+OL;
++Shrinks the current phrase by one character+Extends the current phrase by one character4Activates IME pad and displays radical lookup appletCToggles among half-width katakana, full-width katakana and hiragana
+< <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+< <$<(<,<0<4<8<<<H<L<P<T<X<\<`<d<h<l<p<x<|<
+< <$<(<,<0<4<8<<<H<P<T<X<\<`<d<h<l<p<t<x<|<
+< <$<(<,<K<Q<|<
+< <(<\<l<x<
+< <(<0<<<D<d<l<
+< <,<L<T<`<
+< <,<L<X<x<
+< <<<L<X<`<
+< <0<@<P<X<`<h<p<x<
+< <0<<<\<d<l<x<
+< <A<r<
+< =*=G=t=
+< =-=4=V=c=j=
+< =6>
+< =a=
+<!<(<^<m<
+<!<.<A<
+<!<+<
+<!<4<@<G<j<
+<!<9<L<_<r<
+<!<c<o<
+<!<U<q<
+<!=U>
+<"</<4<9<G<v<X=`=h=p=w=
+<"</<q<
+<"=}=
+<"=<=O=
+<"=2=K=g=
+<"=g=p=
+<"=H=
+<#<e<
+<#=\=y=
+<#=_=m=
+<#=>=
+<#=1=a=
+<$<,<<<
+<$<,<<<D<L<T<
+<$<,<4<@<d<l<t<|<
+<$<,<4<<<D<L<T<\<d<l<t<|<
+<$<,<4<<<D<L<T<\<t<
+<$<,<4<<<D<L<X<`<
+<$<,<4<L<X<`<
+<$<<<
+<$<f<o<
+<$<G<W<l<
+<$<R<[<i<
+<$=[=
+<$=6=P=b=l=
+<$=p=
+<%<.<C<~<
+<%</<
+<%<+<y<
+<%<=<O<
+<%<3<
+<%<D<M<}<
+<%<E<
+<%<E<l<z<
+<%=,=T=[=
+<%=3=
+<%=J=l=u=
+<&=6=X=b=l=v=
+<(<=<K<]<
+<(<4<T<`<
+<(<6<Q<g<
+<(<H<P<X<`<h<t<
+<(<H<P<X<`<h<x<
+<(<H<X<d<
+<(<K<e<
+<(<m<
+<(<O<[<m<
+<(=<=c=
+<(=5=M=_=
+<(=9=D=j=x=
+<(=o=
+<)</<4<B<H<M<[<a<f<t<z<
+<)<0<;<w<
+<)=0=X=
+<)=I=\=
+<)=s=
+<*<4<l<|<
+<*<E<P<
+<*<f<}<
+<*<j<
+<,<<<H<P<p<x<
+<,<0<8<<<D<H<P<T<l<p<x<|<
+<,<3<
+<,<4<<<D<L<T<\<d<p<t<x<|<
+<,<8<X<`<h<t<
+<,<D<P<p<
+<,<R<f<
+<,<T<]<{<
+<,<z<
+<,=O=`=
+<.<7<F<O<|<
+<.=Q=u=
+</<6<r<|<
+</<7<M<U<y<
+</<a<l<
+</<v<
+</<w<
+</=j=
+</=m=
+</DirectedGraph>
+<:<J<
+<?<d<
+<?xml version="1.0" encoding="utf-8"?>
+<@<c<
+<[<s<
+<]=s=
+<^=k=
+<_<u<
+<+<@<L<e<
+<+<[<
+<+<]<u<
+<+<7<
+<+<N<
+<+<R<y<
+<+<U<r<}<
+<+<X<j<
+<+tI<-tC
+<-<?<k<s<
+<<<R<n<
+<<<t<
+<<<T<f<
+<'<8<
+<-<B<l<x<
+<<et5<it
+<-<R<}<
+<=<S<
+<==G=P=
+<==u=
+<-=h=|=
+<><~<
+<><T<r<
+<><X<
+<0<><F<V<d<r<~<
+<0<8<@<H<T<t<|<
+<0<D<L<`<h<p<x<
+<0<E<g<q<~<
+<0<O<l<{<
+<0=5=H=f=t=
+<0=C=v=
+<0uDFJ
+<1<;<Q<q<
+<1<=<~<
+<1<A<
+<1<A<Q<a<q<
+<1<o<
+<1<r<
+<2<T<^<
+<3<:<E<d<
+<3<F<P<\<
+<3<G<o<y<
+<3<S<u<
+<3<V<y<
+<3=F=
+<3=O=~=
+<3=Q=
+<4<<<D<P<p<x<
+<4<D<P<p<x<
+<4<m<
+<5<B<f<
+<5<P<h<
+<5=N=Z=l=
+<5=w=
+<6<\<e<k<s<y<
+<6<B<T<}<
+<6>U>k>v>
+<7<D<
+<7<J<]<p<
+<7<O<
+<8<@<H<P<\<d<
+<8<F<[<h<w<~<
+<8<O<Z<u<
+<8=D=K=r=
+<8=E=]=o=
+<8=k=
+<8=V=^=e=l=
+<8=z=
+<9<B<f<
+<9<n<
+<9=q=
+<A<l<
+<A<X<n<
+<A=g=n=
+<aw#t
+<B<|<
+<C<O<a<
+<c<u<
+<D<[<
+<D=|=
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+<E<a<
+<E<u<
+<EtR<It/<Ot&<Ut
+<F<R<d<
+<F<v<
+<F>k>
+<G97t
+<H<n<w<
+<H<p<
+<H<U<m<
+<H=A>X>
+<H=R=d=
+<H=V=
+<J=h=
+<j=w=
+<K={=
+<K=f=
+<L<\<h<
+<L<k<
+<L=n=s={=
+<l=r=
+<Lt'<Wt
+<N<^<
+<N=o=
+<NA@;
+<O<a<
+<P<u<
+<Q<c<
+<Q<m<t<{<
+<R<{<
+<R<a<{<
+<S<|<
+<S<w=
+<S<Y<
+<v<E=y=
+<W=a=
+<WShHD
+<X<e<y<
+<xu8FJ
+= =$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+= =(=0=@=L=l=t=
+= =(=0=<=\=l=x=
+= =,=L=T=`=
+= =@=h=t=
+= =h=u=
+= >;>I>
+=!=0=A=P=g=
+=!=6=
+=!=C=O=^=}=
+=!>)>V>s>
+=!>/>;>I>V>
+=!>{>
+=!>+>0>`>}>
+=!>1>L>p>
+=!>K>
+=!>n>
+="=(=>=G=c=
+="=(=A=Q=W=q=
+="=:=`=q=
+=">&?6?I?R?
+=">(>O>
+=">S>
+=">x>
+=#=)=.=<=B=G=U=[=`=n=t=y=
+=#=*=1=8=?=F=X=o=u=|=
+=#>.>H>b>w>
+=#>?>]>m>
+=#>0>E>[>
+=#>1>;>_>{>
+=#>5>j>s>
+=#>F>e>
+=$=,=4=<=D=L=T=\=h=
+=$=,=4=<=D=L=T=`=
+=$=,=4=<=D=T=l=t=
+=$=,=4=<=H=l=t=|=
+=$=,=D=P=p=x=
+=$=/===D=g=
+=$=<=L=p=
+=$=-=a=t=
+=$=0=8=l=|=
+=$=0=T=\=d=l=t=|=
+=$=6=_=k=}=
+=$=D=L=T=\=h=
+=$=H=
+=$=K=r=
+=$=R=
+=$>\>
+=$>0>>>E>K>S>[>d>m>z>
+=$>4>@>`>h>p>|>
+=%=/===R=p=
+=%===O=
+=%=7===o=|=
+=%=7=H=o=u=
+=%>4>J>X>i>z>
+=%>6>M>_>
+=%>D>S>
+=%>G>S>
+=&=?=p=
+=&=C=y=
+=&>V>
+=(=]=j=
+=(=0=8=@=P=T=X=`=d=h=t=|=
+=(=0=P=X=`=h=p=
+=(=0=P=X=t=
+=(=2=7=L=U=h=
+=(=5=O=U=
+=(=8=@=L=l=x=
+=(=D=Y=l=z=1>L>W>a>h>x>
+=(=H=P=`=l=
+=(=L=d=l=t=|=
+=(>5>I>V>e>n>
+=(>5>U>
+=(>H>|>
+=)>;>V>l>
+=)>c>
+=)>I>P>
+=)>N>
+=*=H=
+=*=S=_=q=
+=*>;>
+=*>\>k>
+=*>>>e>v>
+=*>F>e>
+=,?]?
+=,=4=<=@=H=L=T=`=h=
+=,=6=C=c=l=s=z=
+=,=8=X=d=
+=,=S=
+=,=S=g=
+=,>P>o>u>}>
+=.=8=z=
+=.=d=
+=.><>b>
+=.>X>g>
+=/=8=M=s=
+=/=X=e=}=
+=:=@=G=N=U=i=
+=:>i>v>
+=;=@=K=y=
+=;=B=I=
+=;=D=k=u=
+=;=o={=
+=;=W={=
+=;>D>
+=?=b=
+=?=s=
+=?=Y=
+=@=o=x=
+=@>t>
+=\=s=
+=\=z=
+=]=o=
+=`=u=
+=+=1=9=F=R=h=
+=+=6=B=T=Z=m=
+=+=N=
+=+=P=^=}=
+=+=S=`=j=
+=<=D=L=T=\=d=
+=<=D=P=p=
+=<=I=
+==>}>
+=-=3=_=
+='=5=C=Q=d=p=~=
+='=7=r=
+=-=H=d=
+='=H=U=p=
+=-=H=V=i=
+=-=O=
+='=W=
+=-=W=
+=-=W=q=
+=->:>Q>[>h>
+=>=a=
+=>=m=
+=>=x=
+=>>a>
+=>>J>c>
+='>a>r>
+=->c>z>
+='>E>
+=->G>^>
+='>W>
+=0=_=|=
+=0=<=V=m=v=
+=0=8=T=d=p=
+=0=J=e=
+=0=V=c=
+=0>@>L>T>
+=0>6>P>U>]>i>y>
+=0>h>o>
+=1=K=s=
+=1=N=l=
+=1=S=
+=1=S=]=b=g=
+=1=Y=t=
+=2=\=m=
+=2=w=
+=2>=>D>i>v>
+=2>D>e>p>
+=3=c=
+=3=e=~=
+=4=<=D=L=X=|=
+=4=8=T=X=t=x=
+=4=d=
+=4=T=`=
+=5=?=
+=5=<=h=
+=5>`>
+=6=i=
+=6=L=_=
+=6>d>
+=7=R=d=
+=7=x=
+=7>^>
+=7>Z>}>
+=8=E=Z=p=
+=8=G=b=w=
+=8=I=
+=80 00 00 00 00 00
+=80 00 00 1E 00 00
+=80 00 00 F7 00 00
+=80 06 0A 0A 21 06
+=80 06 1B 1B 07 06
+=80 06 1B 1D 07 06
+=80 06 2D 30 07 06
+=80 13 17 1E 20 17
+=80 1B FF FF FF 1B
+=80 1C FF FF FF 1C
+=80 1E FF FF FF 1E
+=80 28 28 28 28 28
+=80 40 00 00 00 00
+=80 40 1C 1C 00 00
+=80 46 1C 1C 07 06
+=80 46 1C 1E 07 06
+=80 46 20 20 20 06
+=80 46 30 30 07 06
+=80 46 30 32 07 06
+=80 4C 0A 0A 0A 0A
+=80 4C 0B 1D 0B 0B
+=80 53 1C 1C 00 00
+=80 54 0A 0A 0A 0A
+=80 FF FF FF FF FF
+=83 46 1C 1C 07 06
+=83 46 30 30 07 06
+=84 49 09 18 18 18
+=87 00 00 00 00 00
+=87 00 00 F7 00 00
+=87 06 2D 30 07 06
+=87 46 1E 1E 00 00
+=87 46 30 30 07 06
+=9=E=
+=9=E=W=
+=9=F=_=
+=9=Y=o=}=
+=94 94 94 94 94 94
+=95 95 95 95 00 00
+=97 28 28 28 28 28
+=97 97 28 28 28 28
+=97 97 97 97 18 18
+=97 97 97 97 97 97
+=98 29 29 29 29 29
+=98 98 98 98 00 00
+=A=_=f=y=
+=A>L>
+=A1 A1 A1 A1 A1 A1
+=A2 A2 A2 A2 A2 A2
+=A4 A4 A4 A4 A4 A4
+=B=\=p=
+=B=a=z=
+=b>A?
+=C=f=
+=C=j=w=
+=C3 FF FF FF FF FF
+=c5<aP 
+=C7 FF FF FF FF FF
+=CA CA CA CA CA CA
+=CE 00 00 00 00 00
+=D=d=p=
+=D=O=V=j=
+=D>d>y>
+=D3 40 1C 1C 00 00
+=D5 46 30 32 07 06
+=E=q=
+=F5 F5 F5 F7 F5 F5
+=FF FF D2 D2 FF FF
+=g=y=
+=G>l>
+=h=s=
+=H=U=m=
+=J=[=w=
+=K?n?
+=L=v=
+=L>g>
+=L>p>u>
+=L>X>d>r>~>
+=L9o<
+=M=_=t=
+=m=w=~=
+=N=Y=m=z=
+=O>`>
+=Sh84
+=U=k=
+=U=x=
+=W=a=k=
+=X=f=z=
+=Y>`>
+> ?g?
+> ?Q?
+> >$>(>,>0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+> >(>\>l>x>
+> >(>D>p>
+> >*>W>
+> ><>O>X>m>w>
+> >>>k>
+> >->A>N>X>p>
+> >8>
+>!?D?i?
+>!?E?
+>!?g?
+>!>&>+>H>Z>a>m>
+>!>/>7>a?i?v?|?
+>!>@>I>o>
+>!>+>0>5>?>D>I>N>\>a>f>k>y>~>
+>!>1>A>Q>a>q>
+>!>s>
+>"?.?@?i?u?
+>"?.?@?i?v?
+>"?u?
+>">2>;>
+>">5>D>L>Z>m>
+>">A>
+>#?_?
+>#?2?V?
+>#>3>=>_>k>}>
+>#>8>e>
+>#>i>
+>#>W>r>
+>$?F?j?q?z?
+>$>,>4>@>d>l>|>
+>$>,>4><>D>L>T>\>d>l>x>
+>$>,>4><>D>P>t>|>
+>$>,>4><>H>l>t>|>
+>$>,>4><>T>l>t>
+>$>,>8>\>d>l>t>|>
+>$>,>8>X>`>h>p>|>
+>$>,>D>L>T>`>
+>$>,>D>P>p>x>
+>$>,>D>P>X>x>
+>$>.>U>
+>$>:>c>u>
+>$><>D>\>d>p>
+>$>3>9>_>w>
+>$>4>@>H>`>h>x>
+>$>9>G>[>l>
+>$>j>s?
+>$>l>t>
+>%?9?[?l?
+>%>U>_>w>
+>&?,?2?H?N?T?{?
+>&?f?y?
+>&>^>
+>&>4>g>s>
+>&>p>
+>(?<?V?p?
+>(?5?M?_?
+>(?8?D?d?p?x?
+>(?C?i?
+>(>4>:>?>E>e>
+>(>6>N>\>p>
+>(>j>
+>(>S>q>
+>)???G?
+>)?E?Z?o?~?
+>)>\>
+>)>]>k>|>
+>)>6>
+>)>G>J?T?^?n?
+>)>G>r>
+>)>J>t>
+>)>U>
+>*>:>J>l>u>
+>*>@>O>o>
+>*>>>
+>*>2>B>v>
+>*>R>[>y>
+>,?9?
+>,?S?
+>,>0>8><>T>X>d>l>
+>,>4>@>`>h>t>
+>,>8>X>`>h>p>|>
+>,>U>a>s>
+>.?M?
+>.>=>M>|>
+>.>5>?>F>T>[>d>k>u>
+>.>T>l>
+>.>V>t>z>
+>/?=?B?M?{?
+>/>@>d>
+>/><>U>
+>/>h>u>
+>/>h>v>
+>/>j>
+>/>N>
+>/>X>d>v>
+>/>y>
+>:?C?h?
+>:>M>\>b>
+>;?Q?b?
+>;?z?
+>;>D>
+>;9t#
+>?>L>s>
+>?>X>
+>-?V?r?
+>@?T?d?t?
+>[HWZ
+>\>b>h>q>D?
+>\>w>
+>]>b>
+>]>g>u>
+>^>s>
+>_?t?
+>`?t?
+>+>6>h>u>
+>+>C>q>
+>+>f>
+><?R?
+><=u'WVQ
+><>_>
+><>D>L>T>`>
+><>D>L>T>t>
+><>H>h>t>
+><>r>
+>=>p>
+>=t%F;
+>'>.>
+>->?>s>
+>>?e?
+>>?X?q?
+>>>j>x>
+>'>D>
+>->H>}>
+>'>P>\>r>
+>'>v>
+>0>@>d>w>
+>0><>N>[>
+>0>S>
+>1?E?N?}?
+>1>D>W>j>}>
+>2?@?
+>2?D?S?r?x?
+>2>b>
+>3?f?
+>3?o?
+>3?s?
+>3>B>M>c>
+>3>I>~>
+>3>s>
+>4?q?
+>4><>D>L>T>\>h>
+>4>A>
+>4>k>
+>4>P>`>l>t>
+>4>W>z>
+>5?f?
+>5><>E>a>x>
+>5><>I>]>d>x>
+>6?^?
+>6>F>P>Z>d>n>
+>6>N>l>
+>6>O>~>
+>7?i?n?
+>7?V?y?
+>7?z?
+>7>g>
+>8?[?x?
+>8?e?y?
+>8?s?|?
+>8>=>F>P>U>c>~>
+>8>E>Y>f>x>
+>8>l>
+>8>x>
+>9?J?a?|?
+>A?Y?u?
+>A>M>[>
+>B?[?p?
+>B?c?t?
+>B>u>
+>D?j?
+>d>t>~>
+>e?w?
+>E?Y?_?f?r?|?
+>E>c>|>
+>E>X>x>
+>F>R>d>
+>G>M>T>r>
+>H?W?y?
+>H>X>d>l>
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+>I?b?i?
+>J>g>
+>J>Q>m>
+>L>\>h>p>
+>N?Y?j?
+>P>d>
+>Q>b>z>
+>S>c>j>
+>T>]>d>k>~>
+>v?|?
+>W>k>
+>W>p>
+>X?b?i?
+>X?e?}?
+>X>~>
+>Y>g?p?
+>Z>`>m>z>
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+0 0$0(0,0004080<0@0D0L0P0T0X0\0`0d0h0l0p0t0x0|0
+0 0&0,02080>0D0J0P0V0\0b0h0n0t0z0
+0 0(0,00080@0D0L0T0X0\0`0h0p0x0
+0 0,0L0X0x0
+0 0@0P0\0|0
+0 000T0\0d0
+0 010G0m0t0
+0 020h0u0
+0 1.2
+0 1+2
+0 1'1?1O1e1
+0!0)010X0_0!1
+0!0>0
+0!0-090Y0m0
+0!010A0Q0
+0!1;1]1
+0!1G1p1
+0!1T1
+0!kn0
+0"0/0P0
+0"0'090F0
+0"040]0k0
+0"0Q0
+0"0X0j0
+0"1[1
+0"1-1L1h1
+0"1z1
+0#0*0A0d0
+0#0+0x0
+0#000L0T0a0n0
+0#0L0r0|0
+0#0n0
+0#1f1
+0$0)0.0W0
+0$0,0<0D0L0X0x0
+0$0,040<0D0
+0$0,040<0D0L0T0\0d0l0t0
+0$0,040<0D0L0X0`0
+0$0,040<0D0P0t0|0
+0$0,040<0T0\0d0l0t0|0
+0$0,040P0`0l0
+0$0,080@0t0
+0$0,0L0T0\0x0
+0$0+02090@0G0N0U0[0_0c0g0k0o0s0w0{0
+0$0<0@0D0\0`0d0h0l0p0t0x0|0
+0$0<0D0L0X0x0
+0$0=0
+0$040@0H0h0
+0$040I0
+0$0h0
+0$1:1
+0$1+1G1Z1
+0$141@1H1|1
+0%0=0O0
+0%070h0u0
+0%080A0J0S0t0z0
+0%0p0
+0%1]1
+0%1H1s1
+0%1M1q1
+0%1m1t1
+0%1p1
+0&0>0D0S0b0m0z0
+0&171
+0&1S1X1m1r1
+0&1v1
+0(000<0\0h0
+0(020<0F0P0Z0d0n0x0
+0(02080?0D0q0x0
+0(050M0_0
+0(0f0
+0(0X0e0}0
+0)0/040B0G0L0Q0j0q0
+0)0>0S0}0
+0)060J0W0l0
+0)0K0z0
+0)1V1
+0*0=0X0{0
+0*141F1O1
+0*1W1k1
+0*QHQW0_0
+0,0<0q0
+0,010:0?0I0N0S0X0f0k0p0u0
+0,02080d0u0
+0,040@0d0l0t0
+0,040L0T0l0t0
+0,060T0]0g0w0
+0,0A0
+0,0b0
+0,0f0
+0,0I0o0
+0,0K0
+0,0U0
+0,0X0e0}0
+0.0<0a0N1
+0.0>0{0
+0.080r0
+0.1i1|1
+0.1y1
+0/0X0
+0/1[1~1
+0/1Q1f1o1
+0:0R0e0
+0:0s0
+0;0b0w0
+0;0G0Y0
+0;0S0v0{0
+0;0z0
+0?0\0k0
+0?0F0
+0@0[0r0|0
+0@0P0\0|0
+0@0x0
+0@1c1
+0\1g1
+0\1z1
+0]0n0
+0]0S0g0
+0]0y0
+0^0q0
+0_1u1
+0~0Y0
+0+000U0c0{0
+0+030d0
+0+080X0
+0+0r0
+0<0f0
+0<0L0T0\0d0l0t0|0
+0<0T0`0
+0<0T0l0
+0<0W0
+0<1L1Y1l1
+0<1Q1k1
+0=0D0
+0=0R0e0x0
+0=0Y0w0~0
+0=1S1h1|1
+0>0R0
+0>1^1
+0>1V1
+0>BEAIME_CommonAPIW,
+000@0d0l0t0|0
+000<0\0d0l0t0|0
+0000000000000000000000000000000
+000004b0
+00080@0H0X0|0
+0'0-0c0
+000h0w0
+000Q0u0
+001K1i1}1
+0'060h0u0
+0'0D0g0l0y0
+0-0D0X0
+0-0g0p0
+0-0V0c0x0
+0'0V0z0
+010T0
+010X0d0v0
+010Z0
+011;1T1
+0'131E1n1{1
+0-1f1
+0'1R1x1
+020>0P0y0
+02070R0W0
+020P0W0y0
+021b1
+021w1
+030l0
+030M0^0z0
+040@0`0h0p0|0
+040<0H0h0p0|0
+040l0
+040v0
+041T1y1
+050?0
+051b1o1
+051Q1p1
+053F3`3s3
+060?0
+060=0n0
+060N0\0y0
+060Y0
+061:1>1B1F1J1N1R1V1Z1^1
+061=1D1J1O1y1
+061R1
+061S1c1
+070B0Y0j0
+070H0V0c0
+071O1p1}1
+08,VK_BACK
+080@0H0P0X0d0
+080E0]0o0
+080E0W0i0
+080P0A1d1
+081E1]1o1
+09,VK_TAB
+090?0Y0n0
+091?1Y1x1
+091c1p1
+0A0B0C0D0E0F0G0H0I0J0K0L0M0N0O0P0Q0R0S0T0U0V0W0X0Y0Z0[0\0]0^0_0`0a0b0c0d0e0f0g0h0i0j0k0l0m0n0o0p0q0r0s0t0u0v0w0x0y0z0{0|0}0~0
+0A0O0c0m0w0
+0a2p2
+0B1b1|1
+0C,VK_CLEAR
+0C0|0
+0C0}0
+0C0H0]0b0
+0C0V0g0|0
+0D,VK_RETURN
+0D0o0
+0D0o0hQ
+0D0t0
+0D1L1_1z1
+0E0Y0j0
+0E1c1
+0F0^0}0
+0f0{0
+0F1p1
+0G0z0
+0G1t1
+0H0\0
+0H0R0\0e0k0
+0H0U0m0
+0H0X0d0
+0J0f0
+0j1t1~1
+-0K0c0
+0K0O0S0W0[0_0c0g0k0o0s0
+0k0W0~0Y0
+0K0X0k0u0
+0L0j0
+0L0j0/
+0L0j0eQ
+0L0j0k0
+0L0j0n0
+0M0t0
+0n0B0
+0n0MRn0
+0N1q1
+0O0^0
+0O1\1u1
+0P0w0
+0R0y2
+0S0i0
+0T1w1
+0th candidate back
+0thCandBack
+0V0n0t0
+0W[eQ
+0W0~0Y0
+0X0e0}0
+0X0e0y0
+0X1w1
+0Y0y0f0
+0Y1w1
+0zz}v
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1t1x1|1
+1 1&1/1>1I1N1Z1c1r1|1
+1 1,1L1d1p1
+1 1,1L1T1\1d1l1t1|1
+1 1@1H1P1X1d1
+1 1@1O1W1d1
+1 1@1P1X1d1
+1 1'1n1
+1 161M1u1
+1 181H1P1`1h1|1
+1 1D1L1T1\1d1l1t1|1
+1 1D1y1
+1 1N1p1
+1 1r1w1~1
+1 2,2E2[2
+1 202<2\2h2
+1 262M2_2q2
+1 2M2
+1 2m2
+1 2P2
+1!1(1/151v1
+1!1.1
+1!1.1C1X1
+1!1/1G1a1s1
+1!1;1B1T1
+1!2,23292?2E2K2P2Y2`2e2n2u2z2
+1!2+292X2X3l3
+1!2c2l2
+1"1(1.141:1@1F1L1R1X1^1d1j1p1v1|1
+1"1*1
+1"1,161@1J1T1^1h1r1|1
+1"1/1l173
+1"1=1R1W1f1t1y1~1
+1"151H1x1
+1"161@1J1Y1
+1"1Y1|1
+1"2e2
+1#1S1r1
+1#2k2
+1$1,141<1D1L1
+1$1,141<1D1L1T1\1d1l1t1|1
+1$1,141<1D1L1t1|1
+1$1,141<1D1P1p1x1
+1$1,141<1H1l1t1|1
+1$141@1`1h1p1|1
+1$1B1
+1$1M1Y1k1
+1$2,2D2L2X2x2
+1$2=2S2a2
+1$202S2
+1$2D2R2p2
+1$2J2X2
+1%1=1O1
+1%101L1b1
+1%2/2c2
+1%2C2.4q5}5
+1%2S2h2
+1&1,111?1D1N1S1]1c1h1w1
+1&1C1Z1
+1&232S2z2
+1&2I2|2
+1&2M2
+1&2Y2
+1(0&0
+1(1H1P1p1
+1(1H1X1`1
+1(1L1Y1n1
+1(252M2_2
+1(263K4
+1(2E2i2
+1(2K2g2
+1(2x2
+1)161R1
+1)1R1^1p1
+1*171W1~1
+1*181Z1a1}1
+1*1Q1^1
+1*2D2K2R2d2
+1,0*0
+1,1^1x1
+1,1<1H1P1T1\1`1h1l1t1x1
+1,141@1`1h1p1|1
+1,141<1D1L1\1d1l1x1
+1,141L1d1l1t1|1
+1,1D1~1
+1,1k1
+1,1M1o1
+1,2A2M2V2f3
+1,2H2
+1.1H1b1u1
+1.1P1 2Y2"3P4u4
+1.1s1
+1.1W1t1
+1/1;1X1
+1/181L1s1
+1/1a1
+1/1E1x1
+1/1g1
+1/1G1X172
+1/1V1w1
+1/2_2
+1:2e2
+1:3Q3n3
+1;2p2H3
+1?1o1
+1?2\2s2}2
+1?2t2
+1?2V2
+1@1D1H1L1P1T1X1\1`1d1s1
+1]2y2
+1`1{1
+1+1=1f1r1
+1+171M1t1
+1+1K1^1w1
+1+1L1Z1{1
+1+1t1
+1+2P2
+1<1D1L1T1\1d1l1t1|1
+1<1D1L1T1`1
+1<1D1P1p1x1
+1<1l1
+1<1x1
+1<2c2?3[3h3
+1=1D1^1j1{1
+1=2g2y2
+1>1K1
+1>1K1S1
+10,VK_SHIFT
+10.0.22000.1
+10.0.22000.1 (WinBuild.160101.0800)
+100701213655Z
+101}1
+10181@1L1l1|1
+10191a1f1
+101D1T1`1h1
+1070R0
+10E0f0
+11,VK_CONTROL
+1-1?1~1
+1-1?1x1
+111019184142Z
+111G1V1
+111h1u1
+1'121S1a1k1
+1-191K1t1
+1-1E1d1{1
+1'1N1X1p1
+1-1P1
+12,VK_MENU      ,Alt
+121G1a1
+121M1d1n1&2E2p2
+121q1
+121U1
+122b2
+122j2
+122n2
+122Q2`2
+12KeyAssistance
+12KeyEnabled
+12KeyMultiTapGuide
+1-2N2
+1'2Q2d2
+1-2s2
+131[1m1
+13191_1r1x1
+131b1
+131c1
+131D1O1\1z1
+132l2u2
+132S2\2s2|2
+141<1D1L1T1\1
+141D1l1t1|1
+141F1
+151:1^1f1
+152_2
+152D2o2
+16,VK_IME_ON
+161C1c1
+161L1e1{1
+161P1]1q1~1
+162F2
+171C1U1~1
+171t1
+172b2
+181E1]1o1
+181K1W1^1
+181N1n1
+181p1
+182D3Q3u3
+182i2
+19,VK_KANJI
+191~1
+191h1{1
+191i1
+192^2c2p2
+1A,VK_IME_OFF
+1a1|1
+1A2y2
+1B,VK_ESCAPE
+1B2e2
+1B2U2^2f2
+1C,VK_CONVERT
+1C1O1a1
+1Changes Kanji-input -> Direct-input -> Code-input
+1D,VK_NONCONVERT,NFER
+1D1L1l1t1|1
+1D1o1
+1F1n1
+1F2c2
+1G._[
+1G1u1
+1g1v1
+1G1w1
+1H1t1{1
+1H1U1m1
+1H2T2e2
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+1J1b1r1
+1J1Q1
+1J1T1^1r1
+1J1y1
+1J2w2
+1K2n2
+1K2V2
+1L2_2r2
+1M1}1
+1M1e1
+1N1a1t1
+1N1t1
+1N2n2
+1O1u1
+1P2R3`3
+1Q1e1
+1q1y1
+1R1[1`1r1
+1R1|1
+1R1r1
+1r2~2
+1S1]1i1
+1stConversionResultDisplayStringLength
+1stConversionResultHash
+1stConversionResultHasSameDisplayAndReading
+1stConversionResultLmRules
+1stConversionResultPartsOfSpeech
+1T1]1w1
+1U192L2S2n2x2
+1V2}2
+1V2q2
+1X1u1
+1Y2o2
+1Z1h1
+1Z2f2
+2 2$2(2,2024282<2@2D2H2L2P2T2\2`2d2h2l2p2t2x2|2
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+2 2$2(2,2024282<2@2D2H2L2T2X2\2`2d2h2l2p2t2x2|2
+2 2(2,24282@2D2L2P2X2\2d2h2p2t2|2
+2 2(242T2\2d2p2
+2 2,2L2\2h2
+2 2,2L2T2\2d2l2t2|2
+2 2@2H2P2\2|2
+2 2@2H2T2t2
+2 2@2u2|2
+2 222[2g2y2
+2 2'2c2o2{2
+2 282H2P2`2h2|2
+2 2W2
+2 2X2
+2 3%3N3
+2!2(242N2U2f2k2z2
+2!2(2M2o2
+2!2^2
+2!222:2I2Y2g2
+2!292
+2!3/3A3a3
+2!3L3
+2!3t3
+2"2,2R2z2
+2"2?2J2X2j2x2
+2"2<2R2Y2
+2"2P2Y2x2
+2"3(3F3~3
+2"3)3a3o3t3
+2"3/3O3v3
+2#2,292
+2#242R2Y2p2
+2#272H2y2
+2#2P2
+2#2t2~2
+2#3a3
+2#3D3f3m3~3
+2$2*20262<2B2H2N2T2X2\2`2d2
+2$2,2`2p2|2
+2$2,2<2D2L2T2d2l2x2
+2$2,242<2D2L2T2\2d2l2t2|2
+2$2,242<2D2L2T2`2
+2$2,242<2D2P2p2|2
+2$242@2H2|2
+2$2D2P2X2p2x2
+2$2j2
+2$2M2V2b2o2y2
+2$2z2
+2%2[2c2k2
+2%2\3
+2%2=2O2
+2%2=2O2t2
+2%2>2]2p2
+2%23282B2G2Q2V2[2`2n2x2}2
+2%2D2|2
+2%2f2
+2%3@3
+2&2<2c2
+2&202:2D2N2X2b2l2v2
+2&252>2c2
+2&262j2&333
+2&343=3h3x3
+2&373>3S3c3
+2(2:2
+2(242<2p2
+2(2D2H2d2h2
+2(2H2`2l2
+2(2H2P2`2
+2(2L2\2t2
+2(2L2T2\2d2l2t2|2
+2(2s2
+2(3/3Q3[3i3~3
+2(3;3R3_3l3
+2(3<3c3
+2(3>3e3
+2(3h3
+2(3L3w3
+2)2=2^2}2
+2)2G2f2
+2)2z2
+2)3E3Q3|3
+2*2=2X2n2
+2*242H2V2d2
+2*282H2[2f2w2
+2*2C2d2u2~2
+2*2S2_2q2
+2*3j3
+2,2<2D2L2d2l2t2
+2,242<2D2L2T2\2d2l2t2|2
+2,2Q2b2
+2,2r2
+2,3E3l3
+2.2:2L2u2
+2.2L2S2
+2.2o2
+2.2W2c2u2
+2/2:2|2
+2/2<2[2h2
+2/2D2m2
+2/2h2u2
+2:2b2k2
+2:2U2p2
+2:3o3
+2;2k2
+2;3H3~3
+2?2X2y2
+2@2z2
+2`2z2
+2<2D2L2X2|2
+2<2p2
+2<2T2\2d2|2
+2=UUU
+2>2a2
+2>2G2
+2>2N2S2~2
+2>3^3k3
+2>3E3
+20,VK_SPACE
+201215212914Z
+20210604193742Z
+20210605020606.43Z0
+20210605193742Z0t0:
+20282H2T2t2|2
+202p2
+202Y2r2
+203`3p3
+203p3
+203S3_3q3
+20g0u0
+21,VK_PRIOR
+210114190216Z
+211202212914Z0p1
+212@2`2m2
+212A263
+212I2v2
+212K2~2
+213f3m3{3
+22,VK_NEXT
+2'2.2J2Q2W2m2
+2-2?2S2
+2-2?2x2
+2-2^2r2
+2'2_2
+220411190216Z0
+222?2_2
+222c2q2z2
+223r3
+2-292K2x2
+229879+4633440
+2'2h2
+2'2K2
+23,VK_END
+232\2
+232N2
+232r2
+233l3
+233u3~3
+2'3J3m3
+2'3K3m3
+2-3l3
+24,VK_HOME
+242X2
+243<3D3L3X3x3
+243=3
+243u3
+25,VK_LEFT
+250701214655Z0|1
+252B2I2
+252I2}2
+252J2e2
+26,VK_UP
+261019185142Z0
+262Z2d2
+27,VK_RIGHT
+272E2_2
+272I2U2f2
+273R3
+28,VK_DOWN
+282?2`2
+282C2I2
+282E2]2o2
+282E2j2
+282H2O2
+283E3]3o3
+292E2W2
+292F2Z2g2r2
+292G2Z2p2
+292I2
+292n2
+293H3
+293i3y3
+293K3Y3m3
+293Q3
+2A2Q2x2
+2A3j3
+2a3t3
+2C)$ 0C)
+2C2m2
+2C2y2
+2c3q3
+2c4r4
+2D,VK_INSERT
+2D2q2}2
+2D3i3o3
+2D3i3v3
+2D3T3q3x3
+2E,VK_DELETE
+2F,VK_HELP
+2F2[2z2
+2F2{2
+2F3m3
+2I3i314f4t4
+2J2\2v2
+2J2z2
+2k2}2
+2K3d3
+2L2|2
+2L2z2
+2L3T3
+2L3w3
+2M2`2n2
+2M2r2
+2M2t2
+2N2~2
+2N2n2z2
+2O2]2
+2P2`2p2
+2P3j3
+2Q3g3v3
+2R2j2
+2s3-4N4s4
+2S3b3
+2S3z3
+2T3_3y3
+2T3a3u3
+2U3u3
+2V2h2
+2W2r2
+2X2e2}2
+2Y2=3~3
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3x3
+3 3$3(3,3034383<3@3D3L3P3T3X3\3`3d3h3l3p3t3x3|3
+3 3$3(3,3034383<3D3H3L3P3T3X3\3`3d3h3l3p3t3x3
+3 3%33393>3L3R3W3e3k3p3~3
+3 3(30383D3d3l3t3|3
+3 3(30383H3l3t3|3
+3 3(343T3\3d3p3
+3 3*343>3H3R3\3f3p3z3
+3 3,3L3T3`3
+3 3?3b3u3}3
+3 3?3o3
+3 3@3H3T3t3
+3 3<3L3X3|3
+3 303<3\3d3p3
+3 3N3
+3 3y3
+3 4,4;4z4N5
+3 4-474g4m4
+3 484P4i4u4
+3 4B4X4
+3 4H4f4
+3!3(3/363=3D3Q3~3
+3!3@3z3
+3!4+4I4
+3!4<4W4k4
+3!4N4
+3"303y3
+3"3P3g3
+3"4l4
+3#3R3
+3#4h4
+3#4P4
+3#5=5|5
+3$3(30343<3@3H3L3T3X3`3d3l3p3x3|3
+3$3,343@3`3h3p3x3
+3$3,343<3D3d3l3t3|3
+3$3,343<3D3L3T3\3d3l3t3|3
+3$3,343<3D3L3T3\3t3
+3$3,343<3H3h3p3x3
+3$3,383X3`3h3p3x3
+3$3,3L3T3\3h3
+3$3[3l3x3
+3$3{3
+3$3}3
+3$303P3\3d3
+3$3r3
+3$3Y3o3
+3$4`4
+3$4D4
+3$4j4
+3%3,3N3\3
+3%3/3T3
+3%3?3L3R3d3
+3%3D3w3
+3%3X3e3}3
+3%4D4g4
+3%4h4
+3%4L4k4
+3%4M4
+3%4Z4
+3&3/353a3l3
+3&3-343N3
+3&3a3w3
+3&3p3
+3&4H4U4m4
+3&4T4e4
+3&4V4
+3(3@3d3x3
+3(3@3L3l3t3
+3(303@3H3\3l3x3
+3(30383@3H3P3X3d3l3
+3(333E3s3
+3(383@3P3X3|3
+3(383H3W3g3w3
+3(3G3_3
+3(3H3T3t3|3
+3(3R3
+3(454M4_4
+3)32383>3M3^3n3
+3)373
+3)3q3
+3)3W3
+3*3}3
+3*3G3`3
+3*3I4j4
+3*4@4`4
+3*4A4R4f4
+3*4C4O4
+3*4j4
+3*4p4
+3,343<3D3L3T3\3d3l3t3|3
+3,383J3s3
+3,383X3p3|3
+3,3A3e3l3
+3.3L3S3j3
+3.474a4p4y4
+3/3:3Y3u3
+3/3_3
+3/3D3V3l3
+3/484V4_4x4
+3:3L3~3
+3:3P3
+3:4C4J4
+3;3`3
+3;3b3~3
+3;3E3J3s3}3
+3;3P3X3
+3;3Q3
+3?3C3G3K3O3
+3?3i3
+3?3K3T3Z3_3d3k3s3
+3?4`4
+3?4P4
+3?4V4
+3@4K4
+3[3q3
+3[3s3
+3\3d3r3
+3\4h4
+3\onecore\internal\sdk\inc\wil\opensource\wil\token_helpers.h
+3]4i4w4
+3^4m4
+3+3[3|3
+3+373C3O3Z3g3{3
+3+3A3S3q3
+3+3Q3]3j3
+3+3W3
+3+3X3
+3+4u4
+3<3D3L3T3\3d3l3t3|3
+3=3J3\3b3t3
+3=3O3h3
+3>3s3
+3>3Z3
+30,VK_0
+303<3N3x3
+30383 4
+30383@3H3T3t3
+304p4
+304t4
+304Z4
+30A0k0
+31,VK_1
+313A3L3b3~3
+314{4
+316^6k6
+32,VK_2
+323|3
+323B3v3
+323x3
+323Y3b3|3
+33,VK_3
+3-3?3x3
+3'313H3
+333;3[3r3
+333A3U3j3y3
+333R3m3
+334a4w4k5
+334a4z4
+334H4
+334J4o4w4
+334U4i4
+3'353A3S3\3i3{3
+3-393I3P3g3
+3'3P3]3q3{3
+3-3V3
+3'3x3
+34,VK_4
+3-4;4N4h4v4
+3'4@4e4
+3-4]4
+343>3
+343F3g3
+343h3u3
+344\4h4
+3'4m4
+3-4m4
+35,VK_5
+353?3N3d3y3
+353q3
+354R4
+36,VK_6
+363g3z3
+364H4J5P5
+37,VK_7
+373@3f3
+374B4Q4j4
+374y4
+38,VK_8
+383\3|3
+38324_4
+383D3L3
+383D3M3Y3
+383E3Y3f3u3~3
+383i3
+384[4
+39,VK_9
+393[3m3
+393\3
+394X4{4
+3A3h3
+3C4n4|4
+3C4N4f4
+3D3T3r3{3
+3F3y3
+3g3s3
+3G4b4
+3H3U3m3
+3H3x3
+3I3m3y3
+3I3w3
+3J3P3n3
+3J3X3
+3K3U3|3
+3L3i3
+3L3r3
+3l4x4
+3M3o3
+3M4i4
+3N3i3
+3N3l3
+3N4`4
+3o4M5
+3P4]4
+3S3\3u3
+3t(;H
+3T3`3}3
+3V4r4
+3V5t5x5|5
+3W3]3
+3X3e3}3
+3Z3x4
+3Z4y5P6[6
+4 4$4(4,404
+4 4$4(4,40444<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4t4x4|4
+4 4$4(4,4044484<4t5
+4 4$4,40484<4D4H4P4T4\4`4h4l4t4x4
+4 4(404L4\4h4p4
+4 4,444L4\4d4t4|4
+4 4.4:4H4[4
+4 4@4H4T4t4
+4 444H4
+4 4-4s4
+4 464
+4 494Y4t4{4
+4 4D4L4T4d4l4t4
+4 4V4
+4!4&4,4U4_4i4r4x4
+4!4E4o4
+4!4k4
+4!5&5
+4!595
+4!5x5
+4"4)4
+4"4.464;4j4
+4"444h4u4
+4"4M5
+4"535
+4"595
+4"5U5h5o5
+4#4(42484=4K4Q4V4d4j4o4}4
+4#4?4H4
+4#454[4}4
+4#4k4
+4#5/5
+4#5;5x5
+4#5G5_5
+4#5O5x5
+4$4,444<4D4L4T4\4d4l4t4|4
+4$4,444<4D4L4T4\4h4
+4$4,444D4L4T4
+4$4,444D4L4X4|4
+4$4,4D4L4T4\4d4l4t4|4
+4$4.484B4L4V4`4j4t4~4
+4$4<4H4h4
+4$44494I4U4c4s4y4
+4$494Y4f4y4
+4$5+5
+4$5T5
+4%4,434:4A4H4O4
+4%4;4E4T4o4y4
+4%4`4r4
+4%4=4O4
+4%4-4F4
+4%464\4l4
+4%474G4
+4%4D4K4l4
+4%4h4
+4%5:5H5`5f5|5
+4%5_5
+4%535>5I5u5
+4%5b5
+4%5H5
+4%5T5
+4&4:4N4X4m4
+4&414J4f4
+4&505
+4&5D5
+4&5G5i5|5
+4&5v5
+4(404d4t4
+4(4b4
+4(4G4M4V4_4i4r4|4
+4(4H4U4u4
+4(4H4X4s4
+4(5I5W5|5
+4)4<4\4{4
+4)444L4o4
+4)5.5f5
+4)5~5
+4)5J5y5
+4*4:4J4[4
+4*4K4U4_4
+4*575Y5
+4*5W5t5
+4,4@4P4`4m4
+4,4<4
+4,434:4D4K4U4\4f4
+4,444@4H4|4
+4,484@4h4
+4,484X4`4h4p4
+4,484X4d4
+4,484X4h4x4
+4,4H4
+4,4I4
+4,4p4
+4,5@5_5
+4.4_4
+4.4E4u4
+4.4j4}4
+4.5B5H5s5
+4/4m4|4
+4/5M5
+4:4W4t4
+4;4`4
+4;4P4}4
+4;5X5o5u5
+4?4b4
+4@4g4
+4@4P4\4d4
+4@4x4
+4@5b5
+4]4~4
+4]5g5
+4^4c4
+4_4w4
+4}4<5:6
+4+4\4l4v4
+4+4]4
+4+4_4u4
+4+444:4?4D4K4S4g4{4
+4+4K4
+4<4E4r4
+4<4f4
+4<4L4X4`4
+4<4N4
+4<4X4h4t4|4
+4<5J5i5
+4=4h4
+4=4N4p4
+4=5w5
+4>4C4\4{4
+4>5R567b7s7
+404<4\4d4l4t4
+405K5
+405p5
+405S5v5
+41,VK_A
+414Q4d4p4w4
+414W4
+415q5
+42,VK_B
+424U4x4
+43,VK_C
+43494M4n4t4
+434l4
+435<5R5m5
+43585e5j5
+435W5c5
+44,VK_D
+4-4?4
+4-4?4w4
+4-4@4J4O4x4
+4'4>4P4
+444@4`4h4t4|4
+444[4h4o4
+444<4D4L4T4\4d4l4t4|4
+444<4D4L4T4\4d4l4x4
+444<4D4P4X4
+4'444
+445@5t5
+445d5
+445D5g5
+445L5T5\5
+445V5
+4'4A4O4v4
+4'4d4
+4'4h4
+4'4m4
+44W4z4
+45,VK_E
+4-5]5
+4'5C5
+4'5G5f5
+46,VK_F
+464=4P4]4i4
+465f5
+47,VK_G
+474B4Q4p4|4
+474K4[4k4
+474Y4
+48,VK_H
+484>4^4j4|4
+484i4|4
+484m4
+485E5]5o5
+485T5
+49,VK_I
+494c4
+495e5
+495H5U5l5
+49pht
+4A,VK_J
+4A4]4g4
+4A4q4
+4A4y4
+4a4z4
+4A5~5
+4A526V6g6
+4A5f5
+4Af9:u
+4B,VK_K
+4B4U4
+4B4z4
+4C,VK_L
+4C5s5
+4C6M6
+4D,VK_M
+4D4p4
+4D6y6
+4E,VK_N
+4E4P4^4
+4E4Q4c4
+4F,VK_O
+4F;1u
+4F4\4t4|4
+4F4M4l4
+4F5c5
+4G4k4
+4G4q4
+4g4u4
+4G4W4
+4G5_5
+4h455
+4H4U4m4
+4H4X4d4
+4H4Z4f4m4w4
+4I4l4
+4I5w5
+4i5y5
+4J4W4{4
+4J5e5
+4L4|4
+4L4Y4x4
+4M4}4
+4M5`5}5
+4M5Z5
+4N405J5
+4O5}5
+4O5w5
+4P4`4l4
+4Q4o4
+4Q5^5
+4R4j4
+4S4r4
+4SVW3
+4t4|4
+4W4^4
+4W4q4
+4X4e4
+4X4e4}4
+4Y5v5
+4Z4}4
+4Z5h5
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+5 5$5(5,5054585<5@5D5H5L5P5T5X5d5p5|5
+5 5(5,54585@5D5L5P5X5\5d5h5p5t5|5
+5 5)5V5s5
+5 5,545T5\5x5
+5 5@5H5P5\5|5
+5 5@5L5l5t5
+5 5<5L5X5x5
+5 575
+5 6)626;6@6O6l6
+5 606<6\6d6l6x6
+5 606<6\6d6p6x6
+5 6N6o6
+5!5=5P5
+5!505]5v5
+5!535\5z5
+5!6&656W6
+5!6@6
+5!6-6?6h6t6
+5!6-6Q6^6
+5!6A6a6k6
+5"5?5\5k5
+5"525B5R5b5r5
+5"5'5,565?5D5I5S5X5]5b5p5u5z5
+5"5e5o5}5
+5"5F5m5z5
+5#5(5V5f5l5
+5#5*5D5f5o5
+5#5.535=5J5W5v5
+5#5/5;5G5S5j5x5
+5#5<5v5
+5#585C5c5u5
+5#6r6
+5$5)575=5B5P5V5[5i5o5t5
+5$5,5<5D5L5T5\5d5l5t5
+5$5,545<5\5d5l5|5
+5$5,545<5D5L5T5\5d5l5t5|5
+5$5,545<5D5L5T5\5h5
+5$5,545<5D5L5T5`5
+5$5,545<5D5L5X5x5
+5$5,545<5D5P5p5x5
+5$5,545<5D5P5X5
+5$5,545D5\5`5|5
+5$5,545L5T5\5d5l5
+5$5@5P5\5|5
+5$545\5|5
+5$595N5x5
+5$6^6
+5$616F6
+5$6c6
+5$6L6T6\6d6l6t6|6
+5$6L6v6
+5$6S6h6
+5%5=5O5
+5%5G5a5h5o5v5}5
+5%5J5x5
+5%5T5
+5%6g6
+5%6X6w6
+5&5?5G5
+5&5>5H5b5
+5&5I5N5]5{5
+5&6c6y6
+5&6G6`6r6~6
+5(5?5S5Y5b5r5
+5(5>5Z5q5
+5(50585D5d5p5x5
+5(545p5
+5(585D5d5p5x5
+5(5G5P5y5
+5(5H5T5t5
+5(5j5z5
+5(5L5T5\5d5
+5(5P5v5
+5(696Z6g6
+5)5:5c5
+5)5L5|5
+5)5N5r5z5
+5)5O6
+5*5<5\5l5y5
+5*6<6T6
+5*6I6e6z6
+5*6l6
+5,545D5T5\5p5x5
+5,5C5}5
+5,5v5
+5,676]6
+5,6k6
+5,6u6
+5.575
+5.5c5
+5.5X5e5}5
+5.6F6T6g6
+5/5h5u5
+5/6A6P6V6
+5/6F6
+5:5A5H5O5V5]5d5v5
+5:5E5[5
+5:5J5R5x5
+5:6p6
+5;5c5
+5;5X5
+5;6p6}6
+5?5s5
+5?F5c
+5@5p5
+5@6Q6
+5@6Q6b6u6z6
+5]5c5p5
+5^5x5
+5+656L6
+5+6B6n6
+5<5}5
+5<5L5\5h5
+5<5L5X5x5
+5<6D6L6d6l6t6|6
+5<aP 
+5>5\5q5
+5>5H5#666=6D6P6
+5>5I5S5\5s5
+5>5r5
+5>6l7
+50,VK_P
+50]0i0o0
+505E5Z5t5
+505h5u5
+506`6
+506=6J6U6c6h6s6
+506=6X6j6
+50696
+506W6y6
+50c0v0
+50O0b0
+51,VK_Q
+516c6W7
+52,VK_R
+525b5
+526B6n6a7
+526J6y6
+526T6
+53,VK_S
+535A5J5s5
+535C5
+536~6
+54,VK_T
+545:5N5W5]5
+545f5
+545J5q5}5
+545Q5x5
+546A6g6
+55,VK_U
+5-5?5x5
+5'5{5
+555}5
+555C5L5R5W5\5c5k5~5
+556G6Y6z6
+5-595K5x5
+5'5A5I5P5[5a5w5
+5'5C5T5t5
+5'5F5e5
+5'5H5
+5-5X5e5}5
+56,VK_V
+565@5
+565@5l5z5
+565v5
+565X5b5l5v5
+5-6A6
+5-6b6n6
+57,VK_W
+575@5^5p5y5
+575w5
+576I6U6t6
+58,VK_X
+585@5H5X5|5
+585<6B6
+585v5
+586N6
+59,VK_Y
+595E5Y5r5
+595J5S5\5b5j5
+596\6
+596C8^8}8
+596O6r6
+5A,VK_Z
+5A5J5c5
+5a6{6
+5a6}6
+5A7p8
+5C5}5
+5C5f5
+5C5l5
+5C6S6l6v6
+5D,VK_APPS
+5D5K5e5l5
+5D5L5
+5D6]6
+5D6U6
+5E5]5
+5F5'6e6|6
+5F5m5s5}5
+5G5c5
+5G6p6z6
+5H5^5
+5H5a5
+5H5U5i5v5
+5H6V7s8
+5h6x6
+5I5i5w5
+5I5w5
+5I5X5
+5L7Q7
+5O5X5s5
+5O6a6
+5P5`5l5
+5P5u506<6Y6
+5R5p5{5
+5S5n5
+5T6Z6l6
+5U5f5
+5U5o5
+5V5d5
+5V6k6y6
+5W6}6
+5X5r5
+6 6$6(6,6064686@6H6P6X6`6h6p6x6
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+6 6*6^6o6`7
+6 6,6L6T6\6h6
+6 6@6H6T6\6
+6 626<6N6X6j6t6~6
+6 626H6
+6 6D6L6T6\6d6l6t6|6
+6 7$7(7,787<7@7D7H7L7P7\7`7d7h7l7p7t7
+6 7N7d7
+6 7P7s7
+6!777T7h7w7
+6!7k7y7
+6"6)6G6Y6
+6"6>6Q6z6
+6"626B6R6b6r6
+6"656A6O6
+6"686X6
+6"6B6U6m6
+6"7b7
+6"7m7
+6#6(6-6;6@6E6J6X6]6b6g6u6z6
+6#6'6+6/63676;6?6C6G6K6O6S6W6[6_6c6g6k6h7
+6#6A6X6j6q6
+6#6G6^6
+6#6j6
+6#6M6R6[6l6
+6#6V6r6
+6#7~7
+6#7J7
+6#7t7
+6$6(60646<6@6H6L6T6X6`6d6l6p6x6|6
+6$6,6@6P6\6d6|6
+6$6,646<6D6L6T6\6d6l6t6|6
+6$6,646<6D6L6T6\6d6l6x6
+6$6,646<6D6L6T6d6t6|6
+6$6,646<6H6h6p6x6
+6$6,646<6T6\6h6
+6$6,646P6`6l6
+6$6,6L6T6\6x6
+6$6^6d6i6q6w6
+6$6=6]6r6
+6$606<6H6T6`6l6x6
+6$646<6D6L6T6\6d6l6t6|6
+6$6D6L6T6\6d6p6x6
+6$7.7<7Q7q7
+6$7\7
+6$747@7`7l7
+6$7N7]7
+6%6=6O6t6
+6%606:6G6x6
+6%6E6s6
+6%6z6
+6%7F7Z7
+6%7H7v7
+6%7s7|7
+6&666o6
+6&696O6e6K7S8~8
+6&6H6k6v6
+6&7;7N7V7c7o7
+6&7q7
+6&7X7a7
+6(60686D6d6t6|6
+6(606P6X6t6
+6(6h6|6
+6(757U7
+6)6:6D6N6
+6)6^6j6
+6)636p6
+6)6l6
+6*6=6Q6_6t6
+6*6N6
+6*6N6Z6
+6*6R6
+6*6X6e6y6
+6*7c7~7
+6*7M7W7a7
+6*7O7u7
+6*7W7
+6,646@6`6l6
+6,646@6d6l6
+6,686@6t6
+6,696
+6,6u6
+6,7d7
+6,7T7g7
+6,7y7
+6.7q7
+6/6h6u6
+6/6q6
+6/7T7q7
+6:6_6
+6:6j6
+6:7T7t7
+6:7w7
+6;6]6q6
+6;6G6Y6|6
+6?6H6
+6\6k6
+6\6r6
+6`7m7
+6+666N6Y6m6}6
+6+6m6z6
+6+7G7
+6<6D6L6T6\6d6l6t6|6
+6<6o6
+6<7c7
+6<7P7o7
+6=6]6}6
+6=6`6
+6>6T6w6
+6>6x6
+606@6}6
+606\6
+60686D6d6l6t6
+606C6z6
+60Q0{0
+616\6g6}6
+616=6&8u8
+616E6V6v6
+616P6
+627@7P7
+627>7P7y7
+627b7
+636e6
+636I6m6
+636o6
+636X6
+646<6D6T6\6d6t6|6
+64696g6v6
+646H6l6
+647B7T7
+656C6N6s6
+657K7
+657m7
+6'6=6J6c6
+6-6A6
+6-6D6~6
+6-6P6t6
+6-6R6Y6
+6'6X6e6}6
+6-7:7^7
+6'7^7h7o7
+6-7~7
+676C6
+676I6
+6'7-7K7
+6'7E7Z7
+686@6H6P6X6d6l6
+686_6
+686E6]6o6
+687E7]7o7
+687X7o7u7
+697G7S7a7m7{7
+697u7
+6a6|6
+6A6g6n6
+6a6m6
+6A6q6
+6A6R6
+6A6t6
+6A6U6
+6A7]7|7
+6B6`6
+6b6r6
+6B7P7
+6C6\6q6
+6C7~7
+6C7o7
+6D6|6
+6D6T6`6h6
+6F6T6
+6G6c6
+6g6z6
+6G7_7g7n7
+6g7{7[:
+6G7e7x7
+6H6U6m6
+6H6V6q6
+6H6x6
+6H7m7{7
+6I6P6
+6I6p6|6
+6J6q6
+6J6Q6{6
+6J6V6]6m6
+6K6s6
+6K6X6
+6L6w6
+6m7z7_8
+6O6n6
+6O7[7m7
+6O7]7k7
+6p7a8p8J9d9
+6Q6t6
+6q6w6
+6Q6Z6
+6R6^6e6j6o6u6~6
+6R6j7
+6T6z6
+6T7v7
+6U7j7u7
+6V7r7
+6W6~6
+6WPVS
+6Y6@7}7
+6Y6f6
+6Y6g6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+7 7$7,70787<7D7H7P7T7\7`7h7l7t7x7
+7 7%7/7I7T7_7j7
+7 7(7@7H7X7h7p7
+7 7(70787@7L7l7t7|7
+7 7,747L7T7d7t7|7
+7 7,787D7P7\7h7t7
+7 7.7<7J7X7l7z7
+7 7?7F7]7
+7 757V7c7x7
+7 7D7L7T7\7d7l7t7|7
+7 7H7U7u7
+7 808@8W8
+7 8U8
+7!7,7
+7!7/7k7w7
+7!7\7~7
+7!7'7
+7!7U7
+7!888A8
+7!8Q8
+7"7)717>7e7w7
+7"7:7Y7`7
+7"727Z7f7x7
+7"787D7W7x7
+7"7Z7s7
+7"888S8c8
+7"8o8
+7"8V8e8
+7#7(7-727@7E7J7O7]7b7g7l7z7
+7#7;7
+7#7@7N7[7x7
+7#707<7I7g7
+7#727D7
+7#797l7
+7#8/868O8
+7#8/8A8H8U8
+7#8/8e8o8
+7#898f8m8|8
+7#8a8h8
+7$7,7`7p7|7
+7$7,747<7D7L7T7\7d7l7t7
+7$7,747<7D7L7T7\7d7l7t7|7
+7$7,747<7D7L7X7|7
+7$7,747<7D7P7p7x7
+7$7,747<7H7h7p7x7
+7$7,747P7`7l7
+7$7.7:7~7
+7$7=7O7{7
+7$70787l7|7
+7$747<7D7L7T7\7d7|7
+7$787
+7$787C7P7|7
+7$787X7`7h7p7x7
+7$797U7g7
+7$7B7Q7\7r7
+7$7M7Y7k7
+7$7X7e7
+7$9Z9p9
+7%7)7-7175797=7A7E7I7V7i7
+7%7/797D7N7[7
+7%7=7O7
+7%7E7x7
+7%7H7
+7%7M7]7k7{7
+7%7V7y7
+7%868p8
+7&7>7d7
+7&7P7^7z7
+7&7q7
+7&7y7
+7&8<8F8d8p8
+7(727:7z7
+7(787D7L7d7t7|7
+7(787H7l7|7
+7(7H7b7f7l7p7v7z7
+7(7J7
+7(7L7T7\7d7l7t7|7
+7(848F8o8{8
+7(858I8S8]8o8
+7(858M8_8
+7)7?7U7
+7)707Z7{7
+7)7V7
+7)858G8x8
+7)8z8
+7*7>7K7`7k7
+7*70787N7[7l7~7
+7*767L7_7q7~7
+7,747@7`7p7
+7,747<7D7L7T7\7d7l7t7
+7,7Z7~7
+7,858>8C8]8
+7.7:7L7x7
+7.7>7O7Z7g7{7
+7.777Q7Z7h7
+7.7H7T7r7w7
+7.7K7
+7.7M7
+7.7Q7]7n7
+7.8?8c8y8
+7.8s8
+7.8W8
+7/767A7b7~7
+7/7h7u7
+7/8S8e8
+7:7G7\7r7
+7:7L7b7
+7;839_9
+7?7]7
+7?7r7
+7@7H7t7
+7@7o7
+7@8U8\8z8
+7]7k7p7
+7]8j8
+7+7E7n7
+7+7I7\7e7s7
+7+8e8.9;9
+7+8T8
+7<7B7`7
+7<7g7n7
+7<7U7b7m7
+7<8V8
+7=7I7[7
+7=8e8
+7>7b7j7
+7>7L7Q7
+7>7U7
+7>8G8h8u8
+7>8K8n8z8
+7>8L8X8f8y8
+70,VK_F1,f
+707@7d7l7t7
+707L7k7
+71,VK_F2,f
+717;7m7
+717T7z7
+718z8
+72,VK_F3,f
+727<7R7g7
+727C7
+727J8Z8j8z8
+728<8a8i8
+73,VK_F4,f
+737?7
+737B7W7e7m7
+737I7R7f7l7
+737u7
+738p8
+74,VK_F5,f
+747<7D7L7T7`7
+74787<7@7D7H7L7P7T7X7\7`7d7|7
+747D7P7p7
+747D7P7X7x7
+748[8q8
+748|8
+749F9W9
+75,VK_F6,f
+757a7x7
+758~8
+758X8{8
+76,VK_F7,f
+767H7T7`7
+767Y7
+768R8<9
+77,VK_F8,f
+7'7;7R7c7
+7-7?7d7n7
+7-7@7U7h7}7
+7'7_7
+7'747A7T7
+7'777b7k7
+777T7o7
+778l8|8
+778S8a8u8
+7'7B7Y7
+7'7I7k7r8
+7-7K7W7
+7-7Q7]7|7
+78,VK_F9,f
+787d7
+787D7d7l7t7|7
+787G7t7
+787h7
+787H7T7\7
+787J7
+787j7
+787M7
+787T7X7t7x7
+788B8T8
+788E8]8o8
+7'8B8}8
+7'8i8
+7'8Y8m8z8
+79,VK_F10,f
+797@7e7l7s7z7
+7A,VK_F11,vf
+7B,VK_F12,vf
+7B:L;
+7B{G|I
+7C,VK_F13,vf
+7C7e7z7
+7C7N7T7y7
+7C7X7
+7C8x8
+7D,VK_F14,vf
+7D7T7}7
+7E,VK_F15,vf
+7E7S7k7
+7e8{8M9m9
+7e8v8
+7E8Y8}8
+7F,VK_F16,F16
+7F7d7n7
+7g7w7
+7G8^8
+7H7O7
+7H7U7}7
+7H7U7i7v7
+7H7U7m7
+7H7W7r7
+7H7Y7
+7H8f8
+7H8x8
+7I8]8x8
+7K7b7
+7k8z8
+7L7\7h7
+7m8y8
+7N7b7
+7N8s8}8
+7O8m8w8
+7Q8s8
+7Q8Z8v8
+7R7~7
+7R8`8p8
+7s7{7
+7S8a8q8
+7U8x8
+7V829X9
+7W8d8
+7wFS=U
+7X8l8
+7Y7c7q7
+7Y7e7
+7Y8~8
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+8 8$8(84888<8@8D8H8L8X8\8`8l8
+8 8%8*8/8=8B8G8L8Z8_8d8i8w8|8
+8 8(8,84888@8D8L8P8X8\8d8h8p8t8|8
+8 8,848T8p8
+8 8,8L8T8`8
+8 8@8\8`8|8
+8 8\8
+8 818Q8c8z8
+8 838T8[8
+8 8D8L8T8\8d8l8t8|8
+8 8f8
+8 8H8_8
+8 909<9D9x9
+8 9M9p9~9
+8 9O9
+8!8%8)8-8185898=8A8E8I8M8Q8U8Y8]8a8e8i8m8q8
+8!8.8L8S8t8}8
+8!8/868<8@8S8b8m8
+8!8+888x8
+8!8a8}8
+8!9+929<9C9
+8!9b9z9
+8!9D9u9
+8!9E9T9h9
+8!9J9
+8!9J9s9
+8!9w9
+8"8,8;8
+8"9/9=9T9h9r9
+8"9^9
+8"9K9
+8#8.8
+8#8_8
+8#868O8b8
+8#8A8Q8c8
+8#9/9A9x9
+8#959]9z9
+8#9d9
+8$8,848@8d8t8
+8$8,848<8D8L8T8\8d8l8t8|8
+8$8,848<8D8L8T8\8d8t8|8
+8$8,848<8D8L8T8\8h8
+8$8,848<8D8L8T8`8h8
+8$8,8l8t8
+8$8+868;8P8
+8$808T8\8d8l8t8|8
+8$8D8L8T8\8d8p8
+8$8f8
+8$8X8h8t8|8
+8$9M9
+8%8.8S8c8
+8%8:8A8i8q8~8
+8%8?8T8
+8%808K8x8
+8%818C8l8x8
+8%878h8u8
+8%8C8`8i8p8
+8%8P8j8r8
+8%9m9
+8&8;8Y8i8
+8&8A8W8f8
+8&969Z9
+8&9I9m9
+8&9P9y9
+8(80888@8H8T8t8|8
+8(848@8L8X8p8
+8(888@8H8P8l8|8
+8(8D8c8
+8(8W8e8
+8)8?8f8r8
+8)8L8
+8)8P8]8}8
+8)929
+8*858`8{8
+8*9<9N9`9r9
+8*969W9
+8,888?8`8>9L9
+8,888@8d8l8t8|8
+8,888X8`8l8t8
+8,888X8d8
+8,8D8L8T8\8|8
+8,8H8d8w8
+8,9<9H9h9p9|9
+8,9a9
+8,9D9O9C:b:
+8,9T9\9
+8.8j8|8
+8.9^9
+8.9Q9k9
+8/888Q8j8
+8/8o8
+8/8T8g8
+8:8L8v8
+8:8T8i8x8
+8;8K8
+8;8n8
+8?8^8{8
+8?8e8}8
+8?9_9z9m:
+8^9x9~9
+8_8g8
+8`8t8
+8+8;8J8g8v8
+8+828M8
+8+9m9
+8<8F8T8s8
+8<8L8X8|8
+8<9T9
+8=8N8n8u8
+8=8Q8
+8=9b9
+8>9y9
+808j8q8
+808J8T8~8
+808X8n8
+808Y8e8w8
+809v9
+80s0^5N7
+80W0`0x0
+81868C8w8
+81898H8Y8l8s8
+818A8
+818D8
+818G8
+818K8j8s8
+818T8`8}8
+818V8v8
+819L9u9
+819s9
+828F8Q8p8
+828G8
+828G8X8
+829f9r9
+839@9d9
+848<8D8P8p8x8
+848<8H8l8|8
+848J8U8`8s8
+849f9q9
+858B8f8
+858I8R8i8v8~8
+859E9_9u9
+868?8,9`9
+868f8
+868U8q8
+869a9x9
+869P9_9t9
+878g8
+879A9O9n9
+879t9
+8-8?8
+888@8H8P8\8|8
+888@8H8T8t8
+888[8
+888b8
+888E8]8o8
+888h8
+888N8X8v8}8
+889?9K9R9
+889E9]9o9
+8'8r8z8+999E9S9a9r9
+8'8T8[8j8q8
+8'9;9K9
+89{hu
+898[8`8i8x8
+898F8m8
+898I8S8
+898U8d8v8|:
+898V8u8
+899M:a:
+8'9c9
+8-9G9
+8-9L9x9
+8-9l9x9E:L:V:
+8'9R9_9
+8A8P8b8{8
+8A9H9
+8B8e8
+8B8I8b8j8p8
+8B8o9
+8C8z8
+8C9N9b9
+8D8`8
+8D8e8j8o8t8
+8F8L8S8Z8n8
+8G8k8
+8h8~8
+8H8T8f8
+8H8X8d8l8
+8H9\9m9
+8I8i8
+8i9y9
+8J8z8
+8J9X9
+8K8U8
+8L8`8
+8N8{8
+8N8W8l8z8
+8O9C:
+8o9O:
+8P8\8f8
+8Q:v:
+8Q:X:
+8Q8[8b8
+8R8`8
+8R8Y8`8g8q8
+8RlIImeCommonAPIClassFactoryWWW
+8S9_9f9
+8T8\8h8
+8T9t9
+8U9n9~9
+8V8l8
+8V9l9
+8Y9p9
+8Z8k8
+8Z8v8
+9 : E F } ~ 
+9 :F:P:n:
+9 9$9(9,90949<9H9T9`9l9x9
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+9 9(90949<9P9X9l9t9|9
+9 9(909H9
+9 9(989\9d9l9t9|9
+9 9:9@9P9`9u9{9
+9 9@9L9l9x9
+9 9@9X9d9
+9 9'9.959H9W9k9z9
+9 9'9J9x9
+9 9H9\9l9x9
+9 9T9d9p9
+9!:[:
+9!:4:s:
+9!92979I9
+9!959h9
+9!989h9
+9!9'999H9O9[9b9
+9!9E9Q9n9
+9!9G9
+9!9X9_9{9
+9":]:
+9":2:X:d:q:
+9":I;_;
+9":l:
+9"909Q9]9o9
+9"9H9U9m9
+9$:A:
+9$:g:u:
+9$9(90949<9@9H9L9T9X9`9d9l9p9x9|9
+9$9(9D9H9d9h9t9
+9$9*909\9d9
+9$9,9`9p9|9
+9$9,949<9D9L9d9p9x9
+9$9,949<9D9L9T9\9d9l9t9|9
+9$9,949<9D9L9T9`9
+9$9,949<9H9h9p9|9
+9$9,949<9H9h9x9
+9$9+929:9B9J9V9_9d9j9t9~9
+9$92999Q9
+9$9D9L9d9l9t9
+9$9D9P9p9x9
+9%:M:p:
+9%:s:
+9%9=9O9
+9%999U9`9n9z9
+9%9G9s9
+9%9L9Y9y9
+9&:1:C:d:
+9&:H:U:m:
+9&:V:s:
+9&9/9
+9&9@9P9{9
+9&919g9
+9&989D9P9\9
+9(:5:M:_:
+9(9>9
+9(909<9\9d9l9t9
+9(949@9L9d9p9
+9(949T9\9d9p9
+9(9F9M9
+9(9H9P9\9|9
+9(9H9P9X9`9h9p9|9
+9):A:d:
+9):E:[:b;
+9)9.93989C9H9M9[9`9j9o9y9
+9)9;9M9_9
+9)9<9
+9)979<9a9o9
+9)9A9[9r9
+9*:b:
+9*:j:
+9*:Z:
+9*9@9Z9n9}9
+9*989E9q9
+9*9J9q9~9
+9,:1:
+9,:K:
+9,9D9Z9
+9,9X9e9}9
+9.:H:]:k:}:
+9.9:9L9u9
+9.9A9p9z9
+9.9O9X9x9
+9/:::4;>;l;
+9/:n:
+9/9]9
+9/9A9H9
+9::[:s:
+9':=:P:c:
+9:9g9
+9':a:_;
+9-:m:
+9-:Q:
+9;:M:Y:`:l:
+9;9A9j9s9
+9;9s9
+9;9t9
+9?9V9f9
+9@9_9
+9]:!<+<H<
+9]9g9
+9]9t9
+9^ tA9^$t<h
+9^h~j
+9^Ht*
+9^PtIj 
+9_$tK
+9_$tu
+9_^[]
+9_4t|
+9_9s9
+9_tuR
+9_Xv<
+9{(tEj 
+9{@t'
+9{@uL
+9{HtB
+9{Lt}
+9|$4t
+9~HtP
+9~htV9~ uBj8
+9+:?:^:
+9+:3:o:z:
+9+:9:Z:h:
+9+;x;
+9+9;9-:
+9+9g9
+9+9K9c9
+9<9[9x9
+9<9D9L9T9\9d9l9t9|9
+9<9D9L9T9t9|9
+9<9O9[9b9h9o9t9
+9<9P9[9f9q9
+9=9P9f9
+9>|+j
+9>9H9V9k9
+9>9W9d9v9
+90:::N:
+909@9L9
+909>9s9
+90989@9H9T9t9|9
+90989H9l9t9|9
+909e9
+909k9
+909O9k9
+91:O:h:v:
+919}9
+919G9
+919H9i9
+919L9
+91u[H
+92969V9v9
+929j9
+93:>:V:o:
+93:J:Y:
+939:9
+939\9f9o9v9
+939o9
+94:`:
+949G9w9
+949P9
+95:U:k:
+959\9i9
+959<9
+959P9d9
+959U9_9
+96:H:W:
+96:K:n:
+969f9
+97:g:
+979H9P9]9g9l9
+979S9r9
+97u.F
+97u4h
+98:F:b:
+98:J:a:
+98:L:s:
+989@9H9T9t9|9
+989Y9`9
+99:l:x:
+9-9?9x9
+9-9^9
+9'9>9O9i9
+9'919?9T9r9
+9'9A9G9e9u9
+9-9H9
+9'9H9u9
+9A9H9
+9ALt.
+9Alu-
+9B9b9i9
+9b9h9
+9b9z9
+9C:S:Z:
+9c9|9
+9c9p9|9
+9C9s9
+9D$(tQh
+9d:l:t:
+9D:N:\:q:
+9D:q:x:
+9D9d9|9
+9D9P9b9
+9D9P9i9
+9D9q9
+9d9u9
+9E$~v
+9E9M9j9s9
+9E9M9T9e9
+9F$u?
+9F:d:w:
+9f;:u
+9f;>u
+9F9O9V9x9
+9FL|]
+9G"tF
+9G$u$
+9G(s0j
+9G9Y9|9
+9GD|,
+9GD|.
+9GHtJ
+9GpuOh
+9H:x:
+9H9{9
+9h9n9
+9Hl~=Q3
+9HxuV3
+9I9l9
+9Iu"f
+9J9o9
+9JLwj
+9JPwX
+9K:s:~:
+9K9{9P:V:\:b:
+9L:X:
+9M9T9h9
+9N9_9H:Y:s:><C=>>y>
+9N9}9
+9N9b9
+9o:u;~;
+9O:Z:c:{:
+9P: ;L>
+9p@u'
+9P9W9h9
+9P9Z9v9
+9pht)
+9phtx
+9pl~i
+9pptV
+9qHt4
+9R:_:
+9R<f<p<w<~<
+9R9g9/:
+9S:7;p;
+9S:c:
+9S9h9
+9t$0t
+9U:`:
+9V:\;
+9V9a9w9
+9V9l9
+9W"tB
+9w$t6
+9w,~%
+9W:^:
+9W:d:{:
+9wh~VV
+9WHt'
+9wHtE
+9x t4
+9XHt!
+9xhti
+9xhtk
+9XhuYj8
+9y9}9
+9Z:e:s:
+A*f;B*u
+A.3B.
+A@+A<
+a_'WVD
+A<+A8
+A0]0|0
+A0I0X0f0l0{0
+A4+A0
+Abandon Learning Items
+AbandonLearningItems
+abcdefghijklmnopqrstuvwxyz{|}
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_
+abort
+AcquireSRWLockExclusive
+AcquireSRWLockShared
+Activates Dictionary ToolIDisplays the property dialog box and activates Dictionary/Auto-tuning tab
+Activates IME pad
+ActivityError
+ActivityFailure
+ActivityIntermediateStop
+ActivityStoppedAutomatically
+addend
+address family not supported
+address in use
+address not available
+address_family_not_supported
+address_in_use
+address_not_available
+advapi32.dll
+AdviceDefault
+Af90t
+af-t-k0-windows-us
+AH+AD
+AidLangWW
+aiueo
+AL;APuu
+AllocateAndInitializeSid
+AllowIMELogging
+AllowIMENetworkAccess
+AllowJapaneseIMESurrogatePairCharacters
+AllowJapaneseIVSCharacters
+AllowJapaneseNonPublishingStandardGlyph
+AllowJapaneseUserDictionary
+alnum
+alpha
+ALPHABET
+Alphanumeric
+Alph-Key
+already connected
+already_connected
+am-t-k0-windows-amharic
+AnalysisRange
+api-ms-win-appmodel-runtime-l1-1-0.dll
+api-ms-win-core-apiquery-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-com-midlproxystub-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-file-l1-2-4.dll
+api-ms-win-core-file-l2-1-0.dll
+api-ms-win-core-file-l2-1-2.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-heap-obsolete-l1-1-0.dll
+api-ms-win-core-kernel32-legacy-l1-1-0.dll
+api-ms-win-core-kernel32-legacy-l1-1-1.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-libraryloader-l1-2-1.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-localization-obsolete-l1-2-0.dll
+API-MS-Win-Core-LocalRegistry-L1-1-0.dll
+api-ms-win-core-memory-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-registry-l1-1-1.dll
+api-ms-win-core-shlwapi-legacy-l1-1-0.dll
+api-ms-win-core-stringansi-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-string-l2-1-0.dll
+api-ms-win-core-string-obsolete-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-2-0.dll
+api-ms-win-core-sysinfo-l2-1-0.dll
+api-ms-win-core-threadpool-l1-2-0.dll
+api-ms-win-core-timezone-l1-1-0.dll
+api-ms-win-core-util-l1-1-0.dll
+api-ms-win-core-version-l1-1-0.dll
+api-ms-win-core-version-l1-1-1.dll
+api-ms-win-core-winrt-error-l1-1-0.dll
+api-ms-win-core-winrt-error-l1-1-1.dll
+api-ms-win-core-winrt-l1-1-0.dll
+api-ms-win-core-winrt-string-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-privacy-coreprivacysettingsstore-l1-1-0.dll
+api-ms-win-rtcore-ntuser-synch-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-security-provider-l1-1-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+api-ms-win-security-trustee-l1-1-1.dll
+api-ms-win-shcore-stream-l1-1-0.dll
+api-ms-win-shell-shdirectory-l1-1-0.dll
+ApiSetQueryApiSetPresence
+AppID
+APPID
+ApplyTime
+applyTime
+AQh90
+AreAllAccessesGranted
+AreAnyAccessesGranted
+argument list too long
+argument out of domain
+ar-SA-t-k0-windows-arabic-101key
+ARtlQueryFeatureConfiguration
+Ascii
+AssignConversions
+ASTERISK
+as-t-k0-windows-assamese-inscript
+ATCOR00
+ATL$__a
+ATL$__m
+ATL$__z
+AtShiftModeOut
+Auto Conversion
+AutoAccent
+AutoAlphaFlag
+AutoAlphaStr
+AutoApostrophe
+AutoCap
+autoCap
+AutoCorrect
+AutoCorrection
+autoCorrection
+AutoswitchAfterEmoji
+AutoTuneLevel
+az-Cyrl-t-k0-windows-azeri-cyrillic
+az-Latn-t-k0-windows-azeri-latin
+B @Vu'
+B StyleList\ATOK\Color colb=0x00000000
+B StyleList\NATURAL\Color colb=0x00000000,0x00000000,0x03000005,0x00000000,0x03000005,0x00000000,0x03000005,0x03000005,0x0100000d,0x00000000,0x00000000,0x00000000,0x00000000,0x03000005,0x03000005,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000
+B StyleList\NATURAL\Color colf=0x00000000,0x00000000,0x03000008,0x00000000,0x03000008,0x00000000,0x03000008,0x03000008,0x0100000e,0x00000000,0x00000000,0x00000000,0x00000000,0x03000008,0x03000008,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000
+B StyleList\NATURAL\Color under=0x00000000,0x00000000,0x00000004,0x00000000,0x00000004,0x00000000,0x00000003,0x00000001,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000001,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000
+B StyleList\NATURAL\Color undercolor=0x00000000,0x00000000,0x03000008,0x00000000,0x03000008,0x00000000,0x03000008,0x03000008,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00008000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000
+B StyleList\NATURAL\Color underrop=0x00000000,0x00000000,0x0000000d,0x00000000,0x0000000d,0x00000000,0x0000000d,0x0000000d,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x0000000d,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000
+B StyleList\VJE\Color colb=0x00000000
+B StyleList\WX\Color colb=0x00000000
+B Window Buttons=23,1,3,26,21
+B Window ButtonsAvailable=23,1,2,3,4,20,25,26,21,5
+B Window ButtonsAvailableForIMM=1,2,3,4,20,5,6,17,18,19,21,22
+B Window ButtonsForIMM=1,2,3,4,21,6,17,18
+B Window convWnd=30,30,265,48
+B Window dictoolWnd=0,0,580,360
+B Window guideWnd=10,100,100,50
+B Window\PltSmall BmpID=500,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,519,520,521
+B Window\PltSmall ButtonRect=0,0,22,22
+B Window\PltTiny BmpID=500,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,519,520,521
+B Window\PltTiny ButtonRect=0,0,16,16
+B@+B<
+b0g0p0
+b0s0x0
+B8+B4
+BA,0xba,;
+BACKQUOTE
+BACKSLASH
+backspaceCount
+backspaceCountImeOff
+backspaceCountImeOnInsideComposition
+backspaceCountImeOnOutsideComposition
+BackupShapeWriting
+ba-Cyrl-t-k0-windows-bashkir
+bad address
+bad allocation
+bad cast
+bad file descriptor
+bad function call
+bad locale name
+bad message
+bad_address
+bad_file_descriptor
+BasicUsageCount
+BB,0xbb,=
+BC,0xbc,
+bcrypt.dll
+BCryptCloseAlgorithmProvider
+BCryptCreateHash
+BCryptDestroyHash
+BCryptFinishHash
+BCryptGetProperty
+BCryptHashData
+BCryptOpenAlgorithmProvider
+BD,0xbd,-
+BE,0xbe,.
+be-t-k0-windows-belarus
+BF,0xbf,/
+bg-t-k0-windows-bulgaria-qwerty-trad
+blank
+bLogEnable
+BmpID
+bn-BD-t-k0-windows-bangla-narrow
+bn-IN-t-k0-windows-bangla-inscript
+bn-IN-t-k0-windows-bangla-phonetic
+bNodeBeam
+bo-Tibt-t-k0-windows-tibetan
+broken pipe
+bs-Cyrl-t-k0-windows-bosnian-cyrillic
+bs-t-k0-windows-bosnian-latin
+bstrNewW
+bSubstituteSE
+bSubstituteST
+BuildExplicitAccessWithNameW
+bUnkWordTriggerNN
+ButtonRect
+Buttons
+ButtonsAvailable
+ButtonsAvailableForIMM
+ButtonsForIMM
+C 9>u"
+C$;C|
+C(;C,u&
+C(Phh
+C@VWR
+C<+C8
+C=ct}
+C0,0xc0,@
+C0U0s0~0
+C9^<u
+C9_huH
+Cache
+CacheArchived
+CacheMaxPages
+ca-ES-valencia-t-k0-windows-spanish
+callContext
+CallContext:[%hs] 
+callerModule
+callerReturnAddressOffset
+CallingContext
+calloc
+Cancel
+Candidate
+Candidate Menu
+CandidateNotIn1stPage
+CandSelByClick
+CandSelDet
+CandTip
+Cannot break phrase by ForcePhraseBreak
+ca-t-k0-windows-spanish
+CH+CD
+Change Dictionary
+Changes to Alpha input mode
+Changes to direct input mode
+Changes to Hiragana input mode
+Changes to Katakana input mode
+Changes to Romaji input mode3Activates IME Pad and displays Symbol Lookup Applet
+CHANl
+Char. Table
+characterCountAfter
+characterCountBefore
+characterCountImeOff
+characterCountIn1stConversion
+CharacterSet
+CharFilterDictName
+CharInKana
+CharKind
+CharLeft
+CharList
+CharNextW
+CharPrevW
+CharRight
+CharType
+CharUpperA
+CheckTokenMembership
+chr-Cher-t-k0-windows-cherokee
+ChrWidth
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+CIFEDictionaryBanri::NextWords erase cannot delete a word.
+CImeCommonAPI_JPN_Desktop_V1
+CImeCommonAPI_JPN_Desktop_V1 Class
+CImeCommonAPIClassFacoty_JPN_Desktop_V1 ClassW#
+CImeIPointCallBack ClassWW
+CImeIPointCallBackWW
+CImeKeyEventHandler_JPN_Desktop_V1 ClassWW
+CImeKeyEventHandler_JPN_Desktop_V1WW
+CImeMutexElapsedTooLong
+CJDictsLockFailedInInit
+CJDictsLockTimeoutOnMutexAcquisition
+ClearAll
+Clears all the input characters,Reverts all the input characters to readings&Reverts the current phrase to readings A phrase consists of a character3Moves the insertion point one character to the left4Moves the insertion point one character to the rightBMoves the insertion point to the beginning of the input characters<Moves the insertion point to the end of the input characters?Deletes the character immediately preceding the insertion point
+CloseHandle
+CloseThreadpoolTimer
+CloudCandidatePlaceHolderSelected
+CloudSuggestion
+CLSID
+clsid://{e126b7dd-1c3b-4821-b861-a6da9ce6f096}/JpnComponentLayouts.dgml
+CLSID\
+cntrl
+CnvMode
+CnvName
+CnvPhra
+CoCreateFreeThreadedMarshaler
+CoCreateInstance
+Code/Radical
+CodeAreaForConversion
+CoGetClassObject
+CoInitializeEx
+COLON
+colstyle
+COMMA
+comment
+COMMENT
+CommentDelay
+Commit Learning Items
+Commit Learning Items Command
+CompanyName
+CompareStringOrdinal
+CompareStringW
+Component Categories
+Components\Dictionary Tool
+CompositionFinalized
+compositionReadingStringLength
+ConfigureImeVersion
+ConfigureJapaneseIMEVersion
+ConfigureKoreanIMEVersion
+ConfigureSimplifiedChineseIMEVersion
+ConfigureTraditionalChineseIMEVersion
+connection aborted
+connection already in progress
+connection refused
+connection reset
+connection_aborted
+connection_already_in_progress
+connection_refused
+connection_reset
+ContextMenuFlags
+ConvAll
+Conversion
+Conversion in Half-width
+Convert KeyTop Symbols
+Convert KeyTopSym
+Convert Number
+Converted
+Converts the current phrase-Converts the current phrase in bias for names#Determines all the input characters4Determines phrases between the first and the current
+Converts to ascii
+Converts to full-width ascii
+Converts to full-width ascii3Converts to half-width katakana or half-width ascii$Inserts hiragana version of readings/Inserts full-width katakana version of readings
+Converts to full-width katakana
+Converts to half size asciiBDetermines the current phrase and moves to the next candidate listQDetermines all the undetermined characters and sends them to the host applicationaDetermines all the undetermined characters and moves to the next candidates in the candidate list
+Converts to half size katakana
+Converts to half-width*Toggles among hiragana, katakana and ascii
+Converts to half-width/Changes to half-width katakana fixed input mode,Changes to half-width ascii fixed input mode
+Converts to half-widthCToggles among hiragana, full-width katakana and half-width katakana
+Converts to hiragana
+Converts to katakana
+ConvertSidToStringSidW
+ConvertStringSecurityDescriptorToSecurityDescriptorW
+ConvertStringSidToSidW
+convWnd
+CopyFileW
+CoTaskMemAlloc
+CoTaskMemFree
+CoTaskMemRealloc
+CoUninitialize
+CountKey
+countOfAbandonedLearningItems
+countOfClose
+countOfCommittedLearningItems
+countOfConvertFromOldMSIME
+countOfCreate
+countOfCreate2
+countOfDisplayProperty
+countOfExistDependency
+countOfExistWord
+countOfFELANG_CMODE_AUTOMATIC
+countOfFELANG_CMODE_BESTFIRST
+countOfFELANG_CMODE_BOPOMOFO
+countOfFELANG_CMODE_CONVERSATION
+countOfFELANG_CMODE_FULLWIDTHOUT
+countOfFELANG_CMODE_HALFWIDTHOUT
+countOfFELANG_CMODE_HANGUL
+countOfFELANG_CMODE_HIRAGANAOUT
+countOfFELANG_CMODE_KATAKANAOUT
+countOfFELANG_CMODE_MERGECAND
+countOfFELANG_CMODE_MONORUBY
+countOfFELANG_CMODE_NAME
+countOfFELANG_CMODE_NOINVISIBLECHAR
+countOfFELANG_CMODE_NONE
+countOfFELANG_CMODE_NOPRUNING
+countOfFELANG_CMODE_PHRASEPREDICT
+countOfFELANG_CMODE_PINYIN
+countOfFELANG_CMODE_PLAURALCLAUSE
+countOfFELANG_CMODE_PRECONV
+countOfFELANG_CMODE_RADICAL
+countOfFELANG_CMODE_ROMAN
+countOfFELANG_CMODE_SINGLECONVERT
+countOfFELANG_CMODE_UNKNOWNREADING
+countOfFELANG_CMODE_USENOREVWORDS
+countOfFELANG_UNKNOWN
+countOfGetConversion
+countOfGetConversionModeCaps
+countOfGetDependencies
+countOfGetHeader
+countOfGetHeader2
+countOfGetJMorphResult
+countOfGetPhonetic
+countOfGetPosTable
+countOfGetWords
+countOfInvokeDictToolDialog
+countOfInvokeWordRegDialog
+countOfIsDefaultIME
+countOfNextDependencies
+countOfNextWords
+countOfOpen
+countOfOpen2
+countOfRegisterDependency
+countOfRegisterRawWordRengo2
+countOfRegisterWord
+countOfSetDefaultIME
+countOfSetHeader
+countOfSetHeader2
+CoWaitForMultipleHandles
+CPallet
+CPSSGetBoolSettingByKey
+CPSSGetDwordSettingByKey
+CPSSPutDwordSettingByKey
+CreateDirectoryW
+CreateEventExW
+CreateEventW
+CreateFileA
+CreateFileMappingA
+CreateFileMappingW
+CreateFileW
+CreateIFECommonInstance
+CreateIImeSystemDictInstance
+CreateIImeUserDictInstance
+CreateInstanceWW
+CreateMutexExW
+CreateMutexW
+CreateProcessW
+CreateSemaphoreExW
+CreateThread
+CreateThreadpoolTimer
+CreateWellKnownSid
+cross device link
+CRT Ext.Char
+Crv9/B
+CRYPT32.dll
+CryptBinaryToStringA
+CStdStubBuffer_AddRef
+CStdStubBuffer_Connect
+CStdStubBuffer_CountRefs
+CStdStubBuffer_DebugServerQueryInterface
+CStdStubBuffer_DebugServerRelease
+CStdStubBuffer_Disconnect
+CStdStubBuffer_Invoke
+CStdStubBuffer_IsIIDSupported
+CStdStubBuffer_QueryInterface
+cs-t-k0-windows-czech
+Ctrl\+B=([a-fA-F0-9]{2} ){5}[a-fA-F0-9]{2}
+Ctrl+B=FF FA FF FA FF FF
+CURRENT_USER\
+currentContextId
+currentContextMessage
+currentContextName
+CusPage
+Custom
+Custom Dictionary
+cVhP\
+CVKeyWWW
+cW0~0Y0
+cWVD_kt
+cy-t-k0-windows-ukext
+D Dictionaries LearningLevel=60
+D Dictionaries MemoryLearning=0
+D Manage {75B68FC0-70DB-11D3-9595-00C04F7AD1A9}=1
+D Manage {7B0813D0-70DB-11D3-9595-00C04F7AD1A9}=0
+D Manage {83A39030-70DB-11D3-9595-00C04F7AD1A9}=0
+D Manage {840A0986-6A87-4510-BFEC-96E9B06E36E9}=0
+D MSIME AtShiftModeOut=1
+D MSIME AutoAlphaFlag=0x33000001
+D MSIME AutoCorrect=0x1003031F
+D MSIME CharInKana=0
+D MSIME CommentDelay=300
+D MSIME deffont_alwaysuse=0
+D MSIME deffontsize=9
+D MSIME EnableDocFeed=1
+D MSIME EnableKnlThread=1
+D MSIME FullEditableEN=0x0003
+D MSIME HideComment=0
+D MSIME KeyTopIsTop=2
+D MSIME Koho_FuzokuGo=3
+D MSIME LookPreDet=1
+D MSIME NoDirectInputMode=1
+D MSIME NonKanjiCandidate=0x10003
+D MSIME option1=0x00150200
+D MSIME option2=0x00000000
+D MSIME option3=0x00000000
+D MSIME ReconvFlag=1
+D MSIME ShiftDeOn=0
+D MSIME shiftmode=0
+D MSIME ShowCharComment=1
+D MSIME ShowWordComment=1
+D MSIME Trigger=14
+D MSIME UseCandidateShortcuts=1
+D MSIME\AutoCharWidth ALPHABET=0x02020300
+D MSIME\AutoCharWidth AND=0x09090300
+D MSIME\AutoCharWidth ASTERISK=0x10100300
+D MSIME\AutoCharWidth AT=0x09090300
+D MSIME\AutoCharWidth BACKQUOTE=0x09090300
+D MSIME\AutoCharWidth BACKSLASH=0x09090300
+D MSIME\AutoCharWidth COLON=0x08080300
+D MSIME\AutoCharWidth COMMA=0x05050300
+D MSIME\AutoCharWidth DIGIT=0x03030300
+D MSIME\AutoCharWidth DOLLAR=0x09090300
+D MSIME\AutoCharWidth DOT=0x08080100
+D MSIME\AutoCharWidth DOUBLEQUOTE=0x07070300
+D MSIME\AutoCharWidth EQUAL=0x10100300
+D MSIME\AutoCharWidth EXCLAMATION=0x11110300
+D MSIME\AutoCharWidth GREATERTHAN=0x10100300
+D MSIME\AutoCharWidth KATAKANA=0x01000000
+D MSIME\AutoCharWidth L_BRACE=0x04040300
+D MSIME\AutoCharWidth L_BRACKET=0x04040300
+D MSIME\AutoCharWidth L_KAGI=0x04040100
+D MSIME\AutoCharWidth L_PARENTHESIS=0x04040300
+D MSIME\AutoCharWidth LESSTHAN=0x10100300
+D MSIME\AutoCharWidth MARU=0x06060100
+D MSIME\AutoCharWidth MINUS=0x10100300
+D MSIME\AutoCharWidth OR=0x09090300
+D MSIME\AutoCharWidth PERCENT=0x09090300
+D MSIME\AutoCharWidth PERIOD=0x05050300
+D MSIME\AutoCharWidth PLUS=0x10100300
+D MSIME\AutoCharWidth QUESTION=0x11110300
+D MSIME\AutoCharWidth R_BRACE=0x04040300
+D MSIME\AutoCharWidth R_BRACKET=0x04040300
+D MSIME\AutoCharWidth R_KAGI=0x04040100
+D MSIME\AutoCharWidth R_PARENTHESIS=0x04040300
+D MSIME\AutoCharWidth SEMICOLON=0x08080300
+D MSIME\AutoCharWidth SHARP=0x09090300
+D MSIME\AutoCharWidth SINGLEQUOTE=0x07070300
+D MSIME\AutoCharWidth SLASH=0x10100300
+D MSIME\AutoCharWidth TEN=0x06060100
+D MSIME\AutoCharWidth TILDE=0x09090300
+D MSIME\AutoCharWidth UNDERSCORE=0x09090300
+D MSIME\AutoCharWidth UPCARET=0x09090300
+D StyleList\ATOK DisableFunctions=0x0003
+D StyleList\MS-IME2000 DisableFunctions=0x0002
+D StyleList\NATURAL DisableFunctions=0x0000
+D StyleList\VJE DisableFunctions=0x0003
+D StyleList\WX DisableFunctions=0x0003
+D Window AdviceDefault=1
+D Window CandSelByClick=1
+D Window CusPage=0
+D Window HideStatusOnDisable=0
+D Window PropPage=0
+D Window ResourceMode=0xffffffff
+D$ h0
+D$ Pj
+D$ PQ
+D$ PQQ
+D$ SVW
+D$$CP
+D$$PQ
+D$$PSSh 
+D$(PQ
+D$,Ph
+D$,Pj
+D$,PQQ
+D$,PWWj WWW
+D$,WP
+D$@9F
+D$@PQ
+D$@PQQ
+D$|0A
+D$|QP3
+D$<PV
+D$<SP
+D$09D$(
+D$0jhj
+D$0jNj
+D$0PQh
+D$0PRR
+D$49D$
+D$49t$0
+D$4Pj
+D$4PRQ
+D$4QP3
+D$4s);
+D$8PQ
+D$8SVW
+D$D0A
+D$DPj
+D$dPQQ
+D$DSP
+D$hPj
+D$HPQQ
+D$hPQQ
+D$hSVW
+D$LPV
+D$lSP
+D$pPh
+D$pSV
+D$pVjh
+D0~0Y0
+D7k t
+DateTime
+da-t-k0-windows-danish
+DB,0xdb,[
+DC,0xdc,\
+DD,0xdd,]
+DE,0xde,'
+DebugBreak
+de-CH-t-k0-windows-swiss-german
+DecodePointer
+de-DE-t-k0-windows-german
+Default
+deffont
+deffont_alwaysuse
+deffontsize
+defRoma
+DelayLoadFailureHook
+DelBackChar
+DelChar
+Delete
+Delete Char in Learning Items
+DeleteCharLearningItems
+DeleteCriticalSection
+deletedCharacterCount
+DeleteFileW
+Deletes the next character&Moves the focus one phrase to the left'Moves the focus one phrase to the right
+deletionCount
+deque<T> too long
+destination address required
+destination_address_required
+Det1stChar
+Det1stPhra
+DetAll
+DetAll+
+DetByTyping
+Determine by Typing
+Determined
+DetermineOff
+Determines the first character
+Determines the first phrase
+DetPhra
+DetThenNext
+DetThenNext+
+device or resource busy
+DIC%02d
+DIC00
+DicLearn
+dicprop
+dicSearchIntvl
+DictationEnabled
+DictationSupportedLanguages
+Dictionaries
+DictionaryPath
+dictionaryVersion
+DicTool
+Dicts
+Dicts Lock timeout
+DictTimeStamp
+Different
+DIGIT
+digit
+Direct
+directories
+directory not empty
+DisableAllPlugInDict
+DisableCodeAreaForCodeComment
+DisableFunctions
+DisableLMThread
+DisablePersonalization
+disableShiftLock
+DisplayName
+Displays character list
+Displays property sheet
+Displays property sheetBDisplays a dialog box for registering words to a custom dictionaryBDisplays a dialog box for registering words to a custom dictionaryIDisplays the property dialog box and activates Dictionary/Auto-tuning tab
+Djf[+
+DllCanUnloadNow
+DllGetClassObject
+DllRegisterServer
+DllUnregisterServer
+Docking
+DockSide
+DOLLAR
+DomainType
+Donecoreuap\windows\feime\win8\jpn\em\main\imeemmanager.cpp
+DoublePinyinScheme
+DOUBLEQUOTE
+DPQRh
+DQff#E
+DummyValue
+dv-t-k0-windows-divehi-qwerty
+dwDiscreteTypingWeight
+dwDWD_o
+Dwff#
+dwflBiCacheWeight
+dwflBiCacheWeight2
+dwflBiFlagWeight
+dwflBiFlagWeight2
+dwflCacheWeight
+dwflCacheWeight2
+dwflCacheWeightForCand
+dwflFlagAdjust4ShortWord
+dwflFlagCurvePower
+dwflFlagWeight
+dwflFlagWeight2
+dwflFlagWeightForCand
+dwflPredetermineCacheWeight
+dwflPredetermineFlagWeight
+dwflProb2ndLearnBoost
+dwflShortcutBiProb
+Dwfu3f
+dwKatakanaFactor
+dwKatakanaLength
+dwMaxReadLength4NbestScrubByLength
+dwNBestPathsByBigram
+dwNBestPathsByBigramFELang
+dwNBestPathsByBigramForReverse
+dwNBestPathsByTrigram
+dwNBestPathsByTrigramFELang
+dwNBestPathsForDWD
+dwProfileIDW
+dwReverseUniPenalty
+dwScoreBeamWidth
+dwScoreBeamWidth4NbestScrub
+dwScoreBeamWidth4NbestScrubByLength
+dwScoreDoubleFigures
+dwScoreSingleFigure
+dwScoreTriplePlusFigures
+dwSymbolCacheReadFlag
+dwTrigramWeight
+dwUniCacheCountForBiCacheWeight
+dwUniCacheOffset
+dwUnkWordMaxLength
+dwUnkWordProbability
+dz-t-k0-windows-dzongkha
+E SVW
+e""@k
+E$9H\t/
+E,SVW
+EAIME_API_FEDict_GetWordsEnd
+EAIME_API_FEDict_GetWordsStart
+EAIME_API_FELangEnd
+EAIME_API_FELangStart
+EAIME_EM_BackToReadingEnd
+EAIME_EM_BackToReadingStart
+EAIME_EM_BackToReadPhraseEnd
+EAIME_EM_BackToReadPhraseStart
+EAIME_EM_CandEnd
+EAIME_EM_CandStart
+EAIME_EM_ClearAllEnd
+EAIME_EM_ClearAllStart
+EAIME_EM_ConvEnd
+EAIME_EM_ConvStart
+EAIME_EM_DetermineEnd
+EAIME_EM_DetermineStart
+EAIME_EM_GetCommentEnd
+EAIME_EM_GetCommentStart
+EAIME_EM_IMEONEnd
+EAIME_EM_IMEONStart
+EAIME_EM_TypingEnd
+EAIME_EM_TypingStart
+editingKeystrokeCount
+eeQ}vkQzv
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+elapsedMillisecond
+elapsedMillisecondUntilFinalized
+elapsedTime
+el-t-k0-windows-greek
+emitGeneration
+Enable
+EnableAutoCorrection
+EnableAutocorrection
+EnableAutoCorrectionMobileQwerty
+EnableAutoShiftEngage
+enableChangjiePredGuidanceString
+EnableChineseEnglishPunctuationSwitch
+EnableCloudCandidate
+EnableCodeAreaForConvert
+enabled
+Enabled
+enabled
+EnabledFeatureUsage
+EnableDocFeed
+EnableDomainType
+EnableDoubleTapSpace
+EnableDynamicCandidateRanking
+EnableExpressiveInputEmojiInputHistory
+enableExpressiveInputEmojiInputHistory
+enableExpressiveInputShellHotkey
+EnableExpressiveInputShellHotkey
+EnableExpressiveInputSystemInitiated
+enableExpressiveInputSystemInitiated
+enableExpressiveInputUserInitiated
+EnableExpressiveInputUserInitiated
+EnableFixedCandidateCountMode
+EnableFullHalfWidthSwitchKey
+EnableFuzzyPinyin
+EnableHap
+EnableHwkbAutocorrection
+enableHwkbAutoCorrection
+enableHwkbInsertSpace
+EnableHwkbInsertSpace
+EnableHwkbTextPrediction
+enableHwkbTextPrediction
+EnableItalic
+EnableJpnGuidanceString
+EnableKeyAudioFeedback
+enableKeyAudioFeedback
+EnableKnlThread
+EnableLUA
+EnableMultiTap
+EnableOpenEmoticonSymbolView
+EnablePredictionSpaceInsertion
+enableQuickPredGuidanceString
+EnableSelfLearning
+EnableShiftLock
+EnableSimplifiedTraditionalOutputSwitch
+EnableSmartFuzzyPinyin
+EnableSpellchecking
+EnableSymbolPair
+EnableTextPrediction
+EnableWubiAutoFinalize
+en-AU-t-k0-windows-us
+en-CA-t-k0-windows-frca
+EncodePointer
+EndBulkChangeWWW
+EndOfCand
+EndOfChars
+EndOfPhra
+en-GB-t-k0-windows-ukqwerty
+EngineService
+English Switch Key
+en-IE-t-k0-windows-irish
+en-IN-t-k0-windows-india
+EnterCriticalSection
+en-US-t-k0-windows-us
+EQUAL
+EqualSid
+errorCharacterCount
+escapeCount
+escapeInsideComposition
+es-ES-t-k0-windows-spanish
+es-MX-t-k0-windows-latin-american
+ETCVW
+et-t-k0-windows-estonian
+eu-t-k0-windows-spanish
+Event
+EventActivityIdControl
+EventRegister
+EventSetInformation
+EventUnregister
+eventVersion
+EventWriteTransfer
+EVNT0
+eW[.z
+eW[`0Q0
+eW[+g>\
+eW[E^
+eW[HQ-
+eW[k0
+eW[n0+g>\k0
+eW[n0HQ-
+eW[n0r0
+eW[Y0y0f0
+Exception
+Exception thrown in IFEDict
+Exception thrown in IImeUserDict --- overwriting same WID with different word data.
+Exception thrown in KnlDict
+ExceptionRaised
+EXCLAMATION
+ExcludeJapaneseIMEExceptJIS0208
+ExcludeJapaneseIMEExceptJIS0208andEUDC
+ExcludeJapaneseIMEExceptShiftJIS
+EXCVW
+executable format error
+Execute Prediction
+ExecuteW
+ExpandDoublePinyin
+ExpandEnvironmentStringsW
+ExpressiveInputUserInitiatedKey
+expressiveInputUserInitiatedKey
+ExtendPhra
+ext-ms-win-devmgmt-policy-l1-1-1.dll
+ext-ms-win-ntuser-keyboard-l1-1-0.dll
+ext-ms-win-ntuser-keyboard-l1-2-0.dll
+ext-ms-win-ntuser-keyboard-l1-3-0.dll
+ext-ms-win-ntuser-keyboard-l1-3-1.dll
+ext-ms-win-ntuser-message-l1-1-0.dll
+ext-ms-win-ntuser-window-l1-1-0.dll
+ext-ms-win-ntuser-window-l1-1-2.dll
+ext-ms-win-ntuser-window-l1-1-4.dll
+ext-ms-win-session-usermgr-l1-1-0
+ext-ms-win-session-usermgr-l1-1-0.dll
+f!DQf
+f!LBf
+f!Lpf
+f!Lwf_
+F(jdSP
+f;DYdu}
+f;Q&u
+F;wh|
+F|_^[
+F0,VK_DBE_ALPHANUMERIC,
+F0;F,u
+F0;F4u
+F0_0p0
+F0`0o0
+F0j;Y
+F0Ph$
+F1,VK_DBE_KATAKANA,
+f10HalfNumberConversionCount
+F2,VK_DBE_HIRAGANA,
+F3,VK_DBE_SBCSCHAR,
+F4+F0
+F5,VK_DBE_ROMAN,
+f6HiraganaConversionCount
+f7KatakanaConversionCount
+f8HalfKatakanaConversionCount
+f9:t4H
+f9:t6
+f9^8u
+f9<Ft
+f9>t|S
+f9CNu
+f9FTtXh
+f9NumberConversionCount
+f9Q u
+f9y"u
+FA,VK_DBE_CODEINPUT,
+FailFast
+Failure
+failureCount
+failureId
+failureType
+FallbackError
+fa-t-k0-windows-persian
+fCharFilter
+fDisableAutoTuning
+fDisableDWD
+fDisableNonPSGWord
+fDisableTrigram
+featureBaseVersion
+FeatureError
+featureId
+featureStage
+FeatureUsage
+FeatureVariantUsage
+featureVersion
+Fext-ms-win-devmgmt-policy-l1-1-0.dll
+Ff98u
+fForceNotifyX
+FfPhx
+fg0Y0
+FH<(t,<)t(<+t$<?t <{t
+FH<.tT<[tP<\tL<*tH<|tD<^t@<$t<
+FH<_u`
+FH<bu
+fH0~0Y0
+fH0~0Y0%
+file exists
+file too large
+FileDescription
+fileName
+filename too long
+filename_too_long
+FileType
+FileVersion
+fil-Latn-t-k0-windows-spanish
+FilterEnable
+FilterSettingSerial
+finalizationSubType
+finalizationType
+finalizedCharacterCount
+finalizedDisplayStringLength
+finalizedReadingStringLength
+finalizedStringLmRules
+finalizedStringPartsOfSpeech
+FindResourceExW
+FindResourceW
+FindStringOrdinal
+FindWindowW
+FingerKB\CandidateWindow\lang_0411
+FingerKB\HitTargeting\LANG_0411
+FingerKBSize
+fi-t-k0-windows-finnish
+fixCandFont
+Fixed
+Fixed FullWidth
+Fixed Half Ascii
+Fixed Half Katakana
+Fixed Half size Ascii
+Fixed H-Width
+Fixed Input
+FixedAscii
+FixedHiragana
+FixedKatakana
+Fj2Y;
+FL;FPt|3
+FL;FPu
+flagCountOf1stConversionResult
+flagCountOfInputtedResult
+FlushViewOfFile
+fNotApplyLearning
+FNRM_CleanupGarbageFiles
+FNRM_GetRegistrationLevel
+FNRM_SetActiveFile
+FNRM_UnregisterAllPerUserFilesExcept
+Fonecore\internal\sdk\inc\wil\opensource\wil\result_macros.h
+FontStyle
+Force
+ForceRemove
+FormatMessageW
+ForwardException
+fo-t-k0-windows-faeroese
+FP t<
+FragmentedPhrase
+fr-BE-t-k0-windows-belgian-french
+fr-CA-t-k0-windows-frca-legacy
+fr-CH-t-k0-windows-swiss-french
+FreeLibrary
+FreeLibraryAndExitThread
+FreeSid
+fr-FR-t-k0-windows-french
+fSysFilter
+FT9~Xu
+fukugogo
+FullEditableEN
+FullEditByLeftEN
+FullSpace
+Full-width Alphanumeric
+Full-width Ascii Conversion
+Full-width Katakana Conversion
+Func1
+Func2
+function
+Function
+function
+function not supported
+fUseAddOnRengo
+fUseConversionModeWW
+futeigorange
+FuzzyInputEnabled
+FuzzyPairSetting
+fW0~0Y0
+FX+FT
+FYY;u
+G ;G$
+G ;G$u
+G&Af#
+G&f;F&u8
+G&f;F&uO
+G(:F(u0
+G(:F(uG
+G):F)u(
+G):F)u0
+G*f;F*uBf
+G*f;F*uYf
+G,Qh<
+G;~(|
+G@+G<
+g}"f9
+G<+G8
+G0Ph$
+G0Ph4
+ga-t-k0-windows-irish
+GD;GHs$
+gd-Latn-t-k0-windows-scottish-gaelic
+GEg` 
+generation
+generic
+GetCandidates
+GetCurrentPackageFullName
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThread
+GetCurrentThreadId
+GetCursorPos
+GetDriveTypeW
+GetEnvironmentVariableW
+GetExplicitEntriesFromAclW
+GetFileAttributesW
+GetFileSize
+GetFileVersionInfoSizeW
+GetFileVersionInfoW
+GetFocus
+GetJMorphResultArgument
+GetKeyboardState
+GetKeyState
+GetLastError
+GetLatticeMorphResult
+GetModuleFileNameA
+GetModuleFileNameW
+GetModuleHandleExA
+GetModuleHandleExW
+GetModuleHandleW
+GetNamedSecurityInfoW
+GetProcAddress
+GetProcessHeap
+GetSecurityInfo
+GetSidSubAuthority
+GetSidSubAuthorityCount
+GetStringTypeW
+GetSystemDirectoryW
+GetSystemTime
+GetSystemTimeAsFileTime
+GetTempFileNameW
+GetTempPath2W
+GetThreadLocale
+GetTickCount
+GetTickCount64
+GetTokenInformation
+GetUserDefaultUILanguage
+GetUserNameW
+GetVersionExW
+GetWordComments
+GetYomiForFormerResult
+GF;:r
+Gl;Alux
+Global\
+GlobalAlloc
+GlobalFree
+GlobalHandle
+GlobalLock
+GlobalUnlock
+gl-t-k0-windows-spanish
+gn-t-k0-windows-guarani
+Goto1stPhra
+GotoLastPhra
+gR_-z
+graph
+GREATERTHAN
+guideWnd
+gu-t-k0-windows-gujarati-inscript
+gu-t-k0-windows-gujarati-phonetic
+H0M0_0}0
+H0X0q0
+ha-Latn-t-k0-windows-hausa
+Half size Ascii
+HalfKana
+HalfSpace
+Half-width
+Half-width Alphanumeric
+Half-width Ascii Conversion
+Hardware
+HardwareKeyboardBasicUsageCompleted
+HarvestContacts
+HashDigestLength
+hasPreviousDeterminedPhrase
+HasTrailer
+haw-Latn-t-k0-windows-hawaiian
+HeapAlloc
+HeapFree
+he-t-k0-windows-hebrew
+Hf!0A
+HideStatus
+HideStatusOnDisable
+HIImeKeyEventHandlerW
+hi-Latn-t-k0-windows-hinglish
+Hiragana
+Hiragana Conversion
+hi-t-k0-windows-hindi
+hi-t-k0-windows-hindi-narrow
+hi-t-k0-windows-hindi-phonetic
+HKEY_CLASSES_ROOT
+HKEY_CURRENT_CONFIG
+HKEY_CURRENT_USER
+HKEY_DYN_DATA
+HKEY_LOCAL_MACHINE
+HKEY_PERFORMANCE_DATA
+HKEY_USERS
+host unreachable
+host_unreachable
+Hotkey
+hQ;bW0
+HQQPW
+hQzz}v
+hresult
+HResult
+hresult
+hr-HR-t-k0-windows-croatian
+hsb-t-k0-windows-sorbian-standard
+HTREnabled
+HtrTimeSlowdown
+HtrVisualizerEnabled
+hu-t-k0-windows-hungary
+HWRTimeout
+hy-t-k0-windows-armenian-narrow
+I\9}$t_
+i=C4 FF FF FF FF FF
+i=C9 C9 C9 C9 C9 C9
+i=CE 00 00 00 00 00
+I0G1-0+
+iCharPos
+identifier removed
+id-t-k0-windows-us
+IEnumIImeJpnWords
+IFECommonApiUsage
+IFEDictionaryApiUsage
+IFELanguageApiUsage
+ig-Latn-t-k0-windows-igbo
+IIDFromString
+IImeCommandHandler InterfaceWW(
+IImeCommandHandlerWW
+IImeCommonAPI_JPNSpecific
+IImeCommonAPIClassFactory InterfaceWWW"
+IImeJpnPhrase
+IImeJpnWord
+IImeKeyEventHandler InterfaceW
+illegal byte sequence
+imapijpn
+imapijpn 1.0 Type LibraryW-
+IME Menu
+IME OFF
+IME ON
+IME ON/OFF
+IME Pad
+IME_Activate
+IME_API
+IME_CandOpen
+IME_Commands
+IME_Conversion
+IME_Determine
+IME_GetComment
+ime_textinputhelpers.dll
+IME_Typing
+imeActionType
+IMEDictionaryIsNotReady
+ImeOffKey
+ImeOn
+ImeOnKey
+imeOutputCorrected
+ImeShipAssert
+I-Method
+ImeTypeClassIDWW,
+IMEUserName
+IMEWatson\MisConversion\Context\NBestPaths InputString="%s"
+IMEWatson\MisConversion\ExpectedResult
+IMEWatson\MisConversion\FirstConversion\Clauses\Clause No="%d"\Display
+IMEWatson\MisConversion\FirstConversion\Clauses\Clause No="%d"\Flag
+IMEWatson\MisConversion\FirstConversion\Clauses\Clause No="%d"\Reading
+IMEWatson\MisConversion\FirstConversion\Clauses\Clause No="%d"\Words\Word No="%d" P="%d" D="%s" OD="%s" R="%s" CacheCount="%d" FlagCount="%d" LmRuleApplied="%d" IsNumVariation="%d"
+IMEWatson\MisConversion\FirstConversion\Display
+IMEWatson\MisConversion\FirstConversion\FirstConversionWords Start="%d"\Word No="%d" P="%d" D="%s" OD="%s" R="%s" ID="%d" GUID="%s" LmRuleApplied="%d" IsNumVariation="%d"
+IMEWatson\MisConversion\FirstConversion\Reading
+IMEWatson\MisConversion\InputString\Clauses\Clause No="%d"\Display
+IMEWatson\MisConversion\InputString\Clauses\Clause No="%d"\Flag
+IMEWatson\MisConversion\InputString\Clauses\Clause No="%d"\Reading
+IMEWatson\MisConversion\InputString\Clauses\Clause No="%d"\Words\Word No="%d" P="%d" D="%s" OD="%s" R="%s" CacheCount="%d" FlagCount="%d" LmRuleApplied="%d" IsNumVariation="%d"
+IMEWatson\MisConversion\InputString\Display
+IMEWatson\MisConversion\InputString\InputStringWords Start="%d"\Word No="%d" P="%d" D="%s" OD="%s" R="%s" ID="%d" GUID="%s" LmRuleApplied="%d" IsNumVariation="%d"
+IMEWatson\MisConversion\InputString\Reading
+IMEWatson\MisConversion\QualityMetrics\CharacterErrorRate
+IMEWatson\MisConversion\QualityMetrics\TotalInputCharacters
+IMEWatson\MisConversion\Trigger
+IMEWatson\MisConversion\UserProfiling\AverageLengthOfConversion
+IMEWatson\MisConversion\UserProfiling\CharacterPerMinutes
+imewdbld.exe
+imjp15cache.dat
+imjp15cu.dic
+imjpapi!attach_config
+imjpapi!load_config
+imjpapi!pxg context popped
+imjpapi!pxg context pushed
+imjpapi.dll
+'imjpapi.DLL'
+imjpapi.pdb
+imjpcd.dll
+imjpdctp.dll
+IMJPNW.DIC
+imjpst.dic
+imjpsysf.fil
+IMJPTK.DIC,1,8
+imjputy.exe
+IMJPZP.DIC,1,271
+I-Mode
+inappropriate io control operation
+Inconsistent state data size in wnf_query
+Information
+Init Jpn LM
+Initialize Japan LM
+Initialize User Setting
+InitializeAcl
+InitializeCriticalSection
+InitializeCriticalSectionEx
+InitOnceBeginInitialize
+InitOnceComplete
+InitUserSetting
+InlineComment
+Input\Locales\loc_0411\Settings
+Input\Locales\loc_0804\Settings
+Input\Settings
+Input\Settings\proc_1\loc_0804\im_1
+Input\TIPC
+InputCorrected
+InputCorrectionStarted
+inputLen:%d startP:%d endP:%d
+InputMethod\CandidateWindow\CHS\1
+InputMethod\CandidateWindow\CHS\2
+InputMethod\Settings\CHS
+InputMethod\Settings\CHT
+inputSessionCount
+inputSettings\
+inputSettings\disablePersonalization
+inputSettings\enableHwkbAutoCorrection
+inputSettings\enableHwkbInsertSpace
+inputSettings\enableHwkbTextPrediction
+inputSettings\ja-t-k0-windows-japanese\enableJpnGuidanceString
+inputSettings\ja-t-k0-windows-japanese\enableMultiTapGuide
+inputSettings\ja-t-k0-windows-japanese\keyboardLayout
+inputSettings\ja-t-k0-windows-japanese\suggestBarHeight
+inputSettings\ja-t-k0-windows-japanese\twelveKeyInputMode
+inputSettings\ja-t-k0-windows-japanese\wordSuggestionLevel
+inputSettings\ja-t-k0-windows-japanese-12key\enableMultiTapGuide
+inputSettings\ja-t-k0-windows-japanese-12key\keyboardLayout
+inputSettings\ja-t-k0-windows-japanese-12key\suggestBarHeight
+inputSettings\ja-t-k0-windows-japanese-12key\twelveKeyInputMode
+inputSettings\ja-t-k0-windows-japanese-12key\wordSuggestionLevel
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\autoCorrectionMobileQwertyEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\backupShapeWriting
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\characterSet
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\cloudCandidateEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\domainType
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\domainTypeEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\doublePinyinScheme
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\dynamicCandidateRankingEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\expandDoublePinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\fuzzyPairSetting
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\fuzzyPinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\handWritingTimeout
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\HapEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\HarvestContacts
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\italicEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\pinyinMixEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\pinyinMixOrder
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\pinyinStyle
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\selfLearningEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\shapeWritingEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\simplifiedTraditionalMappingStyle
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\smartFuzzyPinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\symbolPairEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-12key\wubiAutoFinalizeEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\autoCorrectionMobileQwertyEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\backupShapeWriting
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\characterSet
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\cloudCandidateEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\domainType
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\domainTypeEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\doublePinyinScheme
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\dynamicCandidateRankingEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\expandDoublePinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\fuzzyPairSetting
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\fuzzyPinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\handWritingTimeout
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\HapEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\italicEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\pinyinMixEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\pinyinMixOrder
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\pinyinStyle
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\selfLearningEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\shapeWritingEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\simplifiedTraditionalMappingStyle
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\smartFuzzyPinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\symbolPairEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-hwr\wubiAutoFinalizeEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\autoCorrectionMobileQwertyEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\backupShapeWriting
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\characterSet
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\cloudCandidateEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\ContextMenuFlags
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\domainType
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\domainTypeEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\doublePinyinScheme
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\dynamicCandidateRankingEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\EnableChineseEnglishPunctuationSwitch
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\EnableFixedCandidateCountMode
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\EnableFullHalfWidthSwitchKey
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\EnableOpenEmoticonSymbolView
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\EnableSimplifiedTraditionalOutputSwitch
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\EnglishSwitchKey
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\expandDoublePinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\FontStyle
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\fuzzyPairSetting
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\fuzzyPinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\handWritingTimeout
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\HapEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\HarvestContacts
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\italicEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\MaxCandidates
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\OpenEmoticonSymbolViewKey
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\OutputCharSet
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\pinyinMixEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\pinyinMixOrder
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\pinyinStyle
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\selfLearningEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\shapeWritingEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\ShowSymbolViewActionButton
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\simplifiedTraditionalMappingStyle
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\SimplifiedTraditionalOutputSwitchKey
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\smartFuzzyPinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\symbolPairEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\ToolBarEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\ToolBarOrientation
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\ToolBarView
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin\wubiAutoFinalizeEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\autoCorrectionMobileQwertyEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\backupShapeWriting
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\characterSet
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\cloudCandidateEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\domainType
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\domainTypeEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\doublePinyinScheme
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\dynamicCandidateRankingEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\expandDoublePinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\fuzzyPairSetting
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\fuzzyPinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\handWritingTimeout
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\HapEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\italicEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\pinyinMixEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\pinyinMixOrder
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\pinyinStyle
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\selfLearningEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\shapeWritingEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\simplifiedTraditionalMappingStyle
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\smartFuzzyPinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\symbolPairEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-stroke\wubiAutoFinalizeEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\autoCorrectionMobileQwertyEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\backupShapeWriting
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\characterSet
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\cloudCandidateEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\domainType
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\domainTypeEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\doublePinyinScheme
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\dynamicCandidateRankingEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\EnableFixedCandidateCountMode
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\expandDoublePinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\FontStyle
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\fuzzyPairSetting
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\fuzzyPinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\handWritingTimeout
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\HapEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\italicEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\MaxCandidates
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\pinyinMixEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\pinyinMixOrder
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\pinyinStyle
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\selfLearningEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\shapeWritingEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\ShowSymbolViewActionButton
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\simplifiedTraditionalMappingStyle
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\smartFuzzyPinyinEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\symbolPairEnabled
+inputSettings\zh-Hans-CN-t-k0-windows-chinese-simp-wubi\wubiAutoFinalizeEnabled
+inputSettings\zh-Hant-HK-t-k0-windows-chinese-trad-changjie\enableChangjiePredGuidanceString
+inputSettings\zh-Hant-HK-t-k0-windows-chinese-trad-quick\enableQuickPredGuidanceString
+inputSettings\zh-Hant-TW-t-k0-windows-chinese-trad-bopomofo\ToolBarEnabled
+inputSettings\zh-Hant-TW-t-k0-windows-chinese-trad-bopomofo\ToolBarOrientation
+InputSpace
+insertPeriod
+Inserts a space in full-width
+Inserts a space in half-width:Reverts last determined character(s) to undetermined state$Inserts last determined character(s)
+Inserts in ascii
+Inserts in half-width(Change the input mode to full size ascii(Change the input mode to half size ascii
+insertSpace
+Installed
+Interface
+InternalName
+interrupted
+invalid argument
+invalid map/set<T> iterator
+Invalid parameter passed to C runtime function.
+invalid seek
+invalid string position
+invalid_argument
+io error
+iostream
+iostream stream error
+is a directory
+IsDebuggerPresent
+islower
+IsMinimized
+IsOutProcEngineAvailable
+isServerMode
+isShortcutWordIncluded
+iStartWW
+is-t-k0-windows-iceland
+isupper
+IsValidSid
+IsVoiceTypingKeyEnabled
+iswgraph
+iTargetStart
+it-IT-t-k0-windows-italian
+iu-Latn-t-k0-windows-inuktitt-latin
+IUnknown_AddRef_Proxy
+IUnknown_QueryInterface_Proxy
+IUnknown_Release_Proxy
+j Xf;
+j Zf;
+j"k"b
+j"Yf9
+j$9w`v)
+j%[f;
+j%Xf;
+j%Yf;
+j)j*3
+j*Zf;
+j,Xf;
+j.Xf;
+j.Yf;
+j.Zj Y
+j:Xf;A
+j@Y^f
+j\^f;
+j\^f90t'S
+j\_f;
+j\Xf;
+j\Xf9FHu
+j\XQf
+j\Yf;
+j\Yf;LF
+j\Zf;
+j{Xf;
+j{Xf9
+j}Xf9
+j=Xf;
+j=Xf9
+J0"2O3
+j0[f;
+J0~0"1+1\1e1
+j0X_^]
+j0Zf;
+j0Zt4f;
+J8+J4
+j8eClassID
+Japanese
+JAPANESEPHONETIC.DGML
+ja-t-k0-windows-japanese
+ja-t-k0-windows-japanese-12key
+JcchLenWW
+jDXPW
+jfXPSh
+jhVhH
+jNXj|Q
+JPNCOMPONENTLAYOUTS.DGML
+j'Xf;
+j-Xf;
+K@Qh4
+K`dF4
+K0;L$
+K0`0n0
+K0j0]
+K0j0eQ
+-k0-windows-
+K9_<u
+kanaDisableDlg
+kanaMd
+Katakana
+KATAKANA
+Katakana
+ka-t-k0-windows-georgian
+kernelbase.dll
+KEYDSPTABLE
+keystyle
+KeyTopIsTop
+kgsztdnhbpmyrw
+KHQh4
+KidsMode
+KiriDasi
+KiriDasiKinsi
+kk-t-k0-windows-kazakh
+Kl@Ph
+kl-t-k0-windows-greenlnd
+km-t-k0-windows-khmer
+kn-t-k0-windows-kannada-inscript
+kn-t-k0-windows-kannada-phonetic
+Koho_FuzokuGo
+kok-t-k0-windows-marathi-inscript
+ko-t-k0-windows-korean
+ko-t-k0-windows-korean-chunjiin
+ko-t-k0-windows-korean-naratgeul
+ko-t-k0-windows-korean-sky
+ku-Arab-t-k0-windows-cntrlkrd
+ky-Cyrl-t-k0-windows-kyrgyz
+L$ Qh
+L$$_^[3
+L$$f9
+L$,QPW
+L$,QS
+L$|_^[3
+L$<_^[3
+L$0;U
+L$4^3
+L$d_^[3
+L$D_^[3
+L$t^3
+L_BRACE
+L_BRACKET
+L_KAGI
+L_PARENTHESIS
+L0N0P0R0T0
+LangTag : %ws
+LanguageBar
+LastVersionLS
+LastVersionMS
+LayoutFileId
+lb-t-k0-windows-luxembrg
+Learn Number
+Learn Number Candidate
+LearnData
+LearningItemsAbandoned
+learningItemsAbandonedTime
+LearningItemsCommitted
+learningItemsCommittedTime
+LearningLevel
+LearnNumExp
+LeaveCriticalSection
+Legal_Policy_Statement
+LegalCopyright
+LESSTHAN
+LEVL@
+lineNumber
+LineNumber
+LinesPortrait
+list<T> too long
+LmrRequestElapsedTooLong
+LmrWorkerThreadTerminatedUnexpectedly
+LoadLibraryExW
+LoadLibraryW
+LoadResource
+LoadStringW
+Local\
+Local\SM0:%lu:%lu:%hs
+LocalAlloc
+LocalFree
+LOCALSERVICE
+LockResource
+LogHr
+LogNt
+LONG_PTR
+LookPreDet
+lo-t-k0-windows-lao
+lower
+lpacIME
+lstd::exception: %hs
+lstrcmpiW
+lstrcmpW
+lt-t-k0-windows-lithuann
+lv-t-k0-windows-latvian-narrow
+M RomaDef\MS-IME table=
+M StyleList\ATOK key=
+M StyleList\ATOK S1key=
+M StyleList\ATOK S3key=
+M StyleList\ATOK S4key=
+M StyleList\ATOK S6key=
+M StyleList\ATOK S7key=
+M StyleList\ATOK S8key=
+M StyleList\ATOK S9key=
+M StyleList\ATOK SDkey=
+M StyleList\MS-IME2000 key=
+M StyleList\MS-IME2000 S1key=
+M StyleList\MS-IME2000 S3key=
+M StyleList\MS-IME2000 S4key=
+M StyleList\MS-IME2000 S5key=
+M StyleList\MS-IME2000 S7key=
+M StyleList\MS-IME2000 S8key=
+M StyleList\MS-IME2000 S9key=
+M StyleList\MS-IME2000 SDkey=
+M StyleList\NATURAL key=
+M StyleList\NATURAL S1key=
+M StyleList\NATURAL S3key=
+M StyleList\NATURAL S4key=
+M StyleList\NATURAL S5key=
+M StyleList\NATURAL S7key=
+M StyleList\NATURAL S8key=
+M StyleList\NATURAL S9key=
+M StyleList\NATURAL SAkey=
+M StyleList\NATURAL SBkey=
+M StyleList\NATURAL SCkey=
+M StyleList\NATURAL SDkey=
+M StyleList\NATURAL SEkey=
+M StyleList\VJE key=
+M StyleList\VJE S1key=
+M StyleList\VJE S3key=
+M StyleList\VJE S4key=
+M StyleList\VJE S7key=
+M StyleList\VJE S8key=
+M StyleList\VJE S9key=
+M StyleList\VJE SDkey=
+M StyleList\WX key=
+M StyleList\WX S1key=
+M StyleList\WX S3key=
+M StyleList\WX S4key=
+M StyleList\WX S7key=
+M StyleList\WX S8key=
+M StyleList\WX S9key=
+M StyleList\WX SDkey=
+M*W1w
+m_flagWW
+m_scanCodeWW
+m_vKeyWW
+m_wchWWW
+M0~0Y0
+M0K0I
+Make Number Candidate
+Make Service Candidate
+malloc
+map/set<T> too long
+MapViewOfFile
+MaxCandidates
+maxcost
+maxcostreconv
+memcmp
+memcpy
+memcpy_s
+memmove
+memmove_s
+MemoryLearning
+memset
+message
+Message
+message
+message size
+message_size
+method
+Microsoft
+Microsoft Corporation
+Microsoft Corporation1
+Microsoft Corporation1&0$
+Microsoft Corporation1)0'
+Microsoft Corporation1.0,
+Microsoft Corporation1200
+Microsoft IME
+Microsoft IME 
+Microsoft Sans Serif
+Microsoft Time-Stamp PCA 2010
+Microsoft Time-Stamp PCA 20100
+Microsoft Time-Stamp Service
+Microsoft Time-Stamp Service0
+Microsoft Windows0
+Microsoft.Windows.Desktop.TextInput.ImeCommon
+Microsoft.Windows.Desktop.TextInput.JapaneseIme
+Microsoft.Windows.Shell.MTF.LMDS
+Microsoft.Windows.Wil.FeatureLogging
+Microsoft\IME\15.0\IMEJP\UserDict
+Microsoft\IME\15.0\SQM\Upload
+MicrosoftTelemetryAssertTriggeredUM
+Microsoft-Windows-IME-JPAPI
+Microsoft-Windows-IME-JPAPI/Analytic
+MidasiConvToLower
+mi-Latn-t-k0-windows-maori
+mincore\textinput\dev\sharedlibs\inputprofiletag\util\inputprofilemobiledatahelper.cpp
+mincore\textinput\dev\sharedlibs\settingsmanager\registrysettings\registrysettings.cpp
+mincore\textinput\dev\sharedlibs\settingsmanager\registrysettings\TextInputRegistrySettingsBaseImpl.h
+MINUS
+MisConversion
+mk-t-k0-windows-macdfyrm-standard
+ml-t-k0-windows-malayalm-inscript
+ml-t-k0-windows-malayalm-phonetic
+mn-Cyrl-t-k0-windows-mongol-cyrillic
+mn-Mong-t-k0-windows-mongol-trad-standard
+ModeBias
+ModeIndicator
+ModeSwitchActivity
+ModeSwitchAttempt
+module
+Module
+module
+Module
+Module_Raw
+ModulePath
+MoreCand
+MoreCandReq
+MoreCandSel
+MoreMore Candidate
+MoreMore Candidate Request
+MoreMore Candidate Selected
+MoreMoreDelay
+MoreMoreShown
+MoveFileExW
+Moves to the first phrase
+Moves to the last phrase
+Moves to the next candidate
+Moves to the previous candidate1Moves to the next candidate in the candidate list5Moves to the previous candidate in the candidate list&Reverts the current phrase to readings
+mr-t-k0-windows-marathi-inscript
+mr-t-k0-windows-marathi-phonetic
+MRW[JRd
+ms-BN-t-k0-windows-us
+msctf.dll
+Msg:[%ws] 
+MsgWaitForMultipleObjects
+MsgWaitForMultipleObjectsEx
+MS-IME
+ms-ime2000
+MS-IME2000
+MS-IME2003
+msime2010imejpdctsvr_backup
+msimedsince
+ms-MY-t-k0-windows-us
+msvcrt.dll
+MTFServer.dll
+mt-t-k0-windows-maltese
+MultiByteToWideChar
+MultilingualEnabled
+mwbtY
+my-t-k0-windows-myanmar-visual
+N$;~h|
+N$jA[
+N_]R"
+n0E^n0
+n0HQ-
+N0L0J
+N4l?eck
+natural
+Natural
+NATURAL
+nBeamWidth
+nBigramSelectionMaxCount
+nb-t-k0-windows-norwegn
+nCacheSize
+Ndj/_
+NdrCStdStubBuffer_Release
+NdrDllCanUnloadNow
+NdrDllGetClassObject
+NdrDllRegisterProxy
+NdrDllUnregisterProxy
+NdrOleAllocate
+NdrOleFree
+ne-NP-t-k0-windows-nepali
+network down
+network reset
+network unreachable
+network_down
+network_reset
+network_unreachable
+newStatus:0x%x
+nExDicTry
+NextCand
+NextCands
+NextState
+NHPSS
+NHSGW
+NInitializeWW
+NIQx^_lPO
+NkQ]NAS~vCS
+nl-BE-t-k0-windows-belgian-period
+NLIMIT
+nl-NL-t-k0-windows-dutch
+nn-t-k0-windows-norwegn
+no buffer space
+no child process
+No Conversion
+no link
+no lock available
+no message
+no message available
+no protocol option
+no space on device
+no stream resources
+no such device
+no such device or address
+no such file or directory
+no such process
+no_buffer_space
+no_protocol_option
+NoAction
+NoChange
+NoComposition
+NoDirectInputMode
+Nonecoreuap\windows\feime\win8\jpn\em\main\imestatusmgr.cpp
+NonKanjiCandidate
+NoRemove
+NoRemove AppID
+not a directory
+not a socket
+not a stream
+not connected
+not enough memory
+not supported
+not_a_socket
+not_connected
+Notify TestProductObjectChanged event
+NotifyTestProductObjectChanged
+NotLearn
+NoTsf3Override1
+NoTsf3Override2
+NoTsf3Override4
+nSentEndBiCacheDivisor
+nSentStartBiCacheOffset
+nso-t-k0-windows-sesotho
+nSuusiSlope
+ntdll.dll
+NtQueryWnfStateData
+NtUpdateWnfStateData
+NTWCS
+Number Cand
+nUnigramSelectionMaxCount
+nW[SO
+O Qh4
+O:%sD:(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;%s)(A;;GA;;;RC)
+O:%sD:(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;%s)(A;;GA;;;RC)(A;;GA;;;S-1-15-2-1)(A;;GA;;;S-1-15-3-1024-79080987-3398622760-2608912076-1085899501-4039864605-4024366022-736258278-368603348)S:(ML;;0x1;;;LW)
+O:%sD:(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;%s)S:(ML;;0x1;;;ME)
+O|SFV
+O0M0K
+o0p0q0r0s0t0u0v0w0x0y0z0{0|0}0
+ObjectLength
+ObjectStublessClient10
+ObjectStublessClient11
+ObjectStublessClient12
+ObjectStublessClient13
+ObjectStublessClient14
+ObjectStublessClient15
+ObjectStublessClient16
+ObjectStublessClient17
+ObjectStublessClient18
+ObjectStublessClient19
+ObjectStublessClient20
+ObjectStublessClient3
+ObjectStublessClient4
+ObjectStublessClient5
+ObjectStublessClient6
+ObjectStublessClient7
+ObjectStublessClient8
+ObjectStublessClient9
+occhTargetLen
+oEAIME_KeyEventHandlerWWWd
+OInserts a space in full-width or half-width depending on the current input mode
+oK0D$"<
+Ol@Ph
+oldStatus:0x%x
+ole32.dll
+OLEAUT32.dll
+On/Off
+OnChangeInputStatus
+OnDemand
+OnDemandCloudCandidateUsageCompleted
+OnDemandCloudSuggestion
+OnDemandCloudUsageCount
+One PH CAND
+One Phrase Candidate
+onecharrange
+onecore\internal\onecore\priv_sdk\inc\textinput\mtfhelper.h
+onecore\internal\onecore\priv_sdk\inc\textinput\RegHelpers.h
+onecore\internal\onecore\priv_sdk\inc\textinput\TextInputRegistrySettingsBaseImpl.h
+onecore\internal\onecore\priv_sdk\inc\textinput\UserCache.h
+onecore\internal\onecore\priv_sdk\inc\textinput\UserHelpers.h
+onecore\internal\sdk\inc\CorePrivacySettingsStoreWrapper.h
+onecore\internal\sdk\inc\wil\opensource/wil/result.h
+onecore\internal\sdk\inc\wil\opensource\wil\com.h
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+onecore\internal\sdk\inc\wil\opensource\wil\safecast.h
+onecore\internal\sdk\inc\wil\opensource\wil\winrt.h
+onecore\internal\sdk\inc\wil\opensource\wil\wrl.h
+onecore\internal\sdk\inc\wil\resource.h
+onecore\internal\sdk\inc\wil\Staging.h
+onecore\internal\shell\inc\Tsf3OverrideUtil.h
+onecore\private\onecore\priv_sdk\inc\textinput\Sha256Hash.h
+onecoreuap\Windows\feime\Win8\ea-shared\FileManager\include\CFileNameRedirectionLib.h
+onecoreuap\windows\feime\win8\ea-shared\imecfm\lib\cfmutil\imewatsonformisconversion.cpp
+onecoreuap\Windows\feime\Win8\ea-shared\imelm\profile\jpn\include\CSParamTune.h
+onecoreuap\windows\feime\win8\ea-shared\libraries\comutil\ccomserver.cpp
+onecoreuap\windows\feime\win8\ea-shared\libraries\eamisc\cjdictslock.cpp
+onecoreuap\windows\feime\win8\ea-shared\libraries\eamisc\folders.cpp
+onecoreuap\windows\feime\win8\ea-shared\libraries\imemdmpolicywrapper\imemdmpolicywrapper.cpp
+onecoreuap\Windows\feime\Win8\ea-shared\libraries\include\IMERegAccess.h
+onecoreuap\windows\feime\win8\ea-shared\libraries\privatemode\privatemodehelper.cpp
+onecoreuap\windows\feime\win8\jpn\commonapi\include\ImeCandidateEntry_JPN.h
+onecoreuap\windows\feime\win8\jpn\commonapi\main\server\cifecomsrv.cpp
+onecoreuap\windows\feime\win8\jpn\commonapi\main\server\cipointsrv.cpp
+onecoreuap\windows\feime\win8\jpn\commonapi\main\server\imapijpn.cpp
+onecoreuap\windows\feime\win8\jpn\commonapi\main\server\imecommonapi_jpn_desktop_v1.cpp
+onecoreuap\windows\feime\win8\jpn\commonapi\main\server\imekeyeventhandler_jpn_desktop_v1.cpp
+onecoreuap\windows\feime\win8\jpn\commonapi\main\server\reconv.cpp
+onecoreuap\windows\feime\win8\jpn\diccom\ifedict_banri\ifedict_banri.cpp
+onecoreuap\windows\feime\win8\jpn\em\cfm\main\ccfmdatamgr.cpp
+onecoreuap\windows\feime\win8\jpn\em\cfm\main\ccfmdiffphrases.cpp
+onecoreuap\windows\feime\win8\jpn\em\cfm\main\cerrorrate.cpp
+onecoreuap\windows\feime\win8\jpn\em\cfm\main\fragmentedphrasesdetector.cpp
+onecoreuap\windows\feime\win8\jpn\em\cfm\main\sev1misconversiondetector.cpp
+onecoreuap\windows\feime\win8\jpn\em\cfm\main\telemetrylogger.cpp
+onecoreuap\windows\feime\win8\jpn\em\cfm\main\TelemetryLoggerContextBase.h
+onecoreuap\windows\feime\win8\jpn\em\cfm\main\TelemetryLoggerStates\ConvertedState.h
+onecoreuap\windows\feime\win8\jpn\em\cfm\main\TelemetryLoggerStates\NoCompositionState.h
+onecoreuap\windows\feime\win8\jpn\em\cfm\main\TelemetryLoggerStates\PhraseChangeState.h
+onecoreuap\windows\feime\win8\jpn\em\cfm\main\TelemetryLoggerStates\UnconvertedState.h
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\engine\candidatecommentengine.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\engine\cjlmelements.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\engine\cjlmsparam.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\engine\cjpnlmconvenginephchgcand.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\engine\cjpnlmconvenginereadcand.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\engine\cjpnlmconvertengine.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\engine\cjpnlmenginesvr.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\engine\cjpnlmparam.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\engine\cjpnlmrhost.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\engine\cjpnlmrthread.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\engine\cjpnlmrwrap.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\engine\clmdictsearchengine.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\main\ccmdlearning.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\main\ccmdmakecandidate.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\main\ccmdmoremorecand.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\main\ccmdpairingbrackets.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cjpnlm\main\cjlmstatuschangeeventsink.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cmds\ccmddetbytype.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cmds\ccmdselectcand.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\cmds\ccmdupdatecontext.cpp
+onecoreuap\windows\feime\win8\jpn\em\cmd\comment\cwordcommentengine.cpp
+onecoreuap\windows\feime\win8\jpn\em\ipoint\cphrasemanager.cpp
+onecoreuap\windows\feime\win8\jpn\em\ipoint\ip.cpp
+onecoreuap\windows\feime\win8\jpn\em\main\candidatebuilder.cpp
+onecoreuap\windows\feime\win8\jpn\em\main\cchunklist.cpp
+onecoreuap\windows\feime\win8\jpn\em\main\ccomposition.cpp
+onecoreuap\windows\feime\win8\jpn\em\main\cimelearningmanager.cpp
+onecoreuap\windows\feime\win8\jpn\em\main\cinputdata.cpp
+onecoreuap\windows\feime\win8\jpn\em\main\phrasemanager.cpp
+onecoreuap\windows\feime\win8\jpn\imeknl\banri_bridge\b_init.cpp
+onecoreuap\windows\feime\win8\jpn\imeknl\banri_bridge\b_nbest.cpp
+onecoreuap\windows\feime\win8\jpn\imeknl\iconvert\iconvert.cpp
+onecoreuap\windows\feime\win8\jpn\imeknl\regmgr\cimejpndicprop.cpp
+onecoreuap\windows\feime\win8\jpn\imeknl\regmgr\imelib.cpp
+onecoreuap\windows\feime\win8\jpn\imeknl\regmgr\iregman.cpp
+onecoreuap\windows\feime\win8\jpn\imeknl\regmgr\k_regman.cpp
+onecoreuap\windows\feime\win8\jpn\lib\pocutil\pocutil.cpp
+onecoreuap\windows\feime\win8\jpn\lib\propmgr\dicprop.cpp
+onecoreuap\windows\feime\win8\jpn\lib\propmgr\proputils.cpp
+onecoreuap\windows\feime\win8\jpn\suggestion\ds\lmds\main\mtfconvlmdsimpl.cpp
+OnFlushDeterminedString
+OnKeyDownWWW
+OnTestKeyDownWWW
+OnTestKeyUpWL
+OnTestProductObjectChanged
+OPCOT
+Open Prediction Candidate
+OpenDicTool
+OpenEmoticonSymbolViewKey
+OpenExtendedDict
+OpenFileMappingW
+OpenMutexW
+OpenProcessToken
+OpenRegisterWord
+Opens a table for code input
+Opens popup menus
+OpenSemaphoreW
+OpenThreadToken
+operation canceled
+operation in progress
+operation not permitted
+operation not supported
+operation would block
+operation_in_progress
+operation_not_supported
+operation_would_block
+OptConversion1
+OptConversion2
+OptConversion3
+option
+option1
+option2
+option3
+OptMode1
+OptMode2
+OptMode3
+OriginalFilename
+originatingContextId
+originatingContextMessage
+originatingContextName
+originCallerModule
+originCallerReturnAddressOffset
+originFile
+originLineNumber
+originModule
+originName
+or-t-k0-windows-odia-inscipt
+or-t-k0-windows-odia-phonetic
+OSV[\&v
+OtherSpace
+Output CharSet
+OutputDebugStringA
+OutputDebugStringW
+owIt@
+owner dead
+p$QQQQQ
+p<h$@
+p=CD B3 B3 B3 B3 B3
+p=CE 00 00 00 00 00
+p8h%@
+Pairing Brackets
+Parentheses
+PartA_PrivTags
+Partial
+PasswordSecurity
+PasswordSecurityState
+PathFileExistsW
+PathFindExtensionW
+PathFindFileNameW
+PathRemoveBackslashW
+PathRemoveFileSpecW
+pa-t-k0-windows-punjabi-inscript
+pa-t-k0-windows-punjabi-phonetic
+PeekMessageW
+PERCENT
+perfassert: processing conversion %d msec
+perfassert: processing determine %d msec
+perfassert: processing em candopen %d msec
+perfassert: processing inserttyping %d msec
+PERIOD
+PeriodShortcut
+Permanent
+permission denied
+permission_denied
+PGetCandidates
+PH CHG CAND
+PhraLeft
+PhraLeft+
+PhraRight+
+PhraRignt
+Phrase Change Candidate
+PhraseBreak
+PhraseChange
+phraseLengthDecrementCount
+phraseLengthIncrementCount
+pidCommandWW
+PinyinMixEnable
+PinyinMixOrder
+PinyinStyle
+pIUnkCommonAPIWW
+Pj Pj
+Pj!WWRQ
+Pj"WW
+pl-t-k0-windows-polish
+PltSmall
+pn0.z^
+PolicyManager_FreeGetPolicyData
+PolicyManager_GetPolicy
+PolicyManager_GetPolicyInt
+PolicyManager_IsPolicySetByMobileDeviceManager
+PolicyStatusCache
+PostThreadMessageW
+PPPPj
+PPPPP
+PPPPPj
+PPPPPP
+PPPPPPj
+PPPPPPW
+PPPPQ
+PPPPQPPPW
+PPPRQ
+ppUnkWWW
+PQj7Z
+PQPPPPPPW
+PQQh 
+PQQh\
+PQQPj
+PQQQQPj
+PQQQQQQj
+PQQQS
+PQQQW
+PQQSVW
+PQQVS
+PQQVW
+PQRRSW
+PQSSR
+PQSVW
+Prediction
+Prediction Candidate
+PredictionMinimumCompositionStringLength
+PredictionUseInputHistory
+PrevCand
+PrevCands
+previousDeterminedPhrasePartsOfSpeech
+previousState
+print
+PRN Ext.Char
+Problem in IImeUserDict --- pTopNode is corrupted.
+proc_%d\loc_%04x\im_%d
+proc_1\loc_0039\im_1
+proc_1\loc_0401\im_1
+proc_1\loc_0402\im_1
+proc_1\loc_0403\im_1
+proc_1\loc_0405\im_1
+proc_1\loc_0406\im_1
+proc_1\loc_0407\im_1
+proc_1\loc_0408\im_1
+proc_1\loc_0409\im_1
+proc_1\loc_040B\im_1
+proc_1\loc_040C\im_1
+proc_1\loc_040D\im_1
+proc_1\loc_040E\im_1
+proc_1\loc_040F\im_1
+proc_1\loc_0410\im_1
+proc_1\loc_0413\im_1
+proc_1\loc_0414\im_1
+proc_1\loc_0415\im_1
+proc_1\loc_0416\im_1
+proc_1\loc_0417\im_1
+proc_1\loc_0418\im_1
+proc_1\loc_0419\im_1
+proc_1\loc_041A\im_1
+proc_1\loc_041B\im_1
+proc_1\loc_041C\im_1
+proc_1\loc_041D\im_1
+proc_1\loc_041E\im_1
+proc_1\loc_041F\im_1
+proc_1\loc_0420\im_1
+proc_1\loc_0421\im_1
+proc_1\loc_0422\im_1
+proc_1\loc_0423\im_1
+proc_1\loc_0424\im_1
+proc_1\loc_0425\im_1
+proc_1\loc_0426\im_1
+proc_1\loc_0427\im_1
+proc_1\loc_0428\im_1
+proc_1\loc_0429\im_1
+proc_1\loc_042A\im_1
+proc_1\loc_042B\im_1
+proc_1\loc_042C\im_1
+proc_1\loc_042D\im_1
+proc_1\loc_042E\im_1
+proc_1\loc_042F\im_1
+proc_1\loc_0432\im_1
+proc_1\loc_0434\im_1
+proc_1\loc_0435\im_1
+proc_1\loc_0436\im_1
+proc_1\loc_0437\im_1
+proc_1\loc_0438\im_1
+proc_1\loc_0439\im_1
+proc_1\loc_0439\im_2
+proc_1\loc_0439\im_3
+proc_1\loc_043A\im_1
+proc_1\loc_043B\im_1
+proc_1\loc_043E\im_1
+proc_1\loc_043F\im_1
+proc_1\loc_0440\im_1
+proc_1\loc_0441\im_1
+proc_1\loc_0442\im_1
+proc_1\loc_0443\im_1
+proc_1\loc_0444\im_1
+proc_1\loc_0445\im_1
+proc_1\loc_0445\im_2
+proc_1\loc_0446\im_1
+proc_1\loc_0446\im_2
+proc_1\loc_0447\im_1
+proc_1\loc_0447\im_2
+proc_1\loc_0448\im_1
+proc_1\loc_0448\im_2
+proc_1\loc_0449\im_1
+proc_1\loc_0449\im_2
+proc_1\loc_044A\im_1
+proc_1\loc_044A\im_2
+proc_1\loc_044B\im_1
+proc_1\loc_044B\im_2
+proc_1\loc_044C\im_1
+proc_1\loc_044C\im_2
+proc_1\loc_044D\im_1
+proc_1\loc_044E\im_1
+proc_1\loc_044E\im_2
+proc_1\loc_0450\im_1
+proc_1\loc_0451\im_1
+proc_1\loc_0452\im_1
+proc_1\loc_0453\im_1
+proc_1\loc_0454\im_1
+proc_1\loc_0455\im_1
+proc_1\loc_0456\im_1
+proc_1\loc_0457\im_1
+proc_1\loc_045A\im_1
+proc_1\loc_045B\im_1
+proc_1\loc_045C\im_1
+proc_1\loc_045E\im_1
+proc_1\loc_0461\im_1
+proc_1\loc_0463\im_1
+proc_1\loc_0464\im_1
+proc_1\loc_0465\im_1
+proc_1\loc_0468\im_1
+proc_1\loc_046A\im_1
+proc_1\loc_046C\im_1
+proc_1\loc_046D\im_1
+proc_1\loc_046E\im_1
+proc_1\loc_046F\im_1
+proc_1\loc_0470\im_1
+proc_1\loc_0474\im_1
+proc_1\loc_0475\im_1
+proc_1\loc_0480\im_1
+proc_1\loc_0481\im_1
+proc_1\loc_0485\im_1
+proc_1\loc_0487\im_1
+proc_1\loc_0488\im_1
+proc_1\loc_0491\im_1
+proc_1\loc_0492\im_1
+proc_1\loc_0803\im_1
+proc_1\loc_0807\im_1
+proc_1\loc_0809\im_1
+proc_1\loc_080A\im_1
+proc_1\loc_080C\im_1
+proc_1\loc_0813\im_1
+proc_1\loc_0814\im_1
+proc_1\loc_0816\im_1
+proc_1\loc_0818\im_1
+proc_1\loc_082C\im_1
+proc_1\loc_083B\im_1
+proc_1\loc_083C\im_1
+proc_1\loc_083E\im_1
+proc_1\loc_0843\im_1
+proc_1\loc_0845\im_1
+proc_1\loc_0850\im_1
+proc_1\loc_085D\im_1
+proc_1\loc_085F\im_1
+proc_1\loc_0C09\im_1
+proc_1\loc_0C0A\im_1
+proc_1\loc_0C0C\im_1
+proc_1\loc_0C51\im_1
+proc_1\loc_1009\im_1
+proc_1\loc_100C\im_1
+proc_1\loc_105F\im_1
+proc_1\loc_141A\im_1
+proc_1\loc_1809\im_1
+proc_1\loc_2000\im_1
+proc_1\loc_201A\im_1
+proc_1\loc_241A\im_1
+proc_1\loc_281A\im_1
+proc_1\loc_4009\im_1
+proc_3\loc_0411\im_1
+proc_3\loc_0411\im_2
+proc_4\loc_0412\im_1
+proc_4\loc_0412\im_2
+proc_4\loc_0412\im_3
+proc_4\loc_0412\im_4
+proc_5\loc_042A\im_2
+proc_5\loc_042A\im_3
+process
+processId
+processName
+ProductName
+ProductVersion
+ProductVersionLS
+ProductVersionMS
+profapi.dll
+PropPage
+protocol error
+protocol not supported
+protocol_not_supported
+PRPPPPPPRRPPQWQWPPWR
+PRRPRRQ
+PRRRQ
+PRRRS
+PRVAL
+PSGDATA
+PSQQVW
+PSSSSQ
+PSSSSSSj
+PSSSV
+PSSSW
+ps-t-k0-windows-pashto
+pt-BR-t-k0-windows-brzilian
+pt-PT-t-k0-windows-portugs
+PuncMark
+punct
+PVj@Z
+PVjeZ
+pVKeyWWW
+PVWjT
+pwchInput
+PWWWQ
+PWWWWPj
+PX;T$4u
+PX;T$4u%
+q(9>u
+qaa-Mymr-t-k0-windows-myanmar-zawgyi
+Qj\XQf
+QPQQj
+QPQQQQW
+QPV;QTtT
+QQPQQQ
+QQPQQQQW
+QQPQQQR
+QQPQQQS
+QQPQQQW
+QQQQj
+QQQQPQQQ
+QQQQQQj
+QQQQQQQPQQQ
+QQSV3
+QQSVW
+QQSVW3
+QQVWh
+QQVWj
+QRPh0M
+QRPh0N
+QRPhPM
+QRPhpM
+QRPhpN
+QRPhPN
+QRRRRQ
+QSSSj
+QSSSP
+QSVW3
+QSVWj
+QSVWje
+QueryPerformanceCounter
+QUESTION
+QV0X0Z0\0^0
+QVSPS
+QVWj X
+QVWQQ
+R!s4Z
+r"PWSV
+R_BRACE
+R_BRACKET
+R_KAGI
+R_PARENTHESIS
+r~akow
+R8Op0W0~0Y0!
+R9X@u
+RaiseException
+RaiseFailFastException
+READ CAND
+read only file system
+ReadFile
+Reading Candidate
+realloc
+Reconv
+Reconversion
+Reconversion : Full-width Ascii
+Reconversion : Half-width Ascii
+Reconversion : Hiragana"Reconversion : Full-width Katakana
+Reconversion : in Half-width
+Reconvert
+ReconvFlag
+Redmond1
+RegCloseKey
+RegCopyTreeW
+RegCreateKeyExW
+RegDeleteKeyExW
+RegDeleteKeyValueW
+RegDeleteKeyW
+RegDeleteTreeW
+RegDeleteValueW
+RegEnumKeyExW
+RegEnumValueW
+regex_error
+regex_error(error_backref): The expression contained an invalid back reference.
+regex_error(error_badbrace): The expression contained an invalid range in a { expression }.
+regex_error(error_badrepeat): One of *?+{ was not preceded by a valid regular expression.
+regex_error(error_brace): The expression contained mismatched { and }.
+regex_error(error_brack): The expression contained mismatched [ and ].
+regex_error(error_collate): The expression contained an invalid collating element name.
+regex_error(error_complexity): The complexity of an attempted match against a regular expression exceeded a pre-set level.
+regex_error(error_ctype): The expression contained an invalid character class name.
+regex_error(error_escape): The expression contained an invalid escaped character, or a trailing escape.
+regex_error(error_paren): The expression contained mismatched ( and ).
+regex_error(error_parse)
+regex_error(error_range): The expression contained an invalid character range, such as [b-a] in most encodings.
+regex_error(error_space): There was insufficient memory to convert the expression into a finite state machine.
+regex_error(error_stack): There was insufficient memory to determine whether the regular expression could match the specified character sequence.
+regex_error(error_syntax)
+RegGetValueW
+REGINIT
+REGISTRY
+regmgr
+regmgr reset
+RegOpenCurrentUser
+RegOpenKeyExW
+RegQueryInfoKeyW
+RegQueryValueExW
+RegSetKeyValueW
+RegSetValueExW
+RegWords
+Release fixed
+ReleaseMutex
+ReleaseSemaphore
+ReleaseSRWLockExclusive
+ReleaseSRWLockShared
+Repeat
+Replace KanjiTyping to reading
+ReplaceStringWWW
+Reserved
+ResetEvent
+ResetExcludeProperties
+ResolveDelayLoadedAPI
+resource deadlock would occur
+resource unavailable try again
+ResourceMode
+result
+result out of range
+ResumeThread
+ReturnHr
+ReturnNt
+Retype
+RevAfterPhra
+RevAll
+RevPhra
+RevPhra A phrase consists of a character
+rHRRj
+rKak0;bW0~0Y0
+rm-t-k0-windows-swiss-german
+RoamingUsageCompleted
+RoGetActivationFactory
+RoGetMatchingRestrictedErrorInfo
+RomajiRecovery
+romastyle
+ro-MD-t-k0-windows-romanian-standard
+ro-RO-t-k0-windows-romanian-standard
+RPCRT4.dll
+RplKanjiTyping
+RRRRRRRRRj
+RtlDeriveCapabilitySidsFromName
+RtlDisownModuleHeapAllocation
+RtlDllShutdownInProgress
+RtlGetDeviceFamilyInfoEnum
+RtlIsMultiUsersInSessionSku
+RtlNotifyFeatureUsage
+RtlNtStatusToDosError
+RtlNtStatusToDosErrorNoTeb
+RtlRegisterFeatureConfigurationChangeNotification
+RtlUnregisterFeatureConfigurationChangeNotification
+RU0[0~0Y0
+ru-t-k0-windows-russian
+RW0~0Y0
+rw-t-k0-windows-us
+RY0y0f0
+S RomaDef COMMENT=
+s$jeY
+s&jeXG
+s(Wn0
+s(Wn0eQ
+s)jeG
+S,g!q
+s.B;U
+s0?1P1r1
+S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681
+S1key
+S4key
+sah-Cyrl-t-k0-windows-sakha
+SatoriKnlDict_MemoryDictionary_IMJP_15_
+SaveAutoTuneDataToFile
+sd;sht"
+sdds0411.dic
+SDDS0411.DIC,1,15
+SDkey
+Search word comment for each candidate list items
+SearchAlpha
+SECURITY
+se-Latn-NO-t-k0-windows-norwegn-sami
+se-Latn-SE-t-k0-windows-finnish-sami
+SelCandByClick
+Select Candidate and Determine
+selectedCandidateRanks
+SelectedPrediction
+SEMICOLON
+SendMessageTimeoutW
+SendMessageW
+SerialNo
+Service Cand
+Set Analysis Range
+SetCursorPos
+SetEntriesInAclW
+SetErrorMode
+SetEvent
+SetFileAttributesW
+SetFilePointer
+SetFileTime
+SetLastError
+setlocale
+SetNamedSecurityInfoW
+SetRestrictedErrorInfo
+SetSecurityInfo
+SetTargetClauseByCharPos
+SetThreadLocale
+SetThreadpoolTimer
+Setting
+SETTINGS
+SetUnhandledExceptionFilter
+Sev1MisConversion
+sFjfY+
+SHA256
+ShapeWriting
+shapeWriting
+SharedPath
+SHARP
+SHCreateMemStream
+SHIFT MODE
+SHIFT MODE CONTROL
+Shift+SPACE
+shiftmode
+ShowCharComment
+ShowDifferentPhraseLengthAlternativesRS
+ShowOnlyPublishingStandardGlyph
+ShowSymbolViewActionButton
+ShowWordComment
+ShrinkPhra
+SimplifiedTraditionalOutputSwitchKey
+SingleKanji
+SINGLEQUOTE
+si-t-k0-windows-sinhala
+SizeofResource
+Sjdj"
+sk-t-k0-windows-slovak-narrow
+SLASH
+Sleep
+SleepConditionVariableSRW
+slope
+sl-t-k0-windows-slovenn
+Software
+Software\AppDataLow\
+Software\AppDataLow\Software\Microsoft\IME\15.0\IMEJP
+SOFTWARE\Classes\CLSID\%s\InprocServer32
+Software\Microsoft\
+SOFTWARE\Microsoft\CTF\TIP\
+Software\Microsoft\IME
+Software\Microsoft\IME\15.0
+Software\Microsoft\IME\15.0\IMEJP
+Software\Microsoft\IME\15.0\IMEJP\BANRI
+Software\Microsoft\IME\15.0\IMEJP\Dictionaries
+Software\Microsoft\IME\15.0\IMEJP\directories
+Software\Microsoft\IME\15.0\IMEJP\MSIME
+Software\Microsoft\IME\15.0\IMEJP\MSIME\AutoCharWidth
+Software\Microsoft\IME\15.0\IMEJP\MSIME\michigo
+Software\Microsoft\IME\15.0\IMEJP\MSIME\nbest
+Software\Microsoft\IME\15.0\IMEJP\MSIME\nodicsrch
+Software\Microsoft\IME\15.0\IMEJP\RomaDef
+Software\Microsoft\IME\15.0\IMEJP\StyleList
+Software\Microsoft\IME\15.0\IMEJP\StyleList\Custom
+Software\Microsoft\IME\15.0\IMEJP\temp
+Software\Microsoft\IME\15.0\IMEJP\temp\StyleList
+Software\Microsoft\IME\15.0\IMEJP\Window
+Software\Microsoft\IME\15.0\SHARED\AppCompat\%s
+Software\Microsoft\IME\15.0\SHARED\CustomerFeedback\SIUF\1041
+Software\Microsoft\IME\15.0\SHARED\CustomerFeedback\SOFTLANDING\1041
+Software\Microsoft\IME\15.0\SHARED\FileNameRedirection
+Software\Microsoft\Input\Settings\
+Software\Microsoft\Input\TSF\Tsf3Override
+Software\Microsoft\InputMethod\IFE
+Software\Microsoft\InputMethod\JPN\roaming
+Software\Microsoft\InputMethod\JPN\roaming\mon
+Software\Microsoft\TabletTip\1.7
+Software\Microsoft\Windows\CurrentVersion\Policies\System
+Software\Policies\Microsoft\IME\IMEJP
+Software\Policies\Microsoft\IME\IMEJP\Window
+Software\Policies\Microsoft\IME\Shared
+Software\Policies\Microsoft\InputMethod\Settings\CHS
+Software\Policies\Microsoft\InputMethod\Settings\CHT
+Software\Policies\Microsoft\InputMethod\Settings\JPN
+Software\Policies\Microsoft\InputMethod\Settings\KOR
+SOFTWARE\Policies\Microsoft\TabletTip\1.7
+sp;^,sk
+SP@PQ
+space
+SPACE
+space
+SpaceWidth
+spellCheck
+SpellCheck
+spelling\enableAutoCorrection
+spelling\enableSpellchecking
+sprintf_s
+sq-t-k0-windows-albanian
+sr-Cyrl-RS-t-k0-windows-serbian-cyrillic
+sr-Latn-RS-t-k0-windows-serbian-latin
+SSPSSSW
+SSSSS
+SSSSSSPSSSV
+SSVQP3
+SSVQPj
+SSVWj
+Start
+StartOfCand
+StartOfChars
+StartOfPhra
+state not recoverable
+StateMachineChanged
+statusWnd.x
+statusWnd.y
+stdole2.tlbWWW
+StigRegKey\Typing\DesktopNearCaretKeyboardEnabled
+STMappingStyle
+stopmichigo
+strchr
+stream timeout
+string too long
+StringFileInfo
+StringFromGUID2
+strncpy_s
+style
+suggestText
+sv-SE-t-k0-windows-swedish
+SVW:A
+SVWhd
+SVWhP
+SVWj0[j,
+SVWPh
+SVWQQ
+SVWt6
+SVWvI
+SW0~0Y0
+switchMethod
+swprintf_s
+sw-t-k0-windows-us
+SWWWWR
+Sxkey
+Sym. Input
+syr-Syrc-t-k0-windows-syriac
+SysFilterDictName
+System
+system
+SYSTEM
+System line
+SYSTEM\CurrentControlSet\Control\MiniNT
+SystemTimeToFileTime
+sZSVW
+t f9>t
+t QjAZ
+t"=UUU
+t#@f;
+t#hlV
+t#j"Yf9
+t#RjAZ
+t#WVj
+t$$;L$0
+T$<PQ
+t$4f;
+T$4f;
+T$8;T$
+T$DB;
+T$pRQ
+t%f98t
+t&h`{
+t(f97t#
+t)9Z t$
+t*Hf;
+t*jfY
+t,=UUU
+t,hxT
+t.;:u
+t.j,Zf;
+t.j~j
+t;;0u
+t@9rhu;
+t@Bf;
+t@QSS
+t\@f;
+t`@f;
+t=QQVS
+t>C;]
+t19>~)9
+t2WSV
+t3@f;
+t4f98t/P
+t5@f;
+t5j'3
+t5WSV
+t7;0u
+ta@f;
+table
+TabletTip\1.7
+ta-IN-t-k0-windows-tamil-inscript
+ta-IN-t-k0-windows-tamil-phonetic
+target
+Task ID: IME Activate
+Task ID: IME API
+Task ID: IME Candidate Open
+Task ID: IME Commands
+Task ID: IME Conversion
+Task ID: IME Determine
+Task ID: IME GetComment
+Task ID: IME Typing
+tE9{Dt@
+TerminateProcess
+tESV;}
+te-t-k0-windows-telugu-inscript
+te-t-k0-windows-telugu-phonetic
+text file busy
+TextInput
+t'f;M
+TF_GetAppCompatFlags
+t'f9y
+tG@;E
+tg-Cyrl-t-k0-windows-tajik
+Thales TSS ESN:60BC-E383-26351%0#
+The word of phrase is invalid
+threadId
+th-t-k0-windows-thkedmne-narrow
+tHWj<
+TILDE
+timed out
+timed_out
+tiVjD
+t-j@Z
+T-Kana
+tKj\[SW
+tk-Latn-t-k0-windows-turkmen
+tL@f;
+TlP0X
+tMSW3
+tnj'[f;
+tn-ZA-t-k0-windows-setswana
+ToAscii
+ToAsciiEx
+ToggleAscii
+ToggleInput
+ToggleKey
+too many files open
+too many files open in system
+too many links
+too many symbolic link levels
+too_many_files_open
+ToolBarEnabled
+ToolBarOrientation
+ToolBarView
+totalCompositionFinalizedCount
+totalPhraseCount
+totalRankingCount
+touchkeyboard\autoswitchAfterEmoji
+touchkeyboard\desktopNearCaretKeyboardEnabled
+touchkeyboard\dictationEnabled
+touchkeyboard\dictationSupportedLanguages
+touchkeyboard\enableAutoCap
+touchkeyboard\enableAutoCorrection
+touchkeyboard\enableDoubleTabSpace
+touchkeyboard\enableInkingWithTouch
+touchkeyboard\enableKeyAudioFeedback
+touchkeyboard\enableLinguisticDataCollection
+touchkeyboard\enablePrediction
+touchkeyboard\enableShiftLock
+touchkeyboard\enableSpaceAfterCandidate
+touchkeyboard\fingerKBSize
+touchkeyboard\htrTimeSlowdown
+touchkeyboard\htrVisualizerEnabled
+touchkeyboard\invocationPolicy
+touchkeyboard\latinFontName
+touchkeyboard\multilingualPrediction
+touchkeyboard\passwordVisualFeedbackDisabledByGroupPolicy
+touchkeyboard\voiceTypingKeyEnabled
+TouchKeyboard_EnableKeyAudioFeedback
+TouchKeyboard_EnableShiftLock
+TouchKeyboardInvocationPolicy
+ToUnicode
+tpVW3
+tq@f;
+tqj-Xf;
+Translation
+trigger
+Trigger
+tRj@Z
+tRSV3
+tr-t-k0-windows-turkishf
+tS95<
+tt-Cyrl-t-k0-windows-tatar
+tTVWj
+Turns fixed input mode off
+Turns IME OFF
+Turns IME ON
+Turns IME ON or OFF
+Turns IME ON or OFF3Reverts selected character(s) to undetermined state
+tVWSV
+tW-\/
+tY9_DtT
+tY95,y
+TypedWholeWord
+TypeLib
+TYPELIB
+TypePostProc
+TypePreProc
+Typing Post Process
+Typing Pre Process
+tZHf;M
+tzm-Latn-t-k0-windows-tamazght
+tzm-Tfng-t-k0-windows-tifinagh
+u"PSQ
+U$_^[
+u$f;q*u
+u$VQh
+u$WSQ
+u&QWS
+u*PRV
+U0S0Q
+u1QSW
+u'3O.
+ubWShT
+u'G@;
+ug-Arab-t-k0-windows-uyghur
+ui;F4uY
+uk-t-k0-windows-ukraine
+UMgrQueryUserContext
+UMgrQueryUserToken
+Unconvert
+Unconverted
+UNDERSCORE
+UndoDet
+UnhandledExceptionFilter
+Uninitialize 
+unknown
+Unknown
+unknown error
+Unknown,Moves to the beginning of the candidate list&Moves to the end of the candidate list9Reverts the converted text to reading from current phraseFMoves the focus one phrase to the left and displays the candidate listGMoves the focus one phrase to the right and displays the candidate listCMoves the focus to the first phrase and displays the candidate listBMoves the focus to the last phrase and displays the candidate list
+UnmapViewOfFile
+uNPPV
+-unrg
+uoWSQ
+up9FTtkV
+UPCARET
+Update notify to the client
+UpdateContext
+UpdateDefaultStyleList
+upper
+UpToProductVersionLS
+UpToProductVersionMS
+ur-PK-t-k0-windows-urdu
+UseCandidateShortcuts
+UseCloudSuggestion
+User Dictionary
+UserDict
+USERS\
+uUSSSSSSS
+uXVVhh
+uz-Cyrl-t-k0-windows-uzbek
+uz-Latn-t-k0-windows-us
+v,Shp
+V<0u*
+V0m0x0
+v8by^
+val AppID = s '%APPID%'
+value too large
+Values on registry changed while initializing s_dicProp.
+VarFileInfo
+variant
+variantKind
+vEAAPI CEnumImeCommands::Reset --- IN
+vector<bool> too long
+vector<T> too long
+VerifyVersionInfoW
+VerQueryValueW
+VerSetConditionMask
+Vertical
+vi-t-k0-windows-vietnam
+vi-t-k0-windows-vietnam-telex
+vi-t-k0-windows-vietnam-vni
+Vj\^f;
+VK_PACKET
+vKey:0x%x
+VkKeyScanExW
+VkKeyScanW
+VL^_[
+VPWQR
+VS_VERSION_INFO
+vsprintf_s
+vswprintf_s
+Vt%hlV
+VVVPh
+VVVSW
+VVVVVVW
+VVVWh
+VVVWP
+VWhPM
+VWj'_
+VWj03
+VWjbZ
+VWjkZ
+VWPh(
+W Dictionaries DIC00=imjp15cu.dic,1
+W MSIME colstyle=NATURAL
+W MSIME deffont=MS UI Gothic
+W MSIME IMEUserName=User-MSIME2000
+W MSIME keystyle=NATURAL
+W MSIME option=/IT /Y
+W MSIME romastyle=MS-IME
+W MSIME style=NATURAL
+W MSIME Version=9.0
+W MSIME\AutoCharWidth LearnData=A2,040,050,060,070,080,090,100,990,
+W StyleList\ATOK defRoma=MS-IME
+W StyleList\MS-IME2000 defRoma=MS-IME
+W StyleList\MS-IME2000 DisplayName=IME Standard
+W StyleList\NATURAL defRoma=MS-IME
+W StyleList\NATURAL DisplayName=Microsoft IME
+W StyleList\VJE defRoma=MS-IME
+W StyleList\WX defRoma=MS-IME
+W Window CPallet=PltSmall
+w"PQW
+w#QQQ
+w$_^]
+w(_^[]
+W,PageDown,
+W,PageUp
+w;t2-A0
+W[JRd
+w]tQ+
+w>t!-
+W0~0Y0
+w7t/-A0
+WaitForSingleObject
+WaitForSingleObjectEx
+WaitForThreadpoolTimerCallbacks
+WakeAllConditionVariable
+Washington1
+WCH:0x%x
+wcscat_s
+wcscpy_s
+wcsncat_s
+wcsncmp
+wcsncpy_s
+wcsnlen
+wcsrchr
+wcstoul
+wD.D1wm6
+WEVT_TEMPLATE
+wGt@-
+wht_H
+WideCharToMultiByte
+wilActivity
+WilError_03
+wilResult
+WilStaging_02
+win:Informational
+win:Start
+win:Stop
+Windows.System.Internal.UserManager
+Windows.System.User
+Windows.UI.Input.Inking.PenAndInkSettings
+WindowsCreateStringReference
+WindowsDeleteString
+WindowsGetStringRawBuffer
+WinSqmIncrementDWORD
+WinSqmSetDWORD
+Wj1_f;
+wMt8-
+wo-Latn-t-k0-windows-wolof
+WpfEatenW
+WPQQV
+WPWWV
+wrong protocol type
+wrong_protocol_type
+WRQSP
+WVD+Yq
+WVDGh
+WWWQWW
+WWWWj
+wXtR=A
+X;^$}
+X;t$0t 
+x<9_$t
+X0b0l0v0
+xCImeCommonAPIClassFactory_JPN_Desktop_V1d
+xdigit
+xh-t-k0-windows-us
+xJ;VL}Ej
+xNhu1
+xSSSSSSS
+Xw]x7
+Y*30T
+Y@_^[
+y]Vh(
+Y__^[
+Y0y0f0n0eQ
+yo-Latn-t-k0-windows-yoruba
+yOZ"+SK
+y-Phh]
+yukocost
+Yv^A~
+Yw^k~^U4
+Y'Y0W-Nw
+Z MSIME AutoAlphaStr=
+z.9Wv
+ZenbunFuteigo
+ZerothMoreSelected
+zh-Hans-CN-t-k0-windows-chinese-simp-12key
+zh-Hans-CN-t-k0-windows-chinese-simp-hwr
+zh-Hans-CN-t-k0-windows-chinese-simp-mspinyin
+zh-Hans-CN-t-k0-windows-chinese-simp-stroke
+zh-Hans-CN-t-k0-windows-chinese-simp-wubi
+zh-Hant-HK-t-k0-windows-chinese-trad-changjie
+zh-Hant-HK-t-k0-windows-chinese-trad-quick
+zh-Hant-HK-t-k0-windows-chinese-trad-stroke
+zh-Hant-TW-t-k0-windows-chinese-trad-bopomofo
+Zj2X9]
+zt.exe
+zu-t-k0-windows-us
+zuvh0
